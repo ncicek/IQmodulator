@@ -10,10 +10,6 @@ parameter sine_lookup_width = 16,
 		lo_phase_width = 12,
 		lo_accumulator_width = 32;
 	
-defparam fm_generator_instance.sine_lookup_width = sine_lookup_width;
-defparam fm_generator_instance.phase_width = phase_width;
-defparam fm_generator_instance.accumulator_width = accumulator_width;
-
 input wire i_ref_clk, i_resetb;
 output wire [sine_lookup_width-1:0] o_sample_truncated;
 output wire lo_square;
@@ -38,7 +34,12 @@ assign o_sample_dc_offset = o_sample + 2**(sine_lookup_width);
 assign o_sample_truncated = o_sample_dc_offset[sine_lookup_width:1];
 //assign o_sample_truncated = lo_phase;
 
-fm_generator fm_generator_instance(clk, reset, 1'b1, 1'b1, 31'd200000000, 31'd66770, 17'd4, o_sample);
+fm_generator #(
+	.sine_lookup_width(sine_lookup_width),
+	.phase_width(phase_width),
+	.accumulator_width(accumulator_width)
+	)
+	fm_generator_instance(clk, reset, 1'b1, 1'b1, 31'd200000000, 31'd66770, 17'd4, o_sample);
 
 //defparam lo_inst.OW = lo_phase_width;
 //defparam lo_inst.PW = lo_accumulator_width;

@@ -12,7 +12,7 @@ module quarter_wave_sine_lookup(i_clk, i_reset, i_ce, i_phase, o_val);
 	
 	assign o_val = o_val_pipeline[1];
 	//wire [OW-1:0] quarter_wave_sample;
-	reg [OW-1:0] quarter_wave_sample_register;
+	reg signed [OW:0] quarter_wave_sample_register;
 	reg [1:0] phase_negation;
 	
 	reg [(OW-1):0] quarter_wave_table [0:((1<<(PW-2))-1)];
@@ -30,7 +30,7 @@ module quarter_wave_sine_lookup(i_clk, i_reset, i_ce, i_phase, o_val);
 			o_val_pipeline[1] <= {(OW+1){1'b0}};
 			phase_negation <= 2'b0;
 			index <= {(PW-2){1'b0}};
-			quarter_wave_sample_register <= 1;
+			quarter_wave_sample_register <= {(OW+1){1'b1}};
 		end
 		else begin 
 			if (i_ce) begin
@@ -43,7 +43,7 @@ module quarter_wave_sine_lookup(i_clk, i_reset, i_ce, i_phase, o_val);
 				phase_negation[0] <= i_phase[(PW-1)];
 				
 				//2nd cycle
-				quarter_wave_sample_register <= quarter_wave_table[index];
+				quarter_wave_sample_register <= {1'b0, quarter_wave_table[index]};
 				phase_negation[1] <= phase_negation[0];
 				
 				//3rd cycle
