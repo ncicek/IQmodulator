@@ -37,7 +37,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 //
 //
-`default_nettype	none
+//`default_nettype	none
 //
 `define	IDLE_SUB_WORD	5'b11011
 `define	IDLE_WORD	{ `IDLE_SUB_WORD, {(34-5){1'b0}} }
@@ -64,7 +64,7 @@ module	hbidle(i_clk, i_reset, i_cmd_stb, i_cmd_word, o_idl_busy,
 `ifdef	VERILATOR
 	reg	[22:0]	idle_counter;
 `else
-	reg	[29:0]	idle_counter;
+	reg	[28:0]	idle_counter;
 `endif
 	initial	idle_stb = 0;
 	initial	idle_counter = 0;
@@ -73,9 +73,9 @@ module	hbidle(i_clk, i_reset, i_cmd_stb, i_cmd_word, o_idl_busy,
 		begin
 			idle_stb <= 1'b0;
 			idle_counter <= 0;
-		end else
+		end /*else
 			{ idle_stb, idle_counter } <= idle_counter + 1'b1;
-
+		*/
 	initial	o_idl_stb = 1'b0;
 	always @(posedge i_clk)
 		if (i_reset)
