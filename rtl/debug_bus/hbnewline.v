@@ -38,7 +38,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 //
 //
-`default_nettype	none
+//`default_nettype	none
 //
 module	hbnewline(i_clk, i_reset,
 		i_stb, i_byte, o_nl_busy,

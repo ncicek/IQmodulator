@@ -57,7 +57,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 //
 //
-`default_nettype	none
+//`default_nettype	none
 //
 module	hbpack(i_clk, i_reset, i_stb, i_bits, o_pck_stb, o_pck_word);
 	input	wire	i_clk, i_reset;
