@@ -50,7 +50,7 @@ end
 
 assign o_wb_stall = 1'b0; //we can accept wb request on every clock cycle, no need to stall
 
-reg [(accumulator_width-2):0] carrier_center_increment_offset;
+reg [(accumulator_width-2):0] carrier_center_increment_offset_ls, carrier_center_increment_offset_rs;
 reg [(accumulator_width-2):0] carrier_increment;
 
 wire signed [(accumulator_width-2):0] carrier_center_increment;
@@ -72,13 +72,22 @@ dds #( 	.sine_lookup_width(sine_lookup_width),
 		.accumulator_width(accumulator_width)
 	) modulation(.i_clk(i_clk), .i_reset(i_reset), .i_ce(1'b1), .i_update(1'b1), .i_increment(modulation_increment), .o_sample(modulation_output));
 
+reg [sine_lookup_width:0] sine_lookup_width_minus_modulation_deviation_amount, modulation_deviation_amount_minus_sine_lookup_width;
+
 always @(posedge i_clk or posedge i_reset) begin
 	if (i_reset) begin
-		carrier_center_increment_offset <= {(accumulator_width-1){1'b0}};
+		carrier_center_increment_offset_ls <= {(accumulator_width-1){1'b0}};
 		carrier_increment <= {(accumulator_width-1){1'b0}};
 	end else begin
-		carrier_center_increment_offset <= (modulation_output <<< modulation_deviation_amount);
-		carrier_increment <= carrier_center_increment + carrier_center_increment_offset;
+		sine_lookup_width_minus_modulation_deviation_amount <= sine_lookup_width - modulation_deviation_amount;
+		modulation_deviation_amount_minus_sine_lookup_width <= modulation_deviation_amount - sine_lookup_width;
+		carrier_center_increment_offset_ls <= (modulation_output <<< modulation_deviation_amount_minus_sine_lookup_width);
+		carrier_center_increment_offset_rs <= (modulation_output >>> sine_lookup_width_minus_modulation_deviation_amount);
+		if (modulation_deviation_amount < sine_lookup_width)
+			carrier_increment <= carrier_center_increment + carrier_center_increment_offset_rs;
+		else
+			carrier_increment <= carrier_center_increment + carrier_center_increment_offset_ls;
+
 	end
 end
 
