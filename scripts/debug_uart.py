@@ -1,37 +1,76 @@
 import serial
+import math 
 
-ser = serial.Serial('COM4', 9600)  # open serial port
-refclk = 96e6
+class Device():
+    def __init__(self, ser):
+        self.ser = ser
 
-def read(addr):
-    tx = "A"+format(addr<<2, 'x')+'\n'
-    ser.write(tx.encode())
-    ser.readline()
-    tx = "R"+'\n'
-    ser.write(tx.encode())
-    rx = ser.readline().decode().rstrip().split('R')[1]
-    value = int(rx,16)
-    return value
+    def read(self, addr):
+        tx = "A"+format(addr<<2, 'x')+'\n'
+        self.ser.write(tx.encode())
+        self.ser.readline()
+        tx = "R"+'\n'
+        self.ser.write(tx.encode())
+        rx = self.ser.readline().decode().rstrip().split('R')[1]
+        value = int(rx,16)
+        print("read ", hex(value), " from ", hex(addr))
+        return value
 
-def write(addr, data):
-    tx = "A"+format(addr<<2, 'x')+'\n'
-    ser.write(tx.encode())
-    ser.readline()
-    tx = "W"+format(data, 'x')+'\n'
-    ser.write(tx.encode())
+    def write(self, addr, data):
+        tx = "A"+format(addr<<2, 'x').lower()+'\n'
+        self.ser.write(tx.encode())
+        self.ser.readline()
+        tx = "W"+format(data, 'x').lower()+'\n'
+        self.ser.write(tx.encode())
+        print("wrote ", hex(data), " to ", hex(addr))
 
 def set_modulation_amount(val):
     assert val < 100
-    write(((0x82<<4)+2), val)
+    write(((0x82<<8)+2), val)
 
 def set_modulation_frequency(hz):
     count = 2**32*hz/refclk
     assert count < 2**32
-    write(((0x82<<4)+1), int(round(count)))
+    write(((0x82<<8)+1), int(round(count)))
 
 def set_carrier_frequency(hz):
     count = 2**32*hz/refclk
     assert count < 2**32
-    write(((0x82<<4)+0), int(round(count)))
+    write(((0x82<<8)+0), int(round(count)))
 
-write(((0x82<<4)+0),1000000)
+def set_lo_frequency(hz):
+    write(((0x83<<8)+0), int(round(count)))
+
+class EFB_PLL():
+    def __init__(self, dev, efb_wishbone_base_address, ref_clk):
+        self.dev = dev
+        self.base_address = efb_wishbone_base_address
+        self.ref_clk = ref_clk
+
+    def set_fb_div(self, div):
+        int_div = int(math.floor(div))
+        frac_div = int(round((div - int_div) * 65535))
+        assert frac_div <= 65535
+        assert int_div <= 127
+        
+        print(int_div, frac_div)
+        self.dev.write(self.base_address + 6, int_div-1) #MC1_DIVA
+        
+        #CLKOP section Delay value for coarse phase adjustments. For zero delay this value should be equal to the value of MC1_DIVA[6:0].
+        #self.dev.write(self.base_address + 2, int_div-1) #MC1_DELA 
+        
+        self.dev.write(self.base_address + 0, frac_div&0b11111111) #MC1_DIVFBK_FRAC
+        self.dev.write(self.base_address + 1, (frac_div>>8)&0b11111111) 
+        self.dev.write(self.base_address + 5, 1<<7) #MC1_USE_DESI
+
+
+ser = serial.Serial('COM8', 9600)  # open serial port
+refclk = 96e6
+
+dev = Device(ser)
+efb_pll = EFB_PLL(dev, 0x83<<8, refclk)
+efb_pll.set_fb_div(5.88)
+
+#set_carrier_frequency(1e5)
+#set_modulation_frequency(1e1)
+#set_modulation_amount(0)
