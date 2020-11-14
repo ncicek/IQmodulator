@@ -30,5 +30,14 @@ always @(posedge i_clk or posedge i_reset) begin
 	end
 end
 
+/*
+`ifdef COCOTB_SIM
+initial begin
+  $dumpfile ("dds.vcd");
+  $dumpvars (0, dds);
+  #1;
+end
+`endif
+*/
 
 endmodule

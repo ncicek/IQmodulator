@@ -28,6 +28,7 @@ module quarter_wave_sine_lookup(i_clk, i_reset, i_ce, i_phase, o_val);
 	always @(posedge i_clk or posedge i_reset) begin
 		if (i_reset) begin 
 			o_val_pipeline[1] <= {(OW+1){1'b0}};
+			o_val_pipeline[0] <= {(OW+1){1'b0}};
 			phase_negation <= 2'b0;
 			index <= {(PW-2){1'b0}};
 			quarter_wave_sample_register <= {(OW+1){1'b1}};

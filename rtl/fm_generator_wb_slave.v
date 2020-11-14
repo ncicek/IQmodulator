@@ -27,9 +27,9 @@ reg [31:0] addr_space [0:3];
 
 always @(posedge i_clk or posedge i_reset) begin
 	if (i_reset) begin
-		addr_space[REG_CARRIER_CENTER_FREQUENCY] <= 32'd200000000;
-		addr_space[REG_MODULATION_FREQUENCY] <= 32'd66770;
-		addr_space[REG_MODULATION_DEVIATION] <= 32'd4;
+		addr_space[REG_CARRIER_CENTER_FREQUENCY] <= 32'h444444;
+		addr_space[REG_MODULATION_FREQUENCY] <= 32'h1bf;
+		addr_space[REG_MODULATION_DEVIATION] <= 32'd0;
 	end else begin
 		if ((i_wb_stb)&&(i_wb_we)&&(!o_wb_stall)) begin
 			addr_space[i_wb_addr] <= i_wb_data;
@@ -74,12 +74,16 @@ dds #( 	.sine_lookup_width(sine_lookup_width),
 
 reg [sine_lookup_width:0] sine_lookup_width_minus_modulation_deviation_amount, modulation_deviation_amount_minus_sine_lookup_width;
 
+
 always @(posedge i_clk or posedge i_reset) begin
 	if (i_reset) begin
 		carrier_center_increment_offset_ls <= {(accumulator_width-1){1'b0}};
+		carrier_center_increment_offset_rs <= {(accumulator_width-1){1'b0}};
 		carrier_increment <= {(accumulator_width-1){1'b0}};
+		sine_lookup_width_minus_modulation_deviation_amount <= {(sine_lookup_width+1){1'b0}};
+		modulation_deviation_amount_minus_sine_lookup_width <= {(sine_lookup_width+1){1'b0}};
 	end else begin
-		sine_lookup_width_minus_modulation_deviation_amount <= sine_lookup_width - modulation_deviation_amount;
+		sine_lookup_width_minus_modulation_deviation_amount <= sine_lookup_width - modulation_deviation_amount + 1;
 		modulation_deviation_amount_minus_sine_lookup_width <= modulation_deviation_amount - sine_lookup_width;
 		carrier_center_increment_offset_ls <= (modulation_output <<< modulation_deviation_amount_minus_sine_lookup_width);
 		carrier_center_increment_offset_rs <= (modulation_output >>> sine_lookup_width_minus_modulation_deviation_amount);
