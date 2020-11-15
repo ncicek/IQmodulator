@@ -6,7 +6,7 @@ module top(i_ref_clk, i_resetb,
 		i_wbu_uart_rx, o_wbu_uart_tx,
 
         //signal outputs
-        o_baseband, o_local_oscilator_clk
+        o_baseband_i, o_baseband_q, o_local_oscilator_clk
 );
 
 parameter sine_lookup_width = 16,
@@ -18,7 +18,7 @@ parameter sine_lookup_width = 16,
 input wire i_ref_clk, i_resetb;
 input wire i_wbu_uart_rx;
 output wire o_wbu_uart_tx;
-output wire [sine_lookup_width-1:0] o_baseband;
+output wire [sine_lookup_width-1:0] o_baseband_i, o_baseband_q;
 output wire o_local_oscilator_clk;
 
 
@@ -98,10 +98,13 @@ reg wb_smpl_ack;
 //SLAVES:
 //assign o_local_oscilator_clk = clk;
 
-wire signed [sine_lookup_width:0] o_sample;
-wire [sine_lookup_width:0] o_sample_dc_offset;
-assign o_sample_dc_offset = o_sample + 2**(sine_lookup_width);
-assign o_baseband = o_sample_dc_offset[sine_lookup_width:1];
+wire signed [sine_lookup_width:0] o_sample_i, o_sample_q;
+wire [sine_lookup_width:0] o_sample_dc_offset_i, o_sample_dc_offset_q;
+assign o_sample_dc_offset_i = o_sample_i + 2**(sine_lookup_width);
+assign o_sample_dc_offset_q = o_sample_q + 2**(sine_lookup_width);
+
+assign o_baseband_i = o_sample_dc_offset_i[sine_lookup_width:1];
+assign o_baseband_q = o_sample_dc_offset_q[sine_lookup_width:1];
 
 fm_generator_wb_slave #(
 	.sine_lookup_width(sine_lookup_width),
@@ -117,7 +120,8 @@ fm_generator_wb_slave #(
                             .o_wb_ack(wb_fm_ack), 
                             .o_wb_stall(wb_fm_stall), 
                             .o_wb_data(wb_fm_data),
-                            .o_sample(o_sample)
+                            .o_signal_i(o_sample_i),
+							.o_signal_q(o_sample_q)
 );
 
 wire wb_lo_sel, lo_lock, wb_lo_stall;

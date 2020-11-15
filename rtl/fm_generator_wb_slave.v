@@ -3,7 +3,7 @@
 module fm_generator_wb_slave (
     i_clk, i_reset, 
     i_wb_cyc, i_wb_stb, i_wb_we, i_wb_addr, i_wb_data, o_wb_ack, o_wb_stall, o_wb_data,
-    o_sample
+    o_signal_i, o_signal_q
 );
 parameter sine_lookup_width = 16,
 		phase_width = 12,
@@ -16,7 +16,8 @@ input wire [31:0] i_wb_data;
 output reg o_wb_ack;
 output wire o_wb_stall;
 output reg [31:0] o_wb_data;
-output wire signed [sine_lookup_width:0] o_sample;
+output wire signed [(sine_lookup_width-1):0] o_signal_i, o_signal_q;
+wire signed [sine_lookup_width:0] modulated_carier;
 
 
 //Wishbone slave interface
@@ -65,7 +66,7 @@ wire signed [sine_lookup_width:0] modulation_output;
 dds #( 	.sine_lookup_width(sine_lookup_width),
 		.phase_width(phase_width),
 		.accumulator_width(accumulator_width)
-	) carrier(.i_clk(i_clk), .i_reset(i_reset), .i_ce(1'b1), .i_update(1'b1), .i_increment(carrier_increment), .o_sample_i(o_sample), .o_sample_q());
+	) carrier(.i_clk(i_clk), .i_reset(i_reset), .i_ce(1'b1), .i_update(1'b1), .i_increment(carrier_increment), .o_sample_i(modulated_carier), .o_sample_q());
 
 dds #( 	.sine_lookup_width(sine_lookup_width),
 		.phase_width(phase_width),
@@ -95,5 +96,11 @@ always @(posedge i_clk or posedge i_reset) begin
 	end
 end
 
+iq_gen #( .IW(16),
+		.OW(32),
+		.sine_lookup_width(sine_lookup_width),
+		.phase_width(phase_width),
+		.accumulator_width(accumulator_width)
+	) iq_gen_inst(.i_clk(i_clk), .i_reset(i_reset), .i_real_signal(modulated_carier>>>1), .i_ce(1'b1), .i_increment(h4444444), .o_signal_i(o_signal_i), .o_signal_q(o_signal_q));
 
 endmodule
