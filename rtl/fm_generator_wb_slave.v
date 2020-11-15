@@ -65,12 +65,12 @@ wire signed [sine_lookup_width:0] modulation_output;
 dds #( 	.sine_lookup_width(sine_lookup_width),
 		.phase_width(phase_width),
 		.accumulator_width(accumulator_width)
-	) carrier(.i_clk(i_clk), .i_reset(i_reset), .i_ce(1'b1), .i_update(1'b1), .i_increment(carrier_increment), .o_sample(o_sample));
+	) carrier(.i_clk(i_clk), .i_reset(i_reset), .i_ce(1'b1), .i_update(1'b1), .i_increment(carrier_increment), .o_sample_i(o_sample), .o_sample_q());
 
 dds #( 	.sine_lookup_width(sine_lookup_width),
 		.phase_width(phase_width),
 		.accumulator_width(accumulator_width)
-	) modulation(.i_clk(i_clk), .i_reset(i_reset), .i_ce(1'b1), .i_update(1'b1), .i_increment(modulation_increment), .o_sample(modulation_output));
+	) modulation(.i_clk(i_clk), .i_reset(i_reset), .i_ce(1'b1), .i_update(1'b1), .i_increment(modulation_increment), .o_sample_i(modulation_output), .o_sample_q());
 
 reg [sine_lookup_width:0] sine_lookup_width_minus_modulation_deviation_amount, modulation_deviation_amount_minus_sine_lookup_width;
 
