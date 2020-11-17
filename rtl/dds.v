@@ -13,7 +13,7 @@ input wire i_clk, i_reset, i_ce, i_update;
 input wire [(accumulator_width-2):0] i_increment;
 reg [(accumulator_width-2):0] increment;
 
-output wire signed [sine_lookup_width:0] o_sample_i, o_sample_q;
+output wire signed [(sine_lookup_width-1):0] o_sample_i, o_sample_q;
 
 wire [(phase_width-1):0] o_phase;
 

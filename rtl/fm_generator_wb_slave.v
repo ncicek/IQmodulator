@@ -17,8 +17,6 @@ output reg o_wb_ack;
 output wire o_wb_stall;
 output reg [31:0] o_wb_data;
 output wire signed [(sine_lookup_width-1):0] o_signal_i, o_signal_q;
-wire signed [sine_lookup_width:0] modulated_carier;
-
 
 //Wishbone slave interface
 parameter REG_CARRIER_CENTER_FREQUENCY = 0;
@@ -61,12 +59,12 @@ assign carrier_center_increment = addr_space[REG_CARRIER_CENTER_FREQUENCY][(accu
 assign modulation_increment = addr_space[REG_MODULATION_FREQUENCY][(accumulator_width-2):0];
 assign modulation_deviation_amount = addr_space[REG_MODULATION_DEVIATION][sine_lookup_width:0];
 
-wire signed [sine_lookup_width:0] modulation_output;
+wire signed [(sine_lookup_width-1):0] modulation_output;
 
 dds #( 	.sine_lookup_width(sine_lookup_width),
 		.phase_width(phase_width),
 		.accumulator_width(accumulator_width)
-	) carrier(.i_clk(i_clk), .i_reset(i_reset), .i_ce(1'b1), .i_update(1'b1), .i_increment(carrier_increment), .o_sample_i(modulated_carier), .o_sample_q());
+	) carrier(.i_clk(i_clk), .i_reset(i_reset), .i_ce(1'b1), .i_update(1'b1), .i_increment(carrier_increment), .o_sample_i(o_signal_i), .o_sample_q(o_signal_q));
 
 dds #( 	.sine_lookup_width(sine_lookup_width),
 		.phase_width(phase_width),
@@ -95,12 +93,5 @@ always @(posedge i_clk or posedge i_reset) begin
 
 	end
 end
-
-iq_gen #( .IW(16),
-		.OW(32),
-		.sine_lookup_width(sine_lookup_width),
-		.phase_width(phase_width),
-		.accumulator_width(accumulator_width)
-	) iq_gen_inst(.i_clk(i_clk), .i_reset(i_reset), .i_real_signal(modulated_carier>>>1), .i_ce(1'b1), .i_increment(h4444444), .o_signal_i(o_signal_i), .o_signal_q(o_signal_q));
 
 endmodule

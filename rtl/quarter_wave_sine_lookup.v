@@ -6,23 +6,23 @@ module quarter_wave_sine_lookup(i_clk, i_reset, i_ce, i_phase, o_val_i, o_val_q)
 			PW = 12; //phase width
 	input wire i_clk, i_ce, i_reset;
 	input wire [(PW-1):0] i_phase;
-	output wire signed [OW:0] o_val_i, o_val_q;
+	output wire signed [(OW-1):0] o_val_i, o_val_q;
 	
 	reg [(PW-1):0] phase_i;
 	reg [(PW-1):0] phase_q;
 
 
-	reg signed [OW:0] o_val_pipeline_i [0:1];  /* synthesis syn_pipeline = 1 */ 
-	reg signed [OW:0] o_val_pipeline_q [0:1];  /* synthesis syn_pipeline = 1 */ 
+	reg signed [(OW-1):0] o_val_pipeline_i [0:1];  /* synthesis syn_pipeline = 1 */ 
+	reg signed [(OW-1):0] o_val_pipeline_q [0:1];  /* synthesis syn_pipeline = 1 */ 
 	
 	assign o_val_i = o_val_pipeline_i[1];
 	assign o_val_q = o_val_pipeline_q[1];
 
 	//wire [OW-1:0] quarter_wave_sample;
-	reg signed [OW:0] quarter_wave_sample_register_i, quarter_wave_sample_register_q;
+	reg signed [(OW-1):0] quarter_wave_sample_register_i, quarter_wave_sample_register_q;
 	reg [1:0] phase_negation_i, phase_negation_q;
 	
-	reg [(OW-1):0] quarter_wave_table [0:((1<<(PW-2))-1)];
+	reg [(OW-2):0] quarter_wave_table [0:((1<<(PW-2))-1)]; //size is [(OW-2):0] because we reserve MSB to be the sign bit. wave table is OW-1 bits in lenght
 	
 	initial	begin 
 		$readmemh("quarterwav.hex", quarter_wave_table);

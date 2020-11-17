@@ -98,7 +98,7 @@ reg wb_smpl_ack;
 //SLAVES:
 //assign o_local_oscilator_clk = clk;
 
-wire signed [sine_lookup_width:0] o_sample_i, o_sample_q;
+wire signed [sine_lookup_width-1:0] o_sample_i, o_sample_q;
 wire [sine_lookup_width:0] o_sample_dc_offset_i, o_sample_dc_offset_q;
 assign o_sample_dc_offset_i = o_sample_i + 2**(sine_lookup_width);
 assign o_sample_dc_offset_q = o_sample_q + 2**(sine_lookup_width);

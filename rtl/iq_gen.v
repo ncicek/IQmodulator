@@ -5,10 +5,10 @@ module iq_gen (
     i_clk, i_reset, i_real_signal, i_ce, i_increment, o_signal_i, o_signal_q
 	);
 parameter IW = 16, // input signal width
-			OW = 32, //output signal width
             sine_lookup_width = 16,
 		    phase_width = 12,
             accumulator_width = 32;
+localparam	OW = (IW + sine_lookup_width);
 
 input wire i_clk;
 input wire i_reset;
@@ -20,10 +20,15 @@ output wire signed [(OW-1):0] o_signal_i, o_signal_q;
 
 wire signed [(IW-1):0] dds_i, dds_q;
 
-
-complex_mult_ip complex_mult (.DataA_Re(i_real_signal), .DataA_Im(dds_i), .DataB_Re(i_real_signal), 
+`ifdef	synthesis
+	complex_mult_ip complex_mult (.DataA_Re(i_real_signal), .DataA_Im(dds_i), .DataB_Re(i_real_signal), 
     .DataB_Im(dds_q), .Clock(i_clk), .ClkEn(i_ce), .Aclr(1'b0), .Result_Re(o_signal_i), 
     .Result_Im(o_signal_q));
+`else
+	assign o_signal_i = i_real_signal * dds_i;
+	assign o_signal_q = i_real_signal * dds_q;
+`endif
+
 
 dds #( 	.sine_lookup_width(sine_lookup_width),
 		.phase_width(phase_width),
