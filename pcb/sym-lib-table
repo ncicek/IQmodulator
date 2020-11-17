@@ -1,8 +1,6 @@
 (sym_lib_table
   (lib (name MAX5853ETL-T)(type Legacy)(uri ${KIPRJMOD}/MAX5853ETL-T.lib)(options "")(descr ""))
   (lib (name TLV3542IDR)(type Legacy)(uri ${KIPRJMOD}/TLV3542IDR.lib)(options "")(descr ""))
-  (lib (name TPS6735ID)(type Legacy)(uri ${KIPRJMOD}/TPS6735ID.lib)(options "")(descr ""))
   (lib (name TPS72325DBVR)(type Legacy)(uri ${KIPRJMOD}/TPS72325DBVR.lib)(options "")(descr ""))
   (lib (name TLV73325PDBVT)(type Legacy)(uri ${KIPRJMOD}/TLV73325PDBVT.lib)(options "")(descr ""))
-  (lib (name MC33063ADR)(type Legacy)(uri ${KIPRJMOD}/MC33063ADR.lib)(options "")(descr ""))
 )
