@@ -20,11 +20,13 @@ async def fm_generator_wb_slave_tb(dut):
 
     await Timer(10, "ns") #skip the undefined state
 
-    wave = np.empty(shape=100000)
-    for i in range (100000):
+    index = range(10000)
+    columns = ['modulated_carier','o_signal_i','o_signal_q']
+    df = pd.DataFrame(index=index, columns=columns)
+    for i in range (10000):
         #print(dut.o_sample)
-        wave[i] = dut.o_sample.value.signed_integer
+        df['o_signal_i'][i] = dut.o_signal_i.value.signed_integer
+        df['o_signal_q'][i] = dut.o_signal_q.value.signed_integer
         await FallingEdge(dut.i_clk)
 
-    df = pd.DataFrame(data=wave)
     df.to_csv("wave.csv")
