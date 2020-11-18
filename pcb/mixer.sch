@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 6
+Sheet 2 7
 Title ""
 Date ""
 Rev ""
@@ -104,8 +104,6 @@ Wire Wire Line
 Connection ~ 9300 2850
 Wire Wire Line
 	9300 2850 9300 2350
-Wire Wire Line
-	9650 2650 9550 2650
 $Comp
 L Device:Transformer_1P_SS T?
 U 1 1 5FB47488
@@ -839,8 +837,6 @@ Wire Wire Line
 	9300 4100 9300 3600
 Wire Wire Line
 	7550 3700 7400 3700
-Wire Wire Line
-	9650 3900 9550 3900
 $Comp
 L Device:Transformer_1P_SS T?
 U 1 1 5FBF669B
@@ -859,18 +855,18 @@ IF_Q
 Text HLabel 10450 3700 2    50   Output ~ 0
 RF_Q
 Wire Wire Line
-	5900 3850 6200 3850
+	5900 3850 6100 3850
 Wire Wire Line
 	7400 3850 7400 3700
 Connection ~ 5900 3850
 Text Label 7150 3850 0    50   ~ 0
 LO_Q
 Wire Wire Line
-	5900 3400 6200 3400
+	5900 3400 6100 3400
 Wire Wire Line
 	6900 3400 6900 2450
 Wire Wire Line
-	6900 2450 7550 2450
+	6900 2450 7200 2450
 Connection ~ 5900 3400
 Text Label 6950 2450 0    50   ~ 0
 LO_I
@@ -940,7 +936,7 @@ F 3 "~" H 6350 3400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6500 3400 6900 3400
+	6500 3400 6650 3400
 $Comp
 L Device:R R?
 U 1 1 5FC19B22
@@ -955,7 +951,7 @@ F 3 "~" H 6350 3850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6500 3850 7400 3850
+	6500 3850 6650 3850
 $Comp
 L power:GNDA #PWR?
 U 1 1 5FC19E90
@@ -1078,4 +1074,122 @@ F 3 "" H 4250 6350 50  0001 C CNN
 	1    4250 6350
 	-1   0    0    1   
 $EndComp
+$Comp
+L Connector:TestPoint TP50
+U 1 1 60A10865
+P 6100 3400
+F 0 "TP50" H 6158 3518 50  0000 L CNN
+F 1 "TestPoint" H 6158 3427 50  0000 L CNN
+F 2 "" H 6300 3400 50  0001 C CNN
+F 3 "~" H 6300 3400 50  0001 C CNN
+	1    6100 3400
+	1    0    0    -1  
+$EndComp
+Connection ~ 6100 3400
+Wire Wire Line
+	6100 3400 6200 3400
+$Comp
+L Connector:TestPoint TP52
+U 1 1 60A10D60
+P 6650 3400
+F 0 "TP52" H 6708 3518 50  0000 L CNN
+F 1 "TestPoint" H 6708 3427 50  0000 L CNN
+F 2 "" H 6850 3400 50  0001 C CNN
+F 3 "~" H 6850 3400 50  0001 C CNN
+	1    6650 3400
+	1    0    0    -1  
+$EndComp
+Connection ~ 6650 3400
+Wire Wire Line
+	6650 3400 6900 3400
+$Comp
+L Connector:TestPoint TP53
+U 1 1 60A10F72
+P 6650 3850
+F 0 "TP53" H 6592 3876 50  0000 R CNN
+F 1 "TestPoint" H 6592 3967 50  0000 R CNN
+F 2 "" H 6850 3850 50  0001 C CNN
+F 3 "~" H 6850 3850 50  0001 C CNN
+	1    6650 3850
+	-1   0    0    1   
+$EndComp
+Connection ~ 6650 3850
+Wire Wire Line
+	6650 3850 7100 3850
+$Comp
+L Connector:TestPoint TP51
+U 1 1 60A1186F
+P 6100 3850
+F 0 "TP51" H 6042 3876 50  0000 R CNN
+F 1 "TestPoint" H 6042 3967 50  0000 R CNN
+F 2 "" H 6300 3850 50  0001 C CNN
+F 3 "~" H 6300 3850 50  0001 C CNN
+	1    6100 3850
+	-1   0    0    1   
+$EndComp
+Connection ~ 6100 3850
+Wire Wire Line
+	6100 3850 6200 3850
+$Comp
+L Device:R R?
+U 1 1 60A11B69
+P 7200 2600
+AR Path="/60A11B69" Ref="R?"  Part="1" 
+AR Path="/5FB04C67/60A11B69" Ref="R99"  Part="1" 
+F 0 "R99" V 6993 2600 50  0000 C CNN
+F 1 "DNI - 50" V 7084 2600 50  0000 C CNN
+F 2 "" V 7130 2600 50  0001 C CNN
+F 3 "~" H 7200 2600 50  0001 C CNN
+	1    7200 2600
+	-1   0    0    1   
+$EndComp
+Connection ~ 7200 2450
+Wire Wire Line
+	7200 2450 7550 2450
+$Comp
+L Device:R R?
+U 1 1 60A12613
+P 7100 4000
+AR Path="/60A12613" Ref="R?"  Part="1" 
+AR Path="/5FB04C67/60A12613" Ref="R98"  Part="1" 
+F 0 "R98" V 6893 4000 50  0000 C CNN
+F 1 "DNI-50" V 6984 4000 50  0000 C CNN
+F 2 "" V 7030 4000 50  0001 C CNN
+F 3 "~" H 7100 4000 50  0001 C CNN
+	1    7100 4000
+	-1   0    0    1   
+$EndComp
+Connection ~ 7100 3850
+Wire Wire Line
+	7100 3850 7400 3850
+$Comp
+L power:GNDA #PWR?
+U 1 1 60A13202
+P 7100 4150
+AR Path="/60A13202" Ref="#PWR?"  Part="1" 
+AR Path="/5FB04C67/60A13202" Ref="#PWR0181"  Part="1" 
+F 0 "#PWR0181" H 7100 3900 50  0001 C CNN
+F 1 "GNDA" H 7105 3977 50  0000 C CNN
+F 2 "" H 7100 4150 50  0001 C CNN
+F 3 "" H 7100 4150 50  0001 C CNN
+	1    7100 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 60A1375D
+P 7200 2750
+AR Path="/60A1375D" Ref="#PWR?"  Part="1" 
+AR Path="/5FB04C67/60A1375D" Ref="#PWR0182"  Part="1" 
+F 0 "#PWR0182" H 7200 2500 50  0001 C CNN
+F 1 "GNDA" H 7205 2577 50  0000 C CNN
+F 2 "" H 7200 2750 50  0001 C CNN
+F 3 "" H 7200 2750 50  0001 C CNN
+	1    7200 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 2650 9650 2650
+Wire Wire Line
+	9550 3900 9650 3900
 $EndSCHEMATC

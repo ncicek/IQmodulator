@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 6
+Sheet 3 7
 Title ""
 Date ""
 Rev ""
@@ -25,7 +25,7 @@ F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 3350 3400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5300 3400 4800 3400
+	5300 3400 5150 3400
 $Comp
 L Device:L L6
 U 1 1 5FD6EA52
@@ -371,7 +371,7 @@ Wire Wire Line
 	9550 4550 9550 3400
 Connection ~ 9250 4550
 Wire Wire Line
-	6300 3400 9550 3400
+	6300 3400 6400 3400
 Wire Wire Line
 	8950 4250 9250 4250
 Connection ~ 9250 4250
@@ -390,7 +390,7 @@ F 3 "~" H 8900 4000 50  0001 C CNN
 $EndComp
 Connection ~ 8900 4000
 Wire Wire Line
-	8900 4000 9000 4000
+	8900 4000 8950 4000
 Wire Wire Line
 	2450 3400 2750 3400
 $Comp
@@ -418,4 +418,68 @@ $EndComp
 Connection ~ 6050 4000
 Wire Wire Line
 	6050 4000 6400 4000
+$Comp
+L Connector:TestPoint TP54
+U 1 1 609BE548
+P 5150 3400
+F 0 "TP54" H 5208 3518 50  0000 L CNN
+F 1 "TestPoint" H 5208 3427 50  0000 L CNN
+F 2 "" H 5350 3400 50  0001 C CNN
+F 3 "~" H 5350 3400 50  0001 C CNN
+	1    5150 3400
+	1    0    0    -1  
+$EndComp
+Connection ~ 5150 3400
+Wire Wire Line
+	5150 3400 4800 3400
+$Comp
+L Connector:TestPoint TP55
+U 1 1 609BF7FB
+P 6400 3400
+F 0 "TP55" H 6458 3518 50  0000 L CNN
+F 1 "TestPoint" H 6458 3427 50  0000 L CNN
+F 2 "" H 6600 3400 50  0001 C CNN
+F 3 "~" H 6600 3400 50  0001 C CNN
+	1    6400 3400
+	1    0    0    -1  
+$EndComp
+Connection ~ 6400 3400
+Wire Wire Line
+	6400 3400 9550 3400
+$Comp
+L Connector:TestPoint TP56
+U 1 1 609C01D4
+P 6400 3600
+F 0 "TP56" H 6458 3718 50  0000 L CNN
+F 1 "TestPoint" H 6458 3627 50  0000 L CNN
+F 2 "" H 6600 3600 50  0001 C CNN
+F 3 "~" H 6600 3600 50  0001 C CNN
+	1    6400 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP57
+U 1 1 609C0F52
+P 8950 4000
+F 0 "TP57" H 9008 4118 50  0000 L CNN
+F 1 "TestPoint" H 9008 4027 50  0000 L CNN
+F 2 "" H 9150 4000 50  0001 C CNN
+F 3 "~" H 9150 4000 50  0001 C CNN
+	1    8950 4000
+	1    0    0    -1  
+$EndComp
+Connection ~ 8950 4000
+Wire Wire Line
+	8950 4000 9000 4000
+$Comp
+L Connector:TestPoint TP58
+U 1 1 609C48B5
+P 9050 3600
+F 0 "TP58" H 9108 3718 50  0000 L CNN
+F 1 "TestPoint" H 9108 3627 50  0000 L CNN
+F 2 "" H 9250 3600 50  0001 C CNN
+F 3 "~" H 9250 3600 50  0001 C CNN
+	1    9050 3600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
