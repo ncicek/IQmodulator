@@ -24,86 +24,8 @@ F 3 "~" H 10350 2650 50  0001 C CNN
 	1    10350 2650
 	-1   0    0    1   
 $EndComp
-$Comp
-L Device:D_Schottky D1
-U 1 1 5FB47454
-P 9300 2350
-F 0 "D1" H 9300 2567 50  0000 C CNN
-F 1 "D_Schottky" H 9300 2476 50  0000 C CNN
-F 2 "" H 9300 2350 50  0001 C CNN
-F 3 "~" H 9300 2350 50  0001 C CNN
-	1    9300 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Schottky D2
-U 1 1 5FB4745A
-P 9300 2550
-F 0 "D2" H 9300 2333 50  0000 C CNN
-F 1 "D_Schottky" H 9300 2424 50  0000 C CNN
-F 2 "" H 9300 2550 50  0001 C CNN
-F 3 "~" H 9300 2550 50  0001 C CNN
-	1    9300 2550
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:D_Schottky D3
-U 1 1 5FB47460
-P 9300 2750
-F 0 "D3" H 9300 2967 50  0000 C CNN
-F 1 "D_Schottky" H 9300 2876 50  0000 C CNN
-F 2 "" H 9300 2750 50  0001 C CNN
-F 3 "~" H 9300 2750 50  0001 C CNN
-	1    9300 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Schottky D4
-U 1 1 5FB47466
-P 9300 2950
-F 0 "D4" H 9300 2733 50  0000 C CNN
-F 1 "D_Schottky" H 9300 2824 50  0000 C CNN
-F 2 "" H 9300 2950 50  0001 C CNN
-F 3 "~" H 9300 2950 50  0001 C CNN
-	1    9300 2950
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9150 2350 9150 2450
-Wire Wire Line
-	9450 2550 9450 2650
-Wire Wire Line
-	9150 2750 9150 2850
-Wire Wire Line
-	9450 2950 9600 2950
-Wire Wire Line
-	9600 2950 9600 2850
-Wire Wire Line
-	9600 2350 9450 2350
-Wire Wire Line
-	8650 2450 9150 2450
-Connection ~ 9150 2450
-Wire Wire Line
-	9150 2450 9150 2550
-Wire Wire Line
-	8650 2850 9150 2850
-Connection ~ 9150 2850
-Wire Wire Line
-	9150 2850 9150 2950
-Wire Wire Line
-	9950 2450 9500 2450
-Wire Wire Line
-	9500 2450 9500 2650
-Wire Wire Line
-	9500 2650 9450 2650
-Connection ~ 9450 2650
-Wire Wire Line
-	9450 2650 9450 2750
 Wire Wire Line
 	9950 2850 9600 2850
-Connection ~ 9600 2850
-Wire Wire Line
-	9600 2850 9600 2350
 $Comp
 L Device:Transformer_1P_SS T?
 U 1 1 5FB47488
@@ -129,7 +51,7 @@ AR Path="/5FB85325" Ref="U?"  Part="1"
 AR Path="/5FB04C67/5FB85325" Ref="U4"  Part="1" 
 F 0 "U4" H 5200 4320 50  0000 C CNN
 F 1 "TLV3542IDR" H 5200 4229 50  0000 C CNN
-F 2 "SOIC127P599X175-8N" H 5200 3650 50  0001 L BNN
+F 2 "" H 5200 3650 50  0001 L BNN
 F 3 "" H 5200 3650 50  0001 C CNN
 	1    5200 3650
 	1    0    0    -1  
@@ -142,7 +64,7 @@ AR Path="/5FB8532B" Ref="R?"  Part="1"
 AR Path="/5FB04C67/5FB8532B" Ref="R5"  Part="1" 
 F 0 "R5" V 1907 3250 50  0000 C CNN
 F 1 "25" V 1816 3250 50  0000 C CNN
-F 2 "" V 1630 3250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1630 3250 50  0001 C CNN
 F 3 "~" H 1700 3250 50  0001 C CNN
 	1    1700 3250
 	1    0    0    -1  
@@ -155,7 +77,7 @@ AR Path="/5FB85331" Ref="R?"  Part="1"
 AR Path="/5FB04C67/5FB85331" Ref="R4"  Part="1" 
 F 0 "R4" V 1493 2650 50  0000 C CNN
 F 1 "25" V 1584 2650 50  0000 C CNN
-F 2 "" V 1630 2650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1630 2650 50  0001 C CNN
 F 3 "~" H 1700 2650 50  0001 C CNN
 	1    1700 2650
 	-1   0    0    1   
@@ -168,7 +90,7 @@ AR Path="/5FB8533A" Ref="R?"  Part="1"
 AR Path="/5FB04C67/5FB8533A" Ref="R11"  Part="1" 
 F 0 "R11" V 3607 3100 50  0000 C CNN
 F 1 "500" V 3516 3100 50  0000 C CNN
-F 2 "" V 3330 3100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3330 3100 50  0001 C CNN
 F 3 "~" H 3400 3100 50  0001 C CNN
 	1    3400 3100
 	0    -1   -1   0   
@@ -181,7 +103,7 @@ AR Path="/5FB85340" Ref="R?"  Part="1"
 AR Path="/5FB04C67/5FB85340" Ref="R10"  Part="1" 
 F 0 "R10" V 3193 2800 50  0000 C CNN
 F 1 "500" V 3284 2800 50  0000 C CNN
-F 2 "" V 3330 2800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3330 2800 50  0001 C CNN
 F 3 "~" H 3400 2800 50  0001 C CNN
 	1    3400 2800
 	0    1    1    0   
@@ -230,7 +152,7 @@ AR Path="/5FB85358" Ref="C?"  Part="1"
 AR Path="/5FB04C67/5FB85358" Ref="C8"  Part="1" 
 F 0 "C8" H 2065 2996 50  0000 L CNN
 F 1 "85p" H 2065 2905 50  0000 L CNN
-F 2 "" H 1988 2800 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1988 2800 50  0001 C CNN
 F 3 "~" H 1950 2950 50  0001 C CNN
 	1    1950 2950
 	1    0    0    -1  
@@ -243,7 +165,7 @@ AR Path="/5FB8535E" Ref="R?"  Part="1"
 AR Path="/5FB04C67/5FB8535E" Ref="R16"  Part="1" 
 F 0 "R16" V 4943 2650 50  0000 C CNN
 F 1 "1k" V 5034 2650 50  0000 C CNN
-F 2 "" V 5080 2650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5080 2650 50  0001 C CNN
 F 3 "~" H 5150 2650 50  0001 C CNN
 	1    5150 2650
 	0    1    1    0   
@@ -256,7 +178,7 @@ AR Path="/5FB85364" Ref="R?"  Part="1"
 AR Path="/5FB04C67/5FB85364" Ref="R14"  Part="1" 
 F 0 "R14" V 3643 2650 50  0000 C CNN
 F 1 "1k" V 3734 2650 50  0000 C CNN
-F 2 "" V 3780 2650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3780 2650 50  0001 C CNN
 F 3 "~" H 3850 2650 50  0001 C CNN
 	1    3850 2650
 	-1   0    0    1   
@@ -290,7 +212,7 @@ AR Path="/5FB85374" Ref="R?"  Part="1"
 AR Path="/5FB04C67/5FB85374" Ref="R7"  Part="1" 
 F 0 "R7" V 1907 4650 50  0000 C CNN
 F 1 "25" V 1816 4650 50  0000 C CNN
-F 2 "" V 1630 4650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1630 4650 50  0001 C CNN
 F 3 "~" H 1700 4650 50  0001 C CNN
 	1    1700 4650
 	1    0    0    -1  
@@ -303,7 +225,7 @@ AR Path="/5FB8537A" Ref="R?"  Part="1"
 AR Path="/5FB04C67/5FB8537A" Ref="R6"  Part="1" 
 F 0 "R6" V 1493 4050 50  0000 C CNN
 F 1 "25" V 1584 4050 50  0000 C CNN
-F 2 "" V 1630 4050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1630 4050 50  0001 C CNN
 F 3 "~" H 1700 4050 50  0001 C CNN
 	1    1700 4050
 	-1   0    0    1   
@@ -316,7 +238,7 @@ AR Path="/5FB85380" Ref="R?"  Part="1"
 AR Path="/5FB04C67/5FB85380" Ref="R13"  Part="1" 
 F 0 "R13" V 3607 4500 50  0000 C CNN
 F 1 "500" V 3516 4500 50  0000 C CNN
-F 2 "" V 3330 4500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3330 4500 50  0001 C CNN
 F 3 "~" H 3400 4500 50  0001 C CNN
 	1    3400 4500
 	0    -1   -1   0   
@@ -329,7 +251,7 @@ AR Path="/5FB85386" Ref="R?"  Part="1"
 AR Path="/5FB04C67/5FB85386" Ref="R12"  Part="1" 
 F 0 "R12" V 3193 4200 50  0000 C CNN
 F 1 "500" V 3284 4200 50  0000 C CNN
-F 2 "" V 3330 4200 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3330 4200 50  0001 C CNN
 F 3 "~" H 3400 4200 50  0001 C CNN
 	1    3400 4200
 	0    1    1    0   
@@ -378,7 +300,7 @@ AR Path="/5FB8539E" Ref="R?"  Part="1"
 AR Path="/5FB04C67/5FB8539E" Ref="R15"  Part="1" 
 F 0 "R15" V 3643 4050 50  0000 C CNN
 F 1 "1k" V 3734 4050 50  0000 C CNN
-F 2 "" V 3780 4050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3780 4050 50  0001 C CNN
 F 3 "~" H 3850 4050 50  0001 C CNN
 	1    3850 4050
 	-1   0    0    1   
@@ -436,7 +358,7 @@ AR Path="/5FB853BB" Ref="R?"  Part="1"
 AR Path="/5FB04C67/5FB853BB" Ref="R17"  Part="1" 
 F 0 "R17" V 4943 4650 50  0000 C CNN
 F 1 "1k" V 5034 4650 50  0000 C CNN
-F 2 "" V 5080 4650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5080 4650 50  0001 C CNN
 F 3 "~" H 5150 4650 50  0001 C CNN
 	1    5150 4650
 	0    1    1    0   
@@ -495,7 +417,7 @@ AR Path="/5FB853D9" Ref="C?"  Part="1"
 AR Path="/5FB04C67/5FB853D9" Ref="C10"  Part="1" 
 F 0 "C10" H 2665 2996 50  0000 L CNN
 F 1 "187p" H 2665 2905 50  0000 L CNN
-F 2 "" H 2588 2800 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2588 2800 50  0001 C CNN
 F 3 "~" H 2550 2950 50  0001 C CNN
 	1    2550 2950
 	1    0    0    -1  
@@ -520,7 +442,7 @@ AR Path="/5FB85419" Ref="C?"  Part="1"
 AR Path="/5FB04C67/5FB85419" Ref="C9"  Part="1" 
 F 0 "C9" H 2065 4396 50  0000 L CNN
 F 1 "85p" H 2065 4305 50  0000 L CNN
-F 2 "" H 1988 4200 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1988 4200 50  0001 C CNN
 F 3 "~" H 1950 4350 50  0001 C CNN
 	1    1950 4350
 	1    0    0    -1  
@@ -559,7 +481,7 @@ AR Path="/5FB8542B" Ref="C?"  Part="1"
 AR Path="/5FB04C67/5FB8542B" Ref="C11"  Part="1" 
 F 0 "C11" H 2665 4396 50  0000 L CNN
 F 1 "187p" H 2665 4305 50  0000 L CNN
-F 2 "" H 2588 4200 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2588 4200 50  0001 C CNN
 F 3 "~" H 2550 4350 50  0001 C CNN
 	1    2550 4350
 	1    0    0    -1  
@@ -584,7 +506,7 @@ AR Path="/5FB8546B" Ref="C?"  Part="1"
 AR Path="/5FB04C67/5FB8546B" Ref="C17"  Part="1" 
 F 0 "C17" H 5265 4896 50  0000 L CNN
 F 1 "5p" H 5265 4805 50  0000 L CNN
-F 2 "" H 5188 4700 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5188 4700 50  0001 C CNN
 F 3 "~" H 5150 4850 50  0001 C CNN
 	1    5150 4850
 	0    1    1    0   
@@ -611,7 +533,7 @@ AR Path="/5FB8547A" Ref="C?"  Part="1"
 AR Path="/5FB04C67/5FB8547A" Ref="C16"  Part="1" 
 F 0 "C16" H 5265 2246 50  0000 L CNN
 F 1 "5p" H 5265 2155 50  0000 L CNN
-F 2 "" H 5188 2050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5188 2050 50  0001 C CNN
 F 3 "~" H 5150 2200 50  0001 C CNN
 	1    5150 2200
 	0    1    1    0   
@@ -638,7 +560,7 @@ AR Path="/5FB85488" Ref="C?"  Part="1"
 AR Path="/5FB04C67/5FB85488" Ref="C12"  Part="1" 
 F 0 "C12" H 3815 2696 50  0000 L CNN
 F 1 "5p" H 3815 2605 50  0000 L CNN
-F 2 "" H 3738 2500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3738 2500 50  0001 C CNN
 F 3 "~" H 3700 2650 50  0001 C CNN
 	1    3700 2650
 	-1   0    0    1   
@@ -667,7 +589,7 @@ AR Path="/5FB85496" Ref="C?"  Part="1"
 AR Path="/5FB04C67/5FB85496" Ref="C13"  Part="1" 
 F 0 "C13" H 3815 4096 50  0000 L CNN
 F 1 "5p" H 3815 4005 50  0000 L CNN
-F 2 "" H 3738 3900 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3738 3900 50  0001 C CNN
 F 3 "~" H 3700 4050 50  0001 C CNN
 	1    3700 4050
 	-1   0    0    1   
@@ -696,7 +618,7 @@ AR Path="/5FB854A4" Ref="R?"  Part="1"
 AR Path="/5FB04C67/5FB854A4" Ref="R8"  Part="1" 
 F 0 "R8" V 2893 2950 50  0000 C CNN
 F 1 "50" V 2984 2950 50  0000 C CNN
-F 2 "" V 3030 2950 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3030 2950 50  0001 C CNN
 F 3 "~" H 3100 2950 50  0001 C CNN
 	1    3100 2950
 	-1   0    0    1   
@@ -715,7 +637,7 @@ AR Path="/5FB854AE" Ref="R?"  Part="1"
 AR Path="/5FB04C67/5FB854AE" Ref="R9"  Part="1" 
 F 0 "R9" V 2893 4350 50  0000 C CNN
 F 1 "50" V 2984 4350 50  0000 C CNN
-F 2 "" V 3030 4350 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3030 4350 50  0001 C CNN
 F 3 "~" H 3100 4350 50  0001 C CNN
 	1    3100 4350
 	-1   0    0    1   
@@ -756,86 +678,6 @@ F 3 "~" H 10300 4850 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:D_Schottky D5
-U 1 1 5FBF666A
-P 9250 4550
-F 0 "D5" H 9250 4767 50  0000 C CNN
-F 1 "D_Schottky" H 9250 4676 50  0000 C CNN
-F 2 "" H 9250 4550 50  0001 C CNN
-F 3 "~" H 9250 4550 50  0001 C CNN
-	1    9250 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Schottky D6
-U 1 1 5FBF6670
-P 9250 4750
-F 0 "D6" H 9250 4533 50  0000 C CNN
-F 1 "D_Schottky" H 9250 4624 50  0000 C CNN
-F 2 "" H 9250 4750 50  0001 C CNN
-F 3 "~" H 9250 4750 50  0001 C CNN
-	1    9250 4750
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:D_Schottky D7
-U 1 1 5FBF6676
-P 9250 4950
-F 0 "D7" H 9250 5167 50  0000 C CNN
-F 1 "D_Schottky" H 9250 5076 50  0000 C CNN
-F 2 "" H 9250 4950 50  0001 C CNN
-F 3 "~" H 9250 4950 50  0001 C CNN
-	1    9250 4950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Schottky D8
-U 1 1 5FBF667C
-P 9250 5150
-F 0 "D8" H 9250 4933 50  0000 C CNN
-F 1 "D_Schottky" H 9250 5024 50  0000 C CNN
-F 2 "" H 9250 5150 50  0001 C CNN
-F 3 "~" H 9250 5150 50  0001 C CNN
-	1    9250 5150
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9100 4550 9100 4650
-Wire Wire Line
-	9400 4750 9400 4850
-Wire Wire Line
-	9100 4950 9100 5050
-Wire Wire Line
-	9400 5150 9550 5150
-Wire Wire Line
-	9550 5150 9550 5050
-Wire Wire Line
-	9550 4550 9400 4550
-Wire Wire Line
-	8600 4650 9100 4650
-Connection ~ 9100 4650
-Wire Wire Line
-	9100 4650 9100 4750
-Wire Wire Line
-	8600 5050 9100 5050
-Connection ~ 9100 5050
-Wire Wire Line
-	9100 5050 9100 5150
-Wire Wire Line
-	9900 4650 9450 4650
-Wire Wire Line
-	9450 4650 9450 4850
-Wire Wire Line
-	9450 4850 9400 4850
-Connection ~ 9400 4850
-Wire Wire Line
-	9400 4850 9400 4950
-Wire Wire Line
-	9900 5050 9550 5050
-Connection ~ 9550 5050
-Wire Wire Line
-	9550 5050 9550 4550
-$Comp
 L Device:Transformer_1P_SS T?
 U 1 1 5FBF669B
 P 8200 4850
@@ -848,8 +690,6 @@ F 3 "~" H 8200 4850 50  0001 C CNN
 	1    8200 4850
 	1    0    0    -1  
 $EndComp
-Text HLabel 9800 4850 0    50   Input ~ 0
-IF_Q
 Text HLabel 10700 4650 2    50   Output ~ 0
 RF_Q
 Wire Wire Line
@@ -868,7 +708,7 @@ AR Path="/5FC06B7D" Ref="C?"  Part="1"
 AR Path="/5FB04C67/5FC06B7D" Ref="C14"  Part="1" 
 F 0 "C14" H 4365 5746 50  0000 L CNN
 F 1 "0.1u" H 4365 5655 50  0000 L CNN
-F 2 "" H 4288 5550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4288 5550 50  0001 C CNN
 F 3 "~" H 4250 5700 50  0001 C CNN
 	1    4250 5700
 	-1   0    0    1   
@@ -881,7 +721,7 @@ AR Path="/5FC08CAF" Ref="C?"  Part="1"
 AR Path="/5FB04C67/5FC08CAF" Ref="C15"  Part="1" 
 F 0 "C15" H 4365 6146 50  0000 L CNN
 F 1 "0.1u" H 4365 6055 50  0000 L CNN
-F 2 "" H 4288 5950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4288 5950 50  0001 C CNN
 F 3 "~" H 4250 6100 50  0001 C CNN
 	1    4250 6100
 	-1   0    0    1   
@@ -920,7 +760,7 @@ AR Path="/5FC19612" Ref="R?"  Part="1"
 AR Path="/5FB04C67/5FC19612" Ref="R18"  Part="1" 
 F 0 "R18" V 6143 3400 50  0000 C CNN
 F 1 "50" V 6234 3400 50  0000 C CNN
-F 2 "" V 6280 3400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6280 3400 50  0001 C CNN
 F 3 "~" H 6350 3400 50  0001 C CNN
 	1    6350 3400
 	0    1    1    0   
@@ -935,7 +775,7 @@ AR Path="/5FC19B22" Ref="R?"  Part="1"
 AR Path="/5FB04C67/5FC19B22" Ref="R19"  Part="1" 
 F 0 "R19" V 6143 3850 50  0000 C CNN
 F 1 "50" V 6234 3850 50  0000 C CNN
-F 2 "" V 6280 3850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6280 3850 50  0001 C CNN
 F 3 "~" H 6350 3850 50  0001 C CNN
 	1    6350 3850
 	0    1    1    0   
@@ -1128,7 +968,7 @@ AR Path="/60A11B69" Ref="R?"  Part="1"
 AR Path="/5FB04C67/60A11B69" Ref="R99"  Part="1" 
 F 0 "R99" V 6893 3250 50  0000 C CNN
 F 1 "DNI - 50" V 6984 3250 50  0000 C CNN
-F 2 "" V 7030 3250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7030 3250 50  0001 C CNN
 F 3 "~" H 7100 3250 50  0001 C CNN
 	1    7100 3250
 	-1   0    0    1   
@@ -1141,7 +981,7 @@ AR Path="/60A12613" Ref="R?"  Part="1"
 AR Path="/5FB04C67/60A12613" Ref="R98"  Part="1" 
 F 0 "R98" V 6743 4000 50  0000 C CNN
 F 1 "DNI-50" V 6834 4000 50  0000 C CNN
-F 2 "" V 6880 4000 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6880 4000 50  0001 C CNN
 F 3 "~" H 6950 4000 50  0001 C CNN
 	1    6950 4000
 	-1   0    0    1   
@@ -1282,7 +1122,7 @@ AR Path="/5FBFDAEC" Ref="C?"  Part="1"
 AR Path="/5FB04C67/5FBFDAEC" Ref="C65"  Part="1" 
 F 0 "C65" H 5165 5746 50  0000 L CNN
 F 1 "10u" H 5165 5655 50  0000 L CNN
-F 2 "" H 5088 5550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5088 5550 50  0001 C CNN
 F 3 "~" H 5050 5700 50  0001 C CNN
 	1    5050 5700
 	-1   0    0    1   
@@ -1295,7 +1135,7 @@ AR Path="/5FBFDAF2" Ref="C?"  Part="1"
 AR Path="/5FB04C67/5FBFDAF2" Ref="C66"  Part="1" 
 F 0 "C66" H 5165 6146 50  0000 L CNN
 F 1 "10u" H 5165 6055 50  0000 L CNN
-F 2 "" H 5088 5950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5088 5950 50  0001 C CNN
 F 3 "~" H 5050 6100 50  0001 C CNN
 	1    5050 6100
 	-1   0    0    1   
@@ -1348,4 +1188,120 @@ F 3 "" H 5050 6350 50  0001 C CNN
 	1    5050 6350
 	-1   0    0    1   
 $EndComp
+$Comp
+L Device:D_Schottky_x2_Serial_AKC D2
+U 1 1 5FBCC6CF
+P 9050 2650
+F 0 "D2" V 9096 2730 50  0000 L CNN
+F 1 "BAT15-04W" V 9005 2730 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70_Handsoldering" H 9050 2650 50  0001 C CNN
+F 3 "https://www.infineon.com/cms/en/product/rf-wireless-control/rf-diode/rf-mixer-and-detector-schottky-diode/bat15-04w/" H 9050 2650 50  0001 C CNN
+	1    9050 2650
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9400 2350 9200 2350
+Wire Wire Line
+	9400 2950 9200 2950
+$Comp
+L Device:D_Schottky_x2_Serial_AKC D4
+U 1 1 5FBCAA52
+P 9400 2650
+F 0 "D4" V 9354 2730 50  0000 L CNN
+F 1 "BAT15-04W" V 9445 2730 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70_Handsoldering" H 9400 2650 50  0001 C CNN
+F 3 "https://www.infineon.com/cms/en/product/rf-wireless-control/rf-diode/rf-mixer-and-detector-schottky-diode/bat15-04w/" H 9400 2650 50  0001 C CNN
+	1    9400 2650
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	8650 2450 8850 2450
+Wire Wire Line
+	8850 2450 8850 2200
+Wire Wire Line
+	8850 2200 9200 2200
+Wire Wire Line
+	9200 2200 9200 2350
+Connection ~ 9200 2350
+Wire Wire Line
+	9200 2350 9050 2350
+Wire Wire Line
+	8650 2850 8850 2850
+Wire Wire Line
+	8850 2850 8850 3050
+Wire Wire Line
+	8850 3050 9200 3050
+Wire Wire Line
+	9200 3050 9200 2950
+Connection ~ 9200 2950
+Wire Wire Line
+	9200 2950 9050 2950
+Wire Wire Line
+	9950 2450 8900 2450
+Wire Wire Line
+	8900 2450 8900 2600
+Wire Wire Line
+	8900 2600 8850 2600
+Wire Wire Line
+	8850 2600 8850 2650
+Wire Wire Line
+	9600 2850 9600 2650
+Text HLabel 9800 4850 0    50   Input ~ 0
+IF_Q
+$Comp
+L Device:D_Schottky_x2_Serial_AKC D1
+U 1 1 5FC2ECB9
+P 9000 4850
+F 0 "D1" V 9046 4930 50  0000 L CNN
+F 1 "BAT15-04W" V 8955 4930 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70_Handsoldering" H 9000 4850 50  0001 C CNN
+F 3 "https://www.infineon.com/cms/en/product/rf-wireless-control/rf-diode/rf-mixer-and-detector-schottky-diode/bat15-04w/" H 9000 4850 50  0001 C CNN
+	1    9000 4850
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9350 4550 9150 4550
+Wire Wire Line
+	9350 5150 9150 5150
+$Comp
+L Device:D_Schottky_x2_Serial_AKC D3
+U 1 1 5FC2ECC1
+P 9350 4850
+F 0 "D3" V 9304 4930 50  0000 L CNN
+F 1 "BAT15-04W" V 9395 4930 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70_Handsoldering" H 9350 4850 50  0001 C CNN
+F 3 "https://www.infineon.com/cms/en/product/rf-wireless-control/rf-diode/rf-mixer-and-detector-schottky-diode/bat15-04w/" H 9350 4850 50  0001 C CNN
+	1    9350 4850
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	9150 4400 9150 4550
+Connection ~ 9150 4550
+Wire Wire Line
+	9150 4550 9000 4550
+Wire Wire Line
+	9150 5250 9150 5150
+Connection ~ 9150 5150
+Wire Wire Line
+	9150 5150 9000 5150
+Wire Wire Line
+	9900 4650 8850 4650
+Wire Wire Line
+	8850 4650 8850 4800
+Wire Wire Line
+	8850 4800 8800 4800
+Wire Wire Line
+	9550 4850 9550 5050
+Wire Wire Line
+	9550 5050 9900 5050
+Wire Wire Line
+	8600 4400 8600 4650
+Wire Wire Line
+	8600 4400 9150 4400
+Wire Wire Line
+	8600 5250 8600 5050
+Wire Wire Line
+	8600 5250 9150 5250
+Wire Wire Line
+	8800 4800 8800 4850
 $EndSCHEMATC
