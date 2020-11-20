@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:AudioJack3 J18
+L Connector:AudioJack3 J20
 U 1 1 60D199BF
 P 1750 2050
-F 0 "J18" H 1732 2375 50  0000 C CNN
+F 0 "J20" H 1732 2375 50  0000 C CNN
 F 1 "AudioJack3" H 1732 2284 50  0000 C CNN
 F 2 "" H 1750 2050 50  0001 C CNN
 F 3 "~" H 1750 2050 50  0001 C CNN
