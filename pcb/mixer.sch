@@ -22,7 +22,7 @@ F 1 "Transformer_1P_SS" H 10350 2316 50  0000 C CNN
 F 2 "iq_siggen:trifilar_wound_toroidal_rf_transformer" H 10350 2650 50  0001 C CNN
 F 3 "~" H 10350 2650 50  0001 C CNN
 	1    10350 2650
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	9950 2850 9600 2850
