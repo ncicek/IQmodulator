@@ -18,9 +18,9 @@ L Diode:1N5822 D9
 U 1 1 5FD6BB54
 P 3350 3400
 F 0 "D9" H 3350 3183 50  0000 C CNN
-F 1 "1N5823" H 3350 3274 50  0000 C CNN
-F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 3350 3225 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 3350 3400 50  0001 C CNN
+F 1 "MBRS540T3G" H 3350 3274 50  0000 C CNN
+F 2 "Diode_SMD:D_SMB_Handsoldering" H 3350 3225 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/MBRS540T3-D.PDF" H 3350 3400 50  0001 C CNN
 	1    3350 3400
 	-1   0    0    1   
 $EndComp
@@ -44,7 +44,7 @@ L Device:CP C31
 U 1 1 5FD71007
 P 6950 3750
 F 0 "C31" H 7068 3796 50  0000 L CNN
-F 1 "220u" H 7068 3705 50  0000 L CNN
+F 1 "220u tantalum 25V" H 7068 3705 50  0000 L CNN
 F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-20_Kemet-V_Pad2.25x2.55mm_HandSolder" H 6988 3600 50  0001 C CNN
 F 3 "~" H 6950 3750 50  0001 C CNN
 	1    6950 3750
@@ -98,9 +98,9 @@ L Diode:1N5822 D10
 U 1 1 5FD8306A
 P 6400 3800
 F 0 "D10" V 6354 3880 50  0000 L CNN
-F 1 "1N5825" V 6445 3880 50  0000 L CNN
-F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 6400 3625 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 6400 3800 50  0001 C CNN
+F 1 "MBRS540T3G" V 6445 3880 50  0000 L CNN
+F 2 "Diode_SMD:D_SMB_Handsoldering" H 6400 3625 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/MBRS540T3-D.PDF" H 6400 3800 50  0001 C CNN
 	1    6400 3800
 	0    1    1    0   
 $EndComp
@@ -114,7 +114,7 @@ L Device:CP C28
 U 1 1 5FD8CD2C
 P 3800 3550
 F 0 "C28" H 3918 3596 50  0000 L CNN
-F 1 "220u" H 3918 3505 50  0000 L CNN
+F 1 "100u 25V tantalum" H 3918 3505 50  0000 L CNN
 F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-20_Kemet-V_Pad2.25x2.55mm_HandSolder" H 3838 3400 50  0001 C CNN
 F 3 "~" H 3800 3550 50  0001 C CNN
 	1    3800 3550
@@ -129,17 +129,6 @@ F 1 "GNDPWR" H 4154 3546 50  0000 C CNN
 F 2 "" H 4150 3650 50  0001 C CNN
 F 3 "" H 4150 3650 50  0001 C CNN
 	1    4150 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDPWR #PWR068
-U 1 1 5FD8CD38
-P 3800 3700
-F 0 "#PWR068" H 3800 3500 50  0001 C CNN
-F 1 "GNDPWR" H 3804 3546 50  0000 C CNN
-F 2 "" H 3800 3650 50  0001 C CNN
-F 3 "" H 3800 3650 50  0001 C CNN
-	1    3800 3700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -158,19 +147,6 @@ Vi(5V)
 Wire Wire Line
 	3800 3400 4150 3400
 Connection ~ 4150 3400
-$Comp
-L Device:L_Core_Ferrite L?
-U 1 1 5FD8CD48
-P 2900 3400
-AR Path="/5FD8CD48" Ref="L?"  Part="1" 
-AR Path="/5FC35984/5FD8CD48" Ref="L5"  Part="1" 
-F 0 "L5" V 3125 3400 50  0000 C CNN
-F 1 "L_Core_Ferrite" V 3034 3400 50  0000 C CNN
-F 2 "" H 2900 3400 50  0001 C CNN
-F 3 "~" H 2900 3400 50  0001 C CNN
-	1    2900 3400
-	0    -1   -1   0   
-$EndComp
 Connection ~ 3800 3400
 Wire Wire Line
 	5800 3800 5800 4000
@@ -204,7 +180,7 @@ L Device:CP C33
 U 1 1 5FDC37D7
 P 8150 3800
 F 0 "C33" H 8268 3846 50  0000 L CNN
-F 1 "220u" H 8268 3755 50  0000 L CNN
+F 1 "220u tantalum 25V" H 8268 3755 50  0000 L CNN
 F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-20_Kemet-V_Pad2.25x2.55mm_HandSolder" H 8188 3650 50  0001 C CNN
 F 3 "~" H 8150 3800 50  0001 C CNN
 	1    8150 3800
@@ -235,17 +211,6 @@ Wire Wire Line
 Connection ~ 7350 3600
 Wire Wire Line
 	7350 4000 7700 4000
-$Comp
-L Diode:1N5400 D11
-U 1 1 5FDD5015
-P 7700 3800
-F 0 "D11" V 7654 3880 50  0000 L CNN
-F 1 "1N5400" V 7745 3880 50  0000 L CNN
-F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 7700 3625 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88516/1n5400.pdf" H 7700 3800 50  0001 C CNN
-	1    7700 3800
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	7700 3650 7700 3600
 Connection ~ 7700 3600
@@ -314,9 +279,7 @@ Connection ~ 4800 3400
 Wire Wire Line
 	4800 3700 4800 3750
 Wire Wire Line
-	3500 3400 3800 3400
-Wire Wire Line
-	3200 3400 3050 3400
+	3500 3400 3550 3400
 Wire Wire Line
 	4150 3400 4800 3400
 Wire Wire Line
@@ -482,4 +445,58 @@ F 3 "~" H 9250 3600 50  0001 C CNN
 	1    9050 3600
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB8
+U 1 1 5FBBC313
+P 2850 3400
+F 0 "FB8" V 2613 3400 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 2704 3400 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder" V 2780 3400 50  0001 C CNN
+F 3 "~" H 2850 3400 50  0001 C CNN
+	1    2850 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2950 3400 3200 3400
+Wire Wire Line
+	3800 3700 3800 3800
+Wire Wire Line
+	3800 4350 5150 4350
+Connection ~ 5150 4350
+$Comp
+L Diode:1N5822 D11
+U 1 1 5FBBE411
+P 7700 3800
+F 0 "D11" V 7654 3880 50  0000 L CNN
+F 1 "MBRS540T3G" V 7745 3880 50  0000 L CNN
+F 2 "Diode_SMD:D_SMB_Handsoldering" H 7700 3625 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/MBRS540T3-D.PDF" H 7700 3800 50  0001 C CNN
+	1    7700 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP C90
+U 1 1 5FBC18F7
+P 3550 3550
+F 0 "C90" H 3668 3596 50  0000 L CNN
+F 1 "470u 50v electro" H 3668 3505 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D10.0mm_H20.0mm_P5.00mm" H 3588 3400 50  0001 C CNN
+F 3 "~" H 3550 3550 50  0001 C CNN
+	1    3550 3550
+	1    0    0    -1  
+$EndComp
+Connection ~ 3550 3400
+Wire Wire Line
+	3550 3400 3800 3400
+Wire Wire Line
+	3550 3700 3550 3800
+Wire Wire Line
+	3550 3800 3800 3800
+Connection ~ 3800 3800
+Wire Wire Line
+	3800 3800 3800 4350
+Text Label 7050 4000 0    50   ~ 0
+-5VO
+Text Label 8350 4000 0    50   ~ 0
+-5VO_filtered
 $EndSCHEMATC
