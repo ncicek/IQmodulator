@@ -820,42 +820,10 @@ F3 "50R_IN_N" I L 2250 6300 50
 F4 "50R_OUT_N" O R 3700 6300 50 
 F5 "50R_OUT_P" O R 3700 6200 50 
 $EndSheet
-Wire Wire Line
-	7850 5350 8400 5350
-Wire Wire Line
-	7850 5800 8400 5800
 Text HLabel 8900 5350 2    50   Output ~ 0
 I_DAC_OUT
 Text HLabel 8900 5800 2    50   Output ~ 0
 Q_DAC_OUT
-$Comp
-L Connector:TestPoint TP54
-U 1 1 5FC2A50D
-P 8400 5350
-F 0 "TP54" H 8458 5468 50  0000 L CNN
-F 1 "TestPoint" H 8458 5377 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 8600 5350 50  0001 C CNN
-F 3 "~" H 8600 5350 50  0001 C CNN
-	1    8400 5350
-	1    0    0    -1  
-$EndComp
-Connection ~ 8400 5350
-Wire Wire Line
-	8400 5350 8900 5350
-$Comp
-L Connector:TestPoint TP55
-U 1 1 5FC2B18F
-P 8400 5800
-F 0 "TP55" H 8458 5918 50  0000 L CNN
-F 1 "TestPoint" H 8458 5827 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 8600 5800 50  0001 C CNN
-F 3 "~" H 8600 5800 50  0001 C CNN
-	1    8400 5800
-	1    0    0    -1  
-$EndComp
-Connection ~ 8400 5800
-Wire Wire Line
-	8400 5800 8900 5800
 $Comp
 L Connector:TestPoint TP35
 U 1 1 5FC2BBDD
@@ -1895,36 +1863,6 @@ F 3 "~" H 9700 2050 50  0001 C CNN
 $EndComp
 $Comp
 L Device:C C?
-U 1 1 5FC7FF51
-P 9150 2900
-AR Path="/5FC7FF51" Ref="C?"  Part="1" 
-AR Path="/5FB3742F/5FC7FF51" Ref="C47"  Part="1" 
-F 0 "C47" H 9265 2946 50  0000 L CNN
-F 1 "0.1u" H 9265 2855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9188 2750 50  0001 C CNN
-F 3 "~" H 9150 2900 50  0001 C CNN
-	1    9150 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9150 2750 9150 2600
-$Comp
-L Device:C C?
-U 1 1 5FC886FD
-P 9400 2900
-AR Path="/5FC886FD" Ref="C?"  Part="1" 
-AR Path="/5FB3742F/5FC886FD" Ref="C50"  Part="1" 
-F 0 "C50" H 9515 2946 50  0000 L CNN
-F 1 "0.1u" H 9515 2855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9438 2750 50  0001 C CNN
-F 3 "~" H 9400 2900 50  0001 C CNN
-	1    9400 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9400 2750 9400 2600
-$Comp
-L Device:C C?
 U 1 1 5FC910BC
 P 9700 2900
 AR Path="/5FC910BC" Ref="C?"  Part="1" 
@@ -1939,12 +1877,6 @@ $EndComp
 Wire Wire Line
 	9700 2750 9700 2600
 Connection ~ 9700 2600
-Wire Wire Line
-	9700 2600 9400 2600
-Connection ~ 9400 2600
-Wire Wire Line
-	9400 2600 9150 2600
-Connection ~ 9150 2600
 Connection ~ 9150 1750
 Connection ~ 9400 1750
 Wire Wire Line
@@ -1978,32 +1910,6 @@ F 1 "GNDD" H 9704 2895 50  0000 C CNN
 F 2 "" H 9700 3050 50  0001 C CNN
 F 3 "" H 9700 3050 50  0001 C CNN
 	1    9700 3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDD #PWR?
-U 1 1 5FCC9D7A
-P 9400 3050
-AR Path="/5FCC9D7A" Ref="#PWR?"  Part="1" 
-AR Path="/5FB3742F/5FCC9D7A" Ref="#PWR095"  Part="1" 
-F 0 "#PWR095" H 9400 2800 50  0001 C CNN
-F 1 "GNDD" H 9404 2895 50  0000 C CNN
-F 2 "" H 9400 3050 50  0001 C CNN
-F 3 "" H 9400 3050 50  0001 C CNN
-	1    9400 3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDD #PWR?
-U 1 1 5FCCA15D
-P 9150 3050
-AR Path="/5FCCA15D" Ref="#PWR?"  Part="1" 
-AR Path="/5FB3742F/5FCCA15D" Ref="#PWR092"  Part="1" 
-F 0 "#PWR092" H 9150 2800 50  0001 C CNN
-F 1 "GNDD" H 9154 2895 50  0000 C CNN
-F 2 "" H 9150 3050 50  0001 C CNN
-F 3 "" H 9150 3050 50  0001 C CNN
-	1    9150 3050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2084,8 +1990,6 @@ F 3 "~" H 8700 2600 50  0001 C CNN
 	1    8700 2600
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8800 2600 9150 2600
 $Comp
 L Device:Ferrite_Bead_Small FB6
 U 1 1 5FCFDED9
@@ -2177,12 +2081,6 @@ F 3 "~" H 8700 4750 50  0001 C CNN
 	1    8700 4750
 	-1   0    0    1   
 $EndComp
-Wire Bus Line
-	5450 3350 5450 3600
-Wire Bus Line
-	2450 1250 2450 2150
-Wire Bus Line
-	2450 2250 2450 3350
 Text Label 4700 4750 0    50   ~ 0
 I_F_P
 Text Label 4700 5050 0    50   ~ 0
@@ -2199,4 +2097,16 @@ Text Label 5550 6250 0    50   ~ 0
 Q_FB_P
 Text Label 5550 6350 0    50   ~ 0
 Q_FB_N
+Wire Wire Line
+	7850 5350 8900 5350
+Wire Wire Line
+	7850 5800 8900 5800
+Wire Wire Line
+	8800 2600 9700 2600
+Wire Bus Line
+	5450 3350 5450 3600
+Wire Bus Line
+	2450 1250 2450 2150
+Wire Bus Line
+	2450 2250 2450 3350
 $EndSCHEMATC

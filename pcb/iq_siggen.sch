@@ -394,8 +394,6 @@ F7 "~CLK" I L 3050 5750 50
 F8 "CLK" I L 3050 5650 50 
 $EndSheet
 Wire Wire Line
-	4350 5600 4500 5600
-Wire Wire Line
 	5750 5600 5750 5550
 Wire Wire Line
 	5750 5550 6150 5550
@@ -413,7 +411,7 @@ U 1 1 5FD75D0C
 P 9900 5750
 F 0 "J11" H 10000 5725 50  0000 L CNN
 F 1 "Conn_Coaxial" H 10000 5634 50  0000 L CNN
-F 2 "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount" H 9900 5750 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount" H 9900 5750 50  0001 C CNN
 F 3 " ~" H 9900 5750 50  0001 C CNN
 	1    9900 5750
 	1    0    0    -1  
@@ -501,36 +499,6 @@ $EndComp
 Connection ~ 7050 5950
 Wire Wire Line
 	7050 5950 6950 5950
-Wire Wire Line
-	5300 5600 5500 5600
-$Comp
-L Connector:TestPoint TP12
-U 1 1 5FDF24D5
-P 5500 5600
-F 0 "TP12" H 5558 5718 50  0000 L CNN
-F 1 "TestPoint" H 5558 5627 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5700 5600 50  0001 C CNN
-F 3 "~" H 5700 5600 50  0001 C CNN
-	1    5500 5600
-	1    0    0    -1  
-$EndComp
-Connection ~ 5500 5600
-Wire Wire Line
-	5500 5600 5750 5600
-$Comp
-L Connector:TestPoint TP13
-U 1 1 5FDF2A8E
-P 5650 5700
-F 0 "TP13" H 5708 5818 50  0000 L CNN
-F 1 "TestPoint" H 5708 5727 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5850 5700 50  0001 C CNN
-F 3 "~" H 5850 5700 50  0001 C CNN
-	1    5650 5700
-	1    0    0    -1  
-$EndComp
-Connection ~ 5650 5700
-Wire Wire Line
-	5650 5700 5750 5700
 $Comp
 L Device:C C7
 U 1 1 5FDF8009
@@ -570,7 +538,7 @@ U 1 1 5FE28506
 P 8050 1200
 F 0 "J10" H 8107 1517 50  0000 C CNN
 F 1 "Barrel_Jack_MountingPin" H 8107 1426 50  0000 C CNN
-F 2 "" H 8100 1160 50  0001 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 8100 1160 50  0001 C CNN
 F 3 "~" H 8100 1160 50  0001 C CNN
 	1    8050 1200
 	1    0    0    -1  
@@ -637,7 +605,7 @@ Wire Wire Line
 Wire Wire Line
 	5800 5650 5800 6600
 Wire Wire Line
-	6100 5750 5850 5750
+	6150 5750 5850 5750
 Wire Wire Line
 	5850 5750 5850 6650
 Wire Wire Line
@@ -2015,7 +1983,7 @@ U 1 1 6081E40B
 P 6700 3550
 F 0 "J8" H 6800 3525 50  0000 L CNN
 F 1 "Conn_Coaxial" H 6800 3434 50  0000 L CNN
-F 2 "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount" H 6700 3550 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount" H 6700 3550 50  0001 C CNN
 F 3 " ~" H 6700 3550 50  0001 C CNN
 	1    6700 3550
 	1    0    0    -1  
@@ -2137,7 +2105,7 @@ U 1 1 60998D6A
 P 6700 4300
 F 0 "J9" H 6800 4275 50  0000 L CNN
 F 1 "Conn_Coaxial" H 6800 4184 50  0000 L CNN
-F 2 "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount" H 6700 4300 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount" H 6700 4300 50  0001 C CNN
 F 3 " ~" H 6700 4300 50  0001 C CNN
 	1    6700 4300
 	1    0    0    -1  
@@ -2697,28 +2665,6 @@ VCCIO1
 Text Label 1150 1100 0    50   ~ 0
 VCCIO0
 $Comp
-L Connector:TestPoint TP11
-U 1 1 5FFAD275
-P 4650 1150
-F 0 "TP11" H 4708 1268 50  0000 L CNN
-F 1 "TestPoint" H 4708 1177 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4850 1150 50  0001 C CNN
-F 3 "~" H 4850 1150 50  0001 C CNN
-	1    4650 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP4
-U 1 1 5FF50438
-P 2200 1100
-F 0 "TP4" H 2258 1218 50  0000 L CNN
-F 1 "TestPoint" H 2258 1127 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 2400 1100 50  0001 C CNN
-F 3 "~" H 2400 1100 50  0001 C CNN
-	1    2200 1100
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GNDD #PWR021
 U 1 1 60B48D9B
 P 7500 2250
@@ -2838,7 +2784,7 @@ U 1 1 60D1C9E5
 P 5000 6100
 F 0 "J6" H 5100 6075 50  0000 L CNN
 F 1 "Conn_Coaxial" H 5100 5984 50  0000 L CNN
-F 2 "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount" H 5000 6100 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount" H 5000 6100 50  0001 C CNN
 F 3 " ~" H 5000 6100 50  0001 C CNN
 	1    5000 6100
 	1    0    0    -1  
@@ -2860,7 +2806,7 @@ U 1 1 60D2CE63
 P 4750 5600
 F 0 "JP1" V 4704 5668 50  0000 L CNN
 F 1 "SolderJumper_3_Open" V 4795 5668 50  0000 L CNN
-F 2 "" H 4750 5600 50  0001 C CNN
+F 2 "iq_siggen:50ohm_solder_jumper" H 4750 5600 50  0001 C CNN
 F 3 "~" H 4750 5600 50  0001 C CNN
 	1    4750 5600
 	0    1    1    0   
@@ -2871,68 +2817,18 @@ U 1 1 60D2EFCB
 P 5050 5700
 F 0 "JP2" V 5004 5768 50  0000 L CNN
 F 1 "SolderJumper_3_Open" V 5095 5768 50  0000 L CNN
-F 2 "" H 5050 5700 50  0001 C CNN
+F 2 "iq_siggen:50ohm_solder_jumper" H 5050 5700 50  0001 C CNN
 F 3 "~" H 5050 5700 50  0001 C CNN
 	1    5050 5700
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:R R33
-U 1 1 60D6ED28
-P 4500 5850
-F 0 "R33" V 4707 5850 50  0000 C CNN
-F 1 "DNI-50" V 4616 5850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4430 5850 50  0001 C CNN
-F 3 "~" H 4500 5850 50  0001 C CNN
-	1    4500 5850
-	1    0    0    -1  
-$EndComp
-Connection ~ 4500 5700
-Wire Wire Line
-	4500 5700 4900 5700
-$Comp
-L power:GNDA #PWR05
-U 1 1 60D6F587
-P 4500 6000
-F 0 "#PWR05" H 4500 5750 50  0001 C CNN
-F 1 "GNDA" H 4505 5827 50  0000 C CNN
-F 2 "" H 4500 6000 50  0001 C CNN
-F 3 "" H 4500 6000 50  0001 C CNN
-	1    4500 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R32
-U 1 1 60D7105F
-P 4500 5450
-F 0 "R32" V 4707 5450 50  0000 C CNN
-F 1 "DNI-50" V 4616 5450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4430 5450 50  0001 C CNN
-F 3 "~" H 4500 5450 50  0001 C CNN
-	1    4500 5450
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GNDA #PWR04
-U 1 1 60D71065
-P 4500 5300
-F 0 "#PWR04" H 4500 5050 50  0001 C CNN
-F 1 "GNDA" H 4505 5127 50  0000 C CNN
-F 2 "" H 4500 5300 50  0001 C CNN
-F 3 "" H 4500 5300 50  0001 C CNN
-	1    4500 5300
-	-1   0    0    1   
-$EndComp
-Connection ~ 4500 5600
-Wire Wire Line
-	4500 5600 4600 5600
 $Comp
 L Connector:Conn_Coaxial J7
 U 1 1 60E0C49E
 P 5400 6100
 F 0 "J7" H 5500 6075 50  0000 L CNN
 F 1 "Conn_Coaxial" H 5500 5984 50  0000 L CNN
-F 2 "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount" H 5400 6100 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount" H 5400 6100 50  0001 C CNN
 F 3 " ~" H 5400 6100 50  0001 C CNN
 	1    5400 6100
 	1    0    0    -1  
@@ -2963,8 +2859,6 @@ Wire Wire Line
 Wire Wire Line
 	5200 5500 5200 5700
 Wire Wire Line
-	5200 5700 5650 5700
-Wire Wire Line
 	5050 5500 5200 5500
 $Comp
 L Connector:Conn_01x01_Male J12
@@ -2988,8 +2882,6 @@ Wire Wire Line
 	4000 5500 4300 5500
 Wire Wire Line
 	4300 5500 4300 5700
-Wire Wire Line
-	4300 5700 4500 5700
 Text Label 4750 6000 0    50   ~ 0
 I_OUT
 Text Label 5200 6000 0    50   ~ 0
@@ -2998,6 +2890,14 @@ Text Label 8950 5750 0    50   ~ 0
 RF_LP_FILTERED_OUT
 Text Label 8050 5750 0    50   ~ 0
 RF_OUT
+Wire Wire Line
+	5300 5600 5750 5600
+Wire Wire Line
+	5200 5700 5750 5700
+Wire Wire Line
+	4350 5600 4600 5600
+Wire Wire Line
+	4300 5700 4900 5700
 Wire Bus Line
 	2500 3650 2500 5500
 Wire Bus Line

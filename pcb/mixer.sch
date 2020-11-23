@@ -939,7 +939,7 @@ U 1 1 5FB8449D
 P 6500 2250
 F 0 "J18" H 6428 2488 50  0000 C CNN
 F 1 "Conn_Coaxial" H 6428 2397 50  0000 C CNN
-F 2 "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount" H 6500 2250 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount" H 6500 2250 50  0001 C CNN
 F 3 " ~" H 6500 2250 50  0001 C CNN
 	1    6500 2250
 	-1   0    0    -1  
@@ -994,7 +994,7 @@ U 1 1 5FBE8678
 P 6900 5100
 F 0 "J19" H 6828 5338 50  0000 C CNN
 F 1 "Conn_Coaxial" H 6828 5247 50  0000 C CNN
-F 2 "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount" H 6900 5100 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount" H 6900 5100 50  0001 C CNN
 F 3 " ~" H 6900 5100 50  0001 C CNN
 	1    6900 5100
 	-1   0    0    -1  

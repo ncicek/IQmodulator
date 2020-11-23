@@ -114,7 +114,7 @@ L Device:CP C28
 U 1 1 5FD8CD2C
 P 3800 3550
 F 0 "C28" H 3918 3596 50  0000 L CNN
-F 1 "100u 25V tantalum" H 3918 3505 50  0000 L CNN
+F 1 "220u 25V tantalum" H 3918 3505 50  0000 L CNN
 F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-20_Kemet-V_Pad2.25x2.55mm_HandSolder" H 3838 3400 50  0001 C CNN
 F 3 "~" H 3800 3550 50  0001 C CNN
 	1    3800 3550
@@ -278,8 +278,6 @@ $EndComp
 Connection ~ 4800 3400
 Wire Wire Line
 	4800 3700 4800 3750
-Wire Wire Line
-	3500 3400 3550 3400
 Wire Wire Line
 	4150 3400 4800 3400
 Wire Wire Line
@@ -459,8 +457,6 @@ $EndComp
 Wire Wire Line
 	2950 3400 3200 3400
 Wire Wire Line
-	3800 3700 3800 3800
-Wire Wire Line
 	3800 4350 5150 4350
 Connection ~ 5150 4350
 $Comp
@@ -474,29 +470,12 @@ F 3 "https://www.onsemi.com/pub/Collateral/MBRS540T3-D.PDF" H 7700 3800 50  0001
 	1    7700 3800
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:CP C90
-U 1 1 5FBC18F7
-P 3550 3550
-F 0 "C90" H 3668 3596 50  0000 L CNN
-F 1 "470u 50v electro" H 3668 3505 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D10.0mm_H20.0mm_P5.00mm" H 3588 3400 50  0001 C CNN
-F 3 "~" H 3550 3550 50  0001 C CNN
-	1    3550 3550
-	1    0    0    -1  
-$EndComp
-Connection ~ 3550 3400
-Wire Wire Line
-	3550 3400 3800 3400
-Wire Wire Line
-	3550 3700 3550 3800
-Wire Wire Line
-	3550 3800 3800 3800
-Connection ~ 3800 3800
-Wire Wire Line
-	3800 3800 3800 4350
 Text Label 7050 4000 0    50   ~ 0
 -5VO
 Text Label 8350 4000 0    50   ~ 0
 -5VO_filtered
+Wire Wire Line
+	3500 3400 3800 3400
+Wire Wire Line
+	3800 3700 3800 4350
 $EndSCHEMATC
