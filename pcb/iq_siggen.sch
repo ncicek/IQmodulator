@@ -1983,7 +1983,7 @@ U 1 1 6081E40B
 P 6700 3550
 F 0 "J8" H 6800 3525 50  0000 L CNN
 F 1 "Conn_Coaxial" H 6800 3434 50  0000 L CNN
-F 2 "Connector_Coaxial:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount" H 6700 3550 50  0001 C CNN
+F 2 "iq_siggen:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount_withSTEP" H 6700 3550 50  0001 C CNN
 F 3 " ~" H 6700 3550 50  0001 C CNN
 	1    6700 3550
 	1    0    0    -1  
@@ -2105,7 +2105,7 @@ U 1 1 60998D6A
 P 6700 4300
 F 0 "J9" H 6800 4275 50  0000 L CNN
 F 1 "Conn_Coaxial" H 6800 4184 50  0000 L CNN
-F 2 "Connector_Coaxial:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount" H 6700 4300 50  0001 C CNN
+F 2 "iq_siggen:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount_withSTEP" H 6700 4300 50  0001 C CNN
 F 3 " ~" H 6700 4300 50  0001 C CNN
 	1    6700 4300
 	1    0    0    -1  
@@ -2784,7 +2784,7 @@ U 1 1 60D1C9E5
 P 5000 6100
 F 0 "J6" H 5100 6075 50  0000 L CNN
 F 1 "Conn_Coaxial" H 5100 5984 50  0000 L CNN
-F 2 "Connector_Coaxial:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount" H 5000 6100 50  0001 C CNN
+F 2 "iq_siggen:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount_withSTEP" H 5000 6100 50  0001 C CNN
 F 3 " ~" H 5000 6100 50  0001 C CNN
 	1    5000 6100
 	1    0    0    -1  
@@ -2828,7 +2828,7 @@ U 1 1 60E0C49E
 P 5400 6100
 F 0 "J7" H 5500 6075 50  0000 L CNN
 F 1 "Conn_Coaxial" H 5500 5984 50  0000 L CNN
-F 2 "Connector_Coaxial:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount" H 5400 6100 50  0001 C CNN
+F 2 "iq_siggen:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount_withSTEP" H 5400 6100 50  0001 C CNN
 F 3 " ~" H 5400 6100 50  0001 C CNN
 	1    5400 6100
 	1    0    0    -1  
