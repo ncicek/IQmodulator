@@ -2473,108 +2473,6 @@ F 3 "~" H 3300 7600 50  0001 C CNN
 	1    3100 7600
 	-1   0    0    1   
 $EndComp
-Text Label 4250 3850 0    50   ~ 0
-A0
-Text Label 4250 3950 0    50   ~ 0
-A1
-Text Label 4250 4050 0    50   ~ 0
-A2
-Text Label 4250 4150 0    50   ~ 0
-A3
-Text Label 4250 4250 0    50   ~ 0
-A4
-Text Label 4250 4350 0    50   ~ 0
-A5
-Text Label 4250 4450 0    50   ~ 0
-A6
-Text Label 4250 4550 0    50   ~ 0
-A7
-Text Label 4250 4650 0    50   ~ 0
-A8
-Text Label 4250 4750 0    50   ~ 0
-A9
-Wire Wire Line
-	4250 3850 4400 3850
-Wire Wire Line
-	4250 3950 4400 3950
-Wire Wire Line
-	4250 4050 4400 4050
-Wire Wire Line
-	4250 4150 4400 4150
-Wire Wire Line
-	4250 4250 4400 4250
-Wire Wire Line
-	4250 4350 4400 4350
-Wire Wire Line
-	4250 4450 4400 4450
-Wire Wire Line
-	4250 4550 4400 4550
-Wire Wire Line
-	4250 4650 4400 4650
-Wire Wire Line
-	4250 4750 4400 4750
-Wire Wire Line
-	3800 3850 3950 3850
-Wire Wire Line
-	3800 3950 3950 3950
-Wire Wire Line
-	3800 4050 3950 4050
-Wire Wire Line
-	3800 4150 3950 4150
-Wire Wire Line
-	3800 4250 3950 4250
-Wire Wire Line
-	3800 4350 3950 4350
-Wire Wire Line
-	3800 4450 3950 4450
-Wire Wire Line
-	3800 4550 3950 4550
-Wire Wire Line
-	3800 4650 3950 4650
-Wire Wire Line
-	3800 4750 3950 4750
-Text Label 3800 3850 0    50   ~ 0
-B0
-Text Label 3800 3950 0    50   ~ 0
-B1
-Text Label 3800 4050 0    50   ~ 0
-B2
-Text Label 3800 4150 0    50   ~ 0
-B3
-Text Label 3800 4250 0    50   ~ 0
-B4
-Text Label 3800 4350 0    50   ~ 0
-B5
-Text Label 3800 4450 0    50   ~ 0
-B6
-Text Label 3800 4550 0    50   ~ 0
-B7
-Text Label 3800 4650 0    50   ~ 0
-B8
-Text Label 3800 4750 0    50   ~ 0
-B9
-$Comp
-L Connector:Conn_01x10_Male J5
-U 1 1 60A7CFCF
-P 4600 4250
-F 0 "J5" H 4572 4224 50  0000 R CNN
-F 1 "Conn_01x10_Male" H 4572 4133 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 4600 4250 50  0001 C CNN
-F 3 "~" H 4600 4250 50  0001 C CNN
-	1    4600 4250
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x10_Male J3
-U 1 1 60A808B2
-P 4150 4250
-F 0 "J3" H 4122 4224 50  0000 R CNN
-F 1 "Conn_01x10_Male" H 4122 4133 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 4150 4250 50  0001 C CNN
-F 3 "~" H 4150 4250 50  0001 C CNN
-	1    4150 4250
-	-1   0    0    -1  
-$EndComp
 Text Label 4250 4900 0    50   ~ 0
 ~CW
 $Comp
@@ -2898,6 +2796,97 @@ Wire Wire Line
 	4350 5600 4600 5600
 Wire Wire Line
 	4300 5700 4900 5700
+$Comp
+L Connector:Conn_01x20_Male J3
+U 1 1 5FC3C06B
+P 8350 2850
+F 0 "J3" H 8458 3931 50  0000 C CNN
+F 1 "Conn_01x20_Male" H 8458 3840 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical" H 8350 2850 50  0001 C CNN
+F 3 "~" H 8350 2850 50  0001 C CNN
+	1    8350 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 1950 8700 1950
+Wire Wire Line
+	8550 2050 8700 2050
+Wire Wire Line
+	8550 2150 8700 2150
+Wire Wire Line
+	8550 2250 8700 2250
+Wire Wire Line
+	8550 2350 8700 2350
+Wire Wire Line
+	8550 2450 8700 2450
+Wire Wire Line
+	8550 2550 8700 2550
+Wire Wire Line
+	8550 2650 8700 2650
+Wire Wire Line
+	8550 2750 8700 2750
+Wire Wire Line
+	8550 2850 8700 2850
+Text Label 8550 1950 0    50   ~ 0
+B0
+Text Label 8550 2050 0    50   ~ 0
+B1
+Text Label 8550 2150 0    50   ~ 0
+B2
+Text Label 8550 2250 0    50   ~ 0
+B3
+Text Label 8550 2350 0    50   ~ 0
+B4
+Text Label 8550 2450 0    50   ~ 0
+B5
+Text Label 8550 2550 0    50   ~ 0
+B6
+Text Label 8550 2650 0    50   ~ 0
+B7
+Text Label 8550 2750 0    50   ~ 0
+B8
+Text Label 8550 2850 0    50   ~ 0
+B9
+Text Label 8550 2950 0    50   ~ 0
+A0
+Text Label 8550 3050 0    50   ~ 0
+A1
+Text Label 8550 3150 0    50   ~ 0
+A2
+Text Label 8550 3250 0    50   ~ 0
+A3
+Text Label 8550 3350 0    50   ~ 0
+A4
+Text Label 8550 3450 0    50   ~ 0
+A5
+Text Label 8550 3550 0    50   ~ 0
+A6
+Text Label 8550 3650 0    50   ~ 0
+A7
+Text Label 8550 3750 0    50   ~ 0
+A8
+Text Label 8550 3850 0    50   ~ 0
+A9
+Wire Wire Line
+	8550 2950 8700 2950
+Wire Wire Line
+	8550 3050 8700 3050
+Wire Wire Line
+	8550 3150 8700 3150
+Wire Wire Line
+	8550 3250 8700 3250
+Wire Wire Line
+	8550 3350 8700 3350
+Wire Wire Line
+	8550 3450 8700 3450
+Wire Wire Line
+	8550 3550 8700 3550
+Wire Wire Line
+	8550 3650 8700 3650
+Wire Wire Line
+	8550 3750 8700 3750
+Wire Wire Line
+	8550 3850 8700 3850
 Wire Bus Line
 	2500 3650 2500 5500
 Wire Bus Line
