@@ -58,28 +58,15 @@ F 3 "" H 5200 3650 50  0001 C CNN
 $EndComp
 $Comp
 L Device:R R?
-U 1 1 5FB8532B
-P 1700 3250
-AR Path="/5FB8532B" Ref="R?"  Part="1" 
-AR Path="/5FB04C67/5FB8532B" Ref="R67"  Part="1" 
-F 0 "R67" V 1907 3250 50  0000 C CNN
-F 1 "25" V 1816 3250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1630 3250 50  0001 C CNN
-F 3 "~" H 1700 3250 50  0001 C CNN
-	1    1700 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
 U 1 1 5FB85331
-P 1700 2650
+P 1700 2950
 AR Path="/5FB85331" Ref="R?"  Part="1" 
 AR Path="/5FB04C67/5FB85331" Ref="R66"  Part="1" 
-F 0 "R66" V 1493 2650 50  0000 C CNN
-F 1 "25" V 1584 2650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1630 2650 50  0001 C CNN
-F 3 "~" H 1700 2650 50  0001 C CNN
-	1    1700 2650
+F 0 "R66" V 1493 2950 50  0000 C CNN
+F 1 "DNI" V 1584 2950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1630 2950 50  0001 C CNN
+F 3 "~" H 1700 2950 50  0001 C CNN
+	1    1700 2950
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -111,52 +98,6 @@ $EndComp
 Wire Wire Line
 	1100 2800 1700 2800
 Connection ~ 1700 2800
-Wire Wire Line
-	1700 2800 1950 2800
-Wire Wire Line
-	1100 3100 1700 3100
-Connection ~ 1700 3100
-Wire Wire Line
-	1700 3100 1950 3100
-$Comp
-L power:GNDA #PWR?
-U 1 1 5FB8534C
-P 1700 2500
-AR Path="/5FB8534C" Ref="#PWR?"  Part="1" 
-AR Path="/5FB04C67/5FB8534C" Ref="#PWR047"  Part="1" 
-F 0 "#PWR047" H 1700 2250 50  0001 C CNN
-F 1 "GNDA" H 1705 2327 50  0000 C CNN
-F 2 "" H 1700 2500 50  0001 C CNN
-F 3 "" H 1700 2500 50  0001 C CNN
-	1    1700 2500
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GNDA #PWR?
-U 1 1 5FB85352
-P 1700 3400
-AR Path="/5FB85352" Ref="#PWR?"  Part="1" 
-AR Path="/5FB04C67/5FB85352" Ref="#PWR048"  Part="1" 
-F 0 "#PWR048" H 1700 3150 50  0001 C CNN
-F 1 "GNDA" H 1705 3227 50  0000 C CNN
-F 2 "" H 1700 3400 50  0001 C CNN
-F 3 "" H 1700 3400 50  0001 C CNN
-	1    1700 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5FB85358
-P 1950 2950
-AR Path="/5FB85358" Ref="C?"  Part="1" 
-AR Path="/5FB04C67/5FB85358" Ref="C10"  Part="1" 
-F 0 "C10" H 2065 2996 50  0000 L CNN
-F 1 "85p" H 2065 2905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1988 2800 50  0001 C CNN
-F 3 "~" H 1950 2950 50  0001 C CNN
-	1    1950 2950
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R R?
 U 1 1 5FB8535E
@@ -206,28 +147,15 @@ Wire Wire Line
 	3550 2800 3700 2800
 $Comp
 L Device:R R?
-U 1 1 5FB85374
-P 1700 4650
-AR Path="/5FB85374" Ref="R?"  Part="1" 
-AR Path="/5FB04C67/5FB85374" Ref="R69"  Part="1" 
-F 0 "R69" V 1907 4650 50  0000 C CNN
-F 1 "25" V 1816 4650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1630 4650 50  0001 C CNN
-F 3 "~" H 1700 4650 50  0001 C CNN
-	1    1700 4650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
 U 1 1 5FB8537A
-P 1700 4050
+P 1700 4350
 AR Path="/5FB8537A" Ref="R?"  Part="1" 
 AR Path="/5FB04C67/5FB8537A" Ref="R68"  Part="1" 
-F 0 "R68" V 1493 4050 50  0000 C CNN
-F 1 "25" V 1584 4050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1630 4050 50  0001 C CNN
-F 3 "~" H 1700 4050 50  0001 C CNN
-	1    1700 4050
+F 0 "R68" V 1493 4350 50  0000 C CNN
+F 1 "DNI" V 1584 4350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1630 4350 50  0001 C CNN
+F 3 "~" H 1700 4350 50  0001 C CNN
+	1    1700 4350
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -259,39 +187,6 @@ $EndComp
 Wire Wire Line
 	1100 4200 1700 4200
 Connection ~ 1700 4200
-Wire Wire Line
-	1700 4200 1950 4200
-Wire Wire Line
-	1100 4500 1700 4500
-Connection ~ 1700 4500
-Wire Wire Line
-	1700 4500 1950 4500
-$Comp
-L power:GNDA #PWR?
-U 1 1 5FB85392
-P 1700 3900
-AR Path="/5FB85392" Ref="#PWR?"  Part="1" 
-AR Path="/5FB04C67/5FB85392" Ref="#PWR049"  Part="1" 
-F 0 "#PWR049" H 1700 3650 50  0001 C CNN
-F 1 "GNDA" H 1705 3727 50  0000 C CNN
-F 2 "" H 1700 3900 50  0001 C CNN
-F 3 "" H 1700 3900 50  0001 C CNN
-	1    1700 3900
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GNDA #PWR?
-U 1 1 5FB85398
-P 1700 4800
-AR Path="/5FB85398" Ref="#PWR?"  Part="1" 
-AR Path="/5FB04C67/5FB85398" Ref="#PWR050"  Part="1" 
-F 0 "#PWR050" H 1700 4550 50  0001 C CNN
-F 1 "GNDA" H 1705 4627 50  0000 C CNN
-F 2 "" H 1700 4800 50  0001 C CNN
-F 3 "" H 1700 4800 50  0001 C CNN
-	1    1700 4800
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R R?
 U 1 1 5FB8539E
@@ -384,50 +279,18 @@ Wire Wire Line
 	4150 4400 3850 4400
 Connection ~ 3850 4200
 $Comp
-L Device:L L?
-U 1 1 5FB853CD
-P 2250 2800
-AR Path="/5FB853CD" Ref="L?"  Part="1" 
-AR Path="/5FB04C67/5FB853CD" Ref="L1"  Part="1" 
-F 0 "L1" V 2440 2800 50  0000 C CNN
-F 1 "732n" V 2349 2800 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2250 2800 50  0001 C CNN
-F 3 "~" H 2250 2800 50  0001 C CNN
-	1    2250 2800
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:L L?
-U 1 1 5FB853D3
-P 2250 3100
-AR Path="/5FB853D3" Ref="L?"  Part="1" 
-AR Path="/5FB04C67/5FB853D3" Ref="L2"  Part="1" 
-F 0 "L2" V 2440 3100 50  0000 C CNN
-F 1 "732n" V 2349 3100 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2250 3100 50  0001 C CNN
-F 3 "~" H 2250 3100 50  0001 C CNN
-	1    2250 3100
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:C C?
 U 1 1 5FB853D9
 P 2550 2950
 AR Path="/5FB853D9" Ref="C?"  Part="1" 
 AR Path="/5FB04C67/5FB853D9" Ref="C12"  Part="1" 
 F 0 "C12" H 2665 2996 50  0000 L CNN
-F 1 "187p" H 2665 2905 50  0000 L CNN
+F 1 "DNI" H 2665 2905 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2588 2800 50  0001 C CNN
 F 3 "~" H 2550 2950 50  0001 C CNN
 	1    2550 2950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2100 2800 1950 2800
-Connection ~ 1950 2800
-Wire Wire Line
-	2100 3100 1950 3100
-Connection ~ 1950 3100
 Wire Wire Line
 	2400 3100 2550 3100
 Connection ~ 2550 3100
@@ -436,62 +299,17 @@ Wire Wire Line
 	2550 2800 2400 2800
 $Comp
 L Device:C C?
-U 1 1 5FB85419
-P 1950 4350
-AR Path="/5FB85419" Ref="C?"  Part="1" 
-AR Path="/5FB04C67/5FB85419" Ref="C11"  Part="1" 
-F 0 "C11" H 2065 4396 50  0000 L CNN
-F 1 "85p" H 2065 4305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1988 4200 50  0001 C CNN
-F 3 "~" H 1950 4350 50  0001 C CNN
-	1    1950 4350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:L L?
-U 1 1 5FB8541F
-P 2250 4200
-AR Path="/5FB8541F" Ref="L?"  Part="1" 
-AR Path="/5FB04C67/5FB8541F" Ref="L3"  Part="1" 
-F 0 "L3" V 2440 4200 50  0000 C CNN
-F 1 "732n" V 2349 4200 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2250 4200 50  0001 C CNN
-F 3 "~" H 2250 4200 50  0001 C CNN
-	1    2250 4200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:L L?
-U 1 1 5FB85425
-P 2250 4500
-AR Path="/5FB85425" Ref="L?"  Part="1" 
-AR Path="/5FB04C67/5FB85425" Ref="L4"  Part="1" 
-F 0 "L4" V 2440 4500 50  0000 C CNN
-F 1 "732n" V 2349 4500 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2250 4500 50  0001 C CNN
-F 3 "~" H 2250 4500 50  0001 C CNN
-	1    2250 4500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C C?
 U 1 1 5FB8542B
 P 2550 4350
 AR Path="/5FB8542B" Ref="C?"  Part="1" 
 AR Path="/5FB04C67/5FB8542B" Ref="C13"  Part="1" 
 F 0 "C13" H 2665 4396 50  0000 L CNN
-F 1 "187p" H 2665 4305 50  0000 L CNN
+F 1 "DNI" H 2665 4305 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2588 4200 50  0001 C CNN
 F 3 "~" H 2550 4350 50  0001 C CNN
 	1    2550 4350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2100 4200 1950 4200
-Connection ~ 1950 4200
-Wire Wire Line
-	2100 4500 1950 4500
-Connection ~ 1950 4500
 Wire Wire Line
 	2400 4500 2550 4500
 Connection ~ 2550 4500
@@ -617,7 +435,7 @@ P 3100 2950
 AR Path="/5FB854A4" Ref="R?"  Part="1" 
 AR Path="/5FB04C67/5FB854A4" Ref="R70"  Part="1" 
 F 0 "R70" V 2893 2950 50  0000 C CNN
-F 1 "50" V 2984 2950 50  0000 C CNN
+F 1 "100" V 2984 2950 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3030 2950 50  0001 C CNN
 F 3 "~" H 3100 2950 50  0001 C CNN
 	1    3100 2950
@@ -636,7 +454,7 @@ P 3100 4350
 AR Path="/5FB854AE" Ref="R?"  Part="1" 
 AR Path="/5FB04C67/5FB854AE" Ref="R71"  Part="1" 
 F 0 "R71" V 2893 4350 50  0000 C CNN
-F 1 "50" V 2984 4350 50  0000 C CNN
+F 1 "100" V 2984 4350 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3030 4350 50  0001 C CNN
 F 3 "~" H 3100 4350 50  0001 C CNN
 	1    3100 4350
@@ -926,7 +744,7 @@ U 1 1 5FB74ED6
 P 6900 2450
 F 0 "JP4" V 6946 2517 50  0000 L CNN
 F 1 "SolderJumper_3_Open" V 6855 2517 50  0000 L CNN
-F 2 "" H 6900 2450 50  0001 C CNN
+F 2 "iq_siggen:50ohm_solder_jumper" H 6900 2450 50  0001 C CNN
 F 3 "~" H 6900 2450 50  0001 C CNN
 	1    6900 2450
 	0    -1   -1   0   
@@ -970,17 +788,6 @@ Wire Wire Line
 	6900 3100 6900 3400
 Text Label 7700 4650 0    50   ~ 0
 LO_Q
-$Comp
-L Jumper:SolderJumper_3_Open JP5
-U 1 1 5FBB55A7
-P 7550 4650
-F 0 "JP5" V 7596 4717 50  0000 L CNN
-F 1 "SolderJumper_3_Open" V 7505 4717 50  0000 L CNN
-F 2 "" H 7550 4650 50  0001 C CNN
-F 3 "~" H 7550 4650 50  0001 C CNN
-	1    7550 4650
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	7800 4650 7700 4650
 Wire Wire Line
@@ -991,25 +798,25 @@ Connection ~ 6950 3850
 $Comp
 L Connector:Conn_Coaxial J19
 U 1 1 5FBE8678
-P 6900 5100
-F 0 "J19" H 6828 5338 50  0000 C CNN
-F 1 "Conn_Coaxial" H 6828 5247 50  0000 C CNN
-F 2 "iq_siggen:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount_withSTEP" H 6900 5100 50  0001 C CNN
-F 3 " ~" H 6900 5100 50  0001 C CNN
-	1    6900 5100
+P 6850 5100
+F 0 "J19" H 6778 5338 50  0000 C CNN
+F 1 "Conn_Coaxial" H 6778 5247 50  0000 C CNN
+F 2 "iq_siggen:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount_withSTEP" H 6850 5100 50  0001 C CNN
+F 3 " ~" H 6850 5100 50  0001 C CNN
+	1    6850 5100
 	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GNDA #PWR?
 U 1 1 5FBE867E
-P 6900 5300
+P 6850 5300
 AR Path="/5FBE867E" Ref="#PWR?"  Part="1" 
 AR Path="/5FB04C67/5FBE867E" Ref="#PWR059"  Part="1" 
-F 0 "#PWR059" H 6900 5050 50  0001 C CNN
-F 1 "GNDA" H 6905 5127 50  0000 C CNN
-F 2 "" H 6900 5300 50  0001 C CNN
-F 3 "" H 6900 5300 50  0001 C CNN
-	1    6900 5300
+F 0 "#PWR059" H 6850 5050 50  0001 C CNN
+F 1 "GNDA" H 6855 5127 50  0000 C CNN
+F 2 "" H 6850 5300 50  0001 C CNN
+F 3 "" H 6850 5300 50  0001 C CNN
+	1    6850 5300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1017,7 +824,7 @@ Wire Wire Line
 Text Label 7150 5100 0    50   ~ 0
 LO_Q_EXT
 Wire Wire Line
-	7100 5100 7550 5100
+	7050 5100 7550 5100
 $Comp
 L Device:D_Schottky_x2_Serial_AKC D6
 U 1 1 5FBCC6CF
@@ -1430,4 +1237,97 @@ Wire Wire Line
 	5350 4300 5250 4300
 Wire Wire Line
 	5250 4300 5250 4250
+$Comp
+L Device:R R?
+U 1 1 5FC6CFB8
+P 2250 2800
+AR Path="/5FC6CFB8" Ref="R?"  Part="1" 
+AR Path="/5FB04C67/5FC6CFB8" Ref="R32"  Part="1" 
+F 0 "R32" V 2043 2800 50  0000 C CNN
+F 1 "0" V 2134 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2180 2800 50  0001 C CNN
+F 3 "~" H 2250 2800 50  0001 C CNN
+	1    2250 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FC6D2E5
+P 2250 3100
+AR Path="/5FC6D2E5" Ref="R?"  Part="1" 
+AR Path="/5FB04C67/5FC6D2E5" Ref="R33"  Part="1" 
+F 0 "R33" V 2043 3100 50  0000 C CNN
+F 1 "0" V 2134 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2180 3100 50  0001 C CNN
+F 3 "~" H 2250 3100 50  0001 C CNN
+	1    2250 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FC6D859
+P 2250 4200
+AR Path="/5FC6D859" Ref="R?"  Part="1" 
+AR Path="/5FB04C67/5FC6D859" Ref="R67"  Part="1" 
+F 0 "R67" V 2043 4200 50  0000 C CNN
+F 1 "0" V 2134 4200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2180 4200 50  0001 C CNN
+F 3 "~" H 2250 4200 50  0001 C CNN
+	1    2250 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FC6DCA9
+P 2250 4500
+AR Path="/5FC6DCA9" Ref="R?"  Part="1" 
+AR Path="/5FB04C67/5FC6DCA9" Ref="R69"  Part="1" 
+F 0 "R69" V 2043 4500 50  0000 C CNN
+F 1 "0" V 2134 4500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2180 4500 50  0001 C CNN
+F 3 "~" H 2250 4500 50  0001 C CNN
+	1    2250 4500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1700 4200 2100 4200
+Wire Wire Line
+	1700 2800 2100 2800
+Wire Wire Line
+	1100 3100 1700 3100
+Connection ~ 1700 3100
+Wire Wire Line
+	1700 3100 2100 3100
+Wire Wire Line
+	1100 4500 1700 4500
+Connection ~ 1700 4500
+Wire Wire Line
+	1700 4500 2100 4500
+$Comp
+L Jumper:SolderJumper_3_Open JP5
+U 1 1 5FBB55A7
+P 7550 4650
+F 0 "JP5" V 7596 4717 50  0000 L CNN
+F 1 "SolderJumper_3_Open" V 7505 4717 50  0000 L CNN
+F 2 "iq_siggen:50ohm_solder_jumper" H 7550 4650 50  0001 C CNN
+F 3 "~" H 7550 4650 50  0001 C CNN
+	1    7550 4650
+	0    -1   1    0   
+$EndComp
+Text Label 2550 4200 0    50   ~ 0
+CLK_Q_1_P
+Text Label 2550 4500 0    50   ~ 0
+CLK_Q_1_N
+Text Label 2550 2800 0    50   ~ 0
+CLK_I_1_P
+Text Label 2550 3100 0    50   ~ 0
+CLK_I_1_N
+Text Label 3950 2900 0    50   ~ 0
+CLK_I_2_P
+Text Label 3950 3000 0    50   ~ 0
+CLK_I_2_N
+Text Label 4150 3800 0    50   ~ 0
+CLK_Q_2_P
+Text Label 4300 4100 0    50   ~ 0
+CLK_Q_2_N
 $EndSCHEMATC

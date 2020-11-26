@@ -68,11 +68,7 @@ F 3 "~" H 5050 4750 50  0001 C CNN
 	1    5050 4750
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	550  4750 950  4750
 Connection ~ 1150 4750
-Wire Wire Line
-	550  5050 950  5050
 Connection ~ 1150 5050
 $Comp
 L power:GNDA #PWR071
@@ -181,10 +177,6 @@ F 3 "~" H 5050 6150 50  0001 C CNN
 	1    5050 6150
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	550  6150 950  6150
-Wire Wire Line
-	550  6450 950  6450
 $Comp
 L power:GNDA #PWR073
 U 1 1 5FB7AE08
@@ -397,31 +389,23 @@ L Device:R R92
 U 1 1 5FB7AF19
 P 4000 4900
 F 0 "R92" V 3793 4900 50  0000 C CNN
-F 1 "50" V 3884 4900 50  0000 C CNN
+F 1 "DNI" V 3884 4900 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3930 4900 50  0001 C CNN
 F 3 "~" H 4000 4900 50  0001 C CNN
 	1    4000 4900
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	4750 5050 4900 5050
-Wire Wire Line
-	4750 4750 4900 4750
 $Comp
 L Device:R R93
 U 1 1 5FB7AF23
 P 4000 6300
 F 0 "R93" V 3793 6300 50  0000 C CNN
-F 1 "50" V 3884 6300 50  0000 C CNN
+F 1 "DNI" V 3884 6300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3930 6300 50  0001 C CNN
 F 3 "~" H 4000 6300 50  0001 C CNN
 	1    4000 6300
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	4750 6450 4900 6450
-Wire Wire Line
-	4750 6150 4900 6150
 Wire Wire Line
 	6950 6800 7200 6800
 $Comp
@@ -755,48 +739,28 @@ Wire Wire Line
 Wire Wire Line
 	3900 4800 3900 4750
 Wire Wire Line
-	4650 4750 4750 4750
-Connection ~ 4750 4750
-Wire Wire Line
 	3700 4900 3900 4900
 Wire Wire Line
 	3900 4900 3900 5050
-Wire Wire Line
-	4650 5050 4750 5050
-Connection ~ 4750 5050
-Wire Wire Line
-	1150 4750 1450 4750
 Wire Wire Line
 	2100 4800 2100 4750
 Wire Wire Line
 	2100 4800 2250 4800
 Wire Wire Line
-	1150 5050 1450 5050
-Wire Wire Line
 	3700 6200 3900 6200
 Wire Wire Line
 	3900 6200 3900 6150
 Wire Wire Line
-	4650 6150 4750 6150
-Connection ~ 4750 6150
-Wire Wire Line
 	3700 6300 3900 6300
 Wire Wire Line
 	3900 6300 3900 6450
-Wire Wire Line
-	4650 6450 4750 6450
-Connection ~ 4750 6450
 Wire Wire Line
 	2100 6150 2100 6200
 Wire Wire Line
 	2100 6200 2250 6200
 Wire Wire Line
 	2100 6300 2100 6450
-Wire Wire Line
-	1500 6450 1150 6450
 Connection ~ 1150 6450
-Wire Wire Line
-	1150 6150 1500 6150
 Connection ~ 1150 6150
 Wire Wire Line
 	2100 6300 2250 6300
@@ -824,62 +788,6 @@ Text HLabel 8900 5350 2    50   Output ~ 0
 I_DAC_OUT
 Text HLabel 8900 5800 2    50   Output ~ 0
 Q_DAC_OUT
-$Comp
-L Connector:TestPoint TP35
-U 1 1 5FC2BBDD
-P 950 4750
-F 0 "TP35" H 1008 4868 50  0000 L CNN
-F 1 "TestPoint" H 1008 4777 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 1150 4750 50  0001 C CNN
-F 3 "~" H 1150 4750 50  0001 C CNN
-	1    950  4750
-	1    0    0    -1  
-$EndComp
-Connection ~ 950  4750
-Wire Wire Line
-	950  4750 1150 4750
-$Comp
-L Connector:TestPoint TP36
-U 1 1 5FC2C216
-P 950 5050
-F 0 "TP36" H 1008 5168 50  0000 L CNN
-F 1 "TestPoint" H 1008 5077 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 1150 5050 50  0001 C CNN
-F 3 "~" H 1150 5050 50  0001 C CNN
-	1    950  5050
-	1    0    0    -1  
-$EndComp
-Connection ~ 950  5050
-Wire Wire Line
-	950  5050 1150 5050
-$Comp
-L Connector:TestPoint TP37
-U 1 1 5FC2C48E
-P 950 6150
-F 0 "TP37" H 1008 6268 50  0000 L CNN
-F 1 "TestPoint" H 1008 6177 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 1150 6150 50  0001 C CNN
-F 3 "~" H 1150 6150 50  0001 C CNN
-	1    950  6150
-	1    0    0    -1  
-$EndComp
-Connection ~ 950  6150
-Wire Wire Line
-	950  6150 1150 6150
-$Comp
-L Connector:TestPoint TP38
-U 1 1 5FC2C82B
-P 950 6450
-F 0 "TP38" H 1008 6568 50  0000 L CNN
-F 1 "TestPoint" H 1008 6477 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 1150 6450 50  0001 C CNN
-F 3 "~" H 1150 6450 50  0001 C CNN
-	1    950  6450
-	1    0    0    -1  
-$EndComp
-Connection ~ 950  6450
-Wire Wire Line
-	950  6450 1150 6450
 Text Label 2550 1350 0    50   ~ 0
 A9
 Text Label 2550 2250 0    50   ~ 0
@@ -1096,248 +1004,10 @@ F 3 "" H 6900 2250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6900 2250 6750 2250
-$Comp
-L Connector:TestPoint TP43
-U 1 1 5FD7E526
-P 3900 4750
-F 0 "TP43" H 3958 4868 50  0000 L CNN
-F 1 "TestPoint" H 3958 4777 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4100 4750 50  0001 C CNN
-F 3 "~" H 4100 4750 50  0001 C CNN
-	1    3900 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP44
-U 1 1 5FD7F000
-P 3900 5050
-F 0 "TP44" H 3842 5076 50  0000 R CNN
-F 1 "TestPoint" H 3842 5167 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4100 5050 50  0001 C CNN
-F 3 "~" H 4100 5050 50  0001 C CNN
-	1    3900 5050
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:TestPoint TP46
-U 1 1 5FD7F6EC
-P 3900 6450
-F 0 "TP46" H 3842 6476 50  0000 R CNN
-F 1 "TestPoint" H 3842 6567 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4100 6450 50  0001 C CNN
-F 3 "~" H 4100 6450 50  0001 C CNN
-	1    3900 6450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:TestPoint TP45
-U 1 1 5FD7FBF4
-P 3900 6150
-F 0 "TP45" H 3958 6268 50  0000 L CNN
-F 1 "TestPoint" H 3958 6177 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4100 6150 50  0001 C CNN
-F 3 "~" H 4100 6150 50  0001 C CNN
-	1    3900 6150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper JP6
-U 1 1 5FD94A01
-P 1750 4750
-F 0 "JP6" H 1750 5014 50  0000 C CNN
-F 1 "Jumper" H 1750 4923 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1750 4750 50  0001 C CNN
-F 3 "~" H 1750 4750 50  0001 C CNN
-	1    1750 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper JP7
-U 1 1 5FDA3A86
-P 1750 5050
-F 0 "JP7" H 1750 5314 50  0000 C CNN
-F 1 "Jumper" H 1750 5223 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1750 5050 50  0001 C CNN
-F 3 "~" H 1750 5050 50  0001 C CNN
-	1    1750 5050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2100 4750 2050 4750
 Wire Wire Line
 	2050 5050 2050 4900
 Wire Wire Line
 	2050 4900 2250 4900
-$Comp
-L Device:Jumper JP8
-U 1 1 5FDADED7
-P 1800 6150
-F 0 "JP8" H 1800 6414 50  0000 C CNN
-F 1 "Jumper" H 1800 6323 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1800 6150 50  0001 C CNN
-F 3 "~" H 1800 6150 50  0001 C CNN
-	1    1800 6150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper JP9
-U 1 1 5FDB333D
-P 1800 6450
-F 0 "JP9" H 1800 6714 50  0000 C CNN
-F 1 "Jumper" H 1800 6623 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1800 6450 50  0001 C CNN
-F 3 "~" H 1800 6450 50  0001 C CNN
-	1    1800 6450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper JP10
-U 1 1 5FDD185E
-P 4350 4750
-F 0 "JP10" H 4350 5014 50  0000 C CNN
-F 1 "Jumper" H 4350 4923 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4350 4750 50  0001 C CNN
-F 3 "~" H 4350 4750 50  0001 C CNN
-	1    4350 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper JP11
-U 1 1 5FDD20F4
-P 4350 5050
-F 0 "JP11" H 4350 5314 50  0000 C CNN
-F 1 "Jumper" H 4350 5223 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4350 5050 50  0001 C CNN
-F 3 "~" H 4350 5050 50  0001 C CNN
-	1    4350 5050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4050 4750 4000 4750
-Connection ~ 3900 4750
-Wire Wire Line
-	4050 5050 4000 5050
-Connection ~ 3900 5050
-$Comp
-L Device:Jumper JP12
-U 1 1 5FDDD174
-P 4350 6150
-F 0 "JP12" H 4350 6414 50  0000 C CNN
-F 1 "Jumper" H 4350 6323 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4350 6150 50  0001 C CNN
-F 3 "~" H 4350 6150 50  0001 C CNN
-	1    4350 6150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper JP13
-U 1 1 5FDDD993
-P 4350 6450
-F 0 "JP13" H 4350 6714 50  0000 C CNN
-F 1 "Jumper" H 4350 6623 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4350 6450 50  0001 C CNN
-F 3 "~" H 4350 6450 50  0001 C CNN
-	1    4350 6450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4050 6150 4000 6150
-Connection ~ 3900 6150
-Wire Wire Line
-	4050 6450 4000 6450
-Connection ~ 3900 6450
-$Comp
-L Connector:TestPoint TP41
-U 1 1 5FDE9857
-P 2100 6150
-F 0 "TP41" H 2158 6268 50  0000 L CNN
-F 1 "TestPoint" H 2158 6177 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 2300 6150 50  0001 C CNN
-F 3 "~" H 2300 6150 50  0001 C CNN
-	1    2100 6150
-	1    0    0    -1  
-$EndComp
-Connection ~ 2100 6150
-$Comp
-L Connector:TestPoint TP42
-U 1 1 5FDE9E45
-P 2100 6450
-F 0 "TP42" H 2042 6476 50  0000 R CNN
-F 1 "TestPoint" H 2042 6567 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 2300 6450 50  0001 C CNN
-F 3 "~" H 2300 6450 50  0001 C CNN
-	1    2100 6450
-	-1   0    0    1   
-$EndComp
-Connection ~ 2100 6450
-$Comp
-L Connector:TestPoint TP49
-U 1 1 5FDEA712
-P 4750 6150
-F 0 "TP49" H 4808 6268 50  0000 L CNN
-F 1 "TestPoint" H 4808 6177 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4950 6150 50  0001 C CNN
-F 3 "~" H 4950 6150 50  0001 C CNN
-	1    4750 6150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP50
-U 1 1 5FDEAB03
-P 4750 6450
-F 0 "TP50" H 4692 6476 50  0000 R CNN
-F 1 "TestPoint" H 4692 6567 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4950 6450 50  0001 C CNN
-F 3 "~" H 4950 6450 50  0001 C CNN
-	1    4750 6450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:TestPoint TP47
-U 1 1 5FDEB86D
-P 4750 4750
-F 0 "TP47" H 4808 4868 50  0000 L CNN
-F 1 "TestPoint" H 4808 4777 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4950 4750 50  0001 C CNN
-F 3 "~" H 4950 4750 50  0001 C CNN
-	1    4750 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP48
-U 1 1 5FDEBB1B
-P 4750 5050
-F 0 "TP48" H 4692 5076 50  0000 R CNN
-F 1 "TestPoint" H 4692 5167 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4950 5050 50  0001 C CNN
-F 3 "~" H 4950 5050 50  0001 C CNN
-	1    4750 5050
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:TestPoint TP40
-U 1 1 5FDEBF70
-P 2100 4750
-F 0 "TP40" H 2158 4868 50  0000 L CNN
-F 1 "TestPoint" H 2158 4777 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 2300 4750 50  0001 C CNN
-F 3 "~" H 2300 4750 50  0001 C CNN
-	1    2100 4750
-	1    0    0    -1  
-$EndComp
-Connection ~ 2100 4750
-$Comp
-L Connector:TestPoint TP39
-U 1 1 5FDEC4F6
-P 2050 5050
-F 0 "TP39" H 1992 5076 50  0000 R CNN
-F 1 "TestPoint" H 1992 5167 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 2250 5050 50  0001 C CNN
-F 3 "~" H 2250 5050 50  0001 C CNN
-	1    2050 5050
-	-1   0    0    1   
-$EndComp
-Connection ~ 2050 5050
 $Comp
 L Connector:TestPoint TP56
 U 1 1 5FDED277
@@ -1792,49 +1462,6 @@ F 3 "" H 9400 1350 50  0001 C CNN
 $EndComp
 $Comp
 L Device:C C?
-U 1 1 5FC5DABA
-P 9150 1200
-AR Path="/5FC5DABA" Ref="C?"  Part="1" 
-AR Path="/5FB3742F/5FC5DABA" Ref="C45"  Part="1" 
-F 0 "C45" H 9265 1246 50  0000 L CNN
-F 1 "0.1u" H 9265 1155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9188 1050 50  0001 C CNN
-F 3 "~" H 9150 1200 50  0001 C CNN
-	1    9150 1200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9150 1050 9150 900 
-$Comp
-L power:GNDA #PWR?
-U 1 1 5FC5DAC1
-P 9150 1350
-AR Path="/5FC5DAC1" Ref="#PWR?"  Part="1" 
-AR Path="/5FB3742F/5FC5DAC1" Ref="#PWR090"  Part="1" 
-F 0 "#PWR090" H 9150 1100 50  0001 C CNN
-F 1 "GNDA" H 9155 1177 50  0000 C CNN
-F 2 "" H 9150 1350 50  0001 C CNN
-F 3 "" H 9150 1350 50  0001 C CNN
-	1    9150 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5FC66CD6
-P 9150 2050
-AR Path="/5FC66CD6" Ref="C?"  Part="1" 
-AR Path="/5FB3742F/5FC66CD6" Ref="C46"  Part="1" 
-F 0 "C46" H 9265 2096 50  0000 L CNN
-F 1 "0.1u" H 9265 2005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9188 1900 50  0001 C CNN
-F 3 "~" H 9150 2050 50  0001 C CNN
-	1    9150 2050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9150 1900 9150 1750
-$Comp
-L Device:C C?
 U 1 1 5FC6F140
 P 9400 2050
 AR Path="/5FC6F140" Ref="C?"  Part="1" 
@@ -1877,19 +1504,13 @@ $EndComp
 Wire Wire Line
 	9700 2750 9700 2600
 Connection ~ 9700 2600
-Connection ~ 9150 1750
 Connection ~ 9400 1750
-Wire Wire Line
-	9400 1750 9150 1750
 Wire Wire Line
 	9700 1900 9700 1750
 Connection ~ 9700 1750
 Wire Wire Line
 	9700 1750 9400 1750
-Connection ~ 9150 900 
 Connection ~ 9400 900 
-Wire Wire Line
-	9400 900  9150 900 
 Connection ~ 9700 900 
 Wire Wire Line
 	9700 900  9400 900 
@@ -1939,19 +1560,6 @@ F 3 "" H 9400 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDS #PWR?
-U 1 1 5FCCBCC1
-P 9150 2200
-AR Path="/5FCCBCC1" Ref="#PWR?"  Part="1" 
-AR Path="/5FB3742F/5FCCBCC1" Ref="#PWR091"  Part="1" 
-F 0 "#PWR091" H 9150 1950 50  0001 C CNN
-F 1 "GNDS" H 9155 2027 50  0000 C CNN
-F 2 "" H 9150 2200 50  0001 C CNN
-F 3 "" H 9150 2200 50  0001 C CNN
-	1    9150 2200
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Ferrite_Bead_Small FB4
 U 1 1 5FCD70D4
 P 8750 900
@@ -1962,8 +1570,6 @@ F 3 "~" H 8750 900 50  0001 C CNN
 	1    8750 900 
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8850 900  9150 900 
 $Comp
 L Device:Ferrite_Bead_Small FB5
 U 1 1 5FCE2801
@@ -1975,8 +1581,6 @@ F 3 "~" H 8750 1750 50  0001 C CNN
 	1    8750 1750
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8850 1750 9150 1750
 Wire Wire Line
 	8350 2600 8600 2600
 $Comp
@@ -2103,10 +1707,142 @@ Wire Wire Line
 	7850 5800 8900 5800
 Wire Wire Line
 	8800 2600 9700 2600
+Wire Wire Line
+	550  4750 1150 4750
+Wire Wire Line
+	550  5050 1150 5050
+Wire Wire Line
+	550  6450 1150 6450
+Wire Wire Line
+	550  6150 1150 6150
+$Comp
+L Device:R R2
+U 1 1 5FD2596E
+P 1700 4750
+F 0 "R2" V 1493 4750 50  0000 C CNN
+F 1 "0" V 1584 4750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1630 4750 50  0001 C CNN
+F 3 "~" H 1700 4750 50  0001 C CNN
+	1    1700 4750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1150 4750 1550 4750
+Wire Wire Line
+	1850 4750 2100 4750
+$Comp
+L Device:R R3
+U 1 1 5FD382D6
+P 1700 5050
+F 0 "R3" V 1493 5050 50  0000 C CNN
+F 1 "0" V 1584 5050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1630 5050 50  0001 C CNN
+F 3 "~" H 1700 5050 50  0001 C CNN
+	1    1700 5050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2050 5050 1850 5050
+Wire Wire Line
+	1150 5050 1550 5050
+$Comp
+L Device:R R4
+U 1 1 5FD4ACB8
+P 1700 6150
+F 0 "R4" V 1493 6150 50  0000 C CNN
+F 1 "0" V 1584 6150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1630 6150 50  0001 C CNN
+F 3 "~" H 1700 6150 50  0001 C CNN
+	1    1700 6150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5FD4B579
+P 1700 6450
+F 0 "R5" V 1493 6450 50  0000 C CNN
+F 1 "0" V 1584 6450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1630 6450 50  0001 C CNN
+F 3 "~" H 1700 6450 50  0001 C CNN
+	1    1700 6450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1150 6150 1550 6150
+Wire Wire Line
+	1150 6450 1550 6450
+Wire Wire Line
+	2100 6450 1850 6450
+Wire Wire Line
+	1850 6150 2100 6150
+$Comp
+L Device:R R10
+U 1 1 5FD72039
+P 4300 4750
+F 0 "R10" V 4093 4750 50  0000 C CNN
+F 1 "0" V 4184 4750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4230 4750 50  0001 C CNN
+F 3 "~" H 4300 4750 50  0001 C CNN
+	1    4300 4750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4000 4750 4150 4750
+Wire Wire Line
+	4450 4750 4900 4750
+$Comp
+L Device:R R11
+U 1 1 5FD85387
+P 4300 5050
+F 0 "R11" V 4093 5050 50  0000 C CNN
+F 1 "0" V 4184 5050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4230 5050 50  0001 C CNN
+F 3 "~" H 4300 5050 50  0001 C CNN
+	1    4300 5050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4000 5050 4150 5050
+Wire Wire Line
+	4450 5050 4900 5050
+$Comp
+L Device:R R12
+U 1 1 5FDA3083
+P 4300 6150
+F 0 "R12" V 4093 6150 50  0000 C CNN
+F 1 "0" V 4184 6150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4230 6150 50  0001 C CNN
+F 3 "~" H 4300 6150 50  0001 C CNN
+	1    4300 6150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R30
+U 1 1 5FDA3BE4
+P 4300 6450
+F 0 "R30" V 4093 6450 50  0000 C CNN
+F 1 "0" V 4184 6450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4230 6450 50  0001 C CNN
+F 3 "~" H 4300 6450 50  0001 C CNN
+	1    4300 6450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4000 6450 4150 6450
+Wire Wire Line
+	4450 6450 4900 6450
+Wire Wire Line
+	4450 6150 4900 6150
+Wire Wire Line
+	4000 6150 4150 6150
 Wire Bus Line
 	5450 3350 5450 3600
 Wire Bus Line
-	2450 1250 2450 2150
-Wire Bus Line
 	2450 2250 2450 3350
+Wire Bus Line
+	2450 1250 2450 2150
+Wire Wire Line
+	8850 1750 9400 1750
+Wire Wire Line
+	8850 900  9400 900 
 $EndSCHEMATC
