@@ -510,11 +510,7 @@ F 3 "~" H 8200 4850 50  0001 C CNN
 $EndComp
 Text HLabel 10700 4650 2    50   Output ~ 0
 RF_Q
-Wire Wire Line
-	5900 3850 6100 3850
 Connection ~ 5900 3850
-Wire Wire Line
-	5900 3400 6100 3400
 Connection ~ 5900 3400
 Text Label 7700 2450 0    50   ~ 0
 LO_I
@@ -531,8 +527,6 @@ F 3 "~" H 6350 3400 50  0001 C CNN
 	1    6350 3400
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6500 3400 6650 3400
 $Comp
 L Device:R R?
 U 1 1 5FC19B22
@@ -546,8 +540,6 @@ F 3 "~" H 6350 3850 50  0001 C CNN
 	1    6350 3850
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6500 3850 6650 3850
 $Comp
 L power:GNDA #PWR?
 U 1 1 5FC19E90
@@ -626,62 +618,6 @@ F 3 "" H 8650 2650 50  0001 C CNN
 	1    8650 2650
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:TestPoint TP26
-U 1 1 60A10865
-P 6100 3400
-F 0 "TP26" H 6158 3518 50  0000 L CNN
-F 1 "TestPoint" H 6158 3427 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6300 3400 50  0001 C CNN
-F 3 "~" H 6300 3400 50  0001 C CNN
-	1    6100 3400
-	1    0    0    -1  
-$EndComp
-Connection ~ 6100 3400
-Wire Wire Line
-	6100 3400 6200 3400
-$Comp
-L Connector:TestPoint TP28
-U 1 1 60A10D60
-P 6650 3400
-F 0 "TP28" H 6708 3518 50  0000 L CNN
-F 1 "TestPoint" H 6708 3427 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6850 3400 50  0001 C CNN
-F 3 "~" H 6850 3400 50  0001 C CNN
-	1    6650 3400
-	1    0    0    -1  
-$EndComp
-Connection ~ 6650 3400
-Wire Wire Line
-	6650 3400 6900 3400
-$Comp
-L Connector:TestPoint TP29
-U 1 1 60A10F72
-P 6650 3850
-F 0 "TP29" H 6592 3876 50  0000 R CNN
-F 1 "TestPoint" H 6592 3967 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6850 3850 50  0001 C CNN
-F 3 "~" H 6850 3850 50  0001 C CNN
-	1    6650 3850
-	-1   0    0    1   
-$EndComp
-Connection ~ 6650 3850
-Wire Wire Line
-	6650 3850 6950 3850
-$Comp
-L Connector:TestPoint TP27
-U 1 1 60A1186F
-P 6100 3850
-F 0 "TP27" H 6042 3876 50  0000 R CNN
-F 1 "TestPoint" H 6042 3967 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6300 3850 50  0001 C CNN
-F 3 "~" H 6300 3850 50  0001 C CNN
-	1    6100 3850
-	-1   0    0    1   
-$EndComp
-Connection ~ 6100 3850
-Wire Wire Line
-	6100 3850 6200 3850
 $Comp
 L Device:R R?
 U 1 1 60A11B69
@@ -1330,4 +1266,12 @@ Text Label 4150 3800 0    50   ~ 0
 CLK_Q_2_P
 Text Label 4300 4100 0    50   ~ 0
 CLK_Q_2_N
+Wire Wire Line
+	5900 3400 6200 3400
+Wire Wire Line
+	6500 3400 6900 3400
+Wire Wire Line
+	6500 3850 6950 3850
+Wire Wire Line
+	5900 3850 6200 3850
 $EndSCHEMATC

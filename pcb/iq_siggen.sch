@@ -402,8 +402,6 @@ Wire Wire Line
 Wire Wire Line
 	5750 5950 6150 5950
 Wire Wire Line
-	6950 5550 7050 5550
-Wire Wire Line
 	7250 5950 7050 5950
 $Comp
 L Connector:Conn_Coaxial J11
@@ -411,7 +409,7 @@ U 1 1 5FD75D0C
 P 9900 5750
 F 0 "J11" H 10000 5725 50  0000 L CNN
 F 1 "Conn_Coaxial" H 10000 5634 50  0000 L CNN
-F 2 "Connector_Coaxial:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount" H 9900 5750 50  0001 C CNN
+F 2 "iq_siggen:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount_withSTEP" H 9900 5750 50  0001 C CNN
 F 3 " ~" H 9900 5750 50  0001 C CNN
 	1    9900 5750
 	1    0    0    -1  
@@ -469,31 +467,6 @@ F 1 "GNDA" H 9905 5777 50  0000 C CNN
 F 2 "" H 9900 5950 50  0001 C CNN
 F 3 "" H 9900 5950 50  0001 C CNN
 	1    9900 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP14
-U 1 1 5FD7CA10
-P 7050 5550
-F 0 "TP14" H 7108 5668 50  0000 L CNN
-F 1 "TestPoint" H 7108 5577 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7250 5550 50  0001 C CNN
-F 3 "~" H 7250 5550 50  0001 C CNN
-	1    7050 5550
-	1    0    0    -1  
-$EndComp
-Connection ~ 7050 5550
-Wire Wire Line
-	7050 5550 7200 5550
-$Comp
-L Connector:TestPoint TP15
-U 1 1 5FD7CF01
-P 7050 5950
-F 0 "TP15" H 7108 6068 50  0000 L CNN
-F 1 "TestPoint" H 7108 5977 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7250 5950 50  0001 C CNN
-F 3 "~" H 7250 5950 50  0001 C CNN
-	1    7050 5950
 	1    0    0    -1  
 $EndComp
 Connection ~ 7050 5950
@@ -1187,17 +1160,6 @@ Text Label 2400 5900 0    50   ~ 0
 ~CW
 Wire Wire Line
 	3050 5900 2600 5900
-$Comp
-L Device:Jumper JP3
-U 1 1 6050A1A3
-P 8650 5750
-F 0 "JP3" H 8650 6014 50  0000 C CNN
-F 1 "Jumper" H 8650 5923 50  0000 C CNN
-F 2 "" H 8650 5750 50  0001 C CNN
-F 3 "~" H 8650 5750 50  0001 C CNN
-	1    8650 5750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8950 5750 9700 5750
 $Comp
@@ -1212,8 +1174,6 @@ F 3 "~" H 8150 5900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 8150 5750
-Wire Wire Line
-	8150 5750 8350 5750
 $Comp
 L power:GNDA #PWR022
 U 1 1 6052934D
@@ -2056,17 +2016,6 @@ Connection ~ 2600 5900
 Wire Wire Line
 	2600 5900 2400 5900
 $Comp
-L Connector:TestPoint TP16
-U 1 1 609BA25B
-P 8150 5750
-F 0 "TP16" H 8208 5868 50  0000 L CNN
-F 1 "TestPoint" H 8208 5777 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 8350 5750 50  0001 C CNN
-F 3 "~" H 8350 5750 50  0001 C CNN
-	1    8150 5750
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:TestPoint TP22
 U 1 1 609C89DC
 P 10250 1300
@@ -2320,7 +2269,6 @@ F 3 "~" H 8950 5900 50  0001 C CNN
 	1    8950 5900
 	1    0    0    -1  
 $EndComp
-Connection ~ 8950 5750
 $Comp
 L power:GNDA #PWR026
 U 1 1 60ACE612
@@ -2741,10 +2689,6 @@ F 3 "~" H 6100 3550 50  0001 C CNN
 	1    6100 3550
 	0    -1   -1   0   
 $EndComp
-Wire Bus Line
-	2500 3650 2500 5500
-Wire Bus Line
-	2950 3650 2950 5400
 $Comp
 L Device:R R8
 U 1 1 5FE74C1A
@@ -2756,4 +2700,26 @@ F 3 "~" H 1750 5700 50  0001 C CNN
 	1    1750 5700
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	6950 5550 7200 5550
+$Comp
+L Device:R R31
+U 1 1 5FC7FB3D
+P 8650 5750
+F 0 "R31" V 8857 5750 50  0000 C CNN
+F 1 "0" V 8766 5750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8580 5750 50  0001 C CNN
+F 3 "~" H 8650 5750 50  0001 C CNN
+	1    8650 5750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8800 5750 8950 5750
+Connection ~ 8950 5750
+Wire Wire Line
+	8150 5750 8500 5750
+Wire Bus Line
+	2500 3650 2500 5500
+Wire Bus Line
+	2950 3650 2950 5400
 $EndSCHEMATC

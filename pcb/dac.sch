@@ -1835,14 +1835,14 @@ Wire Wire Line
 	4450 6150 4900 6150
 Wire Wire Line
 	4000 6150 4150 6150
+Wire Wire Line
+	8850 1750 9400 1750
+Wire Wire Line
+	8850 900  9400 900 
 Wire Bus Line
 	5450 3350 5450 3600
 Wire Bus Line
 	2450 2250 2450 3350
 Wire Bus Line
 	2450 1250 2450 2150
-Wire Wire Line
-	8850 1750 9400 1750
-Wire Wire Line
-	8850 900  9400 900 
 $EndSCHEMATC
