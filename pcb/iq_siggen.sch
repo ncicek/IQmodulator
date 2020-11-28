@@ -245,7 +245,7 @@ L power:GNDA #PWR028
 U 1 1 5FCD9AEE
 P 9150 3350
 F 0 "#PWR028" H 9150 3100 50  0001 C CNN
-F 1 "GNDA" H 9155 3177 50  0000 C CNN
+F 1 "GNDA" H 6350 2200 50  0000 C CNN
 F 2 "" H 9150 3350 50  0001 C CNN
 F 3 "" H 9150 3350 50  0001 C CNN
 	1    9150 3350
@@ -2478,7 +2478,7 @@ F 1 "SolderJumper_3_Open" V 4795 5668 50  0000 L CNN
 F 2 "iq_siggen:50ohm_solder_jumper" H 4750 5600 50  0001 C CNN
 F 3 "~" H 4750 5600 50  0001 C CNN
 	1    4750 5600
-	0    1    1    0   
+	0    1    -1   0   
 $EndComp
 $Comp
 L Jumper:SolderJumper_3_Open JP2
