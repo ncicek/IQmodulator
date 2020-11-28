@@ -688,10 +688,6 @@ Wire Wire Line
 Wire Wire Line
 	3800 6700 3800 6850
 Wire Wire Line
-	1450 1500 1200 1500
-Wire Wire Line
-	2450 1500 2350 1500
-Wire Wire Line
 	3800 6600 5800 6600
 Wire Wire Line
 	4900 6650 4900 6700
@@ -1412,32 +1408,6 @@ Wire Wire Line
 Connection ~ 5950 950 
 Wire Wire Line
 	5950 950  6000 950 
-$Comp
-L Device:R R9
-U 1 1 6062FA4E
-P 2200 1500
-F 0 "R9" V 2407 1500 50  0000 C CNN
-F 1 "0" V 2316 1500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2130 1500 50  0001 C CNN
-F 3 "~" H 2200 1500 50  0001 C CNN
-	1    2200 1500
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2050 1500 1950 1500
-$Comp
-L Device:R R1
-U 1 1 6065D95A
-P 1050 1500
-F 0 "R1" V 1257 1500 50  0000 C CNN
-F 1 "0" V 1166 1500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 980 1500 50  0001 C CNN
-F 3 "~" H 1050 1500 50  0001 C CNN
-	1    1050 1500
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	900  1500 500  1500
 $Comp
 L Device:R R17
 U 1 1 606817CE
@@ -2718,6 +2688,10 @@ Wire Wire Line
 Connection ~ 8950 5750
 Wire Wire Line
 	8150 5750 8500 5750
+Wire Wire Line
+	1950 1500 2450 1500
+Wire Wire Line
+	500  1500 1450 1500
 Wire Bus Line
 	2500 3650 2500 5500
 Wire Bus Line
