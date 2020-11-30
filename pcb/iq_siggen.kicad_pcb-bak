@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 13)
-    (tracks 1353)
+    (tracks 1359)
     (zones 0)
     (modules 265)
     (nets 166)
@@ -42,7 +42,7 @@
   )
 
   (setup
-    (last_trace_width 0.5)
+    (last_trace_width 0.146812)
     (user_trace_width 0.146812)
     (user_trace_width 0.5)
     (user_trace_width 1)
@@ -518,7 +518,7 @@
   )
 
   (module TestPoint:TestPoint_Pad_D1.0mm (layer F.Cu) (tedit 5A0F774F) (tstamp 5FC4949B)
-    (at 71.082 96.482 270)
+    (at 67.018 94.196 270)
     (descr "SMD pad as test Point, diameter 1.0mm")
     (tags "test point SMD pad")
     (path /5FB3742F/5FDEDF7E)
@@ -559,8 +559,8 @@
       (net 25 "/IQ DAC and AA filter/AVDD"))
   )
 
-  (module TestPoint:TestPoint_Pad_D1.0mm (layer F.Cu) (tedit 5A0F774F) (tstamp 5FBA2AAE)
-    (at 67.907 97.498 270)
+  (module TestPoint:TestPoint_Pad_D1.0mm (layer F.Cu) (tedit 5A0F774F) (tstamp 5FC4B67D)
+    (at 66.764 89.116 270)
     (descr "SMD pad as test Point, diameter 1.0mm")
     (tags "test point SMD pad")
     (path /5FB3742F/5FDEFA32)
@@ -11411,6 +11411,8 @@
   (segment (start 73.114 93.32) (end 73.114 93.274) (width 0.5) (layer F.Cu) (net 26))
   (segment (start 74.6215 90.223) (end 74.6215 91.7665) (width 0.146812) (layer F.Cu) (net 26))
   (segment (start 74.6215 91.7665) (end 74.6215 90.7835) (width 0.5) (layer F.Cu) (net 26))
+  (segment (start 67.666 94.196) (end 68.542 93.32) (width 0.5) (layer F.Cu) (net 26))
+  (segment (start 67.018 94.196) (end 67.666 94.196) (width 0.5) (layer F.Cu) (net 26))
   (segment (start 77.309 85.0355) (end 77.309 83.41) (width 0.146812) (layer F.Cu) (net 27))
   (segment (start 77.309 83.41) (end 77.953 82.766) (width 0.146812) (layer F.Cu) (net 27))
   (segment (start 77.953 82.766) (end 77.953 81.242) (width 0.5) (layer F.Cu) (net 27))
@@ -11933,6 +11935,10 @@
   (segment (start 73.007 89.223) (end 74.6215 89.223) (width 0.146812) (layer F.Cu) (net 128))
   (segment (start 71.971 90.259) (end 73.007 89.223) (width 0.146812) (layer F.Cu) (net 128))
   (segment (start 70.764 90.259) (end 71.971 90.259) (width 0.146812) (layer F.Cu) (net 128))
+  (segment (start 67.145 89.497) (end 66.764 89.116) (width 0.146812) (layer F.Cu) (net 128))
+  (segment (start 69.812 89.497) (end 67.145 89.497) (width 0.146812) (layer F.Cu) (net 128))
+  (segment (start 70.574 90.259) (end 69.812 89.497) (width 0.146812) (layer F.Cu) (net 128))
+  (segment (start 70.764 90.259) (end 70.574 90.259) (width 0.146812) (layer F.Cu) (net 128))
   (segment (start 126.672 137.372) (end 126.672 137.378) (width 0.146812) (layer F.Cu) (net 130))
   (segment (start 125.3 136) (end 126.672 137.372) (width 0.146812) (layer F.Cu) (net 130))
   (segment (start 122 136) (end 125.3 136) (width 0.146812) (layer F.Cu) (net 130))
