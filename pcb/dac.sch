@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 7
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -27,24 +27,24 @@ $EndComp
 $Comp
 L Device:R R89
 U 1 1 5FB7ADA1
-P 1150 5200
-F 0 "R89" V 1357 5200 50  0000 C CNN
-F 1 "25" V 1266 5200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1080 5200 50  0001 C CNN
-F 3 "~" H 1150 5200 50  0001 C CNN
-	1    1150 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R88
-U 1 1 5FB7ADA7
 P 1150 4600
-F 0 "R88" V 943 4600 50  0000 C CNN
-F 1 "25" V 1034 4600 50  0000 C CNN
+F 0 "R89" V 1357 4600 50  0000 C CNN
+F 1 "25" V 1266 4600 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 1080 4600 50  0001 C CNN
 F 3 "~" H 1150 4600 50  0001 C CNN
 	1    1150 4600
 	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R88
+U 1 1 5FB7ADA7
+P 1150 5200
+F 0 "R88" V 943 5200 50  0000 C CNN
+F 1 "25" V 1034 5200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1080 5200 50  0001 C CNN
+F 3 "~" H 1150 5200 50  0001 C CNN
+	1    1150 5200
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R95
@@ -1708,8 +1708,6 @@ F 3 "~" H 1700 4750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1150 4750 1550 4750
-Wire Wire Line
 	1850 4750 2100 4750
 $Comp
 L Device:R R3
@@ -1839,6 +1837,50 @@ Wire Wire Line
 	4000 5050 4150 5050
 Wire Wire Line
 	3700 4900 3900 4900
+Wire Wire Line
+	1150 4750 1550 4750
+$Comp
+L power:GNDS #PWR?
+U 1 1 5FDD9780
+P 11000 2100
+AR Path="/5FDD9780" Ref="#PWR?"  Part="1" 
+AR Path="/5FB3742F/5FDD9780" Ref="#PWR0112"  Part="1" 
+F 0 "#PWR0112" H 11000 1850 50  0001 C CNN
+F 1 "GNDS" H 11005 1927 50  0000 C CNN
+F 2 "" H 11000 2100 50  0001 C CNN
+F 3 "" H 11000 2100 50  0001 C CNN
+	1    11000 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11000 2100 10900 2100
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FDD9787
+P 10900 2100
+AR Path="/5FDD9787" Ref="TP?"  Part="1" 
+AR Path="/5FB3742F/5FDD9787" Ref="TP4"  Part="1" 
+F 0 "TP4" H 10842 2126 50  0000 R CNN
+F 1 "TestPoint" H 10842 2217 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 11100 2100 50  0001 C CNN
+F 3 "~" H 11100 2100 50  0001 C CNN
+	1    10900 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5FDD978D
+P 11000 2100
+AR Path="/5FDD978D" Ref="#FLG?"  Part="1" 
+AR Path="/5FB3742F/5FDD978D" Ref="#FLG0101"  Part="1" 
+F 0 "#FLG0101" H 11000 2175 50  0001 C CNN
+F 1 "PWR_FLAG" H 11000 2273 50  0000 C CNN
+F 2 "" H 11000 2100 50  0001 C CNN
+F 3 "~" H 11000 2100 50  0001 C CNN
+	1    11000 2100
+	1    0    0    -1  
+$EndComp
+Connection ~ 11000 2100
 Wire Bus Line
 	5450 3350 5450 3600
 Wire Bus Line
