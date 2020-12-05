@@ -1881,10 +1881,54 @@ F 3 "~" H 11000 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 11000 2100
+$Comp
+L power:GNDD #PWR?
+U 1 1 5FD41563
+P 8850 3200
+AR Path="/5FD41563" Ref="#PWR?"  Part="1" 
+AR Path="/5FB3742F/5FD41563" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8850 2950 50  0001 C CNN
+F 1 "GNDD" H 8854 3045 50  0000 C CNN
+F 2 "" H 8850 3200 50  0001 C CNN
+F 3 "" H 8850 3200 50  0001 C CNN
+	1    8850 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDS #PWR?
+U 1 1 5FD41757
+P 9050 3200
+AR Path="/5FD41757" Ref="#PWR?"  Part="1" 
+AR Path="/5FB3742F/5FD41757" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9050 2950 50  0001 C CNN
+F 1 "GNDS" H 9055 3027 50  0000 C CNN
+F 2 "" H 9050 3200 50  0001 C CNN
+F 3 "" H 9050 3200 50  0001 C CNN
+	1    9050 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5FD41A7F
+P 8700 3200
+AR Path="/5FD41A7F" Ref="#PWR?"  Part="1" 
+AR Path="/5FB3742F/5FD41A7F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8700 2950 50  0001 C CNN
+F 1 "GNDA" H 8705 3027 50  0000 C CNN
+F 2 "" H 8700 3200 50  0001 C CNN
+F 3 "" H 8700 3200 50  0001 C CNN
+	1    8700 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 3200 8850 3200
 Wire Bus Line
 	5450 3350 5450 3600
 Wire Bus Line
 	2450 2250 2450 3350
 Wire Bus Line
 	2450 1250 2450 2150
+Connection ~ 8850 3200
+Wire Wire Line
+	8850 3200 9050 3200
 $EndSCHEMATC
