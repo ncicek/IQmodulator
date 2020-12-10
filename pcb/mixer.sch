@@ -105,7 +105,7 @@ P 5150 2650
 AR Path="/5FB8535E" Ref="R?"  Part="1" 
 AR Path="/5FB04C67/5FB8535E" Ref="R78"  Part="1" 
 F 0 "R78" V 4943 2650 50  0000 C CNN
-F 1 "1k" V 5034 2650 50  0000 C CNN
+F 1 "1.5k" V 5034 2650 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5080 2650 50  0001 C CNN
 F 3 "~" H 5150 2650 50  0001 C CNN
 	1    5150 2650
@@ -118,7 +118,7 @@ P 3850 2650
 AR Path="/5FB85364" Ref="R?"  Part="1" 
 AR Path="/5FB04C67/5FB85364" Ref="R76"  Part="1" 
 F 0 "R76" V 3643 2650 50  0000 C CNN
-F 1 "1k" V 3734 2650 50  0000 C CNN
+F 1 "1.5k" V 3734 2650 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3780 2650 50  0001 C CNN
 F 3 "~" H 3850 2650 50  0001 C CNN
 	1    3850 2650
@@ -194,7 +194,7 @@ P 3850 4050
 AR Path="/5FB8539E" Ref="R?"  Part="1" 
 AR Path="/5FB04C67/5FB8539E" Ref="R77"  Part="1" 
 F 0 "R77" V 3643 4050 50  0000 C CNN
-F 1 "1k" V 3734 4050 50  0000 C CNN
+F 1 "1.5k" V 3734 4050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3780 4050 50  0001 C CNN
 F 3 "~" H 3850 4050 50  0001 C CNN
 	1    3850 4050
@@ -252,7 +252,7 @@ P 5150 4650
 AR Path="/5FB853BB" Ref="R?"  Part="1" 
 AR Path="/5FB04C67/5FB853BB" Ref="R79"  Part="1" 
 F 0 "R79" V 4943 4650 50  0000 C CNN
-F 1 "1k" V 5034 4650 50  0000 C CNN
+F 1 "1.5k" V 5034 4650 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5080 4650 50  0001 C CNN
 F 3 "~" H 5150 4650 50  0001 C CNN
 	1    5150 4650
@@ -1274,4 +1274,12 @@ Wire Wire Line
 	6500 3850 6950 3850
 Wire Wire Line
 	5900 3850 6200 3850
+Text Notes 2100 2500 0    50   ~ 0
+when terminated:\n+/- 350mV differential \n1.25V common mode voltage
+Wire Notes Line
+	3100 2700 3100 2550
+Text Notes 4450 1800 0    50   ~ 0
+gain = 1500/500  = 3
+Text Notes 6900 1800 0    50   ~ 0
+unterminated pk-pk amplitude = 2.1V\nterminated pk-pk = 1.05V
 $EndSCHEMATC

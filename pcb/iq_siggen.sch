@@ -2437,12 +2437,14 @@ F 3 "" H 5850 4600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9500 1300 9650 1300
-Wire Bus Line
-	2500 3650 2500 5500
-Wire Bus Line
-	2950 3650 2950 5400
 Connection ~ 9500 1300
 Connection ~ 9650 1300
 Wire Wire Line
 	9650 1300 9650 1250
+Text Notes 1500 6200 0    50   ~ 0
++/- 350mV differential \n1.25V common mode voltage
+Wire Bus Line
+	2500 3650 2500 5500
+Wire Bus Line
+	2950 3650 2950 5400
 $EndSCHEMATC

@@ -1922,13 +1922,13 @@ F 3 "" H 8700 3200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8700 3200 8850 3200
+Connection ~ 8850 3200
+Wire Wire Line
+	8850 3200 9050 3200
 Wire Bus Line
 	5450 3350 5450 3600
 Wire Bus Line
 	2450 2250 2450 3350
 Wire Bus Line
 	2450 1250 2450 2150
-Connection ~ 8850 3200
-Wire Wire Line
-	8850 3200 9050 3200
 $EndSCHEMATC
