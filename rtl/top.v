@@ -6,26 +6,37 @@ module top(i_ref_clk, i_resetb,
 		i_wbu_uart_rx, o_wbu_uart_tx,
 
         //signal outputs
-        o_baseband_i, o_baseband_q, o_local_oscilator_clk
+        o_baseband_i, o_baseband_q,
+		dac_clk_p, dac_clk_n,
+		i_clk_p, i_clk_n,
+		q_clk_p, q_clk_n
 );
 
 parameter sine_lookup_width = 16,
 		phase_width = 12,
 		accumulator_width = 32,
 		lo_phase_width = 12,
-		lo_accumulator_width = 32;
+		lo_accumulator_width = 32,
+		output_dac_width = 10;
 	
 input wire i_ref_clk, i_resetb;
+
 input wire i_wbu_uart_rx;
 output wire o_wbu_uart_tx;
-output wire [sine_lookup_width-1:0] o_baseband_i, o_baseband_q;
-output wire o_local_oscilator_clk;
 
+output wire [(output_dac_width-1):0] o_baseband_i, o_baseband_q;
+output wire i_clk_p, i_clk_n, q_clk_p, q_clk_n, dac_clk_p, dac_clk_n;
+
+//differential clock outputs
+assign i_clk_n = ~i_clk_p;
+assign q_clk_n = ~q_clk_p;
+assign dac_clk_n = ~dac_clk_p;
 
 wire reset;
 assign reset = !i_resetb;
 PUR PUR_INST (.PUR (reset));
 GSR GSR_INST (.GSR (reset));
+
 wire clk;
 //assign clk = i_ref_clk;
 `ifdef	synthesis
@@ -61,8 +72,6 @@ wire wb_stall;
 reg	wb_err;
 reg	[31:0] wb_idata;
 wire bus_interrupt;
-
-
 
 hbbus genbus (.i_clk(clk),
 	.i_rx_stb(rx_stb), 	// The receive transport wires
@@ -103,8 +112,8 @@ wire [sine_lookup_width:0] o_sample_dc_offset_i, o_sample_dc_offset_q;
 assign o_sample_dc_offset_i = o_sample_i + 2**(sine_lookup_width);
 assign o_sample_dc_offset_q = o_sample_q + 2**(sine_lookup_width);
 
-assign o_baseband_i = o_sample_dc_offset_i[sine_lookup_width:1];
-assign o_baseband_q = o_sample_dc_offset_q[sine_lookup_width:1];
+assign o_baseband_i = o_sample_dc_offset_i[sine_lookup_width:(sine_lookup_width-output_dac_width+1)];
+assign o_baseband_q = o_sample_dc_offset_q[sine_lookup_width:(sine_lookup_width-output_dac_width+1)];
 
 fm_generator_wb_slave #(
 	.sine_lookup_width(sine_lookup_width),
@@ -147,6 +156,12 @@ wire wb_cyc_efb, wb_stb_efb;
 	assign #0.1 wb_stb_efb = wb_cyc;
 `endif
 
+wire lo_pll_out;
+clock_phase_shifter clock_phase_shifter_inst(
+    .i_clk_2f(lo_pll_out),
+    .o_clk_i(i_clk_p),
+    .o_clk_q(q_clk_p)
+);
 
 dynamic_pll lo_gen(.CLKI(i_ref_clk), 
 			.PLLCLK(pll_clk), 
@@ -157,7 +172,7 @@ dynamic_pll lo_gen(.CLKI(i_ref_clk),
 			.PLLADDR(pll_addr), 
 			.PLLDATO(pll_data_o), 
 			.PLLACK(pll_ack),
-			.CLKOP(o_local_oscilator_clk), 
+			.CLKOP(lo_pll_out), 
 			.LOCK(lo_lock)
 			);
 
