@@ -444,7 +444,7 @@ Wire Wire Line
 Wire Wire Line
 	8900 4000 8950 4000
 Wire Wire Line
-	2450 3400 2750 3400
+	2450 3400 2700 3400
 Wire Wire Line
 	6050 4000 6400 4000
 Wire Wire Line
@@ -454,7 +454,7 @@ Wire Wire Line
 Wire Wire Line
 	8950 4000 9000 4000
 Wire Wire Line
-	2950 3400 3200 3400
+	2950 3400 3000 3400
 Wire Wire Line
 	3800 4350 5150 4350
 Wire Wire Line
@@ -487,4 +487,30 @@ Connection ~ 5150 3400
 Connection ~ 6400 3400
 Connection ~ 8950 4000
 Connection ~ 5150 4350
+$Comp
+L Device:Ferrite_Bead_Small FB9
+U 1 1 5FD504FA
+P 2850 3650
+F 0 "FB9" V 2613 3650 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 2704 3650 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder" V 2780 3650 50  0001 C CNN
+F 3 "~" H 2850 3650 50  0001 C CNN
+F 4 "C19330" H 2613 3750 50  0001 C CNN "LCSC"
+	1    2850 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2750 3650 2700 3650
+Wire Wire Line
+	2700 3650 2700 3400
+Connection ~ 2700 3400
+Wire Wire Line
+	2700 3400 2750 3400
+Wire Wire Line
+	2950 3650 3000 3650
+Wire Wire Line
+	3000 3650 3000 3400
+Connection ~ 3000 3400
+Wire Wire Line
+	3000 3400 3200 3400
 $EndSCHEMATC
