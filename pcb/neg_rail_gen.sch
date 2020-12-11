@@ -24,8 +24,6 @@ F 3 "https://www.onsemi.com/pub/Collateral/MBRS540T3-D.PDF" H 3350 3400 50  0001
 	1    3350 3400
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	5300 3400 5150 3400
 $Comp
 L Device:L L6
 U 1 1 5FD6EA52
@@ -37,8 +35,6 @@ F 3 "~" H 6650 3600 50  0001 C CNN
 	1    6650 3600
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	6300 3600 6400 3600
 $Comp
 L Device:CP C31
 U 1 1 5FD71007
@@ -58,6 +54,7 @@ F 0 "C32" H 7235 3704 50  0000 R CNN
 F 1 "10u" H 7235 3795 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7388 3600 50  0001 C CNN
 F 3 "~" H 7350 3750 50  0001 C CNN
+F 4 "C19702" H 7235 3804 50  0001 C CNN "LCSC"
 	1    7350 3750
 	-1   0    0    1   
 $EndComp
@@ -72,11 +69,6 @@ F 3 "~" H 7950 4000 50  0001 C CNN
 	1    7950 4000
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	8150 3600 8150 3650
-Text HLabel 9000 4000 2    50   Output ~ 0
-Vo(-5V)
-Connection ~ 8150 3600
 $Comp
 L Device:C C34
 U 1 1 5FD79EE0
@@ -85,14 +77,10 @@ F 0 "C34" H 8485 3754 50  0000 R CNN
 F 1 "10u" H 8485 3845 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 8638 3650 50  0001 C CNN
 F 3 "~" H 8600 3800 50  0001 C CNN
+F 4 "C19702" H 8485 3854 50  0001 C CNN "LCSC"
 	1    8600 3800
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	8600 3650 8600 3600
-Connection ~ 8600 3600
-Wire Wire Line
-	8600 3600 8150 3600
 $Comp
 L Diode:1N5822 D10
 U 1 1 5FD8306A
@@ -104,11 +92,6 @@ F 3 "https://www.onsemi.com/pub/Collateral/MBRS540T3-D.PDF" H 6400 3800 50  0001
 	1    6400 3800
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6400 3650 6400 3600
-Connection ~ 6400 3600
-Wire Wire Line
-	6400 3600 6500 3600
 $Comp
 L Device:CP C28
 U 1 1 5FD8CD2C
@@ -139,42 +122,10 @@ F 0 "C29" H 4265 3596 50  0000 L CNN
 F 1 "10u" H 4265 3505 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4188 3400 50  0001 C CNN
 F 3 "~" H 4150 3550 50  0001 C CNN
+F 4 "C19702" H 4265 3696 50  0001 C CNN "LCSC"
 	1    4150 3550
 	1    0    0    -1  
 $EndComp
-Text HLabel 2450 3400 0    50   Input ~ 0
-Vi(5V)
-Wire Wire Line
-	3800 3400 4150 3400
-Connection ~ 4150 3400
-Connection ~ 3800 3400
-Wire Wire Line
-	5800 3800 5800 4000
-Wire Wire Line
-	5300 3600 5150 3600
-Wire Wire Line
-	5800 4000 6050 4000
-Wire Wire Line
-	6400 3950 6400 4000
-Connection ~ 6400 4000
-Wire Wire Line
-	6400 4000 6950 4000
-Wire Wire Line
-	6950 3900 6950 4000
-Connection ~ 6950 4000
-Wire Wire Line
-	6950 4000 7350 4000
-Wire Wire Line
-	6800 3600 6950 3600
-Connection ~ 6950 3600
-Connection ~ 7350 4000
-Wire Wire Line
-	7350 3900 7350 4000
-Wire Wire Line
-	8600 4000 8600 3950
-Wire Wire Line
-	8600 4000 8900 4000
-Connection ~ 8600 4000
 $Comp
 L Device:CP C33
 U 1 1 5FDC37D7
@@ -186,13 +137,6 @@ F 3 "~" H 8150 3800 50  0001 C CNN
 	1    8150 3800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8150 3950 8150 4000
-Connection ~ 8150 4000
-Wire Wire Line
-	8150 4000 8600 4000
-Wire Wire Line
-	8100 4000 8150 4000
 $Comp
 L power:GNDPWR #PWR070
 U 1 1 5FDC93D0
@@ -204,23 +148,6 @@ F 3 "" H 9050 3550 50  0001 C CNN
 	1    9050 3600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8600 3600 9050 3600
-Wire Wire Line
-	7350 3600 7700 3600
-Connection ~ 7350 3600
-Wire Wire Line
-	7350 4000 7700 4000
-Wire Wire Line
-	7700 3650 7700 3600
-Connection ~ 7700 3600
-Wire Wire Line
-	7700 3600 8150 3600
-Wire Wire Line
-	7700 3950 7700 4000
-Connection ~ 7700 4000
-Wire Wire Line
-	7700 4000 7800 4000
 $Comp
 L Device:R R85
 U 1 1 5FDDC2C2
@@ -229,6 +156,7 @@ F 0 "R85" H 5220 4246 50  0000 L CNN
 F 1 "47k" H 5220 4155 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5080 4200 50  0001 C CNN
 F 3 "~" H 5150 4200 50  0001 C CNN
+F 4 "C25819" H 5220 4346 50  0001 C CNN "LCSC"
 	1    5150 4200
 	1    0    0    -1  
 $EndComp
@@ -240,6 +168,7 @@ F 0 "R84" H 4870 3946 50  0000 L CNN
 F 1 "47k" H 4870 3855 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4730 3900 50  0001 C CNN
 F 3 "~" H 4800 3900 50  0001 C CNN
+F 4 "C25819" H 4870 4046 50  0001 C CNN "LCSC"
 	1    4800 3900
 	1    0    0    -1  
 $EndComp
@@ -254,16 +183,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm2596.pdf" H 5800 3500 50  0001 C CNN
 	1    5800 3500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5150 3600 5150 4050
-Wire Wire Line
-	4800 4050 5150 4050
-Connection ~ 5150 4050
-Wire Wire Line
-	5150 4350 5800 4350
-Wire Wire Line
-	5800 4350 5800 4000
-Connection ~ 5800 4000
 $Comp
 L Device:C C30
 U 1 1 5FDEA8C9
@@ -272,16 +191,10 @@ F 0 "C30" H 4915 3596 50  0000 L CNN
 F 1 "0.1u" H 4915 3505 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4838 3400 50  0001 C CNN
 F 3 "~" H 4800 3550 50  0001 C CNN
+F 4 "C14663" H 4915 3696 50  0001 C CNN "LCSC"
 	1    4800 3550
 	1    0    0    -1  
 $EndComp
-Connection ~ 4800 3400
-Wire Wire Line
-	4800 3700 4800 3750
-Wire Wire Line
-	4150 3400 4800 3400
-Wire Wire Line
-	6950 3600 7350 3600
 $Comp
 L Device:C C35
 U 1 1 5FE0D49B
@@ -298,23 +211,13 @@ L Device:R R86
 U 1 1 5FE19832
 P 9250 4400
 F 0 "R86" H 9180 4354 50  0000 R CNN
-F 1 "3.07k" H 9180 4445 50  0000 R CNN
+F 1 "3k" H 9180 4445 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 9180 4400 50  0001 C CNN
 F 3 "~" H 9250 4400 50  0001 C CNN
+F 4 "C4211" H 9180 4454 50  0001 C CNN "LCSC"
 	1    9250 4400
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	9250 4250 9250 3600
-Wire Wire Line
-	9250 3600 9050 3600
-Connection ~ 9050 3600
-Wire Wire Line
-	6950 4900 6950 4000
-Wire Wire Line
-	9250 4550 9250 4600
-Wire Wire Line
-	6950 4900 9250 4900
 $Comp
 L Device:R R87
 U 1 1 5FE1B1CA
@@ -323,21 +226,10 @@ F 0 "R87" H 9180 4704 50  0000 R CNN
 F 1 "1k" H 9180 4795 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 9180 4750 50  0001 C CNN
 F 3 "~" H 9250 4750 50  0001 C CNN
+F 4 "C21190" H 9180 4804 50  0001 C CNN "LCSC"
 	1    9250 4750
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	9250 4550 9550 4550
-Wire Wire Line
-	9550 4550 9550 3400
-Connection ~ 9250 4550
-Wire Wire Line
-	6300 3400 6400 3400
-Wire Wire Line
-	8950 4250 9250 4250
-Connection ~ 9250 4250
-Wire Wire Line
-	8950 4550 9250 4550
 $Comp
 L power:PWR_FLAG #FLG07
 U 1 1 5FE36453
@@ -349,11 +241,6 @@ F 3 "~" H 8900 4000 50  0001 C CNN
 	1    8900 4000
 	1    0    0    -1  
 $EndComp
-Connection ~ 8900 4000
-Wire Wire Line
-	8900 4000 8950 4000
-Wire Wire Line
-	2450 3400 2750 3400
 $Comp
 L power:PWR_FLAG #FLG05
 U 1 1 5FE3E0B5
@@ -376,9 +263,6 @@ F 3 "~" H 6050 4000 50  0001 C CNN
 	1    6050 4000
 	1    0    0    -1  
 $EndComp
-Connection ~ 6050 4000
-Wire Wire Line
-	6050 4000 6400 4000
 $Comp
 L Connector:TestPoint TP30
 U 1 1 609BE548
@@ -390,9 +274,6 @@ F 3 "~" H 5350 3400 50  0001 C CNN
 	1    5150 3400
 	1    0    0    -1  
 $EndComp
-Connection ~ 5150 3400
-Wire Wire Line
-	5150 3400 4800 3400
 $Comp
 L Connector:TestPoint TP31
 U 1 1 609BF7FB
@@ -404,9 +285,6 @@ F 3 "~" H 6600 3400 50  0001 C CNN
 	1    6400 3400
 	1    0    0    -1  
 $EndComp
-Connection ~ 6400 3400
-Wire Wire Line
-	6400 3400 9550 3400
 $Comp
 L Connector:TestPoint TP32
 U 1 1 609C01D4
@@ -429,9 +307,6 @@ F 3 "~" H 9150 4000 50  0001 C CNN
 	1    8950 4000
 	1    0    0    -1  
 $EndComp
-Connection ~ 8950 4000
-Wire Wire Line
-	8950 4000 9000 4000
 $Comp
 L Connector:TestPoint TP34
 U 1 1 609C48B5
@@ -451,14 +326,10 @@ F 0 "FB8" V 2613 3400 50  0000 C CNN
 F 1 "Ferrite_Bead_Small" V 2704 3400 50  0000 C CNN
 F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder" V 2780 3400 50  0001 C CNN
 F 3 "~" H 2850 3400 50  0001 C CNN
+F 4 "C19330" H 2613 3500 50  0001 C CNN "LCSC"
 	1    2850 3400
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2950 3400 3200 3400
-Wire Wire Line
-	3800 4350 5150 4350
-Connection ~ 5150 4350
 $Comp
 L Diode:1N5822 D11
 U 1 1 5FBBE411
@@ -470,12 +341,150 @@ F 3 "https://www.onsemi.com/pub/Collateral/MBRS540T3-D.PDF" H 7700 3800 50  0001
 	1    7700 3800
 	0    1    1    0   
 $EndComp
+Text HLabel 9000 4000 2    50   Output ~ 0
+Vo(-5V)
+Text HLabel 2450 3400 0    50   Input ~ 0
+Vi(5V)
 Text Label 7050 4000 0    50   ~ 0
 -5VO
 Text Label 8350 4000 0    50   ~ 0
 -5VO_filtered
 Wire Wire Line
+	5300 3400 5150 3400
+Wire Wire Line
+	6300 3600 6400 3600
+Wire Wire Line
+	8150 3600 8150 3650
+Wire Wire Line
+	8600 3650 8600 3600
+Wire Wire Line
+	8600 3600 8150 3600
+Wire Wire Line
+	6400 3650 6400 3600
+Wire Wire Line
+	6400 3600 6500 3600
+Wire Wire Line
+	3800 3400 4150 3400
+Wire Wire Line
+	5800 3800 5800 4000
+Wire Wire Line
+	5300 3600 5150 3600
+Wire Wire Line
+	5800 4000 6050 4000
+Wire Wire Line
+	6400 3950 6400 4000
+Wire Wire Line
+	6400 4000 6950 4000
+Wire Wire Line
+	6950 3900 6950 4000
+Wire Wire Line
+	6950 4000 7350 4000
+Wire Wire Line
+	6800 3600 6950 3600
+Wire Wire Line
+	7350 3900 7350 4000
+Wire Wire Line
+	8600 4000 8600 3950
+Wire Wire Line
+	8600 4000 8900 4000
+Wire Wire Line
+	8150 3950 8150 4000
+Wire Wire Line
+	8150 4000 8600 4000
+Wire Wire Line
+	8100 4000 8150 4000
+Wire Wire Line
+	8600 3600 9050 3600
+Wire Wire Line
+	7350 3600 7700 3600
+Wire Wire Line
+	7350 4000 7700 4000
+Wire Wire Line
+	7700 3650 7700 3600
+Wire Wire Line
+	7700 3600 8150 3600
+Wire Wire Line
+	7700 3950 7700 4000
+Wire Wire Line
+	7700 4000 7800 4000
+Wire Wire Line
+	5150 3600 5150 4050
+Wire Wire Line
+	4800 4050 5150 4050
+Wire Wire Line
+	5150 4350 5800 4350
+Wire Wire Line
+	5800 4350 5800 4000
+Wire Wire Line
+	4800 3700 4800 3750
+Wire Wire Line
+	4150 3400 4800 3400
+Wire Wire Line
+	6950 3600 7350 3600
+Wire Wire Line
+	9250 4250 9250 3600
+Wire Wire Line
+	9250 3600 9050 3600
+Wire Wire Line
+	6950 4900 6950 4000
+Wire Wire Line
+	9250 4550 9250 4600
+Wire Wire Line
+	6950 4900 9250 4900
+Wire Wire Line
+	9250 4550 9550 4550
+Wire Wire Line
+	9550 4550 9550 3400
+Wire Wire Line
+	6300 3400 6400 3400
+Wire Wire Line
+	8950 4250 9250 4250
+Wire Wire Line
+	8950 4550 9250 4550
+Wire Wire Line
+	8900 4000 8950 4000
+Wire Wire Line
+	2450 3400 2750 3400
+Wire Wire Line
+	6050 4000 6400 4000
+Wire Wire Line
+	5150 3400 4800 3400
+Wire Wire Line
+	6400 3400 9550 3400
+Wire Wire Line
+	8950 4000 9000 4000
+Wire Wire Line
+	2950 3400 3200 3400
+Wire Wire Line
+	3800 4350 5150 4350
+Wire Wire Line
 	3500 3400 3800 3400
 Wire Wire Line
 	3800 3700 3800 4350
+Connection ~ 8150 3600
+Connection ~ 8600 3600
+Connection ~ 6400 3600
+Connection ~ 4150 3400
+Connection ~ 3800 3400
+Connection ~ 6400 4000
+Connection ~ 6950 4000
+Connection ~ 6950 3600
+Connection ~ 7350 4000
+Connection ~ 8600 4000
+Connection ~ 8150 4000
+Connection ~ 7350 3600
+Connection ~ 7700 3600
+Connection ~ 7700 4000
+Connection ~ 5150 4050
+Connection ~ 5800 4000
+Connection ~ 4800 3400
+Connection ~ 9050 3600
+Connection ~ 9250 4550
+Connection ~ 9250 4250
+Connection ~ 8900 4000
+Connection ~ 6050 4000
+Connection ~ 5150 3400
+Connection ~ 6400 3400
+Connection ~ 8950 4000
+Connection ~ 5150 4350
 $EndSCHEMATC
