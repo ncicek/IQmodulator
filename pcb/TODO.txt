@@ -1,2 +1,0 @@
-sma launch footprint is wrong
-fpga board header spacing is wrong
