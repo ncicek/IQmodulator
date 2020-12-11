@@ -1,0 +1,55 @@
+Comment,Designator,Footprint,LCSC Part Number
+3p,C1,Capacitor_SMD:C_0603_1608Metric,
+DNI,"C12,C13",Capacitor_SMD:C_0603_1608Metric,
+0.1u,"C16,C17,C18,C19,C20,C21,C30,C38,C41,C42,C43,C44,C48,C49,C51,C52,C53,C54,C55,C56,C57,C58",Capacitor_SMD:C_0603_1608Metric,C14663
+4.7p,"C14,C15,C22,C23,C36,C37,C39,C40",Capacitor_SMD:C_0603_1608Metric,C1669
+220u 25V tantalum,C28,Capacitor_Tantalum_SMD:CP_EIA-7343-43_Kemet-X_Pad2.25x2.55mm_HandSolder,C7231
+220u tantalum 25V,"C31,C33",Capacitor_Tantalum_SMD:CP_EIA-7343-43_Kemet-X_Pad2.25x2.55mm_HandSolder,C7231
+DNI - Feedforward cap,C35,Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder,
+10n,C5,Capacitor_SMD:C_0603_1608Metric,C57112
+220u,C6,Capacitor_Tantalum_SMD:CP_EIA-7343-43_Kemet-X_Pad2.25x2.55mm_HandSolder,C7231
+680p,"C71,C72,C83,C84",Capacitor_SMD:C_0603_1608Metric,C30816
+330p,"C68,C76,C80,C88",Capacitor_SMD:C_0603_1608Metric,C1664
+10u,"C2,C3,C4,C7,C8,C9,C24,C25,C26,C27,C29,C32,C34,C59,C60,C61,C62,C63,C64,C65",Capacitor_SMD:C_0603_1608Metric,C19702
+LED,"D1,D2,D3,D4",LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C34499 
+BAT15-04W,"D5,D6,D7,D8",Package_TO_SOT_SMD:SOT-323_SC-70_Handsoldering,
+MBRS540T3G,"D9,D10,D11",Diode_SMD:D_SMB_Handsoldering,C14651
+Ferrite_Bead_Small,"FB1,FB2,FB3,FB4,FB5,FB6,FB7,FB8,FB9",Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder,C19330
+J3 - BANK0,J1,Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical,
+Barrel_Jack,J10,Connector_BarrelJack:BarrelJack_Horizontal,
+Conn_Coaxial,"J6,J7,J8,J9,J11,J18,J19",iq_siggen:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount_withSTEP,
+Conn_01x01_Male,"J4,J12,J13,J14,J15,J16,J17",Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical,
+J4 - BANK1,J2,Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical,
+Conn_01x20_Male,J3,Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical,
+SolderJumper_3_Open,"JP1,JP2,JP4,JP5",iq_siggen:50ohm_solder_jumper,
+330n,"L10,L12,L20,L23,L28,L30,L38,L41",Inductor_SMD:L_0603_1608Metric,C46859
+470n,"L14,L17,L32,L35",Inductor_SMD:L_0603_1608Metric,C21307
+33u,L6,Inductor_SMD:L_Bourns_SRR1260,
+3.3u,L7,Inductor_THT:L_Axial_L9.5mm_D4.0mm_P12.70mm_Horizontal_Fastron_SMCC,
+6.8k - optional output termination,R100,Resistor_SMD:R_0603_1608Metric,
+1.985k,R101,Resistor_SMD:R_0603_1608Metric,
+22,"R17,R18,R19,R21,R22,R23,R24,R25,R26,R27,R28,R29,R34,R36,R37,R38,R39,R40,R41,R42,R43,R44,R45,R52,R53",Resistor_SMD:R_0603_1608Metric,C23345
+3k,"R48,R49,R86",Resistor_SMD:R_0603_1608Metric,C4211
+DNI,"R46,R47,R54,R55,R66,R68",Resistor_SMD:R_0603_1608Metric,
+220,"R56,R57,R58,R59",Resistor_SMD:R_0603_1608Metric,C22962
+0,"R2,R3,R4,R5,R6,R7,R10,R11,R12,R13,R14,R15,R16,R30,R31,R32,R33,R67,R69",Resistor_SMD:R_0603_1608Metric,C21189
+16.5,"R62,R63,R64",Resistor_SMD:R_0603_1608Metric,C12054
+DNI-50,"R60,R61,R65,R82",Resistor_SMD:R_0603_1608Metric,
+499,"R72,R73,R74,R75,R94,R95,R96,R97",Resistor_SMD:R_0603_1608Metric,C23065
+1.5k,"R76,R77,R78,R79",Resistor_SMD:R_0603_1608Metric,C22843
+100,"R8,R70,R71",Resistor_SMD:R_0603_1608Metric,C22775
+49.9,"R80,R81,R92,R93,R104,R105",Resistor_SMD:R_0603_1608Metric,C23185
+DNI - 50,R83,Resistor_SMD:R_0603_1608Metric,
+47k,"R84,R85",Resistor_SMD:R_0603_1608Metric,C25819
+1k,"R87,R98,R99,R102,R103",Resistor_SMD:R_0603_1608Metric,C21190
+24.9,"R88,R89,R90,R91",Resistor_SMD:R_0603_1608Metric,C22916
+SW_Push,"SW1,SW2",Button_Switch_THT:SW_PUSH_6mm_H5mm,
+Transformer_1P_SS,"T1,T2,T3,T4",iq_siggen:trifilar_wound_toroidal_rf_transformer,
+TestPoint,"TP1,TP4,TP10,TP17,TP18,TP19,TP22,TP23,TP24,TP25,TP30,TP31,TP32,TP33,TP34",TestPoint:TestPoint_Pad_D1.5mm,
+TestPoint,"TP51,TP52,TP53,TP56,TP57,TP58",TestPoint:TestPoint_Pad_D1.0mm,
+AMS1117-3.3,U1,Package_TO_SOT_SMD:SOT-223-3_TabPin2,C6186
+TPS72325DBVR,U2,Package_TO_SOT_SMD:SOT-23-5_HandSoldering,C69932
+TLV73325PDBVT,U3,Package_TO_SOT_SMD:SOT-23-5_HandSoldering,
+TLV3542IDR,"U4,U7",Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,
+LM2596S-ADJ,U5,Package_TO_SOT_SMD:TO-263-5_TabPin3,
+MAX5853ETL-T,U6,iq_siggen:qfn_max5853,
