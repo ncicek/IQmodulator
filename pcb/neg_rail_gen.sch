@@ -21,6 +21,7 @@ F 0 "D9" H 3350 3183 50  0000 C CNN
 F 1 "MBRS540T3G" H 3350 3274 50  0000 C CNN
 F 2 "Diode_SMD:D_SMB_Handsoldering" H 3350 3225 50  0001 C CNN
 F 3 "https://www.onsemi.com/pub/Collateral/MBRS540T3-D.PDF" H 3350 3400 50  0001 C CNN
+F 4 "C14651" H 3350 3400 50  0001 C CNN "LCSC"
 	1    3350 3400
 	-1   0    0    1   
 $EndComp
@@ -41,8 +42,9 @@ U 1 1 5FD71007
 P 6950 3750
 F 0 "C31" H 7068 3796 50  0000 L CNN
 F 1 "220u tantalum 25V" H 7068 3705 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-20_Kemet-V_Pad2.25x2.55mm_HandSolder" H 6988 3600 50  0001 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-43_Kemet-X_Pad2.25x2.55mm_HandSolder" H 6988 3600 50  0001 C CNN
 F 3 "~" H 6950 3750 50  0001 C CNN
+F 4 "C7231" H 6950 3750 50  0001 C CNN "LCSC"
 	1    6950 3750
 	1    0    0    -1  
 $EndComp
@@ -89,6 +91,7 @@ F 0 "D10" V 6354 3880 50  0000 L CNN
 F 1 "MBRS540T3G" V 6445 3880 50  0000 L CNN
 F 2 "Diode_SMD:D_SMB_Handsoldering" H 6400 3625 50  0001 C CNN
 F 3 "https://www.onsemi.com/pub/Collateral/MBRS540T3-D.PDF" H 6400 3800 50  0001 C CNN
+F 4 "C14651" V 6400 3800 50  0001 C CNN "LCSC"
 	1    6400 3800
 	0    1    1    0   
 $EndComp
@@ -98,8 +101,9 @@ U 1 1 5FD8CD2C
 P 3800 3550
 F 0 "C28" H 3918 3596 50  0000 L CNN
 F 1 "220u 25V tantalum" H 3918 3505 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-20_Kemet-V_Pad2.25x2.55mm_HandSolder" H 3838 3400 50  0001 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-43_Kemet-X_Pad2.25x2.55mm_HandSolder" H 3838 3400 50  0001 C CNN
 F 3 "~" H 3800 3550 50  0001 C CNN
+F 4 "C7231" H 3800 3550 50  0001 C CNN "LCSC"
 	1    3800 3550
 	1    0    0    -1  
 $EndComp
@@ -124,17 +128,6 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 4188 3400 50  0001 C CNN
 F 3 "~" H 4150 3550 50  0001 C CNN
 F 4 "C19702" H 4265 3696 50  0001 C CNN "LCSC"
 	1    4150 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP C33
-U 1 1 5FDC37D7
-P 8150 3800
-F 0 "C33" H 8268 3846 50  0000 L CNN
-F 1 "220u tantalum 25V" H 8268 3755 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-20_Kemet-V_Pad2.25x2.55mm_HandSolder" H 8188 3650 50  0001 C CNN
-F 3 "~" H 8150 3800 50  0001 C CNN
-	1    8150 3800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -338,6 +331,7 @@ F 0 "D11" V 7654 3880 50  0000 L CNN
 F 1 "MBRS540T3G" V 7745 3880 50  0000 L CNN
 F 2 "Diode_SMD:D_SMB_Handsoldering" H 7700 3625 50  0001 C CNN
 F 3 "https://www.onsemi.com/pub/Collateral/MBRS540T3-D.PDF" H 7700 3800 50  0001 C CNN
+F 4 "C14651" V 7700 3800 50  0001 C CNN "LCSC"
 	1    7700 3800
 	0    1    1    0   
 $EndComp
@@ -513,4 +507,16 @@ Wire Wire Line
 Connection ~ 3000 3400
 Wire Wire Line
 	3000 3400 3200 3400
+$Comp
+L Device:CP C33
+U 1 1 5FDC37D7
+P 8150 3800
+F 0 "C33" H 8268 3846 50  0000 L CNN
+F 1 "220u tantalum 25V" H 8268 3755 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-43_Kemet-X_Pad2.25x2.55mm_HandSolder" H 8188 3650 50  0001 C CNN
+F 3 "~" H 8150 3800 50  0001 C CNN
+F 4 "C7231" H 8150 3800 50  0001 C CNN "LCSC"
+	1    8150 3800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
