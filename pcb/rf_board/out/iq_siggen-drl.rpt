@@ -1,0 +1,27 @@
+Drill report for D:\Documents\Git_Local\fm_modulator\pcb\iq_siggen.kicad_pcb
+Created on 12/11/20 2:40:42 AM
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  In1.Cu                    in1
+    L3 :  In2.Cu                    in2
+    L4 :  B.Cu                      back
+
+
+Drill file 'iq_siggen.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.20mm  0.008"  (372 holes)
+    T2  0.40mm  0.016"  (498 holes)
+    T3  1.00mm  0.039"  (112 holes)  (with 3 slots)
+    T4  1.10mm  0.043"  (8 holes)
+
+    Total plated holes count 990
+
+
+Not plated through holes are merged with plated holes
+    unplated through holes:
+    =============================================================
+
+    Total unplated holes count 0
