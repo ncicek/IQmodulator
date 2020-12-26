@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name sigma_delta_adc_board_sch_lib)(type Legacy)(uri ${KIPRJMOD}/sigma_delta_adc_board_sch_lib.lib)(options "")(descr ""))
+)
