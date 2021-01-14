@@ -1,0 +1,273 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Wed Jan 13 20:58:38 2021
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     top
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk1 [get_nets lo_pll_out]
+            2 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 2.047ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \clock_phase_shifter_inst/o_clk_q_10  (from lo_pll_out +)
+   Destination:    FD1S3AX    D              \clock_phase_shifter_inst/o_clk_q_10  (to lo_pll_out -)
+
+   Delay:                   2.807ns  (30.3% logic, 69.7% route), 2 logic levels.
+
+ Constraint Details:
+
+      2.807ns data_path \clock_phase_shifter_inst/o_clk_q_10 to \clock_phase_shifter_inst/o_clk_q_10 meets
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 2.047ns
+
+ Path Details: \clock_phase_shifter_inst/o_clk_q_10 to \clock_phase_shifter_inst/o_clk_q_10
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \clock_phase_shifter_inst/o_clk_q_10 (from lo_pll_out)
+Route         2   e 1.002                                  q_clk_p_c
+LUT4        ---     0.448              A to Z              o_clk_q_I_0_1_lut
+Route         2   e 0.954                                  q_clk_n_c
+                  --------
+                    2.807  (30.3% logic, 69.7% route), 2 logic levels.
+
+
+Passed:  The following path meets requirements by 2.047ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \clock_phase_shifter_inst/o_clk_i_9  (from lo_pll_out +)
+   Destination:    FD1S3AX    D              \clock_phase_shifter_inst/o_clk_i_9  (to lo_pll_out +)
+
+   Delay:                   2.807ns  (30.3% logic, 69.7% route), 2 logic levels.
+
+ Constraint Details:
+
+      2.807ns data_path \clock_phase_shifter_inst/o_clk_i_9 to \clock_phase_shifter_inst/o_clk_i_9 meets
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 2.047ns
+
+ Path Details: \clock_phase_shifter_inst/o_clk_i_9 to \clock_phase_shifter_inst/o_clk_i_9
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \clock_phase_shifter_inst/o_clk_i_9 (from lo_pll_out)
+Route         2   e 1.002                                  i_clk_p_c
+LUT4        ---     0.448              A to Z              o_clk_i_I_0_1_lut
+Route         2   e 0.954                                  i_clk_n_c
+                  --------
+                    2.807  (30.3% logic, 69.7% route), 2 logic levels.
+
+Report: 2.953 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets i_ref_clk_c]
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 5.891ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             \genbus/wbexec/o_wb_addr_506__i27  (from i_ref_clk_c +)
+   Destination:    FD1P3DX    SP             \wb_fm_data_31__I_0/addr_space[0][29]_163  (to i_ref_clk_c +)
+
+   Delay:                  10.632ns  (29.1% logic, 70.9% route), 7 logic levels.
+
+ Constraint Details:
+
+     10.632ns data_path \genbus/wbexec/o_wb_addr_506__i27 to \wb_fm_data_31__I_0/addr_space[0][29]_163 violates
+      5.000ns delay constraint less
+      0.259ns LCE_S requirement (totaling 4.741ns) by 5.891ns
+
+ Path Details: \genbus/wbexec/o_wb_addr_506__i27 to \wb_fm_data_31__I_0/addr_space[0][29]_163
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \genbus/wbexec/o_wb_addr_506__i27 (from i_ref_clk_c)
+Route         4   e 1.168                                  wb_addr[27]
+LUT4        ---     0.448              C to Z              i12_4_lut
+Route         1   e 0.788                                  n32
+LUT4        ---     0.448              B to Z              i16_4_lut
+Route         1   e 0.788                                  n36
+LUT4        ---     0.448              B to Z              i18_4_lut
+Route         1   e 0.788                                  n38
+LUT4        ---     0.448              B to Z              i19_4_lut
+Route         7   e 1.255                                  n11785
+LUT4        ---     0.448              B to Z              i1_2_lut_rep_248_3_lut
+Route         3   e 1.051                                  n24808
+LUT4        ---     0.448              A to Z              i21100_2_lut_3_lut_4_lut
+Route        32   e 1.703                                  i_ref_clk_c_enable_106
+                  --------
+                   10.632  (29.1% logic, 70.9% route), 7 logic levels.
+
+
+Error:  The following path violates requirements by 5.891ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             \genbus/wbexec/o_wb_addr_506__i27  (from i_ref_clk_c +)
+   Destination:    FD1P3DX    SP             \wb_fm_data_31__I_0/addr_space[0][28]_164  (to i_ref_clk_c +)
+
+   Delay:                  10.632ns  (29.1% logic, 70.9% route), 7 logic levels.
+
+ Constraint Details:
+
+     10.632ns data_path \genbus/wbexec/o_wb_addr_506__i27 to \wb_fm_data_31__I_0/addr_space[0][28]_164 violates
+      5.000ns delay constraint less
+      0.259ns LCE_S requirement (totaling 4.741ns) by 5.891ns
+
+ Path Details: \genbus/wbexec/o_wb_addr_506__i27 to \wb_fm_data_31__I_0/addr_space[0][28]_164
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \genbus/wbexec/o_wb_addr_506__i27 (from i_ref_clk_c)
+Route         4   e 1.168                                  wb_addr[27]
+LUT4        ---     0.448              C to Z              i12_4_lut
+Route         1   e 0.788                                  n32
+LUT4        ---     0.448              B to Z              i16_4_lut
+Route         1   e 0.788                                  n36
+LUT4        ---     0.448              B to Z              i18_4_lut
+Route         1   e 0.788                                  n38
+LUT4        ---     0.448              B to Z              i19_4_lut
+Route         7   e 1.255                                  n11785
+LUT4        ---     0.448              B to Z              i1_2_lut_rep_248_3_lut
+Route         3   e 1.051                                  n24808
+LUT4        ---     0.448              A to Z              i21100_2_lut_3_lut_4_lut
+Route        32   e 1.703                                  i_ref_clk_c_enable_106
+                  --------
+                   10.632  (29.1% logic, 70.9% route), 7 logic levels.
+
+
+Error:  The following path violates requirements by 5.891ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             \genbus/wbexec/o_wb_addr_506__i27  (from i_ref_clk_c +)
+   Destination:    FD1P3DX    SP             \wb_fm_data_31__I_0/addr_space[0][27]_165  (to i_ref_clk_c +)
+
+   Delay:                  10.632ns  (29.1% logic, 70.9% route), 7 logic levels.
+
+ Constraint Details:
+
+     10.632ns data_path \genbus/wbexec/o_wb_addr_506__i27 to \wb_fm_data_31__I_0/addr_space[0][27]_165 violates
+      5.000ns delay constraint less
+      0.259ns LCE_S requirement (totaling 4.741ns) by 5.891ns
+
+ Path Details: \genbus/wbexec/o_wb_addr_506__i27 to \wb_fm_data_31__I_0/addr_space[0][27]_165
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \genbus/wbexec/o_wb_addr_506__i27 (from i_ref_clk_c)
+Route         4   e 1.168                                  wb_addr[27]
+LUT4        ---     0.448              C to Z              i12_4_lut
+Route         1   e 0.788                                  n32
+LUT4        ---     0.448              B to Z              i16_4_lut
+Route         1   e 0.788                                  n36
+LUT4        ---     0.448              B to Z              i18_4_lut
+Route         1   e 0.788                                  n38
+LUT4        ---     0.448              B to Z              i19_4_lut
+Route         7   e 1.255                                  n11785
+LUT4        ---     0.448              B to Z              i1_2_lut_rep_248_3_lut
+Route         3   e 1.051                                  n24808
+LUT4        ---     0.448              A to Z              i21100_2_lut_3_lut_4_lut
+Route        32   e 1.703                                  i_ref_clk_c_enable_106
+                  --------
+                   10.632  (29.1% logic, 70.9% route), 7 logic levels.
+
+Warning: 10.891 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets lo_pll_out]              |     5.000 ns|     2.953 ns|     2  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets i_ref_clk_c]             |     5.000 ns|    10.891 ns|     7 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+\wb_fm_data_31__I_0/n14286              |      31|    1978|     48.29%
+                                        |        |        |
+\wb_fm_data_31__I_0/n24                 |       1|    1828|     44.63%
+                                        |        |        |
+n38                                     |       1|    1606|     39.21%
+                                        |        |        |
+n11785                                  |       7|    1606|     39.21%
+                                        |        |        |
+\wb_fm_data_31__I_0/n17354              |       1|    1546|     37.74%
+                                        |        |        |
+\wb_fm_data_31__I_0/n17355              |       1|    1534|     37.45%
+                                        |        |        |
+\wb_fm_data_31__I_0/n17353              |       1|    1510|     36.87%
+                                        |        |        |
+\wb_fm_data_31__I_0/n17356              |       1|    1474|     35.99%
+                                        |        |        |
+\wb_fm_data_31__I_0/n17352              |       1|    1426|     34.81%
+                                        |        |        |
+\wb_fm_data_31__I_0/n17357              |       1|    1366|     33.35%
+                                        |        |        |
+\wb_fm_data_31__I_0/n17351              |       1|    1294|     31.59%
+                                        |        |        |
+n36                                     |       1|    1286|     31.40%
+                                        |        |        |
+\wb_fm_data_31__I_0/n17358              |       1|    1200|     29.30%
+                                        |        |        |
+\wb_fm_data_31__I_0/n22_adj_3028        |       1|    1152|     28.13%
+                                        |        |        |
+\wb_fm_data_31__I_0/n17350              |       1|    1094|     26.71%
+                                        |        |        |
+\wb_fm_data_31__I_0/n17359              |       1|     966|     23.58%
+                                        |        |        |
+n24808                                  |       3|     960|     23.44%
+                                        |        |        |
+\wb_fm_data_31__I_0/n17349              |       1|     838|     20.46%
+                                        |        |        |
+\wb_fm_data_31__I_0/n17360              |       1|     688|     16.80%
+                                        |        |        |
+n32                                     |       1|     644|     15.72%
+                                        |        |        |
+\wb_fm_data_31__I_0/n16                 |       1|     576|     14.06%
+                                        |        |        |
+\wb_fm_data_31__I_0/n17348              |       1|     538|     13.13%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+Timing summary:
+---------------
+
+Timing errors: 4096  Score: 19402811
+
+Constraints cover  40757 paths, 5987 nets, and 18230 connections (96.7% coverage)
+
+
+Peak memory: 182083584 bytes, TRCE: 0 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 

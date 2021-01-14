@@ -1,0 +1,338 @@
+<HTML>
+<HEAD><TITLE>Lattice Synthesis Timing Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Wed Jan 13 20:52:30 2021
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Design:     hbconsole
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets i_clk_c]
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 4.685ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \packxi/o_pck_word__i33  (from i_clk_c +)
+   Destination:    FD1P3AX    D              \wbexec/o_wb_addr_176__i29  (to i_clk_c +)
+
+   Delay:                   9.539ns  (46.7% logic, 53.3% route), 18 logic levels.
+
+ Constraint Details:
+
+      9.539ns data_path \packxi/o_pck_word__i33 to \wbexec/o_wb_addr_176__i29 violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 4.685ns
+
+ Path Details: \packxi/o_pck_word__i33 to \wbexec/o_wb_addr_176__i29
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \packxi/o_pck_word__i33 (from i_clk_c)
+Route         6   e 1.266                                  iw_word[33]
+LUT4        ---     0.448              A to Z              \wbexec/i2930_3_lut_rep_116
+Route         3   e 1.051                                  \wbexec/n3758
+LUT4        ---     0.448              B to Z              \wbexec/i1_2_lut_3_lut_adj_53
+Route        30   e 1.700                                  \wbexec/n3
+A1_TO_FCO   ---     0.752           B[2] to COUT           \wbexec/o_wb_addr_176_add_4_3
+Route         1   e 0.020                                  \wbexec/n3249
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_5
+Route         1   e 0.020                                  \wbexec/n3250
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_7
+Route         1   e 0.020                                  \wbexec/n3251
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_9
+Route         1   e 0.020                                  \wbexec/n3252
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_11
+Route         1   e 0.020                                  \wbexec/n3253
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_13
+Route         1   e 0.020                                  \wbexec/n3254
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_15
+Route         1   e 0.020                                  \wbexec/n3255
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_17
+Route         1   e 0.020                                  \wbexec/n3256
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_19
+Route         1   e 0.020                                  \wbexec/n3257
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_21
+Route         1   e 0.020                                  \wbexec/n3258
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_23
+Route         1   e 0.020                                  \wbexec/n3259
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_25
+Route         1   e 0.020                                  \wbexec/n3260
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_27
+Route         1   e 0.020                                  \wbexec/n3261
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_29
+Route         1   e 0.020                                  \wbexec/n3262
+FCI_TO_F    ---     0.544            CIN to S[2]           \wbexec/o_wb_addr_176_add_4_31
+Route         1   e 0.788                                  \wbexec/n127
+                  --------
+                    9.539  (46.7% logic, 53.3% route), 18 logic levels.
+
+
+Error:  The following path violates requirements by 4.685ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \packxi/o_pck_word__i33  (from i_clk_c +)
+   Destination:    FD1P3AX    D              \wbexec/o_wb_addr_176__i29  (to i_clk_c +)
+
+   Delay:                   9.539ns  (46.7% logic, 53.3% route), 18 logic levels.
+
+ Constraint Details:
+
+      9.539ns data_path \packxi/o_pck_word__i33 to \wbexec/o_wb_addr_176__i29 violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 4.685ns
+
+ Path Details: \packxi/o_pck_word__i33 to \wbexec/o_wb_addr_176__i29
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \packxi/o_pck_word__i33 (from i_clk_c)
+Route         6   e 1.266                                  iw_word[33]
+LUT4        ---     0.448              A to Z              \wbexec/i2930_3_lut_rep_116
+Route         3   e 1.051                                  \wbexec/n3758
+LUT4        ---     0.448              B to Z              \wbexec/i1_2_lut_3_lut_adj_53
+Route        30   e 1.700                                  \wbexec/n3
+A1_TO_FCO   ---     0.752           B[2] to COUT           \wbexec/o_wb_addr_176_add_4_3
+Route         1   e 0.020                                  \wbexec/n3249
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_5
+Route         1   e 0.020                                  \wbexec/n3250
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_7
+Route         1   e 0.020                                  \wbexec/n3251
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_9
+Route         1   e 0.020                                  \wbexec/n3252
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_11
+Route         1   e 0.020                                  \wbexec/n3253
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_13
+Route         1   e 0.020                                  \wbexec/n3254
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_15
+Route         1   e 0.020                                  \wbexec/n3255
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_17
+Route         1   e 0.020                                  \wbexec/n3256
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_19
+Route         1   e 0.020                                  \wbexec/n3257
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_21
+Route         1   e 0.020                                  \wbexec/n3258
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_23
+Route         1   e 0.020                                  \wbexec/n3259
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_25
+Route         1   e 0.020                                  \wbexec/n3260
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_27
+Route         1   e 0.020                                  \wbexec/n3261
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_29
+Route         1   e 0.020                                  \wbexec/n3262
+FCI_TO_F    ---     0.544            CIN to S[2]           \wbexec/o_wb_addr_176_add_4_31
+Route         1   e 0.788                                  \wbexec/n127
+                  --------
+                    9.539  (46.7% logic, 53.3% route), 18 logic levels.
+
+
+Error:  The following path violates requirements by 4.685ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \packxi/o_pck_word__i33  (from i_clk_c +)
+   Destination:    FD1P3AX    D              \wbexec/o_wb_addr_176__i30  (to i_clk_c +)
+
+   Delay:                   9.539ns  (46.7% logic, 53.3% route), 18 logic levels.
+
+ Constraint Details:
+
+      9.539ns data_path \packxi/o_pck_word__i33 to \wbexec/o_wb_addr_176__i30 violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 4.685ns
+
+ Path Details: \packxi/o_pck_word__i33 to \wbexec/o_wb_addr_176__i30
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \packxi/o_pck_word__i33 (from i_clk_c)
+Route         6   e 1.266                                  iw_word[33]
+LUT4        ---     0.448              A to Z              \wbexec/i2930_3_lut_rep_116
+Route         3   e 1.051                                  \wbexec/n3758
+LUT4        ---     0.448              B to Z              \wbexec/i1_2_lut_3_lut_adj_53
+Route        30   e 1.700                                  \wbexec/n3
+A1_TO_FCO   ---     0.752           B[2] to COUT           \wbexec/o_wb_addr_176_add_4_3
+Route         1   e 0.020                                  \wbexec/n3249
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_5
+Route         1   e 0.020                                  \wbexec/n3250
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_7
+Route         1   e 0.020                                  \wbexec/n3251
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_9
+Route         1   e 0.020                                  \wbexec/n3252
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_11
+Route         1   e 0.020                                  \wbexec/n3253
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_13
+Route         1   e 0.020                                  \wbexec/n3254
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_15
+Route         1   e 0.020                                  \wbexec/n3255
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_17
+Route         1   e 0.020                                  \wbexec/n3256
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_19
+Route         1   e 0.020                                  \wbexec/n3257
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_21
+Route         1   e 0.020                                  \wbexec/n3258
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_23
+Route         1   e 0.020                                  \wbexec/n3259
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_25
+Route         1   e 0.020                                  \wbexec/n3260
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_27
+Route         1   e 0.020                                  \wbexec/n3261
+FCI_TO_FCO  ---     0.143            CIN to COUT           \wbexec/o_wb_addr_176_add_4_29
+Route         1   e 0.020                                  \wbexec/n3262
+FCI_TO_F    ---     0.544            CIN to S[2]           \wbexec/o_wb_addr_176_add_4_31
+Route         1   e 0.788                                  \wbexec/n126
+                  --------
+                    9.539  (46.7% logic, 53.3% route), 18 logic levels.
+
+Warning: 9.685 ns is the maximum delay for this constraint.
+
+
+<A name="mtw1_rs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets i_clk_c]                 |     5.000 ns|     9.685 ns|    18 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+\wbexec/n3                              |      30|    2224|     54.30%
+                                        |        |        |
+\wbexec/n3255                           |       1|    2112|     51.56%
+                                        |        |        |
+\wbexec/n3256                           |       1|    2104|     51.37%
+                                        |        |        |
+\wbexec/n3254                           |       1|    2046|     49.95%
+                                        |        |        |
+\wbexec/n3257                           |       1|    2019|     49.29%
+                                        |        |        |
+\wbexec/n3253                           |       1|    1902|     46.44%
+                                        |        |        |
+\wbexec/n3258                           |       1|    1862|     45.46%
+                                        |        |        |
+\wbexec/n3252                           |       1|    1686|     41.16%
+                                        |        |        |
+\wbexec/n3259                           |       1|    1632|     39.84%
+                                        |        |        |
+\wbexec/i_clk_c_enable_25               |      30|    1532|     37.40%
+                                        |        |        |
+\wbexec/n3758                           |       3|    1524|     37.21%
+                                        |        |        |
+\wbexec/n3251                           |       1|    1396|     34.08%
+                                        |        |        |
+\wbexec/n3260                           |       1|    1330|     32.47%
+                                        |        |        |
+\wbexec/n3250                           |       1|    1034|     25.24%
+                                        |        |        |
+\wbexec/n3261                           |       1|     956|     23.34%
+                                        |        |        |
+iw_stb                                  |       6|     918|     22.41%
+                                        |        |        |
+iw_word[33]                             |       6|     918|     22.41%
+                                        |        |        |
+iw_word[32]                             |       5|     882|     21.53%
+                                        |        |        |
+o_wb_cyc_c                              |      46|     844|     20.61%
+                                        |        |        |
+\wbexec/n3249                           |       1|     601|     14.67%
+                                        |        |        |
+\wbexec/n3262                           |       1|     512|     12.50%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary:</big></U></B>
+---------------
+
+Timing errors: 4096  Score: 9592594
+
+Constraints cover  7622 paths, 524 nets, and 1813 connections (84.5% coverage)
+
+
+Peak memory: 74219520 bytes, TRCE: 7041024 bytes, DLYMAN: 163840 bytes
+CPU_TIME_REPORT: 0 secs 
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

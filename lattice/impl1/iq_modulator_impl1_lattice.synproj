@@ -1,0 +1,63 @@
+-a "MachXO3LF"
+-d LCMXO3LF-6900C
+-t CABGA256
+-s 5
+-frequency 200
+-optimization_goal Balanced
+-bram_utilization 100
+-ramstyle Auto
+-romstyle auto
+-dsp_utilization 100
+-use_dsp 1
+-use_carry_chain 1
+-carry_chain_length 0
+-force_gsr Auto
+-resource_sharing 1
+-propagate_constants 1
+-remove_duplicate_regs 1
+-mux_style Auto
+-max_fanout 1000
+-fsm_encoding_style Auto
+-twr_paths 3
+-fix_gated_clocks 1
+-loop_limit 1950
+
+
+
+-use_io_insertion 1
+-resolve_mixed_drivers 0
+-use_io_reg auto
+
+
+-lpf 1
+-p "D:/Documents/Git_Local/fm_modulator/lattice"
+-ver "D:/Documents/Git_Local/fm_modulator/rtl/dds.v"
+"D:/Documents/Git_Local/fm_modulator/rtl/fm_generator_wb_slave.v"
+"D:/Documents/Git_Local/fm_modulator/rtl/iq_gen.v"
+"D:/Documents/Git_Local/fm_modulator/rtl/nco.v"
+"D:/Documents/Git_Local/fm_modulator/rtl/quarter_wave_sine_lookup.v"
+"D:/Documents/Git_Local/fm_modulator/rtl/top.v"
+"D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbaxil.v"
+"D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbbus.v"
+"D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbconsole.v"
+"D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbdechex.v"
+"D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbdeword.v"
+"D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbexec.v"
+"D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbexecaxi.v"
+"D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbgenhex.v"
+"D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbidle.v"
+"D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbints.v"
+"D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbnewline.v"
+"D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbpack.v"
+"D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/rxuartlite.v"
+"D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/txuartlite.v"
+"D:/Documents/Git_Local/fm_modulator/rtl/clock_phase_shifter.v"
+"D:/Documents/Git_Local/fm_modulator/lattice/efb_inst.v"
+"D:/Documents/Git_Local/fm_modulator/lattice/dynamic_pll.v"
+-top top
+
+
+-p "C:/lscc/diamond/3.11_x64/ispfpga/xo3c00f/data" "D:/Documents/Git_Local/fm_modulator/lattice/impl1" "D:/Documents/Git_Local/fm_modulator/lattice"
+
+-ngd "iq_modulator_impl1.ngd"
+
