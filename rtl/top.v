@@ -27,24 +27,25 @@ output wire o_wbu_uart_tx;
 output wire [(output_dac_width-1):0] o_baseband_i, o_baseband_q;
 output wire i_clk_p, i_clk_n, q_clk_p, q_clk_n, dac_clk_p, dac_clk_n;
 
-//differential clock outputs
-assign i_clk_n = ~i_clk_p;
-assign q_clk_n = ~q_clk_p;
-assign dac_clk_n = ~dac_clk_p;
-
 wire reset;
 assign reset = !i_resetb;
 PUR PUR_INST (.PUR (reset));
 GSR GSR_INST (.GSR (reset));
 
 wire clk;
-//assign clk = i_ref_clk;
 `ifdef	synthesis
-	pll_fm pll_inst (.CLKI(i_ref_clk), .RST(1'b0), .CLKOP(), .CLKOS(clk));
+	sys_clk sys_clk_inst (.CLKI(i_ref_clk), .CLKOP(clk));
 `else
 	assign clk = i_ref_clk;
 `endif
 
+
+//differential clock outputs
+assign i_clk_n = ~i_clk_p;
+assign q_clk_n = ~q_clk_p;
+assign dac_clk_n = ~dac_clk_p;
+
+assign dac_clk_p = clk;
 
 wire rx_stb;
 wire [7:0] rx_data;
