@@ -14,7 +14,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Jan 13 20:58:31 2021
+Wed Jan 13 21:45:21 2021
 
 
 Command Line:  synthesis -f iq_modulator_impl1_lattice.synproj -gui 
@@ -43,7 +43,7 @@ Using performance grade 5.
                                                           
 
 INFO - synthesis: User-Selected Strategy Settings
-Optimization goal = Balanced
+Optimization goal = Timing
 Top-level module name = top.
 Target frequency = 200.000000 MHz.
 Maximum fanout = 1000.
@@ -97,9 +97,11 @@ Verilog design file = D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/txuartli
 Verilog design file = D:/Documents/Git_Local/fm_modulator/rtl/clock_phase_shifter.v
 Verilog design file = D:/Documents/Git_Local/fm_modulator/lattice/efb_inst.v
 Verilog design file = D:/Documents/Git_Local/fm_modulator/lattice/dynamic_pll.v
+Verilog design file = D:/Documents/Git_Local/fm_modulator/lattice/sys_clk.v
 NGD file = iq_modulator_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
+-hdl_param: name = synthesis, value = ""
 Hardtimer checking is enabled (default). The -dt option is not used.
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
 Technology check ok...
@@ -130,15 +132,19 @@ Analyzing Verilog file d:/documents/git_local/fm_modulator/rtl/debug_bus/txuartl
 Analyzing Verilog file d:/documents/git_local/fm_modulator/rtl/clock_phase_shifter.v. VERI-1482
 Analyzing Verilog file d:/documents/git_local/fm_modulator/lattice/efb_inst.v. VERI-1482
 Analyzing Verilog file d:/documents/git_local/fm_modulator/lattice/dynamic_pll.v. VERI-1482
+Analyzing Verilog file d:/documents/git_local/fm_modulator/lattice/sys_clk.v. VERI-1482
 Analyzing Verilog file C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v. VERI-1482
 Top module name (Verilog): top
 INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/top.v(4): compiling module top. VERI-1018
 INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1032): compiling module PUR. VERI-1018
 INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(494): compiling module GSR. VERI-1018
-INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/debug_bus/rxuartlite.v(64): compiling module rxuartlite(CLOCKS_PER_BAUD=20). VERI-1018
+INFO - synthesis: d:/documents/git_local/fm_modulator/lattice/sys_clk.v(8): compiling module sys_clk. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1124): compiling module VLO. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1696): compiling module EHXPLLJ_renamed_due_excessive_length_1. VERI-1018
+INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/debug_bus/rxuartlite.v(64): compiling module rxuartlite(CLOCKS_PER_BAUD=10000). VERI-1018
 WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/debug_bus/rxuartlite.v(103): expression size 32 truncated to fit in target size 24. VERI-1209
 WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/debug_bus/rxuartlite.v(133): expression size 32 truncated to fit in target size 4. VERI-1209
-INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/debug_bus/txuartlite.v(68): compiling module txuartlite(TIMING_BITS=24,CLOCKS_PER_BAUD=20). VERI-1018
+INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/debug_bus/txuartlite.v(68): compiling module txuartlite(TIMING_BITS=24,CLOCKS_PER_BAUD=10000). VERI-1018
 INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/debug_bus/hbbus.v(44): compiling module hbbus. VERI-1018
 INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/debug_bus/hbdechex.v(45): compiling module hbdechex. VERI-1018
 INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/debug_bus/hbpack.v(62): compiling module hbpack. VERI-1018
@@ -148,8 +154,8 @@ INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/debug_bus/hbidle.v(46)
 INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/debug_bus/hbdeword.v(44): compiling module hbdeword. VERI-1018
 INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/debug_bus/hbgenhex.v(64): compiling module hbgenhex. VERI-1018
 INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/debug_bus/hbnewline.v(43): compiling module hbnewline. VERI-1018
-WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/top.v(112): expression size 32 truncated to fit in target size 17. VERI-1209
 WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/top.v(113): expression size 32 truncated to fit in target size 17. VERI-1209
+WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/top.v(114): expression size 32 truncated to fit in target size 17. VERI-1209
 INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(3): compiling module fm_generator_wb_slave. VERI-1018
 INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/dds.v(3): compiling module dds. VERI-1018
 INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/nco.v(3): compiling module nco(OW=12). VERI-1018
@@ -161,8 +167,7 @@ WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_sla
 WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(86): expression size 32 truncated to fit in target size 17. VERI-1209
 INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/clock_phase_shifter.v(4): compiling module clock_phase_shifter. VERI-1018
 INFO - synthesis: d:/documents/git_local/fm_modulator/lattice/dynamic_pll.v(8): compiling module dynamic_pll. VERI-1018
-INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1124): compiling module VLO. VERI-1018
-INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1696): compiling module EHXPLLJ_renamed_due_excessive_length_1. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1696): compiling module EHXPLLJ_renamed_due_excessive_length_2. VERI-1018
 INFO - synthesis: d:/documents/git_local/fm_modulator/lattice/efb_inst.v(8): compiling module efb_inst. VERI-1018
 INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1120): compiling module VHI. VERI-1018
 INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1766): compiling module EFB(EFB_TC_PORTMODE="WB",DEV_DENSITY="6900L",SPI_MODE="MASTER",TC_TOP_SEL="OFF",TC_OVERFLOW="DISABLED"). VERI-1018
@@ -174,7 +179,6 @@ Loading device for application map from file 'xo3c6900.nph' in environment: C:/l
 Package Status:                     Final          Version 1.16.
 Top-level module name = top.
 WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/quarter_wave_sine_lookup.v(25): ram quarter_wave_table_original_ramnet has no write-port on it. VDB-1038
-######## Missing driver on net dac_clk_p. Patching with GND.
 WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/debug_bus/hbidle.v(76): Register \genbus/addidles/idle_stb_26 is stuck at Zero. VDB-5013
 
 
@@ -184,8 +188,8 @@ Duplicate register/latch removal. \wb_fm_data_31__I_0/carrier/qtr_inst/quarter_w
 Duplicate register/latch removal. \wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i15 is a one-to-one match with \wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i15.
 WARNING - synthesis: Initial value found on instance wb_ack_70 will be ignored.
 WARNING - synthesis: Initial value found on instance \rxtransport/baud_counter_i0 will be ignored.
-WARNING - synthesis: Initial value found on instance \txtransport/o_uart_tx_48 will be ignored.
 WARNING - synthesis: Initial value found on instance \rxtransport/chg_counter__i0 will be ignored.
+WARNING - synthesis: Initial value found on instance \txtransport/o_uart_tx_48 will be ignored.
 WARNING - synthesis: Initial value found on instance \rxtransport/chg_counter__i23 will be ignored.
 WARNING - synthesis: Initial value found on instance \rxtransport/chg_counter__i22 will be ignored.
 WARNING - synthesis: Initial value found on instance \rxtransport/chg_counter__i21 will be ignored.
@@ -210,7 +214,12 @@ WARNING - synthesis: Initial value found on instance \rxtransport/chg_counter__i
 WARNING - synthesis: Initial value found on instance \rxtransport/chg_counter__i2 will be ignored.
 WARNING - synthesis: Initial value found on instance \rxtransport/chg_counter__i1 will be ignored.
 WARNING - synthesis: Initial value found on instance \txtransport/lcl_data_i7 will be ignored.
-WARNING - synthesis: Initial value found on instance \rxtransport/baud_counter_i4 will be ignored.
+WARNING - synthesis: Initial value found on instance \rxtransport/baud_counter_i13 will be ignored.
+WARNING - synthesis: Initial value found on instance \rxtransport/baud_counter_i10 will be ignored.
+WARNING - synthesis: Initial value found on instance \rxtransport/baud_counter_i9 will be ignored.
+WARNING - synthesis: Initial value found on instance \rxtransport/baud_counter_i8 will be ignored.
+WARNING - synthesis: Initial value found on instance \rxtransport/baud_counter_i3 will be ignored.
+WARNING - synthesis: Initial value found on instance \rxtransport/baud_counter_i2 will be ignored.
 WARNING - synthesis: Initial value found on instance \rxtransport/baud_counter_i1 will be ignored.
 Duplicate register/latch removal. \wb_fm_data_31__I_0/carrier/qtr_inst/phase_q__i1 is a one-to-one match with \wb_fm_data_31__I_0/carrier/qtr_inst/phase_i_i0_i0.
 Duplicate register/latch removal. \wb_fm_data_31__I_0/carrier/qtr_inst/phase_i_i0_i9 is a one-to-one match with \wb_fm_data_31__I_0/carrier/qtr_inst/phase_q__i10.
@@ -234,29 +243,29 @@ All blocks are expanded and NGD expansion is successful.
 Writing NGD file iq_modulator_impl1.ngd.
 
 ################### Begin Area Report (top)######################
-Number of register bits => 1157 of 7485 (15 % )
-CCU2D => 189
+Number of register bits => 1156 of 7485 (15 % )
+CCU2D => 190
 EFB => 1
-EHXPLLJ => 1
+EHXPLLJ => 2
 FD1P3AX => 204
 FD1P3AY => 13
 FD1P3BX => 14
 FD1P3DX => 82
-FD1P3IX => 196
-FD1P3JX => 16
-FD1S3AX => 141
+FD1P3IX => 190
+FD1P3JX => 21
+FD1S3AX => 146
 FD1S3AY => 7
 FD1S3BX => 46
 FD1S3DX => 342
-FD1S3IX => 90
+FD1S3IX => 85
 FD1S3JX => 6
 GSR => 1
 IB => 3
 INV => 1
-L6MUX21 => 347
-LUT4 => 3261
+L6MUX21 => 339
+LUT4 => 3322
 OB => 27
-PFUMX => 741
+PFUMX => 750
 PUR => 1
 SP8KC => 1
 ################### End Area Report ##################
@@ -267,34 +276,35 @@ TSALL => 1
 
 ################### Begin Clock Report ######################
 Clock Nets
-Number of Clocks: 2
-  Net : i_ref_clk_c, loads : 1158
+Number of Clocks: 3
+  Net : sys_clk_inst/dac_clk_p_c, loads : 1158
+  Net : i_ref_clk_c, loads : 2
   Net : lo_gen/lo_pll_out, loads : 3
 Clock Enable Nets
-Number of Clock Enables: 36
+Number of Clock Enables: 35
 Top 10 highest fanout Clock Enables:
-  Net : genbus/unpackx/i_ref_clk_c_enable_242, loads : 37
-  Net : genbus/addints/i_ref_clk_c_enable_420, loads : 34
-  Net : genbus/addidles/i_ref_clk_c_enable_353, loads : 34
-  Net : i_ref_clk_c_enable_278, loads : 32
-  Net : genbus/wbexec/i_ref_clk_c_enable_145, loads : 32
-  Net : wb_fm_data_31__I_0/i_ref_clk_c_enable_149, loads : 32
+  Net : genbus/unpackx/dac_clk_p_c_enable_237, loads : 37
+  Net : genbus/addidles/dac_clk_p_c_enable_346, loads : 34
+  Net : dac_clk_p_c_enable_273, loads : 32
+  Net : wb_fm_data_31__I_0/dac_clk_p_c_enable_147, loads : 32
+  Net : wb_fm_data_31__I_0/dac_clk_p_c_enable_108, loads : 32
+  Net : wb_fm_data_31__I_0/dac_clk_p_c_enable_115, loads : 32
+  Net : wb_fm_data_31__I_0/dac_clk_p_c_enable_76, loads : 32
   Net : wb_err, loads : 31
-  Net : genbus/wbexec/i_ref_clk_c_enable_449, loads : 30
-  Net : rxtransport/i_ref_clk_c_enable_351, loads : 21
-  Net : txtransport/zero_baud_counter, loads : 11
+  Net : txtransport/zero_baud_counter, loads : 16
+  Net : rxtransport/dac_clk_p_c_enable_344, loads : 16
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
+  Net : wb_fm_data_31__I_0/carrier/qtr_inst/index_q_3, loads : 489
   Net : i_resetb_N_301, loads : 488
-  Net : wb_fm_data_31__I_0/carrier/qtr_inst/index_q_3, loads : 479
-  Net : wb_fm_data_31__I_0/carrier/qtr_inst/index_i_3, loads : 474
-  Net : wb_fm_data_31__I_0/modulation/qtr_inst/index_i_3, loads : 472
-  Net : wb_fm_data_31__I_0/carrier/qtr_inst/index_i_2, loads : 363
-  Net : wb_fm_data_31__I_0/carrier/qtr_inst/index_q_2, loads : 362
-  Net : wb_fm_data_31__I_0/modulation/qtr_inst/index_i_2, loads : 361
-  Net : wb_fm_data_31__I_0/modulation/qtr_inst/index_i_0, loads : 346
-  Net : wb_fm_data_31__I_0/modulation/qtr_inst/index_i_1, loads : 344
-  Net : wb_fm_data_31__I_0/carrier/qtr_inst/index_q_0, loads : 344
+  Net : wb_fm_data_31__I_0/modulation/qtr_inst/index_i_3, loads : 479
+  Net : wb_fm_data_31__I_0/carrier/qtr_inst/index_i_3, loads : 477
+  Net : wb_fm_data_31__I_0/modulation/qtr_inst/index_i_2, loads : 368
+  Net : wb_fm_data_31__I_0/carrier/qtr_inst/index_q_2, loads : 366
+  Net : wb_fm_data_31__I_0/carrier/qtr_inst/index_i_2, loads : 362
+  Net : wb_fm_data_31__I_0/carrier/qtr_inst/index_q_4, loads : 349
+  Net : wb_fm_data_31__I_0/modulation/qtr_inst/index_i_4, loads : 345
+  Net : wb_fm_data_31__I_0/carrier/qtr_inst/index_i_4, loads : 344
 ################### End Clock Report ##################
 
 <A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
@@ -307,7 +317,7 @@ create_clock -period 5.000000 -name     |             |             |
 clk1 [get_nets lo_pll_out]              |  200.000 MHz|  338.639 MHz|     2  
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets i_ref_clk_c]             |  200.000 MHz|   91.819 MHz|     7 *
+clk0 [get_nets dac_clk_p_c]             |  200.000 MHz|   92.090 MHz|    19 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -315,10 +325,10 @@ clk0 [get_nets i_ref_clk_c]             |  200.000 MHz|   91.819 MHz|     7 *
 1 constraints not met.
 
 
-Peak Memory Usage: 173.648  MB
+Peak Memory Usage: 174.066  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 7.578  secs
+Elapsed CPU time for LSE flow : 9.531  secs
 --------------------------------------------------------------
 
 

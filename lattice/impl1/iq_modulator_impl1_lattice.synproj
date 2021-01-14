@@ -3,7 +3,7 @@
 -t CABGA256
 -s 5
 -frequency 200
--optimization_goal Balanced
+-optimization_goal Timing
 -bram_utilization 100
 -ramstyle Auto
 -romstyle auto
@@ -31,6 +31,7 @@
 
 -lpf 1
 -p "D:/Documents/Git_Local/fm_modulator/lattice"
+-hdl_param synthesis ""
 -ver "D:/Documents/Git_Local/fm_modulator/rtl/dds.v"
 "D:/Documents/Git_Local/fm_modulator/rtl/fm_generator_wb_slave.v"
 "D:/Documents/Git_Local/fm_modulator/rtl/iq_gen.v"
@@ -54,6 +55,7 @@
 "D:/Documents/Git_Local/fm_modulator/rtl/clock_phase_shifter.v"
 "D:/Documents/Git_Local/fm_modulator/lattice/efb_inst.v"
 "D:/Documents/Git_Local/fm_modulator/lattice/dynamic_pll.v"
+"D:/Documents/Git_Local/fm_modulator/lattice/sys_clk.v"
 -top top
 
 

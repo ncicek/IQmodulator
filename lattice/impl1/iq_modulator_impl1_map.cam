@@ -1,0 +1,141 @@
+[ START MERGED ]
+i_resetb_N_301 i_resetb_c
+rxtransport/dac_clk_p_c_enable_344 rxtransport/zero_baud_counter
+n2 wb_stb
+n12737 wb_idata_1
+wb_fm_data_31__I_0/carrier/qtr_inst/n27209 wb_fm_data_31__I_0/carrier/qtr_inst/index_i_2
+i_clk_2f_N_2249 lo_pll_out
+[ END MERGED ]
+[ START CLIPPED ]
+GND_net
+VCC_net
+n29501
+txtransport/sub_36_add_2_1/S0
+txtransport/sub_36_add_2_1/CI
+txtransport/sub_36_add_2_25/S1
+txtransport/sub_36_add_2_25/CO
+add_34_33/S1
+add_34_33/CO
+add_35_1/S0
+add_35_1/CI
+add_34_1/S0
+add_34_1/CI
+add_35_31/CO
+wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547_add_4_2/S0
+wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547_add_4_2/CI
+wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547_add_4_32/CO
+wb_fm_data_31__I_0/carrier/qtr_inst/add_377_1/S1
+wb_fm_data_31__I_0/carrier/qtr_inst/add_377_1/S0
+wb_fm_data_31__I_0/carrier/qtr_inst/add_377_1/CI
+wb_fm_data_31__I_0/carrier/qtr_inst/add_377_3/S1
+wb_fm_data_31__I_0/carrier/qtr_inst/add_377_3/S0
+wb_fm_data_31__I_0/carrier/qtr_inst/add_377_5/S1
+wb_fm_data_31__I_0/carrier/qtr_inst/add_377_5/S0
+wb_fm_data_31__I_0/carrier/qtr_inst/add_377_7/S0
+wb_fm_data_31__I_0/carrier/qtr_inst/add_377_15/CO
+wb_fm_data_31__I_0/carrier/qtr_inst/add_376_1/S1
+wb_fm_data_31__I_0/carrier/qtr_inst/add_376_1/S0
+wb_fm_data_31__I_0/carrier/qtr_inst/add_376_1/CI
+wb_fm_data_31__I_0/carrier/qtr_inst/add_376_3/S1
+wb_fm_data_31__I_0/carrier/qtr_inst/add_376_3/S0
+wb_fm_data_31__I_0/carrier/qtr_inst/add_376_5/S1
+wb_fm_data_31__I_0/carrier/qtr_inst/add_376_5/S0
+wb_fm_data_31__I_0/carrier/qtr_inst/add_376_7/S0
+wb_fm_data_31__I_0/carrier/qtr_inst/add_376_15/CO
+wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549_add_4_2/S0
+wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549_add_4_2/CI
+wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549_add_4_32/CO
+wb_fm_data_31__I_0/modulation/qtr_inst/unary_minus_10_add_3_1/S0
+wb_fm_data_31__I_0/modulation/qtr_inst/unary_minus_10_add_3_1/CI
+wb_fm_data_31__I_0/modulation/qtr_inst/unary_minus_10_add_3_17/S1
+wb_fm_data_31__I_0/modulation/qtr_inst/unary_minus_10_add_3_17/CO
+wb_fm_data_31__I_0/sub_113_add_2_1/S0
+wb_fm_data_31__I_0/sub_113_add_2_1/CI
+wb_fm_data_31__I_0/sub_396_add_2_17/CO
+wb_fm_data_31__I_0/add_384_1/S0
+wb_fm_data_31__I_0/add_384_1/CI
+wb_fm_data_31__I_0/sub_113_add_2_13/CO
+wb_fm_data_31__I_0/add_384_31/CO
+wb_fm_data_31__I_0/sub_396_add_2_1/S1
+wb_fm_data_31__I_0/sub_396_add_2_1/S0
+wb_fm_data_31__I_0/sub_396_add_2_1/CI
+genbus/wbexec/o_wb_addr_548_add_4_1/S1
+genbus/wbexec/o_wb_addr_548_add_4_1/S0
+genbus/wbexec/o_wb_addr_548_add_4_1/CI
+genbus/wbexec/o_wb_addr_548_add_4_31/CO
+rxtransport/sub_49_add_2_25/S1
+rxtransport/sub_49_add_2_25/CO
+rxtransport/sub_394_add_2_2/S1
+rxtransport/sub_394_add_2_2/S0
+rxtransport/sub_394_add_2_2/CI
+rxtransport/sub_394_add_2_4/S1
+rxtransport/sub_394_add_2_4/S0
+rxtransport/add_90_1/S0
+rxtransport/add_90_1/CI
+rxtransport/sub_394_add_2_6/S1
+rxtransport/sub_394_add_2_6/S0
+rxtransport/sub_394_add_2_8/S1
+rxtransport/sub_394_add_2_8/S0
+rxtransport/sub_394_add_2_10/S1
+rxtransport/sub_394_add_2_10/S0
+rxtransport/sub_394_add_2_12/S1
+rxtransport/sub_394_add_2_12/S0
+rxtransport/sub_394_add_2_14/S1
+rxtransport/sub_394_add_2_14/S0
+rxtransport/sub_394_add_2_16/S1
+rxtransport/sub_394_add_2_16/S0
+rxtransport/sub_394_add_2_18/S1
+rxtransport/sub_394_add_2_18/S0
+rxtransport/sub_394_add_2_20/S1
+rxtransport/sub_394_add_2_20/S0
+rxtransport/sub_394_add_2_22/S1
+rxtransport/sub_394_add_2_22/S0
+rxtransport/sub_394_add_2_24/S1
+rxtransport/sub_394_add_2_24/S0
+rxtransport/sub_394_add_2_cout/S1
+rxtransport/sub_394_add_2_cout/CO
+rxtransport/add_90_25/S1
+rxtransport/add_90_25/CO
+rxtransport/sub_49_add_2_1/S0
+rxtransport/sub_49_add_2_1/CI
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.11.3.469 -- WARNING: Map write only section -- Wed Jan 13 21:45:33 2021
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE DUALBOOTGOLDEN=INTERNAL BACKGROUND_RECONFIG=OFF INBUF=ON ;
+LOCATE COMP "o_baseband_i[7]" SITE "N16" ;
+LOCATE COMP "o_baseband_i[8]" SITE "L14" ;
+LOCATE COMP "o_baseband_i[9]" SITE "N14" ;
+LOCATE COMP "o_wbu_uart_tx" SITE "C11" ;
+LOCATE COMP "o_baseband_i[6]" SITE "M16" ;
+LOCATE COMP "o_baseband_i[5]" SITE "L16" ;
+LOCATE COMP "o_baseband_i[4]" SITE "K14" ;
+LOCATE COMP "o_baseband_i[3]" SITE "K16" ;
+LOCATE COMP "o_baseband_i[2]" SITE "K15" ;
+LOCATE COMP "o_baseband_i[1]" SITE "J15" ;
+LOCATE COMP "o_baseband_i[0]" SITE "H15" ;
+LOCATE COMP "o_baseband_q[9]" SITE "G15" ;
+LOCATE COMP "o_baseband_q[8]" SITE "F15" ;
+LOCATE COMP "o_baseband_q[7]" SITE "F16" ;
+LOCATE COMP "o_baseband_q[6]" SITE "E15" ;
+LOCATE COMP "o_baseband_q[5]" SITE "E16" ;
+LOCATE COMP "o_baseband_q[4]" SITE "E14" ;
+LOCATE COMP "o_baseband_q[3]" SITE "D16" ;
+LOCATE COMP "o_baseband_q[2]" SITE "F14" ;
+LOCATE COMP "o_baseband_q[1]" SITE "D14" ;
+LOCATE COMP "o_baseband_q[0]" SITE "G14" ;
+LOCATE COMP "dac_clk_p" SITE "D10" ;
+LOCATE COMP "dac_clk_n" SITE "E10" ;
+LOCATE COMP "i_clk_p" SITE "B9" ;
+LOCATE COMP "i_clk_n" SITE "A10" ;
+LOCATE COMP "q_clk_p" SITE "D8" ;
+LOCATE COMP "q_clk_n" SITE "E9" ;
+LOCATE COMP "i_ref_clk" SITE "C8" ;
+LOCATE COMP "i_resetb" SITE "B3" ;
+LOCATE COMP "i_wbu_uart_rx" SITE "A11" ;
+FREQUENCY NET "dac_clk_p_c" 96.000000 MHz ;
+FREQUENCY NET "lo_pll_out" 420.000000 MHz ;
+FREQUENCY NET "i_ref_clk_c" 12.000000 MHz ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

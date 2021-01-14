@@ -9,7 +9,7 @@
 <PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
 --------------------------------------------------------------------------------
 Lattice Synthesis Timing Report, Version  
-Wed Jan 13 20:58:38 2021
+Wed Jan 13 21:45:30 2021
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -88,119 +88,191 @@ Report: 2.953 ns is the maximum delay for this constraint.
 
 
 ================================================================================
-Constraint: create_clock -period 5.000000 -name clk0 [get_nets i_ref_clk_c]
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets dac_clk_p_c]
             4096 items scored, 4096 timing errors detected.
 --------------------------------------------------------------------------------
 
 
-Error:  The following path violates requirements by 5.891ns
+Error:  The following path violates requirements by 5.859ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1P3AX    CK             \genbus/wbexec/o_wb_addr_506__i27  (from i_ref_clk_c +)
-   Destination:    FD1P3DX    SP             \wb_fm_data_31__I_0/addr_space[0][29]_163  (to i_ref_clk_c +)
+   Source:         FD1S3IX    CK             \genbus/packxi/o_pck_stb_24  (from dac_clk_p_c +)
+   Destination:    FD1P3AX    D              \genbus/wbexec/o_wb_addr_548__i29  (to dac_clk_p_c +)
 
-   Delay:                  10.632ns  (29.1% logic, 70.9% route), 7 logic levels.
+   Delay:                  10.713ns  (45.8% logic, 54.2% route), 19 logic levels.
 
  Constraint Details:
 
-     10.632ns data_path \genbus/wbexec/o_wb_addr_506__i27 to \wb_fm_data_31__I_0/addr_space[0][29]_163 violates
+     10.713ns data_path \genbus/packxi/o_pck_stb_24 to \genbus/wbexec/o_wb_addr_548__i29 violates
       5.000ns delay constraint less
-      0.259ns LCE_S requirement (totaling 4.741ns) by 5.891ns
+      0.146ns L_S requirement (totaling 4.854ns) by 5.859ns
 
- Path Details: \genbus/wbexec/o_wb_addr_506__i27 to \wb_fm_data_31__I_0/addr_space[0][29]_163
+ Path Details: \genbus/packxi/o_pck_stb_24 to \genbus/wbexec/o_wb_addr_548__i29
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.403             CK to Q              \genbus/wbexec/o_wb_addr_506__i27 (from i_ref_clk_c)
-Route         4   e 1.168                                  wb_addr[27]
-LUT4        ---     0.448              C to Z              i12_4_lut
-Route         1   e 0.788                                  n32
-LUT4        ---     0.448              B to Z              i16_4_lut
-Route         1   e 0.788                                  n36
-LUT4        ---     0.448              B to Z              i18_4_lut
-Route         1   e 0.788                                  n38
-LUT4        ---     0.448              B to Z              i19_4_lut
-Route         7   e 1.255                                  n11785
-LUT4        ---     0.448              B to Z              i1_2_lut_rep_248_3_lut
-Route         3   e 1.051                                  n24808
-LUT4        ---     0.448              A to Z              i21100_2_lut_3_lut_4_lut
-Route        32   e 1.703                                  i_ref_clk_c_enable_106
+L_CO        ---     0.403             CK to Q              \genbus/packxi/o_pck_stb_24 (from dac_clk_p_c)
+Route         7   e 1.303                                  \genbus/packxi/iw_stb
+LUT4        ---     0.448              B to Z              \genbus/packxi/i1_2_lut_rep_789
+Route         2   e 0.954                                  \genbus/n27112
+LUT4        ---     0.448              B to Z              \genbus/wbexec/i1_4_lut
+Route        29   e 1.698                                  \genbus/wbexec/n3
+LUT4        ---     0.448              B to Z              \genbus/wbexec/i15533_2_lut
+Route         1   e 0.788                                  \genbus/wbexec/n17450
+A1_TO_FCO   ---     0.752           A[2] to COUT           \genbus/wbexec/o_wb_addr_548_add_4_3
+Route         1   e 0.020                                  \genbus/wbexec/n17696
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_5
+Route         1   e 0.020                                  \genbus/wbexec/n17697
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_7
+Route         1   e 0.020                                  \genbus/wbexec/n17698
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_9
+Route         1   e 0.020                                  \genbus/wbexec/n17699
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_11
+Route         1   e 0.020                                  \genbus/wbexec/n17700
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_13
+Route         1   e 0.020                                  \genbus/wbexec/n17701
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_15
+Route         1   e 0.020                                  \genbus/wbexec/n17702
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_17
+Route         1   e 0.020                                  \genbus/wbexec/n17703
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_19
+Route         1   e 0.020                                  \genbus/wbexec/n17704
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_21
+Route         1   e 0.020                                  \genbus/wbexec/n17705
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_23
+Route         1   e 0.020                                  \genbus/wbexec/n17706
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_25
+Route         1   e 0.020                                  \genbus/wbexec/n17707
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_27
+Route         1   e 0.020                                  \genbus/wbexec/n17708
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_29
+Route         1   e 0.020                                  \genbus/wbexec/n17709
+FCI_TO_F    ---     0.544            CIN to S[2]           \genbus/wbexec/o_wb_addr_548_add_4_31
+Route         1   e 0.788                                  \genbus/wbexec/n126
                   --------
-                   10.632  (29.1% logic, 70.9% route), 7 logic levels.
+                   10.713  (45.8% logic, 54.2% route), 19 logic levels.
 
 
-Error:  The following path violates requirements by 5.891ns
+Error:  The following path violates requirements by 5.859ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1P3AX    CK             \genbus/wbexec/o_wb_addr_506__i27  (from i_ref_clk_c +)
-   Destination:    FD1P3DX    SP             \wb_fm_data_31__I_0/addr_space[0][28]_164  (to i_ref_clk_c +)
+   Source:         FD1S3IX    CK             \genbus/packxi/o_pck_stb_24  (from dac_clk_p_c +)
+   Destination:    FD1P3AX    D              \genbus/wbexec/o_wb_addr_548__i28  (to dac_clk_p_c +)
 
-   Delay:                  10.632ns  (29.1% logic, 70.9% route), 7 logic levels.
+   Delay:                  10.713ns  (45.8% logic, 54.2% route), 19 logic levels.
 
  Constraint Details:
 
-     10.632ns data_path \genbus/wbexec/o_wb_addr_506__i27 to \wb_fm_data_31__I_0/addr_space[0][28]_164 violates
+     10.713ns data_path \genbus/packxi/o_pck_stb_24 to \genbus/wbexec/o_wb_addr_548__i28 violates
       5.000ns delay constraint less
-      0.259ns LCE_S requirement (totaling 4.741ns) by 5.891ns
+      0.146ns L_S requirement (totaling 4.854ns) by 5.859ns
 
- Path Details: \genbus/wbexec/o_wb_addr_506__i27 to \wb_fm_data_31__I_0/addr_space[0][28]_164
+ Path Details: \genbus/packxi/o_pck_stb_24 to \genbus/wbexec/o_wb_addr_548__i28
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.403             CK to Q              \genbus/wbexec/o_wb_addr_506__i27 (from i_ref_clk_c)
-Route         4   e 1.168                                  wb_addr[27]
-LUT4        ---     0.448              C to Z              i12_4_lut
-Route         1   e 0.788                                  n32
-LUT4        ---     0.448              B to Z              i16_4_lut
-Route         1   e 0.788                                  n36
-LUT4        ---     0.448              B to Z              i18_4_lut
-Route         1   e 0.788                                  n38
-LUT4        ---     0.448              B to Z              i19_4_lut
-Route         7   e 1.255                                  n11785
-LUT4        ---     0.448              B to Z              i1_2_lut_rep_248_3_lut
-Route         3   e 1.051                                  n24808
-LUT4        ---     0.448              A to Z              i21100_2_lut_3_lut_4_lut
-Route        32   e 1.703                                  i_ref_clk_c_enable_106
+L_CO        ---     0.403             CK to Q              \genbus/packxi/o_pck_stb_24 (from dac_clk_p_c)
+Route         7   e 1.303                                  \genbus/packxi/iw_stb
+LUT4        ---     0.448              B to Z              \genbus/packxi/i1_2_lut_rep_789
+Route         2   e 0.954                                  \genbus/n27112
+LUT4        ---     0.448              B to Z              \genbus/wbexec/i1_4_lut
+Route        29   e 1.698                                  \genbus/wbexec/n3
+LUT4        ---     0.448              B to Z              \genbus/wbexec/i15533_2_lut
+Route         1   e 0.788                                  \genbus/wbexec/n17450
+A1_TO_FCO   ---     0.752           A[2] to COUT           \genbus/wbexec/o_wb_addr_548_add_4_3
+Route         1   e 0.020                                  \genbus/wbexec/n17696
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_5
+Route         1   e 0.020                                  \genbus/wbexec/n17697
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_7
+Route         1   e 0.020                                  \genbus/wbexec/n17698
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_9
+Route         1   e 0.020                                  \genbus/wbexec/n17699
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_11
+Route         1   e 0.020                                  \genbus/wbexec/n17700
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_13
+Route         1   e 0.020                                  \genbus/wbexec/n17701
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_15
+Route         1   e 0.020                                  \genbus/wbexec/n17702
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_17
+Route         1   e 0.020                                  \genbus/wbexec/n17703
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_19
+Route         1   e 0.020                                  \genbus/wbexec/n17704
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_21
+Route         1   e 0.020                                  \genbus/wbexec/n17705
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_23
+Route         1   e 0.020                                  \genbus/wbexec/n17706
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_25
+Route         1   e 0.020                                  \genbus/wbexec/n17707
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_27
+Route         1   e 0.020                                  \genbus/wbexec/n17708
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_29
+Route         1   e 0.020                                  \genbus/wbexec/n17709
+FCI_TO_F    ---     0.544            CIN to S[2]           \genbus/wbexec/o_wb_addr_548_add_4_31
+Route         1   e 0.788                                  \genbus/wbexec/n127
                   --------
-                   10.632  (29.1% logic, 70.9% route), 7 logic levels.
+                   10.713  (45.8% logic, 54.2% route), 19 logic levels.
 
 
-Error:  The following path violates requirements by 5.891ns
+Error:  The following path violates requirements by 5.859ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1P3AX    CK             \genbus/wbexec/o_wb_addr_506__i27  (from i_ref_clk_c +)
-   Destination:    FD1P3DX    SP             \wb_fm_data_31__I_0/addr_space[0][27]_165  (to i_ref_clk_c +)
+   Source:         FD1P3IX    CK             \genbus/packxi/o_pck_word__i33  (from dac_clk_p_c +)
+   Destination:    FD1P3AX    D              \genbus/wbexec/o_wb_addr_548__i29  (to dac_clk_p_c +)
 
-   Delay:                  10.632ns  (29.1% logic, 70.9% route), 7 logic levels.
+   Delay:                  10.713ns  (45.8% logic, 54.2% route), 19 logic levels.
 
  Constraint Details:
 
-     10.632ns data_path \genbus/wbexec/o_wb_addr_506__i27 to \wb_fm_data_31__I_0/addr_space[0][27]_165 violates
+     10.713ns data_path \genbus/packxi/o_pck_word__i33 to \genbus/wbexec/o_wb_addr_548__i29 violates
       5.000ns delay constraint less
-      0.259ns LCE_S requirement (totaling 4.741ns) by 5.891ns
+      0.146ns L_S requirement (totaling 4.854ns) by 5.859ns
 
- Path Details: \genbus/wbexec/o_wb_addr_506__i27 to \wb_fm_data_31__I_0/addr_space[0][27]_165
+ Path Details: \genbus/packxi/o_pck_word__i33 to \genbus/wbexec/o_wb_addr_548__i29
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.403             CK to Q              \genbus/wbexec/o_wb_addr_506__i27 (from i_ref_clk_c)
-Route         4   e 1.168                                  wb_addr[27]
-LUT4        ---     0.448              C to Z              i12_4_lut
-Route         1   e 0.788                                  n32
-LUT4        ---     0.448              B to Z              i16_4_lut
-Route         1   e 0.788                                  n36
-LUT4        ---     0.448              B to Z              i18_4_lut
-Route         1   e 0.788                                  n38
-LUT4        ---     0.448              B to Z              i19_4_lut
-Route         7   e 1.255                                  n11785
-LUT4        ---     0.448              B to Z              i1_2_lut_rep_248_3_lut
-Route         3   e 1.051                                  n24808
-LUT4        ---     0.448              A to Z              i21100_2_lut_3_lut_4_lut
-Route        32   e 1.703                                  i_ref_clk_c_enable_106
+L_CO        ---     0.403             CK to Q              \genbus/packxi/o_pck_word__i33 (from dac_clk_p_c)
+Route         7   e 1.303                                  \genbus/packxi/iw_word[33]
+LUT4        ---     0.448              A to Z              \genbus/packxi/i1_2_lut_rep_789
+Route         2   e 0.954                                  \genbus/n27112
+LUT4        ---     0.448              B to Z              \genbus/wbexec/i1_4_lut
+Route        29   e 1.698                                  \genbus/wbexec/n3
+LUT4        ---     0.448              B to Z              \genbus/wbexec/i15533_2_lut
+Route         1   e 0.788                                  \genbus/wbexec/n17450
+A1_TO_FCO   ---     0.752           A[2] to COUT           \genbus/wbexec/o_wb_addr_548_add_4_3
+Route         1   e 0.020                                  \genbus/wbexec/n17696
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_5
+Route         1   e 0.020                                  \genbus/wbexec/n17697
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_7
+Route         1   e 0.020                                  \genbus/wbexec/n17698
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_9
+Route         1   e 0.020                                  \genbus/wbexec/n17699
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_11
+Route         1   e 0.020                                  \genbus/wbexec/n17700
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_13
+Route         1   e 0.020                                  \genbus/wbexec/n17701
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_15
+Route         1   e 0.020                                  \genbus/wbexec/n17702
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_17
+Route         1   e 0.020                                  \genbus/wbexec/n17703
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_19
+Route         1   e 0.020                                  \genbus/wbexec/n17704
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_21
+Route         1   e 0.020                                  \genbus/wbexec/n17705
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_23
+Route         1   e 0.020                                  \genbus/wbexec/n17706
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_25
+Route         1   e 0.020                                  \genbus/wbexec/n17707
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_27
+Route         1   e 0.020                                  \genbus/wbexec/n17708
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_548_add_4_29
+Route         1   e 0.020                                  \genbus/wbexec/n17709
+FCI_TO_F    ---     0.544            CIN to S[2]           \genbus/wbexec/o_wb_addr_548_add_4_31
+Route         1   e 0.788                                  \genbus/wbexec/n126
                   --------
-                   10.632  (29.1% logic, 70.9% route), 7 logic levels.
+                   10.713  (45.8% logic, 54.2% route), 19 logic levels.
 
-Warning: 10.891 ns is the maximum delay for this constraint.
+Warning: 10.859 ns is the maximum delay for this constraint.
 
 
 <A name="mtw1_rs"></A><B><U><big>Timing Report Summary</big></U></B>
@@ -213,7 +285,7 @@ create_clock -period 5.000000 -name     |             |             |
 clk1 [get_nets lo_pll_out]              |     5.000 ns|     2.953 ns|     2  
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets i_ref_clk_c]             |     5.000 ns|    10.891 ns|     7 *
+clk0 [get_nets dac_clk_p_c]             |     5.000 ns|    10.859 ns|    19 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -223,49 +295,63 @@ clk0 [get_nets i_ref_clk_c]             |     5.000 ns|    10.891 ns|     7 *
 --------------------------------------------------------------------------------
 Critical Nets                           |   Loads|  Errors| % of total
 --------------------------------------------------------------------------------
-\wb_fm_data_31__I_0/n14286              |      31|    1978|     48.29%
+\wb_fm_data_31__I_0/n14428              |      31|    2144|     52.34%
                                         |        |        |
-\wb_fm_data_31__I_0/n24                 |       1|    1828|     44.63%
+\wb_fm_data_31__I_0/n20679              |       1|    1712|     41.80%
                                         |        |        |
-n38                                     |       1|    1606|     39.21%
+\wb_fm_data_31__I_0/n17615              |       1|    1520|     37.11%
                                         |        |        |
-n11785                                  |       7|    1606|     39.21%
+\wb_fm_data_31__I_0/n17616              |       1|    1512|     36.91%
                                         |        |        |
-\wb_fm_data_31__I_0/n17354              |       1|    1546|     37.74%
+\wb_fm_data_31__I_0/n17614              |       1|    1496|     36.52%
                                         |        |        |
-\wb_fm_data_31__I_0/n17355              |       1|    1534|     37.45%
+\wb_fm_data_31__I_0/n17617              |       1|    1472|     35.94%
                                         |        |        |
-\wb_fm_data_31__I_0/n17353              |       1|    1510|     36.87%
+\wb_fm_data_31__I_0/n17613              |       1|    1440|     35.16%
                                         |        |        |
-\wb_fm_data_31__I_0/n17356              |       1|    1474|     35.99%
+\wb_fm_data_31__I_0/n17618              |       1|    1384|     33.79%
                                         |        |        |
-\wb_fm_data_31__I_0/n17352              |       1|    1426|     34.81%
+\wb_fm_data_31__I_0/n17612              |       1|    1320|     32.23%
                                         |        |        |
-\wb_fm_data_31__I_0/n17357              |       1|    1366|     33.35%
+\wb_fm_data_31__I_0/n17619              |       1|    1232|     30.08%
                                         |        |        |
-\wb_fm_data_31__I_0/n17351              |       1|    1294|     31.59%
+\genbus/wbexec/n3                       |      29|    1180|     28.81%
                                         |        |        |
-n36                                     |       1|    1286|     31.40%
+\wb_fm_data_31__I_0/n17611              |       1|    1136|     27.73%
                                         |        |        |
-\wb_fm_data_31__I_0/n17358              |       1|    1200|     29.30%
+\wb_fm_data_31__I_0/n17620              |       1|    1016|     24.80%
                                         |        |        |
-\wb_fm_data_31__I_0/n22_adj_3028        |       1|    1152|     28.13%
+\wb_fm_data_31__I_0/n17610              |       1|     888|     21.68%
                                         |        |        |
-\wb_fm_data_31__I_0/n17350              |       1|    1094|     26.71%
+\genbus/wbexec/n17703                   |       1|     804|     19.63%
                                         |        |        |
-\wb_fm_data_31__I_0/n17359              |       1|     966|     23.58%
+\genbus/wbexec/n17702                   |       1|     796|     19.43%
                                         |        |        |
-n24808                                  |       3|     960|     23.44%
+\genbus/n27112                          |       2|     784|     19.14%
                                         |        |        |
-\wb_fm_data_31__I_0/n17349              |       1|     838|     20.46%
+\wb_fm_data_31__I_0/n20663              |       1|     784|     19.14%
                                         |        |        |
-\wb_fm_data_31__I_0/n17360              |       1|     688|     16.80%
+\wb_fm_data_31__I_0/n20667              |       1|     784|     19.14%
                                         |        |        |
-n32                                     |       1|     644|     15.72%
+\genbus/wbexec/n17704                   |       1|     780|     19.04%
                                         |        |        |
-\wb_fm_data_31__I_0/n16                 |       1|     576|     14.06%
+\genbus/wbexec/n17701                   |       1|     756|     18.46%
                                         |        |        |
-\wb_fm_data_31__I_0/n17348              |       1|     538|     13.13%
+\wb_fm_data_31__I_0/n17621              |       1|     736|     17.97%
+                                        |        |        |
+\genbus/wbexec/n17705                   |       1|     722|     17.63%
+                                        |        |        |
+\genbus/wbexec/n17700                   |       1|     684|     16.70%
+                                        |        |        |
+\genbus/wbexec/n17706                   |       1|     636|     15.53%
+                                        |        |        |
+\genbus/wbexec/n17699                   |       1|     584|     14.26%
+                                        |        |        |
+\wb_fm_data_31__I_0/n17609              |       1|     576|     14.06%
+                                        |        |        |
+\genbus/wbexec/n17707                   |       1|     522|     12.74%
+                                        |        |        |
+\genbus/wbexec/n17698                   |       1|     456|     11.13%
                                         |        |        |
 --------------------------------------------------------------------------------
 
@@ -273,12 +359,12 @@ n32                                     |       1|     644|     15.72%
 <A name="mtw1_ts"></A><B><U><big>Timing summary:</big></U></B>
 ---------------
 
-Timing errors: 4096  Score: 19402811
+Timing errors: 4096  Score: 17115247
 
-Constraints cover  40757 paths, 5987 nets, and 18230 connections (96.7% coverage)
+Constraints cover  41038 paths, 6047 nets, and 17201 connections (90.6% coverage)
 
 
-Peak memory: 182083584 bytes, TRCE: 0 bytes, DLYMAN: 0 bytes
+Peak memory: 182521856 bytes, TRCE: 0 bytes, DLYMAN: 0 bytes
 CPU_TIME_REPORT: 0 secs 
 
 

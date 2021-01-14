@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "iq_modulator_impl1.log"
+-o "iq_modulator_impl1.csv"
+-pr "iq_modulator_impl1.prf"

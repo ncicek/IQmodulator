@@ -1,31 +1,31 @@
 ----------------------------------------------------------------------
 Report for cell top.TECH
-Register bits:  1157 of 7485 (15.458%)
+Register bits:  1156 of 7485 (15.444%)
 I/O cells:      30
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              CCU2D       189          100.0
+                              CCU2D       190          100.0
                                 EFB         1          100.0
-                            EHXPLLJ         1          100.0
+                            EHXPLLJ         2          100.0
                             FD1P3AX       204          100.0
                             FD1P3AY        13          100.0
                             FD1P3BX        14          100.0
                             FD1P3DX        82          100.0
-                            FD1P3IX       196          100.0
-                            FD1P3JX        16          100.0
-                            FD1S3AX       141          100.0
+                            FD1P3IX       190          100.0
+                            FD1P3JX        21          100.0
+                            FD1S3AX       146          100.0
                             FD1S3AY         7          100.0
                             FD1S3BX        46          100.0
                             FD1S3DX       342          100.0
-                            FD1S3IX        90          100.0
+                            FD1S3IX        85          100.0
                             FD1S3JX         6          100.0
                                 GSR         1          100.0
                                  IB         3          100.0
                                 INV         1          100.0
-                            L6MUX21       347          100.0
-                               LUT4      3261          100.0
+                            L6MUX21       339          100.0
+                               LUT4      3322          100.0
                                  OB        27          100.0
-                              PFUMX       741          100.0
+                              PFUMX       750          100.0
                                 PUR         1          100.0
                               SP8KC         1          100.0
 SUB MODULES
@@ -48,25 +48,41 @@ SUB MODULES
                       nco(OW=12)_U1         1
            quarter_wave_sine_lookup         1
         quarter_wave_sine_lookup_U0         1
-     rxuartlite(CLOCKS_PER_BAUD=20)         1
-txuartlite(TIMING_BITS=24,CLOCKS_PER_BAUD=20)         1
-                              TOTAL      5752
+  rxuartlite(CLOCKS_PER_BAUD=10000)         1
+                            sys_clk         1
+txuartlite(TIMING_BITS=24,CLOCKS_PER_BAUD=10000)         1
+                              TOTAL      5816
+----------------------------------------------------------------------
+Report for cell rxuartlite(CLOCKS_PER_BAUD=10000).v1
+Instance Path : rxtransport
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        39           20.5
+                            FD1P3AX        15            7.4
+                            FD1P3AY         5           38.5
+                            FD1P3IX        40           21.1
+                            FD1P3JX         8           38.1
+                            FD1S3AX         2            1.4
+                            FD1S3AY         3           42.9
+                               LUT4        43            1.3
+                              PFUMX         2            0.3
+                              TOTAL       157
 ----------------------------------------------------------------------
 Report for cell hbbus.v1
 Instance Path : genbus
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              CCU2D        16            8.5
+                              CCU2D        16            8.4
                             FD1P3AX        64           31.4
                             FD1P3AY         1            7.7
-                            FD1P3IX       149           76.0
-                            FD1P3JX        13           81.3
-                            FD1S3AX        38           27.0
+                            FD1P3IX       148           77.9
+                            FD1P3JX        13           61.9
+                            FD1S3AX        38           26.0
                             FD1S3AY         3           42.9
-                            FD1S3IX        35           38.9
+                            FD1S3IX        35           41.2
                             FD1S3JX         4           66.7
-                               LUT4       248            7.6
-                              PFUMX         5            0.7
+                               LUT4       255            7.7
+                              PFUMX         4            0.5
                               SP8KC         1          100.0
 SUB MODULES
                            hbdechex         1
@@ -77,27 +93,27 @@ SUB MODULES
                              hbints         1
                           hbnewline         1
                              hbpack         1
-                              TOTAL       585
+                              TOTAL       590
 ----------------------------------------------------------------------
 Report for cell hbexec.v1
 Instance Path : genbus.wbexec
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              CCU2D        16            8.5
+                              CCU2D        16            8.4
                             FD1P3AX        32           15.7
-                            FD1P3IX         3            1.5
-                            FD1S3AX        32           22.7
-                            FD1S3IX        33           36.7
+                            FD1P3IX         2            1.1
+                            FD1S3AX        32           21.9
+                            FD1S3IX        33           38.8
                             FD1S3JX         3           50.0
-                               LUT4        76            2.3
-                              TOTAL       195
+                               LUT4        73            2.2
+                              TOTAL       191
 ----------------------------------------------------------------------
 Report for cell hbdeword.v1
 Instance Path : genbus.unpackx
                                   Cell usage:
                                cell     count   Res Usage(%)
                             FD1P3AX        32           15.7
-                            FD1P3IX        10            5.1
+                            FD1P3IX        10            5.3
                                LUT4        46            1.4
                               TOTAL        88
 ----------------------------------------------------------------------
@@ -105,76 +121,76 @@ Report for cell hbpack.v1
 Instance Path : genbus.packxi
                                   Cell usage:
                                cell     count   Res Usage(%)
-                            FD1P3IX        69           35.2
-                            FD1S3IX         1            1.1
-                               LUT4        34            1.0
-                              TOTAL       104
+                            FD1P3IX        69           36.3
+                            FD1S3IX         1            1.2
+                               LUT4        39            1.2
+                              TOTAL       109
 ----------------------------------------------------------------------
 Report for cell hbgenhex.v1
 Instance Path : genbus.genhex
                                   Cell usage:
                                cell     count   Res Usage(%)
                             FD1P3IX         1            0.5
-                               LUT4         6            0.2
+                               LUT4         5            0.2
                               SP8KC         1          100.0
-                              TOTAL         8
+                              TOTAL         7
 ----------------------------------------------------------------------
 Report for cell hbdechex.v1
 Instance Path : genbus.dechxi
                                   Cell usage:
                                cell     count   Res Usage(%)
-                            FD1S3AX         6            4.3
+                            FD1S3AX         6            4.1
                             FD1S3AY         3           42.9
-                               LUT4        48            1.5
-                              PFUMX         3            0.4
-                              TOTAL        60
+                               LUT4        55            1.7
+                              PFUMX         2            0.3
+                              TOTAL        66
 ----------------------------------------------------------------------
 Report for cell hbnewline.v1
 Instance Path : genbus.addnl
                                   Cell usage:
                                cell     count   Res Usage(%)
                             FD1P3AY         1            7.7
-                            FD1P3IX         2            1.0
-                            FD1P3JX         6           37.5
-                            FD1S3IX         1            1.1
+                            FD1P3IX         2            1.1
+                            FD1P3JX         6           28.6
+                            FD1S3IX         1            1.2
                             FD1S3JX         1           16.7
-                               LUT4        28            0.9
+                               LUT4        27            0.8
                               PFUMX         2            0.3
-                              TOTAL        41
+                              TOTAL        40
 ----------------------------------------------------------------------
 Report for cell hbints.v1
 Instance Path : genbus.addints
                                   Cell usage:
                                cell     count   Res Usage(%)
-                            FD1P3IX        33           16.8
-                            FD1P3JX         3           18.8
-                               LUT4         5            0.2
-                              TOTAL        41
+                            FD1P3IX        33           17.4
+                            FD1P3JX         3           14.3
+                               LUT4         3            0.1
+                              TOTAL        39
 ----------------------------------------------------------------------
 Report for cell hbidle.v1
 Instance Path : genbus.addidles
                                   Cell usage:
                                cell     count   Res Usage(%)
-                            FD1P3IX        31           15.8
-                            FD1P3JX         4           25.0
-                               LUT4         5            0.2
-                              TOTAL        40
+                            FD1P3IX        31           16.3
+                            FD1P3JX         4           19.0
+                               LUT4         7            0.2
+                              TOTAL        42
 ----------------------------------------------------------------------
 Report for cell fm_generator_wb_slave.v1
 Instance Path : wb_fm_data_31__I_0
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              CCU2D        89           47.1
+                              CCU2D        89           46.8
                             FD1P3AX        57           27.9
                             FD1P3BX        14          100.0
                             FD1P3DX        82          100.0
-                            FD1S3AX        32           22.7
+                            FD1S3AX        32           21.9
                             FD1S3BX        46          100.0
                             FD1S3DX       342          100.0
-                            FD1S3IX         1            1.1
-                            L6MUX21       347          100.0
-                               LUT4      2779           85.2
-                              PFUMX       710           95.8
+                            FD1S3IX         1            1.2
+                            L6MUX21       339          100.0
+                               LUT4      2805           84.4
+                              PFUMX       720           96.0
 SUB MODULES
                                 dds         1
                              dds_U2         1
@@ -182,7 +198,7 @@ SUB MODULES
                       nco(OW=12)_U1         1
            quarter_wave_sine_lookup         1
         quarter_wave_sine_lookup_U0         1
-                              TOTAL      4505
+                              TOTAL      4533
 ----------------------------------------------------------------------
 Report for cell dds.v1
 Instance Path : wb_fm_data_31__I_0.modulation
@@ -192,32 +208,32 @@ Instance Path : wb_fm_data_31__I_0.modulation
                             FD1P3AX        12            5.9
                             FD1S3BX        15           32.6
                             FD1S3DX       107           31.3
-                            L6MUX21       116           33.4
-                               LUT4       841           25.8
-                              PFUMX       222           30.0
+                            L6MUX21       113           33.3
+                               LUT4       844           25.4
+                              PFUMX       225           30.0
 SUB MODULES
                          nco(OW=12)         1
            quarter_wave_sine_lookup         1
-                              TOTAL      1340
+                              TOTAL      1343
 ----------------------------------------------------------------------
 Report for cell quarter_wave_sine_lookup.v1
 Instance Path : wb_fm_data_31__I_0.modulation.qtr_inst
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              CCU2D         9            4.8
+                              CCU2D         9            4.7
                             FD1P3AX        12            5.9
                             FD1S3BX        15           32.6
                             FD1S3DX        44           12.9
-                            L6MUX21       116           33.4
-                               LUT4       840           25.8
-                              PFUMX       222           30.0
-                              TOTAL      1258
+                            L6MUX21       113           33.3
+                               LUT4       843           25.4
+                              PFUMX       225           30.0
+                              TOTAL      1261
 ----------------------------------------------------------------------
 Report for cell nco(OW=12).v1
 Instance Path : wb_fm_data_31__I_0.modulation.nco_inst
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              CCU2D        16            8.5
+                              CCU2D        16            8.4
                             FD1S3DX        32            9.4
                                LUT4         1            0.0
                               TOTAL        49
@@ -226,36 +242,36 @@ Report for cell dds_U2.v1
 Instance Path : wb_fm_data_31__I_0.carrier
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              CCU2D        32           16.9
+                              CCU2D        32           16.8
                             FD1P3AX        13            6.4
                             FD1S3BX        31           67.4
                             FD1S3DX       123           36.0
-                            L6MUX21       231           66.6
-                               LUT4      1671           51.2
-                              PFUMX       441           59.5
+                            L6MUX21       226           66.7
+                               LUT4      1683           50.7
+                              PFUMX       450           60.0
 SUB MODULES
                       nco(OW=12)_U1         1
         quarter_wave_sine_lookup_U0         1
-                              TOTAL      2544
+                              TOTAL      2560
 ----------------------------------------------------------------------
 Report for cell quarter_wave_sine_lookup_U0.v1
 Instance Path : wb_fm_data_31__I_0.carrier.qtr_inst
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              CCU2D        16            8.5
+                              CCU2D        16            8.4
                             FD1P3AX        13            6.4
                             FD1S3BX        31           67.4
                             FD1S3DX        60           17.5
-                            L6MUX21       231           66.6
-                               LUT4      1670           51.2
-                              PFUMX       441           59.5
-                              TOTAL      2462
+                            L6MUX21       226           66.7
+                               LUT4      1682           50.6
+                              PFUMX       450           60.0
+                              TOTAL      2478
 ----------------------------------------------------------------------
 Report for cell nco(OW=12)_U1.v1
 Instance Path : wb_fm_data_31__I_0.carrier.nco_inst
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              CCU2D        16            8.5
+                              CCU2D        16            8.4
                             FD1S3DX        32            9.4
                                LUT4         1            0.0
                               TOTAL        49
@@ -274,41 +290,33 @@ Instance Path : clock_phase_shifter_inst
                             FD1S3AX         2            1.4
                               TOTAL         2
 ----------------------------------------------------------------------
-Report for cell rxuartlite(CLOCKS_PER_BAUD=20).v1
-Instance Path : rxtransport
+Report for cell sys_clk.v1
+Instance Path : sys_clk_inst
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              CCU2D        38           20.1
-                            FD1P3AX        15            7.4
-                            FD1P3AY         5           38.5
-                            FD1P3IX        45           23.0
-                            FD1P3JX         3           18.8
-                            FD1S3AX         2            1.4
-                            FD1S3AY         3           42.9
-                               LUT4        39            1.2
-                              PFUMX         2            0.3
-                              TOTAL       152
+                            EHXPLLJ         1           50.0
+                              TOTAL         1
 ----------------------------------------------------------------------
 Report for cell dynamic_pll.v1
 Instance Path : lo_gen
                                   Cell usage:
                                cell     count   Res Usage(%)
-                            EHXPLLJ         1          100.0
+                            EHXPLLJ         1           50.0
                                 INV         1          100.0
                               TOTAL         2
 ----------------------------------------------------------------------
-Report for cell txuartlite(TIMING_BITS=24,CLOCKS_PER_BAUD=20).v1
+Report for cell txuartlite(TIMING_BITS=24,CLOCKS_PER_BAUD=10000).v1
 Instance Path : txtransport
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              CCU2D        13            6.9
+                              CCU2D        13            6.8
                             FD1P3AX         4            2.0
                             FD1P3AY         7           53.8
-                            FD1P3IX         2            1.0
-                            FD1S3AX         3            2.1
+                            FD1P3IX         2            1.1
+                            FD1S3AX         8            5.5
                             FD1S3AY         1           14.3
-                            FD1S3IX        21           23.3
+                            FD1S3IX        16           18.8
                             FD1S3JX         1           16.7
-                               LUT4        27            0.8
+                               LUT4        37            1.1
                               PFUMX         2            0.3
-                              TOTAL        81
+                              TOTAL        91

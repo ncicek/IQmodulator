@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
+    <Task name="Map">
+        <Message>
+            <ID>51001051</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>genbus/genhex/mux_105</Dynamic>
+        </Message>
+    </Task>
     <Task name="Lattice_Synthesis">
         <Message>
             <ID>35002000</ID>
@@ -36,8 +43,32 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
+            <Dynamic>d:/documents/git_local/fm_modulator/lattice/sys_clk.v(8): </Dynamic>
+            <Dynamic>sys_clk</Dynamic>
+            <Navigation>d:/documents/git_local/fm_modulator/lattice/sys_clk.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1124): </Dynamic>
+            <Dynamic>VLO</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v</Navigation>
+            <Navigation>1124</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1696): </Dynamic>
+            <Dynamic>EHXPLLJ_renamed_due_excessive_length_1</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v</Navigation>
+            <Navigation>1696</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
             <Dynamic>d:/documents/git_local/fm_modulator/rtl/debug_bus/rxuartlite.v(64): </Dynamic>
-            <Dynamic>rxuartlite(CLOCKS_PER_BAUD=20)</Dynamic>
+            <Dynamic>rxuartlite(CLOCKS_PER_BAUD=10000)</Dynamic>
             <Navigation>d:/documents/git_local/fm_modulator/rtl/debug_bus/rxuartlite.v</Navigation>
             <Navigation>64</Navigation>
         </Message>
@@ -63,7 +94,7 @@
             <ID>35901018</ID>
             <Severity>Info</Severity>
             <Dynamic>d:/documents/git_local/fm_modulator/rtl/debug_bus/txuartlite.v(68): </Dynamic>
-            <Dynamic>txuartlite(TIMING_BITS=24,CLOCKS_PER_BAUD=20)</Dynamic>
+            <Dynamic>txuartlite(TIMING_BITS=24,CLOCKS_PER_BAUD=10000)</Dynamic>
             <Navigation>d:/documents/git_local/fm_modulator/rtl/debug_bus/txuartlite.v</Navigation>
             <Navigation>68</Navigation>
         </Message>
@@ -142,20 +173,20 @@
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/documents/git_local/fm_modulator/rtl/top.v(112): </Dynamic>
-            <Dynamic>32</Dynamic>
-            <Dynamic>17</Dynamic>
-            <Navigation>d:/documents/git_local/fm_modulator/rtl/top.v</Navigation>
-            <Navigation>112</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>Warning</Severity>
             <Dynamic>d:/documents/git_local/fm_modulator/rtl/top.v(113): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>17</Dynamic>
             <Navigation>d:/documents/git_local/fm_modulator/rtl/top.v</Navigation>
             <Navigation>113</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/documents/git_local/fm_modulator/rtl/top.v(114): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>17</Dynamic>
+            <Navigation>d:/documents/git_local/fm_modulator/rtl/top.v</Navigation>
+            <Navigation>114</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -252,16 +283,8 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1124): </Dynamic>
-            <Dynamic>VLO</Dynamic>
-            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v</Navigation>
-            <Navigation>1124</Navigation>
-        </Message>
-        <Message>
-            <ID>35901018</ID>
-            <Severity>Info</Severity>
             <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1696): </Dynamic>
-            <Dynamic>EHXPLLJ_renamed_due_excessive_length_1</Dynamic>
+            <Dynamic>EHXPLLJ_renamed_due_excessive_length_2</Dynamic>
             <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v</Navigation>
             <Navigation>1696</Navigation>
         </Message>
@@ -326,12 +349,12 @@
         <Message>
             <ID>35001779</ID>
             <Severity>Warning</Severity>
-            <Dynamic>\txtransport/o_uart_tx_48</Dynamic>
+            <Dynamic>\rxtransport/chg_counter__i0</Dynamic>
         </Message>
         <Message>
             <ID>35001779</ID>
             <Severity>Warning</Severity>
-            <Dynamic>\rxtransport/chg_counter__i0</Dynamic>
+            <Dynamic>\txtransport/o_uart_tx_48</Dynamic>
         </Message>
         <Message>
             <ID>35001779</ID>
@@ -456,7 +479,32 @@
         <Message>
             <ID>35001779</ID>
             <Severity>Warning</Severity>
-            <Dynamic>\rxtransport/baud_counter_i4</Dynamic>
+            <Dynamic>\rxtransport/baud_counter_i13</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\rxtransport/baud_counter_i10</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\rxtransport/baud_counter_i9</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\rxtransport/baud_counter_i8</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\rxtransport/baud_counter_i3</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\rxtransport/baud_counter_i2</Dynamic>
         </Message>
         <Message>
             <ID>35001779</ID>
@@ -466,6 +514,21 @@
         <Message>
             <ID>35001611</ID>
             <Severity>Warning</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61091065</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>i_resetb_c</Dynamic>
+            <Dynamic>Secondary</Dynamic>
+            <Dynamic>i_resetb</Dynamic>
+            <Dynamic>B3</Dynamic>
+            <Dynamic>Secondary</Dynamic>
         </Message>
     </Task>
 </BaliMessageLog>
