@@ -100,7 +100,7 @@ module rxuartlite(i_clk, i_uart_rx, o_wr, o_data);
 	if (qq_uart != ck_uart)
 		chg_counter <= 0;
 	else if (chg_counter != { (TB){1'b1} })
-		chg_counter <= chg_counter + 1;
+		chg_counter <= chg_counter + 1'b1;
 
 	// Are we in the middle of a baud iterval?  Specifically, are we
 	// in the middle of a start bit?  Set this to high if so.  We'll use
@@ -130,7 +130,7 @@ module rxuartlite(i_clk, i_uart_rx, o_wr, o_data);
 			// Data arrives least significant bit first.
 			// By the time this is clocked in, it's what
 			// you'll have.
-			state <= state + 1;
+			state <= state + 1'b1;
 	end
 
 	// Data bit capture logic.

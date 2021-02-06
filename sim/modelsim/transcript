@@ -1,0 +1,389 @@
+# Compile of dds.v was successful.
+# Compile of fm_generator_wb_slave.v was successful.
+# Compile of nco.v was successful.
+# Compile of quarter_wave_sine_lookup.v was successful.
+# Compile of top.v was successful.
+# Compile of hbaxil.v was successful.
+# Compile of hbbus.v was successful.
+# Compile of hbconsole.v was successful.
+# Compile of hbdechex.v was successful.
+# Compile of hbdeword.v was successful.
+# Compile of hbexec.v was successful.
+# Compile of hbexecaxi.v was successful.
+# Compile of hbgenhex.v was successful.
+# Compile of hbidle.v was successful.
+# Compile of hbints.v was successful.
+# Compile of hbnewline.v was successful.
+# Compile of hbpack.v was successful.
+# Compile of rxuartlite.v was successful.
+# Compile of txuartlite.v was successful.
+# Compile of fm_top_tb2.v was successful.
+# Compile of dds_tb.v was successful.
+# 21 compiles, 0 failed with no errors.
+vsim -gui work.top_tb
+# vsim -gui work.top_tb 
+# Start time: 18:00:52 on Sep 27,2020
+# Loading work.top_tb
+# Loading work.top
+# Loading work.rxuartlite
+# Loading work.txuartlite
+# Loading work.hbbus
+# Loading work.hbdechex
+# Loading work.hbpack
+# Loading work.hbexec
+# Loading work.hbints
+# Loading work.hbidle
+# Loading work.hbdeword
+# Loading work.hbgenhex
+# Loading work.hbnewline
+# Loading work.fm_generator_wb_slave
+# Loading work.dds
+# Loading work.nco
+# Loading work.quarter_wave_sine_lookup
+add wave -position end sim:/top_tb/UUT/fm_generator_wb_instance/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: nebst  Hostname: DJNEBS  ProcessID: 14212
+#           Attempting to use alternate WLF file "./wlftwbrv1c".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftwbrv1c
+run -all
+# Break key hit
+# Break in Module fm_generator_wb_slave at D:/Documents/Git_Local/fm_modulator/rtl/fm_generator_wb_slave.v line 28
+run -all
+# Break key hit
+# Break in Module rxuartlite at D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/rxuartlite.v line 90
+add wave -position end sim:/top_tb/UUT/fm_generator_wb_instance/carrier/*
+add wave -position end sim:/top_tb/UUT/fm_generator_wb_instance/carrier/nco_inst/*
+add wave -position end sim:/top_tb/UUT/fm_generator_wb_instance/carrier/qtr_inst/*
+restart
+# Closing VCD file "test.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Break key hit
+# Simulation stop requested.
+add wave -position end sim:/top_tb/UUT/fm_generator_wb_instance/modulation/nco_inst/*
+add wave -position end sim:/top_tb/UUT/fm_generator_wb_instance/modulation/qtr_inst/*
+restart
+# Closing VCD file "test.vcd"
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Break key hit
+# Break in Module top_tb at D:/Documents/Git_Local/fm_modulator/tb/fm_top_tb2.v line 43
+# Compile of dds.v was successful.
+# Compile of fm_generator_wb_slave.v was successful.
+# Compile of nco.v was successful.
+# Compile of quarter_wave_sine_lookup.v was successful.
+# Compile of top.v was successful.
+# Compile of hbaxil.v was successful.
+# Compile of hbbus.v was successful.
+# Compile of hbconsole.v was successful.
+# Compile of hbdechex.v was successful.
+# Compile of hbdeword.v was successful.
+# Compile of hbexec.v was successful.
+# Compile of hbexecaxi.v was successful.
+# Compile of hbgenhex.v was successful.
+# Compile of hbidle.v was successful.
+# Compile of hbints.v was successful.
+# Compile of hbnewline.v was successful.
+# Compile of hbpack.v was successful.
+# Compile of rxuartlite.v was successful.
+# Compile of txuartlite.v was successful.
+# Compile of fm_top_tb2.v was successful.
+# Compile of dds_tb.v was successful.
+# 21 compiles, 0 failed with no errors.
+restart
+# Closing VCD file "test.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.top_tb
+# Loading work.top
+# Loading work.rxuartlite
+# Loading work.txuartlite
+# Loading work.hbbus
+# Loading work.hbdechex
+# Loading work.hbpack
+# Loading work.hbexec
+# Loading work.hbints
+# Loading work.hbidle
+# Loading work.hbdeword
+# Loading work.hbgenhex
+# Loading work.hbnewline
+# Loading work.fm_generator_wb_slave
+# Loading work.dds
+# Loading work.nco
+# Loading work.quarter_wave_sine_lookup
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Break key hit
+# Simulation stop requested.
+# Compile of dds.v was successful.
+# Compile of fm_generator_wb_slave.v was successful.
+# Compile of nco.v was successful.
+# Compile of quarter_wave_sine_lookup.v was successful.
+# Compile of top.v was successful.
+# Compile of hbaxil.v was successful.
+# Compile of hbbus.v was successful.
+# Compile of hbconsole.v was successful.
+# Compile of hbdechex.v was successful.
+# Compile of hbdeword.v was successful.
+# Compile of hbexec.v was successful.
+# Compile of hbexecaxi.v was successful.
+# Compile of hbgenhex.v was successful.
+# Compile of hbidle.v was successful.
+# Compile of hbints.v was successful.
+# Compile of hbnewline.v was successful.
+# Compile of hbpack.v was successful.
+# Compile of rxuartlite.v was successful.
+# Compile of txuartlite.v was successful.
+# Compile of fm_top_tb2.v was successful.
+# Compile of dds_tb.v was successful.
+# 21 compiles, 0 failed with no errors.
+restart -f
+# Closing VCD file "test.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.top_tb
+# Loading work.top
+# Loading work.rxuartlite
+# Loading work.txuartlite
+# Loading work.hbbus
+# Loading work.hbdechex
+# Loading work.hbpack
+# Loading work.hbexec
+# Loading work.hbints
+# Loading work.hbidle
+# Loading work.hbdeword
+# Loading work.hbgenhex
+# Loading work.hbnewline
+# Loading work.fm_generator_wb_slave
+# Loading work.dds
+# Loading work.nco
+# Loading work.quarter_wave_sine_lookup
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Break key hit
+# Break in Module rxuartlite at D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/rxuartlite.v line 99
+# Compile of dds.v was successful.
+# Compile of fm_generator_wb_slave.v was successful.
+# Compile of nco.v was successful.
+# Compile of quarter_wave_sine_lookup.v was successful.
+# Compile of top.v was successful.
+# Compile of hbaxil.v was successful.
+# Compile of hbbus.v was successful.
+# Compile of hbconsole.v was successful.
+# Compile of hbdechex.v was successful.
+# Compile of hbdeword.v was successful.
+# Compile of hbexec.v was successful.
+# Compile of hbexecaxi.v was successful.
+# Compile of hbgenhex.v was successful.
+# Compile of hbidle.v was successful.
+# Compile of hbints.v was successful.
+# Compile of hbnewline.v was successful.
+# Compile of hbpack.v was successful.
+# Compile of rxuartlite.v was successful.
+# Compile of txuartlite.v was successful.
+# Compile of fm_top_tb2.v was successful.
+# Compile of dds_tb.v was successful.
+# 21 compiles, 0 failed with no errors.
+restart -f
+# Closing VCD file "test.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.top_tb
+# Loading work.top
+# Loading work.rxuartlite
+# Loading work.txuartlite
+# Loading work.hbbus
+# Loading work.hbdechex
+# Loading work.hbpack
+# Loading work.hbexec
+# Loading work.hbints
+# Loading work.hbidle
+# Loading work.hbdeword
+# Loading work.hbgenhex
+# Loading work.hbnewline
+# Loading work.fm_generator_wb_slave
+# Loading work.dds
+# Loading work.nco
+# Loading work.quarter_wave_sine_lookup
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Break key hit
+# Break in Module txuartlite at D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/txuartlite.v line 139
+# Compile of dds.v was successful.
+# Compile of fm_generator_wb_slave.v was successful.
+# Compile of nco.v was successful.
+# Compile of quarter_wave_sine_lookup.v was successful.
+# Compile of top.v was successful.
+# Compile of hbaxil.v was successful.
+# Compile of hbbus.v was successful.
+# Compile of hbconsole.v was successful.
+# Compile of hbdechex.v was successful.
+# Compile of hbdeword.v was successful.
+# Compile of hbexec.v was successful.
+# Compile of hbexecaxi.v was successful.
+# Compile of hbgenhex.v was successful.
+# Compile of hbidle.v was successful.
+# Compile of hbints.v was successful.
+# Compile of hbnewline.v was successful.
+# Compile of hbpack.v was successful.
+# Compile of rxuartlite.v was successful.
+# Compile of txuartlite.v was successful.
+# Compile of fm_top_tb2.v was successful.
+# Compile of dds_tb.v was successful.
+# 21 compiles, 0 failed with no errors.
+# Compile of dds.v was successful.
+# Compile of fm_generator_wb_slave.v was successful.
+# Compile of nco.v was successful.
+# Compile of quarter_wave_sine_lookup.v was successful.
+# Compile of top.v was successful.
+# Compile of hbaxil.v was successful.
+# Compile of hbbus.v was successful.
+# Compile of hbconsole.v was successful.
+# Compile of hbdechex.v was successful.
+# Compile of hbdeword.v was successful.
+# Compile of hbexec.v was successful.
+# Compile of hbexecaxi.v was successful.
+# Compile of hbgenhex.v was successful.
+# Compile of hbidle.v was successful.
+# Compile of hbints.v was successful.
+# Compile of hbnewline.v was successful.
+# Compile of hbpack.v was successful.
+# Compile of rxuartlite.v was successful.
+# Compile of txuartlite.v was successful.
+# Compile of fm_top_tb2.v was successful.
+# Compile of dds_tb.v was successful.
+# 21 compiles, 0 failed with no errors.
+restart
+# Closing VCD file "test.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.top_tb
+# Loading work.top
+# Loading work.rxuartlite
+# Loading work.txuartlite
+# Loading work.hbbus
+# Loading work.hbdechex
+# Loading work.hbpack
+# Loading work.hbexec
+# Loading work.hbints
+# Loading work.hbidle
+# Loading work.hbdeword
+# Loading work.hbgenhex
+# Loading work.hbnewline
+# Loading work.fm_generator_wb_slave
+# Loading work.dds
+# Loading work.nco
+# Loading work.quarter_wave_sine_lookup
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Break key hit
+# Break in Module top at D:/Documents/Git_Local/fm_modulator/rtl/top.v line 119
+# Compile of dds.v was successful.
+# Compile of fm_generator_wb_slave.v was successful.
+# Compile of nco.v was successful.
+# Compile of quarter_wave_sine_lookup.v was successful.
+# Compile of top.v was successful.
+# Compile of hbaxil.v was successful.
+# Compile of hbbus.v was successful.
+# Compile of hbconsole.v was successful.
+# Compile of hbdechex.v was successful.
+# Compile of hbdeword.v was successful.
+# Compile of hbexec.v was successful.
+# Compile of hbexecaxi.v was successful.
+# Compile of hbgenhex.v was successful.
+# Compile of hbidle.v was successful.
+# Compile of hbints.v was successful.
+# Compile of hbnewline.v was successful.
+# Compile of hbpack.v was successful.
+# Compile of rxuartlite.v was successful.
+restart
+# Closing VCD file "test.vcd"
+# Loading work.top
+# Loading work.rxuartlite
+# Loading work.txuartlite
+# Loading work.hbbus
+# Loading work.hbdechex
+# Loading work.hbpack
+# Loading work.hbexec
+# Loading work.hbints
+# Loading work.hbidle
+# Loading work.hbdeword
+# Loading work.hbgenhex
+# Loading work.hbnewline
+# Loading work.fm_generator_wb_slave
+# Loading work.dds
+# Loading work.nco
+# Loading work.quarter_wave_sine_lookup
+# Compile of txuartlite.v was successful.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Break key hit
+# Break in Module top_tb at D:/Documents/Git_Local/fm_modulator/tb/fm_top_tb2.v line 43
+# Compile of fm_top_tb2.v was successful.
+# Compile canceled.
+# 20 out of 21 compiles, 0 failed with no errors.
+# Compile of dds.v was successful.
+# Compile of fm_generator_wb_slave.v was successful.
+# Compile of nco.v was successful.
+# Compile of quarter_wave_sine_lookup.v was successful.
+# Compile of top.v was successful.
+# Compile of hbaxil.v was successful.
+# Compile of hbbus.v was successful.
+# Compile of hbconsole.v was successful.
+# Compile of hbdechex.v was successful.
+# Compile of hbdeword.v was successful.
+# Compile of hbexec.v was successful.
+# Compile of hbexecaxi.v was successful.
+# Compile of hbgenhex.v was successful.
+# Compile of hbidle.v was successful.
+# Compile of hbints.v was successful.
+# Compile of hbnewline.v was successful.
+# Compile of hbpack.v was successful.
+# Compile of rxuartlite.v was successful.
+# Compile of txuartlite.v was successful.
+# Compile of fm_top_tb2.v was successful.
+# Compile of dds_tb.v was successful.
+# 21 compiles, 0 failed with no errors.
+restart
+# Closing VCD file "test.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.top_tb
+# Loading work.top
+# Loading work.rxuartlite
+# Loading work.txuartlite
+# Loading work.hbbus
+# Loading work.hbdechex
+# Loading work.hbpack
+# Loading work.hbexec
+# Loading work.hbints
+# Loading work.hbidle
+# Loading work.hbdeword
+# Loading work.hbgenhex
+# Loading work.hbnewline
+# Loading work.fm_generator_wb_slave
+# Loading work.dds
+# Loading work.nco
+# Loading work.quarter_wave_sine_lookup
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Break key hit
+# Break in Module hbgenhex at D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbgenhex.v line 74
+run -all
+# Break key hit
+# Break in Module rxuartlite at D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/rxuartlite.v line 170
+# End time: 21:44:58 on Sep 27,2020, Elapsed time: 3:44:06
+# Errors: 0, Warnings: 1

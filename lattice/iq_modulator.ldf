@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliProject version="3.2" title="iq_modulator" device="LCMXO3LF-6900C-5BG256C" default_implementation="impl1">
     <Options/>
-    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
-        <Options def_top="hbconsole"/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Timing">
+        <Options VERILOG_DIRECTIVES="synthesis" def_top="hbconsole" top="top"/>
         <Source name="../rtl/dds.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
@@ -19,7 +19,7 @@
             <Options/>
         </Source>
         <Source name="../rtl/top.v" type="Verilog" type_short="Verilog">
-            <Options/>
+            <Options top_module="top"/>
         </Source>
         <Source name="../rtl/debug_bus/hbaxil.v" type="Verilog" type_short="Verilog">
             <Options/>
@@ -61,6 +61,18 @@
             <Options/>
         </Source>
         <Source name="../rtl/debug_bus/txuartlite.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../rtl/clock_phase_shifter.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="efb_inst.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="dynamic_pll.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="sys_clk.ipx" type="IPX_Module" type_short="IPX">
             <Options/>
         </Source>
         <Source name="iq_modulator.lpf" type="Logic Preference" type_short="LPF">

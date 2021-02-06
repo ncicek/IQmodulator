@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1605586844" />
+    <testcase classname="fm_generator_wb_slave_tb" name="fm_generator_wb_slave_tb" ratio_time="4225.287187179609" sim_time_ns="10019.501" time="2.3713183403015137" />
+  </testsuite>
+</testsuites>

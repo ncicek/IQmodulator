@@ -1,0 +1,134 @@
+D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbgenhex.v {1 {vlog -work work -stats=none D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbgenhex.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module hbgenhex
+
+Top level modules:
+	hbgenhex
+
+} {} {}} D:/Documents/Git_Local/fm_modulator/rtl/nco.v {1 {vlog -work work -stats=none D:/Documents/Git_Local/fm_modulator/rtl/nco.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module nco
+
+Top level modules:
+	nco
+
+} {} {}} D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbdechex.v {1 {vlog -work work -stats=none D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbdechex.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module hbdechex
+
+Top level modules:
+	hbdechex
+
+} {} {}} D:/Documents/Git_Local/fm_modulator/rtl/dds.v {1 {vlog -work work -stats=none D:/Documents/Git_Local/fm_modulator/rtl/dds.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module dds
+
+Top level modules:
+	dds
+
+} {} {}} D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/rxuartlite.v {1 {vlog -work work -stats=none D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/rxuartlite.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module rxuartlite
+
+Top level modules:
+	rxuartlite
+
+} {} {}} D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbnewline.v {1 {vlog -work work -stats=none D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbnewline.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module hbnewline
+
+Top level modules:
+	hbnewline
+
+} {} {}} D:/Documents/Git_Local/fm_modulator/rtl/quarter_wave_sine_lookup.v {1 {vlog -work work -stats=none D:/Documents/Git_Local/fm_modulator/rtl/quarter_wave_sine_lookup.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module quarter_wave_sine_lookup
+
+Top level modules:
+	quarter_wave_sine_lookup
+
+} {} {}} D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/txuartlite.v {1 {vlog -work work -stats=none D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/txuartlite.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module txuartlite
+
+Top level modules:
+	txuartlite
+
+} {} {}} D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbexec.v {1 {vlog -work work -stats=none D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbexec.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module hbexec
+
+Top level modules:
+	hbexec
+
+} {} {}} D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbidle.v {1 {vlog -work work -stats=none D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbidle.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module hbidle
+
+Top level modules:
+	hbidle
+
+} {} {}} D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbints.v {1 {vlog -work work -stats=none D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbints.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module hbints
+
+Top level modules:
+	hbints
+
+} {} {}} D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbexecaxi.v {1 {vlog -work work -stats=none D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbexecaxi.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module hbexecaxi
+
+Top level modules:
+	hbexecaxi
+
+} {} {}} D:/Documents/Git_Local/fm_modulator/tb/fm_top_tb2.v {1 {vlog -work work -stats=none D:/Documents/Git_Local/fm_modulator/tb/fm_top_tb2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module top_tb
+
+Top level modules:
+	top_tb
+
+} {} {}} D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbpack.v {1 {vlog -work work -stats=none D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbpack.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module hbpack
+
+Top level modules:
+	hbpack
+
+} {} {}} D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbbus.v {1 {vlog -work work -stats=none D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbbus.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module hbbus
+
+Top level modules:
+	hbbus
+
+} {} {}} D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbconsole.v {1 {vlog -work work -stats=none D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbconsole.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module hbconsole
+
+Top level modules:
+	hbconsole
+
+} {} {}} D:/Documents/Git_Local/fm_modulator/tb/dds_tb.v {1 {vlog -work work -stats=none D:/Documents/Git_Local/fm_modulator/tb/dds_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module dds_tb
+
+Top level modules:
+	dds_tb
+
+} {} {}} D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbdeword.v {1 {vlog -work work -stats=none D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbdeword.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module hbdeword
+
+Top level modules:
+	hbdeword
+
+} {} {}} D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbaxil.v {1 {vlog -work work -stats=none D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbaxil.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module hbaxil
+
+Top level modules:
+	hbaxil
+
+} {} {}}
