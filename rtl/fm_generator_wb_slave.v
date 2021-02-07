@@ -37,9 +37,9 @@ reg [31:0] addr_space [0:3];
 
 always @(posedge i_clk or posedge i_reset) begin
 	if (i_reset) begin
-		addr_space[REG_CARRIER_CENTER_FREQUENCY] <= 32'h4444444;
-		addr_space[REG_MODULATION_FREQUENCY] <= 32'h44444;
-		addr_space[REG_MODULATION_DEVIATION] <= 32'd9;
+		addr_space[REG_CARRIER_CENTER_FREQUENCY] <= 32'd59652324;
+		addr_space[REG_MODULATION_FREQUENCY] <= 32'd596523;
+		addr_space[REG_MODULATION_DEVIATION] <= 32'd250;
 	end else begin
 		if ((i_wb_stb)&&(i_wb_we)&&(!o_wb_stall)) begin
 			addr_space[i_wb_addr] <= i_wb_data;
@@ -60,12 +60,11 @@ end
 
 assign o_wb_stall = 1'b0; //we can accept wb request on every clock cycle, no need to stall
 
-reg [(accumulator_width-2):0] carrier_center_increment_offset_ls, carrier_center_increment_offset_rs;
 reg [(accumulator_width-2):0] carrier_increment;
 
 wire signed [(accumulator_width-2):0] carrier_center_increment;
 wire signed [(accumulator_width-2):0] modulation_increment;
-wire [sine_lookup_width:0] modulation_deviation_amount;
+wire signed [sine_lookup_width:0] modulation_deviation_amount;
 assign carrier_center_increment = addr_space[REG_CARRIER_CENTER_FREQUENCY][(accumulator_width-2):0];
 assign modulation_increment = addr_space[REG_MODULATION_FREQUENCY][(accumulator_width-2):0];
 assign modulation_deviation_amount = addr_space[REG_MODULATION_DEVIATION][sine_lookup_width:0];
@@ -82,28 +81,16 @@ dds #( 	.sine_lookup_width(sine_lookup_width),
 		.accumulator_width(accumulator_width)
 	) modulation(.i_clk(i_clk), .i_reset(i_reset), .i_ce(1'b1), .i_update(1'b1), .i_increment(modulation_increment), .o_sample_i(modulation_output), .o_sample_q());
 
-reg [sine_lookup_width:0] sine_lookup_width_minus_modulation_deviation_amount, modulation_deviation_amount_minus_sine_lookup_width;
 
+reg signed [30:0] carrier_center_increment_offset;
 
 always @(posedge i_clk or posedge i_reset) begin
 	if (i_reset) begin
-		carrier_center_increment_offset_ls <= {(accumulator_width-1){1'b0}};
-		carrier_center_increment_offset_rs <= {(accumulator_width-1){1'b0}};
-		carrier_increment <= {(accumulator_width-1){1'b0}};
-		sine_lookup_width_minus_modulation_deviation_amount <= {(sine_lookup_width+1){1'b0}};
-		modulation_deviation_amount_minus_sine_lookup_width <= {(sine_lookup_width+1){1'b0}};
+		carrier_center_increment_offset <= {(31){1'b0}};
+		carrier_increment <= {(31){1'b0}};
 	end else begin
-		sine_lookup_width_minus_modulation_deviation_amount <= sine_lookup_width - modulation_deviation_amount + 1;
-		modulation_deviation_amount_minus_sine_lookup_width <= modulation_deviation_amount - sine_lookup_width;
-		/* verilator lint_off WIDTH */
-		carrier_center_increment_offset_ls <= (modulation_output <<< modulation_deviation_amount_minus_sine_lookup_width);
-		carrier_center_increment_offset_rs <= (modulation_output >>> sine_lookup_width_minus_modulation_deviation_amount);
-		/* verilator lint_on WIDTH */
-		if (modulation_deviation_amount < sine_lookup_width)
-			carrier_increment <= carrier_center_increment + carrier_center_increment_offset_rs;
-		else
-			carrier_increment <= carrier_center_increment + carrier_center_increment_offset_ls;
-
+		carrier_center_increment_offset <= modulation_deviation_amount * modulation_output;
+		carrier_increment <= carrier_center_increment + carrier_center_increment_offset;
 	end
 end
 
