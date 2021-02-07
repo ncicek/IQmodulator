@@ -1,4 +1,4 @@
-FREQUENCY NET "dac_clk_p_c" 96.000000 MHz ;
+FREQUENCY NET "dac_clk_p_c" 72.000000 MHz ;
 FREQUENCY NET "lo_pll_out" 420.000000 MHz ;
 FREQUENCY NET "i_ref_clk_c" 12.000000 MHz ;
 BLOCK RESETPATHS ;

@@ -14,7 +14,7 @@
 <BR><PRE><A name="Report Header"></A>
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.11.3.469
-Wed Jan 13 21:46:07 2021
+Sat Feb 06 16:00:42 2021
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -31,564 +31,565 @@ Report level:    verbose report, limited to 10 items per preference
 
 
 
-</A><A name="FREQUENCY NET 'dac_clk_p_c' 96.000000 MH"></A>================================================================================
-Preference: FREQUENCY NET "dac_clk_p_c" 96.000000 MHz ;
+</A><A name="FREQUENCY NET 'dac_clk_p_c' 72.000000 MH"></A>================================================================================
+Preference: FREQUENCY NET "dac_clk_p_c" 72.000000 MHz ;
             10 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 <font color=#000000> 
 
-Passed: The following path meets requirements by 0.505ns
+Passed: The following path meets requirements by 2.091ns
  </font>
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              <A href="#@comp:wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_641">wb_fm_data_31__I_0/modulation/qtr_inst/index_i_i2</A>  (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
-   Destination:    FF         Data in        <A href="#@comp:wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_665">wb_fm_data_31__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i5</A>  (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
+   Source:         FF         Q              <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433">o_dac_a_9__I_0/carrier/qtr_inst/index_q_i1</A>  (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478">o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i6</A>  (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
 
-   Delay:               9.762ns  (33.9% logic, 66.1% route), 7 logic levels.
-
- Constraint Details:
-
-      9.762ns physical path delay wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_641 to wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_665 meets
-     10.417ns delay constraint less
-      0.000ns skew and
-      0.150ns DIN_SET requirement (totaling 10.267ns) by 0.505ns
-
- Physical Path Details:
-
-      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 96.000000 MHz ;:REG_DEL, 0.409,R23C20C.CLK,R23C20C.Q0,wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_641:ROUTE, 1.559,R23C20C.Q0,R23C14D.C1,wb_fm_data_31__I_0/modulation/qtr_inst/index_i_2:CTOF_DEL, 0.452,R23C14D.C1,R23C14D.F1,wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_1427:ROUTE, 1.735,R23C14D.F1,R23C23C.A0,wb_fm_data_31__I_0/modulation/qtr_inst/n27019:CTOF_DEL, 0.452,R23C23C.A0,R23C23C.F0,wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_1621:ROUTE, 1.766,R23C23C.F0,R22C14B.A0,wb_fm_data_31__I_0/modulation/qtr_inst/n397_adj_2907:CTOOFX_DEL, 0.661,R22C14B.A0,R22C14B.OFX0,wb_fm_data_31__I_0/modulation/qtr_inst/i20573/SLICE_903:ROUTE, 0.000,R22C14B.OFX0,R22C14A.FXA,wb_fm_data_31__I_0/modulation/qtr_inst/n23029:FXTOOFX_DEL, 0.223,R22C14A.FXA,R22C14A.OFX1,wb_fm_data_31__I_0/modulation/qtr_inst/i20574/SLICE_904:ROUTE, 0.541,R22C14A.OFX1,R23C14C.D0,wb_fm_data_31__I_0/modulation/qtr_inst/n23042:CTOF_DEL, 0.452,R23C14C.D0,R23C14C.F0,wb_fm_data_31__I_0/modulation/qtr_inst/i20592/SLICE_2076:ROUTE, 0.851,R23C14C.F0,R23C13D.A0,wb_fm_data_31__I_0/modulation/qtr_inst/n23048:CTOOFX_DEL, 0.661,R23C13D.A0,R23C13D.OFX0,wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_665:ROUTE, 0.000,R23C13D.OFX0,R23C13D.DI0,wb_fm_data_31__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_15_N_2126_5">Data path</A> wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_641 to wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_665:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.409    R23C20C.CLK to     R23C20C.Q0 <A href="#@comp:wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_641">wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_641</A> (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
-ROUTE       369     1.559<A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/index_i_2:R23C20C.Q0:R23C14D.C1:1.559">     R23C20C.Q0 to R23C14D.C1    </A> <A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/index_i_2">wb_fm_data_31__I_0/modulation/qtr_inst/index_i_2</A>
-CTOF_DEL    ---     0.452     R23C14D.C1 to     R23C14D.F1 <A href="#@comp:wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_1427">wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_1427</A>
-ROUTE         6     1.735<A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/n27019:R23C14D.F1:R23C23C.A0:1.735">     R23C14D.F1 to R23C23C.A0    </A> <A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/n27019">wb_fm_data_31__I_0/modulation/qtr_inst/n27019</A>
-CTOF_DEL    ---     0.452     R23C23C.A0 to     R23C23C.F0 <A href="#@comp:wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_1621">wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_1621</A>
-ROUTE         1     1.766<A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/n397_adj_2907:R23C23C.F0:R22C14B.A0:1.766">     R23C23C.F0 to R22C14B.A0    </A> <A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/n397_adj_2907">wb_fm_data_31__I_0/modulation/qtr_inst/n397_adj_2907</A>
-CTOOFX_DEL  ---     0.661     R22C14B.A0 to   R22C14B.OFX0 <A href="#@comp:wb_fm_data_31__I_0/modulation/qtr_inst/i20573/SLICE_903">wb_fm_data_31__I_0/modulation/qtr_inst/i20573/SLICE_903</A>
-ROUTE         1     0.000<A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/n23029:R22C14B.OFX0:R22C14A.FXA:0.000">   R22C14B.OFX0 to R22C14A.FXA   </A> <A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/n23029">wb_fm_data_31__I_0/modulation/qtr_inst/n23029</A>
-FXTOOFX_DE  ---     0.223    R22C14A.FXA to   R22C14A.OFX1 <A href="#@comp:wb_fm_data_31__I_0/modulation/qtr_inst/i20574/SLICE_904">wb_fm_data_31__I_0/modulation/qtr_inst/i20574/SLICE_904</A>
-ROUTE         1     0.541<A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/n23042:R22C14A.OFX1:R23C14C.D0:0.541">   R22C14A.OFX1 to R23C14C.D0    </A> <A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/n23042">wb_fm_data_31__I_0/modulation/qtr_inst/n23042</A>
-CTOF_DEL    ---     0.452     R23C14C.D0 to     R23C14C.F0 <A href="#@comp:wb_fm_data_31__I_0/modulation/qtr_inst/i20592/SLICE_2076">wb_fm_data_31__I_0/modulation/qtr_inst/i20592/SLICE_2076</A>
-ROUTE         1     0.851<A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/n23048:R23C14C.F0:R23C13D.A0:0.851">     R23C14C.F0 to R23C13D.A0    </A> <A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/n23048">wb_fm_data_31__I_0/modulation/qtr_inst/n23048</A>
-CTOOFX_DEL  ---     0.661     R23C13D.A0 to   R23C13D.OFX0 <A href="#@comp:wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_665">wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_665</A>
-ROUTE         1     0.000<A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_15_N_2126_5:R23C13D.OFX0:R23C13D.DI0:0.000">   R23C13D.OFX0 to R23C13D.DI0   </A> <A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_15_N_2126_5">wb_fm_data_31__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_15_N_2126_5</A> (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
-                  --------
-                    9.762   (33.9% logic, 66.1% route), 7 logic levels.
-
- Clock Skew Details: 
-
-      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 96.000000 MHz ;:ROUTE, 1.675,LPLL.CLKOP,R23C20C.CLK,dac_clk_p_c">Source Clock Path</A> sys_clk_inst/PLLInst_0 to wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_641:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       672     1.675<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R23C20C.CLK:1.675">     LPLL.CLKOP to R23C20C.CLK   </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
-                  --------
-                    1.675   (0.0% logic, 100.0% route), 0 logic levels.
-
-      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 96.000000 MHz ;:ROUTE, 1.675,LPLL.CLKOP,R23C13D.CLK,dac_clk_p_c">Destination Clock Path</A> sys_clk_inst/PLLInst_0 to wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_665:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       672     1.675<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R23C13D.CLK:1.675">     LPLL.CLKOP to R23C13D.CLK   </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
-                  --------
-                    1.675   (0.0% logic, 100.0% route), 0 logic levels.
-<font color=#000000> 
-
-Passed: The following path meets requirements by 0.624ns
- </font>
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              <A href="#@comp:wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_640">wb_fm_data_31__I_0/modulation/qtr_inst/index_i_i0</A>  (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
-   Destination:    FF         Data in        <A href="#@comp:wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_665">wb_fm_data_31__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i5</A>  (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
-
-   Delay:               9.643ns  (34.3% logic, 65.7% route), 7 logic levels.
+   Delay:              11.648ns  (32.5% logic, 67.5% route), 8 logic levels.
 
  Constraint Details:
 
-      9.643ns physical path delay wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_640 to wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_665 meets
-     10.417ns delay constraint less
+     11.648ns physical path delay o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433 to o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478 meets
+     13.889ns delay constraint less
       0.000ns skew and
-      0.150ns DIN_SET requirement (totaling 10.267ns) by 0.624ns
+      0.150ns DIN_SET requirement (totaling 13.739ns) by 2.091ns
 
  Physical Path Details:
 
-      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 96.000000 MHz ;:REG_DEL, 0.409,R23C19C.CLK,R23C19C.Q0,wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_640:ROUTE, 1.440,R23C19C.Q0,R23C14D.A1,wb_fm_data_31__I_0/modulation/qtr_inst/index_i_0:CTOF_DEL, 0.452,R23C14D.A1,R23C14D.F1,wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_1427:ROUTE, 1.735,R23C14D.F1,R23C23C.A0,wb_fm_data_31__I_0/modulation/qtr_inst/n27019:CTOF_DEL, 0.452,R23C23C.A0,R23C23C.F0,wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_1621:ROUTE, 1.766,R23C23C.F0,R22C14B.A0,wb_fm_data_31__I_0/modulation/qtr_inst/n397_adj_2907:CTOOFX_DEL, 0.661,R22C14B.A0,R22C14B.OFX0,wb_fm_data_31__I_0/modulation/qtr_inst/i20573/SLICE_903:ROUTE, 0.000,R22C14B.OFX0,R22C14A.FXA,wb_fm_data_31__I_0/modulation/qtr_inst/n23029:FXTOOFX_DEL, 0.223,R22C14A.FXA,R22C14A.OFX1,wb_fm_data_31__I_0/modulation/qtr_inst/i20574/SLICE_904:ROUTE, 0.541,R22C14A.OFX1,R23C14C.D0,wb_fm_data_31__I_0/modulation/qtr_inst/n23042:CTOF_DEL, 0.452,R23C14C.D0,R23C14C.F0,wb_fm_data_31__I_0/modulation/qtr_inst/i20592/SLICE_2076:ROUTE, 0.851,R23C14C.F0,R23C13D.A0,wb_fm_data_31__I_0/modulation/qtr_inst/n23048:CTOOFX_DEL, 0.661,R23C13D.A0,R23C13D.OFX0,wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_665:ROUTE, 0.000,R23C13D.OFX0,R23C13D.DI0,wb_fm_data_31__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_15_N_2126_5">Data path</A> wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_640 to wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_665:
+      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 72.000000 MHz ;:REG_DEL, 0.409,R17C23A.CLK,R17C23A.Q1,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433:ROUTE, 2.248,R17C23A.Q1,R19C33C.B1,o_dac_a_9__I_0/carrier/qtr_inst/index_q_1:CTOF_DEL, 0.452,R19C33C.B1,R19C33C.F1,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1752:ROUTE, 0.888,R19C33C.F1,R19C35C.D0,o_dac_a_9__I_0/carrier/qtr_inst/n26538:CTOF_DEL, 0.452,R19C35C.D0,R19C35C.F0,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1477:ROUTE, 0.968,R19C35C.F0,R21C35D.B0,o_dac_a_9__I_0/carrier/qtr_inst/n26357:CTOF_DEL, 0.452,R21C35D.B0,R21C35D.F0,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_2218:ROUTE, 0.839,R21C35D.F0,R23C34A.D0,o_dac_a_9__I_0/carrier/qtr_inst/n955_adj_2678:CTOOFX_DEL, 0.661,R23C34A.D0,R23C34A.OFX0,o_dac_a_9__I_0/carrier/qtr_inst/i19793/SLICE_1052:ROUTE, 1.396,R23C34A.OFX0,R23C28C.C1,o_dac_a_9__I_0/carrier/qtr_inst/n22132:CTOF_DEL, 0.452,R23C28C.C1,R23C28C.F1,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1696:ROUTE, 0.384,R23C28C.F1,R23C28C.C0,o_dac_a_9__I_0/carrier/qtr_inst/n22136:CTOF_DEL, 0.452,R23C28C.C0,R23C28C.F0,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1696:ROUTE, 1.143,R23C28C.F0,R18C28D.C0,o_dac_a_9__I_0/carrier/qtr_inst/n22138:CTOF_DEL, 0.452,R18C28D.C0,R18C28D.F0,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478:ROUTE, 0.000,R18C28D.F0,R18C28D.DI0,o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2142_6">Data path</A> o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433 to o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.409    R23C19C.CLK to     R23C19C.Q0 <A href="#@comp:wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_640">wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_640</A> (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
-ROUTE       327     1.440<A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/index_i_0:R23C19C.Q0:R23C14D.A1:1.440">     R23C19C.Q0 to R23C14D.A1    </A> <A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/index_i_0">wb_fm_data_31__I_0/modulation/qtr_inst/index_i_0</A>
-CTOF_DEL    ---     0.452     R23C14D.A1 to     R23C14D.F1 <A href="#@comp:wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_1427">wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_1427</A>
-ROUTE         6     1.735<A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/n27019:R23C14D.F1:R23C23C.A0:1.735">     R23C14D.F1 to R23C23C.A0    </A> <A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/n27019">wb_fm_data_31__I_0/modulation/qtr_inst/n27019</A>
-CTOF_DEL    ---     0.452     R23C23C.A0 to     R23C23C.F0 <A href="#@comp:wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_1621">wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_1621</A>
-ROUTE         1     1.766<A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/n397_adj_2907:R23C23C.F0:R22C14B.A0:1.766">     R23C23C.F0 to R22C14B.A0    </A> <A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/n397_adj_2907">wb_fm_data_31__I_0/modulation/qtr_inst/n397_adj_2907</A>
-CTOOFX_DEL  ---     0.661     R22C14B.A0 to   R22C14B.OFX0 <A href="#@comp:wb_fm_data_31__I_0/modulation/qtr_inst/i20573/SLICE_903">wb_fm_data_31__I_0/modulation/qtr_inst/i20573/SLICE_903</A>
-ROUTE         1     0.000<A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/n23029:R22C14B.OFX0:R22C14A.FXA:0.000">   R22C14B.OFX0 to R22C14A.FXA   </A> <A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/n23029">wb_fm_data_31__I_0/modulation/qtr_inst/n23029</A>
-FXTOOFX_DE  ---     0.223    R22C14A.FXA to   R22C14A.OFX1 <A href="#@comp:wb_fm_data_31__I_0/modulation/qtr_inst/i20574/SLICE_904">wb_fm_data_31__I_0/modulation/qtr_inst/i20574/SLICE_904</A>
-ROUTE         1     0.541<A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/n23042:R22C14A.OFX1:R23C14C.D0:0.541">   R22C14A.OFX1 to R23C14C.D0    </A> <A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/n23042">wb_fm_data_31__I_0/modulation/qtr_inst/n23042</A>
-CTOF_DEL    ---     0.452     R23C14C.D0 to     R23C14C.F0 <A href="#@comp:wb_fm_data_31__I_0/modulation/qtr_inst/i20592/SLICE_2076">wb_fm_data_31__I_0/modulation/qtr_inst/i20592/SLICE_2076</A>
-ROUTE         1     0.851<A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/n23048:R23C14C.F0:R23C13D.A0:0.851">     R23C14C.F0 to R23C13D.A0    </A> <A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/n23048">wb_fm_data_31__I_0/modulation/qtr_inst/n23048</A>
-CTOOFX_DEL  ---     0.661     R23C13D.A0 to   R23C13D.OFX0 <A href="#@comp:wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_665">wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_665</A>
-ROUTE         1     0.000<A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_15_N_2126_5:R23C13D.OFX0:R23C13D.DI0:0.000">   R23C13D.OFX0 to R23C13D.DI0   </A> <A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_15_N_2126_5">wb_fm_data_31__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_15_N_2126_5</A> (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
+REG_DEL     ---     0.409    R17C23A.CLK to     R17C23A.Q1 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433</A> (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
+ROUTE       344     2.248<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/index_q_1:R17C23A.Q1:R19C33C.B1:2.248">     R17C23A.Q1 to R19C33C.B1    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/index_q_1">o_dac_a_9__I_0/carrier/qtr_inst/index_q_1</A>
+CTOF_DEL    ---     0.452     R19C33C.B1 to     R19C33C.F1 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1752">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1752</A>
+ROUTE        14     0.888<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n26538:R19C33C.F1:R19C35C.D0:0.888">     R19C33C.F1 to R19C35C.D0    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n26538">o_dac_a_9__I_0/carrier/qtr_inst/n26538</A>
+CTOF_DEL    ---     0.452     R19C35C.D0 to     R19C35C.F0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1477">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1477</A>
+ROUTE         1     0.968<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n26357:R19C35C.F0:R21C35D.B0:0.968">     R19C35C.F0 to R21C35D.B0    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n26357">o_dac_a_9__I_0/carrier/qtr_inst/n26357</A>
+CTOF_DEL    ---     0.452     R21C35D.B0 to     R21C35D.F0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_2218">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_2218</A>
+ROUTE         1     0.839<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n955_adj_2678:R21C35D.F0:R23C34A.D0:0.839">     R21C35D.F0 to R23C34A.D0    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n955_adj_2678">o_dac_a_9__I_0/carrier/qtr_inst/n955_adj_2678</A>
+CTOOFX_DEL  ---     0.661     R23C34A.D0 to   R23C34A.OFX0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/i19793/SLICE_1052">o_dac_a_9__I_0/carrier/qtr_inst/i19793/SLICE_1052</A>
+ROUTE         1     1.396<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22132:R23C34A.OFX0:R23C28C.C1:1.396">   R23C34A.OFX0 to R23C28C.C1    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22132">o_dac_a_9__I_0/carrier/qtr_inst/n22132</A>
+CTOF_DEL    ---     0.452     R23C28C.C1 to     R23C28C.F1 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1696">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1696</A>
+ROUTE         1     0.384<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22136:R23C28C.F1:R23C28C.C0:0.384">     R23C28C.F1 to R23C28C.C0    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22136">o_dac_a_9__I_0/carrier/qtr_inst/n22136</A>
+CTOF_DEL    ---     0.452     R23C28C.C0 to     R23C28C.F0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1696">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1696</A>
+ROUTE         1     1.143<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22138:R23C28C.F0:R18C28D.C0:1.143">     R23C28C.F0 to R18C28D.C0    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22138">o_dac_a_9__I_0/carrier/qtr_inst/n22138</A>
+CTOF_DEL    ---     0.452     R18C28D.C0 to     R18C28D.F0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478</A>
+ROUTE         1     0.000<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2142_6:R18C28D.F0:R18C28D.DI0:0.000">     R18C28D.F0 to R18C28D.DI0   </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2142_6">o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2142_6</A> (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
                   --------
-                    9.643   (34.3% logic, 65.7% route), 7 logic levels.
+                   11.648   (32.5% logic, 67.5% route), 8 logic levels.
 
  Clock Skew Details: 
 
-      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 96.000000 MHz ;:ROUTE, 1.675,LPLL.CLKOP,R23C19C.CLK,dac_clk_p_c">Source Clock Path</A> sys_clk_inst/PLLInst_0 to wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_640:
+      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 72.000000 MHz ;:ROUTE, 1.711,LPLL.CLKOP,R17C23A.CLK,dac_clk_p_c">Source Clock Path</A> sys_clk_inst/PLLInst_0 to o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       672     1.675<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R23C19C.CLK:1.675">     LPLL.CLKOP to R23C19C.CLK   </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
-                  --------
-                    1.675   (0.0% logic, 100.0% route), 0 logic levels.
-
-      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 96.000000 MHz ;:ROUTE, 1.675,LPLL.CLKOP,R23C13D.CLK,dac_clk_p_c">Destination Clock Path</A> sys_clk_inst/PLLInst_0 to wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_665:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       672     1.675<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R23C13D.CLK:1.675">     LPLL.CLKOP to R23C13D.CLK   </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
-                  --------
-                    1.675   (0.0% logic, 100.0% route), 0 logic levels.
-<font color=#000000> 
-
-Passed: The following path meets requirements by 0.626ns
- </font>
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_546">wb_fm_data_31__I_0/carrier/qtr_inst/index_q_i2</A>  (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
-   Destination:    FF         Data in        <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_590">wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i6</A>  (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
-
-   Delay:               9.641ns  (39.2% logic, 60.8% route), 8 logic levels.
-
- Constraint Details:
-
-      9.641ns physical path delay wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_546 to wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_590 meets
-     10.417ns delay constraint less
-      0.000ns skew and
-      0.150ns DIN_SET requirement (totaling 10.267ns) by 0.626ns
-
- Physical Path Details:
-
-      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 96.000000 MHz ;:REG_DEL, 0.409,R18C32C.CLK,R18C32C.Q0,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_546:ROUTE, 1.851,R18C32C.Q0,R14C33C.A0,wb_fm_data_31__I_0/carrier/qtr_inst/index_q_2:CTOF_DEL, 0.452,R14C33C.A0,R14C33C.F0,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1743:ROUTE, 1.092,R14C33C.F0,R16C35C.C1,wb_fm_data_31__I_0/carrier/qtr_inst/n26871:CTOF_DEL, 0.452,R16C35C.C1,R16C35C.F1,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1456:ROUTE, 0.384,R16C35C.F1,R16C35C.C0,wb_fm_data_31__I_0/carrier/qtr_inst/n26720:CTOF_DEL, 0.452,R16C35C.C0,R16C35C.F0,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1456:ROUTE, 0.610,R16C35C.F0,R16C35D.B0,wb_fm_data_31__I_0/carrier/qtr_inst/n955_adj_2339:CTOOFX_DEL, 0.661,R16C35D.B0,R16C35D.OFX0,wb_fm_data_31__I_0/carrier/qtr_inst/i20035/SLICE_1065:ROUTE, 0.656,R16C35D.OFX0,R17C35B.C1,wb_fm_data_31__I_0/carrier/qtr_inst/n22491:CTOF_DEL, 0.452,R17C35B.C1,R17C35B.F1,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1674:ROUTE, 0.384,R17C35B.F1,R17C35B.C0,wb_fm_data_31__I_0/carrier/qtr_inst/n22495:CTOF_DEL, 0.452,R17C35B.C0,R17C35B.F0,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1674:ROUTE, 0.882,R17C35B.F0,R17C36A.B0,wb_fm_data_31__I_0/carrier/qtr_inst/n22497:CTOF_DEL, 0.452,R17C36A.B0,R17C36A.F0,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_590:ROUTE, 0.000,R17C36A.F0,R17C36A.DI0,wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2141_6">Data path</A> wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_546 to wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_590:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.409    R18C32C.CLK to     R18C32C.Q0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_546">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_546</A> (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
-ROUTE       367     1.851<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/index_q_2:R18C32C.Q0:R14C33C.A0:1.851">     R18C32C.Q0 to R14C33C.A0    </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/index_q_2">wb_fm_data_31__I_0/carrier/qtr_inst/index_q_2</A>
-CTOF_DEL    ---     0.452     R14C33C.A0 to     R14C33C.F0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1743">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1743</A>
-ROUTE        14     1.092<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n26871:R14C33C.F0:R16C35C.C1:1.092">     R14C33C.F0 to R16C35C.C1    </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n26871">wb_fm_data_31__I_0/carrier/qtr_inst/n26871</A>
-CTOF_DEL    ---     0.452     R16C35C.C1 to     R16C35C.F1 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1456">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1456</A>
-ROUTE         1     0.384<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n26720:R16C35C.F1:R16C35C.C0:0.384">     R16C35C.F1 to R16C35C.C0    </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n26720">wb_fm_data_31__I_0/carrier/qtr_inst/n26720</A>
-CTOF_DEL    ---     0.452     R16C35C.C0 to     R16C35C.F0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1456">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1456</A>
-ROUTE         1     0.610<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n955_adj_2339:R16C35C.F0:R16C35D.B0:0.610">     R16C35C.F0 to R16C35D.B0    </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n955_adj_2339">wb_fm_data_31__I_0/carrier/qtr_inst/n955_adj_2339</A>
-CTOOFX_DEL  ---     0.661     R16C35D.B0 to   R16C35D.OFX0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/i20035/SLICE_1065">wb_fm_data_31__I_0/carrier/qtr_inst/i20035/SLICE_1065</A>
-ROUTE         1     0.656<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n22491:R16C35D.OFX0:R17C35B.C1:0.656">   R16C35D.OFX0 to R17C35B.C1    </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n22491">wb_fm_data_31__I_0/carrier/qtr_inst/n22491</A>
-CTOF_DEL    ---     0.452     R17C35B.C1 to     R17C35B.F1 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1674">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1674</A>
-ROUTE         1     0.384<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n22495:R17C35B.F1:R17C35B.C0:0.384">     R17C35B.F1 to R17C35B.C0    </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n22495">wb_fm_data_31__I_0/carrier/qtr_inst/n22495</A>
-CTOF_DEL    ---     0.452     R17C35B.C0 to     R17C35B.F0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1674">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1674</A>
-ROUTE         1     0.882<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n22497:R17C35B.F0:R17C36A.B0:0.882">     R17C35B.F0 to R17C36A.B0    </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n22497">wb_fm_data_31__I_0/carrier/qtr_inst/n22497</A>
-CTOF_DEL    ---     0.452     R17C36A.B0 to     R17C36A.F0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_590">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_590</A>
-ROUTE         1     0.000<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2141_6:R17C36A.F0:R17C36A.DI0:0.000">     R17C36A.F0 to R17C36A.DI0   </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2141_6">wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2141_6</A> (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
-                  --------
-                    9.641   (39.2% logic, 60.8% route), 8 logic levels.
-
- Clock Skew Details: 
-
-      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 96.000000 MHz ;:ROUTE, 1.711,LPLL.CLKOP,R18C32C.CLK,dac_clk_p_c">Source Clock Path</A> sys_clk_inst/PLLInst_0 to wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_546:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       672     1.711<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R18C32C.CLK:1.711">     LPLL.CLKOP to R18C32C.CLK   </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
+ROUTE       672     1.711<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R17C23A.CLK:1.711">     LPLL.CLKOP to R17C23A.CLK   </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
                   --------
                     1.711   (0.0% logic, 100.0% route), 0 logic levels.
 
-      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 96.000000 MHz ;:ROUTE, 1.711,LPLL.CLKOP,R17C36A.CLK,dac_clk_p_c">Destination Clock Path</A> sys_clk_inst/PLLInst_0 to wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_590:
+      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 72.000000 MHz ;:ROUTE, 1.711,LPLL.CLKOP,R18C28D.CLK,dac_clk_p_c">Destination Clock Path</A> sys_clk_inst/PLLInst_0 to o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       672     1.711<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R17C36A.CLK:1.711">     LPLL.CLKOP to R17C36A.CLK   </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
+ROUTE       672     1.711<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R18C28D.CLK:1.711">     LPLL.CLKOP to R18C28D.CLK   </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
                   --------
                     1.711   (0.0% logic, 100.0% route), 0 logic levels.
 <font color=#000000> 
 
-Passed: The following path meets requirements by 0.695ns
+Passed: The following path meets requirements by 2.452ns
  </font>
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_540">wb_fm_data_31__I_0/carrier/qtr_inst/index_i_i0</A>  (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
-   Destination:    FF         Data in        <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_576">wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i6</A>  (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
+   Source:         FF         Q              <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_434">o_dac_a_9__I_0/carrier/qtr_inst/index_q_i2</A>  (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478">o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i6</A>  (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
 
-   Delay:               9.572ns  (39.5% logic, 60.5% route), 8 logic levels.
+   Delay:              11.287ns  (33.5% logic, 66.5% route), 8 logic levels.
 
  Constraint Details:
 
-      9.572ns physical path delay wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_540 to wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_576 meets
-     10.417ns delay constraint less
+     11.287ns physical path delay o_dac_a_9__I_0/carrier/qtr_inst/SLICE_434 to o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478 meets
+     13.889ns delay constraint less
       0.000ns skew and
-      0.150ns DIN_SET requirement (totaling 10.267ns) by 0.695ns
+      0.150ns DIN_SET requirement (totaling 13.739ns) by 2.452ns
 
  Physical Path Details:
 
-      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 96.000000 MHz ;:REG_DEL, 0.409,R4C28D.CLK,R4C28D.Q0,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_540:ROUTE, 0.940,R4C28D.Q0,R5C28C.A1,wb_fm_data_31__I_0/carrier/qtr_inst/index_i_0:CTOF_DEL, 0.452,R5C28C.A1,R5C28C.F1,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1503:ROUTE, 1.883,R5C28C.F1,R11C34D.C1,wb_fm_data_31__I_0/carrier/qtr_inst/n26882:CTOF_DEL, 0.452,R11C34D.C1,R11C34D.F1,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1453:ROUTE, 0.384,R11C34D.F1,R11C34D.C0,wb_fm_data_31__I_0/carrier/qtr_inst/n26721:CTOF_DEL, 0.452,R11C34D.C0,R11C34D.F0,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1453:ROUTE, 0.659,R11C34D.F0,R11C34B.C0,wb_fm_data_31__I_0/carrier/qtr_inst/n955:CTOOFX_DEL, 0.661,R11C34B.C0,R11C34B.OFX0,wb_fm_data_31__I_0/carrier/qtr_inst/i20849/SLICE_1056:ROUTE, 0.839,R11C34B.OFX0,R11C32A.D0,wb_fm_data_31__I_0/carrier/qtr_inst/n23305:CTOF_DEL, 0.452,R11C32A.D0,R11C32A.F0,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1653:ROUTE, 0.544,R11C32A.F0,R11C32A.D1,wb_fm_data_31__I_0/carrier/qtr_inst/n23309:CTOF_DEL, 0.452,R11C32A.D1,R11C32A.F1,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1653:ROUTE, 0.541,R11C32A.F1,R12C32C.D0,wb_fm_data_31__I_0/carrier/qtr_inst/n23311:CTOF_DEL, 0.452,R12C32C.D0,R12C32C.F0,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_576:ROUTE, 0.000,R12C32C.F0,R12C32C.DI0,wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_15_N_2126_6">Data path</A> wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_540 to wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_576:
+      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 72.000000 MHz ;:REG_DEL, 0.409,R17C23D.CLK,R17C23D.Q0,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_434:ROUTE, 1.887,R17C23D.Q0,R19C33C.D1,o_dac_a_9__I_0/carrier/qtr_inst/index_q_2:CTOF_DEL, 0.452,R19C33C.D1,R19C33C.F1,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1752:ROUTE, 0.888,R19C33C.F1,R19C35C.D0,o_dac_a_9__I_0/carrier/qtr_inst/n26538:CTOF_DEL, 0.452,R19C35C.D0,R19C35C.F0,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1477:ROUTE, 0.968,R19C35C.F0,R21C35D.B0,o_dac_a_9__I_0/carrier/qtr_inst/n26357:CTOF_DEL, 0.452,R21C35D.B0,R21C35D.F0,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_2218:ROUTE, 0.839,R21C35D.F0,R23C34A.D0,o_dac_a_9__I_0/carrier/qtr_inst/n955_adj_2678:CTOOFX_DEL, 0.661,R23C34A.D0,R23C34A.OFX0,o_dac_a_9__I_0/carrier/qtr_inst/i19793/SLICE_1052:ROUTE, 1.396,R23C34A.OFX0,R23C28C.C1,o_dac_a_9__I_0/carrier/qtr_inst/n22132:CTOF_DEL, 0.452,R23C28C.C1,R23C28C.F1,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1696:ROUTE, 0.384,R23C28C.F1,R23C28C.C0,o_dac_a_9__I_0/carrier/qtr_inst/n22136:CTOF_DEL, 0.452,R23C28C.C0,R23C28C.F0,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1696:ROUTE, 1.143,R23C28C.F0,R18C28D.C0,o_dac_a_9__I_0/carrier/qtr_inst/n22138:CTOF_DEL, 0.452,R18C28D.C0,R18C28D.F0,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478:ROUTE, 0.000,R18C28D.F0,R18C28D.DI0,o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2142_6">Data path</A> o_dac_a_9__I_0/carrier/qtr_inst/SLICE_434 to o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.409     R4C28D.CLK to      R4C28D.Q0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_540">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_540</A> (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
-ROUTE       326     0.940<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/index_i_0:R4C28D.Q0:R5C28C.A1:0.940">      R4C28D.Q0 to R5C28C.A1     </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/index_i_0">wb_fm_data_31__I_0/carrier/qtr_inst/index_i_0</A>
-CTOF_DEL    ---     0.452      R5C28C.A1 to      R5C28C.F1 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1503">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1503</A>
-ROUTE        16     1.883<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n26882:R5C28C.F1:R11C34D.C1:1.883">      R5C28C.F1 to R11C34D.C1    </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n26882">wb_fm_data_31__I_0/carrier/qtr_inst/n26882</A>
-CTOF_DEL    ---     0.452     R11C34D.C1 to     R11C34D.F1 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1453">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1453</A>
-ROUTE         1     0.384<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n26721:R11C34D.F1:R11C34D.C0:0.384">     R11C34D.F1 to R11C34D.C0    </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n26721">wb_fm_data_31__I_0/carrier/qtr_inst/n26721</A>
-CTOF_DEL    ---     0.452     R11C34D.C0 to     R11C34D.F0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1453">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1453</A>
-ROUTE         1     0.659<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n955:R11C34D.F0:R11C34B.C0:0.659">     R11C34D.F0 to R11C34B.C0    </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n955">wb_fm_data_31__I_0/carrier/qtr_inst/n955</A>
-CTOOFX_DEL  ---     0.661     R11C34B.C0 to   R11C34B.OFX0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/i20849/SLICE_1056">wb_fm_data_31__I_0/carrier/qtr_inst/i20849/SLICE_1056</A>
-ROUTE         1     0.839<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n23305:R11C34B.OFX0:R11C32A.D0:0.839">   R11C34B.OFX0 to R11C32A.D0    </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n23305">wb_fm_data_31__I_0/carrier/qtr_inst/n23305</A>
-CTOF_DEL    ---     0.452     R11C32A.D0 to     R11C32A.F0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1653">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1653</A>
-ROUTE         1     0.544<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n23309:R11C32A.F0:R11C32A.D1:0.544">     R11C32A.F0 to R11C32A.D1    </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n23309">wb_fm_data_31__I_0/carrier/qtr_inst/n23309</A>
-CTOF_DEL    ---     0.452     R11C32A.D1 to     R11C32A.F1 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1653">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1653</A>
-ROUTE         1     0.541<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n23311:R11C32A.F1:R12C32C.D0:0.541">     R11C32A.F1 to R12C32C.D0    </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n23311">wb_fm_data_31__I_0/carrier/qtr_inst/n23311</A>
-CTOF_DEL    ---     0.452     R12C32C.D0 to     R12C32C.F0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_576">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_576</A>
-ROUTE         1     0.000<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_15_N_2126_6:R12C32C.F0:R12C32C.DI0:0.000">     R12C32C.F0 to R12C32C.DI0   </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_15_N_2126_6">wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_15_N_2126_6</A> (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
+REG_DEL     ---     0.409    R17C23D.CLK to     R17C23D.Q0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_434">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_434</A> (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
+ROUTE       367     1.887<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/index_q_2:R17C23D.Q0:R19C33C.D1:1.887">     R17C23D.Q0 to R19C33C.D1    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/index_q_2">o_dac_a_9__I_0/carrier/qtr_inst/index_q_2</A>
+CTOF_DEL    ---     0.452     R19C33C.D1 to     R19C33C.F1 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1752">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1752</A>
+ROUTE        14     0.888<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n26538:R19C33C.F1:R19C35C.D0:0.888">     R19C33C.F1 to R19C35C.D0    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n26538">o_dac_a_9__I_0/carrier/qtr_inst/n26538</A>
+CTOF_DEL    ---     0.452     R19C35C.D0 to     R19C35C.F0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1477">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1477</A>
+ROUTE         1     0.968<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n26357:R19C35C.F0:R21C35D.B0:0.968">     R19C35C.F0 to R21C35D.B0    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n26357">o_dac_a_9__I_0/carrier/qtr_inst/n26357</A>
+CTOF_DEL    ---     0.452     R21C35D.B0 to     R21C35D.F0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_2218">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_2218</A>
+ROUTE         1     0.839<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n955_adj_2678:R21C35D.F0:R23C34A.D0:0.839">     R21C35D.F0 to R23C34A.D0    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n955_adj_2678">o_dac_a_9__I_0/carrier/qtr_inst/n955_adj_2678</A>
+CTOOFX_DEL  ---     0.661     R23C34A.D0 to   R23C34A.OFX0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/i19793/SLICE_1052">o_dac_a_9__I_0/carrier/qtr_inst/i19793/SLICE_1052</A>
+ROUTE         1     1.396<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22132:R23C34A.OFX0:R23C28C.C1:1.396">   R23C34A.OFX0 to R23C28C.C1    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22132">o_dac_a_9__I_0/carrier/qtr_inst/n22132</A>
+CTOF_DEL    ---     0.452     R23C28C.C1 to     R23C28C.F1 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1696">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1696</A>
+ROUTE         1     0.384<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22136:R23C28C.F1:R23C28C.C0:0.384">     R23C28C.F1 to R23C28C.C0    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22136">o_dac_a_9__I_0/carrier/qtr_inst/n22136</A>
+CTOF_DEL    ---     0.452     R23C28C.C0 to     R23C28C.F0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1696">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1696</A>
+ROUTE         1     1.143<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22138:R23C28C.F0:R18C28D.C0:1.143">     R23C28C.F0 to R18C28D.C0    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22138">o_dac_a_9__I_0/carrier/qtr_inst/n22138</A>
+CTOF_DEL    ---     0.452     R18C28D.C0 to     R18C28D.F0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478</A>
+ROUTE         1     0.000<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2142_6:R18C28D.F0:R18C28D.DI0:0.000">     R18C28D.F0 to R18C28D.DI0   </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2142_6">o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2142_6</A> (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
                   --------
-                    9.572   (39.5% logic, 60.5% route), 8 logic levels.
+                   11.287   (33.5% logic, 66.5% route), 8 logic levels.
 
  Clock Skew Details: 
 
-      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 96.000000 MHz ;:ROUTE, 1.711,LPLL.CLKOP,R4C28D.CLK,dac_clk_p_c">Source Clock Path</A> sys_clk_inst/PLLInst_0 to wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_540:
+      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 72.000000 MHz ;:ROUTE, 1.711,LPLL.CLKOP,R17C23D.CLK,dac_clk_p_c">Source Clock Path</A> sys_clk_inst/PLLInst_0 to o_dac_a_9__I_0/carrier/qtr_inst/SLICE_434:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       672     1.711<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R4C28D.CLK:1.711">     LPLL.CLKOP to R4C28D.CLK    </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
+ROUTE       672     1.711<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R17C23D.CLK:1.711">     LPLL.CLKOP to R17C23D.CLK   </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
                   --------
                     1.711   (0.0% logic, 100.0% route), 0 logic levels.
 
-      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 96.000000 MHz ;:ROUTE, 1.711,LPLL.CLKOP,R12C32C.CLK,dac_clk_p_c">Destination Clock Path</A> sys_clk_inst/PLLInst_0 to wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_576:
+      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 72.000000 MHz ;:ROUTE, 1.711,LPLL.CLKOP,R18C28D.CLK,dac_clk_p_c">Destination Clock Path</A> sys_clk_inst/PLLInst_0 to o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       672     1.711<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R12C32C.CLK:1.711">     LPLL.CLKOP to R12C32C.CLK   </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
+ROUTE       672     1.711<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R18C28D.CLK:1.711">     LPLL.CLKOP to R18C28D.CLK   </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
                   --------
                     1.711   (0.0% logic, 100.0% route), 0 logic levels.
 <font color=#000000> 
 
-Passed: The following path meets requirements by 0.698ns
+Passed: The following path meets requirements by 2.472ns
  </font>
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              <A href="#@comp:wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_640">wb_fm_data_31__I_0/modulation/qtr_inst/index_i_i1</A>  (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
-   Destination:    FF         Data in        <A href="#@comp:wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_665">wb_fm_data_31__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i5</A>  (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
+   Source:         FF         Q              <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433">o_dac_a_9__I_0/carrier/qtr_inst/index_q_i1</A>  (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478">o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i6</A>  (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
 
-   Delay:               9.569ns  (34.6% logic, 65.4% route), 7 logic levels.
-
- Constraint Details:
-
-      9.569ns physical path delay wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_640 to wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_665 meets
-     10.417ns delay constraint less
-      0.000ns skew and
-      0.150ns DIN_SET requirement (totaling 10.267ns) by 0.698ns
-
- Physical Path Details:
-
-      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 96.000000 MHz ;:REG_DEL, 0.409,R23C19C.CLK,R23C19C.Q1,wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_640:ROUTE, 1.366,R23C19C.Q1,R23C14D.D1,wb_fm_data_31__I_0/modulation/qtr_inst/index_i_1:CTOF_DEL, 0.452,R23C14D.D1,R23C14D.F1,wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_1427:ROUTE, 1.735,R23C14D.F1,R23C23C.A0,wb_fm_data_31__I_0/modulation/qtr_inst/n27019:CTOF_DEL, 0.452,R23C23C.A0,R23C23C.F0,wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_1621:ROUTE, 1.766,R23C23C.F0,R22C14B.A0,wb_fm_data_31__I_0/modulation/qtr_inst/n397_adj_2907:CTOOFX_DEL, 0.661,R22C14B.A0,R22C14B.OFX0,wb_fm_data_31__I_0/modulation/qtr_inst/i20573/SLICE_903:ROUTE, 0.000,R22C14B.OFX0,R22C14A.FXA,wb_fm_data_31__I_0/modulation/qtr_inst/n23029:FXTOOFX_DEL, 0.223,R22C14A.FXA,R22C14A.OFX1,wb_fm_data_31__I_0/modulation/qtr_inst/i20574/SLICE_904:ROUTE, 0.541,R22C14A.OFX1,R23C14C.D0,wb_fm_data_31__I_0/modulation/qtr_inst/n23042:CTOF_DEL, 0.452,R23C14C.D0,R23C14C.F0,wb_fm_data_31__I_0/modulation/qtr_inst/i20592/SLICE_2076:ROUTE, 0.851,R23C14C.F0,R23C13D.A0,wb_fm_data_31__I_0/modulation/qtr_inst/n23048:CTOOFX_DEL, 0.661,R23C13D.A0,R23C13D.OFX0,wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_665:ROUTE, 0.000,R23C13D.OFX0,R23C13D.DI0,wb_fm_data_31__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_15_N_2126_5">Data path</A> wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_640 to wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_665:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.409    R23C19C.CLK to     R23C19C.Q1 <A href="#@comp:wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_640">wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_640</A> (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
-ROUTE       335     1.366<A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/index_i_1:R23C19C.Q1:R23C14D.D1:1.366">     R23C19C.Q1 to R23C14D.D1    </A> <A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/index_i_1">wb_fm_data_31__I_0/modulation/qtr_inst/index_i_1</A>
-CTOF_DEL    ---     0.452     R23C14D.D1 to     R23C14D.F1 <A href="#@comp:wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_1427">wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_1427</A>
-ROUTE         6     1.735<A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/n27019:R23C14D.F1:R23C23C.A0:1.735">     R23C14D.F1 to R23C23C.A0    </A> <A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/n27019">wb_fm_data_31__I_0/modulation/qtr_inst/n27019</A>
-CTOF_DEL    ---     0.452     R23C23C.A0 to     R23C23C.F0 <A href="#@comp:wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_1621">wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_1621</A>
-ROUTE         1     1.766<A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/n397_adj_2907:R23C23C.F0:R22C14B.A0:1.766">     R23C23C.F0 to R22C14B.A0    </A> <A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/n397_adj_2907">wb_fm_data_31__I_0/modulation/qtr_inst/n397_adj_2907</A>
-CTOOFX_DEL  ---     0.661     R22C14B.A0 to   R22C14B.OFX0 <A href="#@comp:wb_fm_data_31__I_0/modulation/qtr_inst/i20573/SLICE_903">wb_fm_data_31__I_0/modulation/qtr_inst/i20573/SLICE_903</A>
-ROUTE         1     0.000<A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/n23029:R22C14B.OFX0:R22C14A.FXA:0.000">   R22C14B.OFX0 to R22C14A.FXA   </A> <A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/n23029">wb_fm_data_31__I_0/modulation/qtr_inst/n23029</A>
-FXTOOFX_DE  ---     0.223    R22C14A.FXA to   R22C14A.OFX1 <A href="#@comp:wb_fm_data_31__I_0/modulation/qtr_inst/i20574/SLICE_904">wb_fm_data_31__I_0/modulation/qtr_inst/i20574/SLICE_904</A>
-ROUTE         1     0.541<A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/n23042:R22C14A.OFX1:R23C14C.D0:0.541">   R22C14A.OFX1 to R23C14C.D0    </A> <A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/n23042">wb_fm_data_31__I_0/modulation/qtr_inst/n23042</A>
-CTOF_DEL    ---     0.452     R23C14C.D0 to     R23C14C.F0 <A href="#@comp:wb_fm_data_31__I_0/modulation/qtr_inst/i20592/SLICE_2076">wb_fm_data_31__I_0/modulation/qtr_inst/i20592/SLICE_2076</A>
-ROUTE         1     0.851<A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/n23048:R23C14C.F0:R23C13D.A0:0.851">     R23C14C.F0 to R23C13D.A0    </A> <A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/n23048">wb_fm_data_31__I_0/modulation/qtr_inst/n23048</A>
-CTOOFX_DEL  ---     0.661     R23C13D.A0 to   R23C13D.OFX0 <A href="#@comp:wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_665">wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_665</A>
-ROUTE         1     0.000<A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_15_N_2126_5:R23C13D.OFX0:R23C13D.DI0:0.000">   R23C13D.OFX0 to R23C13D.DI0   </A> <A href="#@net:wb_fm_data_31__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_15_N_2126_5">wb_fm_data_31__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_15_N_2126_5</A> (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
-                  --------
-                    9.569   (34.6% logic, 65.4% route), 7 logic levels.
-
- Clock Skew Details: 
-
-      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 96.000000 MHz ;:ROUTE, 1.675,LPLL.CLKOP,R23C19C.CLK,dac_clk_p_c">Source Clock Path</A> sys_clk_inst/PLLInst_0 to wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_640:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       672     1.675<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R23C19C.CLK:1.675">     LPLL.CLKOP to R23C19C.CLK   </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
-                  --------
-                    1.675   (0.0% logic, 100.0% route), 0 logic levels.
-
-      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 96.000000 MHz ;:ROUTE, 1.675,LPLL.CLKOP,R23C13D.CLK,dac_clk_p_c">Destination Clock Path</A> sys_clk_inst/PLLInst_0 to wb_fm_data_31__I_0/modulation/qtr_inst/SLICE_665:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       672     1.675<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R23C13D.CLK:1.675">     LPLL.CLKOP to R23C13D.CLK   </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
-                  --------
-                    1.675   (0.0% logic, 100.0% route), 0 logic levels.
-<font color=#000000> 
-
-Passed: The following path meets requirements by 0.704ns
- </font>
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_541">wb_fm_data_31__I_0/carrier/qtr_inst/index_i_i2</A>  (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
-   Destination:    FF         Data in        <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_578">wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i9</A>  (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
-
-   Delay:               9.563ns  (32.3% logic, 67.7% route), 6 logic levels.
+   Delay:              11.267ns  (31.5% logic, 68.5% route), 8 logic levels.
 
  Constraint Details:
 
-      9.563ns physical path delay wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_541 to wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_578 meets
-     10.417ns delay constraint less
+     11.267ns physical path delay o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433 to o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478 meets
+     13.889ns delay constraint less
       0.000ns skew and
-      0.150ns DIN_SET requirement (totaling 10.267ns) by 0.704ns
+      0.150ns DIN_SET requirement (totaling 13.739ns) by 2.472ns
 
  Physical Path Details:
 
-      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 96.000000 MHz ;:REG_DEL, 0.409,R4C28C.CLK,R4C28C.Q0,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_541:ROUTE, 1.839,R4C28C.Q0,R6C34B.B1,wb_fm_data_31__I_0/carrier/qtr_inst/index_i_2:CTOF_DEL, 0.452,R6C34B.B1,R6C34B.F1,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1452:ROUTE, 1.523,R6C34B.F1,R5C30A.C0,wb_fm_data_31__I_0/carrier/qtr_inst/n26849:CTOF_DEL, 0.452,R5C30A.C0,R5C30A.F0,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1681:ROUTE, 1.393,R5C30A.F0,R9C36C.D1,wb_fm_data_31__I_0/carrier/qtr_inst/n763_adj_2414:CTOOFX_DEL, 0.661,R9C36C.D1,R9C36C.OFX0,wb_fm_data_31__I_0/carrier/qtr_inst/i22933/SLICE_1207:ROUTE, 0.541,R9C36C.OFX0,R9C35D.D0,wb_fm_data_31__I_0/carrier/qtr_inst/n24618:CTOF_DEL, 0.452,R9C35D.D0,R9C35D.F0,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_2181:ROUTE, 1.180,R9C35D.F0,R12C35D.B1,wb_fm_data_31__I_0/carrier/qtr_inst/n24626:CTOOFX_DEL, 0.661,R12C35D.B1,R12C35D.OFX0,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_578:ROUTE, 0.000,R12C35D.OFX0,R12C35D.DI0,wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_15_N_2126_9">Data path</A> wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_541 to wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_578:
+      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 72.000000 MHz ;:REG_DEL, 0.409,R17C23A.CLK,R17C23A.Q1,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433:ROUTE, 2.480,R17C23A.Q1,R23C27D.C1,o_dac_a_9__I_0/carrier/qtr_inst/index_q_1:CTOF_DEL, 0.452,R23C27D.C1,R23C27D.F1,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1703:ROUTE, 2.209,R23C27D.F1,R24C32B.B1,o_dac_a_9__I_0/carrier/qtr_inst/n26569:CTOF_DEL, 0.452,R24C32B.B1,R24C32B.F1,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1480:ROUTE, 0.957,R24C32B.F1,R24C28C.D1,o_dac_a_9__I_0/carrier/qtr_inst/n875_adj_2571:CTOOFX_DEL, 0.661,R24C28C.D1,R24C28C.OFX0,o_dac_a_9__I_0/carrier/qtr_inst/i19783/SLICE_1275:ROUTE, 0.000,R24C28C.OFX0,R24C28C.FXB,o_dac_a_9__I_0/carrier/qtr_inst/n22122:FXTOOFX_DEL, 0.223,R24C28C.FXB,R24C28C.OFX1,o_dac_a_9__I_0/carrier/qtr_inst/i19783/SLICE_1275:ROUTE, 0.541,R24C28C.OFX1,R23C28C.D1,o_dac_a_9__I_0/carrier/qtr_inst/n22131:CTOF_DEL, 0.452,R23C28C.D1,R23C28C.F1,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1696:ROUTE, 0.384,R23C28C.F1,R23C28C.C0,o_dac_a_9__I_0/carrier/qtr_inst/n22136:CTOF_DEL, 0.452,R23C28C.C0,R23C28C.F0,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1696:ROUTE, 1.143,R23C28C.F0,R18C28D.C0,o_dac_a_9__I_0/carrier/qtr_inst/n22138:CTOF_DEL, 0.452,R18C28D.C0,R18C28D.F0,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478:ROUTE, 0.000,R18C28D.F0,R18C28D.DI0,o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2142_6">Data path</A> o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433 to o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.409     R4C28C.CLK to      R4C28C.Q0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_541">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_541</A> (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
-ROUTE       363     1.839<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/index_i_2:R4C28C.Q0:R6C34B.B1:1.839">      R4C28C.Q0 to R6C34B.B1     </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/index_i_2">wb_fm_data_31__I_0/carrier/qtr_inst/index_i_2</A>
-CTOF_DEL    ---     0.452      R6C34B.B1 to      R6C34B.F1 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1452">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1452</A>
-ROUTE         6     1.523<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n26849:R6C34B.F1:R5C30A.C0:1.523">      R6C34B.F1 to R5C30A.C0     </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n26849">wb_fm_data_31__I_0/carrier/qtr_inst/n26849</A>
-CTOF_DEL    ---     0.452      R5C30A.C0 to      R5C30A.F0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1681">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1681</A>
-ROUTE         1     1.393<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n763_adj_2414:R5C30A.F0:R9C36C.D1:1.393">      R5C30A.F0 to R9C36C.D1     </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n763_adj_2414">wb_fm_data_31__I_0/carrier/qtr_inst/n763_adj_2414</A>
-CTOOFX_DEL  ---     0.661      R9C36C.D1 to    R9C36C.OFX0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/i22933/SLICE_1207">wb_fm_data_31__I_0/carrier/qtr_inst/i22933/SLICE_1207</A>
-ROUTE         1     0.541<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n24618:R9C36C.OFX0:R9C35D.D0:0.541">    R9C36C.OFX0 to R9C35D.D0     </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n24618">wb_fm_data_31__I_0/carrier/qtr_inst/n24618</A>
-CTOF_DEL    ---     0.452      R9C35D.D0 to      R9C35D.F0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_2181">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_2181</A>
-ROUTE         1     1.180<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n24626:R9C35D.F0:R12C35D.B1:1.180">      R9C35D.F0 to R12C35D.B1    </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n24626">wb_fm_data_31__I_0/carrier/qtr_inst/n24626</A>
-CTOOFX_DEL  ---     0.661     R12C35D.B1 to   R12C35D.OFX0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_578">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_578</A>
-ROUTE         1     0.000<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_15_N_2126_9:R12C35D.OFX0:R12C35D.DI0:0.000">   R12C35D.OFX0 to R12C35D.DI0   </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_15_N_2126_9">wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_15_N_2126_9</A> (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
+REG_DEL     ---     0.409    R17C23A.CLK to     R17C23A.Q1 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433</A> (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
+ROUTE       344     2.480<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/index_q_1:R17C23A.Q1:R23C27D.C1:2.480">     R17C23A.Q1 to R23C27D.C1    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/index_q_1">o_dac_a_9__I_0/carrier/qtr_inst/index_q_1</A>
+CTOF_DEL    ---     0.452     R23C27D.C1 to     R23C27D.F1 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1703">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1703</A>
+ROUTE        19     2.209<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n26569:R23C27D.F1:R24C32B.B1:2.209">     R23C27D.F1 to R24C32B.B1    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n26569">o_dac_a_9__I_0/carrier/qtr_inst/n26569</A>
+CTOF_DEL    ---     0.452     R24C32B.B1 to     R24C32B.F1 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1480">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1480</A>
+ROUTE         3     0.957<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n875_adj_2571:R24C32B.F1:R24C28C.D1:0.957">     R24C32B.F1 to R24C28C.D1    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n875_adj_2571">o_dac_a_9__I_0/carrier/qtr_inst/n875_adj_2571</A>
+CTOOFX_DEL  ---     0.661     R24C28C.D1 to   R24C28C.OFX0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/i19783/SLICE_1275">o_dac_a_9__I_0/carrier/qtr_inst/i19783/SLICE_1275</A>
+ROUTE         1     0.000<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22122:R24C28C.OFX0:R24C28C.FXB:0.000">   R24C28C.OFX0 to R24C28C.FXB   </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22122">o_dac_a_9__I_0/carrier/qtr_inst/n22122</A>
+FXTOOFX_DE  ---     0.223    R24C28C.FXB to   R24C28C.OFX1 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/i19783/SLICE_1275">o_dac_a_9__I_0/carrier/qtr_inst/i19783/SLICE_1275</A>
+ROUTE         1     0.541<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22131:R24C28C.OFX1:R23C28C.D1:0.541">   R24C28C.OFX1 to R23C28C.D1    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22131">o_dac_a_9__I_0/carrier/qtr_inst/n22131</A>
+CTOF_DEL    ---     0.452     R23C28C.D1 to     R23C28C.F1 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1696">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1696</A>
+ROUTE         1     0.384<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22136:R23C28C.F1:R23C28C.C0:0.384">     R23C28C.F1 to R23C28C.C0    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22136">o_dac_a_9__I_0/carrier/qtr_inst/n22136</A>
+CTOF_DEL    ---     0.452     R23C28C.C0 to     R23C28C.F0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1696">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1696</A>
+ROUTE         1     1.143<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22138:R23C28C.F0:R18C28D.C0:1.143">     R23C28C.F0 to R18C28D.C0    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22138">o_dac_a_9__I_0/carrier/qtr_inst/n22138</A>
+CTOF_DEL    ---     0.452     R18C28D.C0 to     R18C28D.F0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478</A>
+ROUTE         1     0.000<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2142_6:R18C28D.F0:R18C28D.DI0:0.000">     R18C28D.F0 to R18C28D.DI0   </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2142_6">o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2142_6</A> (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
                   --------
-                    9.563   (32.3% logic, 67.7% route), 6 logic levels.
+                   11.267   (31.5% logic, 68.5% route), 8 logic levels.
 
  Clock Skew Details: 
 
-      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 96.000000 MHz ;:ROUTE, 1.711,LPLL.CLKOP,R4C28C.CLK,dac_clk_p_c">Source Clock Path</A> sys_clk_inst/PLLInst_0 to wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_541:
+      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 72.000000 MHz ;:ROUTE, 1.711,LPLL.CLKOP,R17C23A.CLK,dac_clk_p_c">Source Clock Path</A> sys_clk_inst/PLLInst_0 to o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       672     1.711<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R4C28C.CLK:1.711">     LPLL.CLKOP to R4C28C.CLK    </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
+ROUTE       672     1.711<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R17C23A.CLK:1.711">     LPLL.CLKOP to R17C23A.CLK   </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
                   --------
                     1.711   (0.0% logic, 100.0% route), 0 logic levels.
 
-      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 96.000000 MHz ;:ROUTE, 1.711,LPLL.CLKOP,R12C35D.CLK,dac_clk_p_c">Destination Clock Path</A> sys_clk_inst/PLLInst_0 to wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_578:
+      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 72.000000 MHz ;:ROUTE, 1.711,LPLL.CLKOP,R18C28D.CLK,dac_clk_p_c">Destination Clock Path</A> sys_clk_inst/PLLInst_0 to o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       672     1.711<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R12C35D.CLK:1.711">     LPLL.CLKOP to R12C35D.CLK   </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
+ROUTE       672     1.711<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R18C28D.CLK:1.711">     LPLL.CLKOP to R18C28D.CLK   </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
                   --------
                     1.711   (0.0% logic, 100.0% route), 0 logic levels.
 <font color=#000000> 
 
-Passed: The following path meets requirements by 0.721ns
+Passed: The following path meets requirements by 2.509ns
  </font>
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_545">wb_fm_data_31__I_0/carrier/qtr_inst/index_q_i1</A>  (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
-   Destination:    FF         Data in        <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_589">wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i5</A>  (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
+   Source:         FF         Q              <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433">o_dac_a_9__I_0/carrier/qtr_inst/index_q_i1</A>  (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478">o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i6</A>  (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
 
-   Delay:               9.510ns  (37.2% logic, 62.8% route), 7 logic levels.
+   Delay:              11.230ns  (33.7% logic, 66.3% route), 8 logic levels.
 
  Constraint Details:
 
-      9.510ns physical path delay wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_545 to wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_589 meets
-     10.417ns delay constraint less
+     11.230ns physical path delay o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433 to o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478 meets
+     13.889ns delay constraint less
+      0.000ns skew and
+      0.150ns DIN_SET requirement (totaling 13.739ns) by 2.509ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 72.000000 MHz ;:REG_DEL, 0.409,R17C23A.CLK,R17C23A.Q1,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433:ROUTE, 2.319,R17C23A.Q1,R19C35C.C1,o_dac_a_9__I_0/carrier/qtr_inst/index_q_1:CTOF_DEL, 0.452,R19C35C.C1,R19C35C.F1,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1477:ROUTE, 0.399,R19C35C.F1,R19C35C.C0,o_dac_a_9__I_0/carrier/qtr_inst/n26526:CTOF_DEL, 0.452,R19C35C.C0,R19C35C.F0,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1477:ROUTE, 0.968,R19C35C.F0,R21C35D.B0,o_dac_a_9__I_0/carrier/qtr_inst/n26357:CTOF_DEL, 0.452,R21C35D.B0,R21C35D.F0,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_2218:ROUTE, 0.839,R21C35D.F0,R23C34A.D0,o_dac_a_9__I_0/carrier/qtr_inst/n955_adj_2678:CTOOFX_DEL, 0.661,R23C34A.D0,R23C34A.OFX0,o_dac_a_9__I_0/carrier/qtr_inst/i19793/SLICE_1052:ROUTE, 1.396,R23C34A.OFX0,R23C28C.C1,o_dac_a_9__I_0/carrier/qtr_inst/n22132:CTOF_DEL, 0.452,R23C28C.C1,R23C28C.F1,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1696:ROUTE, 0.384,R23C28C.F1,R23C28C.C0,o_dac_a_9__I_0/carrier/qtr_inst/n22136:CTOF_DEL, 0.452,R23C28C.C0,R23C28C.F0,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1696:ROUTE, 1.143,R23C28C.F0,R18C28D.C0,o_dac_a_9__I_0/carrier/qtr_inst/n22138:CTOF_DEL, 0.452,R18C28D.C0,R18C28D.F0,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478:ROUTE, 0.000,R18C28D.F0,R18C28D.DI0,o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2142_6">Data path</A> o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433 to o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409    R17C23A.CLK to     R17C23A.Q1 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433</A> (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
+ROUTE       344     2.319<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/index_q_1:R17C23A.Q1:R19C35C.C1:2.319">     R17C23A.Q1 to R19C35C.C1    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/index_q_1">o_dac_a_9__I_0/carrier/qtr_inst/index_q_1</A>
+CTOF_DEL    ---     0.452     R19C35C.C1 to     R19C35C.F1 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1477">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1477</A>
+ROUTE        14     0.399<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n26526:R19C35C.F1:R19C35C.C0:0.399">     R19C35C.F1 to R19C35C.C0    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n26526">o_dac_a_9__I_0/carrier/qtr_inst/n26526</A>
+CTOF_DEL    ---     0.452     R19C35C.C0 to     R19C35C.F0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1477">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1477</A>
+ROUTE         1     0.968<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n26357:R19C35C.F0:R21C35D.B0:0.968">     R19C35C.F0 to R21C35D.B0    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n26357">o_dac_a_9__I_0/carrier/qtr_inst/n26357</A>
+CTOF_DEL    ---     0.452     R21C35D.B0 to     R21C35D.F0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_2218">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_2218</A>
+ROUTE         1     0.839<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n955_adj_2678:R21C35D.F0:R23C34A.D0:0.839">     R21C35D.F0 to R23C34A.D0    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n955_adj_2678">o_dac_a_9__I_0/carrier/qtr_inst/n955_adj_2678</A>
+CTOOFX_DEL  ---     0.661     R23C34A.D0 to   R23C34A.OFX0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/i19793/SLICE_1052">o_dac_a_9__I_0/carrier/qtr_inst/i19793/SLICE_1052</A>
+ROUTE         1     1.396<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22132:R23C34A.OFX0:R23C28C.C1:1.396">   R23C34A.OFX0 to R23C28C.C1    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22132">o_dac_a_9__I_0/carrier/qtr_inst/n22132</A>
+CTOF_DEL    ---     0.452     R23C28C.C1 to     R23C28C.F1 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1696">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1696</A>
+ROUTE         1     0.384<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22136:R23C28C.F1:R23C28C.C0:0.384">     R23C28C.F1 to R23C28C.C0    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22136">o_dac_a_9__I_0/carrier/qtr_inst/n22136</A>
+CTOF_DEL    ---     0.452     R23C28C.C0 to     R23C28C.F0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1696">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1696</A>
+ROUTE         1     1.143<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22138:R23C28C.F0:R18C28D.C0:1.143">     R23C28C.F0 to R18C28D.C0    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22138">o_dac_a_9__I_0/carrier/qtr_inst/n22138</A>
+CTOF_DEL    ---     0.452     R18C28D.C0 to     R18C28D.F0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478</A>
+ROUTE         1     0.000<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2142_6:R18C28D.F0:R18C28D.DI0:0.000">     R18C28D.F0 to R18C28D.DI0   </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2142_6">o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2142_6</A> (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
+                  --------
+                   11.230   (33.7% logic, 66.3% route), 8 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 72.000000 MHz ;:ROUTE, 1.711,LPLL.CLKOP,R17C23A.CLK,dac_clk_p_c">Source Clock Path</A> sys_clk_inst/PLLInst_0 to o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       672     1.711<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R17C23A.CLK:1.711">     LPLL.CLKOP to R17C23A.CLK   </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
+                  --------
+                    1.711   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 72.000000 MHz ;:ROUTE, 1.711,LPLL.CLKOP,R18C28D.CLK,dac_clk_p_c">Destination Clock Path</A> sys_clk_inst/PLLInst_0 to o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       672     1.711<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R18C28D.CLK:1.711">     LPLL.CLKOP to R18C28D.CLK   </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
+                  --------
+                    1.711   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 2.559ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433">o_dac_a_9__I_0/carrier/qtr_inst/index_q_i1</A>  (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478">o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i7</A>  (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
+
+   Delay:              11.180ns  (27.7% logic, 72.3% route), 7 logic levels.
+
+ Constraint Details:
+
+     11.180ns physical path delay o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433 to o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478 meets
+     13.889ns delay constraint less
+      0.000ns skew and
+      0.150ns DIN_SET requirement (totaling 13.739ns) by 2.559ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 72.000000 MHz ;:REG_DEL, 0.409,R17C23A.CLK,R17C23A.Q1,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433:ROUTE, 2.480,R17C23A.Q1,R23C27D.C1,o_dac_a_9__I_0/carrier/qtr_inst/index_q_1:CTOF_DEL, 0.452,R23C27D.C1,R23C27D.F1,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1703:ROUTE, 2.216,R23C27D.F1,R22C36C.B1,o_dac_a_9__I_0/carrier/qtr_inst/n26569:CTOF_DEL, 0.452,R22C36C.B1,R22C36C.F1,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1919:ROUTE, 1.369,R22C36C.F1,R18C36A.B0,o_dac_a_9__I_0/carrier/qtr_inst/n924_adj_2621:CTOOFX_DEL, 0.661,R18C36A.B0,R18C36A.OFX0,o_dac_a_9__I_0/carrier/qtr_inst/i20167/SLICE_1195:ROUTE, 0.000,R18C36A.OFX0,R18C36A.FXB,o_dac_a_9__I_0/carrier/qtr_inst/n22506:FXTOOFX_DEL, 0.223,R18C36A.FXB,R18C36A.OFX1,o_dac_a_9__I_0/carrier/qtr_inst/i20167/SLICE_1195:ROUTE, 1.355,R18C36A.OFX1,R18C28C.B0,o_dac_a_9__I_0/carrier/qtr_inst/n22510:CTOF_DEL, 0.452,R18C28C.B0,R18C28C.F0,o_dac_a_9__I_0/carrier/qtr_inst/i20173/SLICE_2177:ROUTE, 0.659,R18C28C.F0,R18C28D.C1,o_dac_a_9__I_0/carrier/qtr_inst/n22512:CTOF_DEL, 0.452,R18C28D.C1,R18C28D.F1,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478:ROUTE, 0.000,R18C28D.F1,R18C28D.DI1,o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2142_7">Data path</A> o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433 to o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409    R17C23A.CLK to     R17C23A.Q1 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433</A> (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
+ROUTE       344     2.480<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/index_q_1:R17C23A.Q1:R23C27D.C1:2.480">     R17C23A.Q1 to R23C27D.C1    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/index_q_1">o_dac_a_9__I_0/carrier/qtr_inst/index_q_1</A>
+CTOF_DEL    ---     0.452     R23C27D.C1 to     R23C27D.F1 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1703">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1703</A>
+ROUTE        19     2.216<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n26569:R23C27D.F1:R22C36C.B1:2.216">     R23C27D.F1 to R22C36C.B1    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n26569">o_dac_a_9__I_0/carrier/qtr_inst/n26569</A>
+CTOF_DEL    ---     0.452     R22C36C.B1 to     R22C36C.F1 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1919">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1919</A>
+ROUTE         1     1.369<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n924_adj_2621:R22C36C.F1:R18C36A.B0:1.369">     R22C36C.F1 to R18C36A.B0    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n924_adj_2621">o_dac_a_9__I_0/carrier/qtr_inst/n924_adj_2621</A>
+CTOOFX_DEL  ---     0.661     R18C36A.B0 to   R18C36A.OFX0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/i20167/SLICE_1195">o_dac_a_9__I_0/carrier/qtr_inst/i20167/SLICE_1195</A>
+ROUTE         1     0.000<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22506:R18C36A.OFX0:R18C36A.FXB:0.000">   R18C36A.OFX0 to R18C36A.FXB   </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22506">o_dac_a_9__I_0/carrier/qtr_inst/n22506</A>
+FXTOOFX_DE  ---     0.223    R18C36A.FXB to   R18C36A.OFX1 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/i20167/SLICE_1195">o_dac_a_9__I_0/carrier/qtr_inst/i20167/SLICE_1195</A>
+ROUTE         1     1.355<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22510:R18C36A.OFX1:R18C28C.B0:1.355">   R18C36A.OFX1 to R18C28C.B0    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22510">o_dac_a_9__I_0/carrier/qtr_inst/n22510</A>
+CTOF_DEL    ---     0.452     R18C28C.B0 to     R18C28C.F0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/i20173/SLICE_2177">o_dac_a_9__I_0/carrier/qtr_inst/i20173/SLICE_2177</A>
+ROUTE         1     0.659<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22512:R18C28C.F0:R18C28D.C1:0.659">     R18C28C.F0 to R18C28D.C1    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22512">o_dac_a_9__I_0/carrier/qtr_inst/n22512</A>
+CTOF_DEL    ---     0.452     R18C28D.C1 to     R18C28D.F1 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478</A>
+ROUTE         1     0.000<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2142_7:R18C28D.F1:R18C28D.DI1:0.000">     R18C28D.F1 to R18C28D.DI1   </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2142_7">o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2142_7</A> (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
+                  --------
+                   11.180   (27.7% logic, 72.3% route), 7 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 72.000000 MHz ;:ROUTE, 1.711,LPLL.CLKOP,R17C23A.CLK,dac_clk_p_c">Source Clock Path</A> sys_clk_inst/PLLInst_0 to o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       672     1.711<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R17C23A.CLK:1.711">     LPLL.CLKOP to R17C23A.CLK   </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
+                  --------
+                    1.711   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 72.000000 MHz ;:ROUTE, 1.711,LPLL.CLKOP,R18C28D.CLK,dac_clk_p_c">Destination Clock Path</A> sys_clk_inst/PLLInst_0 to o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       672     1.711<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R18C28D.CLK:1.711">     LPLL.CLKOP to R18C28D.CLK   </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
+                  --------
+                    1.711   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 2.866ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:genbus/wbexec/SLICE_40">genbus/wbexec/o_wb_addr_546__i27</A>  (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
+   Destination:    EFB        Port           <A href="#@comp:wb_lo_data_7__I_0/EFBInst_0">wb_lo_data_7__I_0/EFBInst_0</A>(ASIC)  (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
+
+   Delay:               8.703ns  (25.5% logic, 74.5% route), 5 logic levels.
+
+ Constraint Details:
+
+      8.703ns physical path delay genbus/wbexec/SLICE_40 to wb_lo_data_7__I_0/EFBInst_0 meets
+     13.889ns delay constraint less
+     -0.153ns skew and
+      2.473ns WBSTBI_SET requirement (totaling 11.569ns) by 2.866ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 72.000000 MHz ;:REG_DEL, 0.409,R18C6C.CLK,R18C6C.Q1,genbus/wbexec/SLICE_40:ROUTE, 1.201,R18C6C.Q1,R17C5B.B0,wb_addr_27:CTOF_DEL, 0.452,R17C5B.B0,R17C5B.F0,SLICE_1998:ROUTE, 1.223,R17C5B.F0,R17C7B.A0,n20456:CTOF_DEL, 0.452,R17C7B.A0,R17C7B.F0,SLICE_1550:ROUTE, 1.330,R17C7B.F0,R15C5B.B1,n38:CTOF_DEL, 0.452,R15C5B.B1,R15C5B.F1,SLICE_1542:ROUTE, 0.384,R15C5B.F1,R15C5B.C0,n20104:CTOF_DEL, 0.452,R15C5B.C0,R15C5B.F0,SLICE_1542:ROUTE, 2.348,R15C5B.F0,EFB.WBSTBI,wb_lo_data_7__N_96">Data path</A> genbus/wbexec/SLICE_40 to wb_lo_data_7__I_0/EFBInst_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409     R18C6C.CLK to      R18C6C.Q1 <A href="#@comp:genbus/wbexec/SLICE_40">genbus/wbexec/SLICE_40</A> (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
+ROUTE         4     1.201<A href="#@net:wb_addr_27:R18C6C.Q1:R17C5B.B0:1.201">      R18C6C.Q1 to R17C5B.B0     </A> <A href="#@net:wb_addr_27">wb_addr_27</A>
+CTOF_DEL    ---     0.452      R17C5B.B0 to      R17C5B.F0 <A href="#@comp:SLICE_1998">SLICE_1998</A>
+ROUTE         1     1.223<A href="#@net:n20456:R17C5B.F0:R17C7B.A0:1.223">      R17C5B.F0 to R17C7B.A0     </A> <A href="#@net:n20456">n20456</A>
+CTOF_DEL    ---     0.452      R17C7B.A0 to      R17C7B.F0 <A href="#@comp:SLICE_1550">SLICE_1550</A>
+ROUTE        10     1.330<A href="#@net:n38:R17C7B.F0:R15C5B.B1:1.330">      R17C7B.F0 to R15C5B.B1     </A> <A href="#@net:n38">n38</A>
+CTOF_DEL    ---     0.452      R15C5B.B1 to      R15C5B.F1 <A href="#@comp:SLICE_1542">SLICE_1542</A>
+ROUTE         1     0.384<A href="#@net:n20104:R15C5B.F1:R15C5B.C0:0.384">      R15C5B.F1 to R15C5B.C0     </A> <A href="#@net:n20104">n20104</A>
+CTOF_DEL    ---     0.452      R15C5B.C0 to      R15C5B.F0 <A href="#@comp:SLICE_1542">SLICE_1542</A>
+ROUTE         1     2.348<A href="#@net:wb_lo_data_7__N_96:R15C5B.F0:EFB.WBSTBI:2.348">      R15C5B.F0 to EFB.WBSTBI    </A> <A href="#@net:wb_lo_data_7__N_96">wb_lo_data_7__N_96</A> (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
+                  --------
+                    8.703   (25.5% logic, 74.5% route), 5 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 72.000000 MHz ;:ROUTE, 1.711,LPLL.CLKOP,R18C6C.CLK,dac_clk_p_c">Source Clock Path</A> sys_clk_inst/PLLInst_0 to genbus/wbexec/SLICE_40:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       672     1.711<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R18C6C.CLK:1.711">     LPLL.CLKOP to R18C6C.CLK    </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
+                  --------
+                    1.711   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 72.000000 MHz ;:ROUTE, 1.864,LPLL.CLKOP,EFB.WBCLKI,dac_clk_p_c">Destination Clock Path</A> sys_clk_inst/PLLInst_0 to wb_lo_data_7__I_0/EFBInst_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       672     1.864<A href="#@net:dac_clk_p_c:LPLL.CLKOP:EFB.WBCLKI:1.864">     LPLL.CLKOP to EFB.WBCLKI    </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
+                  --------
+                    1.864   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 2.878ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433">o_dac_a_9__I_0/carrier/qtr_inst/index_q_i1</A>  (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_479">o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i8</A>  (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
+
+   Delay:              10.825ns  (34.8% logic, 65.2% route), 8 logic levels.
+
+ Constraint Details:
+
+     10.825ns physical path delay o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433 to o_dac_a_9__I_0/carrier/qtr_inst/SLICE_479 meets
+     13.889ns delay constraint less
       0.036ns skew and
-      0.150ns DIN_SET requirement (totaling 10.231ns) by 0.721ns
+      0.150ns DIN_SET requirement (totaling 13.703ns) by 2.878ns
 
  Physical Path Details:
 
-      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 96.000000 MHz ;:REG_DEL, 0.409,R18C30A.CLK,R18C30A.Q1,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_545:ROUTE, 1.270,R18C30A.Q1,R19C31D.B0,wb_fm_data_31__I_0/carrier/qtr_inst/index_q_1:CTOF_DEL, 0.452,R19C31D.B0,R19C31D.F0,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1465:ROUTE, 0.869,R19C31D.F0,R19C31D.A1,wb_fm_data_31__I_0/carrier/qtr_inst/n29493:CTOF_DEL, 0.452,R19C31D.A1,R19C31D.F1,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1465:ROUTE, 1.778,R19C31D.F1,R22C38B.D0,wb_fm_data_31__I_0/carrier/qtr_inst/n21397:CTOOFX_DEL, 0.661,R22C38B.D0,R22C38B.OFX0,wb_fm_data_31__I_0/carrier/qtr_inst/i20105/SLICE_1293:ROUTE, 0.656,R22C38B.OFX0,R21C38D.C1,wb_fm_data_31__I_0/carrier/qtr_inst/n22561:CTOF_DEL, 0.452,R21C38D.C1,R21C38D.F1,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1672:ROUTE, 0.384,R21C38D.F1,R21C38D.C0,wb_fm_data_31__I_0/carrier/qtr_inst/n22572:CTOF_DEL, 0.452,R21C38D.C0,R21C38D.F0,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1672:ROUTE, 1.014,R21C38D.F0,R21C33A.D1,wb_fm_data_31__I_0/carrier/qtr_inst/n22577:CTOOFX_DEL, 0.661,R21C33A.D1,R21C33A.OFX0,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_589:ROUTE, 0.000,R21C33A.OFX0,R21C33A.DI0,wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2141_5">Data path</A> wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_545 to wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_589:
+      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 72.000000 MHz ;:REG_DEL, 0.409,R17C23A.CLK,R17C23A.Q1,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433:ROUTE, 2.480,R17C23A.Q1,R23C27D.C1,o_dac_a_9__I_0/carrier/qtr_inst/index_q_1:CTOF_DEL, 0.452,R23C27D.C1,R23C27D.F1,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1703:ROUTE, 2.209,R23C27D.F1,R24C32B.B1,o_dac_a_9__I_0/carrier/qtr_inst/n26569:CTOF_DEL, 0.452,R24C32B.B1,R24C32B.F1,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1480:ROUTE, 0.392,R24C32B.F1,R24C32C.C0,o_dac_a_9__I_0/carrier/qtr_inst/n875_adj_2571:CTOOFX_DEL, 0.661,R24C32C.C0,R24C32C.OFX0,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_780:ROUTE, 0.000,R24C32C.OFX0,R24C32C.FXB,o_dac_a_9__I_0/carrier/qtr_inst/n25353:FXTOOFX_DEL, 0.223,R24C32C.FXB,R24C32C.OFX1,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_780:ROUTE, 0.656,R24C32C.OFX1,R24C33C.C1,o_dac_a_9__I_0/carrier/qtr_inst/n25357:CTOF_DEL, 0.452,R24C33C.C1,R24C33C.F1,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1684:ROUTE, 0.384,R24C33C.F1,R24C33C.C0,o_dac_a_9__I_0/carrier/qtr_inst/n22302:CTOF_DEL, 0.452,R24C33C.C0,R24C33C.F0,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1684:ROUTE, 0.942,R24C33C.F0,R23C34B.D0,o_dac_a_9__I_0/carrier/qtr_inst/n22309:CTOOFX_DEL, 0.661,R23C34B.D0,R23C34B.OFX0,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_479:ROUTE, 0.000,R23C34B.OFX0,R23C34B.DI0,o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2142_8">Data path</A> o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433 to o_dac_a_9__I_0/carrier/qtr_inst/SLICE_479:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.409    R18C30A.CLK to     R18C30A.Q1 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_545">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_545</A> (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
-ROUTE       337     1.270<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/index_q_1:R18C30A.Q1:R19C31D.B0:1.270">     R18C30A.Q1 to R19C31D.B0    </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/index_q_1">wb_fm_data_31__I_0/carrier/qtr_inst/index_q_1</A>
-CTOF_DEL    ---     0.452     R19C31D.B0 to     R19C31D.F0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1465">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1465</A>
-ROUTE         9     0.869<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n29493:R19C31D.F0:R19C31D.A1:0.869">     R19C31D.F0 to R19C31D.A1    </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n29493">wb_fm_data_31__I_0/carrier/qtr_inst/n29493</A>
-CTOF_DEL    ---     0.452     R19C31D.A1 to     R19C31D.F1 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1465">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1465</A>
-ROUTE         1     1.778<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n21397:R19C31D.F1:R22C38B.D0:1.778">     R19C31D.F1 to R22C38B.D0    </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n21397">wb_fm_data_31__I_0/carrier/qtr_inst/n21397</A>
-CTOOFX_DEL  ---     0.661     R22C38B.D0 to   R22C38B.OFX0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/i20105/SLICE_1293">wb_fm_data_31__I_0/carrier/qtr_inst/i20105/SLICE_1293</A>
-ROUTE         1     0.656<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n22561:R22C38B.OFX0:R21C38D.C1:0.656">   R22C38B.OFX0 to R21C38D.C1    </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n22561">wb_fm_data_31__I_0/carrier/qtr_inst/n22561</A>
-CTOF_DEL    ---     0.452     R21C38D.C1 to     R21C38D.F1 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1672">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1672</A>
-ROUTE         1     0.384<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n22572:R21C38D.F1:R21C38D.C0:0.384">     R21C38D.F1 to R21C38D.C0    </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n22572">wb_fm_data_31__I_0/carrier/qtr_inst/n22572</A>
-CTOF_DEL    ---     0.452     R21C38D.C0 to     R21C38D.F0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1672">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1672</A>
-ROUTE         1     1.014<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n22577:R21C38D.F0:R21C33A.D1:1.014">     R21C38D.F0 to R21C33A.D1    </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n22577">wb_fm_data_31__I_0/carrier/qtr_inst/n22577</A>
-CTOOFX_DEL  ---     0.661     R21C33A.D1 to   R21C33A.OFX0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_589">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_589</A>
-ROUTE         1     0.000<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2141_5:R21C33A.OFX0:R21C33A.DI0:0.000">   R21C33A.OFX0 to R21C33A.DI0   </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2141_5">wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2141_5</A> (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
+REG_DEL     ---     0.409    R17C23A.CLK to     R17C23A.Q1 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433</A> (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
+ROUTE       344     2.480<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/index_q_1:R17C23A.Q1:R23C27D.C1:2.480">     R17C23A.Q1 to R23C27D.C1    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/index_q_1">o_dac_a_9__I_0/carrier/qtr_inst/index_q_1</A>
+CTOF_DEL    ---     0.452     R23C27D.C1 to     R23C27D.F1 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1703">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1703</A>
+ROUTE        19     2.209<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n26569:R23C27D.F1:R24C32B.B1:2.209">     R23C27D.F1 to R24C32B.B1    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n26569">o_dac_a_9__I_0/carrier/qtr_inst/n26569</A>
+CTOF_DEL    ---     0.452     R24C32B.B1 to     R24C32B.F1 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1480">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1480</A>
+ROUTE         3     0.392<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n875_adj_2571:R24C32B.F1:R24C32C.C0:0.392">     R24C32B.F1 to R24C32C.C0    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n875_adj_2571">o_dac_a_9__I_0/carrier/qtr_inst/n875_adj_2571</A>
+CTOOFX_DEL  ---     0.661     R24C32C.C0 to   R24C32C.OFX0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_780">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_780</A>
+ROUTE         1     0.000<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n25353:R24C32C.OFX0:R24C32C.FXB:0.000">   R24C32C.OFX0 to R24C32C.FXB   </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n25353">o_dac_a_9__I_0/carrier/qtr_inst/n25353</A>
+FXTOOFX_DE  ---     0.223    R24C32C.FXB to   R24C32C.OFX1 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_780">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_780</A>
+ROUTE         1     0.656<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n25357:R24C32C.OFX1:R24C33C.C1:0.656">   R24C32C.OFX1 to R24C33C.C1    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n25357">o_dac_a_9__I_0/carrier/qtr_inst/n25357</A>
+CTOF_DEL    ---     0.452     R24C33C.C1 to     R24C33C.F1 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1684">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1684</A>
+ROUTE         1     0.384<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22302:R24C33C.F1:R24C33C.C0:0.384">     R24C33C.F1 to R24C33C.C0    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22302">o_dac_a_9__I_0/carrier/qtr_inst/n22302</A>
+CTOF_DEL    ---     0.452     R24C33C.C0 to     R24C33C.F0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1684">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1684</A>
+ROUTE         1     0.942<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22309:R24C33C.F0:R23C34B.D0:0.942">     R24C33C.F0 to R23C34B.D0    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22309">o_dac_a_9__I_0/carrier/qtr_inst/n22309</A>
+CTOOFX_DEL  ---     0.661     R23C34B.D0 to   R23C34B.OFX0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_479">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_479</A>
+ROUTE         1     0.000<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2142_8:R23C34B.OFX0:R23C34B.DI0:0.000">   R23C34B.OFX0 to R23C34B.DI0   </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2142_8">o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2142_8</A> (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
                   --------
-                    9.510   (37.2% logic, 62.8% route), 7 logic levels.
+                   10.825   (34.8% logic, 65.2% route), 8 logic levels.
 
  Clock Skew Details: 
 
-      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 96.000000 MHz ;:ROUTE, 1.711,LPLL.CLKOP,R18C30A.CLK,dac_clk_p_c">Source Clock Path</A> sys_clk_inst/PLLInst_0 to wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_545:
+      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 72.000000 MHz ;:ROUTE, 1.711,LPLL.CLKOP,R17C23A.CLK,dac_clk_p_c">Source Clock Path</A> sys_clk_inst/PLLInst_0 to o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       672     1.711<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R18C30A.CLK:1.711">     LPLL.CLKOP to R18C30A.CLK   </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
+ROUTE       672     1.711<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R17C23A.CLK:1.711">     LPLL.CLKOP to R17C23A.CLK   </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
                   --------
                     1.711   (0.0% logic, 100.0% route), 0 logic levels.
 
-      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 96.000000 MHz ;:ROUTE, 1.675,LPLL.CLKOP,R21C33A.CLK,dac_clk_p_c">Destination Clock Path</A> sys_clk_inst/PLLInst_0 to wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_589:
+      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 72.000000 MHz ;:ROUTE, 1.675,LPLL.CLKOP,R23C34B.CLK,dac_clk_p_c">Destination Clock Path</A> sys_clk_inst/PLLInst_0 to o_dac_a_9__I_0/carrier/qtr_inst/SLICE_479:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       672     1.675<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R21C33A.CLK:1.675">     LPLL.CLKOP to R21C33A.CLK   </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
+ROUTE       672     1.675<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R23C34B.CLK:1.675">     LPLL.CLKOP to R23C34B.CLK   </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
                   --------
                     1.675   (0.0% logic, 100.0% route), 0 logic levels.
 <font color=#000000> 
 
-Passed: The following path meets requirements by 0.739ns
+Passed: The following path meets requirements by 2.885ns
  </font>
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_545">wb_fm_data_31__I_0/carrier/qtr_inst/index_q_i0</A>  (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
-   Destination:    FF         Data in        <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_590">wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i6</A>  (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
+   Source:         FF         Q              <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_429">o_dac_a_9__I_0/carrier/qtr_inst/index_i_i2</A>  (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_464">o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i7</A>  (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
 
-   Delay:               9.528ns  (39.7% logic, 60.3% route), 8 logic levels.
+   Delay:              10.854ns  (32.6% logic, 67.4% route), 7 logic levels.
 
  Constraint Details:
 
-      9.528ns physical path delay wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_545 to wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_590 meets
-     10.417ns delay constraint less
+     10.854ns physical path delay o_dac_a_9__I_0/carrier/qtr_inst/SLICE_429 to o_dac_a_9__I_0/carrier/qtr_inst/SLICE_464 meets
+     13.889ns delay constraint less
       0.000ns skew and
-      0.150ns DIN_SET requirement (totaling 10.267ns) by 0.739ns
+      0.150ns DIN_SET requirement (totaling 13.739ns) by 2.885ns
 
  Physical Path Details:
 
-      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 96.000000 MHz ;:REG_DEL, 0.409,R18C30A.CLK,R18C30A.Q0,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_545:ROUTE, 1.738,R18C30A.Q0,R14C33C.D0,wb_fm_data_31__I_0/carrier/qtr_inst/index_q_0:CTOF_DEL, 0.452,R14C33C.D0,R14C33C.F0,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1743:ROUTE, 1.092,R14C33C.F0,R16C35C.C1,wb_fm_data_31__I_0/carrier/qtr_inst/n26871:CTOF_DEL, 0.452,R16C35C.C1,R16C35C.F1,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1456:ROUTE, 0.384,R16C35C.F1,R16C35C.C0,wb_fm_data_31__I_0/carrier/qtr_inst/n26720:CTOF_DEL, 0.452,R16C35C.C0,R16C35C.F0,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1456:ROUTE, 0.610,R16C35C.F0,R16C35D.B0,wb_fm_data_31__I_0/carrier/qtr_inst/n955_adj_2339:CTOOFX_DEL, 0.661,R16C35D.B0,R16C35D.OFX0,wb_fm_data_31__I_0/carrier/qtr_inst/i20035/SLICE_1065:ROUTE, 0.656,R16C35D.OFX0,R17C35B.C1,wb_fm_data_31__I_0/carrier/qtr_inst/n22491:CTOF_DEL, 0.452,R17C35B.C1,R17C35B.F1,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1674:ROUTE, 0.384,R17C35B.F1,R17C35B.C0,wb_fm_data_31__I_0/carrier/qtr_inst/n22495:CTOF_DEL, 0.452,R17C35B.C0,R17C35B.F0,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1674:ROUTE, 0.882,R17C35B.F0,R17C36A.B0,wb_fm_data_31__I_0/carrier/qtr_inst/n22497:CTOF_DEL, 0.452,R17C36A.B0,R17C36A.F0,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_590:ROUTE, 0.000,R17C36A.F0,R17C36A.DI0,wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2141_6">Data path</A> wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_545 to wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_590:
+      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 72.000000 MHz ;:REG_DEL, 0.409,R12C16D.CLK,R12C16D.Q0,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_429:ROUTE, 2.184,R12C16D.Q0,R5C18A.B1,o_dac_a_9__I_0/carrier/qtr_inst/index_i_2:CTOF_DEL, 0.452,R5C18A.B1,R5C18A.F1,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1686:ROUTE, 0.894,R5C18A.F1,R4C18C.A0,o_dac_a_9__I_0/carrier/qtr_inst/n26650:CTOF_DEL, 0.452,R4C18C.A0,R4C18C.F0,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_2227:ROUTE, 1.254,R4C18C.F0,R5C18B.B0,o_dac_a_9__I_0/carrier/qtr_inst/n333_adj_2682:CTOOFX_DEL, 0.661,R5C18B.B0,R5C18B.OFX0,o_dac_a_9__I_0/carrier/qtr_inst/i18999/SLICE_1170:ROUTE, 0.851,R5C18B.OFX0,R5C17B.A0,o_dac_a_9__I_0/carrier/qtr_inst/n21319:CTOF_DEL, 0.452,R5C17B.A0,R5C17B.F0,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_2232:ROUTE, 0.851,R5C17B.F0,R6C17A.A1,o_dac_a_9__I_0/carrier/qtr_inst/n22324:CTOOFX_DEL, 0.661,R6C17A.A1,R6C17A.OFX0,o_dac_a_9__I_0/carrier/qtr_inst/i19995/SLICE_998:ROUTE, 1.281,R6C17A.OFX0,R9C14B.D1,o_dac_a_9__I_0/carrier/qtr_inst/n22334:CTOF_DEL, 0.452,R9C14B.D1,R9C14B.F1,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_464:ROUTE, 0.000,R9C14B.F1,R9C14B.DI1,o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_15_N_2127_7">Data path</A> o_dac_a_9__I_0/carrier/qtr_inst/SLICE_429 to o_dac_a_9__I_0/carrier/qtr_inst/SLICE_464:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.409    R18C30A.CLK to     R18C30A.Q0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_545">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_545</A> (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
-ROUTE       329     1.738<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/index_q_0:R18C30A.Q0:R14C33C.D0:1.738">     R18C30A.Q0 to R14C33C.D0    </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/index_q_0">wb_fm_data_31__I_0/carrier/qtr_inst/index_q_0</A>
-CTOF_DEL    ---     0.452     R14C33C.D0 to     R14C33C.F0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1743">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1743</A>
-ROUTE        14     1.092<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n26871:R14C33C.F0:R16C35C.C1:1.092">     R14C33C.F0 to R16C35C.C1    </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n26871">wb_fm_data_31__I_0/carrier/qtr_inst/n26871</A>
-CTOF_DEL    ---     0.452     R16C35C.C1 to     R16C35C.F1 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1456">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1456</A>
-ROUTE         1     0.384<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n26720:R16C35C.F1:R16C35C.C0:0.384">     R16C35C.F1 to R16C35C.C0    </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n26720">wb_fm_data_31__I_0/carrier/qtr_inst/n26720</A>
-CTOF_DEL    ---     0.452     R16C35C.C0 to     R16C35C.F0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1456">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1456</A>
-ROUTE         1     0.610<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n955_adj_2339:R16C35C.F0:R16C35D.B0:0.610">     R16C35C.F0 to R16C35D.B0    </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n955_adj_2339">wb_fm_data_31__I_0/carrier/qtr_inst/n955_adj_2339</A>
-CTOOFX_DEL  ---     0.661     R16C35D.B0 to   R16C35D.OFX0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/i20035/SLICE_1065">wb_fm_data_31__I_0/carrier/qtr_inst/i20035/SLICE_1065</A>
-ROUTE         1     0.656<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n22491:R16C35D.OFX0:R17C35B.C1:0.656">   R16C35D.OFX0 to R17C35B.C1    </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n22491">wb_fm_data_31__I_0/carrier/qtr_inst/n22491</A>
-CTOF_DEL    ---     0.452     R17C35B.C1 to     R17C35B.F1 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1674">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1674</A>
-ROUTE         1     0.384<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n22495:R17C35B.F1:R17C35B.C0:0.384">     R17C35B.F1 to R17C35B.C0    </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n22495">wb_fm_data_31__I_0/carrier/qtr_inst/n22495</A>
-CTOF_DEL    ---     0.452     R17C35B.C0 to     R17C35B.F0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1674">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1674</A>
-ROUTE         1     0.882<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n22497:R17C35B.F0:R17C36A.B0:0.882">     R17C35B.F0 to R17C36A.B0    </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n22497">wb_fm_data_31__I_0/carrier/qtr_inst/n22497</A>
-CTOF_DEL    ---     0.452     R17C36A.B0 to     R17C36A.F0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_590">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_590</A>
-ROUTE         1     0.000<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2141_6:R17C36A.F0:R17C36A.DI0:0.000">     R17C36A.F0 to R17C36A.DI0   </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2141_6">wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2141_6</A> (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
+REG_DEL     ---     0.409    R12C16D.CLK to     R12C16D.Q0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_429">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_429</A> (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
+ROUTE       362     2.184<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/index_i_2:R12C16D.Q0:R5C18A.B1:2.184">     R12C16D.Q0 to R5C18A.B1     </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/index_i_2">o_dac_a_9__I_0/carrier/qtr_inst/index_i_2</A>
+CTOF_DEL    ---     0.452      R5C18A.B1 to      R5C18A.F1 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1686">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1686</A>
+ROUTE        13     0.894<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n26650:R5C18A.F1:R4C18C.A0:0.894">      R5C18A.F1 to R4C18C.A0     </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n26650">o_dac_a_9__I_0/carrier/qtr_inst/n26650</A>
+CTOF_DEL    ---     0.452      R4C18C.A0 to      R4C18C.F0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_2227">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_2227</A>
+ROUTE         1     1.254<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n333_adj_2682:R4C18C.F0:R5C18B.B0:1.254">      R4C18C.F0 to R5C18B.B0     </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n333_adj_2682">o_dac_a_9__I_0/carrier/qtr_inst/n333_adj_2682</A>
+CTOOFX_DEL  ---     0.661      R5C18B.B0 to    R5C18B.OFX0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/i18999/SLICE_1170">o_dac_a_9__I_0/carrier/qtr_inst/i18999/SLICE_1170</A>
+ROUTE         1     0.851<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n21319:R5C18B.OFX0:R5C17B.A0:0.851">    R5C18B.OFX0 to R5C17B.A0     </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n21319">o_dac_a_9__I_0/carrier/qtr_inst/n21319</A>
+CTOF_DEL    ---     0.452      R5C17B.A0 to      R5C17B.F0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_2232">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_2232</A>
+ROUTE         1     0.851<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22324:R5C17B.F0:R6C17A.A1:0.851">      R5C17B.F0 to R6C17A.A1     </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22324">o_dac_a_9__I_0/carrier/qtr_inst/n22324</A>
+CTOOFX_DEL  ---     0.661      R6C17A.A1 to    R6C17A.OFX0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/i19995/SLICE_998">o_dac_a_9__I_0/carrier/qtr_inst/i19995/SLICE_998</A>
+ROUTE         1     1.281<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22334:R6C17A.OFX0:R9C14B.D1:1.281">    R6C17A.OFX0 to R9C14B.D1     </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22334">o_dac_a_9__I_0/carrier/qtr_inst/n22334</A>
+CTOF_DEL    ---     0.452      R9C14B.D1 to      R9C14B.F1 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_464">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_464</A>
+ROUTE         1     0.000<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_15_N_2127_7:R9C14B.F1:R9C14B.DI1:0.000">      R9C14B.F1 to R9C14B.DI1    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_15_N_2127_7">o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_15_N_2127_7</A> (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
                   --------
-                    9.528   (39.7% logic, 60.3% route), 8 logic levels.
+                   10.854   (32.6% logic, 67.4% route), 7 logic levels.
 
  Clock Skew Details: 
 
-      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 96.000000 MHz ;:ROUTE, 1.711,LPLL.CLKOP,R18C30A.CLK,dac_clk_p_c">Source Clock Path</A> sys_clk_inst/PLLInst_0 to wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_545:
+      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 72.000000 MHz ;:ROUTE, 1.711,LPLL.CLKOP,R12C16D.CLK,dac_clk_p_c">Source Clock Path</A> sys_clk_inst/PLLInst_0 to o_dac_a_9__I_0/carrier/qtr_inst/SLICE_429:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       672     1.711<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R18C30A.CLK:1.711">     LPLL.CLKOP to R18C30A.CLK   </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
+ROUTE       672     1.711<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R12C16D.CLK:1.711">     LPLL.CLKOP to R12C16D.CLK   </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
                   --------
                     1.711   (0.0% logic, 100.0% route), 0 logic levels.
 
-      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 96.000000 MHz ;:ROUTE, 1.711,LPLL.CLKOP,R17C36A.CLK,dac_clk_p_c">Destination Clock Path</A> sys_clk_inst/PLLInst_0 to wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_590:
+      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 72.000000 MHz ;:ROUTE, 1.711,LPLL.CLKOP,R9C14B.CLK,dac_clk_p_c">Destination Clock Path</A> sys_clk_inst/PLLInst_0 to o_dac_a_9__I_0/carrier/qtr_inst/SLICE_464:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       672     1.711<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R17C36A.CLK:1.711">     LPLL.CLKOP to R17C36A.CLK   </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
+ROUTE       672     1.711<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R9C14B.CLK:1.711">     LPLL.CLKOP to R9C14B.CLK    </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
                   --------
                     1.711   (0.0% logic, 100.0% route), 0 logic levels.
 <font color=#000000> 
 
-Passed: The following path meets requirements by 0.748ns
+Passed: The following path meets requirements by 2.928ns
  </font>
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_541">wb_fm_data_31__I_0/carrier/qtr_inst/index_i_i2</A>  (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
-   Destination:    FF         Data in        <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_576">wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i7</A>  (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
+   Source:         FF         Q              <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433">o_dac_a_9__I_0/carrier/qtr_inst/index_q_i0</A>  (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478">o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i6</A>  (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
 
-   Delay:               9.519ns  (37.2% logic, 62.8% route), 7 logic levels.
+   Delay:              10.811ns  (35.0% logic, 65.0% route), 8 logic levels.
 
  Constraint Details:
 
-      9.519ns physical path delay wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_541 to wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_576 meets
-     10.417ns delay constraint less
+     10.811ns physical path delay o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433 to o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478 meets
+     13.889ns delay constraint less
       0.000ns skew and
-      0.150ns DIN_SET requirement (totaling 10.267ns) by 0.748ns
+      0.150ns DIN_SET requirement (totaling 13.739ns) by 2.928ns
 
  Physical Path Details:
 
-      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 96.000000 MHz ;:REG_DEL, 0.409,R4C28C.CLK,R4C28C.Q0,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_541:ROUTE, 1.399,R4C28C.Q0,R5C30D.A1,wb_fm_data_31__I_0/carrier/qtr_inst/index_i_2:CTOF_DEL, 0.452,R5C30D.A1,R5C30D.F1,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1472:ROUTE, 1.281,R5C30D.F1,R7C32B.A0,wb_fm_data_31__I_0/carrier/qtr_inst/n26999:CTOF_DEL, 0.452,R7C32B.A0,R7C32B.F0,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_2186:ROUTE, 1.137,R7C32B.F0,R10C33B.C0,wb_fm_data_31__I_0/carrier/qtr_inst/n348_adj_2669:CTOOFX_DEL, 0.661,R10C33B.C0,R10C33B.OFX0,wb_fm_data_31__I_0/carrier/qtr_inst/i19244/SLICE_1200:ROUTE, 0.656,R10C33B.OFX0,R10C32C.C0,wb_fm_data_31__I_0/carrier/qtr_inst/n21681:CTOF_DEL, 0.452,R10C32C.C0,R10C32C.F0,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_2211:ROUTE, 0.656,R10C32C.F0,R11C32B.C1,wb_fm_data_31__I_0/carrier/qtr_inst/n22668:CTOOFX_DEL, 0.661,R11C32B.C1,R11C32B.OFX0,wb_fm_data_31__I_0/carrier/qtr_inst/i20222/SLICE_1380:ROUTE, 0.851,R11C32B.OFX0,R12C32C.A1,wb_fm_data_31__I_0/carrier/qtr_inst/n22678:CTOF_DEL, 0.452,R12C32C.A1,R12C32C.F1,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_576:ROUTE, 0.000,R12C32C.F1,R12C32C.DI1,wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_15_N_2126_7">Data path</A> wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_541 to wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_576:
+      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 72.000000 MHz ;:REG_DEL, 0.409,R17C23A.CLK,R17C23A.Q0,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433:ROUTE, 1.900,R17C23A.Q0,R19C35C.A1,o_dac_a_9__I_0/carrier/qtr_inst/index_q_0:CTOF_DEL, 0.452,R19C35C.A1,R19C35C.F1,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1477:ROUTE, 0.399,R19C35C.F1,R19C35C.C0,o_dac_a_9__I_0/carrier/qtr_inst/n26526:CTOF_DEL, 0.452,R19C35C.C0,R19C35C.F0,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1477:ROUTE, 0.968,R19C35C.F0,R21C35D.B0,o_dac_a_9__I_0/carrier/qtr_inst/n26357:CTOF_DEL, 0.452,R21C35D.B0,R21C35D.F0,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_2218:ROUTE, 0.839,R21C35D.F0,R23C34A.D0,o_dac_a_9__I_0/carrier/qtr_inst/n955_adj_2678:CTOOFX_DEL, 0.661,R23C34A.D0,R23C34A.OFX0,o_dac_a_9__I_0/carrier/qtr_inst/i19793/SLICE_1052:ROUTE, 1.396,R23C34A.OFX0,R23C28C.C1,o_dac_a_9__I_0/carrier/qtr_inst/n22132:CTOF_DEL, 0.452,R23C28C.C1,R23C28C.F1,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1696:ROUTE, 0.384,R23C28C.F1,R23C28C.C0,o_dac_a_9__I_0/carrier/qtr_inst/n22136:CTOF_DEL, 0.452,R23C28C.C0,R23C28C.F0,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1696:ROUTE, 1.143,R23C28C.F0,R18C28D.C0,o_dac_a_9__I_0/carrier/qtr_inst/n22138:CTOF_DEL, 0.452,R18C28D.C0,R18C28D.F0,o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478:ROUTE, 0.000,R18C28D.F0,R18C28D.DI0,o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2142_6">Data path</A> o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433 to o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.409     R4C28C.CLK to      R4C28C.Q0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_541">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_541</A> (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
-ROUTE       363     1.399<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/index_i_2:R4C28C.Q0:R5C30D.A1:1.399">      R4C28C.Q0 to R5C30D.A1     </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/index_i_2">wb_fm_data_31__I_0/carrier/qtr_inst/index_i_2</A>
-CTOF_DEL    ---     0.452      R5C30D.A1 to      R5C30D.F1 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1472">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1472</A>
-ROUTE         9     1.281<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n26999:R5C30D.F1:R7C32B.A0:1.281">      R5C30D.F1 to R7C32B.A0     </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n26999">wb_fm_data_31__I_0/carrier/qtr_inst/n26999</A>
-CTOF_DEL    ---     0.452      R7C32B.A0 to      R7C32B.F0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_2186">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_2186</A>
-ROUTE         2     1.137<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n348_adj_2669:R7C32B.F0:R10C33B.C0:1.137">      R7C32B.F0 to R10C33B.C0    </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n348_adj_2669">wb_fm_data_31__I_0/carrier/qtr_inst/n348_adj_2669</A>
-CTOOFX_DEL  ---     0.661     R10C33B.C0 to   R10C33B.OFX0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/i19244/SLICE_1200">wb_fm_data_31__I_0/carrier/qtr_inst/i19244/SLICE_1200</A>
-ROUTE         1     0.656<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n21681:R10C33B.OFX0:R10C32C.C0:0.656">   R10C33B.OFX0 to R10C32C.C0    </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n21681">wb_fm_data_31__I_0/carrier/qtr_inst/n21681</A>
-CTOF_DEL    ---     0.452     R10C32C.C0 to     R10C32C.F0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_2211">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_2211</A>
-ROUTE         1     0.656<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n22668:R10C32C.F0:R11C32B.C1:0.656">     R10C32C.F0 to R11C32B.C1    </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n22668">wb_fm_data_31__I_0/carrier/qtr_inst/n22668</A>
-CTOOFX_DEL  ---     0.661     R11C32B.C1 to   R11C32B.OFX0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/i20222/SLICE_1380">wb_fm_data_31__I_0/carrier/qtr_inst/i20222/SLICE_1380</A>
-ROUTE         1     0.851<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n22678:R11C32B.OFX0:R12C32C.A1:0.851">   R11C32B.OFX0 to R12C32C.A1    </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n22678">wb_fm_data_31__I_0/carrier/qtr_inst/n22678</A>
-CTOF_DEL    ---     0.452     R12C32C.A1 to     R12C32C.F1 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_576">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_576</A>
-ROUTE         1     0.000<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_15_N_2126_7:R12C32C.F1:R12C32C.DI1:0.000">     R12C32C.F1 to R12C32C.DI1   </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_15_N_2126_7">wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_15_N_2126_7</A> (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
+REG_DEL     ---     0.409    R17C23A.CLK to     R17C23A.Q0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433</A> (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
+ROUTE       333     1.900<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/index_q_0:R17C23A.Q0:R19C35C.A1:1.900">     R17C23A.Q0 to R19C35C.A1    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/index_q_0">o_dac_a_9__I_0/carrier/qtr_inst/index_q_0</A>
+CTOF_DEL    ---     0.452     R19C35C.A1 to     R19C35C.F1 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1477">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1477</A>
+ROUTE        14     0.399<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n26526:R19C35C.F1:R19C35C.C0:0.399">     R19C35C.F1 to R19C35C.C0    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n26526">o_dac_a_9__I_0/carrier/qtr_inst/n26526</A>
+CTOF_DEL    ---     0.452     R19C35C.C0 to     R19C35C.F0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1477">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1477</A>
+ROUTE         1     0.968<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n26357:R19C35C.F0:R21C35D.B0:0.968">     R19C35C.F0 to R21C35D.B0    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n26357">o_dac_a_9__I_0/carrier/qtr_inst/n26357</A>
+CTOF_DEL    ---     0.452     R21C35D.B0 to     R21C35D.F0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_2218">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_2218</A>
+ROUTE         1     0.839<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n955_adj_2678:R21C35D.F0:R23C34A.D0:0.839">     R21C35D.F0 to R23C34A.D0    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n955_adj_2678">o_dac_a_9__I_0/carrier/qtr_inst/n955_adj_2678</A>
+CTOOFX_DEL  ---     0.661     R23C34A.D0 to   R23C34A.OFX0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/i19793/SLICE_1052">o_dac_a_9__I_0/carrier/qtr_inst/i19793/SLICE_1052</A>
+ROUTE         1     1.396<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22132:R23C34A.OFX0:R23C28C.C1:1.396">   R23C34A.OFX0 to R23C28C.C1    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22132">o_dac_a_9__I_0/carrier/qtr_inst/n22132</A>
+CTOF_DEL    ---     0.452     R23C28C.C1 to     R23C28C.F1 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1696">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1696</A>
+ROUTE         1     0.384<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22136:R23C28C.F1:R23C28C.C0:0.384">     R23C28C.F1 to R23C28C.C0    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22136">o_dac_a_9__I_0/carrier/qtr_inst/n22136</A>
+CTOF_DEL    ---     0.452     R23C28C.C0 to     R23C28C.F0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1696">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_1696</A>
+ROUTE         1     1.143<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22138:R23C28C.F0:R18C28D.C0:1.143">     R23C28C.F0 to R18C28D.C0    </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/n22138">o_dac_a_9__I_0/carrier/qtr_inst/n22138</A>
+CTOF_DEL    ---     0.452     R18C28D.C0 to     R18C28D.F0 <A href="#@comp:o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478">o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478</A>
+ROUTE         1     0.000<A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2142_6:R18C28D.F0:R18C28D.DI0:0.000">     R18C28D.F0 to R18C28D.DI0   </A> <A href="#@net:o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2142_6">o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_15_N_2142_6</A> (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
                   --------
-                    9.519   (37.2% logic, 62.8% route), 7 logic levels.
+                   10.811   (35.0% logic, 65.0% route), 8 logic levels.
 
  Clock Skew Details: 
 
-      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 96.000000 MHz ;:ROUTE, 1.711,LPLL.CLKOP,R4C28C.CLK,dac_clk_p_c">Source Clock Path</A> sys_clk_inst/PLLInst_0 to wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_541:
+      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 72.000000 MHz ;:ROUTE, 1.711,LPLL.CLKOP,R17C23A.CLK,dac_clk_p_c">Source Clock Path</A> sys_clk_inst/PLLInst_0 to o_dac_a_9__I_0/carrier/qtr_inst/SLICE_433:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       672     1.711<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R4C28C.CLK:1.711">     LPLL.CLKOP to R4C28C.CLK    </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
+ROUTE       672     1.711<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R17C23A.CLK:1.711">     LPLL.CLKOP to R17C23A.CLK   </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
                   --------
                     1.711   (0.0% logic, 100.0% route), 0 logic levels.
 
-      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 96.000000 MHz ;:ROUTE, 1.711,LPLL.CLKOP,R12C32C.CLK,dac_clk_p_c">Destination Clock Path</A> sys_clk_inst/PLLInst_0 to wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_576:
+      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 72.000000 MHz ;:ROUTE, 1.711,LPLL.CLKOP,R18C28D.CLK,dac_clk_p_c">Destination Clock Path</A> sys_clk_inst/PLLInst_0 to o_dac_a_9__I_0/carrier/qtr_inst/SLICE_478:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       672     1.711<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R12C32C.CLK:1.711">     LPLL.CLKOP to R12C32C.CLK   </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
+ROUTE       672     1.711<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R18C28D.CLK:1.711">     LPLL.CLKOP to R18C28D.CLK   </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
                   --------
                     1.711   (0.0% logic, 100.0% route), 0 logic levels.
 <font color=#000000> 
 
-Passed: The following path meets requirements by 0.753ns
+Passed: The following path meets requirements by 2.943ns
  </font>
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_540">wb_fm_data_31__I_0/carrier/qtr_inst/index_i_i0</A>  (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
-   Destination:    FF         Data in        <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_578">wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i9</A>  (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
+   Source:         FF         Q              <A href="#@comp:genbus/wbexec/SLICE_52">genbus/wbexec/o_wb_addr_546__i2</A>  (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_635">smpl_register_i0_i25</A>  (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A> +)
+                   FF                        <A href="#@net:smpl_register_i0_i24">smpl_register_i0_i24</A>
 
-   Delay:               9.514ns  (32.4% logic, 67.6% route), 6 logic levels.
+   Delay:              10.697ns  (16.5% logic, 83.5% route), 4 logic levels.
 
  Constraint Details:
 
-      9.514ns physical path delay wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_540 to wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_578 meets
-     10.417ns delay constraint less
+     10.697ns physical path delay genbus/wbexec/SLICE_52 to SLICE_635 meets
+     13.889ns delay constraint less
       0.000ns skew and
-      0.150ns DIN_SET requirement (totaling 10.267ns) by 0.753ns
+      0.249ns CE_SET requirement (totaling 13.640ns) by 2.943ns
 
  Physical Path Details:
 
-      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 96.000000 MHz ;:REG_DEL, 0.409,R4C28D.CLK,R4C28D.Q0,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_540:ROUTE, 1.790,R4C28D.Q0,R6C34B.A1,wb_fm_data_31__I_0/carrier/qtr_inst/index_i_0:CTOF_DEL, 0.452,R6C34B.A1,R6C34B.F1,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1452:ROUTE, 1.523,R6C34B.F1,R5C30A.C0,wb_fm_data_31__I_0/carrier/qtr_inst/n26849:CTOF_DEL, 0.452,R5C30A.C0,R5C30A.F0,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1681:ROUTE, 1.393,R5C30A.F0,R9C36C.D1,wb_fm_data_31__I_0/carrier/qtr_inst/n763_adj_2414:CTOOFX_DEL, 0.661,R9C36C.D1,R9C36C.OFX0,wb_fm_data_31__I_0/carrier/qtr_inst/i22933/SLICE_1207:ROUTE, 0.541,R9C36C.OFX0,R9C35D.D0,wb_fm_data_31__I_0/carrier/qtr_inst/n24618:CTOF_DEL, 0.452,R9C35D.D0,R9C35D.F0,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_2181:ROUTE, 1.180,R9C35D.F0,R12C35D.B1,wb_fm_data_31__I_0/carrier/qtr_inst/n24626:CTOOFX_DEL, 0.661,R12C35D.B1,R12C35D.OFX0,wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_578:ROUTE, 0.000,R12C35D.OFX0,R12C35D.DI0,wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_15_N_2126_9">Data path</A> wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_540 to wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_578:
+      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 72.000000 MHz ;:REG_DEL, 0.409,R18C3C.CLK,R18C3C.Q0,genbus/wbexec/SLICE_52:ROUTE, 2.627,R18C3C.Q0,R14C18C.C0,wb_addr_2:CTOF_DEL, 0.452,R14C18C.C0,R14C18C.F0,SLICE_1999:ROUTE, 3.514,R14C18C.F0,R15C5C.D1,n9365:CTOF_DEL, 0.452,R15C5C.D1,R15C5C.F1,SLICE_1543:ROUTE, 0.384,R15C5C.F1,R15C5C.C0,n20916:CTOF_DEL, 0.452,R15C5C.C0,R15C5C.F0,SLICE_1543:ROUTE, 2.407,R15C5C.F0,R19C9C.CE,dac_clk_p_c_enable_272">Data path</A> genbus/wbexec/SLICE_52 to SLICE_635:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.409     R4C28D.CLK to      R4C28D.Q0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_540">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_540</A> (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
-ROUTE       326     1.790<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/index_i_0:R4C28D.Q0:R6C34B.A1:1.790">      R4C28D.Q0 to R6C34B.A1     </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/index_i_0">wb_fm_data_31__I_0/carrier/qtr_inst/index_i_0</A>
-CTOF_DEL    ---     0.452      R6C34B.A1 to      R6C34B.F1 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1452">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1452</A>
-ROUTE         6     1.523<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n26849:R6C34B.F1:R5C30A.C0:1.523">      R6C34B.F1 to R5C30A.C0     </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n26849">wb_fm_data_31__I_0/carrier/qtr_inst/n26849</A>
-CTOF_DEL    ---     0.452      R5C30A.C0 to      R5C30A.F0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1681">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_1681</A>
-ROUTE         1     1.393<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n763_adj_2414:R5C30A.F0:R9C36C.D1:1.393">      R5C30A.F0 to R9C36C.D1     </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n763_adj_2414">wb_fm_data_31__I_0/carrier/qtr_inst/n763_adj_2414</A>
-CTOOFX_DEL  ---     0.661      R9C36C.D1 to    R9C36C.OFX0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/i22933/SLICE_1207">wb_fm_data_31__I_0/carrier/qtr_inst/i22933/SLICE_1207</A>
-ROUTE         1     0.541<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n24618:R9C36C.OFX0:R9C35D.D0:0.541">    R9C36C.OFX0 to R9C35D.D0     </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n24618">wb_fm_data_31__I_0/carrier/qtr_inst/n24618</A>
-CTOF_DEL    ---     0.452      R9C35D.D0 to      R9C35D.F0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_2181">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_2181</A>
-ROUTE         1     1.180<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n24626:R9C35D.F0:R12C35D.B1:1.180">      R9C35D.F0 to R12C35D.B1    </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/n24626">wb_fm_data_31__I_0/carrier/qtr_inst/n24626</A>
-CTOOFX_DEL  ---     0.661     R12C35D.B1 to   R12C35D.OFX0 <A href="#@comp:wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_578">wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_578</A>
-ROUTE         1     0.000<A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_15_N_2126_9:R12C35D.OFX0:R12C35D.DI0:0.000">   R12C35D.OFX0 to R12C35D.DI0   </A> <A href="#@net:wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_15_N_2126_9">wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_15_N_2126_9</A> (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
+REG_DEL     ---     0.409     R18C3C.CLK to      R18C3C.Q0 <A href="#@comp:genbus/wbexec/SLICE_52">genbus/wbexec/SLICE_52</A> (from <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
+ROUTE         7     2.627<A href="#@net:wb_addr_2:R18C3C.Q0:R14C18C.C0:2.627">      R18C3C.Q0 to R14C18C.C0    </A> <A href="#@net:wb_addr_2">wb_addr_2</A>
+CTOF_DEL    ---     0.452     R14C18C.C0 to     R14C18C.F0 <A href="#@comp:SLICE_1999">SLICE_1999</A>
+ROUTE        28     3.514<A href="#@net:n9365:R14C18C.F0:R15C5C.D1:3.514">     R14C18C.F0 to R15C5C.D1     </A> <A href="#@net:n9365">n9365</A>
+CTOF_DEL    ---     0.452      R15C5C.D1 to      R15C5C.F1 <A href="#@comp:SLICE_1543">SLICE_1543</A>
+ROUTE         1     0.384<A href="#@net:n20916:R15C5C.F1:R15C5C.C0:0.384">      R15C5C.F1 to R15C5C.C0     </A> <A href="#@net:n20916">n20916</A>
+CTOF_DEL    ---     0.452      R15C5C.C0 to      R15C5C.F0 <A href="#@comp:SLICE_1543">SLICE_1543</A>
+ROUTE        16     2.407<A href="#@net:dac_clk_p_c_enable_272:R15C5C.F0:R19C9C.CE:2.407">      R15C5C.F0 to R19C9C.CE     </A> <A href="#@net:dac_clk_p_c_enable_272">dac_clk_p_c_enable_272</A> (to <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>)
                   --------
-                    9.514   (32.4% logic, 67.6% route), 6 logic levels.
+                   10.697   (16.5% logic, 83.5% route), 4 logic levels.
 
  Clock Skew Details: 
 
-      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 96.000000 MHz ;:ROUTE, 1.711,LPLL.CLKOP,R4C28D.CLK,dac_clk_p_c">Source Clock Path</A> sys_clk_inst/PLLInst_0 to wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_540:
+      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 72.000000 MHz ;:ROUTE, 1.711,LPLL.CLKOP,R18C3C.CLK,dac_clk_p_c">Source Clock Path</A> sys_clk_inst/PLLInst_0 to genbus/wbexec/SLICE_52:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       672     1.711<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R4C28D.CLK:1.711">     LPLL.CLKOP to R4C28D.CLK    </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
+ROUTE       672     1.711<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R18C3C.CLK:1.711">     LPLL.CLKOP to R18C3C.CLK    </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
                   --------
                     1.711   (0.0% logic, 100.0% route), 0 logic levels.
 
-      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 96.000000 MHz ;:ROUTE, 1.711,LPLL.CLKOP,R12C35D.CLK,dac_clk_p_c">Destination Clock Path</A> sys_clk_inst/PLLInst_0 to wb_fm_data_31__I_0/carrier/qtr_inst/SLICE_578:
+      <A href="#@path:FREQUENCY NET 'dac_clk_p_c' 72.000000 MHz ;:ROUTE, 1.711,LPLL.CLKOP,R19C9C.CLK,dac_clk_p_c">Destination Clock Path</A> sys_clk_inst/PLLInst_0 to SLICE_635:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       672     1.711<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R12C35D.CLK:1.711">     LPLL.CLKOP to R12C35D.CLK   </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
+ROUTE       672     1.711<A href="#@net:dac_clk_p_c:LPLL.CLKOP:R19C9C.CLK:1.711">     LPLL.CLKOP to R19C9C.CLK    </A> <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>
                   --------
                     1.711   (0.0% logic, 100.0% route), 0 logic levels.
 
-Report:  100.888MHz is the maximum frequency for this preference.
+Report:   84.760MHz is the maximum frequency for this preference.
 
 
 </A><A name="FREQUENCY NET 'lo_pll_out' 420.000000 MH"></A>================================================================================
@@ -602,7 +603,7 @@ Passed:  The following path meets requirements by 0.131ns
 
  Logical Details:  Cell type  Pin name       Component name
 
-   Destination:    SLICE      CLK            <A href="#@comp:SLICE_342">SLICE_342</A>
+   Destination:    SLICE      CLK            <A href="#@comp:SLICE_341">SLICE_341</A>
 
    Delay:               2.250ns -- based on Minimum Pulse Width
 <font color=#000000> 
@@ -611,43 +612,43 @@ Passed: The following path meets requirements by 0.811ns
  </font>
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              <A href="#@comp:SLICE_342">clock_phase_shifter_inst/o_clk_i_9</A>  (from <A href="#@net:lo_pll_out">lo_pll_out</A> +)
-   Destination:    FF         Data in        <A href="#@comp:SLICE_342">clock_phase_shifter_inst/o_clk_i_9</A>  (to <A href="#@net:lo_pll_out">lo_pll_out</A> +)
+   Source:         FF         Q              <A href="#@comp:SLICE_341">clock_phase_shifter_inst/o_clk_i_9</A>  (from <A href="#@net:lo_pll_out">lo_pll_out</A> +)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_341">clock_phase_shifter_inst/o_clk_i_9</A>  (to <A href="#@net:lo_pll_out">lo_pll_out</A> +)
 
    Delay:               1.420ns  (60.6% logic, 39.4% route), 2 logic levels.
 
  Constraint Details:
 
-      1.420ns physical path delay SLICE_342 to SLICE_342 meets
+      1.420ns physical path delay SLICE_341 to SLICE_341 meets
       2.381ns delay constraint less
       0.000ns skew and
       0.150ns DIN_SET requirement (totaling 2.231ns) by 0.811ns
 
  Physical Path Details:
 
-      <A href="#@path:FREQUENCY NET 'lo_pll_out' 420.000000 MHz ;:REG_DEL, 0.409,R2C25B.CLK,R2C25B.Q0,SLICE_342:ROUTE, 0.551,R2C25B.Q0,R2C25B.D0,i_clk_p_c:CTOF_DEL, 0.452,R2C25B.D0,R2C25B.F0,SLICE_342:ROUTE, 0.008,R2C25B.F0,R2C25B.DI0,i_clk_n_c">Data path</A> SLICE_342 to SLICE_342:
+      <A href="#@path:FREQUENCY NET 'lo_pll_out' 420.000000 MHz ;:REG_DEL, 0.409,R2C25A.CLK,R2C25A.Q0,SLICE_341:ROUTE, 0.551,R2C25A.Q0,R2C25A.D0,i_clk_p_c:CTOF_DEL, 0.452,R2C25A.D0,R2C25A.F0,SLICE_341:ROUTE, 0.008,R2C25A.F0,R2C25A.DI0,i_clk_n_c">Data path</A> SLICE_341 to SLICE_341:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.409     R2C25B.CLK to      R2C25B.Q0 <A href="#@comp:SLICE_342">SLICE_342</A> (from <A href="#@net:lo_pll_out">lo_pll_out</A>)
-ROUTE         2     0.551<A href="#@net:i_clk_p_c:R2C25B.Q0:R2C25B.D0:0.551">      R2C25B.Q0 to R2C25B.D0     </A> <A href="#@net:i_clk_p_c">i_clk_p_c</A>
-CTOF_DEL    ---     0.452      R2C25B.D0 to      R2C25B.F0 <A href="#@comp:SLICE_342">SLICE_342</A>
-ROUTE         2     0.008<A href="#@net:i_clk_n_c:R2C25B.F0:R2C25B.DI0:0.008">      R2C25B.F0 to R2C25B.DI0    </A> <A href="#@net:i_clk_n_c">i_clk_n_c</A> (to <A href="#@net:lo_pll_out">lo_pll_out</A>)
+REG_DEL     ---     0.409     R2C25A.CLK to      R2C25A.Q0 <A href="#@comp:SLICE_341">SLICE_341</A> (from <A href="#@net:lo_pll_out">lo_pll_out</A>)
+ROUTE         2     0.551<A href="#@net:i_clk_p_c:R2C25A.Q0:R2C25A.D0:0.551">      R2C25A.Q0 to R2C25A.D0     </A> <A href="#@net:i_clk_p_c">i_clk_p_c</A>
+CTOF_DEL    ---     0.452      R2C25A.D0 to      R2C25A.F0 <A href="#@comp:SLICE_341">SLICE_341</A>
+ROUTE         2     0.008<A href="#@net:i_clk_n_c:R2C25A.F0:R2C25A.DI0:0.008">      R2C25A.F0 to R2C25A.DI0    </A> <A href="#@net:i_clk_n_c">i_clk_n_c</A> (to <A href="#@net:lo_pll_out">lo_pll_out</A>)
                   --------
                     1.420   (60.6% logic, 39.4% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      <A href="#@path:FREQUENCY NET 'lo_pll_out' 420.000000 MHz ;:ROUTE, 1.729,RPLL.CLKOP,R2C25B.CLK,lo_pll_out">Source Clock Path</A> lo_gen/PLLInst_0 to SLICE_342:
+      <A href="#@path:FREQUENCY NET 'lo_pll_out' 420.000000 MHz ;:ROUTE, 1.729,RPLL.CLKOP,R2C25A.CLK,lo_pll_out">Source Clock Path</A> lo_gen/PLLInst_0 to SLICE_341:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         3     1.729<A href="#@net:lo_pll_out:RPLL.CLKOP:R2C25B.CLK:1.729">     RPLL.CLKOP to R2C25B.CLK    </A> <A href="#@net:lo_pll_out">lo_pll_out</A>
+ROUTE         3     1.729<A href="#@net:lo_pll_out:RPLL.CLKOP:R2C25A.CLK:1.729">     RPLL.CLKOP to R2C25A.CLK    </A> <A href="#@net:lo_pll_out">lo_pll_out</A>
                   --------
                     1.729   (0.0% logic, 100.0% route), 0 logic levels.
 
-      <A href="#@path:FREQUENCY NET 'lo_pll_out' 420.000000 MHz ;:ROUTE, 1.729,RPLL.CLKOP,R2C25B.CLK,lo_pll_out">Destination Clock Path</A> lo_gen/PLLInst_0 to SLICE_342:
+      <A href="#@path:FREQUENCY NET 'lo_pll_out' 420.000000 MHz ;:ROUTE, 1.729,RPLL.CLKOP,R2C25A.CLK,lo_pll_out">Destination Clock Path</A> lo_gen/PLLInst_0 to SLICE_341:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         3     1.729<A href="#@net:lo_pll_out:RPLL.CLKOP:R2C25B.CLK:1.729">     RPLL.CLKOP to R2C25B.CLK    </A> <A href="#@net:lo_pll_out">lo_pll_out</A>
+ROUTE         3     1.729<A href="#@net:lo_pll_out:RPLL.CLKOP:R2C25A.CLK:1.729">     RPLL.CLKOP to R2C25A.CLK    </A> <A href="#@net:lo_pll_out">lo_pll_out</A>
                   --------
                     1.729   (0.0% logic, 100.0% route), 0 logic levels.
 <font color=#000000> 
@@ -656,43 +657,43 @@ Passed: The following path meets requirements by 0.811ns
  </font>
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              <A href="#@comp:SLICE_374">clock_phase_shifter_inst/o_clk_q_10</A>  (from <A href="#@net:lo_pll_out">lo_pll_out</A> -)
-   Destination:    FF         Data in        <A href="#@comp:SLICE_374">clock_phase_shifter_inst/o_clk_q_10</A>  (to <A href="#@net:lo_pll_out">lo_pll_out</A> -)
+   Source:         FF         Q              <A href="#@comp:SLICE_600">clock_phase_shifter_inst/o_clk_q_10</A>  (from <A href="#@net:lo_pll_out">lo_pll_out</A> -)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_600">clock_phase_shifter_inst/o_clk_q_10</A>  (to <A href="#@net:lo_pll_out">lo_pll_out</A> -)
 
    Delay:               1.420ns  (60.6% logic, 39.4% route), 2 logic levels.
 
  Constraint Details:
 
-      1.420ns physical path delay SLICE_374 to SLICE_374 meets
+      1.420ns physical path delay SLICE_600 to SLICE_600 meets
       2.381ns delay constraint less
       0.000ns skew and
       0.150ns DIN_SET requirement (totaling 2.231ns) by 0.811ns
 
  Physical Path Details:
 
-      <A href="#@path:FREQUENCY NET 'lo_pll_out' 420.000000 MHz ;:REG_DEL, 0.409,R2C21D.CLK,R2C21D.Q0,SLICE_374:ROUTE, 0.551,R2C21D.Q0,R2C21D.D0,q_clk_p_c:CTOF_DEL, 0.452,R2C21D.D0,R2C21D.F0,SLICE_374:ROUTE, 0.008,R2C21D.F0,R2C21D.DI0,q_clk_n_c">Data path</A> SLICE_374 to SLICE_374:
+      <A href="#@path:FREQUENCY NET 'lo_pll_out' 420.000000 MHz ;:REG_DEL, 0.409,R2C20C.CLK,R2C20C.Q0,SLICE_600:ROUTE, 0.551,R2C20C.Q0,R2C20C.D0,q_clk_p_c:CTOF_DEL, 0.452,R2C20C.D0,R2C20C.F0,SLICE_600:ROUTE, 0.008,R2C20C.F0,R2C20C.DI0,q_clk_n_c">Data path</A> SLICE_600 to SLICE_600:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.409     R2C21D.CLK to      R2C21D.Q0 <A href="#@comp:SLICE_374">SLICE_374</A> (from <A href="#@net:lo_pll_out">lo_pll_out</A>)
-ROUTE         2     0.551<A href="#@net:q_clk_p_c:R2C21D.Q0:R2C21D.D0:0.551">      R2C21D.Q0 to R2C21D.D0     </A> <A href="#@net:q_clk_p_c">q_clk_p_c</A>
-CTOF_DEL    ---     0.452      R2C21D.D0 to      R2C21D.F0 <A href="#@comp:SLICE_374">SLICE_374</A>
-ROUTE         2     0.008<A href="#@net:q_clk_n_c:R2C21D.F0:R2C21D.DI0:0.008">      R2C21D.F0 to R2C21D.DI0    </A> <A href="#@net:q_clk_n_c">q_clk_n_c</A> (to <A href="#@net:lo_pll_out">lo_pll_out</A>)
+REG_DEL     ---     0.409     R2C20C.CLK to      R2C20C.Q0 <A href="#@comp:SLICE_600">SLICE_600</A> (from <A href="#@net:lo_pll_out">lo_pll_out</A>)
+ROUTE         2     0.551<A href="#@net:q_clk_p_c:R2C20C.Q0:R2C20C.D0:0.551">      R2C20C.Q0 to R2C20C.D0     </A> <A href="#@net:q_clk_p_c">q_clk_p_c</A>
+CTOF_DEL    ---     0.452      R2C20C.D0 to      R2C20C.F0 <A href="#@comp:SLICE_600">SLICE_600</A>
+ROUTE         2     0.008<A href="#@net:q_clk_n_c:R2C20C.F0:R2C20C.DI0:0.008">      R2C20C.F0 to R2C20C.DI0    </A> <A href="#@net:q_clk_n_c">q_clk_n_c</A> (to <A href="#@net:lo_pll_out">lo_pll_out</A>)
                   --------
                     1.420   (60.6% logic, 39.4% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      <A href="#@path:FREQUENCY NET 'lo_pll_out' 420.000000 MHz ;:ROUTE, 1.729,RPLL.CLKOP,R2C21D.CLK,lo_pll_out">Source Clock Path</A> lo_gen/PLLInst_0 to SLICE_374:
+      <A href="#@path:FREQUENCY NET 'lo_pll_out' 420.000000 MHz ;:ROUTE, 1.729,RPLL.CLKOP,R2C20C.CLK,lo_pll_out">Source Clock Path</A> lo_gen/PLLInst_0 to SLICE_600:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         3     1.729<A href="#@net:lo_pll_out:RPLL.CLKOP:R2C21D.CLK:1.729">     RPLL.CLKOP to R2C21D.CLK    </A> <A href="#@net:lo_pll_out">lo_pll_out</A>
+ROUTE         3     1.729<A href="#@net:lo_pll_out:RPLL.CLKOP:R2C20C.CLK:1.729">     RPLL.CLKOP to R2C20C.CLK    </A> <A href="#@net:lo_pll_out">lo_pll_out</A>
                   --------
                     1.729   (0.0% logic, 100.0% route), 0 logic levels.
 
-      <A href="#@path:FREQUENCY NET 'lo_pll_out' 420.000000 MHz ;:ROUTE, 1.729,RPLL.CLKOP,R2C21D.CLK,lo_pll_out">Destination Clock Path</A> lo_gen/PLLInst_0 to SLICE_374:
+      <A href="#@path:FREQUENCY NET 'lo_pll_out' 420.000000 MHz ;:ROUTE, 1.729,RPLL.CLKOP,R2C20C.CLK,lo_pll_out">Destination Clock Path</A> lo_gen/PLLInst_0 to SLICE_600:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         3     1.729<A href="#@net:lo_pll_out:RPLL.CLKOP:R2C21D.CLK:1.729">     RPLL.CLKOP to R2C21D.CLK    </A> <A href="#@net:lo_pll_out">lo_pll_out</A>
+ROUTE         3     1.729<A href="#@net:lo_pll_out:RPLL.CLKOP:R2C20C.CLK:1.729">     RPLL.CLKOP to R2C20C.CLK    </A> <A href="#@net:lo_pll_out">lo_pll_out</A>
                   --------
                     1.729   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -710,8 +711,8 @@ Preference: FREQUENCY NET "i_ref_clk_c" 12.000000 MHz ;
 Preference                              |   Constraint|       Actual|Levels
 ----------------------------------------------------------------------------
                                         |             |             |
-FREQUENCY NET "dac_clk_p_c" 96.000000   |             |             |
-MHz ;                                   |   96.000 MHz|  100.888 MHz|   7  
+FREQUENCY NET "dac_clk_p_c" 72.000000   |             |             |
+MHz ;                                   |   72.000 MHz|   84.760 MHz|   8  
                                         |             |             |
 FREQUENCY NET "lo_pll_out" 420.000000   |             |             |
 MHz ;                                   |  420.000 MHz|  444.444 MHz|   0  
@@ -728,10 +729,7 @@ All preferences were met.
 <A name="Clock Domains Analysis"></A><B><U><big>Clock Domains Analysis</big></U></B>
 ------------------------
 
-Found 4 clocks:
-
-Clock Domain: <A href="#@net:sys_clk_inst/CLKFB_t">sys_clk_inst/CLKFB_t</A>   Source: sys_clk_inst/PLLInst_0.CLKINTFB   Loads: 1
-   No transfer within this clock domain is found
+Found 3 clocks:
 
 Clock Domain: <A href="#@net:lo_pll_out">lo_pll_out</A>   Source: lo_gen/PLLInst_0.CLKOP   Loads: 3
    Covered under: FREQUENCY NET "lo_pll_out" 420.000000 MHz ;
@@ -740,7 +738,7 @@ Clock Domain: <A href="#@net:i_ref_clk_c">i_ref_clk_c</A>   Source: i_ref_clk.PA
    No transfer within this clock domain is found
 
 Clock Domain: <A href="#@net:dac_clk_p_c">dac_clk_p_c</A>   Source: sys_clk_inst/PLLInst_0.CLKOP   Loads: 672
-   Covered under: FREQUENCY NET "dac_clk_p_c" 96.000000 MHz ;
+   Covered under: FREQUENCY NET "dac_clk_p_c" 72.000000 MHz ;
 
 
 Timing summary (Setup):
@@ -749,5 +747,5 @@ Timing summary (Setup):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 37366 paths, 5 nets, and 16177 connections (98.07% coverage)
+Constraints cover 37304 paths, 4 nets, and 16165 connections (97.95% coverage)
 

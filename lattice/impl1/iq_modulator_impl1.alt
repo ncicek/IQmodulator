@@ -1,0 +1,39 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Sat Feb 06 16:00:55 2021 *
+NOTE DESIGN NAME: top *
+NOTE DEVICE NAME: LCMXO3LF-6900C-5CABGA256 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS o_dac_a[7] : N16 : out *
+NOTE PINS o_dac_a[8] : L14 : out *
+NOTE PINS o_dac_a[9] : N14 : out *
+NOTE PINS o_wbu_uart_tx : C11 : out *
+NOTE PINS o_dac_a[6] : M16 : out *
+NOTE PINS o_dac_a[5] : L16 : out *
+NOTE PINS o_dac_a[4] : K14 : out *
+NOTE PINS o_dac_a[3] : K16 : out *
+NOTE PINS o_dac_a[2] : K15 : out *
+NOTE PINS o_dac_a[1] : J15 : out *
+NOTE PINS o_dac_a[0] : H15 : out *
+NOTE PINS o_dac_b[9] : G15 : out *
+NOTE PINS o_dac_b[8] : F15 : out *
+NOTE PINS o_dac_b[7] : F16 : out *
+NOTE PINS o_dac_b[6] : E15 : out *
+NOTE PINS o_dac_b[5] : E16 : out *
+NOTE PINS o_dac_b[4] : E14 : out *
+NOTE PINS o_dac_b[3] : D16 : out *
+NOTE PINS o_dac_b[2] : F14 : out *
+NOTE PINS o_dac_b[1] : D14 : out *
+NOTE PINS o_dac_b[0] : G14 : out *
+NOTE PINS dac_clk_p : D10 : out *
+NOTE PINS dac_clk_n : E10 : out *
+NOTE PINS o_dac_cw_b : M14 : out *
+NOTE PINS i_clk_p : B9 : out *
+NOTE PINS i_clk_n : A10 : out *
+NOTE PINS q_clk_p : D8 : out *
+NOTE PINS q_clk_n : E9 : out *
+NOTE PINS i_ref_clk : C8 : in *
+NOTE PINS i_resetb : B3 : in *
+NOTE PINS i_wbu_uart_rx : A11 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

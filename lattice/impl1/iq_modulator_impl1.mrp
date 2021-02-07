@@ -9,12 +9,13 @@ Command line:   map -a MachXO3LF -p LCMXO3LF-6900C -t CABGA256 -s 5 -oc
      Commercial iq_modulator_impl1.ngd -o iq_modulator_impl1_map.ncd -pr
      iq_modulator_impl1.prf -mp iq_modulator_impl1.mrp -lpf
      D:/Documents/Git_Local/fm_modulator/lattice/impl1/iq_modulator_impl1.lpf
-     -lpf D:/Documents/Git_Local/fm_modulator/lattice/iq_modulator.lpf -gui 
+     -lpf D:/Documents/Git_Local/fm_modulator/lattice/iq_modulator.lpf -gui
+     -msgset D:/Documents/Git_Local/fm_modulator/lattice/promote.xml 
 Target Vendor:  LATTICE
 Target Device:  LCMXO3LF-6900CCABGA256
 Target Performance:   5
 Mapper:  xo3c00f,  version:  Diamond (64-bit) 3.11.3.469
-Mapped on:  01/13/21  21:45:31
+Mapped on:  02/06/21  16:00:11
 
 Design Summary
 --------------
@@ -22,16 +23,16 @@ Design Summary
    Number of registers:   1156 out of  7485 (15%)
       PFU registers:         1156 out of  6864 (17%)
       PIO registers:            0 out of   621 (0%)
-   Number of SLICEs:      2272 out of  3432 (66%)
-      SLICEs as Logic/ROM:   2272 out of  3432 (66%)
+   Number of SLICEs:      2278 out of  3432 (66%)
+      SLICEs as Logic/ROM:   2278 out of  3432 (66%)
       SLICEs as RAM:            0 out of  2574 (0%)
       SLICEs as Carry:        190 out of  3432 (6%)
-   Number of LUT4s:        3745 out of  6864 (55%)
-      Number used as logic LUTs:        3365
+   Number of LUT4s:        3752 out of  6864 (55%)
+      Number used as logic LUTs:        3372
       Number used as distributed RAM:     0
       Number used as ripple logic:      380
       Number used as shift registers:     0
-   Number of PIO sites used: 30 + 4(JTAG) out of 207 (16%)
+   Number of PIO sites used: 31 + 4(JTAG) out of 207 (17%)
    Number of block RAMs:  1 out of 26 (4%)
    Number of GSRs:        1 out of 1 (100%)
    EFB used :        Yes
@@ -59,99 +60,99 @@ Design Summary
    Number of clocks:  3
      Net dac_clk_p_c: 670 loads, 670 rising, 0 falling (Driver:
      sys_clk_inst/PLLInst_0 )
-     Net lo_pll_out: 3 loads, 2 rising, 1 falling (Driver: lo_gen/PLLInst_0 )
 
                                     Page 1
 
 
 
 
-Design:  top                                           Date:  01/13/21  21:45:31
+Design:  top                                           Date:  02/06/21  16:00:11
 
 Design Summary (cont)
 ---------------------
+     Net lo_pll_out: 3 loads, 2 rising, 1 falling (Driver: lo_gen/PLLInst_0 )
      Net i_ref_clk_c: 2 loads, 2 rising, 0 falling (Driver: PIO i_ref_clk )
    Number of Clock Enables:  35
      Net rxtransport/o_data_7__N_418: 4 loads, 4 LSLICEs
-     Net rxtransport/dac_clk_p_c_enable_348: 3 loads, 3 LSLICEs
-     Net rxtransport/dac_clk_p_c_enable_413: 4 loads, 4 LSLICEs
-     Net dac_clk_p_c_enable_175: 13 loads, 13 LSLICEs
-     Net rxtransport/dac_clk_p_c_enable_141: 1 loads, 1 LSLICEs
+     Net rxtransport/dac_clk_p_c_enable_347: 3 loads, 3 LSLICEs
+     Net rxtransport/dac_clk_p_c_enable_412: 4 loads, 4 LSLICEs
+     Net dac_clk_p_c_enable_174: 13 loads, 13 LSLICEs
+     Net rxtransport/dac_clk_p_c_enable_144: 1 loads, 1 LSLICEs
      Net rxtransport/zero_baud_counter: 10 loads, 10 LSLICEs
      Net rxtransport/data_reg_7__N_416: 4 loads, 4 LSLICEs
-     Net genbus/dac_clk_p_c_enable_132: 1 loads, 1 LSLICEs
+     Net genbus/dac_clk_p_c_enable_136: 1 loads, 1 LSLICEs
      Net wb_cyc: 2 loads, 2 LSLICEs
      Net wb_err: 15 loads, 15 LSLICEs
-     Net genbus/wbexec/dac_clk_p_c_enable_415: 1 loads, 1 LSLICEs
+     Net genbus/wbexec/dac_clk_p_c_enable_414: 1 loads, 1 LSLICEs
      Net genbus/dac_clk_p_c_enable_446: 15 loads, 15 LSLICEs
-     Net genbus/dac_clk_p_c_enable_308: 3 loads, 2 LSLICEs
-     Net genbus/unpackx/dac_clk_p_c_enable_237: 19 loads, 19 LSLICEs
-     Net genbus/dac_clk_p_c_enable_194: 2 loads, 2 LSLICEs
-     Net genbus/dac_clk_p_c_enable_381: 36 loads, 36 LSLICEs
+     Net genbus/dac_clk_p_c_enable_307: 3 loads, 2 LSLICEs
+     Net genbus/unpackx/dac_clk_p_c_enable_236: 19 loads, 19 LSLICEs
+     Net genbus/dac_clk_p_c_enable_193: 2 loads, 2 LSLICEs
+     Net genbus/dac_clk_p_c_enable_380: 35 loads, 35 LSLICEs
      Net genbus/dac_clk_p_c_enable_196: 1 loads, 1 LSLICEs
-     Net genbus/dac_clk_p_c_enable_350: 1 loads, 1 LSLICEs
-     Net genbus/genhex/dac_clk_p_c_enable_143: 1 loads, 1 LSLICEs
+     Net genbus/dac_clk_p_c_enable_349: 1 loads, 1 LSLICEs
+     Net genbus/genhex/dac_clk_p_c_enable_145: 1 loads, 1 LSLICEs
      Net genbus/addnl/dac_clk_p_c_enable_199: 7 loads, 7 LSLICEs
      Net zero_baud_counter: 5 loads, 5 LSLICEs
-     Net dac_clk_p_c_enable_322: 5 loads, 5 LSLICEs
-     Net genbus/dac_clk_p_c_enable_416: 17 loads, 17 LSLICEs
+     Net dac_clk_p_c_enable_321: 5 loads, 5 LSLICEs
+     Net genbus/addints/dac_clk_p_c_enable_416: 17 loads, 17 LSLICEs
      Net genbus/addints/dac_clk_p_c_enable_410: 1 loads, 1 LSLICEs
      Net genbus/addints/dac_clk_p_c_enable_409: 1 loads, 1 LSLICEs
-     Net genbus/addidles/dac_clk_p_c_enable_346: 17 loads, 17 LSLICEs
-     Net genbus/addidles/dac_clk_p_c_enable_195: 1 loads, 1 LSLICEs
-     Net wb_fm_data_31__I_0/dac_clk_p_c_enable_147: 16 loads, 16 LSLICEs
-     Net wb_fm_data_31__I_0/dac_clk_p_c_enable_115: 16 loads, 16 LSLICEs
-     Net wb_fm_data_31__I_0/dac_clk_p_c_enable_76: 16 loads, 16 LSLICEs
-     Net wb_fm_data_31__I_0/dac_clk_p_c_enable_108: 16 loads, 16 LSLICEs
-     Net i_resetb_c: 14 loads, 14 LSLICEs
-     Net dac_clk_p_c_enable_273: 16 loads, 16 LSLICEs
-     Net dac_clk_p_c_enable_403: 1 loads, 1 LSLICEs
+     Net genbus/addidles/dac_clk_p_c_enable_403: 17 loads, 17 LSLICEs
+     Net genbus/addidles/dac_clk_p_c_enable_194: 1 loads, 1 LSLICEs
+     Net dac_clk_p_c_enable_272: 16 loads, 16 LSLICEs
+     Net dac_clk_p_c_enable_198: 1 loads, 1 LSLICEs
+     Net o_dac_cw_b_c_c: 14 loads, 14 LSLICEs
      Net power_counter_31_N_232_31: 1 loads, 1 LSLICEs
-   Number of local set/reset loads for net i_resetb_c merged into GSR:  1
+     Net o_dac_a_9__I_0/dac_clk_p_c_enable_143: 16 loads, 16 LSLICEs
+     Net o_dac_a_9__I_0/dac_clk_p_c_enable_114: 16 loads, 16 LSLICEs
+     Net o_dac_a_9__I_0/dac_clk_p_c_enable_71: 16 loads, 16 LSLICEs
+     Net o_dac_a_9__I_0/dac_clk_p_c_enable_103: 16 loads, 16 LSLICEs
+   Number of local set/reset loads for net o_dac_cw_b_c_c merged into GSR:  1
    Number of LSRs:  21
      Net rxtransport/baud_counter_23__N_445: 4 loads, 4 LSLICEs
      Net chg_counter_23__N_406: 13 loads, 13 LSLICEs
-     Net rxtransport/n11685: 10 loads, 10 LSLICEs
-     Net genbus/wbexec/n9018: 18 loads, 18 LSLICEs
-     Net genbus/n29561: 31 loads, 31 LSLICEs
-     Net genbus/wbexec/n19812: 1 loads, 1 LSLICEs
+     Net rxtransport/n11580: 10 loads, 10 LSLICEs
+     Net genbus/wbexec/n8903: 18 loads, 18 LSLICEs
+     Net genbus/n29269: 31 loads, 31 LSLICEs
+     Net genbus/wbexec/n19567: 1 loads, 1 LSLICEs
      Net wb_stb: 1 loads, 1 LSLICEs
      Net wb_cyc: 1 loads, 1 LSLICEs
      Net genbus/wbexec/o_cmd_busy_N_941: 1 loads, 1 LSLICEs
-     Net genbus/unpackx/n26787: 2 loads, 2 LSLICEs
-     Net genbus/unpackx/n12823: 3 loads, 3 LSLICEs
-     Net genbus/w_reset: 23 loads, 23 LSLICEs
-     Net n26910: 3 loads, 3 LSLICEs
-     Net genbus/n12748: 17 loads, 17 LSLICEs
-     Net genbus/addidles/n12778: 17 loads, 17 LSLICEs
+     Net genbus/unpackx/n26423: 2 loads, 2 LSLICEs
+     Net genbus/unpackx/n12707: 3 loads, 3 LSLICEs
+     Net genbus/w_reset: 22 loads, 22 LSLICEs
+     Net n26540: 3 loads, 3 LSLICEs
+     Net genbus/addints/n12645: 17 loads, 17 LSLICEs
+     Net genbus/addidles/n12674: 17 loads, 17 LSLICEs
      Net wb_smpl_ack: 1 loads, 1 LSLICEs
-     Net wb_smpl_sel_N_311: 1 loads, 1 LSLICEs
 
                                     Page 2
 
 
 
 
-Design:  top                                           Date:  01/13/21  21:45:31
+Design:  top                                           Date:  02/06/21  16:00:11
 
 Design Summary (cont)
 ---------------------
-     Net i_resetb_c: 270 loads, 270 LSLICEs
-     Net n9474: 27 loads, 27 LSLICEs
+     Net wb_smpl_sel_N_311: 1 loads, 1 LSLICEs
+     Net txtransport/n11421: 10 loads, 10 LSLICEs
+     Net n9365: 27 loads, 27 LSLICEs
      Net wb_idata_1: 1 loads, 1 LSLICEs
-     Net txtransport/n11532: 10 loads, 10 LSLICEs
+     Net o_dac_cw_b_c_c: 270 loads, 270 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net wb_fm_data_31__I_0/carrier/qtr_inst/index_q_3: 489 loads
-     Net wb_fm_data_31__I_0/modulation/qtr_inst/index_i_3: 479 loads
-     Net wb_fm_data_31__I_0/carrier/qtr_inst/index_i_3: 477 loads
-     Net wb_fm_data_31__I_0/modulation/qtr_inst/index_i_2: 369 loads
-     Net wb_fm_data_31__I_0/carrier/qtr_inst/index_q_2: 367 loads
-     Net wb_fm_data_31__I_0/carrier/qtr_inst/index_i_2: 363 loads
-     Net wb_fm_data_31__I_0/carrier/qtr_inst/index_q_4: 349 loads
-     Net wb_fm_data_31__I_0/modulation/qtr_inst/index_i_4: 345 loads
-     Net wb_fm_data_31__I_0/carrier/qtr_inst/index_i_4: 344 loads
-     Net wb_fm_data_31__I_0/carrier/qtr_inst/index_i_1: 340 loads
+     Net o_dac_a_9__I_0/carrier/qtr_inst/index_q_3: 483 loads
+     Net o_dac_a_9__I_0/modulation/qtr_inst/index_i_3: 480 loads
+     Net o_dac_a_9__I_0/carrier/qtr_inst/index_i_3: 478 loads
+     Net o_dac_a_9__I_0/modulation/qtr_inst/index_i_2: 368 loads
+     Net o_dac_a_9__I_0/carrier/qtr_inst/index_q_2: 367 loads
+     Net o_dac_a_9__I_0/carrier/qtr_inst/index_i_2: 362 loads
+     Net o_dac_a_9__I_0/carrier/qtr_inst/index_q_4: 350 loads
+     Net o_dac_a_9__I_0/modulation/qtr_inst/index_i_4: 346 loads
+     Net o_dac_a_9__I_0/carrier/qtr_inst/index_q_1: 344 loads
+     Net o_dac_a_9__I_0/carrier/qtr_inst/index_i_4: 342 loads
 
 
 
@@ -163,7 +164,7 @@ Design Summary (cont)
 Design Errors/Warnings
 ----------------------
 
-WARNING - map: The reset of EBR 'genbus/genhex/mux_105' cannot be controlled.
+WARNING - map: The reset of EBR 'genbus/genhex/mux_100' cannot be controlled.
      The local reset is not connected to any control signal and set to GND. The
      global reset is disabled via GSR property. To control the EBR reset, either
      connect the local reset to a control signal or force the GSR property to be
@@ -176,61 +177,63 @@ IO (PIO) Attributes
 | IO Name             | Direction | Levelmode | IO         |
 |                     |           |  IO_TYPE  | Register   |
 +---------------------+-----------+-----------+------------+
-| o_baseband_i[7]     | OUTPUT    | LVCMOS33  |            |
+| o_dac_a[7]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| o_baseband_i[8]     | OUTPUT    | LVCMOS33  |            |
+| o_dac_a[8]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| o_baseband_i[9]     | OUTPUT    | LVCMOS33  |            |
+| o_dac_a[9]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | o_wbu_uart_tx       | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| o_baseband_i[6]     | OUTPUT    | LVCMOS33  |            |
+| o_dac_a[6]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| o_baseband_i[5]     | OUTPUT    | LVCMOS33  |            |
+| o_dac_a[5]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| o_baseband_i[4]     | OUTPUT    | LVCMOS33  |            |
+| o_dac_a[4]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| o_baseband_i[3]     | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
+| o_dac_a[3]          | OUTPUT    | LVCMOS33  |            |
 
                                     Page 3
 
 
 
 
-Design:  top                                           Date:  01/13/21  21:45:31
+Design:  top                                           Date:  02/06/21  16:00:11
 
 IO (PIO) Attributes (cont)
 --------------------------
-| o_baseband_i[2]     | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| o_baseband_i[1]     | OUTPUT    | LVCMOS33  |            |
+| o_dac_a[2]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| o_baseband_i[0]     | OUTPUT    | LVCMOS33  |            |
+| o_dac_a[1]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| o_baseband_q[9]     | OUTPUT    | LVCMOS33  |            |
+| o_dac_a[0]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| o_baseband_q[8]     | OUTPUT    | LVCMOS33  |            |
+| o_dac_b[9]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| o_baseband_q[7]     | OUTPUT    | LVCMOS33  |            |
+| o_dac_b[8]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| o_baseband_q[6]     | OUTPUT    | LVCMOS33  |            |
+| o_dac_b[7]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| o_baseband_q[5]     | OUTPUT    | LVCMOS33  |            |
+| o_dac_b[6]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| o_baseband_q[4]     | OUTPUT    | LVCMOS33  |            |
+| o_dac_b[5]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| o_baseband_q[3]     | OUTPUT    | LVCMOS33  |            |
+| o_dac_b[4]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| o_baseband_q[2]     | OUTPUT    | LVCMOS33  |            |
+| o_dac_b[3]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| o_baseband_q[1]     | OUTPUT    | LVCMOS33  |            |
+| o_dac_b[2]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| o_baseband_q[0]     | OUTPUT    | LVCMOS33  |            |
+| o_dac_b[1]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| o_dac_b[0]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | dac_clk_p           | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | dac_clk_n           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| o_dac_cw_b          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | i_clk_p             | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -250,27 +253,122 @@ IO (PIO) Attributes (cont)
 Removed logic
 -------------
 
-Signal i_clk_2f_N_2249 was merged into signal lo_pll_out
-Signal n12737 was merged into signal wb_idata_1
-Signal i_resetb_N_301 was merged into signal i_resetb_c
-Signal wb_fm_data_31__I_0/carrier/qtr_inst/n27209 was merged into signal
-     wb_fm_data_31__I_0/carrier/qtr_inst/index_i_2
-Signal n2 was merged into signal wb_stb
-Signal rxtransport/dac_clk_p_c_enable_344 was merged into signal
-     rxtransport/zero_baud_counter
+Signal i_clk_2f_N_2250 was merged into signal lo_pll_out
+Signal o_dac_a_9__I_0/carrier/qtr_inst/n26811 was merged into signal
+     o_dac_a_9__I_0/carrier/qtr_inst/index_i_2
+Signal o_dac_a_9__I_0/modulation/qtr_inst/n26784 was merged into signal
+     o_dac_a_9__I_0/modulation/qtr_inst/index_i_2
 
                                     Page 4
 
 
 
 
-Design:  top                                           Date:  01/13/21  21:45:31
+Design:  top                                           Date:  02/06/21  16:00:11
 
 Removed logic (cont)
 --------------------
+Signal n26683 was merged into signal o_dac_cw_b_c_c
+Signal n12635 was merged into signal wb_idata_1
+Signal n2 was merged into signal wb_stb
+Signal rxtransport/dac_clk_p_c_enable_343 was merged into signal
+     rxtransport/zero_baud_counter
 Signal GND_net undriven or does not drive anything - clipped.
 Signal VCC_net undriven or does not drive anything - clipped.
-Signal n29501 undriven or does not drive anything - clipped.
+Signal n29209 undriven or does not drive anything - clipped.
+Signal o_dac_a_9__I_0/carrier/nco_inst/phase_register_545_add_4_32/CO undriven
+     or does not drive anything - clipped.
+Signal o_dac_a_9__I_0/carrier/nco_inst/phase_register_545_add_4_2/S0 undriven or
+     does not drive anything - clipped.
+Signal o_dac_a_9__I_0/carrier/nco_inst/phase_register_545_add_4_2/CI undriven or
+     does not drive anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_372_1/S1 undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_372_1/S0 undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_372_1/CI undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_372_3/S1 undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_372_3/S0 undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_372_5/S1 undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_372_5/S0 undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_372_7/S0 undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_372_15/CO undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_371_1/S1 undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_371_1/S0 undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_371_1/CI undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_371_3/S1 undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_371_3/S0 undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_371_5/S1 undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_371_5/S0 undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_371_7/S0 undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_371_15/CO undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/modulation/nco_inst/phase_register_547_add_4_2/S0 undriven
+     or does not drive anything - clipped.
+Signal o_dac_a_9__I_0/modulation/nco_inst/phase_register_547_add_4_2/CI undriven
+     or does not drive anything - clipped.
+Signal o_dac_a_9__I_0/modulation/nco_inst/phase_register_547_add_4_32/CO
+     undriven or does not drive anything - clipped.
+
+                                    Page 5
+
+
+
+
+Design:  top                                           Date:  02/06/21  16:00:11
+
+Removed logic (cont)
+--------------------
+Signal o_dac_a_9__I_0/modulation/qtr_inst/unary_minus_10_add_3_1/S0 undriven or
+     does not drive anything - clipped.
+Signal o_dac_a_9__I_0/modulation/qtr_inst/unary_minus_10_add_3_1/CI undriven or
+     does not drive anything - clipped.
+Signal o_dac_a_9__I_0/modulation/qtr_inst/unary_minus_10_add_3_17/S1 undriven or
+     does not drive anything - clipped.
+Signal o_dac_a_9__I_0/modulation/qtr_inst/unary_minus_10_add_3_17/CO undriven or
+     does not drive anything - clipped.
+Signal o_dac_a_9__I_0/sub_391_add_2_1/S1 undriven or does not drive anything -
+     clipped.
+Signal o_dac_a_9__I_0/sub_391_add_2_1/S0 undriven or does not drive anything -
+     clipped.
+Signal o_dac_a_9__I_0/sub_391_add_2_1/CI undriven or does not drive anything -
+     clipped.
+Signal o_dac_a_9__I_0/sub_108_add_2_1/S0 undriven or does not drive anything -
+     clipped.
+Signal o_dac_a_9__I_0/sub_108_add_2_1/CI undriven or does not drive anything -
+     clipped.
+Signal o_dac_a_9__I_0/sub_108_add_2_13/CO undriven or does not drive anything -
+     clipped.
+Signal o_dac_a_9__I_0/sub_391_add_2_17/CO undriven or does not drive anything -
+     clipped.
+Signal o_dac_a_9__I_0/add_379_1/S0 undriven or does not drive anything -
+     clipped.
+Signal o_dac_a_9__I_0/add_379_1/CI undriven or does not drive anything -
+     clipped.
+Signal o_dac_a_9__I_0/add_379_31/CO undriven or does not drive anything -
+     clipped.
+Signal add_32_33/S1 undriven or does not drive anything - clipped.
+Signal add_32_33/CO undriven or does not drive anything - clipped.
+Signal add_33_1/S0 undriven or does not drive anything - clipped.
+Signal add_33_1/CI undriven or does not drive anything - clipped.
+Signal add_32_1/S0 undriven or does not drive anything - clipped.
+Signal add_32_1/CI undriven or does not drive anything - clipped.
+Signal add_33_31/CO undriven or does not drive anything - clipped.
 Signal txtransport/sub_36_add_2_1/S0 undriven or does not drive anything -
      clipped.
 Signal txtransport/sub_36_add_2_1/CI undriven or does not drive anything -
@@ -279,199 +377,107 @@ Signal txtransport/sub_36_add_2_25/S1 undriven or does not drive anything -
      clipped.
 Signal txtransport/sub_36_add_2_25/CO undriven or does not drive anything -
      clipped.
-Signal add_34_33/S1 undriven or does not drive anything - clipped.
-Signal add_34_33/CO undriven or does not drive anything - clipped.
-Signal add_35_1/S0 undriven or does not drive anything - clipped.
-Signal add_35_1/CI undriven or does not drive anything - clipped.
-Signal add_34_1/S0 undriven or does not drive anything - clipped.
-Signal add_34_1/CI undriven or does not drive anything - clipped.
-Signal add_35_31/CO undriven or does not drive anything - clipped.
-Signal wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547_add_4_2/S0
-     undriven or does not drive anything - clipped.
-Signal wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547_add_4_2/CI
-     undriven or does not drive anything - clipped.
-Signal wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547_add_4_32/CO
-     undriven or does not drive anything - clipped.
-Signal wb_fm_data_31__I_0/carrier/qtr_inst/add_377_1/S1 undriven or does not
-     drive anything - clipped.
-Signal wb_fm_data_31__I_0/carrier/qtr_inst/add_377_1/S0 undriven or does not
-     drive anything - clipped.
-Signal wb_fm_data_31__I_0/carrier/qtr_inst/add_377_1/CI undriven or does not
-     drive anything - clipped.
-Signal wb_fm_data_31__I_0/carrier/qtr_inst/add_377_3/S1 undriven or does not
-     drive anything - clipped.
-Signal wb_fm_data_31__I_0/carrier/qtr_inst/add_377_3/S0 undriven or does not
-     drive anything - clipped.
-Signal wb_fm_data_31__I_0/carrier/qtr_inst/add_377_5/S1 undriven or does not
-     drive anything - clipped.
-Signal wb_fm_data_31__I_0/carrier/qtr_inst/add_377_5/S0 undriven or does not
-     drive anything - clipped.
-Signal wb_fm_data_31__I_0/carrier/qtr_inst/add_377_7/S0 undriven or does not
-     drive anything - clipped.
-Signal wb_fm_data_31__I_0/carrier/qtr_inst/add_377_15/CO undriven or does not
-     drive anything - clipped.
-Signal wb_fm_data_31__I_0/carrier/qtr_inst/add_376_1/S1 undriven or does not
-     drive anything - clipped.
-Signal wb_fm_data_31__I_0/carrier/qtr_inst/add_376_1/S0 undriven or does not
-     drive anything - clipped.
-Signal wb_fm_data_31__I_0/carrier/qtr_inst/add_376_1/CI undriven or does not
-     drive anything - clipped.
-Signal wb_fm_data_31__I_0/carrier/qtr_inst/add_376_3/S1 undriven or does not
-     drive anything - clipped.
-Signal wb_fm_data_31__I_0/carrier/qtr_inst/add_376_3/S0 undriven or does not
-     drive anything - clipped.
-Signal wb_fm_data_31__I_0/carrier/qtr_inst/add_376_5/S1 undriven or does not
-     drive anything - clipped.
-Signal wb_fm_data_31__I_0/carrier/qtr_inst/add_376_5/S0 undriven or does not
-     drive anything - clipped.
-
-                                    Page 5
-
-
-
-
-Design:  top                                           Date:  01/13/21  21:45:31
-
-Removed logic (cont)
---------------------
-Signal wb_fm_data_31__I_0/carrier/qtr_inst/add_376_7/S0 undriven or does not
-     drive anything - clipped.
-Signal wb_fm_data_31__I_0/carrier/qtr_inst/add_376_15/CO undriven or does not
-     drive anything - clipped.
-Signal wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549_add_4_2/S0
-     undriven or does not drive anything - clipped.
-Signal wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549_add_4_2/CI
-     undriven or does not drive anything - clipped.
-Signal wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549_add_4_32/CO
-     undriven or does not drive anything - clipped.
-Signal wb_fm_data_31__I_0/modulation/qtr_inst/unary_minus_10_add_3_1/S0 undriven
-     or does not drive anything - clipped.
-Signal wb_fm_data_31__I_0/modulation/qtr_inst/unary_minus_10_add_3_1/CI undriven
-     or does not drive anything - clipped.
-Signal wb_fm_data_31__I_0/modulation/qtr_inst/unary_minus_10_add_3_17/S1
-     undriven or does not drive anything - clipped.
-Signal wb_fm_data_31__I_0/modulation/qtr_inst/unary_minus_10_add_3_17/CO
-     undriven or does not drive anything - clipped.
-Signal wb_fm_data_31__I_0/sub_113_add_2_1/S0 undriven or does not drive anything
-     - clipped.
-Signal wb_fm_data_31__I_0/sub_113_add_2_1/CI undriven or does not drive anything
-     - clipped.
-Signal wb_fm_data_31__I_0/sub_396_add_2_17/CO undriven or does not drive
+Signal genbus/wbexec/o_wb_addr_546_add_4_1/S1 undriven or does not drive
      anything - clipped.
-Signal wb_fm_data_31__I_0/add_384_1/S0 undriven or does not drive anything -
-     clipped.
-Signal wb_fm_data_31__I_0/add_384_1/CI undriven or does not drive anything -
-     clipped.
-Signal wb_fm_data_31__I_0/sub_113_add_2_13/CO undriven or does not drive
+Signal genbus/wbexec/o_wb_addr_546_add_4_1/S0 undriven or does not drive
      anything - clipped.
-Signal wb_fm_data_31__I_0/add_384_31/CO undriven or does not drive anything -
-     clipped.
-Signal wb_fm_data_31__I_0/sub_396_add_2_1/S1 undriven or does not drive anything
-     - clipped.
-Signal wb_fm_data_31__I_0/sub_396_add_2_1/S0 undriven or does not drive anything
-     - clipped.
-Signal wb_fm_data_31__I_0/sub_396_add_2_1/CI undriven or does not drive anything
-     - clipped.
-Signal genbus/wbexec/o_wb_addr_548_add_4_1/S1 undriven or does not drive
+Signal genbus/wbexec/o_wb_addr_546_add_4_1/CI undriven or does not drive
      anything - clipped.
-Signal genbus/wbexec/o_wb_addr_548_add_4_1/S0 undriven or does not drive
+Signal genbus/wbexec/o_wb_addr_546_add_4_31/CO undriven or does not drive
      anything - clipped.
-Signal genbus/wbexec/o_wb_addr_548_add_4_1/CI undriven or does not drive
-     anything - clipped.
-Signal genbus/wbexec/o_wb_addr_548_add_4_31/CO undriven or does not drive
-     anything - clipped.
-Signal rxtransport/sub_49_add_2_25/S1 undriven or does not drive anything -
+Signal rxtransport/sub_389_add_2_24/S1 undriven or does not drive anything -
      clipped.
-Signal rxtransport/sub_49_add_2_25/CO undriven or does not drive anything -
+Signal rxtransport/sub_389_add_2_24/S0 undriven or does not drive anything -
      clipped.
-Signal rxtransport/sub_394_add_2_2/S1 undriven or does not drive anything -
-     clipped.
-Signal rxtransport/sub_394_add_2_2/S0 undriven or does not drive anything -
-     clipped.
-Signal rxtransport/sub_394_add_2_2/CI undriven or does not drive anything -
-     clipped.
+Signal rxtransport/sub_389_add_2_cout/S1 undriven or does not drive anything -
 
                                     Page 6
 
 
 
 
-Design:  top                                           Date:  01/13/21  21:45:31
+Design:  top                                           Date:  02/06/21  16:00:11
 
 Removed logic (cont)
 --------------------
-Signal rxtransport/sub_394_add_2_4/S1 undriven or does not drive anything -
      clipped.
-Signal rxtransport/sub_394_add_2_4/S0 undriven or does not drive anything -
+Signal rxtransport/sub_389_add_2_cout/CO undriven or does not drive anything -
      clipped.
-Signal rxtransport/add_90_1/S0 undriven or does not drive anything - clipped.
-Signal rxtransport/add_90_1/CI undriven or does not drive anything - clipped.
-Signal rxtransport/sub_394_add_2_6/S1 undriven or does not drive anything -
-     clipped.
-Signal rxtransport/sub_394_add_2_6/S0 undriven or does not drive anything -
-     clipped.
-Signal rxtransport/sub_394_add_2_8/S1 undriven or does not drive anything -
-     clipped.
-Signal rxtransport/sub_394_add_2_8/S0 undriven or does not drive anything -
-     clipped.
-Signal rxtransport/sub_394_add_2_10/S1 undriven or does not drive anything -
-     clipped.
-Signal rxtransport/sub_394_add_2_10/S0 undriven or does not drive anything -
-     clipped.
-Signal rxtransport/sub_394_add_2_12/S1 undriven or does not drive anything -
-     clipped.
-Signal rxtransport/sub_394_add_2_12/S0 undriven or does not drive anything -
-     clipped.
-Signal rxtransport/sub_394_add_2_14/S1 undriven or does not drive anything -
-     clipped.
-Signal rxtransport/sub_394_add_2_14/S0 undriven or does not drive anything -
-     clipped.
-Signal rxtransport/sub_394_add_2_16/S1 undriven or does not drive anything -
-     clipped.
-Signal rxtransport/sub_394_add_2_16/S0 undriven or does not drive anything -
-     clipped.
-Signal rxtransport/sub_394_add_2_18/S1 undriven or does not drive anything -
-     clipped.
-Signal rxtransport/sub_394_add_2_18/S0 undriven or does not drive anything -
-     clipped.
-Signal rxtransport/sub_394_add_2_20/S1 undriven or does not drive anything -
-     clipped.
-Signal rxtransport/sub_394_add_2_20/S0 undriven or does not drive anything -
-     clipped.
-Signal rxtransport/sub_394_add_2_22/S1 undriven or does not drive anything -
-     clipped.
-Signal rxtransport/sub_394_add_2_22/S0 undriven or does not drive anything -
-     clipped.
-Signal rxtransport/sub_394_add_2_24/S1 undriven or does not drive anything -
-     clipped.
-Signal rxtransport/sub_394_add_2_24/S0 undriven or does not drive anything -
-     clipped.
-Signal rxtransport/sub_394_add_2_cout/S1 undriven or does not drive anything -
-     clipped.
-Signal rxtransport/sub_394_add_2_cout/CO undriven or does not drive anything -
-     clipped.
-Signal rxtransport/add_90_25/S1 undriven or does not drive anything - clipped.
-Signal rxtransport/add_90_25/CO undriven or does not drive anything - clipped.
+Signal rxtransport/add_8_25/S1 undriven or does not drive anything - clipped.
+Signal rxtransport/add_8_25/CO undriven or does not drive anything - clipped.
 Signal rxtransport/sub_49_add_2_1/S0 undriven or does not drive anything -
      clipped.
 Signal rxtransport/sub_49_add_2_1/CI undriven or does not drive anything -
      clipped.
+Signal rxtransport/sub_49_add_2_25/S1 undriven or does not drive anything -
+     clipped.
+Signal rxtransport/sub_49_add_2_25/CO undriven or does not drive anything -
+     clipped.
+Signal rxtransport/add_8_1/S0 undriven or does not drive anything - clipped.
+Signal rxtransport/add_8_1/CI undriven or does not drive anything - clipped.
+Signal rxtransport/sub_389_add_2_2/S1 undriven or does not drive anything -
+     clipped.
+Signal rxtransport/sub_389_add_2_2/S0 undriven or does not drive anything -
+     clipped.
+Signal rxtransport/sub_389_add_2_2/CI undriven or does not drive anything -
+     clipped.
+Signal rxtransport/sub_389_add_2_4/S1 undriven or does not drive anything -
+     clipped.
+Signal rxtransport/sub_389_add_2_4/S0 undriven or does not drive anything -
+     clipped.
+Signal rxtransport/sub_389_add_2_6/S1 undriven or does not drive anything -
+     clipped.
+Signal rxtransport/sub_389_add_2_6/S0 undriven or does not drive anything -
+     clipped.
+Signal rxtransport/sub_389_add_2_8/S1 undriven or does not drive anything -
+     clipped.
+Signal rxtransport/sub_389_add_2_8/S0 undriven or does not drive anything -
+     clipped.
+Signal rxtransport/sub_389_add_2_10/S1 undriven or does not drive anything -
+     clipped.
+Signal rxtransport/sub_389_add_2_10/S0 undriven or does not drive anything -
+     clipped.
+Signal rxtransport/sub_389_add_2_12/S1 undriven or does not drive anything -
+     clipped.
+Signal rxtransport/sub_389_add_2_12/S0 undriven or does not drive anything -
+     clipped.
+Signal rxtransport/sub_389_add_2_14/S1 undriven or does not drive anything -
+     clipped.
+Signal rxtransport/sub_389_add_2_14/S0 undriven or does not drive anything -
+     clipped.
+Signal rxtransport/sub_389_add_2_16/S1 undriven or does not drive anything -
+     clipped.
+Signal rxtransport/sub_389_add_2_16/S0 undriven or does not drive anything -
+     clipped.
+Signal rxtransport/sub_389_add_2_18/S1 undriven or does not drive anything -
+     clipped.
+Signal rxtransport/sub_389_add_2_18/S0 undriven or does not drive anything -
+     clipped.
+Signal rxtransport/sub_389_add_2_20/S1 undriven or does not drive anything -
+     clipped.
+Signal rxtransport/sub_389_add_2_20/S0 undriven or does not drive anything -
 
                                     Page 7
 
 
 
 
-Design:  top                                           Date:  01/13/21  21:45:31
+Design:  top                                           Date:  02/06/21  16:00:11
 
 Removed logic (cont)
 --------------------
-Block lo_gen/i26492 was optimized away.
-Block i10095_1_lut was optimized away.
-Block i_resetb_I_0_1_lut was optimized away.
-Block wb_fm_data_31__I_0/carrier/qtr_inst/i23261_else_4_lut was optimized away.
+     clipped.
+Signal rxtransport/sub_389_add_2_22/S1 undriven or does not drive anything -
+     clipped.
+Signal rxtransport/sub_389_add_2_22/S0 undriven or does not drive anything -
+     clipped.
+Block lo_gen/i26296 was optimized away.
+Block o_dac_a_9__I_0/carrier/qtr_inst/i23093_else_4_lut was optimized away.
+Block o_dac_a_9__I_0/modulation/qtr_inst/i23201_else_4_lut was optimized away.
+Block i_resetb_I_0_1_lut_rep_723 was optimized away.
+Block i10108_1_lut was optimized away.
 Block genbus/wbexec/i2_1_lut was optimized away.
-Block rxtransport/i9648_1_lut was optimized away.
+Block rxtransport/i9663_1_lut was optimized away.
 Block i1 was optimized away.
 Block i2 was optimized away.
 Block m0_lut was optimized away.
@@ -484,7 +490,7 @@ Memory Usage
     RAM SLICEs: 0
     Logic SLICEs: 1
     PFU Registers: 0
-    -Contains EBR mux_105:  TYPE= SP8KC,  Width= 7,  Depth= 32,  REGMODE= NOREG,
+    -Contains EBR mux_100:  TYPE= SP8KC,  Width= 7,  Depth= 32,  REGMODE= NOREG,
          RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE= NORMAL,  GSR=
          DISABLED
 
@@ -501,7 +507,7 @@ PLL 1:                                     Pin/Node Value
   Output Clock(S):                                  NONE
   Output Clock(S2):                                 NONE
   Output Clock(S3):                                 NONE
-  Feedback Signal:                         NODE     sys_clk_inst/CLKFB_t
+  Feedback Signal:                         NODE     dac_clk_p_c
   Reset Signal:                                     NONE
   M Divider Reset Signal:                           NONE
   C Divider Reset Signal:                           NONE
@@ -516,22 +522,22 @@ PLL 1:                                     Pin/Node Value
   PLL Data bus Address1:                            NONE
   PLL Data bus Address2:                            NONE
   PLL Data bus Address3:                            NONE
-  PLL Data bus Address4:                            NONE
-  PLL Data In bus Data0:                            NONE
-  PLL Data In bus Data1:                            NONE
-  PLL Data In bus Data2:                            NONE
-  PLL Data In bus Data3:                            NONE
-  PLL Data In bus Data4:                            NONE
 
                                     Page 8
 
 
 
 
-Design:  top                                           Date:  01/13/21  21:45:31
+Design:  top                                           Date:  02/06/21  16:00:11
 
 PLL/DLL Summary (cont)
 ----------------------
+  PLL Data bus Address4:                            NONE
+  PLL Data In bus Data0:                            NONE
+  PLL Data In bus Data1:                            NONE
+  PLL Data In bus Data2:                            NONE
+  PLL Data In bus Data3:                            NONE
+  PLL Data In bus Data4:                            NONE
   PLL Data In bus Data5:                            NONE
   PLL Data In bus Data6:                            NONE
   PLL Data In bus Data7:                            NONE
@@ -545,7 +551,7 @@ PLL/DLL Summary (cont)
   PLL Data Out bus Data6:                           NONE
   PLL Data Out bus Data7:                           NONE
   Input Clock Frequency (MHz):                      12.0000
-  Output Clock(P) Frequency (MHz):                  96.0000
+  Output Clock(P) Frequency (MHz):                  72.0000
   Output Clock(S) Frequency (MHz):                  NA
   Output Clock(S2) Frequency (MHz):                 NA
   Output Clock(S3) Frequency (MHz):                 NA
@@ -561,10 +567,10 @@ PLL/DLL Summary (cont)
   VCO Bypass B Input:                               VCO_PHASE
   VCO Bypass C Input:                               VCO_PHASE
   VCO Bypass D Input:                               VCO_PHASE
-  FB_MODE:                                          INT_OP
+  FB_MODE:                                          CLKOP
   CLKI Divider:                                     1
-  CLKFB Divider:                                    8
-  CLKOP Divider:                                    5
+  CLKFB Divider:                                    6
+  CLKOP Divider:                                    7
   CLKOS Divider:                                    1
   CLKOS2 Divider:                                   1
   CLKOS3 Divider:                                   1
@@ -582,22 +588,22 @@ PLL 2:                                     Pin/Node Value
   PLL Type:                                         EHXPLLJ
   Input Clock:                             PIN      i_ref_clk_c
   Output Clock(P):                         NODE     lo_pll_out
-  Output Clock(S):                                  NONE
-  Output Clock(S2):                                 NONE
-  Output Clock(S3):                                 NONE
-  Feedback Signal:                         NODE     lo_pll_out
-  Reset Signal:                                     NONE
-  M Divider Reset Signal:                           NONE
 
                                     Page 9
 
 
 
 
-Design:  top                                           Date:  01/13/21  21:45:31
+Design:  top                                           Date:  02/06/21  16:00:11
 
 PLL/DLL Summary (cont)
 ----------------------
+  Output Clock(S):                                  NONE
+  Output Clock(S2):                                 NONE
+  Output Clock(S3):                                 NONE
+  Feedback Signal:                         NODE     lo_pll_out
+  Reset Signal:                                     NONE
+  M Divider Reset Signal:                           NONE
   C Divider Reset Signal:                           NONE
   D Divider Reset Signal:                           NONE
   Standby Signal:                                   NONE
@@ -648,22 +654,22 @@ PLL/DLL Summary (cont)
   FB_MODE:                                          CLKOP
   CLKI Divider:                                     1
   CLKFB Divider:                                    35
-  CLKOP Divider:                                    1
-  CLKOS Divider:                                    1
-  CLKOS2 Divider:                                   1
-  CLKOS3 Divider:                                   1
-  Fractional N Divider:                             2731
-  CLKOP Desired Phase Shift(degree):                0
 
                                    Page 10
 
 
 
 
-Design:  top                                           Date:  01/13/21  21:45:31
+Design:  top                                           Date:  02/06/21  16:00:11
 
 PLL/DLL Summary (cont)
 ----------------------
+  CLKOP Divider:                                    1
+  CLKOS Divider:                                    1
+  CLKOS2 Divider:                                   1
+  CLKOS3 Divider:                                   1
+  Fractional N Divider:                             2731
+  CLKOP Desired Phase Shift(degree):                0
   CLKOP Trim Option Rising/Falling:                 RISING
   CLKOP Trim Option Delay:                          0
   CLKOS Desired Phase Shift(degree):                0
@@ -707,29 +713,29 @@ Embedded Functional Block Connection Summary
 
            WID		EBR Instance
       ---		------------
-      0b0000000011	genbus/genhex/mux_105
+      0b0000000011	genbus/genhex/mux_100
 
 
 ASIC Components
 ---------------
 
-Instance Name: genbus/genhex/mux_105
-         Type: SP8KC
-Instance Name: wb_lo_data_7__I_0/EFBInst_0
-         Type: EFB
-Instance Name: sys_clk_inst/PLLInst_0
-         Type: EHXPLLJ
-Instance Name: lo_gen/PLLInst_0
+Instance Name: genbus/genhex/mux_100
 
                                    Page 11
 
 
 
 
-Design:  top                                           Date:  01/13/21  21:45:31
+Design:  top                                           Date:  02/06/21  16:00:11
 
 ASIC Components (cont)
 ----------------------
+         Type: SP8KC
+Instance Name: wb_lo_data_7__I_0/EFBInst_0
+         Type: EFB
+Instance Name: sys_clk_inst/PLLInst_0
+         Type: EHXPLLJ
+Instance Name: lo_gen/PLLInst_0
          Type: EHXPLLJ
 
 GSR Usage
@@ -737,7 +743,8 @@ GSR Usage
 
 GSR Component:
    The Global Set Reset (GSR) resource has been used to implement a global reset
-        of the design. The reset signal used for GSR control is 'i_resetb_c'.
+        of the design. The reset signal used for GSR control is
+        'o_dac_cw_b_c_c'.
         
 
      GSR Property:
@@ -750,7 +757,7 @@ GSR Component:
 -------------------------------------
 
      These components have the GSR property set to DISABLED. The components will
-     not respond to the reset signal 'i_resetb_c' via the GSR component.
+     not respond to the reset signal 'o_dac_cw_b_c_c' via the GSR component.
 
      Type and number of components of the type: 
    Register = 1156 
@@ -779,6 +786,16 @@ GSR Component:
    Register : rxtransport/chg_counter__i17
    Register : rxtransport/chg_counter__i16
    Register : rxtransport/chg_counter__i15
+
+                                   Page 12
+
+
+
+
+Design:  top                                           Date:  02/06/21  16:00:11
+
+GSR Usage (cont)
+----------------
    Register : rxtransport/chg_counter__i14
    Register : rxtransport/chg_counter__i13
    Register : rxtransport/chg_counter__i12
@@ -786,16 +803,6 @@ GSR Component:
    Register : rxtransport/chg_counter__i10
    Register : rxtransport/chg_counter__i9
    Register : rxtransport/chg_counter__i8
-
-                                   Page 12
-
-
-
-
-Design:  top                                           Date:  01/13/21  21:45:31
-
-GSR Usage (cont)
-----------------
    Register : rxtransport/chg_counter__i7
    Register : rxtransport/chg_counter__i6
    Register : rxtransport/chg_counter__i5
@@ -832,7 +839,6 @@ GSR Usage (cont)
    Register : rxtransport/o_data__i3
    Register : rxtransport/o_data__i2
    Register : rxtransport/baud_counter_i0
-   Register : rxtransport/data_reg_i0_i0
    Register : rxtransport/data_reg_i0_i7
    Register : rxtransport/data_reg_i0_i6
    Register : rxtransport/data_reg_i0_i5
@@ -840,28 +846,28 @@ GSR Usage (cont)
    Register : rxtransport/data_reg_i0_i3
    Register : rxtransport/data_reg_i0_i2
    Register : rxtransport/data_reg_i0_i1
-   Register : genbus/wbexec/inc_71
-   Register : genbus/wbexec/o_wb_we_69
+   Register : rxtransport/data_reg_i0_i0
    Register : genbus/wbexec/o_wb_data_i0
+   Register : genbus/wbexec/inc_71
    Register : genbus/wbexec/o_rsp_stb_74
    Register : genbus/wbexec/o_rsp_word_i0
    Register : genbus/wbexec/o_rsp_word_i2
-   Register : genbus/wbexec/o_rsp_word_i3
-   Register : genbus/wbexec/o_rsp_word_i4
-   Register : genbus/wbexec/o_rsp_word_i5
-   Register : genbus/wbexec/o_rsp_word_i6
-   Register : genbus/wbexec/o_rsp_word_i7
-   Register : genbus/wbexec/o_rsp_word_i8
 
                                    Page 13
 
 
 
 
-Design:  top                                           Date:  01/13/21  21:45:31
+Design:  top                                           Date:  02/06/21  16:00:11
 
 GSR Usage (cont)
 ----------------
+   Register : genbus/wbexec/o_rsp_word_i3
+   Register : genbus/wbexec/o_rsp_word_i4
+   Register : genbus/wbexec/o_rsp_word_i5
+   Register : genbus/wbexec/o_rsp_word_i6
+   Register : genbus/wbexec/o_rsp_word_i7
+   Register : genbus/wbexec/o_rsp_word_i8
    Register : genbus/wbexec/o_rsp_word_i9
    Register : genbus/wbexec/o_rsp_word_i10
    Register : genbus/wbexec/o_rsp_word_i11
@@ -887,6 +893,7 @@ GSR Usage (cont)
    Register : genbus/wbexec/o_rsp_word_i31
    Register : genbus/wbexec/o_rsp_word_i32
    Register : genbus/wbexec/o_rsp_word_i33
+   Register : genbus/wbexec/o_wb_we_69
    Register : genbus/wbexec/o_wb_stb_68
    Register : genbus/wbexec/newaddr_72
    Register : genbus/wbexec/o_wb_data_i31
@@ -911,6 +918,16 @@ GSR Usage (cont)
    Register : genbus/wbexec/o_wb_data_i12
    Register : genbus/wbexec/o_wb_data_i11
    Register : genbus/wbexec/o_wb_data_i10
+
+                                   Page 14
+
+
+
+
+Design:  top                                           Date:  02/06/21  16:00:11
+
+GSR Usage (cont)
+----------------
    Register : genbus/wbexec/o_wb_data_i9
    Register : genbus/wbexec/o_wb_data_i8
    Register : genbus/wbexec/o_wb_data_i7
@@ -918,50 +935,40 @@ GSR Usage (cont)
    Register : genbus/wbexec/o_wb_data_i5
    Register : genbus/wbexec/o_wb_data_i4
    Register : genbus/wbexec/o_wb_data_i3
-
-                                   Page 14
-
-
-
-
-Design:  top                                           Date:  01/13/21  21:45:31
-
-GSR Usage (cont)
-----------------
    Register : genbus/wbexec/o_wb_data_i2
    Register : genbus/wbexec/o_wb_data_i1
    Register : genbus/wbexec/o_rsp_word_i1
    Register : genbus/wbexec/o_wb_cyc_67
-   Register : genbus/wbexec/o_wb_addr_548__i29
-   Register : genbus/wbexec/o_wb_addr_548__i28
-   Register : genbus/wbexec/o_wb_addr_548__i27
-   Register : genbus/wbexec/o_wb_addr_548__i26
-   Register : genbus/wbexec/o_wb_addr_548__i25
-   Register : genbus/wbexec/o_wb_addr_548__i24
-   Register : genbus/wbexec/o_wb_addr_548__i23
-   Register : genbus/wbexec/o_wb_addr_548__i22
-   Register : genbus/wbexec/o_wb_addr_548__i21
-   Register : genbus/wbexec/o_wb_addr_548__i20
-   Register : genbus/wbexec/o_wb_addr_548__i19
-   Register : genbus/wbexec/o_wb_addr_548__i18
-   Register : genbus/wbexec/o_wb_addr_548__i17
-   Register : genbus/wbexec/o_wb_addr_548__i16
-   Register : genbus/wbexec/o_wb_addr_548__i15
-   Register : genbus/wbexec/o_wb_addr_548__i14
-   Register : genbus/wbexec/o_wb_addr_548__i13
-   Register : genbus/wbexec/o_wb_addr_548__i12
-   Register : genbus/wbexec/o_wb_addr_548__i11
-   Register : genbus/wbexec/o_wb_addr_548__i10
-   Register : genbus/wbexec/o_wb_addr_548__i9
-   Register : genbus/wbexec/o_wb_addr_548__i8
-   Register : genbus/wbexec/o_wb_addr_548__i7
-   Register : genbus/wbexec/o_wb_addr_548__i6
-   Register : genbus/wbexec/o_wb_addr_548__i5
-   Register : genbus/wbexec/o_wb_addr_548__i4
-   Register : genbus/wbexec/o_wb_addr_548__i3
-   Register : genbus/wbexec/o_wb_addr_548__i2
-   Register : genbus/wbexec/o_wb_addr_548__i1
-   Register : genbus/wbexec/o_wb_addr_548__i0
+   Register : genbus/wbexec/o_wb_addr_546__i29
+   Register : genbus/wbexec/o_wb_addr_546__i28
+   Register : genbus/wbexec/o_wb_addr_546__i27
+   Register : genbus/wbexec/o_wb_addr_546__i26
+   Register : genbus/wbexec/o_wb_addr_546__i25
+   Register : genbus/wbexec/o_wb_addr_546__i24
+   Register : genbus/wbexec/o_wb_addr_546__i23
+   Register : genbus/wbexec/o_wb_addr_546__i22
+   Register : genbus/wbexec/o_wb_addr_546__i21
+   Register : genbus/wbexec/o_wb_addr_546__i20
+   Register : genbus/wbexec/o_wb_addr_546__i19
+   Register : genbus/wbexec/o_wb_addr_546__i18
+   Register : genbus/wbexec/o_wb_addr_546__i17
+   Register : genbus/wbexec/o_wb_addr_546__i16
+   Register : genbus/wbexec/o_wb_addr_546__i15
+   Register : genbus/wbexec/o_wb_addr_546__i14
+   Register : genbus/wbexec/o_wb_addr_546__i13
+   Register : genbus/wbexec/o_wb_addr_546__i12
+   Register : genbus/wbexec/o_wb_addr_546__i11
+   Register : genbus/wbexec/o_wb_addr_546__i10
+   Register : genbus/wbexec/o_wb_addr_546__i9
+   Register : genbus/wbexec/o_wb_addr_546__i8
+   Register : genbus/wbexec/o_wb_addr_546__i7
+   Register : genbus/wbexec/o_wb_addr_546__i6
+   Register : genbus/wbexec/o_wb_addr_546__i5
+   Register : genbus/wbexec/o_wb_addr_546__i4
+   Register : genbus/wbexec/o_wb_addr_546__i3
+   Register : genbus/wbexec/o_wb_addr_546__i2
+   Register : genbus/wbexec/o_wb_addr_546__i1
+   Register : genbus/wbexec/o_wb_addr_546__i0
    Register : genbus/unpackx/r_len__i0
    Register : genbus/unpackx/o_dw_bits_i0
    Register : genbus/unpackx/o_dw_bits_i3
@@ -977,6 +984,16 @@ GSR Usage (cont)
    Register : genbus/unpackx/r_word_i0
    Register : genbus/unpackx/r_word_i30
    Register : genbus/unpackx/r_word_i29
+
+                                   Page 15
+
+
+
+
+Design:  top                                           Date:  02/06/21  16:00:11
+
+GSR Usage (cont)
+----------------
    Register : genbus/unpackx/r_word_i28
    Register : genbus/unpackx/r_word_i27
    Register : genbus/unpackx/r_word_i26
@@ -984,16 +1001,6 @@ GSR Usage (cont)
    Register : genbus/unpackx/r_word_i24
    Register : genbus/unpackx/r_word_i23
    Register : genbus/unpackx/r_word_i22
-
-                                   Page 15
-
-
-
-
-Design:  top                                           Date:  01/13/21  21:45:31
-
-GSR Usage (cont)
-----------------
    Register : genbus/unpackx/r_word_i21
    Register : genbus/unpackx/r_word_i20
    Register : genbus/unpackx/r_word_i19
@@ -1043,6 +1050,16 @@ GSR Usage (cont)
    Register : genbus/packxi/o_pck_word__i11
    Register : genbus/packxi/o_pck_word__i10
    Register : genbus/packxi/o_pck_word__i9
+
+                                   Page 16
+
+
+
+
+Design:  top                                           Date:  02/06/21  16:00:11
+
+GSR Usage (cont)
+----------------
    Register : genbus/packxi/o_pck_word__i8
    Register : genbus/packxi/o_pck_word__i7
    Register : genbus/packxi/o_pck_word__i6
@@ -1050,16 +1067,6 @@ GSR Usage (cont)
    Register : genbus/packxi/o_pck_word__i4
    Register : genbus/packxi/o_pck_word__i3
    Register : genbus/packxi/o_pck_word__i2
-
-                                   Page 16
-
-
-
-
-Design:  top                                           Date:  01/13/21  21:45:31
-
-GSR Usage (cont)
-----------------
    Register : genbus/packxi/o_pck_word__i1
    Register : genbus/packxi/r_word__i33
    Register : genbus/packxi/r_word__i32
@@ -1102,72 +1109,71 @@ GSR Usage (cont)
    Register : genbus/dechxi/o_dh_bits_i3
    Register : genbus/dechxi/o_dh_bits_i2
    Register : genbus/dechxi/o_dh_bits_i1
-   Register : genbus/dechxi/o_reset_34_rep_827
-   Register : genbus/dechxi/o_reset_34_rep_826
+   Register : genbus/dechxi/o_reset_34_rep_823
+   Register : genbus/dechxi/o_reset_34_rep_822
    Register : genbus/addnl/last_cr_45
    Register : genbus/addnl/o_nl_stb_46
    Register : genbus/addnl/o_nl_byte_i2
    Register : genbus/addnl/o_nl_byte_i3
    Register : genbus/addnl/o_nl_byte_i4
-   Register : genbus/addnl/o_nl_byte_i5
-   Register : genbus/addnl/o_nl_byte_i6
-   Register : genbus/addnl/o_nl_byte_i7
-   Register : genbus/addnl/cr_state_44
-   Register : genbus/addnl/loaded_47
-   Register : genbus/addnl/o_nl_byte_i1
-   Register : genbus/addints/o_int_word_i9
 
                                    Page 17
 
 
 
 
-Design:  top                                           Date:  01/13/21  21:45:31
+Design:  top                                           Date:  02/06/21  16:00:11
 
 GSR Usage (cont)
 ----------------
+   Register : genbus/addnl/o_nl_byte_i5
+   Register : genbus/addnl/o_nl_byte_i6
+   Register : genbus/addnl/o_nl_byte_i7
+   Register : genbus/addnl/cr_state_44
+   Register : genbus/addnl/loaded_47
+   Register : genbus/addnl/o_nl_byte_i1
+   Register : genbus/addints/o_int_word_i10
    Register : genbus/addints/o_int_word_i33
    Register : genbus/addints/o_int_word_i32
+   Register : genbus/addints/o_int_word_i9
    Register : genbus/addints/o_int_word_i31
    Register : genbus/addints/o_int_word_i30
-   Register : genbus/addints/o_int_word_i8
    Register : genbus/addints/o_int_word_i29
+   Register : genbus/addints/o_int_word_i8
    Register : genbus/addints/o_int_word_i28
    Register : genbus/addints/o_int_word_i7
    Register : genbus/addints/o_int_word_i27
    Register : genbus/addints/o_int_word_i6
-   Register : genbus/addints/o_int_word_i26
    Register : genbus/addints/o_int_word_i5
-   Register : genbus/addints/o_int_word_i4
+   Register : genbus/addints/o_int_word_i26
    Register : genbus/addints/o_int_word_i25
+   Register : genbus/addints/o_int_word_i4
    Register : genbus/addints/o_int_word_i24
    Register : genbus/addints/o_int_word_i3
    Register : genbus/addints/o_int_word_i23
    Register : genbus/addints/o_int_word_i2
-   Register : genbus/addints/o_int_word_i22
    Register : genbus/addints/o_int_word_i1
-   Register : genbus/addints/o_int_word_i0
+   Register : genbus/addints/o_int_word_i22
    Register : genbus/addints/o_int_word_i21
+   Register : genbus/addints/o_int_word_i0
    Register : genbus/addints/o_int_word_i20
    Register : genbus/addints/o_int_word_i19
    Register : genbus/addints/o_int_word_i18
    Register : genbus/addints/o_int_word_i17
    Register : genbus/addints/o_int_word_i16
    Register : genbus/addints/o_int_word_i15
-   Register : genbus/addints/o_int_word_i14
    Register : genbus/addints/o_int_stb_58
    Register : genbus/addints/loaded_57
+   Register : genbus/addints/o_int_word_i14
    Register : genbus/addints/o_int_word_i13
    Register : genbus/addints/o_int_word_i12
    Register : genbus/addints/o_int_word_i11
-   Register : genbus/addints/o_int_word_i10
    Register : genbus/addidles/o_idl_word_i10
    Register : genbus/addidles/o_idl_word_i9
    Register : genbus/addidles/o_idl_word_i8
    Register : genbus/addidles/o_idl_word_i7
    Register : genbus/addidles/o_idl_word_i6
    Register : genbus/addidles/o_idl_word_i5
-   Register : genbus/addidles/o_idl_word_i4
    Register : genbus/addidles/o_idl_stb_28
    Register : genbus/addidles/o_idl_word_i33
    Register : genbus/addidles/o_idl_word_i32
@@ -1176,23 +1182,24 @@ GSR Usage (cont)
    Register : genbus/addidles/o_idl_word_i29
    Register : genbus/addidles/o_idl_word_i28
    Register : genbus/addidles/o_idl_word_i27
-   Register : genbus/addidles/o_idl_word_i26
-   Register : genbus/addidles/o_idl_word_i25
-   Register : genbus/addidles/o_idl_word_i3
-   Register : genbus/addidles/o_idl_word_i2
-   Register : genbus/addidles/o_idl_word_i1
-   Register : genbus/addidles/o_idl_word_i0
 
                                    Page 18
 
 
 
 
-Design:  top                                           Date:  01/13/21  21:45:31
+Design:  top                                           Date:  02/06/21  16:00:11
 
 GSR Usage (cont)
 ----------------
-   Register : genbus/addidles/o_idl_word_i14
+   Register : genbus/addidles/o_idl_word_i26
+   Register : genbus/addidles/o_idl_word_i4
+   Register : genbus/addidles/o_idl_word_i3
+   Register : genbus/addidles/o_idl_word_i2
+   Register : genbus/addidles/o_idl_word_i1
+   Register : genbus/addidles/o_idl_word_i0
+   Register : genbus/addidles/o_idl_word_i13
+   Register : genbus/addidles/o_idl_word_i25
    Register : genbus/addidles/o_idl_word_i24
    Register : genbus/addidles/o_idl_word_i23
    Register : genbus/addidles/o_idl_word_i22
@@ -1203,791 +1210,66 @@ GSR Usage (cont)
    Register : genbus/addidles/o_idl_word_i17
    Register : genbus/addidles/o_idl_word_i16
    Register : genbus/addidles/o_idl_word_i15
-   Register : genbus/addidles/o_idl_word_i13
+   Register : genbus/addidles/o_idl_word_i14
    Register : genbus/addidles/o_idl_word_i12
    Register : genbus/addidles/o_idl_word_i11
-   Register : wb_smpl_data_i0
    Register : power_counter_i0
    Register : wb_idata_i0
-   Register : wb_ack_70
-   Register : wb_smpl_ack_63
-   Register : wb_fm_data_31__I_0/addr_space_3[[26__269
-   Register : wb_fm_data_31__I_0/addr_space_3[[25__271
-   Register : wb_fm_data_31__I_0/addr_space_3[[24__273
-   Register : wb_fm_data_31__I_0/addr_space_3[[23__275
-   Register : wb_fm_data_31__I_0/addr_space_3[[22__277
-   Register : wb_fm_data_31__I_0/addr_space_3[[21__279
-   Register : wb_fm_data_31__I_0/addr_space_3[[20__281
-   Register : wb_fm_data_31__I_0/addr_space_3[[19__283
-   Register : wb_fm_data_31__I_0/addr_space_3[[18__285
-   Register : wb_fm_data_31__I_0/addr_space_3[[17__287
-   Register : wb_fm_data_31__I_0/addr_space_0[[30__162
-   Register : wb_fm_data_31__I_0/addr_space_0[[29__163
-   Register : wb_fm_data_31__I_0/addr_space_0[[28__164
-   Register : wb_fm_data_31__I_0/addr_space_0[[27__165
-   Register : wb_fm_data_31__I_0/addr_space_0[[26__166
-   Register : wb_fm_data_31__I_0/addr_space_0[[25__167
-   Register : wb_fm_data_31__I_0/addr_space_0[[24__168
-   Register : wb_fm_data_31__I_0/addr_space_0[[23__169
-   Register : wb_fm_data_31__I_0/addr_space_0[[21__172
-   Register : wb_fm_data_31__I_0/addr_space_0[[20__173
-   Register : wb_fm_data_31__I_0/addr_space_0[[19__174
-   Register : wb_fm_data_31__I_0/addr_space_0[[18__175
-   Register : wb_fm_data_31__I_0/addr_space_0[[17__176
-   Register : wb_fm_data_31__I_0/addr_space_0[[16__177
-   Register : wb_fm_data_31__I_0/addr_space_0[[15__178
-   Register : wb_fm_data_31__I_0/addr_space_0[[14__179
-   Register : wb_fm_data_31__I_0/addr_space_0[[13__180
-   Register : wb_fm_data_31__I_0/addr_space_0[[12__181
-   Register : wb_fm_data_31__I_0/addr_space_0[[11__182
-   Register : wb_fm_data_31__I_0/addr_space_0[[10__183
-   Register : wb_fm_data_31__I_0/addr_space_0[[9__184
-   Register : wb_fm_data_31__I_0/addr_space_0[[8__185
-   Register : wb_fm_data_31__I_0/addr_space_0[[7__186
-   Register : wb_fm_data_31__I_0/addr_space_0[[6__187
-   Register : wb_fm_data_31__I_0/addr_space_0[[5__188
-   Register : wb_fm_data_31__I_0/addr_space_0[[4__189
-   Register : wb_fm_data_31__I_0/addr_space_0[[3__190
+   Register : wb_ack_68
+   Register : wb_smpl_ack_61
+   Register : txtransport/lcl_data_i0
+   Register : txtransport/zero_baud_counter_49
+   Register : txtransport/baud_counter_i0
+   Register : txtransport/o_uart_tx_48
+   Register : txtransport/baud_counter_i23
+   Register : txtransport/baud_counter_i22
+   Register : txtransport/baud_counter_i21
+   Register : txtransport/baud_counter_i20
+   Register : txtransport/baud_counter_i19
+   Register : txtransport/baud_counter_i18
+   Register : txtransport/baud_counter_i17
+   Register : txtransport/baud_counter_i16
+   Register : txtransport/baud_counter_i15
+   Register : txtransport/baud_counter_i14
+   Register : txtransport/baud_counter_i13
+   Register : txtransport/baud_counter_i12
+   Register : txtransport/baud_counter_i11
+   Register : txtransport/baud_counter_i10
+   Register : txtransport/baud_counter_i9
+   Register : txtransport/baud_counter_i8
+   Register : txtransport/baud_counter_i7
+   Register : txtransport/baud_counter_i6
+   Register : txtransport/baud_counter_i5
+   Register : txtransport/baud_counter_i4
+   Register : txtransport/baud_counter_i3
+   Register : txtransport/baud_counter_i2
+   Register : txtransport/baud_counter_i1
+   Register : txtransport/lcl_data_i7
+   Register : txtransport/lcl_data_i6
+   Register : txtransport/lcl_data_i5
+   Register : txtransport/lcl_data_i4
 
                                    Page 19
 
 
 
 
-Design:  top                                           Date:  01/13/21  21:45:31
+Design:  top                                           Date:  02/06/21  16:00:11
 
 GSR Usage (cont)
 ----------------
-   Register : wb_fm_data_31__I_0/addr_space_0[[2__191
-   Register : wb_fm_data_31__I_0/addr_space_0[[1__192
-   Register : wb_fm_data_31__I_0/addr_space_0[[0__193
-   Register : wb_fm_data_31__I_0/addr_space_1[[31__194
-   Register : wb_fm_data_31__I_0/addr_space_1[[30__195
-   Register : wb_fm_data_31__I_0/addr_space_1[[29__196
-   Register : wb_fm_data_31__I_0/addr_space_1[[28__197
-   Register : wb_fm_data_31__I_0/addr_space_1[[27__198
-   Register : wb_fm_data_31__I_0/addr_space_1[[26__199
-   Register : wb_fm_data_31__I_0/addr_space_1[[25__200
-   Register : wb_fm_data_31__I_0/addr_space_1[[24__201
-   Register : wb_fm_data_31__I_0/addr_space_1[[23__202
-   Register : wb_fm_data_31__I_0/addr_space_1[[22__203
-   Register : wb_fm_data_31__I_0/addr_space_1[[21__204
-   Register : wb_fm_data_31__I_0/addr_space_1[[20__205
-   Register : wb_fm_data_31__I_0/addr_space_1[[19__206
-   Register : wb_fm_data_31__I_0/addr_space_1[[18__207
-   Register : wb_fm_data_31__I_0/addr_space_1[[17__208
-   Register : wb_fm_data_31__I_0/addr_space_1[[16__209
-   Register : wb_fm_data_31__I_0/addr_space_1[[15__210
-   Register : wb_fm_data_31__I_0/addr_space_1[[14__211
-   Register : wb_fm_data_31__I_0/addr_space_1[[13__212
-   Register : wb_fm_data_31__I_0/addr_space_1[[12__213
-   Register : wb_fm_data_31__I_0/addr_space_1[[11__214
-   Register : wb_fm_data_31__I_0/addr_space_1[[10__215
-   Register : wb_fm_data_31__I_0/addr_space_1[[9__216
-   Register : wb_fm_data_31__I_0/addr_space_1[[8__217
-   Register : wb_fm_data_31__I_0/addr_space_1[[7__218
-   Register : wb_fm_data_31__I_0/addr_space_1[[6__219
-   Register : wb_fm_data_31__I_0/addr_space_1[[5__220
-   Register : wb_fm_data_31__I_0/addr_space_1[[4__221
-   Register : wb_fm_data_31__I_0/addr_space_1[[3__222
-   Register : wb_fm_data_31__I_0/addr_space_1[[2__223
-   Register : wb_fm_data_31__I_0/addr_space_1[[1__224
-   Register : wb_fm_data_31__I_0/addr_space_1[[0__225
-   Register : wb_fm_data_31__I_0/addr_space_2[[31__226
-   Register : wb_fm_data_31__I_0/addr_space_2[[30__227
-   Register : wb_fm_data_31__I_0/addr_space_2[[29__228
-   Register : wb_fm_data_31__I_0/addr_space_2[[28__229
-   Register : wb_fm_data_31__I_0/addr_space_2[[27__230
-   Register : wb_fm_data_31__I_0/addr_space_2[[26__231
-   Register : wb_fm_data_31__I_0/addr_space_2[[25__232
-   Register : wb_fm_data_31__I_0/addr_space_2[[24__233
-   Register : wb_fm_data_31__I_0/addr_space_2[[23__234
-   Register : wb_fm_data_31__I_0/addr_space_2[[22__235
-   Register : wb_fm_data_31__I_0/addr_space_2[[21__236
-   Register : wb_fm_data_31__I_0/addr_space_2[[20__237
-   Register : wb_fm_data_31__I_0/addr_space_2[[19__238
-   Register : wb_fm_data_31__I_0/addr_space_2[[18__239
-   Register : wb_fm_data_31__I_0/addr_space_2[[17__240
-   Register : wb_fm_data_31__I_0/addr_space_2[[16__241
-   Register : wb_fm_data_31__I_0/addr_space_2[[15__242
-   Register : wb_fm_data_31__I_0/addr_space_2[[14__243
-   Register : wb_fm_data_31__I_0/addr_space_2[[13__244
-   Register : wb_fm_data_31__I_0/addr_space_2[[12__245
-   Register : wb_fm_data_31__I_0/addr_space_2[[11__246
-
-                                   Page 20
-
-
-
-
-Design:  top                                           Date:  01/13/21  21:45:31
-
-GSR Usage (cont)
-----------------
-   Register : wb_fm_data_31__I_0/addr_space_2[[10__247
-   Register : wb_fm_data_31__I_0/addr_space_2[[9__248
-   Register : wb_fm_data_31__I_0/addr_space_2[[8__249
-   Register : wb_fm_data_31__I_0/addr_space_2[[7__250
-   Register : wb_fm_data_31__I_0/addr_space_2[[6__251
-   Register : wb_fm_data_31__I_0/addr_space_2[[5__252
-   Register : wb_fm_data_31__I_0/addr_space_2[[4__253
-   Register : wb_fm_data_31__I_0/addr_space_2[[3__254
-   Register : wb_fm_data_31__I_0/addr_space_2[[2__255
-   Register : wb_fm_data_31__I_0/addr_space_2[[1__256
-   Register : wb_fm_data_31__I_0/addr_space_2[[0__257
-   Register : wb_fm_data_31__I_0/addr_space_3[[16__289
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_ls__i0
-   Register : wb_fm_data_31__I_0/o_wb_data_i0
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_rs_i1
-   Register : wb_fm_data_31__I_0/carrier_increment_i0
-   Register : wb_fm_data_31__I_0/sine_lookup_width_minus_modulation_deviation_am
-        ount_i0
-   Register : wb_fm_data_31__I_0/modulation_deviation_amount_minus_sine_lookup_w
-        idth_i0
-   Register : wb_fm_data_31__I_0/addr_space_0[[31__161
-   Register : wb_fm_data_31__I_0/addr_space_0[[22__171
-   Register : wb_fm_data_31__I_0/addr_space_3[[15__291
-   Register : wb_fm_data_31__I_0/addr_space_3[[14__293
-   Register : wb_fm_data_31__I_0/addr_space_3[[13__295
-   Register : wb_fm_data_31__I_0/addr_space_3[[12__297
-   Register : wb_fm_data_31__I_0/addr_space_3[[11__299
-   Register : wb_fm_data_31__I_0/addr_space_3[[10__301
-   Register : wb_fm_data_31__I_0/addr_space_3[[9__303
-   Register : wb_fm_data_31__I_0/addr_space_3[[8__305
-   Register : wb_fm_data_31__I_0/addr_space_3[[7__307
-   Register : wb_fm_data_31__I_0/addr_space_3[[6__309
-   Register : wb_fm_data_31__I_0/addr_space_3[[5__311
-   Register : wb_fm_data_31__I_0/addr_space_3[[4__313
-   Register : wb_fm_data_31__I_0/addr_space_3[[3__315
-   Register : wb_fm_data_31__I_0/addr_space_3[[2__317
-   Register : wb_fm_data_31__I_0/addr_space_3[[1__319
-   Register : wb_fm_data_31__I_0/addr_space_3[[0__321
-   Register : wb_fm_data_31__I_0/addr_space_3[[31__259
-   Register : wb_fm_data_31__I_0/o_wb_ack_323
-   Register : wb_fm_data_31__I_0/addr_space_3[[30__261
-   Register : wb_fm_data_31__I_0/addr_space_3[[29__263
-   Register : wb_fm_data_31__I_0/addr_space_3[[28__265
-   Register : wb_fm_data_31__I_0/addr_space_3[[27__267
-   Register : wb_fm_data_31__I_0/modulation_deviation_amount_minus_sine_lookup_w
-        idth_i16
-   Register : wb_fm_data_31__I_0/modulation_deviation_amount_minus_sine_lookup_w
-        idth_i15
-   Register : wb_fm_data_31__I_0/modulation_deviation_amount_minus_sine_lookup_w
-        idth_i14
-   Register : wb_fm_data_31__I_0/modulation_deviation_amount_minus_sine_lookup_w
-        idth_i13
-   Register : wb_fm_data_31__I_0/modulation_deviation_amount_minus_sine_lookup_w
-        idth_i12
-   Register : wb_fm_data_31__I_0/modulation_deviation_amount_minus_sine_lookup_w
-        idth_i11
-
-                                   Page 21
-
-
-
-
-Design:  top                                           Date:  01/13/21  21:45:31
-
-GSR Usage (cont)
-----------------
-   Register : wb_fm_data_31__I_0/modulation_deviation_amount_minus_sine_lookup_w
-        idth_i10
-   Register : wb_fm_data_31__I_0/modulation_deviation_amount_minus_sine_lookup_w
-        idth_i9
-   Register : wb_fm_data_31__I_0/modulation_deviation_amount_minus_sine_lookup_w
-        idth_i8
-   Register : wb_fm_data_31__I_0/modulation_deviation_amount_minus_sine_lookup_w
-        idth_i7
-   Register : wb_fm_data_31__I_0/modulation_deviation_amount_minus_sine_lookup_w
-        idth_i6
-   Register : wb_fm_data_31__I_0/modulation_deviation_amount_minus_sine_lookup_w
-        idth_i5
-   Register : wb_fm_data_31__I_0/modulation_deviation_amount_minus_sine_lookup_w
-        idth_i4
-   Register : wb_fm_data_31__I_0/modulation_deviation_amount_minus_sine_lookup_w
-        idth_i3
-   Register : wb_fm_data_31__I_0/modulation_deviation_amount_minus_sine_lookup_w
-        idth_i2
-   Register : wb_fm_data_31__I_0/modulation_deviation_amount_minus_sine_lookup_w
-        idth_i1
-   Register : wb_fm_data_31__I_0/sine_lookup_width_minus_modulation_deviation_am
-        ount_i16
-   Register : wb_fm_data_31__I_0/sine_lookup_width_minus_modulation_deviation_am
-        ount_i15
-   Register : wb_fm_data_31__I_0/sine_lookup_width_minus_modulation_deviation_am
-        ount_i14
-   Register : wb_fm_data_31__I_0/sine_lookup_width_minus_modulation_deviation_am
-        ount_i13
-   Register : wb_fm_data_31__I_0/sine_lookup_width_minus_modulation_deviation_am
-        ount_i12
-   Register : wb_fm_data_31__I_0/sine_lookup_width_minus_modulation_deviation_am
-        ount_i11
-   Register : wb_fm_data_31__I_0/sine_lookup_width_minus_modulation_deviation_am
-        ount_i10
-   Register : wb_fm_data_31__I_0/sine_lookup_width_minus_modulation_deviation_am
-        ount_i9
-   Register : wb_fm_data_31__I_0/sine_lookup_width_minus_modulation_deviation_am
-        ount_i8
-   Register : wb_fm_data_31__I_0/sine_lookup_width_minus_modulation_deviation_am
-        ount_i7
-   Register : wb_fm_data_31__I_0/sine_lookup_width_minus_modulation_deviation_am
-        ount_i6
-   Register : wb_fm_data_31__I_0/sine_lookup_width_minus_modulation_deviation_am
-        ount_i5
-   Register : wb_fm_data_31__I_0/sine_lookup_width_minus_modulation_deviation_am
-        ount_i4
-   Register : wb_fm_data_31__I_0/sine_lookup_width_minus_modulation_deviation_am
-        ount_i3
-   Register : wb_fm_data_31__I_0/sine_lookup_width_minus_modulation_deviation_am
-        ount_i2
-   Register : wb_fm_data_31__I_0/sine_lookup_width_minus_modulation_deviation_am
-        ount_i1
-   Register : wb_fm_data_31__I_0/carrier_increment_i30
-   Register : wb_fm_data_31__I_0/carrier_increment_i29
-   Register : wb_fm_data_31__I_0/carrier_increment_i28
-   Register : wb_fm_data_31__I_0/carrier_increment_i27
-
-                                   Page 22
-
-
-
-
-Design:  top                                           Date:  01/13/21  21:45:31
-
-GSR Usage (cont)
-----------------
-   Register : wb_fm_data_31__I_0/carrier_increment_i26
-   Register : wb_fm_data_31__I_0/carrier_increment_i25
-   Register : wb_fm_data_31__I_0/carrier_increment_i24
-   Register : wb_fm_data_31__I_0/carrier_increment_i23
-   Register : wb_fm_data_31__I_0/carrier_increment_i22
-   Register : wb_fm_data_31__I_0/carrier_increment_i21
-   Register : wb_fm_data_31__I_0/carrier_increment_i20
-   Register : wb_fm_data_31__I_0/carrier_increment_i19
-   Register : wb_fm_data_31__I_0/carrier_increment_i18
-   Register : wb_fm_data_31__I_0/carrier_increment_i17
-   Register : wb_fm_data_31__I_0/carrier_increment_i16
-   Register : wb_fm_data_31__I_0/carrier_increment_i15
-   Register : wb_fm_data_31__I_0/carrier_increment_i14
-   Register : wb_fm_data_31__I_0/carrier_increment_i13
-   Register : wb_fm_data_31__I_0/carrier_increment_i12
-   Register : wb_fm_data_31__I_0/carrier_increment_i11
-   Register : wb_fm_data_31__I_0/carrier_increment_i10
-   Register : wb_fm_data_31__I_0/carrier_increment_i9
-   Register : wb_fm_data_31__I_0/carrier_increment_i8
-   Register : wb_fm_data_31__I_0/carrier_increment_i7
-   Register : wb_fm_data_31__I_0/carrier_increment_i6
-   Register : wb_fm_data_31__I_0/carrier_increment_i5
-   Register : wb_fm_data_31__I_0/carrier_increment_i4
-   Register : wb_fm_data_31__I_0/carrier_increment_i3
-   Register : wb_fm_data_31__I_0/carrier_increment_i2
-   Register : wb_fm_data_31__I_0/carrier_increment_i1
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_rs_i16
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_rs_i15
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_rs_i14
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_rs_i13
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_rs_i12
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_rs_i11
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_rs_i10
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_rs_i9
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_rs_i8
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_rs_i7
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_rs_i6
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_rs_i5
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_rs_i4
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_rs_i3
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_rs_i2
-   Register : wb_fm_data_31__I_0/o_wb_data_i31
-   Register : wb_fm_data_31__I_0/o_wb_data_i30
-   Register : wb_fm_data_31__I_0/o_wb_data_i29
-   Register : wb_fm_data_31__I_0/o_wb_data_i28
-   Register : wb_fm_data_31__I_0/o_wb_data_i27
-   Register : wb_fm_data_31__I_0/o_wb_data_i26
-   Register : wb_fm_data_31__I_0/o_wb_data_i25
-   Register : wb_fm_data_31__I_0/o_wb_data_i24
-   Register : wb_fm_data_31__I_0/o_wb_data_i23
-   Register : wb_fm_data_31__I_0/o_wb_data_i22
-   Register : wb_fm_data_31__I_0/o_wb_data_i21
-   Register : wb_fm_data_31__I_0/o_wb_data_i20
-   Register : wb_fm_data_31__I_0/o_wb_data_i19
-   Register : wb_fm_data_31__I_0/o_wb_data_i18
-   Register : wb_fm_data_31__I_0/o_wb_data_i17
-
-                                   Page 23
-
-
-
-
-Design:  top                                           Date:  01/13/21  21:45:31
-
-GSR Usage (cont)
-----------------
-   Register : wb_fm_data_31__I_0/o_wb_data_i16
-   Register : wb_fm_data_31__I_0/o_wb_data_i15
-   Register : wb_fm_data_31__I_0/o_wb_data_i14
-   Register : wb_fm_data_31__I_0/o_wb_data_i13
-   Register : wb_fm_data_31__I_0/o_wb_data_i12
-   Register : wb_fm_data_31__I_0/o_wb_data_i11
-   Register : wb_fm_data_31__I_0/o_wb_data_i10
-   Register : wb_fm_data_31__I_0/o_wb_data_i9
-   Register : wb_fm_data_31__I_0/o_wb_data_i8
-   Register : wb_fm_data_31__I_0/o_wb_data_i7
-   Register : wb_fm_data_31__I_0/o_wb_data_i6
-   Register : wb_fm_data_31__I_0/o_wb_data_i5
-   Register : wb_fm_data_31__I_0/o_wb_data_i4
-   Register : wb_fm_data_31__I_0/o_wb_data_i3
-   Register : wb_fm_data_31__I_0/o_wb_data_i2
-   Register : wb_fm_data_31__I_0/o_wb_data_i1
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_ls__i30
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_ls__i29
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_ls__i28
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_ls__i27
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_ls__i26
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_ls__i25
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_ls__i24
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_ls__i23
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_ls__i22
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_ls__i21
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_ls__i20
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_ls__i19
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_ls__i18
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_ls__i17
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_ls__i16
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_ls__i15
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_ls__i14
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_ls__i13
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_ls__i12
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_ls__i11
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_ls__i10
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_ls__i9
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_ls__i8
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_ls__i7
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_ls__i6
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_ls__i5
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_ls__i4
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_ls__i3
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_ls__i2
-   Register : wb_fm_data_31__I_0/carrier_center_increment_offset_ls__i1
-   Register : wb_fm_data_31__I_0/modulation/increment_i0
-   Register : wb_fm_data_31__I_0/modulation/increment_i30
-   Register : wb_fm_data_31__I_0/modulation/increment_i29
-   Register : wb_fm_data_31__I_0/modulation/increment_i28
-   Register : wb_fm_data_31__I_0/modulation/increment_i27
-   Register : wb_fm_data_31__I_0/modulation/increment_i26
-   Register : wb_fm_data_31__I_0/modulation/increment_i25
-   Register : wb_fm_data_31__I_0/modulation/increment_i24
-   Register : wb_fm_data_31__I_0/modulation/increment_i23
-   Register : wb_fm_data_31__I_0/modulation/increment_i22
-
-                                   Page 24
-
-
-
-
-Design:  top                                           Date:  01/13/21  21:45:31
-
-GSR Usage (cont)
-----------------
-   Register : wb_fm_data_31__I_0/modulation/increment_i21
-   Register : wb_fm_data_31__I_0/modulation/increment_i20
-   Register : wb_fm_data_31__I_0/modulation/increment_i19
-   Register : wb_fm_data_31__I_0/modulation/increment_i18
-   Register : wb_fm_data_31__I_0/modulation/increment_i17
-   Register : wb_fm_data_31__I_0/modulation/increment_i16
-   Register : wb_fm_data_31__I_0/modulation/increment_i15
-   Register : wb_fm_data_31__I_0/modulation/increment_i14
-   Register : wb_fm_data_31__I_0/modulation/increment_i13
-   Register : wb_fm_data_31__I_0/modulation/increment_i12
-   Register : wb_fm_data_31__I_0/modulation/increment_i11
-   Register : wb_fm_data_31__I_0/modulation/increment_i10
-   Register : wb_fm_data_31__I_0/modulation/increment_i9
-   Register : wb_fm_data_31__I_0/modulation/increment_i8
-   Register : wb_fm_data_31__I_0/modulation/increment_i7
-   Register : wb_fm_data_31__I_0/modulation/increment_i6
-   Register : wb_fm_data_31__I_0/modulation/increment_i5
-   Register : wb_fm_data_31__I_0/modulation/increment_i4
-   Register : wb_fm_data_31__I_0/modulation/increment_i3
-   Register : wb_fm_data_31__I_0/modulation/increment_i2
-   Register : wb_fm_data_31__I_0/modulation/increment_i1
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i13
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i12
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i11
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i10
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i9
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i8
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i7
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i6
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i5
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i4
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i3
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i2
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/index_i_i9
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/index_i_i8
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/index_i_i7
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/index_i_i6
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/index_i_i5
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/index_i_i4
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/index_i_i3
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/index_i_i2
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/index_i_i1
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/phase_negation_i_i1
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/phase_i_i0_i0
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/phase_negation_i_i0
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/index_i_i0
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i1
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/quarter_wave_sample_registe
-        r_i_i0
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/phase_i_i0_i11
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/phase_i_i0_i10
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/phase_i_i0_i9
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/phase_i_i0_i8
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/phase_i_i0_i7
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/phase_i_i0_i6
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/phase_i_i0_i5
-
-                                   Page 25
-
-
-
-
-Design:  top                                           Date:  01/13/21  21:45:31
-
-GSR Usage (cont)
-----------------
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/phase_i_i0_i4
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/phase_i_i0_i3
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/phase_i_i0_i2
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/phase_i_i0_i1
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/quarter_wave_sample_registe
-        r_i_i14
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/quarter_wave_sample_registe
-        r_i_i13
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/quarter_wave_sample_registe
-        r_i_i12
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/quarter_wave_sample_registe
-        r_i_i11
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/quarter_wave_sample_registe
-        r_i_i10
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/quarter_wave_sample_registe
-        r_i_i9
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/quarter_wave_sample_registe
-        r_i_i8
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/quarter_wave_sample_registe
-        r_i_i7
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/quarter_wave_sample_registe
-        r_i_i6
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/quarter_wave_sample_registe
-        r_i_i5
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/quarter_wave_sample_registe
-        r_i_i4
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/quarter_wave_sample_registe
-        r_i_i3
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/quarter_wave_sample_registe
-        r_i_i2
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/quarter_wave_sample_registe
-        r_i_i1
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i32
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i31
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i30
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i29
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i28
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i27
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i26
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i25
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i24
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i23
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i22
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i21
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i20
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i19
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i18
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i17
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i16
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i15
-   Register : wb_fm_data_31__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i14
-   Register : wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549__i0
-   Register : wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549__i31
-   Register : wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549__i30
-   Register : wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549__i29
-   Register : wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549__i28
-
-                                   Page 26
-
-
-
-
-Design:  top                                           Date:  01/13/21  21:45:31
-
-GSR Usage (cont)
-----------------
-   Register : wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549__i27
-   Register : wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549__i26
-   Register : wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549__i25
-   Register : wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549__i24
-   Register : wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549__i23
-   Register : wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549__i22
-   Register : wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549__i21
-   Register : wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549__i20
-   Register : wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549__i19
-   Register : wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549__i18
-   Register : wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549__i17
-   Register : wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549__i16
-   Register : wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549__i15
-   Register : wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549__i14
-   Register : wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549__i13
-   Register : wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549__i12
-   Register : wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549__i11
-   Register : wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549__i10
-   Register : wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549__i9
-   Register : wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549__i8
-   Register : wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549__i7
-   Register : wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549__i6
-   Register : wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549__i5
-   Register : wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549__i4
-   Register : wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549__i3
-   Register : wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549__i2
-   Register : wb_fm_data_31__I_0/modulation/nco_inst/phase_register_549__i1
-   Register : wb_fm_data_31__I_0/carrier/increment_i0
-   Register : wb_fm_data_31__I_0/carrier/increment_i30
-   Register : wb_fm_data_31__I_0/carrier/increment_i29
-   Register : wb_fm_data_31__I_0/carrier/increment_i28
-   Register : wb_fm_data_31__I_0/carrier/increment_i27
-   Register : wb_fm_data_31__I_0/carrier/increment_i26
-   Register : wb_fm_data_31__I_0/carrier/increment_i25
-   Register : wb_fm_data_31__I_0/carrier/increment_i24
-   Register : wb_fm_data_31__I_0/carrier/increment_i23
-   Register : wb_fm_data_31__I_0/carrier/increment_i22
-   Register : wb_fm_data_31__I_0/carrier/increment_i21
-   Register : wb_fm_data_31__I_0/carrier/increment_i20
-   Register : wb_fm_data_31__I_0/carrier/increment_i19
-   Register : wb_fm_data_31__I_0/carrier/increment_i18
-   Register : wb_fm_data_31__I_0/carrier/increment_i17
-   Register : wb_fm_data_31__I_0/carrier/increment_i16
-   Register : wb_fm_data_31__I_0/carrier/increment_i15
-   Register : wb_fm_data_31__I_0/carrier/increment_i14
-   Register : wb_fm_data_31__I_0/carrier/increment_i13
-   Register : wb_fm_data_31__I_0/carrier/increment_i12
-   Register : wb_fm_data_31__I_0/carrier/increment_i11
-   Register : wb_fm_data_31__I_0/carrier/increment_i10
-   Register : wb_fm_data_31__I_0/carrier/increment_i9
-   Register : wb_fm_data_31__I_0/carrier/increment_i8
-   Register : wb_fm_data_31__I_0/carrier/increment_i7
-   Register : wb_fm_data_31__I_0/carrier/increment_i6
-   Register : wb_fm_data_31__I_0/carrier/increment_i5
-   Register : wb_fm_data_31__I_0/carrier/increment_i4
-   Register : wb_fm_data_31__I_0/carrier/increment_i3
-
-                                   Page 27
-
-
-
-
-Design:  top                                           Date:  01/13/21  21:45:31
-
-GSR Usage (cont)
-----------------
-   Register : wb_fm_data_31__I_0/carrier/increment_i2
-   Register : wb_fm_data_31__I_0/carrier/increment_i1
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/phase_q__i1
-   Register :
-        wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i14
-   Register :
-        wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i13
-   Register :
-        wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i12
-   Register :
-        wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i11
-   Register :
-        wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i10
-   Register :
-        wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i9
-   Register :
-        wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i8
-   Register :
-        wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i7
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i1
-   Register :
-        wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i6
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/phase_negation_i_i0
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/phase_negation_q_i0
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/index_i_i0
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/index_q_i0
-   Register :
-        wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i0
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i1
-   Register :
-        wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i0
-   Register :
-        wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i5
-   Register :
-        wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i4
-   Register :
-        wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i3
-   Register :
-        wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i2
-   Register :
-        wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i1
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i18
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i17
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i16
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i15
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i14
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i13
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i12
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i11
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i10
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i9
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i8
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i7
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i6
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i5
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i4
-
-                                   Page 28
-
-
-
-
-Design:  top                                           Date:  01/13/21  21:45:31
-
-GSR Usage (cont)
-----------------
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i3
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i2
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/phase_i_i0_i11
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/phase_i_i0_i10
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/phase_i_i0_i9
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/phase_i_i0_i8
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/phase_i_i0_i7
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/phase_i_i0_i6
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/phase_i_i0_i5
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/phase_i_i0_i4
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/phase_i_i0_i3
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/phase_i_i0_i2
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/phase_i_i0_i1
-   Register :
-        wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i15
-   Register :
-        wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i14
-   Register :
-        wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i13
-   Register :
-        wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i12
-   Register :
-        wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i11
-   Register :
-        wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i10
-   Register :
-        wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i9
-   Register :
-        wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i8
-   Register :
-        wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i7
-   Register :
-        wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i6
-   Register :
-        wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i5
-   Register :
-        wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i4
-   Register :
-        wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i3
-   Register :
-        wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i2
-   Register :
-        wb_fm_data_31__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i1
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/index_q_i9
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/index_q_i8
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/index_q_i7
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/index_q_i6
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/index_q_i5
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/index_q_i4
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/index_q_i3
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/index_q_i2
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/index_q_i1
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/index_i_i9
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/index_i_i8
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/index_i_i7
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/index_i_i6
-
-                                   Page 29
-
-
-
-
-Design:  top                                           Date:  01/13/21  21:45:31
-
-GSR Usage (cont)
-----------------
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/index_i_i5
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/index_i_i4
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/index_i_i3
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/index_i_i2
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/index_i_i1
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/phase_negation_q_i1
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/phase_negation_i_i1
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i18
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i17
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i16
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i15
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i14
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i13
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i12
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i11
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i10
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i9
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i8
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i7
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i6
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i5
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i4
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i3
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i2
-   Register : wb_fm_data_31__I_0/carrier/qtr_inst/phase_q__i11
-   Register : wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547__i31
-   Register : wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547__i30
-   Register : wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547__i29
-   Register : wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547__i28
-   Register : wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547__i27
-   Register : wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547__i26
-   Register : wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547__i25
-   Register : wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547__i24
-   Register : wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547__i23
-   Register : wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547__i22
-   Register : wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547__i21
-   Register : wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547__i20
-   Register : wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547__i19
-   Register : wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547__i18
-   Register : wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547__i17
-   Register : wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547__i16
-   Register : wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547__i15
-   Register : wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547__i14
-   Register : wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547__i13
-   Register : wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547__i12
-   Register : wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547__i11
-   Register : wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547__i10
-   Register : wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547__i9
-   Register : wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547__i8
-   Register : wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547__i7
-   Register : wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547__i6
-   Register : wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547__i5
-   Register : wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547__i4
-   Register : wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547__i3
-   Register : wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547__i2
-   Register : wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547__i1
-
-                                   Page 30
-
-
-
-
-Design:  top                                           Date:  01/13/21  21:45:31
-
-GSR Usage (cont)
-----------------
-   Register : wb_fm_data_31__I_0/carrier/nco_inst/phase_register_547__i0
+   Register : txtransport/lcl_data_i3
+   Register : txtransport/lcl_data_i2
+   Register : txtransport/lcl_data_i1
+   Register : txtransport/r_busy_45
+   Register : txtransport/state_544__i3
+   Register : txtransport/state_544__i2
+   Register : txtransport/state_544__i1
+   Register : txtransport/state_544__i0
    Register : smpl_register_i0_i0
-   Register : wb_err_68
+   Register : wb_err_66
    Register : bus_err_address_i0_i0
+   Register : smpl_interrupt_63
    Register : smpl_register_i0_i31
    Register : smpl_register_i0_i30
    Register : smpl_register_i0_i29
@@ -2022,17 +1304,27 @@ GSR Usage (cont)
    Register : wb_idata_i31
    Register : wb_idata_i30
    Register : wb_idata_i29
+   Register : wb_smpl_data_i0
+   Register : clock_phase_shifter_inst/o_clk_q_10
+   Register : clock_phase_shifter_inst/o_clk_i_9
    Register : wb_idata_i28
    Register : wb_idata_i27
    Register : wb_idata_i26
    Register : wb_idata_i25
    Register : wb_idata_i24
    Register : wb_idata_i23
-   Register : smpl_interrupt_65
    Register : wb_idata_i22
+
+                                   Page 20
+
+
+
+
+Design:  top                                           Date:  02/06/21  16:00:11
+
+GSR Usage (cont)
+----------------
    Register : wb_idata_i21
-   Register : clock_phase_shifter_inst/o_clk_q_10
-   Register : clock_phase_shifter_inst/o_clk_i_9
    Register : wb_idata_i20
    Register : wb_idata_i19
    Register : wb_idata_i18
@@ -2040,16 +1332,6 @@ GSR Usage (cont)
    Register : wb_idata_i16
    Register : wb_idata_i15
    Register : wb_idata_i14
-
-                                   Page 31
-
-
-
-
-Design:  top                                           Date:  01/13/21  21:45:31
-
-GSR Usage (cont)
-----------------
    Register : wb_idata_i13
    Register : wb_idata_i12
    Register : wb_idata_i11
@@ -2072,10 +1354,6 @@ GSR Usage (cont)
    Register : power_counter_i25
    Register : power_counter_i24
    Register : power_counter_i23
-   Register : bus_err_address_i0_i29
-   Register : bus_err_address_i0_i28
-   Register : bus_err_address_i0_i27
-   Register : bus_err_address_i0_i26
    Register : power_counter_i22
    Register : power_counter_i21
    Register : power_counter_i20
@@ -2099,23 +1377,20 @@ GSR Usage (cont)
    Register : power_counter_i2
    Register : power_counter_i1
    Register : wb_smpl_data_i31
-   Register : wb_smpl_data_i30
-   Register : wb_smpl_data_i29
-   Register : wb_smpl_data_i28
-   Register : wb_smpl_data_i27
-   Register : wb_smpl_data_i26
-   Register : wb_smpl_data_i25
-   Register : wb_smpl_data_i24
+   Register : bus_err_address_i0_i29
+   Register : bus_err_address_i0_i28
+   Register : bus_err_address_i0_i27
 
-                                   Page 32
+                                   Page 21
 
 
 
 
-Design:  top                                           Date:  01/13/21  21:45:31
+Design:  top                                           Date:  02/06/21  16:00:11
 
 GSR Usage (cont)
 ----------------
+   Register : bus_err_address_i0_i26
    Register : bus_err_address_i0_i25
    Register : bus_err_address_i0_i24
    Register : bus_err_address_i0_i23
@@ -2141,6 +1416,20 @@ GSR Usage (cont)
    Register : bus_err_address_i0_i3
    Register : bus_err_address_i0_i2
    Register : bus_err_address_i0_i1
+   Register : wb_smpl_data_i30
+   Register : wb_smpl_data_i11
+   Register : wb_smpl_data_i29
+   Register : wb_smpl_data_i10
+   Register : wb_smpl_data_i28
+   Register : wb_smpl_data_i9
+   Register : wb_smpl_data_i27
+   Register : wb_smpl_data_i8
+   Register : wb_smpl_data_i26
+   Register : wb_smpl_data_i7
+   Register : wb_smpl_data_i25
+   Register : wb_smpl_data_i6
+   Register : wb_smpl_data_i24
+   Register : wb_smpl_data_i5
    Register : wb_smpl_data_i23
    Register : wb_smpl_data_i4
    Register : wb_smpl_data_i22
@@ -2157,71 +1446,782 @@ GSR Usage (cont)
    Register : wb_smpl_data_i14
    Register : wb_smpl_data_i13
    Register : wb_smpl_data_i12
-   Register : wb_smpl_data_i11
-   Register : wb_smpl_data_i10
-   Register : txtransport/lcl_data_i0
-   Register : txtransport/zero_baud_counter_49
-   Register : txtransport/baud_counter_i0
-   Register : txtransport/o_uart_tx_48
-   Register : txtransport/baud_counter_i23
-   Register : txtransport/baud_counter_i22
-   Register : txtransport/baud_counter_i21
-   Register : txtransport/baud_counter_i20
-   Register : txtransport/baud_counter_i19
-   Register : txtransport/baud_counter_i18
-   Register : txtransport/baud_counter_i17
-   Register : txtransport/baud_counter_i16
-   Register : txtransport/baud_counter_i15
+
+                                   Page 22
+
+
+
+
+Design:  top                                           Date:  02/06/21  16:00:11
+
+GSR Usage (cont)
+----------------
+   Register : o_dac_a_9__I_0/addr_space_3[[30__265
+   Register : o_dac_a_9__I_0/addr_space_3[[29__267
+   Register : o_dac_a_9__I_0/addr_space_3[[28__269
+   Register : o_dac_a_9__I_0/addr_space_3[[27__271
+   Register : o_dac_a_9__I_0/addr_space_3[[26__273
+   Register : o_dac_a_9__I_0/addr_space_0[[30__166
+   Register : o_dac_a_9__I_0/addr_space_0[[29__167
+   Register : o_dac_a_9__I_0/addr_space_0[[28__168
+   Register : o_dac_a_9__I_0/addr_space_0[[27__169
+   Register : o_dac_a_9__I_0/addr_space_0[[26__170
+   Register : o_dac_a_9__I_0/addr_space_0[[25__171
+   Register : o_dac_a_9__I_0/addr_space_0[[24__172
+   Register : o_dac_a_9__I_0/addr_space_0[[23__173
+   Register : o_dac_a_9__I_0/addr_space_0[[21__176
+   Register : o_dac_a_9__I_0/addr_space_0[[20__177
+   Register : o_dac_a_9__I_0/addr_space_0[[19__178
+   Register : o_dac_a_9__I_0/addr_space_0[[18__179
+   Register : o_dac_a_9__I_0/addr_space_0[[17__180
+   Register : o_dac_a_9__I_0/addr_space_0[[16__181
+   Register : o_dac_a_9__I_0/addr_space_0[[15__182
+   Register : o_dac_a_9__I_0/addr_space_0[[14__183
+   Register : o_dac_a_9__I_0/addr_space_0[[13__184
+   Register : o_dac_a_9__I_0/addr_space_0[[12__185
+   Register : o_dac_a_9__I_0/addr_space_0[[11__186
+   Register : o_dac_a_9__I_0/addr_space_0[[10__187
+   Register : o_dac_a_9__I_0/addr_space_0[[9__188
+   Register : o_dac_a_9__I_0/addr_space_0[[8__189
+   Register : o_dac_a_9__I_0/addr_space_0[[7__190
+   Register : o_dac_a_9__I_0/addr_space_0[[6__191
+   Register : o_dac_a_9__I_0/addr_space_0[[5__192
+   Register : o_dac_a_9__I_0/addr_space_0[[4__193
+   Register : o_dac_a_9__I_0/addr_space_0[[3__194
+   Register : o_dac_a_9__I_0/addr_space_0[[2__195
+   Register : o_dac_a_9__I_0/addr_space_0[[1__196
+   Register : o_dac_a_9__I_0/addr_space_0[[0__197
+   Register : o_dac_a_9__I_0/addr_space_1[[31__198
+   Register : o_dac_a_9__I_0/addr_space_1[[30__199
+   Register : o_dac_a_9__I_0/addr_space_1[[29__200
+   Register : o_dac_a_9__I_0/addr_space_1[[28__201
+   Register : o_dac_a_9__I_0/addr_space_1[[27__202
+   Register : o_dac_a_9__I_0/addr_space_1[[26__203
+   Register : o_dac_a_9__I_0/addr_space_1[[25__204
+   Register : o_dac_a_9__I_0/addr_space_1[[24__205
+   Register : o_dac_a_9__I_0/addr_space_1[[23__206
+   Register : o_dac_a_9__I_0/addr_space_1[[22__207
+   Register : o_dac_a_9__I_0/addr_space_1[[21__208
+   Register : o_dac_a_9__I_0/addr_space_1[[20__209
+   Register : o_dac_a_9__I_0/addr_space_1[[19__210
+   Register : o_dac_a_9__I_0/addr_space_1[[18__211
+   Register : o_dac_a_9__I_0/addr_space_1[[17__212
+   Register : o_dac_a_9__I_0/addr_space_1[[16__213
+   Register : o_dac_a_9__I_0/addr_space_1[[15__214
+   Register : o_dac_a_9__I_0/addr_space_1[[14__215
+   Register : o_dac_a_9__I_0/addr_space_1[[13__216
+   Register : o_dac_a_9__I_0/addr_space_1[[12__217
+   Register : o_dac_a_9__I_0/addr_space_1[[11__218
+
+                                   Page 23
+
+
+
+
+Design:  top                                           Date:  02/06/21  16:00:11
+
+GSR Usage (cont)
+----------------
+   Register : o_dac_a_9__I_0/addr_space_1[[10__219
+   Register : o_dac_a_9__I_0/addr_space_1[[9__220
+   Register : o_dac_a_9__I_0/addr_space_1[[8__221
+   Register : o_dac_a_9__I_0/addr_space_1[[7__222
+   Register : o_dac_a_9__I_0/addr_space_1[[6__223
+   Register : o_dac_a_9__I_0/addr_space_1[[5__224
+   Register : o_dac_a_9__I_0/addr_space_1[[4__225
+   Register : o_dac_a_9__I_0/addr_space_1[[3__226
+   Register : o_dac_a_9__I_0/addr_space_1[[2__227
+   Register : o_dac_a_9__I_0/addr_space_1[[1__228
+   Register : o_dac_a_9__I_0/addr_space_1[[0__229
+   Register : o_dac_a_9__I_0/addr_space_2[[31__230
+   Register : o_dac_a_9__I_0/addr_space_2[[30__231
+   Register : o_dac_a_9__I_0/addr_space_2[[29__232
+   Register : o_dac_a_9__I_0/addr_space_2[[28__233
+   Register : o_dac_a_9__I_0/addr_space_2[[27__234
+   Register : o_dac_a_9__I_0/addr_space_2[[26__235
+   Register : o_dac_a_9__I_0/addr_space_2[[25__236
+   Register : o_dac_a_9__I_0/addr_space_2[[24__237
+   Register : o_dac_a_9__I_0/addr_space_2[[23__238
+   Register : o_dac_a_9__I_0/addr_space_2[[22__239
+   Register : o_dac_a_9__I_0/addr_space_2[[21__240
+   Register : o_dac_a_9__I_0/addr_space_2[[20__241
+   Register : o_dac_a_9__I_0/addr_space_2[[19__242
+   Register : o_dac_a_9__I_0/addr_space_2[[18__243
+   Register : o_dac_a_9__I_0/addr_space_2[[17__244
+   Register : o_dac_a_9__I_0/addr_space_2[[16__245
+   Register : o_dac_a_9__I_0/addr_space_2[[15__246
+   Register : o_dac_a_9__I_0/addr_space_2[[14__247
+   Register : o_dac_a_9__I_0/addr_space_2[[13__248
+   Register : o_dac_a_9__I_0/addr_space_2[[12__249
+   Register : o_dac_a_9__I_0/addr_space_2[[11__250
+   Register : o_dac_a_9__I_0/addr_space_2[[10__251
+   Register : o_dac_a_9__I_0/addr_space_2[[9__252
+   Register : o_dac_a_9__I_0/addr_space_2[[8__253
+   Register : o_dac_a_9__I_0/addr_space_2[[7__254
+   Register : o_dac_a_9__I_0/addr_space_2[[6__255
+   Register : o_dac_a_9__I_0/addr_space_2[[5__256
+   Register : o_dac_a_9__I_0/addr_space_2[[4__257
+   Register : o_dac_a_9__I_0/addr_space_2[[3__258
+   Register : o_dac_a_9__I_0/addr_space_2[[2__259
+   Register : o_dac_a_9__I_0/addr_space_2[[1__260
+   Register : o_dac_a_9__I_0/addr_space_2[[0__261
+   Register : o_dac_a_9__I_0/addr_space_3[[25__275
+   Register : o_dac_a_9__I_0/addr_space_3[[24__277
+   Register : o_dac_a_9__I_0/addr_space_3[[23__279
+   Register : o_dac_a_9__I_0/addr_space_3[[22__281
+   Register : o_dac_a_9__I_0/addr_space_3[[21__283
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i0
+   Register : o_dac_a_9__I_0/o_wb_data_i0
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_rs_i1
+   Register : o_dac_a_9__I_0/addr_space_3[[20__285
+   Register : o_dac_a_9__I_0/carrier_increment_i0
+   Register :
+        o_dac_a_9__I_0/sine_lookup_width_minus_modulation_deviation_amount_i0
+   Register :
+
+                                   Page 24
+
+
+
+
+Design:  top                                           Date:  02/06/21  16:00:11
+
+GSR Usage (cont)
+----------------
+        o_dac_a_9__I_0/modulation_deviation_amount_minus_sine_lookup_width_i0
+   Register : o_dac_a_9__I_0/addr_space_0[[31__165
+   Register : o_dac_a_9__I_0/addr_space_0[[22__175
+   Register : o_dac_a_9__I_0/addr_space_3[[19__287
+   Register : o_dac_a_9__I_0/addr_space_3[[18__289
+   Register : o_dac_a_9__I_0/addr_space_3[[17__291
+   Register : o_dac_a_9__I_0/addr_space_3[[16__293
+   Register : o_dac_a_9__I_0/addr_space_3[[15__295
+   Register : o_dac_a_9__I_0/addr_space_3[[14__297
+   Register : o_dac_a_9__I_0/addr_space_3[[13__299
+   Register : o_dac_a_9__I_0/addr_space_3[[12__301
+   Register : o_dac_a_9__I_0/addr_space_3[[11__303
+   Register : o_dac_a_9__I_0/addr_space_3[[10__305
+   Register : o_dac_a_9__I_0/addr_space_3[[9__307
+   Register : o_dac_a_9__I_0/addr_space_3[[8__309
+   Register : o_dac_a_9__I_0/addr_space_3[[7__311
+   Register : o_dac_a_9__I_0/addr_space_3[[6__313
+   Register : o_dac_a_9__I_0/addr_space_3[[5__315
+   Register : o_dac_a_9__I_0/addr_space_3[[4__317
+   Register : o_dac_a_9__I_0/addr_space_3[[3__319
+   Register : o_dac_a_9__I_0/addr_space_3[[2__321
+   Register : o_dac_a_9__I_0/addr_space_3[[1__323
+   Register : o_dac_a_9__I_0/addr_space_3[[0__325
+   Register : o_dac_a_9__I_0/addr_space_3[[31__263
+   Register : o_dac_a_9__I_0/o_wb_ack_327
+   Register :
+        o_dac_a_9__I_0/modulation_deviation_amount_minus_sine_lookup_width_i16
+   Register :
+        o_dac_a_9__I_0/modulation_deviation_amount_minus_sine_lookup_width_i15
+   Register :
+        o_dac_a_9__I_0/modulation_deviation_amount_minus_sine_lookup_width_i14
+   Register :
+        o_dac_a_9__I_0/modulation_deviation_amount_minus_sine_lookup_width_i13
+   Register :
+        o_dac_a_9__I_0/modulation_deviation_amount_minus_sine_lookup_width_i12
+   Register :
+        o_dac_a_9__I_0/modulation_deviation_amount_minus_sine_lookup_width_i11
+   Register :
+        o_dac_a_9__I_0/modulation_deviation_amount_minus_sine_lookup_width_i10
+   Register :
+        o_dac_a_9__I_0/modulation_deviation_amount_minus_sine_lookup_width_i9
+   Register :
+        o_dac_a_9__I_0/modulation_deviation_amount_minus_sine_lookup_width_i8
+   Register :
+        o_dac_a_9__I_0/modulation_deviation_amount_minus_sine_lookup_width_i7
+   Register :
+        o_dac_a_9__I_0/modulation_deviation_amount_minus_sine_lookup_width_i6
+   Register :
+        o_dac_a_9__I_0/modulation_deviation_amount_minus_sine_lookup_width_i5
+   Register :
+        o_dac_a_9__I_0/modulation_deviation_amount_minus_sine_lookup_width_i4
+   Register :
+        o_dac_a_9__I_0/modulation_deviation_amount_minus_sine_lookup_width_i3
+   Register :
+        o_dac_a_9__I_0/modulation_deviation_amount_minus_sine_lookup_width_i2
+   Register :
+
+                                   Page 25
+
+
+
+
+Design:  top                                           Date:  02/06/21  16:00:11
+
+GSR Usage (cont)
+----------------
+        o_dac_a_9__I_0/modulation_deviation_amount_minus_sine_lookup_width_i1
+   Register :
+        o_dac_a_9__I_0/sine_lookup_width_minus_modulation_deviation_amount_i16
+   Register :
+        o_dac_a_9__I_0/sine_lookup_width_minus_modulation_deviation_amount_i15
+   Register :
+        o_dac_a_9__I_0/sine_lookup_width_minus_modulation_deviation_amount_i14
+   Register :
+        o_dac_a_9__I_0/sine_lookup_width_minus_modulation_deviation_amount_i13
+   Register :
+        o_dac_a_9__I_0/sine_lookup_width_minus_modulation_deviation_amount_i12
+   Register :
+        o_dac_a_9__I_0/sine_lookup_width_minus_modulation_deviation_amount_i11
+   Register :
+        o_dac_a_9__I_0/sine_lookup_width_minus_modulation_deviation_amount_i10
+   Register :
+        o_dac_a_9__I_0/sine_lookup_width_minus_modulation_deviation_amount_i9
+   Register :
+        o_dac_a_9__I_0/sine_lookup_width_minus_modulation_deviation_amount_i8
+   Register :
+        o_dac_a_9__I_0/sine_lookup_width_minus_modulation_deviation_amount_i7
+   Register :
+        o_dac_a_9__I_0/sine_lookup_width_minus_modulation_deviation_amount_i6
+   Register :
+        o_dac_a_9__I_0/sine_lookup_width_minus_modulation_deviation_amount_i5
+   Register :
+        o_dac_a_9__I_0/sine_lookup_width_minus_modulation_deviation_amount_i4
+   Register :
+        o_dac_a_9__I_0/sine_lookup_width_minus_modulation_deviation_amount_i3
+   Register :
+        o_dac_a_9__I_0/sine_lookup_width_minus_modulation_deviation_amount_i2
+   Register :
+        o_dac_a_9__I_0/sine_lookup_width_minus_modulation_deviation_amount_i1
+   Register : o_dac_a_9__I_0/carrier_increment_i30
+   Register : o_dac_a_9__I_0/carrier_increment_i29
+   Register : o_dac_a_9__I_0/carrier_increment_i28
+   Register : o_dac_a_9__I_0/carrier_increment_i27
+   Register : o_dac_a_9__I_0/carrier_increment_i26
+   Register : o_dac_a_9__I_0/carrier_increment_i25
+   Register : o_dac_a_9__I_0/carrier_increment_i24
+   Register : o_dac_a_9__I_0/carrier_increment_i23
+   Register : o_dac_a_9__I_0/carrier_increment_i22
+   Register : o_dac_a_9__I_0/carrier_increment_i21
+   Register : o_dac_a_9__I_0/carrier_increment_i20
+   Register : o_dac_a_9__I_0/carrier_increment_i19
+   Register : o_dac_a_9__I_0/carrier_increment_i18
+   Register : o_dac_a_9__I_0/carrier_increment_i17
+   Register : o_dac_a_9__I_0/carrier_increment_i16
+   Register : o_dac_a_9__I_0/carrier_increment_i15
+   Register : o_dac_a_9__I_0/carrier_increment_i14
+   Register : o_dac_a_9__I_0/carrier_increment_i13
+   Register : o_dac_a_9__I_0/carrier_increment_i12
+   Register : o_dac_a_9__I_0/carrier_increment_i11
+   Register : o_dac_a_9__I_0/carrier_increment_i10
+   Register : o_dac_a_9__I_0/carrier_increment_i9
+   Register : o_dac_a_9__I_0/carrier_increment_i8
+
+                                   Page 26
+
+
+
+
+Design:  top                                           Date:  02/06/21  16:00:11
+
+GSR Usage (cont)
+----------------
+   Register : o_dac_a_9__I_0/carrier_increment_i7
+   Register : o_dac_a_9__I_0/carrier_increment_i6
+   Register : o_dac_a_9__I_0/carrier_increment_i5
+   Register : o_dac_a_9__I_0/carrier_increment_i4
+   Register : o_dac_a_9__I_0/carrier_increment_i3
+   Register : o_dac_a_9__I_0/carrier_increment_i2
+   Register : o_dac_a_9__I_0/carrier_increment_i1
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_rs_i16
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_rs_i15
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_rs_i14
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_rs_i13
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_rs_i12
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_rs_i11
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_rs_i10
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_rs_i9
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_rs_i8
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_rs_i7
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_rs_i6
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_rs_i5
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_rs_i4
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_rs_i3
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_rs_i2
+   Register : o_dac_a_9__I_0/o_wb_data_i31
+   Register : o_dac_a_9__I_0/o_wb_data_i30
+   Register : o_dac_a_9__I_0/o_wb_data_i29
+   Register : o_dac_a_9__I_0/o_wb_data_i28
+   Register : o_dac_a_9__I_0/o_wb_data_i27
+   Register : o_dac_a_9__I_0/o_wb_data_i26
+   Register : o_dac_a_9__I_0/o_wb_data_i25
+   Register : o_dac_a_9__I_0/o_wb_data_i24
+   Register : o_dac_a_9__I_0/o_wb_data_i23
+   Register : o_dac_a_9__I_0/o_wb_data_i22
+   Register : o_dac_a_9__I_0/o_wb_data_i21
+   Register : o_dac_a_9__I_0/o_wb_data_i20
+   Register : o_dac_a_9__I_0/o_wb_data_i19
+   Register : o_dac_a_9__I_0/o_wb_data_i18
+   Register : o_dac_a_9__I_0/o_wb_data_i17
+   Register : o_dac_a_9__I_0/o_wb_data_i16
+   Register : o_dac_a_9__I_0/o_wb_data_i15
+   Register : o_dac_a_9__I_0/o_wb_data_i14
+   Register : o_dac_a_9__I_0/o_wb_data_i13
+   Register : o_dac_a_9__I_0/o_wb_data_i12
+   Register : o_dac_a_9__I_0/o_wb_data_i11
+   Register : o_dac_a_9__I_0/o_wb_data_i10
+   Register : o_dac_a_9__I_0/o_wb_data_i9
+   Register : o_dac_a_9__I_0/o_wb_data_i8
+   Register : o_dac_a_9__I_0/o_wb_data_i7
+   Register : o_dac_a_9__I_0/o_wb_data_i6
+   Register : o_dac_a_9__I_0/o_wb_data_i5
+   Register : o_dac_a_9__I_0/o_wb_data_i4
+   Register : o_dac_a_9__I_0/o_wb_data_i3
+   Register : o_dac_a_9__I_0/o_wb_data_i2
+   Register : o_dac_a_9__I_0/o_wb_data_i1
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i30
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i29
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i28
+
+                                   Page 27
+
+
+
+
+Design:  top                                           Date:  02/06/21  16:00:11
+
+GSR Usage (cont)
+----------------
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i27
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i26
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i25
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i24
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i23
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i22
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i21
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i20
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i19
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i18
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i17
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i16
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i15
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i14
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i13
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i12
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i11
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i10
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i9
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i8
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i7
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i6
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i5
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i4
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i3
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i2
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i1
+   Register : o_dac_a_9__I_0/modulation/increment_i0
+   Register : o_dac_a_9__I_0/modulation/increment_i30
+   Register : o_dac_a_9__I_0/modulation/increment_i29
+   Register : o_dac_a_9__I_0/modulation/increment_i28
+   Register : o_dac_a_9__I_0/modulation/increment_i27
+   Register : o_dac_a_9__I_0/modulation/increment_i26
+   Register : o_dac_a_9__I_0/modulation/increment_i25
+   Register : o_dac_a_9__I_0/modulation/increment_i24
+   Register : o_dac_a_9__I_0/modulation/increment_i23
+   Register : o_dac_a_9__I_0/modulation/increment_i22
+   Register : o_dac_a_9__I_0/modulation/increment_i21
+   Register : o_dac_a_9__I_0/modulation/increment_i20
+   Register : o_dac_a_9__I_0/modulation/increment_i19
+   Register : o_dac_a_9__I_0/modulation/increment_i18
+   Register : o_dac_a_9__I_0/modulation/increment_i17
+   Register : o_dac_a_9__I_0/modulation/increment_i16
+   Register : o_dac_a_9__I_0/modulation/increment_i15
+   Register : o_dac_a_9__I_0/modulation/increment_i14
+   Register : o_dac_a_9__I_0/modulation/increment_i13
+   Register : o_dac_a_9__I_0/modulation/increment_i12
+   Register : o_dac_a_9__I_0/modulation/increment_i11
+   Register : o_dac_a_9__I_0/modulation/increment_i10
+   Register : o_dac_a_9__I_0/modulation/increment_i9
+   Register : o_dac_a_9__I_0/modulation/increment_i8
+   Register : o_dac_a_9__I_0/modulation/increment_i7
+   Register : o_dac_a_9__I_0/modulation/increment_i6
+   Register : o_dac_a_9__I_0/modulation/increment_i5
+   Register : o_dac_a_9__I_0/modulation/increment_i4
+   Register : o_dac_a_9__I_0/modulation/increment_i3
+
+                                   Page 28
+
+
+
+
+Design:  top                                           Date:  02/06/21  16:00:11
+
+GSR Usage (cont)
+----------------
+   Register : o_dac_a_9__I_0/modulation/increment_i2
+   Register : o_dac_a_9__I_0/modulation/increment_i1
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i32
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i31
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i30
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i29
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i28
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i27
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i26
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i25
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i24
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i23
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i22
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i21
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i20
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i19
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i18
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i17
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i16
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i15
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i14
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i13
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i12
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i11
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i10
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i9
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i8
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i7
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i6
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i0
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i5
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i4
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i3
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_negation_i_i0
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i2
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/index_i_i0
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i1
+   Register :
+        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i0
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/index_i_i9
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/index_i_i8
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/index_i_i7
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/index_i_i6
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/index_i_i5
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/index_i_i4
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/index_i_i3
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/index_i_i2
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/index_i_i1
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_negation_i_i1
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i11
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i10
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i9
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i8
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i7
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i6
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i5
+
+                                   Page 29
+
+
+
+
+Design:  top                                           Date:  02/06/21  16:00:11
+
+GSR Usage (cont)
+----------------
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i4
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i3
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i2
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i1
+   Register :
+        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i14
+   Register :
+        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i13
+   Register :
+        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i12
+   Register :
+        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i11
+   Register :
+        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i10
+   Register :
+        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i9
+   Register :
+        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i8
+   Register :
+        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i7
+   Register :
+        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i6
+   Register :
+        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i5
+   Register :
+        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i4
+   Register :
+        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i3
+   Register :
+        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i2
+   Register :
+        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i1
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i0
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i31
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i30
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i29
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i28
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i27
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i26
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i25
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i24
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i23
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i22
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i21
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i20
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i19
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i18
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i17
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i16
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i15
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i14
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i13
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i12
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i11
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i10
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i9
+
+                                   Page 30
+
+
+
+
+Design:  top                                           Date:  02/06/21  16:00:11
+
+GSR Usage (cont)
+----------------
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i8
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i7
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i6
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i5
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i4
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i3
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i2
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i1
+   Register : o_dac_a_9__I_0/carrier/increment_i0
+   Register : o_dac_a_9__I_0/carrier/increment_i30
+   Register : o_dac_a_9__I_0/carrier/increment_i29
+   Register : o_dac_a_9__I_0/carrier/increment_i28
+   Register : o_dac_a_9__I_0/carrier/increment_i27
+   Register : o_dac_a_9__I_0/carrier/increment_i26
+   Register : o_dac_a_9__I_0/carrier/increment_i25
+   Register : o_dac_a_9__I_0/carrier/increment_i24
+   Register : o_dac_a_9__I_0/carrier/increment_i23
+   Register : o_dac_a_9__I_0/carrier/increment_i22
+   Register : o_dac_a_9__I_0/carrier/increment_i21
+   Register : o_dac_a_9__I_0/carrier/increment_i20
+   Register : o_dac_a_9__I_0/carrier/increment_i19
+   Register : o_dac_a_9__I_0/carrier/increment_i18
+   Register : o_dac_a_9__I_0/carrier/increment_i17
+   Register : o_dac_a_9__I_0/carrier/increment_i16
+   Register : o_dac_a_9__I_0/carrier/increment_i15
+   Register : o_dac_a_9__I_0/carrier/increment_i14
+   Register : o_dac_a_9__I_0/carrier/increment_i13
+   Register : o_dac_a_9__I_0/carrier/increment_i12
+   Register : o_dac_a_9__I_0/carrier/increment_i11
+   Register : o_dac_a_9__I_0/carrier/increment_i10
+   Register : o_dac_a_9__I_0/carrier/increment_i9
+   Register : o_dac_a_9__I_0/carrier/increment_i8
+   Register : o_dac_a_9__I_0/carrier/increment_i7
+   Register : o_dac_a_9__I_0/carrier/increment_i6
+   Register : o_dac_a_9__I_0/carrier/increment_i5
+   Register : o_dac_a_9__I_0/carrier/increment_i4
+   Register : o_dac_a_9__I_0/carrier/increment_i3
+   Register : o_dac_a_9__I_0/carrier/increment_i2
+   Register : o_dac_a_9__I_0/carrier/increment_i1
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i14
+        
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i13
+        
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i12
+        
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i11
+        
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i10
+        
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i9
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i1
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i8
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i1
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i7
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_negation_i_i0
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_negation_q_i0
+
+                                   Page 31
+
+
+
+
+Design:  top                                           Date:  02/06/21  16:00:11
+
+GSR Usage (cont)
+----------------
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/index_i_i0
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/index_q_i0
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i0
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i1
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i0
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i6
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i5
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i4
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i3
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i2
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i1
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i18
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i17
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i16
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i15
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i14
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i13
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i12
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i11
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i10
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i9
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i8
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i7
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i6
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i5
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i4
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i3
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i2
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i11
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i10
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i9
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i8
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i7
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i6
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i5
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i4
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i3
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i2
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i1
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i15
+        
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i14
+        
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i13
+        
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i12
+        
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i11
+        
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i10
+        
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i9
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i8
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i7
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i6
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i5
+
+                                   Page 32
+
+
+
+
+Design:  top                                           Date:  02/06/21  16:00:11
+
+GSR Usage (cont)
+----------------
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i4
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i3
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i2
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i1
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/index_q_i9
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/index_q_i8
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/index_q_i7
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/index_q_i6
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/index_q_i5
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/index_q_i4
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/index_q_i3
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/index_q_i2
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/index_q_i1
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/index_i_i9
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/index_i_i8
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/index_i_i7
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/index_i_i6
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/index_i_i5
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/index_i_i4
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/index_i_i3
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/index_i_i2
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/index_i_i1
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_negation_q_i1
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_negation_i_i1
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i18
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i17
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i16
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i15
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i14
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i13
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i12
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i11
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i10
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i9
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i8
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i7
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i6
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i5
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i4
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i3
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i2
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i11
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i31
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i30
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i29
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i28
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i27
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i26
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i25
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i24
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i23
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i22
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i21
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i20
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i19
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i18
 
                                    Page 33
 
 
 
 
-Design:  top                                           Date:  01/13/21  21:45:31
+Design:  top                                           Date:  02/06/21  16:00:11
 
 GSR Usage (cont)
 ----------------
-   Register : txtransport/baud_counter_i14
-   Register : txtransport/baud_counter_i13
-   Register : txtransport/baud_counter_i12
-   Register : txtransport/baud_counter_i11
-   Register : txtransport/baud_counter_i10
-   Register : txtransport/baud_counter_i9
-   Register : txtransport/baud_counter_i8
-   Register : txtransport/baud_counter_i7
-   Register : txtransport/baud_counter_i6
-   Register : txtransport/baud_counter_i5
-   Register : txtransport/baud_counter_i4
-   Register : txtransport/baud_counter_i3
-   Register : txtransport/baud_counter_i2
-   Register : txtransport/baud_counter_i1
-   Register : txtransport/lcl_data_i7
-   Register : txtransport/lcl_data_i6
-   Register : txtransport/lcl_data_i5
-   Register : txtransport/lcl_data_i4
-   Register : txtransport/lcl_data_i3
-   Register : txtransport/lcl_data_i2
-   Register : txtransport/lcl_data_i1
-   Register : txtransport/r_busy_45
-   Register : txtransport/state_546__i3
-   Register : txtransport/state_546__i2
-   Register : txtransport/state_546__i1
-   Register : txtransport/state_546__i0
-   Register : wb_smpl_data_i9
-   Register : wb_smpl_data_i8
-   Register : wb_smpl_data_i7
-   Register : wb_smpl_data_i6
-   Register : wb_smpl_data_i5
-   SP8KC : genbus/genhex/mux_105
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i17
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i16
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i15
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i14
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i13
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i12
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i11
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i10
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i9
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i8
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i7
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i6
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i5
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i4
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i3
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i2
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i1
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i0
+   SP8KC : genbus/genhex/mux_100
 
 Run Time and Memory Usage
 -------------------------
 
    Total CPU Time: 2 secs  
-   Total REAL Time: 3 secs  
+   Total REAL Time: 2 secs  
    Peak Memory Usage: 88 MB
         
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

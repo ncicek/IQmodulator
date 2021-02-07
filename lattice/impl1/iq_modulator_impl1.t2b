@@ -1,0 +1,5 @@
+
+
+-g RamCfg:Reset
+
+-path "D:/Documents/Git_Local/fm_modulator/lattice"  

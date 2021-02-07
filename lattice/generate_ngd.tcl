@@ -50,7 +50,7 @@ set Para(install_dir) $env(TOOLRTF)
 set Para(FPGAPath) "[file join $Para(install_dir) ispfpga bin $platformpath]"
 set Para(bin_dir) "[file join $Para(install_dir) bin $platformpath]"
 
-set Para(ModuleName) "dynamic_pll"
+set Para(ModuleName) "sys_clk"
 set Para(Module) "PLL"
 set Para(libname) machxo3lf
 set Para(arch_name) xo3c00f

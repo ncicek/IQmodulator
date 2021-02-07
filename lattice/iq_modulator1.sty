@@ -67,7 +67,7 @@
     <Property name="PROP_LST_MaxFanout" value="1000" time="0"/>
     <Property name="PROP_LST_MuxStyle" value="Auto" time="0"/>
     <Property name="PROP_LST_NumCriticalPaths" value="3" time="0"/>
-    <Property name="PROP_LST_OptimizeGoal" value="Balanced" time="0"/>
+    <Property name="PROP_LST_OptimizeGoal" value="Timing" time="0"/>
     <Property name="PROP_LST_PropagatConst" value="True" time="0"/>
     <Property name="PROP_LST_RAMStyle" value="Auto" time="0"/>
     <Property name="PROP_LST_ROMStyle" value="Auto" time="0"/>
@@ -79,26 +79,26 @@
     <Property name="PROP_LST_VHDL2008" value="False" time="0"/>
     <Property name="PROP_MAPSTA_AnalysisOption" value="Standard Setup and Hold Analysis" time="0"/>
     <Property name="PROP_MAPSTA_AutoTiming" value="True" time="0"/>
-    <Property name="PROP_MAPSTA_CheckUnconstrainedConns" value="False" time="0"/>
-    <Property name="PROP_MAPSTA_CheckUnconstrainedPaths" value="False" time="0"/>
+    <Property name="PROP_MAPSTA_CheckUnconstrainedConns" value="True" time="0"/>
+    <Property name="PROP_MAPSTA_CheckUnconstrainedPaths" value="True" time="0"/>
     <Property name="PROP_MAPSTA_FullName" value="False" time="0"/>
     <Property name="PROP_MAPSTA_NumUnconstrainedPaths" value="0" time="0"/>
     <Property name="PROP_MAPSTA_ReportStyle" value="Verbose Timing Report" time="0"/>
     <Property name="PROP_MAPSTA_RouteEstAlogtithm" value="0" time="0"/>
-    <Property name="PROP_MAPSTA_RptAsynTimLoop" value="False" time="0"/>
-    <Property name="PROP_MAPSTA_WordCasePaths" value="1" time="0"/>
+    <Property name="PROP_MAPSTA_RptAsynTimLoop" value="True" time="0"/>
+    <Property name="PROP_MAPSTA_WordCasePaths" value="10" time="0"/>
     <Property name="PROP_MAP_IgnorePreErr" value="True" time="0"/>
     <Property name="PROP_MAP_MAPIORegister" value="Auto" time="0"/>
     <Property name="PROP_MAP_MAPInferGSR" value="True" time="0"/>
     <Property name="PROP_MAP_MapModArgs" value="" time="0"/>
     <Property name="PROP_MAP_OvermapDevice" value="False" time="0"/>
     <Property name="PROP_MAP_PackLogMapDes" value="0" time="0"/>
-    <Property name="PROP_MAP_RegRetiming" value="False" time="0"/>
-    <Property name="PROP_MAP_SigCrossRef" value="False" time="0"/>
-    <Property name="PROP_MAP_SymCrossRef" value="False" time="0"/>
-    <Property name="PROP_MAP_TimingDriven" value="False" time="0"/>
-    <Property name="PROP_MAP_TimingDrivenNodeRep" value="False" time="0"/>
-    <Property name="PROP_MAP_TimingDrivenPack" value="False" time="0"/>
+    <Property name="PROP_MAP_RegRetiming" value="True" time="0"/>
+    <Property name="PROP_MAP_SigCrossRef" value="True" time="0"/>
+    <Property name="PROP_MAP_SymCrossRef" value="True" time="0"/>
+    <Property name="PROP_MAP_TimingDriven" value="True" time="0"/>
+    <Property name="PROP_MAP_TimingDrivenNodeRep" value="True" time="0"/>
+    <Property name="PROP_MAP_TimingDrivenPack" value="True" time="0"/>
     <Property name="PROP_PARSTA_AnalysisOption" value="Standard Setup and Hold Analysis" time="0"/>
     <Property name="PROP_PARSTA_AutoTiming" value="True" time="0"/>
     <Property name="PROP_PARSTA_CheckUnconstrainedConns" value="False" time="0"/>
@@ -115,24 +115,24 @@
     <Property name="PROP_PAR_EffortParDes" value="5" time="0"/>
     <Property name="PROP_PAR_MultiSeedSortMode" value="Worst Slack" time="0"/>
     <Property name="PROP_PAR_NewRouteParDes" value="NBR" time="0"/>
-    <Property name="PROP_PAR_PARClockSkew" value="Off" time="0"/>
+    <Property name="PROP_PAR_PARClockSkew" value="2 (recommended for On)" time="0"/>
     <Property name="PROP_PAR_PARModArgs" value="" time="0"/>
     <Property name="PROP_PAR_ParMultiNodeList" value="" time="0"/>
     <Property name="PROP_PAR_ParRunPlaceOnly" value="False" time="0"/>
-    <Property name="PROP_PAR_PlcIterParDes" value="1" time="0"/>
+    <Property name="PROP_PAR_PlcIterParDes" value="5" time="0"/>
     <Property name="PROP_PAR_PlcStCostTblParDes" value="1" time="0"/>
     <Property name="PROP_PAR_PrefErrorOut" value="True" time="0"/>
     <Property name="PROP_PAR_RemoveDir" value="True" time="0"/>
-    <Property name="PROP_PAR_RouteDlyRedParDes" value="0" time="0"/>
-    <Property name="PROP_PAR_RoutePassParDes" value="6" time="0"/>
-    <Property name="PROP_PAR_RouteResOptParDes" value="0" time="0"/>
-    <Property name="PROP_PAR_RoutingCDP" value="0" time="0"/>
-    <Property name="PROP_PAR_RoutingCDR" value="0" time="0"/>
+    <Property name="PROP_PAR_RouteDlyRedParDes" value="5" time="0"/>
+    <Property name="PROP_PAR_RoutePassParDes" value="5" time="0"/>
+    <Property name="PROP_PAR_RouteResOptParDes" value="6" time="0"/>
+    <Property name="PROP_PAR_RoutingCDP" value="1" time="0"/>
+    <Property name="PROP_PAR_RoutingCDR" value="1" time="0"/>
     <Property name="PROP_PAR_RunParWithTrce" value="False" time="0"/>
     <Property name="PROP_PAR_SaveBestRsltParDes" value="1" time="0"/>
     <Property name="PROP_PAR_StopZero" value="False" time="0"/>
     <Property name="PROP_PAR_parHold" value="On" time="0"/>
-    <Property name="PROP_PAR_parPathBased" value="Off" time="0"/>
+    <Property name="PROP_PAR_parPathBased" value="On" time="0"/>
     <Property name="PROP_PRE_CmdLineArgs" value="" time="0"/>
     <Property name="PROP_PRE_EdfArrayBoundsCase" value="False" time="0"/>
     <Property name="PROP_PRE_EdfAutoResOfRam" value="False" time="0"/>

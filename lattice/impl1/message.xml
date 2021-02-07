@@ -4,7 +4,7 @@
         <Message>
             <ID>51001051</ID>
             <Severity>Warning</Severity>
-            <Dynamic>genbus/genhex/mux_105</Dynamic>
+            <Dynamic>genbus/genhex/mux_100</Dynamic>
         </Message>
     </Task>
     <Task name="Lattice_Synthesis">
@@ -15,6 +15,22 @@
         <Message>
             <ID>35001781</ID>
             <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901875</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(29): </Dynamic>
+            <Dynamic>o_cw</Dynamic>
+            <Navigation>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v</Navigation>
+            <Navigation>29</Navigation>
+        </Message>
+        <Message>
+            <ID>35901875</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(29): </Dynamic>
+            <Dynamic>control_mode_dac_a</Dynamic>
+            <Navigation>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v</Navigation>
+            <Navigation>29</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -60,7 +76,7 @@
             <ID>35901018</ID>
             <Severity>Info</Severity>
             <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1696): </Dynamic>
-            <Dynamic>EHXPLLJ_renamed_due_excessive_length_1</Dynamic>
+            <Dynamic>EHXPLLJ(CLKFB_DIV=6,CLKOP_DIV=7,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS_ENABLE=&quot;DISABLED&quot;,CLKOS2_ENABLE=&quot;DISABLED&quot;,CLKOS3_ENABLE=&quot;DISABLED&quot;,CLKOP_CPHASE=6,CLKOS_TRIM_POL=&quot;FALLING&quot;)</Dynamic>
             <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v</Navigation>
             <Navigation>1696</Navigation>
         </Message>
@@ -71,24 +87,6 @@
             <Dynamic>rxuartlite(CLOCKS_PER_BAUD=10000)</Dynamic>
             <Navigation>d:/documents/git_local/fm_modulator/rtl/debug_bus/rxuartlite.v</Navigation>
             <Navigation>64</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/documents/git_local/fm_modulator/rtl/debug_bus/rxuartlite.v(103): </Dynamic>
-            <Dynamic>32</Dynamic>
-            <Dynamic>24</Dynamic>
-            <Navigation>d:/documents/git_local/fm_modulator/rtl/debug_bus/rxuartlite.v</Navigation>
-            <Navigation>103</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/documents/git_local/fm_modulator/rtl/debug_bus/rxuartlite.v(133): </Dynamic>
-            <Dynamic>32</Dynamic>
-            <Dynamic>4</Dynamic>
-            <Navigation>d:/documents/git_local/fm_modulator/rtl/debug_bus/rxuartlite.v</Navigation>
-            <Navigation>133</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -171,30 +169,30 @@
             <Navigation>43</Navigation>
         </Message>
         <Message>
-            <ID>35901209</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/documents/git_local/fm_modulator/rtl/top.v(113): </Dynamic>
-            <Dynamic>32</Dynamic>
-            <Dynamic>17</Dynamic>
-            <Navigation>d:/documents/git_local/fm_modulator/rtl/top.v</Navigation>
-            <Navigation>113</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/documents/git_local/fm_modulator/rtl/top.v(114): </Dynamic>
-            <Dynamic>32</Dynamic>
-            <Dynamic>17</Dynamic>
-            <Navigation>d:/documents/git_local/fm_modulator/rtl/top.v</Navigation>
-            <Navigation>114</Navigation>
-        </Message>
-        <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(3): </Dynamic>
+            <Dynamic>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(4): </Dynamic>
             <Dynamic>fm_generator_wb_slave</Dynamic>
             <Navigation>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v</Navigation>
-            <Navigation>3</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(27): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>17</Dynamic>
+            <Navigation>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v</Navigation>
+            <Navigation>27</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(28): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>17</Dynamic>
+            <Navigation>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v</Navigation>
+            <Navigation>28</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -249,20 +247,28 @@
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(85): </Dynamic>
+            <Dynamic>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(96): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>17</Dynamic>
             <Navigation>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v</Navigation>
-            <Navigation>85</Navigation>
+            <Navigation>96</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(86): </Dynamic>
+            <Dynamic>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(97): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>17</Dynamic>
             <Navigation>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v</Navigation>
-            <Navigation>86</Navigation>
+            <Navigation>97</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(114): </Dynamic>
+            <Dynamic>control_mode_dac_a[1]</Dynamic>
+            <Navigation>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v</Navigation>
+            <Navigation>114</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -284,7 +290,7 @@
             <ID>35901018</ID>
             <Severity>Info</Severity>
             <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1696): </Dynamic>
-            <Dynamic>EHXPLLJ_renamed_due_excessive_length_2</Dynamic>
+            <Dynamic>EHXPLLJ_renamed_due_excessive_length_1</Dynamic>
             <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v</Navigation>
             <Navigation>1696</Navigation>
         </Message>
@@ -321,6 +327,14 @@
             <Navigation>25</Navigation>
         </Message>
         <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(114): </Dynamic>
+            <Dynamic>control_mode_dac_a[1]</Dynamic>
+            <Navigation>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v</Navigation>
+            <Navigation>114</Navigation>
+        </Message>
+        <Message>
             <ID>35935013</ID>
             <Severity>Warning</Severity>
             <Dynamic>d:/documents/git_local/fm_modulator/rtl/debug_bus/hbidle.v(76): </Dynamic>
@@ -339,7 +353,7 @@
         <Message>
             <ID>35001779</ID>
             <Severity>Warning</Severity>
-            <Dynamic>wb_ack_70</Dynamic>
+            <Dynamic>wb_ack_68</Dynamic>
         </Message>
         <Message>
             <ID>35001779</ID>
@@ -524,7 +538,7 @@
         <Message>
             <ID>61061008</ID>
             <Severity>Warning</Severity>
-            <Dynamic>i_resetb_c</Dynamic>
+            <Dynamic>o_dac_cw_b_c_c</Dynamic>
             <Dynamic>Secondary</Dynamic>
             <Dynamic>i_resetb</Dynamic>
             <Dynamic>B3</Dynamic>

@@ -4,10 +4,11 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Jan 13 21:45:34 2021
+Sat Feb 06 16:00:13 2021
 
 C:/lscc/diamond/3.11_x64/ispfpga\bin\nt64\par -f iq_modulator_impl1.p2t
 iq_modulator_impl1_map.ncd iq_modulator_impl1.dir iq_modulator_impl1.prf -gui
+-msgset D:/Documents/Git_Local/fm_modulator/lattice/promote.xml
 
 
 Preference file: iq_modulator_impl1.prf.
@@ -15,11 +16,11 @@ Preference file: iq_modulator_impl1.prf.
 Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
 Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            0.505        0            0.304        0            28           Completed
+5_1   *      0            0.811        0            0.302        0            21           Completed
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 28 secs 
+Total (real) run time for 1-seed: 21 secs 
 
 par done!
 

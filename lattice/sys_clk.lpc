@@ -16,8 +16,8 @@ CoreRevision=5.8
 ModuleName=sys_clk
 SourceFormat=Verilog HDL
 ParameterFileVersion=1.0
-Date=01/13/2021
-Time=21:26:31
+Date=02/06/2021
+Time=15:59:49
 
 [Parameters]
 Verilog=1
@@ -30,10 +30,10 @@ IO=0
 mode=Frequency
 CLKI=12
 CLKI_DIV=1
-BW=1.146
-VCO=480.000
-fb_mode=INT_OP
-CLKFB_DIV=8
+BW=1.169
+VCO=504.000
+fb_mode=CLKOP
+CLKFB_DIV=6
 FRACN_ENABLE=0
 FRACN_DIV=0
 DynamicPhase=STATIC
@@ -49,10 +49,10 @@ LockStk=0
 WBProt=0
 OPBypass=0
 OPUseDiv=0
-CLKOP_DIV=5
-FREQ_PIN_CLKOP=96
-OP_Tol=0.0
-CLKOP_AFREQ=96.000000
+CLKOP_DIV=7
+FREQ_PIN_CLKOP=72
+OP_Tol=5.0
+CLKOP_AFREQ=72.000000
 CLKOP_PHASEADJ=0
 CLKOP_TRIM_POL=Rising
 CLKOP_TRIM_DELAY=0
@@ -84,4 +84,4 @@ CLKOS3_AFREQ=
 CLKOS3_PHASEADJ=0
 
 [Command]
-cmd_line= -w -n sys_clk -lang verilog -synth lse -arch xo3c00f -type pll -fin 12 -fclkop 96 -fclkop_tol 0.0 -trimp 0 -phasep 0 -trimp_r -phase_cntl STATIC -fb_mode 5
+cmd_line= -w -n sys_clk -lang verilog -synth lse -arch xo3c00f -type pll -fin 12 -fclkop 72 -fclkop_tol 5.0 -trimp 0 -phasep 0 -trimp_r -phase_cntl STATIC -fb_mode 1

@@ -6,8 +6,9 @@ module top(i_ref_clk, i_resetb,
 		i_wbu_uart_rx, o_wbu_uart_tx,
 
         //signal outputs
-        o_baseband_i, o_baseband_q,
+        o_dac_a, o_dac_b,
 		dac_clk_p, dac_clk_n,
+		o_dac_cw_b,
 		i_clk_p, i_clk_n,
 		q_clk_p, q_clk_n
 );
@@ -24,13 +25,17 @@ input wire i_ref_clk, i_resetb;
 input wire i_wbu_uart_rx;
 output wire o_wbu_uart_tx;
 
-output wire [(output_dac_width-1):0] o_baseband_i, o_baseband_q;
-output wire i_clk_p, i_clk_n, q_clk_p, q_clk_n, dac_clk_p, dac_clk_n;
+output wire [(output_dac_width-1):0] o_dac_a, o_dac_b;
+output wire i_clk_p, i_clk_n, q_clk_p, q_clk_n, dac_clk_p, dac_clk_n, o_dac_cw_b;
 
 wire reset;
 assign reset = !i_resetb;
-PUR PUR_INST (.PUR (reset));
-GSR GSR_INST (.GSR (reset));
+
+`ifdef	synthesis
+	PUR PUR_INST (.PUR (reset));
+	GSR GSR_INST (.GSR (reset));
+`endif
+
 
 wire clk;
 `ifdef	synthesis
@@ -108,18 +113,13 @@ reg wb_smpl_ack;
 //SLAVES:
 //assign o_local_oscilator_clk = clk;
 
-wire signed [sine_lookup_width-1:0] o_sample_i, o_sample_q;
-wire [sine_lookup_width:0] o_sample_dc_offset_i, o_sample_dc_offset_q;
-assign o_sample_dc_offset_i = o_sample_i + 2**(sine_lookup_width);
-assign o_sample_dc_offset_q = o_sample_q + 2**(sine_lookup_width);
 
-assign o_baseband_i = o_sample_dc_offset_i[sine_lookup_width:(sine_lookup_width-output_dac_width+1)];
-assign o_baseband_q = o_sample_dc_offset_q[sine_lookup_width:(sine_lookup_width-output_dac_width+1)];
 
 fm_generator_wb_slave #(
 	.sine_lookup_width(sine_lookup_width),
 	.phase_width(phase_width),
-	.accumulator_width(accumulator_width)
+	.accumulator_width(accumulator_width),
+	.output_dac_width(output_dac_width)
 	)
 	fm_generator_wb_instance(.i_clk(clk), .i_reset(reset), 
                             .i_wb_cyc(wb_cyc), 
@@ -130,8 +130,9 @@ fm_generator_wb_slave #(
                             .o_wb_ack(wb_fm_ack), 
                             .o_wb_stall(wb_fm_stall), 
                             .o_wb_data(wb_fm_data),
-                            .o_signal_i(o_sample_i),
-							.o_signal_q(o_sample_q)
+                            .o_dac_a(o_dac_a),
+							.o_dac_b(o_dac_b),
+							.o_cw_b(o_dac_cw_b)
 );
 
 wire wb_lo_sel, lo_lock, wb_lo_stall;
@@ -164,7 +165,8 @@ clock_phase_shifter clock_phase_shifter_inst(
     .o_clk_q(q_clk_p)
 );
 
-dynamic_pll lo_gen(.CLKI(i_ref_clk), 
+`ifdef	synthesis
+	dynamic_pll lo_gen(.CLKI(i_ref_clk), 
 			.PLLCLK(pll_clk), 
 			.PLLRST(pll_rst), 
 			.PLLSTB(pll_stb), 
@@ -177,19 +179,24 @@ dynamic_pll lo_gen(.CLKI(i_ref_clk),
 			.LOCK(lo_lock)
 			);
 
-efb_inst efb_inst_0 (
-	.wb_clk_i(clk), 
-	.wb_rst_i(reset), 
-	.wb_cyc_i(wb_cyc_efb), 
-	.wb_stb_i(wb_stb_efb && wb_lo_sel), 
-    .wb_we_i(wb_we), 
-	.wb_adr_i(wb_addr[7:0]), 
-	.wb_dat_i(wb_odata[7:0]), 
-	.wb_dat_o(wb_lo_data), 
-	.wb_ack_o(wb_lo_ack), 
-    .pll0_bus_i({pll_data_o, pll_ack}), 
-	.pll0_bus_o({pll_clk, pll_rst, pll_stb, pll_we, pll_addr, pll_data_i})
-	);
+	efb_inst efb_inst_0 (
+		.wb_clk_i(clk), 
+		.wb_rst_i(reset), 
+		.wb_cyc_i(wb_cyc_efb), 
+		.wb_stb_i(wb_stb_efb && wb_lo_sel), 
+		.wb_we_i(wb_we), 
+		.wb_adr_i(wb_addr[7:0]), 
+		.wb_dat_i(wb_odata[7:0]), 
+		.wb_dat_o(wb_lo_data), 
+		.wb_ack_o(wb_lo_ack), 
+		.pll0_bus_i({pll_data_o, pll_ack}), 
+		.pll0_bus_o({pll_clk, pll_rst, pll_stb, pll_we, pll_addr, pll_data_i})
+		);
+`else
+	assign lo_pll_out = i_ref_clk;
+`endif
+
+
 
 
 
@@ -273,7 +280,7 @@ efb_inst efb_inst_0 (
 		else if (wb_lo_ack)
 			wb_idata <= wb_lo_data;
 		else
-			wb_idata <= 32'h0;
+			wb_idata <= 32'bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx;
 
 	assign bus_interrupt = 1'b0;
 
