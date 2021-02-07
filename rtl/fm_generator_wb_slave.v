@@ -26,7 +26,7 @@ wire signed [(sine_lookup_width-1):0] o_sample_i, o_sample_q;
 wire [sine_lookup_width:0] o_sample_dc_offset_i, o_sample_dc_offset_q;
 assign o_sample_dc_offset_i = o_sample_i + 2**(sine_lookup_width);
 assign o_sample_dc_offset_q = o_sample_q + 2**(sine_lookup_width);
-assign o_dac_a = o_cw ? control_mode_dac_a : o_sample_dc_offset_i[sine_lookup_width:(sine_lookup_width-output_dac_width+1)];
+assign o_dac_a = o_cw_delayed ? control_mode_dac_a : o_sample_dc_offset_i[sine_lookup_width:(sine_lookup_width-output_dac_width+1)];
 assign o_dac_b = o_sample_dc_offset_q[sine_lookup_width:(sine_lookup_width-output_dac_width+1)];
 
 //Wishbone slave interface
@@ -127,5 +127,11 @@ assign control_ren_b = 1'b0;
 assign control_g = 4'b1000;
 
 assign o_cw = i_reset;
+
+reg o_cw_delayed;
+always @(posedge i_clk or posedge i_reset) begin
+	o_cw_delayed <= o_cw;
+end
+
 
 endmodule
