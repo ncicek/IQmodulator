@@ -26,7 +26,7 @@ wire signed [(sine_lookup_width-1):0] o_sample_i, o_sample_q;
 wire [sine_lookup_width:0] o_sample_dc_offset_i, o_sample_dc_offset_q;
 assign o_sample_dc_offset_i = o_sample_i + 2**(sine_lookup_width);
 assign o_sample_dc_offset_q = o_sample_q + 2**(sine_lookup_width);
-assign o_dac_a = o_cw ? o_sample_dc_offset_i[sine_lookup_width:(sine_lookup_width-output_dac_width+1)] : control_mode_dac_a;
+assign o_dac_a = o_cw ? control_mode_dac_a : o_sample_dc_offset_i[sine_lookup_width:(sine_lookup_width-output_dac_width+1)];
 assign o_dac_b = o_sample_dc_offset_q[sine_lookup_width:(sine_lookup_width-output_dac_width+1)];
 
 //Wishbone slave interface
@@ -95,8 +95,10 @@ always @(posedge i_clk or posedge i_reset) begin
 	end else begin
 		sine_lookup_width_minus_modulation_deviation_amount <= sine_lookup_width - modulation_deviation_amount + 1;
 		modulation_deviation_amount_minus_sine_lookup_width <= modulation_deviation_amount - sine_lookup_width;
+		/* verilator lint_off WIDTH */
 		carrier_center_increment_offset_ls <= (modulation_output <<< modulation_deviation_amount_minus_sine_lookup_width);
 		carrier_center_increment_offset_rs <= (modulation_output >>> sine_lookup_width_minus_modulation_deviation_amount);
+		/* verilator lint_on WIDTH */
 		if (modulation_deviation_amount < sine_lookup_width)
 			carrier_increment <= carrier_center_increment + carrier_center_increment_offset_rs;
 		else

@@ -248,9 +248,9 @@ clock_phase_shifter clock_phase_shifter_inst(
 
 	//BUS plumbing
 	// Nothing should be assigned to the null page
-	assign	wb_smpl_sel = (wb_addr[29:8] == 26'h081);	// 0x00002040
-	assign	wb_fm_sel = (wb_addr[29:8] == 26'h082);	// 0x00002080
-	assign	wb_lo_sel = (wb_addr[29:8] == 26'h083);	// 0x000020C0
+	assign	wb_smpl_sel = (wb_addr[29:8] == 22'h081);	// 0x00002040
+	assign	wb_fm_sel = (wb_addr[29:8] == 22'h082);	// 0x00002080
+	assign	wb_lo_sel = (wb_addr[29:8] == 22'h083);	// 0x000020C0
 
 	// This will be true if nothing is selected
 	wire none_sel;
@@ -278,7 +278,7 @@ clock_phase_shifter clock_phase_shifter_inst(
 		else if (wb_smpl_ack)
 			wb_idata <= wb_smpl_data;
 		else if (wb_lo_ack)
-			wb_idata <= wb_lo_data;
+			wb_idata <= {24'b0, wb_lo_data};
 		else
 			wb_idata <= 32'bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx;
 

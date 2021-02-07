@@ -34,24 +34,25 @@ module quarter_wave_sine_lookup(i_clk, i_reset, i_ce, i_phase, o_val_i, o_val_q)
 	
 	always @(posedge i_clk or posedge i_reset) begin
 		if (i_reset) begin 
-			o_val_pipeline_i[1] <= {(OW+1){1'b0}};
-			o_val_pipeline_i[0] <= {(OW+1){1'b0}};
-			o_val_pipeline_q[1] <= {(OW+1){1'b0}};
-			o_val_pipeline_q[0] <= {(OW+1){1'b0}};
+			o_val_pipeline_i[1] <= {OW{1'b0}};
+			o_val_pipeline_i[0] <= {OW{1'b0}};
+			o_val_pipeline_q[1] <= {OW{1'b0}};
+			o_val_pipeline_q[0] <= {OW{1'b0}};
 			
 			phase_negation_i <= 2'b0;
 			phase_negation_q <= 2'b0;
 			index_i <= {(PW-2){1'b0}};
 			index_q <= {(PW-2){1'b0}};
-			quarter_wave_sample_register_i <= {(OW+1){1'b1}};
-			quarter_wave_sample_register_q <= {(OW+1){1'b1}};
+			quarter_wave_sample_register_i <= {OW{1'b1}};
+			quarter_wave_sample_register_q <= {OW{1'b1}};
 		end
 		else begin 
 			if (i_ce) begin
 				//1st cycle
 				phase_i <= i_phase;
+				/* verilator lint_off WIDTH */
 				phase_q <= i_phase - (1'b1 << (PW-2));
-
+				/* verilator lint_on WIDTH */
 				//2nd cycle
 				if (phase_i[(PW-2)]) begin
 					index_i <= ~phase_i[(PW-3):0];
