@@ -23,19 +23,19 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO3LF-6900CCABGA256
 Target Performance:   5
 Mapper:  xo3c00f,  version:  Diamond (64-bit) 3.11.3.469
-Mapped on:  02/06/21  16:00:11
+Mapped on:  02/06/21  23:55:15
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of registers:   1156 out of  7485 (15%)
-      PFU registers:         1156 out of  6864 (17%)
+   Number of registers:   1174 out of  7485 (16%)
+      PFU registers:         1174 out of  6864 (17%)
       PIO registers:            0 out of   621 (0%)
-   Number of SLICEs:      2278 out of  3432 (66%)
-      SLICEs as Logic/ROM:   2278 out of  3432 (66%)
+   Number of SLICEs:      2281 out of  3432 (66%)
+      SLICEs as Logic/ROM:   2281 out of  3432 (66%)
       SLICEs as RAM:            0 out of  2574 (0%)
       SLICEs as Carry:        190 out of  3432 (6%)
-   Number of LUT4s:        3752 out of  6864 (55%)
-      Number used as logic LUTs:        3372
+   Number of LUT4s:        3746 out of  6864 (55%)
+      Number used as logic LUTs:        3366
       Number used as distributed RAM:     0
       Number used as ripple logic:      380
       Number used as shift registers:     0
@@ -65,88 +65,92 @@ Mapped on:  02/06/21  16:00:11
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
    Number of clocks:  3
-     Net dac_clk_p_c: 670 loads, 670 rising, 0 falling (Driver:
+     Net dac_clk_p_c: 684 loads, 684 rising, 0 falling (Driver:
      sys_clk_inst/PLLInst_0 )
 
      Net lo_pll_out: 3 loads, 2 rising, 1 falling (Driver: lo_gen/PLLInst_0 )
      Net i_ref_clk_c: 2 loads, 2 rising, 0 falling (Driver: PIO i_ref_clk )
-   Number of Clock Enables:  35
-     Net rxtransport/o_data_7__N_418: 4 loads, 4 LSLICEs
-     Net rxtransport/dac_clk_p_c_enable_347: 3 loads, 3 LSLICEs
-     Net rxtransport/dac_clk_p_c_enable_412: 4 loads, 4 LSLICEs
-     Net dac_clk_p_c_enable_174: 13 loads, 13 LSLICEs
-     Net rxtransport/dac_clk_p_c_enable_144: 1 loads, 1 LSLICEs
-     Net rxtransport/zero_baud_counter: 10 loads, 10 LSLICEs
-     Net rxtransport/data_reg_7__N_416: 4 loads, 4 LSLICEs
-     Net genbus/dac_clk_p_c_enable_136: 1 loads, 1 LSLICEs
+   Number of Clock Enables:  39
+     Net i_sw0_c: 13 loads, 13 LSLICEs
      Net wb_cyc: 2 loads, 2 LSLICEs
+     Net genbus/dac_clk_p_c_enable_138: 1 loads, 1 LSLICEs
      Net wb_err: 15 loads, 15 LSLICEs
-     Net genbus/wbexec/dac_clk_p_c_enable_414: 1 loads, 1 LSLICEs
-     Net genbus/dac_clk_p_c_enable_446: 15 loads, 15 LSLICEs
-     Net genbus/dac_clk_p_c_enable_307: 3 loads, 2 LSLICEs
-     Net genbus/unpackx/dac_clk_p_c_enable_236: 19 loads, 19 LSLICEs
-     Net genbus/dac_clk_p_c_enable_193: 2 loads, 2 LSLICEs
-     Net genbus/dac_clk_p_c_enable_380: 35 loads, 35 LSLICEs
-     Net genbus/dac_clk_p_c_enable_196: 1 loads, 1 LSLICEs
-     Net genbus/dac_clk_p_c_enable_349: 1 loads, 1 LSLICEs
-     Net genbus/genhex/dac_clk_p_c_enable_145: 1 loads, 1 LSLICEs
-     Net genbus/addnl/dac_clk_p_c_enable_199: 7 loads, 7 LSLICEs
+     Net genbus/wbexec/dac_clk_p_c_enable_438: 1 loads, 1 LSLICEs
+     Net genbus/dac_clk_p_c_enable_471: 15 loads, 15 LSLICEs
+     Net genbus/dac_clk_p_c_enable_332: 3 loads, 2 LSLICEs
+     Net genbus/unpackx/dac_clk_p_c_enable_261: 19 loads, 19 LSLICEs
+     Net genbus/dac_clk_p_c_enable_219: 2 loads, 2 LSLICEs
+     Net genbus/dac_clk_p_c_enable_405: 36 loads, 36 LSLICEs
+     Net genbus/dac_clk_p_c_enable_222: 1 loads, 1 LSLICEs
+     Net genbus/dac_clk_p_c_enable_374: 1 loads, 1 LSLICEs
+     Net genbus/genhex/dac_clk_p_c_enable_1: 1 loads, 1 LSLICEs
+     Net genbus/addnl/dac_clk_p_c_enable_225: 7 loads, 7 LSLICEs
      Net zero_baud_counter: 5 loads, 5 LSLICEs
-     Net dac_clk_p_c_enable_321: 5 loads, 5 LSLICEs
-     Net genbus/addints/dac_clk_p_c_enable_416: 17 loads, 17 LSLICEs
-     Net genbus/addints/dac_clk_p_c_enable_410: 1 loads, 1 LSLICEs
-     Net genbus/addints/dac_clk_p_c_enable_409: 1 loads, 1 LSLICEs
-     Net genbus/addidles/dac_clk_p_c_enable_403: 17 loads, 17 LSLICEs
-     Net genbus/addidles/dac_clk_p_c_enable_194: 1 loads, 1 LSLICEs
-     Net dac_clk_p_c_enable_272: 16 loads, 16 LSLICEs
-     Net dac_clk_p_c_enable_198: 1 loads, 1 LSLICEs
-     Net o_dac_cw_b_c_c: 14 loads, 14 LSLICEs
+     Net dac_clk_p_c_enable_346: 5 loads, 5 LSLICEs
+     Net genbus/dac_clk_p_c_enable_442: 17 loads, 17 LSLICEs
+     Net genbus/addints/dac_clk_p_c_enable_437: 1 loads, 1 LSLICEs
+     Net genbus/addints/dac_clk_p_c_enable_434: 1 loads, 1 LSLICEs
+     Net genbus/addidles/dac_clk_p_c_enable_429: 17 loads, 17 LSLICEs
+     Net genbus/addidles/dac_clk_p_c_enable_221: 1 loads, 1 LSLICEs
+     Net rxtransport/o_data_7__N_417: 4 loads, 4 LSLICEs
+     Net rxtransport/dac_clk_p_c_enable_372: 3 loads, 3 LSLICEs
+     Net rxtransport/dac_clk_p_c_enable_440: 4 loads, 4 LSLICEs
+     Net dac_clk_p_c_enable_199: 13 loads, 13 LSLICEs
+     Net rxtransport/dac_clk_p_c_enable_146: 1 loads, 1 LSLICEs
+     Net rxtransport/zero_baud_counter: 10 loads, 10 LSLICEs
+     Net rxtransport/data_reg_7__N_415: 4 loads, 4 LSLICEs
+     Net dac_clk_p_c_enable_297: 16 loads, 16 LSLICEs
+     Net dac_clk_p_c_enable_224: 1 loads, 1 LSLICEs
      Net power_counter_31_N_232_31: 1 loads, 1 LSLICEs
-     Net o_dac_a_9__I_0/dac_clk_p_c_enable_143: 16 loads, 16 LSLICEs
-     Net o_dac_a_9__I_0/dac_clk_p_c_enable_114: 16 loads, 16 LSLICEs
-     Net o_dac_a_9__I_0/dac_clk_p_c_enable_71: 16 loads, 16 LSLICEs
-     Net o_dac_a_9__I_0/dac_clk_p_c_enable_103: 16 loads, 16 LSLICEs
-   Number of local set/reset loads for net o_dac_cw_b_c_c merged into GSR:  1
+     Net o_dac_a_9__I_0/dac_clk_p_c_enable_149: 16 loads, 16 LSLICEs
+     Net o_dac_a_9__I_0/dac_clk_p_c_enable_116: 16 loads, 16 LSLICEs
+     Net o_dac_a_9__I_0/dac_clk_p_c_enable_73: 16 loads, 16 LSLICEs
+     Net o_dac_a_9__I_0/dac_clk_p_c_enable_105: 16 loads, 16 LSLICEs
+     Net o_dac_a_9__I_0/dac_clk_p_c_enable_218: 1 loads, 1 LSLICEs
+     Net o_dac_a_9__I_0/cw_mux_dac_a_mux_sel_N_1885: 8 loads, 8 LSLICEs
+     Net o_dac_a_9__I_0/dac_clk_p_c_enable_432: 1 loads, 1 LSLICEs
+     Net o_dac_a_9__I_0/dac_clk_p_c_enable_472: 1 loads, 1 LSLICEs
+   Number of local set/reset loads for net i_sw0_c merged into GSR:  1
    Number of LSRs:  21
-     Net rxtransport/baud_counter_23__N_445: 4 loads, 4 LSLICEs
-     Net chg_counter_23__N_406: 13 loads, 13 LSLICEs
-     Net rxtransport/n11580: 10 loads, 10 LSLICEs
-     Net genbus/wbexec/n8903: 18 loads, 18 LSLICEs
-     Net genbus/n29269: 31 loads, 31 LSLICEs
-     Net genbus/wbexec/n19567: 1 loads, 1 LSLICEs
-     Net wb_stb: 1 loads, 1 LSLICEs
+     Net i_sw0_c: 282 loads, 282 LSLICEs
      Net wb_cyc: 1 loads, 1 LSLICEs
-     Net genbus/wbexec/o_cmd_busy_N_941: 1 loads, 1 LSLICEs
-     Net genbus/unpackx/n26423: 2 loads, 2 LSLICEs
-     Net genbus/unpackx/n12707: 3 loads, 3 LSLICEs
-     Net genbus/w_reset: 22 loads, 22 LSLICEs
-     Net n26540: 3 loads, 3 LSLICEs
-     Net genbus/addints/n12645: 17 loads, 17 LSLICEs
-     Net genbus/addidles/n12674: 17 loads, 17 LSLICEs
-     Net wb_smpl_ack: 1 loads, 1 LSLICEs
+     Net genbus/wbexec/n9811: 18 loads, 18 LSLICEs
+     Net genbus/n30028: 31 loads, 31 LSLICEs
+     Net genbus/wbexec/n20129: 1 loads, 1 LSLICEs
+     Net wb_stb: 1 loads, 1 LSLICEs
+     Net genbus/wbexec/o_cmd_busy_N_940: 1 loads, 1 LSLICEs
+     Net genbus/unpackx/n27141: 2 loads, 2 LSLICEs
+     Net genbus/unpackx/n12840: 3 loads, 3 LSLICEs
+     Net genbus/w_reset: 23 loads, 23 LSLICEs
+     Net n27281: 3 loads, 3 LSLICEs
+     Net genbus/n12767: 17 loads, 17 LSLICEs
 
-     Net wb_smpl_sel_N_311: 1 loads, 1 LSLICEs
-     Net txtransport/n11421: 10 loads, 10 LSLICEs
-     Net n9365: 27 loads, 27 LSLICEs
+     Net genbus/addidles/n12797: 17 loads, 17 LSLICEs
+     Net wb_smpl_ack: 1 loads, 1 LSLICEs
+     Net wb_smpl_sel_N_310: 1 loads, 1 LSLICEs
+     Net rxtransport/baud_counter_23__N_444: 4 loads, 4 LSLICEs
+     Net chg_counter_23__N_405: 13 loads, 13 LSLICEs
+     Net rxtransport/n11702: 10 loads, 10 LSLICEs
+     Net txtransport/n11549: 10 loads, 10 LSLICEs
+     Net n27444: 27 loads, 27 LSLICEs
      Net wb_idata_1: 1 loads, 1 LSLICEs
-     Net o_dac_cw_b_c_c: 270 loads, 270 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net o_dac_a_9__I_0/carrier/qtr_inst/index_q_3: 483 loads
-     Net o_dac_a_9__I_0/modulation/qtr_inst/index_i_3: 480 loads
-     Net o_dac_a_9__I_0/carrier/qtr_inst/index_i_3: 478 loads
+     Net o_dac_a_9__I_0/carrier/qtr_inst/index_i_3: 487 loads
+     Net o_dac_a_9__I_0/modulation/qtr_inst/index_i_3: 487 loads
+     Net o_dac_a_9__I_0/carrier/qtr_inst/index_q_3: 482 loads
      Net o_dac_a_9__I_0/modulation/qtr_inst/index_i_2: 368 loads
      Net o_dac_a_9__I_0/carrier/qtr_inst/index_q_2: 367 loads
-     Net o_dac_a_9__I_0/carrier/qtr_inst/index_i_2: 362 loads
-     Net o_dac_a_9__I_0/carrier/qtr_inst/index_q_4: 350 loads
-     Net o_dac_a_9__I_0/modulation/qtr_inst/index_i_4: 346 loads
-     Net o_dac_a_9__I_0/carrier/qtr_inst/index_q_1: 344 loads
-     Net o_dac_a_9__I_0/carrier/qtr_inst/index_i_4: 342 loads
+     Net o_dac_a_9__I_0/carrier/qtr_inst/index_i_2: 364 loads
+     Net o_dac_a_9__I_0/modulation/qtr_inst/index_i_4: 351 loads
+     Net o_dac_a_9__I_0/carrier/qtr_inst/index_q_1: 348 loads
+     Net o_dac_a_9__I_0/carrier/qtr_inst/index_q_4: 345 loads
+     Net o_dac_a_9__I_0/modulation/qtr_inst/index_i_1: 345 loads
 
 
 
 
-   Number of warnings:  1
+   Number of warnings:  3
    Number of errors:    0
      
 
@@ -155,8 +159,11 @@ Mapped on:  02/06/21  16:00:11
 
 <A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
 
-WARNING - map: The reset of EBR 'genbus/genhex/mux_100' cannot be controlled.
-     The local reset is not connected to any control signal and set to GND. The
+WARNING - map: input pad net 'i_sw1' has no legal load.
+WARNING - map: IO buffer missing for top level port i_sw1...logic will be
+     discarded.
+WARNING - map: The reset of EBR 'genbus/genhex/mux_98' cannot be controlled. The
+     local reset is not connected to any control signal and set to GND. The
      global reset is disabled via GSR property. To control the EBR reset, either
      connect the local reset to a control signal or force the GSR property to be
      enabled.
@@ -177,6 +184,7 @@ WARNING - map: The reset of EBR 'genbus/genhex/mux_100' cannot be controlled.
 +---------------------+-----------+-----------+------------+
 | o_wbu_uart_tx       | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
+
 | o_dac_a[6]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | o_dac_a[5]          | OUTPUT    | LVCMOS33  |            |
@@ -184,7 +192,6 @@ WARNING - map: The reset of EBR 'genbus/genhex/mux_100' cannot be controlled.
 | o_dac_a[4]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | o_dac_a[3]          | OUTPUT    | LVCMOS33  |            |
-
 +---------------------+-----------+-----------+------------+
 | o_dac_a[2]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -228,78 +235,77 @@ WARNING - map: The reset of EBR 'genbus/genhex/mux_100' cannot be controlled.
 +---------------------+-----------+-----------+------------+
 | i_ref_clk           | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| i_resetb            | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
 | i_wbu_uart_rx       | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
+| i_sw0               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+
 
 
 
 <A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
 
-Signal i_clk_2f_N_2250 was merged into signal lo_pll_out
-Signal o_dac_a_9__I_0/carrier/qtr_inst/n26811 was merged into signal
-     o_dac_a_9__I_0/carrier/qtr_inst/index_i_2
-Signal o_dac_a_9__I_0/modulation/qtr_inst/n26784 was merged into signal
-     o_dac_a_9__I_0/modulation/qtr_inst/index_i_2
-
-Signal n26683 was merged into signal o_dac_cw_b_c_c
-Signal n12635 was merged into signal wb_idata_1
-Signal n2 was merged into signal wb_stb
-Signal rxtransport/dac_clk_p_c_enable_343 was merged into signal
+Signal o_dac_a_9__I_0/dac_clk_p_c_enable_486 was merged into signal
+     o_dac_a_9__I_0/cw_mux_dac_a_mux_sel_N_1885
+Signal o_dac_a_9__I_0/dac_clk_p_c_enable_488 was merged into signal i_sw0_c
+Signal i_clk_2f_N_2268 was merged into signal lo_pll_out
+Signal n12753 was merged into signal wb_idata_1
+Signal rxtransport/dac_clk_p_c_enable_368 was merged into signal
      rxtransport/zero_baud_counter
+Signal n2 was merged into signal wb_stb
 Signal GND_net undriven or does not drive anything - clipped.
 Signal VCC_net undriven or does not drive anything - clipped.
-Signal n29209 undriven or does not drive anything - clipped.
-Signal o_dac_a_9__I_0/carrier/nco_inst/phase_register_545_add_4_32/CO undriven
-     or does not drive anything - clipped.
-Signal o_dac_a_9__I_0/carrier/nco_inst/phase_register_545_add_4_2/S0 undriven or
+Signal n29968 undriven or does not drive anything - clipped.
+Signal o_dac_a_9__I_0/carrier/nco_inst/phase_register_597_add_4_2/S0 undriven or
      does not drive anything - clipped.
-Signal o_dac_a_9__I_0/carrier/nco_inst/phase_register_545_add_4_2/CI undriven or
+Signal o_dac_a_9__I_0/carrier/nco_inst/phase_register_597_add_4_2/CI undriven or
      does not drive anything - clipped.
-Signal o_dac_a_9__I_0/carrier/qtr_inst/add_372_1/S1 undriven or does not drive
-     anything - clipped.
-Signal o_dac_a_9__I_0/carrier/qtr_inst/add_372_1/S0 undriven or does not drive
-     anything - clipped.
-Signal o_dac_a_9__I_0/carrier/qtr_inst/add_372_1/CI undriven or does not drive
-     anything - clipped.
-Signal o_dac_a_9__I_0/carrier/qtr_inst/add_372_3/S1 undriven or does not drive
-     anything - clipped.
-Signal o_dac_a_9__I_0/carrier/qtr_inst/add_372_3/S0 undriven or does not drive
-     anything - clipped.
-Signal o_dac_a_9__I_0/carrier/qtr_inst/add_372_5/S1 undriven or does not drive
-     anything - clipped.
-Signal o_dac_a_9__I_0/carrier/qtr_inst/add_372_5/S0 undriven or does not drive
-     anything - clipped.
-Signal o_dac_a_9__I_0/carrier/qtr_inst/add_372_7/S0 undriven or does not drive
-     anything - clipped.
-Signal o_dac_a_9__I_0/carrier/qtr_inst/add_372_15/CO undriven or does not drive
-     anything - clipped.
-Signal o_dac_a_9__I_0/carrier/qtr_inst/add_371_1/S1 undriven or does not drive
-     anything - clipped.
-Signal o_dac_a_9__I_0/carrier/qtr_inst/add_371_1/S0 undriven or does not drive
-     anything - clipped.
-Signal o_dac_a_9__I_0/carrier/qtr_inst/add_371_1/CI undriven or does not drive
-     anything - clipped.
-Signal o_dac_a_9__I_0/carrier/qtr_inst/add_371_3/S1 undriven or does not drive
-     anything - clipped.
-Signal o_dac_a_9__I_0/carrier/qtr_inst/add_371_3/S0 undriven or does not drive
-     anything - clipped.
-Signal o_dac_a_9__I_0/carrier/qtr_inst/add_371_5/S1 undriven or does not drive
-     anything - clipped.
-Signal o_dac_a_9__I_0/carrier/qtr_inst/add_371_5/S0 undriven or does not drive
-     anything - clipped.
-Signal o_dac_a_9__I_0/carrier/qtr_inst/add_371_7/S0 undriven or does not drive
-     anything - clipped.
-Signal o_dac_a_9__I_0/carrier/qtr_inst/add_371_15/CO undriven or does not drive
-     anything - clipped.
-Signal o_dac_a_9__I_0/modulation/nco_inst/phase_register_547_add_4_2/S0 undriven
+Signal o_dac_a_9__I_0/carrier/nco_inst/phase_register_597_add_4_32/CO undriven
      or does not drive anything - clipped.
-Signal o_dac_a_9__I_0/modulation/nco_inst/phase_register_547_add_4_2/CI undriven
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_417_1/S1 undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_417_1/S0 undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_417_1/CI undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_417_3/S1 undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_417_3/S0 undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_417_5/S1 undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_417_5/S0 undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_417_7/S0 undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_417_15/CO undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_418_1/S1 undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_418_1/S0 undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_418_1/CI undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_418_3/S1 undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_418_3/S0 undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_418_5/S1 undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_418_5/S0 undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_418_7/S0 undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/carrier/qtr_inst/add_418_15/CO undriven or does not drive
+     anything - clipped.
+Signal o_dac_a_9__I_0/modulation/nco_inst/phase_register_599_add_4_2/S0 undriven
      or does not drive anything - clipped.
-Signal o_dac_a_9__I_0/modulation/nco_inst/phase_register_547_add_4_32/CO
-     undriven or does not drive anything - clipped.
 
+Signal o_dac_a_9__I_0/modulation/nco_inst/phase_register_599_add_4_2/CI undriven
+     or does not drive anything - clipped.
+Signal o_dac_a_9__I_0/modulation/nco_inst/phase_register_599_add_4_32/CO
+     undriven or does not drive anything - clipped.
 Signal o_dac_a_9__I_0/modulation/qtr_inst/unary_minus_10_add_3_1/S0 undriven or
      does not drive anything - clipped.
 Signal o_dac_a_9__I_0/modulation/qtr_inst/unary_minus_10_add_3_1/CI undriven or
@@ -308,33 +314,33 @@ Signal o_dac_a_9__I_0/modulation/qtr_inst/unary_minus_10_add_3_17/S1 undriven or
      does not drive anything - clipped.
 Signal o_dac_a_9__I_0/modulation/qtr_inst/unary_minus_10_add_3_17/CO undriven or
      does not drive anything - clipped.
-Signal o_dac_a_9__I_0/sub_391_add_2_1/S1 undriven or does not drive anything -
+Signal o_dac_a_9__I_0/sub_437_add_2_1/S1 undriven or does not drive anything -
      clipped.
-Signal o_dac_a_9__I_0/sub_391_add_2_1/S0 undriven or does not drive anything -
+Signal o_dac_a_9__I_0/sub_437_add_2_1/S0 undriven or does not drive anything -
      clipped.
-Signal o_dac_a_9__I_0/sub_391_add_2_1/CI undriven or does not drive anything -
+Signal o_dac_a_9__I_0/sub_437_add_2_1/CI undriven or does not drive anything -
      clipped.
-Signal o_dac_a_9__I_0/sub_108_add_2_1/S0 undriven or does not drive anything -
+Signal o_dac_a_9__I_0/sub_106_add_2_1/S0 undriven or does not drive anything -
      clipped.
-Signal o_dac_a_9__I_0/sub_108_add_2_1/CI undriven or does not drive anything -
+Signal o_dac_a_9__I_0/sub_106_add_2_1/CI undriven or does not drive anything -
      clipped.
-Signal o_dac_a_9__I_0/sub_108_add_2_13/CO undriven or does not drive anything -
+Signal o_dac_a_9__I_0/sub_437_add_2_17/CO undriven or does not drive anything -
      clipped.
-Signal o_dac_a_9__I_0/sub_391_add_2_17/CO undriven or does not drive anything -
+Signal o_dac_a_9__I_0/add_425_1/S0 undriven or does not drive anything -
      clipped.
-Signal o_dac_a_9__I_0/add_379_1/S0 undriven or does not drive anything -
+Signal o_dac_a_9__I_0/add_425_1/CI undriven or does not drive anything -
      clipped.
-Signal o_dac_a_9__I_0/add_379_1/CI undriven or does not drive anything -
+Signal o_dac_a_9__I_0/sub_106_add_2_13/CO undriven or does not drive anything -
      clipped.
-Signal o_dac_a_9__I_0/add_379_31/CO undriven or does not drive anything -
+Signal o_dac_a_9__I_0/add_425_31/CO undriven or does not drive anything -
      clipped.
-Signal add_32_33/S1 undriven or does not drive anything - clipped.
-Signal add_32_33/CO undriven or does not drive anything - clipped.
-Signal add_33_1/S0 undriven or does not drive anything - clipped.
-Signal add_33_1/CI undriven or does not drive anything - clipped.
+Signal add_31_33/S1 undriven or does not drive anything - clipped.
+Signal add_31_33/CO undriven or does not drive anything - clipped.
 Signal add_32_1/S0 undriven or does not drive anything - clipped.
 Signal add_32_1/CI undriven or does not drive anything - clipped.
-Signal add_33_31/CO undriven or does not drive anything - clipped.
+Signal add_31_1/S0 undriven or does not drive anything - clipped.
+Signal add_31_1/CI undriven or does not drive anything - clipped.
+Signal add_32_31/CO undriven or does not drive anything - clipped.
 Signal txtransport/sub_36_add_2_1/S0 undriven or does not drive anything -
      clipped.
 Signal txtransport/sub_36_add_2_1/CI undriven or does not drive anything -
@@ -343,89 +349,88 @@ Signal txtransport/sub_36_add_2_25/S1 undriven or does not drive anything -
      clipped.
 Signal txtransport/sub_36_add_2_25/CO undriven or does not drive anything -
      clipped.
-Signal genbus/wbexec/o_wb_addr_546_add_4_1/S1 undriven or does not drive
-     anything - clipped.
-Signal genbus/wbexec/o_wb_addr_546_add_4_1/S0 undriven or does not drive
-     anything - clipped.
-Signal genbus/wbexec/o_wb_addr_546_add_4_1/CI undriven or does not drive
-     anything - clipped.
-Signal genbus/wbexec/o_wb_addr_546_add_4_31/CO undriven or does not drive
-     anything - clipped.
-Signal rxtransport/sub_389_add_2_24/S1 undriven or does not drive anything -
+Signal rxtransport/sub_435_add_2_20/S1 undriven or does not drive anything -
      clipped.
-Signal rxtransport/sub_389_add_2_24/S0 undriven or does not drive anything -
+Signal rxtransport/sub_435_add_2_20/S0 undriven or does not drive anything -
      clipped.
-Signal rxtransport/sub_389_add_2_cout/S1 undriven or does not drive anything -
+Signal rxtransport/sub_435_add_2_22/S1 undriven or does not drive anything -
+     clipped.
+Signal rxtransport/sub_435_add_2_22/S0 undriven or does not drive anything -
+     clipped.
+Signal rxtransport/sub_435_add_2_24/S1 undriven or does not drive anything -
 
      clipped.
-Signal rxtransport/sub_389_add_2_cout/CO undriven or does not drive anything -
+Signal rxtransport/sub_435_add_2_24/S0 undriven or does not drive anything -
      clipped.
-Signal rxtransport/add_8_25/S1 undriven or does not drive anything - clipped.
-Signal rxtransport/add_8_25/CO undriven or does not drive anything - clipped.
+Signal rxtransport/sub_435_add_2_cout/S1 undriven or does not drive anything -
+     clipped.
+Signal rxtransport/sub_435_add_2_cout/CO undriven or does not drive anything -
+     clipped.
+Signal rxtransport/add_8_1/S0 undriven or does not drive anything - clipped.
+Signal rxtransport/add_8_1/CI undriven or does not drive anything - clipped.
 Signal rxtransport/sub_49_add_2_1/S0 undriven or does not drive anything -
      clipped.
 Signal rxtransport/sub_49_add_2_1/CI undriven or does not drive anything -
      clipped.
+Signal rxtransport/add_8_25/S1 undriven or does not drive anything - clipped.
+Signal rxtransport/add_8_25/CO undriven or does not drive anything - clipped.
 Signal rxtransport/sub_49_add_2_25/S1 undriven or does not drive anything -
      clipped.
 Signal rxtransport/sub_49_add_2_25/CO undriven or does not drive anything -
      clipped.
-Signal rxtransport/add_8_1/S0 undriven or does not drive anything - clipped.
-Signal rxtransport/add_8_1/CI undriven or does not drive anything - clipped.
-Signal rxtransport/sub_389_add_2_2/S1 undriven or does not drive anything -
+Signal rxtransport/sub_435_add_2_2/S1 undriven or does not drive anything -
      clipped.
-Signal rxtransport/sub_389_add_2_2/S0 undriven or does not drive anything -
+Signal rxtransport/sub_435_add_2_2/S0 undriven or does not drive anything -
      clipped.
-Signal rxtransport/sub_389_add_2_2/CI undriven or does not drive anything -
+Signal rxtransport/sub_435_add_2_2/CI undriven or does not drive anything -
      clipped.
-Signal rxtransport/sub_389_add_2_4/S1 undriven or does not drive anything -
+Signal rxtransport/sub_435_add_2_4/S1 undriven or does not drive anything -
      clipped.
-Signal rxtransport/sub_389_add_2_4/S0 undriven or does not drive anything -
+Signal rxtransport/sub_435_add_2_4/S0 undriven or does not drive anything -
      clipped.
-Signal rxtransport/sub_389_add_2_6/S1 undriven or does not drive anything -
+Signal rxtransport/sub_435_add_2_6/S1 undriven or does not drive anything -
      clipped.
-Signal rxtransport/sub_389_add_2_6/S0 undriven or does not drive anything -
+Signal rxtransport/sub_435_add_2_6/S0 undriven or does not drive anything -
      clipped.
-Signal rxtransport/sub_389_add_2_8/S1 undriven or does not drive anything -
+Signal rxtransport/sub_435_add_2_8/S1 undriven or does not drive anything -
      clipped.
-Signal rxtransport/sub_389_add_2_8/S0 undriven or does not drive anything -
+Signal rxtransport/sub_435_add_2_8/S0 undriven or does not drive anything -
      clipped.
-Signal rxtransport/sub_389_add_2_10/S1 undriven or does not drive anything -
+Signal rxtransport/sub_435_add_2_10/S1 undriven or does not drive anything -
      clipped.
-Signal rxtransport/sub_389_add_2_10/S0 undriven or does not drive anything -
+Signal rxtransport/sub_435_add_2_10/S0 undriven or does not drive anything -
      clipped.
-Signal rxtransport/sub_389_add_2_12/S1 undriven or does not drive anything -
+Signal rxtransport/sub_435_add_2_12/S1 undriven or does not drive anything -
      clipped.
-Signal rxtransport/sub_389_add_2_12/S0 undriven or does not drive anything -
+Signal rxtransport/sub_435_add_2_12/S0 undriven or does not drive anything -
      clipped.
-Signal rxtransport/sub_389_add_2_14/S1 undriven or does not drive anything -
+Signal rxtransport/sub_435_add_2_14/S1 undriven or does not drive anything -
      clipped.
-Signal rxtransport/sub_389_add_2_14/S0 undriven or does not drive anything -
+Signal rxtransport/sub_435_add_2_14/S0 undriven or does not drive anything -
      clipped.
-Signal rxtransport/sub_389_add_2_16/S1 undriven or does not drive anything -
+Signal rxtransport/sub_435_add_2_16/S1 undriven or does not drive anything -
      clipped.
-Signal rxtransport/sub_389_add_2_16/S0 undriven or does not drive anything -
+Signal rxtransport/sub_435_add_2_16/S0 undriven or does not drive anything -
      clipped.
-Signal rxtransport/sub_389_add_2_18/S1 undriven or does not drive anything -
+Signal rxtransport/sub_435_add_2_18/S1 undriven or does not drive anything -
      clipped.
-Signal rxtransport/sub_389_add_2_18/S0 undriven or does not drive anything -
-     clipped.
-Signal rxtransport/sub_389_add_2_20/S1 undriven or does not drive anything -
-     clipped.
-Signal rxtransport/sub_389_add_2_20/S0 undriven or does not drive anything -
+Signal rxtransport/sub_435_add_2_18/S0 undriven or does not drive anything -
 
      clipped.
-Signal rxtransport/sub_389_add_2_22/S1 undriven or does not drive anything -
-     clipped.
-Signal rxtransport/sub_389_add_2_22/S0 undriven or does not drive anything -
-     clipped.
-Block lo_gen/i26296 was optimized away.
-Block o_dac_a_9__I_0/carrier/qtr_inst/i23093_else_4_lut was optimized away.
-Block o_dac_a_9__I_0/modulation/qtr_inst/i23201_else_4_lut was optimized away.
-Block i_resetb_I_0_1_lut_rep_723 was optimized away.
-Block i10108_1_lut was optimized away.
+Signal genbus/wbexec/o_wb_addr_598_add_4_1/S1 undriven or does not drive
+     anything - clipped.
+Signal genbus/wbexec/o_wb_addr_598_add_4_1/S0 undriven or does not drive
+     anything - clipped.
+Signal genbus/wbexec/o_wb_addr_598_add_4_1/CI undriven or does not drive
+     anything - clipped.
+Signal genbus/wbexec/o_wb_addr_598_add_4_31/CO undriven or does not drive
+     anything - clipped.
+Block o_dac_a_9__I_0/i10017_1_lut was optimized away.
+Block o_dac_a_9__I_0/i615_1_lut was optimized away.
+Block lo_gen/i26979 was optimized away.
+Block i10187_1_lut was optimized away.
+Block rxtransport/i9727_1_lut was optimized away.
 Block genbus/wbexec/i2_1_lut was optimized away.
-Block rxtransport/i9663_1_lut was optimized away.
 Block i1 was optimized away.
 Block i2 was optimized away.
 Block m0_lut was optimized away.
@@ -437,9 +442,9 @@ Block m0_lut was optimized away.
 /genbus/genhex:
     EBRs: 1
     RAM SLICEs: 0
-    Logic SLICEs: 1
+    Logic SLICEs: 0
     PFU Registers: 0
-    -Contains EBR mux_100:  TYPE= SP8KC,  Width= 7,  Depth= 32,  REGMODE= NOREG,
+    -Contains EBR mux_98:  TYPE= SP8KC,  Width= 7,  Depth= 32,  REGMODE= NOREG,
          RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE= NORMAL,  GSR=
          DISABLED
 
@@ -470,10 +475,10 @@ PLL 1:                                     Pin/Node Value
   PLL Data bus Reset Signal:                        NONE
   PLL Data bus Write Enable Signal:                 NONE
   PLL Data bus Address0:                            NONE
+
   PLL Data bus Address1:                            NONE
   PLL Data bus Address2:                            NONE
   PLL Data bus Address3:                            NONE
-
   PLL Data bus Address4:                            NONE
   PLL Data In bus Data0:                            NONE
   PLL Data In bus Data1:                            NONE
@@ -527,10 +532,10 @@ PLL 1:                                     Pin/Node Value
   CLKOS3 Desired Phase Shift(degree):               0
 PLL 2:                                     Pin/Node Value
   PLL Instance Name:                                lo_gen/PLLInst_0
+
   PLL Type:                                         EHXPLLJ
   Input Clock:                             PIN      i_ref_clk_c
   Output Clock(P):                         NODE     lo_pll_out
-
   Output Clock(S):                                  NONE
   Output Clock(S2):                                 NONE
   Output Clock(S3):                                 NONE
@@ -584,10 +589,10 @@ PLL 2:                                     Pin/Node Value
   VCO Bypass B Input:                               VCO_PHASE
   VCO Bypass C Input:                               VCO_PHASE
   VCO Bypass D Input:                               VCO_PHASE
+
   FB_MODE:                                          CLKOP
   CLKI Divider:                                     1
   CLKFB Divider:                                    35
-
   CLKOP Divider:                                    1
   CLKOS Divider:                                    1
   CLKOS2 Divider:                                   1
@@ -638,7 +643,9 @@ PLL 2:                                     Pin/Node Value
 
            WID		EBR Instance
       ---		------------
-      0b0000000011	genbus/genhex/mux_100
+      0b0000000011	genbus/genhex/mux_98
+
+
 
 
 
@@ -646,8 +653,7 @@ PLL 2:                                     Pin/Node Value
 <A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
 ---------------
 
-Instance Name: genbus/genhex/mux_100
-
+Instance Name: genbus/genhex/mux_98
          Type: SP8KC
 Instance Name: wb_lo_data_7__I_0/EFBInst_0
          Type: EFB
@@ -663,8 +669,7 @@ Instance Name: lo_gen/PLLInst_0
 
 GSR Component:
    The Global Set Reset (GSR) resource has been used to implement a global reset
-        of the design. The reset signal used for GSR control is
-        'o_dac_cw_b_c_c'.
+        of the design. The reset signal used for GSR control is 'i_sw0_c'.
         
 
      GSR Property:
@@ -677,93 +682,19 @@ GSR Component:
 -------------------------------------
 
      These components have the GSR property set to DISABLED. The components will
-     not respond to the reset signal 'o_dac_cw_b_c_c' via the GSR component.
+     not respond to the reset signal 'i_sw0_c' via the GSR component.
 
      Type and number of components of the type: 
-   Register = 1156 
+   Register = 1174 
    SP8KC = 1
 
      Type and instance name of component: 
-   Register : rxtransport/qq_uart_70
-   Register : rxtransport/ck_uart_71
-   Register : rxtransport/o_data__i1
-   Register : rxtransport/state_i0
-   Register : rxtransport/half_baud_time_73
-   Register : rxtransport/o_wr_76
-   Register : rxtransport/q_uart_69
-   Register : rxtransport/baud_counter_i1
-   Register : rxtransport/chg_counter__i0
-   Register : rxtransport/baud_counter_i2
-   Register : rxtransport/baud_counter_i3
-   Register : rxtransport/zero_baud_counter_79
-   Register : rxtransport/chg_counter__i23
-   Register : rxtransport/baud_counter_i8
-   Register : rxtransport/chg_counter__i22
-   Register : rxtransport/chg_counter__i21
-   Register : rxtransport/chg_counter__i20
-   Register : rxtransport/chg_counter__i19
-   Register : rxtransport/chg_counter__i18
-   Register : rxtransport/chg_counter__i17
-   Register : rxtransport/chg_counter__i16
-   Register : rxtransport/chg_counter__i15
-
-   Register : rxtransport/chg_counter__i14
-   Register : rxtransport/chg_counter__i13
-   Register : rxtransport/chg_counter__i12
-   Register : rxtransport/chg_counter__i11
-   Register : rxtransport/chg_counter__i10
-   Register : rxtransport/chg_counter__i9
-   Register : rxtransport/chg_counter__i8
-   Register : rxtransport/chg_counter__i7
-   Register : rxtransport/chg_counter__i6
-   Register : rxtransport/chg_counter__i5
-   Register : rxtransport/chg_counter__i4
-   Register : rxtransport/chg_counter__i3
-   Register : rxtransport/chg_counter__i2
-   Register : rxtransport/chg_counter__i1
-   Register : rxtransport/baud_counter_i9
-   Register : rxtransport/baud_counter_i10
-   Register : rxtransport/baud_counter_i13
-   Register : rxtransport/baud_counter_i23
-   Register : rxtransport/baud_counter_i22
-   Register : rxtransport/baud_counter_i21
-   Register : rxtransport/baud_counter_i20
-   Register : rxtransport/baud_counter_i19
-   Register : rxtransport/baud_counter_i18
-   Register : rxtransport/baud_counter_i17
-   Register : rxtransport/baud_counter_i16
-   Register : rxtransport/baud_counter_i15
-   Register : rxtransport/baud_counter_i14
-   Register : rxtransport/baud_counter_i12
-   Register : rxtransport/baud_counter_i11
-   Register : rxtransport/baud_counter_i7
-   Register : rxtransport/baud_counter_i6
-   Register : rxtransport/baud_counter_i5
-   Register : rxtransport/baud_counter_i4
-   Register : rxtransport/state_i3
-   Register : rxtransport/state_i2
-   Register : rxtransport/state_i1
-   Register : rxtransport/o_data__i7
-   Register : rxtransport/o_data__i6
-   Register : rxtransport/o_data__i5
-   Register : rxtransport/o_data__i4
-   Register : rxtransport/o_data__i3
-   Register : rxtransport/o_data__i2
-   Register : rxtransport/baud_counter_i0
-   Register : rxtransport/data_reg_i0_i7
-   Register : rxtransport/data_reg_i0_i6
-   Register : rxtransport/data_reg_i0_i5
-   Register : rxtransport/data_reg_i0_i4
-   Register : rxtransport/data_reg_i0_i3
-   Register : rxtransport/data_reg_i0_i2
-   Register : rxtransport/data_reg_i0_i1
-   Register : rxtransport/data_reg_i0_i0
+   Register : genbus/wbexec/newaddr_72
    Register : genbus/wbexec/o_wb_data_i0
    Register : genbus/wbexec/inc_71
    Register : genbus/wbexec/o_rsp_stb_74
    Register : genbus/wbexec/o_rsp_word_i0
    Register : genbus/wbexec/o_rsp_word_i2
-
    Register : genbus/wbexec/o_rsp_word_i3
    Register : genbus/wbexec/o_rsp_word_i4
    Register : genbus/wbexec/o_rsp_word_i5
@@ -779,6 +710,7 @@ GSR Component:
    Register : genbus/wbexec/o_rsp_word_i15
    Register : genbus/wbexec/o_rsp_word_i16
    Register : genbus/wbexec/o_rsp_word_i17
+
    Register : genbus/wbexec/o_rsp_word_i18
    Register : genbus/wbexec/o_rsp_word_i19
    Register : genbus/wbexec/o_rsp_word_i20
@@ -797,7 +729,6 @@ GSR Component:
    Register : genbus/wbexec/o_rsp_word_i33
    Register : genbus/wbexec/o_wb_we_69
    Register : genbus/wbexec/o_wb_stb_68
-   Register : genbus/wbexec/newaddr_72
    Register : genbus/wbexec/o_wb_data_i31
    Register : genbus/wbexec/o_wb_data_i30
    Register : genbus/wbexec/o_wb_data_i29
@@ -820,7 +751,6 @@ GSR Component:
    Register : genbus/wbexec/o_wb_data_i12
    Register : genbus/wbexec/o_wb_data_i11
    Register : genbus/wbexec/o_wb_data_i10
-
    Register : genbus/wbexec/o_wb_data_i9
    Register : genbus/wbexec/o_wb_data_i8
    Register : genbus/wbexec/o_wb_data_i7
@@ -830,38 +760,39 @@ GSR Component:
    Register : genbus/wbexec/o_wb_data_i3
    Register : genbus/wbexec/o_wb_data_i2
    Register : genbus/wbexec/o_wb_data_i1
+   Register : genbus/wbexec/o_wb_addr_598__i0
    Register : genbus/wbexec/o_rsp_word_i1
    Register : genbus/wbexec/o_wb_cyc_67
-   Register : genbus/wbexec/o_wb_addr_546__i29
-   Register : genbus/wbexec/o_wb_addr_546__i28
-   Register : genbus/wbexec/o_wb_addr_546__i27
-   Register : genbus/wbexec/o_wb_addr_546__i26
-   Register : genbus/wbexec/o_wb_addr_546__i25
-   Register : genbus/wbexec/o_wb_addr_546__i24
-   Register : genbus/wbexec/o_wb_addr_546__i23
-   Register : genbus/wbexec/o_wb_addr_546__i22
-   Register : genbus/wbexec/o_wb_addr_546__i21
-   Register : genbus/wbexec/o_wb_addr_546__i20
-   Register : genbus/wbexec/o_wb_addr_546__i19
-   Register : genbus/wbexec/o_wb_addr_546__i18
-   Register : genbus/wbexec/o_wb_addr_546__i17
-   Register : genbus/wbexec/o_wb_addr_546__i16
-   Register : genbus/wbexec/o_wb_addr_546__i15
-   Register : genbus/wbexec/o_wb_addr_546__i14
-   Register : genbus/wbexec/o_wb_addr_546__i13
-   Register : genbus/wbexec/o_wb_addr_546__i12
-   Register : genbus/wbexec/o_wb_addr_546__i11
-   Register : genbus/wbexec/o_wb_addr_546__i10
-   Register : genbus/wbexec/o_wb_addr_546__i9
-   Register : genbus/wbexec/o_wb_addr_546__i8
-   Register : genbus/wbexec/o_wb_addr_546__i7
-   Register : genbus/wbexec/o_wb_addr_546__i6
-   Register : genbus/wbexec/o_wb_addr_546__i5
-   Register : genbus/wbexec/o_wb_addr_546__i4
-   Register : genbus/wbexec/o_wb_addr_546__i3
-   Register : genbus/wbexec/o_wb_addr_546__i2
-   Register : genbus/wbexec/o_wb_addr_546__i1
-   Register : genbus/wbexec/o_wb_addr_546__i0
+   Register : genbus/wbexec/o_wb_addr_598__i29
+   Register : genbus/wbexec/o_wb_addr_598__i28
+   Register : genbus/wbexec/o_wb_addr_598__i27
+   Register : genbus/wbexec/o_wb_addr_598__i26
+
+   Register : genbus/wbexec/o_wb_addr_598__i25
+   Register : genbus/wbexec/o_wb_addr_598__i24
+   Register : genbus/wbexec/o_wb_addr_598__i23
+   Register : genbus/wbexec/o_wb_addr_598__i22
+   Register : genbus/wbexec/o_wb_addr_598__i21
+   Register : genbus/wbexec/o_wb_addr_598__i20
+   Register : genbus/wbexec/o_wb_addr_598__i19
+   Register : genbus/wbexec/o_wb_addr_598__i18
+   Register : genbus/wbexec/o_wb_addr_598__i17
+   Register : genbus/wbexec/o_wb_addr_598__i16
+   Register : genbus/wbexec/o_wb_addr_598__i15
+   Register : genbus/wbexec/o_wb_addr_598__i14
+   Register : genbus/wbexec/o_wb_addr_598__i13
+   Register : genbus/wbexec/o_wb_addr_598__i12
+   Register : genbus/wbexec/o_wb_addr_598__i11
+   Register : genbus/wbexec/o_wb_addr_598__i10
+   Register : genbus/wbexec/o_wb_addr_598__i9
+   Register : genbus/wbexec/o_wb_addr_598__i8
+   Register : genbus/wbexec/o_wb_addr_598__i7
+   Register : genbus/wbexec/o_wb_addr_598__i6
+   Register : genbus/wbexec/o_wb_addr_598__i5
+   Register : genbus/wbexec/o_wb_addr_598__i4
+   Register : genbus/wbexec/o_wb_addr_598__i3
+   Register : genbus/wbexec/o_wb_addr_598__i2
+   Register : genbus/wbexec/o_wb_addr_598__i1
    Register : genbus/unpackx/r_len__i0
    Register : genbus/unpackx/o_dw_bits_i0
    Register : genbus/unpackx/o_dw_bits_i3
@@ -877,7 +808,6 @@ GSR Component:
    Register : genbus/unpackx/r_word_i0
    Register : genbus/unpackx/r_word_i30
    Register : genbus/unpackx/r_word_i29
-
    Register : genbus/unpackx/r_word_i28
    Register : genbus/unpackx/r_word_i27
    Register : genbus/unpackx/r_word_i26
@@ -894,6 +824,7 @@ GSR Component:
    Register : genbus/unpackx/r_word_i15
    Register : genbus/unpackx/r_word_i14
    Register : genbus/unpackx/r_word_i13
+
    Register : genbus/unpackx/r_word_i12
    Register : genbus/unpackx/r_word_i11
    Register : genbus/unpackx/r_word_i10
@@ -934,7 +865,6 @@ GSR Component:
    Register : genbus/packxi/o_pck_word__i11
    Register : genbus/packxi/o_pck_word__i10
    Register : genbus/packxi/o_pck_word__i9
-
    Register : genbus/packxi/o_pck_word__i8
    Register : genbus/packxi/o_pck_word__i7
    Register : genbus/packxi/o_pck_word__i6
@@ -951,6 +881,7 @@ GSR Component:
    Register : genbus/packxi/r_word__i28
    Register : genbus/packxi/r_word__i27
    Register : genbus/packxi/r_word__i26
+
    Register : genbus/packxi/r_word__i25
    Register : genbus/packxi/r_word__i24
    Register : genbus/packxi/r_word__i23
@@ -980,48 +911,47 @@ GSR Component:
    Register : genbus/dechxi/o_dh_stb_35
    Register : genbus/dechxi/o_dh_bits_i0
    Register : genbus/dechxi/o_reset_34
+   Register : genbus/dechxi/o_reset_34_rep_833
    Register : genbus/dechxi/o_dh_bits_i4
    Register : genbus/dechxi/o_dh_bits_i3
    Register : genbus/dechxi/o_dh_bits_i2
    Register : genbus/dechxi/o_dh_bits_i1
-   Register : genbus/dechxi/o_reset_34_rep_823
-   Register : genbus/dechxi/o_reset_34_rep_822
-   Register : genbus/addnl/last_cr_45
+   Register : genbus/dechxi/o_reset_34_rep_832
    Register : genbus/addnl/o_nl_stb_46
+   Register : genbus/addnl/last_cr_45
    Register : genbus/addnl/o_nl_byte_i2
    Register : genbus/addnl/o_nl_byte_i3
    Register : genbus/addnl/o_nl_byte_i4
-
    Register : genbus/addnl/o_nl_byte_i5
    Register : genbus/addnl/o_nl_byte_i6
    Register : genbus/addnl/o_nl_byte_i7
    Register : genbus/addnl/cr_state_44
    Register : genbus/addnl/loaded_47
    Register : genbus/addnl/o_nl_byte_i1
-   Register : genbus/addints/o_int_word_i10
+   Register : genbus/addints/o_int_word_i9
    Register : genbus/addints/o_int_word_i33
    Register : genbus/addints/o_int_word_i32
-   Register : genbus/addints/o_int_word_i9
    Register : genbus/addints/o_int_word_i31
+   Register : genbus/addints/o_int_word_i8
    Register : genbus/addints/o_int_word_i30
    Register : genbus/addints/o_int_word_i29
-   Register : genbus/addints/o_int_word_i8
    Register : genbus/addints/o_int_word_i28
-   Register : genbus/addints/o_int_word_i7
    Register : genbus/addints/o_int_word_i27
-   Register : genbus/addints/o_int_word_i6
-   Register : genbus/addints/o_int_word_i5
+   Register : genbus/addints/o_int_word_i7
+
    Register : genbus/addints/o_int_word_i26
+   Register : genbus/addints/o_int_word_i6
    Register : genbus/addints/o_int_word_i25
-   Register : genbus/addints/o_int_word_i4
+   Register : genbus/addints/o_int_word_i5
    Register : genbus/addints/o_int_word_i24
+   Register : genbus/addints/o_int_word_i4
    Register : genbus/addints/o_int_word_i3
    Register : genbus/addints/o_int_word_i23
    Register : genbus/addints/o_int_word_i2
-   Register : genbus/addints/o_int_word_i1
    Register : genbus/addints/o_int_word_i22
-   Register : genbus/addints/o_int_word_i21
+   Register : genbus/addints/o_int_word_i1
    Register : genbus/addints/o_int_word_i0
+   Register : genbus/addints/o_int_word_i21
    Register : genbus/addints/o_int_word_i20
    Register : genbus/addints/o_int_word_i19
    Register : genbus/addints/o_int_word_i18
@@ -1029,17 +959,20 @@ GSR Component:
    Register : genbus/addints/o_int_word_i16
    Register : genbus/addints/o_int_word_i15
    Register : genbus/addints/o_int_stb_58
-   Register : genbus/addints/loaded_57
    Register : genbus/addints/o_int_word_i14
    Register : genbus/addints/o_int_word_i13
+   Register : genbus/addints/loaded_57
    Register : genbus/addints/o_int_word_i12
    Register : genbus/addints/o_int_word_i11
+   Register : genbus/addints/o_int_word_i10
+   Register : genbus/addidles/o_idl_word_i11
    Register : genbus/addidles/o_idl_word_i10
    Register : genbus/addidles/o_idl_word_i9
    Register : genbus/addidles/o_idl_word_i8
    Register : genbus/addidles/o_idl_word_i7
    Register : genbus/addidles/o_idl_word_i6
    Register : genbus/addidles/o_idl_word_i5
+   Register : genbus/addidles/o_idl_word_i4
    Register : genbus/addidles/o_idl_stb_28
    Register : genbus/addidles/o_idl_word_i33
    Register : genbus/addidles/o_idl_word_i32
@@ -1048,14 +981,12 @@ GSR Component:
    Register : genbus/addidles/o_idl_word_i29
    Register : genbus/addidles/o_idl_word_i28
    Register : genbus/addidles/o_idl_word_i27
-
-   Register : genbus/addidles/o_idl_word_i26
-   Register : genbus/addidles/o_idl_word_i4
    Register : genbus/addidles/o_idl_word_i3
    Register : genbus/addidles/o_idl_word_i2
    Register : genbus/addidles/o_idl_word_i1
    Register : genbus/addidles/o_idl_word_i0
-   Register : genbus/addidles/o_idl_word_i13
+   Register : genbus/addidles/o_idl_word_i14
+   Register : genbus/addidles/o_idl_word_i26
    Register : genbus/addidles/o_idl_word_i25
    Register : genbus/addidles/o_idl_word_i24
    Register : genbus/addidles/o_idl_word_i23
@@ -1064,16 +995,90 @@ GSR Component:
    Register : genbus/addidles/o_idl_word_i20
    Register : genbus/addidles/o_idl_word_i19
    Register : genbus/addidles/o_idl_word_i18
+
    Register : genbus/addidles/o_idl_word_i17
    Register : genbus/addidles/o_idl_word_i16
    Register : genbus/addidles/o_idl_word_i15
-   Register : genbus/addidles/o_idl_word_i14
+   Register : genbus/addidles/o_idl_word_i13
    Register : genbus/addidles/o_idl_word_i12
-   Register : genbus/addidles/o_idl_word_i11
    Register : power_counter_i0
    Register : wb_idata_i0
-   Register : wb_ack_68
-   Register : wb_smpl_ack_61
+   Register : wb_ack_67
+   Register : wb_smpl_ack_60
+   Register : rxtransport/o_data__i1
+   Register : rxtransport/qq_uart_70
+   Register : rxtransport/ck_uart_71
+   Register : rxtransport/state_i0
+   Register : rxtransport/half_baud_time_73
+   Register : rxtransport/o_wr_76
+   Register : rxtransport/q_uart_69
+   Register : rxtransport/baud_counter_i1
+   Register : rxtransport/chg_counter__i0
+   Register : rxtransport/zero_baud_counter_79
+   Register : rxtransport/chg_counter__i23
+   Register : rxtransport/baud_counter_i2
+   Register : rxtransport/baud_counter_i3
+   Register : rxtransport/baud_counter_i8
+   Register : rxtransport/chg_counter__i22
+   Register : rxtransport/chg_counter__i21
+   Register : rxtransport/chg_counter__i20
+   Register : rxtransport/chg_counter__i19
+   Register : rxtransport/chg_counter__i18
+   Register : rxtransport/chg_counter__i17
+   Register : rxtransport/chg_counter__i16
+   Register : rxtransport/chg_counter__i15
+   Register : rxtransport/chg_counter__i14
+   Register : rxtransport/chg_counter__i13
+   Register : rxtransport/chg_counter__i12
+   Register : rxtransport/chg_counter__i11
+   Register : rxtransport/chg_counter__i10
+   Register : rxtransport/chg_counter__i9
+   Register : rxtransport/chg_counter__i8
+   Register : rxtransport/chg_counter__i7
+   Register : rxtransport/chg_counter__i6
+   Register : rxtransport/chg_counter__i5
+   Register : rxtransport/chg_counter__i4
+   Register : rxtransport/chg_counter__i3
+   Register : rxtransport/chg_counter__i2
+   Register : rxtransport/chg_counter__i1
+   Register : rxtransport/baud_counter_i9
+   Register : rxtransport/baud_counter_i10
+   Register : rxtransport/baud_counter_i13
+   Register : rxtransport/baud_counter_i23
+   Register : rxtransport/baud_counter_i22
+   Register : rxtransport/baud_counter_i21
+   Register : rxtransport/baud_counter_i20
+   Register : rxtransport/baud_counter_i19
+   Register : rxtransport/baud_counter_i18
+   Register : rxtransport/baud_counter_i17
+   Register : rxtransport/baud_counter_i16
+
+   Register : rxtransport/baud_counter_i15
+   Register : rxtransport/baud_counter_i14
+   Register : rxtransport/baud_counter_i12
+   Register : rxtransport/baud_counter_i11
+   Register : rxtransport/baud_counter_i7
+   Register : rxtransport/baud_counter_i6
+   Register : rxtransport/baud_counter_i5
+   Register : rxtransport/baud_counter_i4
+   Register : rxtransport/state_i3
+   Register : rxtransport/state_i2
+   Register : rxtransport/state_i1
+   Register : rxtransport/o_data__i7
+   Register : rxtransport/o_data__i6
+   Register : rxtransport/o_data__i5
+   Register : rxtransport/o_data__i4
+   Register : rxtransport/o_data__i3
+   Register : rxtransport/o_data__i2
+   Register : rxtransport/baud_counter_i0
+   Register : rxtransport/data_reg_i0_i7
+   Register : rxtransport/data_reg_i0_i6
+   Register : rxtransport/data_reg_i0_i5
+   Register : rxtransport/data_reg_i0_i4
+   Register : rxtransport/data_reg_i0_i3
+   Register : rxtransport/data_reg_i0_i2
+   Register : rxtransport/data_reg_i0_i1
+   Register : rxtransport/data_reg_i0_i0
    Register : txtransport/lcl_data_i0
    Register : txtransport/zero_baud_counter_49
    Register : txtransport/baud_counter_i0
@@ -1104,20 +1109,20 @@ GSR Component:
    Register : txtransport/lcl_data_i7
    Register : txtransport/lcl_data_i6
    Register : txtransport/lcl_data_i5
-   Register : txtransport/lcl_data_i4
 
+   Register : txtransport/lcl_data_i4
    Register : txtransport/lcl_data_i3
    Register : txtransport/lcl_data_i2
    Register : txtransport/lcl_data_i1
    Register : txtransport/r_busy_45
-   Register : txtransport/state_544__i3
-   Register : txtransport/state_544__i2
-   Register : txtransport/state_544__i1
-   Register : txtransport/state_544__i0
+   Register : txtransport/state_596__i3
+   Register : txtransport/state_596__i2
+   Register : txtransport/state_596__i1
+   Register : txtransport/state_596__i0
    Register : smpl_register_i0_i0
-   Register : wb_err_66
+   Register : wb_err_65
    Register : bus_err_address_i0_i0
-   Register : smpl_interrupt_63
+   Register : smpl_interrupt_62
    Register : smpl_register_i0_i31
    Register : smpl_register_i0_i30
    Register : smpl_register_i0_i29
@@ -1152,17 +1157,17 @@ GSR Component:
    Register : wb_idata_i31
    Register : wb_idata_i30
    Register : wb_idata_i29
-   Register : wb_smpl_data_i0
-   Register : clock_phase_shifter_inst/o_clk_q_10
-   Register : clock_phase_shifter_inst/o_clk_i_9
    Register : wb_idata_i28
    Register : wb_idata_i27
+   Register : clock_phase_shifter_inst/o_clk_q_10
+   Register : clock_phase_shifter_inst/o_clk_i_9
+   Register : wb_smpl_data_i0
    Register : wb_idata_i26
    Register : wb_idata_i25
    Register : wb_idata_i24
    Register : wb_idata_i23
-   Register : wb_idata_i22
 
+   Register : wb_idata_i22
    Register : wb_idata_i21
    Register : wb_idata_i20
    Register : wb_idata_i19
@@ -1186,9 +1191,39 @@ GSR Component:
    Register : wb_idata_i1
    Register : power_counter_i31
    Register : power_counter_i30
+   Register : bus_err_address_i0_i29
+   Register : bus_err_address_i0_i28
+   Register : bus_err_address_i0_i27
+   Register : bus_err_address_i0_i26
+   Register : bus_err_address_i0_i25
+   Register : bus_err_address_i0_i24
+   Register : bus_err_address_i0_i23
+   Register : bus_err_address_i0_i22
+   Register : bus_err_address_i0_i21
+   Register : bus_err_address_i0_i20
+   Register : bus_err_address_i0_i19
+   Register : bus_err_address_i0_i18
+   Register : bus_err_address_i0_i17
+   Register : bus_err_address_i0_i16
+   Register : bus_err_address_i0_i15
+   Register : bus_err_address_i0_i14
+   Register : bus_err_address_i0_i13
+   Register : bus_err_address_i0_i12
+   Register : bus_err_address_i0_i11
+   Register : bus_err_address_i0_i10
+   Register : bus_err_address_i0_i9
+   Register : bus_err_address_i0_i8
+   Register : bus_err_address_i0_i7
+   Register : bus_err_address_i0_i6
+   Register : bus_err_address_i0_i5
+   Register : bus_err_address_i0_i4
+   Register : bus_err_address_i0_i3
+   Register : bus_err_address_i0_i2
+   Register : bus_err_address_i0_i1
    Register : power_counter_i29
    Register : power_counter_i28
    Register : power_counter_i27
+
    Register : power_counter_i26
    Register : power_counter_i25
    Register : power_counter_i24
@@ -1216,36 +1251,6 @@ GSR Component:
    Register : power_counter_i2
    Register : power_counter_i1
    Register : wb_smpl_data_i31
-   Register : bus_err_address_i0_i29
-   Register : bus_err_address_i0_i28
-   Register : bus_err_address_i0_i27
-
-   Register : bus_err_address_i0_i26
-   Register : bus_err_address_i0_i25
-   Register : bus_err_address_i0_i24
-   Register : bus_err_address_i0_i23
-   Register : bus_err_address_i0_i22
-   Register : bus_err_address_i0_i21
-   Register : bus_err_address_i0_i20
-   Register : bus_err_address_i0_i19
-   Register : bus_err_address_i0_i18
-   Register : bus_err_address_i0_i17
-   Register : bus_err_address_i0_i16
-   Register : bus_err_address_i0_i15
-   Register : bus_err_address_i0_i14
-   Register : bus_err_address_i0_i13
-   Register : bus_err_address_i0_i12
-   Register : bus_err_address_i0_i11
-   Register : bus_err_address_i0_i10
-   Register : bus_err_address_i0_i9
-   Register : bus_err_address_i0_i8
-   Register : bus_err_address_i0_i7
-   Register : bus_err_address_i0_i6
-   Register : bus_err_address_i0_i5
-   Register : bus_err_address_i0_i4
-   Register : bus_err_address_i0_i3
-   Register : bus_err_address_i0_i2
-   Register : bus_err_address_i0_i1
    Register : wb_smpl_data_i30
    Register : wb_smpl_data_i11
    Register : wb_smpl_data_i29
@@ -1275,147 +1280,180 @@ GSR Component:
    Register : wb_smpl_data_i15
    Register : wb_smpl_data_i14
    Register : wb_smpl_data_i13
+
    Register : wb_smpl_data_i12
+   Register : o_dac_a_9__I_0/addr_space_3[[30__281
+   Register : o_dac_a_9__I_0/addr_space_3[[29__283
+   Register : o_dac_a_9__I_0/addr_space_3[[28__285
+   Register : o_dac_a_9__I_0/addr_space_3[[27__287
+   Register : o_dac_a_9__I_0/addr_space_3[[26__289
+   Register : o_dac_a_9__I_0/addr_space_3[[25__291
+   Register : o_dac_a_9__I_0/addr_space_0[[30__182
+   Register : o_dac_a_9__I_0/addr_space_0[[29__183
+   Register : o_dac_a_9__I_0/addr_space_0[[28__184
+   Register : o_dac_a_9__I_0/addr_space_0[[27__185
+   Register : o_dac_a_9__I_0/addr_space_0[[26__186
+   Register : o_dac_a_9__I_0/addr_space_0[[25__187
+   Register : o_dac_a_9__I_0/addr_space_0[[24__188
+   Register : o_dac_a_9__I_0/addr_space_0[[23__189
+   Register : o_dac_a_9__I_0/addr_space_0[[21__192
+   Register : o_dac_a_9__I_0/addr_space_0[[20__193
+   Register : o_dac_a_9__I_0/addr_space_0[[19__194
+   Register : o_dac_a_9__I_0/addr_space_0[[18__195
+   Register : o_dac_a_9__I_0/addr_space_0[[17__196
+   Register : o_dac_a_9__I_0/addr_space_0[[16__197
+   Register : o_dac_a_9__I_0/addr_space_0[[15__198
+   Register : o_dac_a_9__I_0/addr_space_0[[14__199
+   Register : o_dac_a_9__I_0/addr_space_0[[13__200
+   Register : o_dac_a_9__I_0/addr_space_0[[12__201
+   Register : o_dac_a_9__I_0/addr_space_0[[11__202
+   Register : o_dac_a_9__I_0/addr_space_0[[10__203
+   Register : o_dac_a_9__I_0/addr_space_0[[9__204
+   Register : o_dac_a_9__I_0/addr_space_0[[8__205
+   Register : o_dac_a_9__I_0/addr_space_0[[7__206
+   Register : o_dac_a_9__I_0/addr_space_0[[6__207
+   Register : o_dac_a_9__I_0/addr_space_0[[5__208
+   Register : o_dac_a_9__I_0/addr_space_0[[4__209
+   Register : o_dac_a_9__I_0/addr_space_0[[3__210
+   Register : o_dac_a_9__I_0/addr_space_0[[2__211
+   Register : o_dac_a_9__I_0/addr_space_0[[1__212
+   Register : o_dac_a_9__I_0/addr_space_0[[0__213
+   Register : o_dac_a_9__I_0/addr_space_1[[31__214
+   Register : o_dac_a_9__I_0/addr_space_1[[30__215
+   Register : o_dac_a_9__I_0/addr_space_1[[29__216
+   Register : o_dac_a_9__I_0/addr_space_1[[28__217
+   Register : o_dac_a_9__I_0/addr_space_1[[27__218
+   Register : o_dac_a_9__I_0/addr_space_1[[26__219
+   Register : o_dac_a_9__I_0/addr_space_1[[25__220
+   Register : o_dac_a_9__I_0/addr_space_1[[24__221
+   Register : o_dac_a_9__I_0/addr_space_1[[23__222
+   Register : o_dac_a_9__I_0/addr_space_1[[22__223
+   Register : o_dac_a_9__I_0/addr_space_1[[21__224
+   Register : o_dac_a_9__I_0/addr_space_1[[20__225
+   Register : o_dac_a_9__I_0/addr_space_1[[19__226
+   Register : o_dac_a_9__I_0/addr_space_1[[18__227
+   Register : o_dac_a_9__I_0/addr_space_1[[17__228
+   Register : o_dac_a_9__I_0/addr_space_1[[16__229
+   Register : o_dac_a_9__I_0/addr_space_1[[15__230
+   Register : o_dac_a_9__I_0/addr_space_1[[14__231
+   Register : o_dac_a_9__I_0/addr_space_1[[13__232
 
-   Register : o_dac_a_9__I_0/addr_space_3[[30__265
-   Register : o_dac_a_9__I_0/addr_space_3[[29__267
-   Register : o_dac_a_9__I_0/addr_space_3[[28__269
-   Register : o_dac_a_9__I_0/addr_space_3[[27__271
-   Register : o_dac_a_9__I_0/addr_space_3[[26__273
-   Register : o_dac_a_9__I_0/addr_space_0[[30__166
-   Register : o_dac_a_9__I_0/addr_space_0[[29__167
-   Register : o_dac_a_9__I_0/addr_space_0[[28__168
-   Register : o_dac_a_9__I_0/addr_space_0[[27__169
-   Register : o_dac_a_9__I_0/addr_space_0[[26__170
-   Register : o_dac_a_9__I_0/addr_space_0[[25__171
-   Register : o_dac_a_9__I_0/addr_space_0[[24__172
-   Register : o_dac_a_9__I_0/addr_space_0[[23__173
-   Register : o_dac_a_9__I_0/addr_space_0[[21__176
-   Register : o_dac_a_9__I_0/addr_space_0[[20__177
-   Register : o_dac_a_9__I_0/addr_space_0[[19__178
-   Register : o_dac_a_9__I_0/addr_space_0[[18__179
-   Register : o_dac_a_9__I_0/addr_space_0[[17__180
-   Register : o_dac_a_9__I_0/addr_space_0[[16__181
-   Register : o_dac_a_9__I_0/addr_space_0[[15__182
-   Register : o_dac_a_9__I_0/addr_space_0[[14__183
-   Register : o_dac_a_9__I_0/addr_space_0[[13__184
-   Register : o_dac_a_9__I_0/addr_space_0[[12__185
-   Register : o_dac_a_9__I_0/addr_space_0[[11__186
-   Register : o_dac_a_9__I_0/addr_space_0[[10__187
-   Register : o_dac_a_9__I_0/addr_space_0[[9__188
-   Register : o_dac_a_9__I_0/addr_space_0[[8__189
-   Register : o_dac_a_9__I_0/addr_space_0[[7__190
-   Register : o_dac_a_9__I_0/addr_space_0[[6__191
-   Register : o_dac_a_9__I_0/addr_space_0[[5__192
-   Register : o_dac_a_9__I_0/addr_space_0[[4__193
-   Register : o_dac_a_9__I_0/addr_space_0[[3__194
-   Register : o_dac_a_9__I_0/addr_space_0[[2__195
-   Register : o_dac_a_9__I_0/addr_space_0[[1__196
-   Register : o_dac_a_9__I_0/addr_space_0[[0__197
-   Register : o_dac_a_9__I_0/addr_space_1[[31__198
-   Register : o_dac_a_9__I_0/addr_space_1[[30__199
-   Register : o_dac_a_9__I_0/addr_space_1[[29__200
-   Register : o_dac_a_9__I_0/addr_space_1[[28__201
-   Register : o_dac_a_9__I_0/addr_space_1[[27__202
-   Register : o_dac_a_9__I_0/addr_space_1[[26__203
-   Register : o_dac_a_9__I_0/addr_space_1[[25__204
-   Register : o_dac_a_9__I_0/addr_space_1[[24__205
-   Register : o_dac_a_9__I_0/addr_space_1[[23__206
-   Register : o_dac_a_9__I_0/addr_space_1[[22__207
-   Register : o_dac_a_9__I_0/addr_space_1[[21__208
-   Register : o_dac_a_9__I_0/addr_space_1[[20__209
-   Register : o_dac_a_9__I_0/addr_space_1[[19__210
-   Register : o_dac_a_9__I_0/addr_space_1[[18__211
-   Register : o_dac_a_9__I_0/addr_space_1[[17__212
-   Register : o_dac_a_9__I_0/addr_space_1[[16__213
-   Register : o_dac_a_9__I_0/addr_space_1[[15__214
-   Register : o_dac_a_9__I_0/addr_space_1[[14__215
-   Register : o_dac_a_9__I_0/addr_space_1[[13__216
-   Register : o_dac_a_9__I_0/addr_space_1[[12__217
-   Register : o_dac_a_9__I_0/addr_space_1[[11__218
-
-   Register : o_dac_a_9__I_0/addr_space_1[[10__219
-   Register : o_dac_a_9__I_0/addr_space_1[[9__220
-   Register : o_dac_a_9__I_0/addr_space_1[[8__221
-   Register : o_dac_a_9__I_0/addr_space_1[[7__222
-   Register : o_dac_a_9__I_0/addr_space_1[[6__223
-   Register : o_dac_a_9__I_0/addr_space_1[[5__224
-   Register : o_dac_a_9__I_0/addr_space_1[[4__225
-   Register : o_dac_a_9__I_0/addr_space_1[[3__226
-   Register : o_dac_a_9__I_0/addr_space_1[[2__227
-   Register : o_dac_a_9__I_0/addr_space_1[[1__228
-   Register : o_dac_a_9__I_0/addr_space_1[[0__229
-   Register : o_dac_a_9__I_0/addr_space_2[[31__230
-   Register : o_dac_a_9__I_0/addr_space_2[[30__231
-   Register : o_dac_a_9__I_0/addr_space_2[[29__232
-   Register : o_dac_a_9__I_0/addr_space_2[[28__233
-   Register : o_dac_a_9__I_0/addr_space_2[[27__234
-   Register : o_dac_a_9__I_0/addr_space_2[[26__235
-   Register : o_dac_a_9__I_0/addr_space_2[[25__236
-   Register : o_dac_a_9__I_0/addr_space_2[[24__237
-   Register : o_dac_a_9__I_0/addr_space_2[[23__238
-   Register : o_dac_a_9__I_0/addr_space_2[[22__239
-   Register : o_dac_a_9__I_0/addr_space_2[[21__240
-   Register : o_dac_a_9__I_0/addr_space_2[[20__241
-   Register : o_dac_a_9__I_0/addr_space_2[[19__242
-   Register : o_dac_a_9__I_0/addr_space_2[[18__243
-   Register : o_dac_a_9__I_0/addr_space_2[[17__244
-   Register : o_dac_a_9__I_0/addr_space_2[[16__245
-   Register : o_dac_a_9__I_0/addr_space_2[[15__246
-   Register : o_dac_a_9__I_0/addr_space_2[[14__247
-   Register : o_dac_a_9__I_0/addr_space_2[[13__248
-   Register : o_dac_a_9__I_0/addr_space_2[[12__249
-   Register : o_dac_a_9__I_0/addr_space_2[[11__250
-   Register : o_dac_a_9__I_0/addr_space_2[[10__251
-   Register : o_dac_a_9__I_0/addr_space_2[[9__252
-   Register : o_dac_a_9__I_0/addr_space_2[[8__253
-   Register : o_dac_a_9__I_0/addr_space_2[[7__254
-   Register : o_dac_a_9__I_0/addr_space_2[[6__255
-   Register : o_dac_a_9__I_0/addr_space_2[[5__256
-   Register : o_dac_a_9__I_0/addr_space_2[[4__257
-   Register : o_dac_a_9__I_0/addr_space_2[[3__258
-   Register : o_dac_a_9__I_0/addr_space_2[[2__259
-   Register : o_dac_a_9__I_0/addr_space_2[[1__260
-   Register : o_dac_a_9__I_0/addr_space_2[[0__261
-   Register : o_dac_a_9__I_0/addr_space_3[[25__275
-   Register : o_dac_a_9__I_0/addr_space_3[[24__277
-   Register : o_dac_a_9__I_0/addr_space_3[[23__279
-   Register : o_dac_a_9__I_0/addr_space_3[[22__281
-   Register : o_dac_a_9__I_0/addr_space_3[[21__283
-   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i0
+   Register : o_dac_a_9__I_0/addr_space_1[[12__233
+   Register : o_dac_a_9__I_0/addr_space_1[[11__234
+   Register : o_dac_a_9__I_0/addr_space_1[[10__235
+   Register : o_dac_a_9__I_0/addr_space_1[[9__236
+   Register : o_dac_a_9__I_0/addr_space_1[[8__237
+   Register : o_dac_a_9__I_0/addr_space_1[[7__238
+   Register : o_dac_a_9__I_0/addr_space_1[[6__239
+   Register : o_dac_a_9__I_0/addr_space_1[[5__240
+   Register : o_dac_a_9__I_0/addr_space_1[[4__241
+   Register : o_dac_a_9__I_0/addr_space_1[[3__242
+   Register : o_dac_a_9__I_0/addr_space_1[[2__243
+   Register : o_dac_a_9__I_0/addr_space_1[[1__244
+   Register : o_dac_a_9__I_0/addr_space_1[[0__245
+   Register : o_dac_a_9__I_0/addr_space_2[[31__246
+   Register : o_dac_a_9__I_0/addr_space_2[[30__247
+   Register : o_dac_a_9__I_0/addr_space_2[[29__248
+   Register : o_dac_a_9__I_0/addr_space_2[[28__249
+   Register : o_dac_a_9__I_0/addr_space_2[[27__250
+   Register : o_dac_a_9__I_0/addr_space_2[[26__251
+   Register : o_dac_a_9__I_0/addr_space_2[[25__252
+   Register : o_dac_a_9__I_0/addr_space_2[[24__253
+   Register : o_dac_a_9__I_0/addr_space_2[[23__254
+   Register : o_dac_a_9__I_0/addr_space_2[[22__255
+   Register : o_dac_a_9__I_0/addr_space_2[[21__256
+   Register : o_dac_a_9__I_0/addr_space_2[[20__257
+   Register : o_dac_a_9__I_0/addr_space_2[[19__258
+   Register : o_dac_a_9__I_0/addr_space_2[[18__259
+   Register : o_dac_a_9__I_0/addr_space_2[[17__260
+   Register : o_dac_a_9__I_0/addr_space_2[[16__261
+   Register : o_dac_a_9__I_0/addr_space_2[[15__262
+   Register : o_dac_a_9__I_0/addr_space_2[[14__263
+   Register : o_dac_a_9__I_0/addr_space_2[[13__264
+   Register : o_dac_a_9__I_0/addr_space_2[[12__265
+   Register : o_dac_a_9__I_0/addr_space_2[[11__266
+   Register : o_dac_a_9__I_0/addr_space_2[[10__267
+   Register : o_dac_a_9__I_0/addr_space_2[[9__268
+   Register : o_dac_a_9__I_0/addr_space_2[[8__269
+   Register : o_dac_a_9__I_0/addr_space_2[[7__270
+   Register : o_dac_a_9__I_0/addr_space_2[[6__271
+   Register : o_dac_a_9__I_0/addr_space_2[[5__272
+   Register : o_dac_a_9__I_0/addr_space_2[[4__273
+   Register : o_dac_a_9__I_0/addr_space_2[[3__274
+   Register : o_dac_a_9__I_0/addr_space_2[[2__275
+   Register : o_dac_a_9__I_0/addr_space_2[[1__276
+   Register : o_dac_a_9__I_0/addr_space_2[[0__277
+   Register : o_dac_a_9__I_0/addr_space_3[[24__293
+   Register : o_dac_a_9__I_0/addr_space_3[[23__295
+   Register : o_dac_a_9__I_0/addr_space_3[[22__297
+   Register : o_dac_a_9__I_0/addr_space_3[[21__299
    Register : o_dac_a_9__I_0/o_wb_data_i0
    Register : o_dac_a_9__I_0/carrier_center_increment_offset_rs_i1
-   Register : o_dac_a_9__I_0/addr_space_3[[20__285
    Register : o_dac_a_9__I_0/carrier_increment_i0
    Register :
         o_dac_a_9__I_0/sine_lookup_width_minus_modulation_deviation_amount_i0
    Register :
-
         o_dac_a_9__I_0/modulation_deviation_amount_minus_sine_lookup_width_i0
-   Register : o_dac_a_9__I_0/addr_space_0[[31__165
-   Register : o_dac_a_9__I_0/addr_space_0[[22__175
-   Register : o_dac_a_9__I_0/addr_space_3[[19__287
-   Register : o_dac_a_9__I_0/addr_space_3[[18__289
-   Register : o_dac_a_9__I_0/addr_space_3[[17__291
-   Register : o_dac_a_9__I_0/addr_space_3[[16__293
-   Register : o_dac_a_9__I_0/addr_space_3[[15__295
-   Register : o_dac_a_9__I_0/addr_space_3[[14__297
-   Register : o_dac_a_9__I_0/addr_space_3[[13__299
-   Register : o_dac_a_9__I_0/addr_space_3[[12__301
-   Register : o_dac_a_9__I_0/addr_space_3[[11__303
-   Register : o_dac_a_9__I_0/addr_space_3[[10__305
-   Register : o_dac_a_9__I_0/addr_space_3[[9__307
-   Register : o_dac_a_9__I_0/addr_space_3[[8__309
-   Register : o_dac_a_9__I_0/addr_space_3[[7__311
-   Register : o_dac_a_9__I_0/addr_space_3[[6__313
-   Register : o_dac_a_9__I_0/addr_space_3[[5__315
-   Register : o_dac_a_9__I_0/addr_space_3[[4__317
-   Register : o_dac_a_9__I_0/addr_space_3[[3__319
-   Register : o_dac_a_9__I_0/addr_space_3[[2__321
-   Register : o_dac_a_9__I_0/addr_space_3[[1__323
-   Register : o_dac_a_9__I_0/addr_space_3[[0__325
-   Register : o_dac_a_9__I_0/addr_space_3[[31__263
-   Register : o_dac_a_9__I_0/o_wb_ack_327
+
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i0
+   Register : o_dac_a_9__I_0/addr_space_3[[20__301
+   Register : o_dac_a_9__I_0/addr_space_0[[31__181
+   Register : o_dac_a_9__I_0/addr_space_0[[22__191
+   Register : o_dac_a_9__I_0/addr_space_3[[19__303
+   Register : o_dac_a_9__I_0/addr_space_3[[18__305
+   Register : o_dac_a_9__I_0/addr_space_3[[17__307
+   Register : o_dac_a_9__I_0/addr_space_3[[16__309
+   Register : o_dac_a_9__I_0/addr_space_3[[15__311
+   Register : o_dac_a_9__I_0/addr_space_3[[14__313
+   Register : o_dac_a_9__I_0/addr_space_3[[13__315
+   Register : o_dac_a_9__I_0/addr_space_3[[12__317
+   Register : o_dac_a_9__I_0/addr_space_3[[11__319
+   Register : o_dac_a_9__I_0/addr_space_3[[10__321
+   Register : o_dac_a_9__I_0/addr_space_3[[9__323
+   Register : o_dac_a_9__I_0/addr_space_3[[8__325
+   Register : o_dac_a_9__I_0/addr_space_3[[7__327
+   Register : o_dac_a_9__I_0/addr_space_3[[6__329
+   Register : o_dac_a_9__I_0/addr_space_3[[5__331
+   Register : o_dac_a_9__I_0/addr_space_3[[4__333
+   Register : o_dac_a_9__I_0/addr_space_3[[3__335
+   Register : o_dac_a_9__I_0/addr_space_3[[2__337
+   Register : o_dac_a_9__I_0/addr_space_3[[1__339
+   Register : o_dac_a_9__I_0/addr_space_3[[0__341
+   Register : o_dac_a_9__I_0/o_wb_ack_343
+   Register : o_dac_a_9__I_0/startup_timer_FSM_i0_i0
+   Register : o_dac_a_9__I_0/addr_space_3[[31__279
+   Register : o_dac_a_9__I_0/cw_mux_dac_a_mux_sel_351
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i30
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i29
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i28
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i27
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i26
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i25
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i24
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i23
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i22
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i21
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i20
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i19
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i18
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i17
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i16
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i15
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i14
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i13
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i12
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i11
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i10
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i9
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i8
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i7
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i6
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i5
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i4
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i3
+
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i2
+   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i1
    Register :
         o_dac_a_9__I_0/modulation_deviation_amount_minus_sine_lookup_width_i16
    Register :
@@ -1447,7 +1485,6 @@ GSR Component:
    Register :
         o_dac_a_9__I_0/modulation_deviation_amount_minus_sine_lookup_width_i2
    Register :
-
         o_dac_a_9__I_0/modulation_deviation_amount_minus_sine_lookup_width_i1
    Register :
         o_dac_a_9__I_0/sine_lookup_width_minus_modulation_deviation_amount_i16
@@ -1471,6 +1508,7 @@ GSR Component:
         o_dac_a_9__I_0/sine_lookup_width_minus_modulation_deviation_amount_i7
    Register :
         o_dac_a_9__I_0/sine_lookup_width_minus_modulation_deviation_amount_i6
+
    Register :
         o_dac_a_9__I_0/sine_lookup_width_minus_modulation_deviation_amount_i5
    Register :
@@ -1504,7 +1542,6 @@ GSR Component:
    Register : o_dac_a_9__I_0/carrier_increment_i10
    Register : o_dac_a_9__I_0/carrier_increment_i9
    Register : o_dac_a_9__I_0/carrier_increment_i8
-
    Register : o_dac_a_9__I_0/carrier_increment_i7
    Register : o_dac_a_9__I_0/carrier_increment_i6
    Register : o_dac_a_9__I_0/carrier_increment_i5
@@ -1528,6 +1565,7 @@ GSR Component:
    Register : o_dac_a_9__I_0/carrier_center_increment_offset_rs_i3
    Register : o_dac_a_9__I_0/carrier_center_increment_offset_rs_i2
    Register : o_dac_a_9__I_0/o_wb_data_i31
+
    Register : o_dac_a_9__I_0/o_wb_data_i30
    Register : o_dac_a_9__I_0/o_wb_data_i29
    Register : o_dac_a_9__I_0/o_wb_data_i28
@@ -1558,37 +1596,22 @@ GSR Component:
    Register : o_dac_a_9__I_0/o_wb_data_i3
    Register : o_dac_a_9__I_0/o_wb_data_i2
    Register : o_dac_a_9__I_0/o_wb_data_i1
-   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i30
-   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i29
-   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i28
-
-   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i27
-   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i26
-   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i25
-   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i24
-   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i23
-   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i22
-   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i21
-   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i20
-   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i19
-   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i18
-   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i17
-   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i16
-   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i15
-   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i14
-   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i13
-   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i12
-   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i11
-   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i10
-   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i9
-   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i8
-   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i7
-   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i6
-   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i5
-   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i4
-   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i3
-   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i2
-   Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i1
+   Register : o_dac_a_9__I_0/cw_350
+   Register : o_dac_a_9__I_0/startup_timer_FSM_i0_i15
+   Register : o_dac_a_9__I_0/startup_timer_FSM_i0_i14
+   Register : o_dac_a_9__I_0/startup_timer_FSM_i0_i13
+   Register : o_dac_a_9__I_0/startup_timer_FSM_i0_i12
+   Register : o_dac_a_9__I_0/startup_timer_FSM_i0_i11
+   Register : o_dac_a_9__I_0/startup_timer_FSM_i0_i10
+   Register : o_dac_a_9__I_0/startup_timer_FSM_i0_i9
+   Register : o_dac_a_9__I_0/startup_timer_FSM_i0_i8
+   Register : o_dac_a_9__I_0/startup_timer_FSM_i0_i7
+   Register : o_dac_a_9__I_0/startup_timer_FSM_i0_i6
+   Register : o_dac_a_9__I_0/startup_timer_FSM_i0_i5
+   Register : o_dac_a_9__I_0/startup_timer_FSM_i0_i4
+   Register : o_dac_a_9__I_0/startup_timer_FSM_i0_i3
+   Register : o_dac_a_9__I_0/startup_timer_FSM_i0_i2
+   Register : o_dac_a_9__I_0/startup_timer_FSM_i0_i1
    Register : o_dac_a_9__I_0/modulation/increment_i0
    Register : o_dac_a_9__I_0/modulation/increment_i30
    Register : o_dac_a_9__I_0/modulation/increment_i29
@@ -1599,6 +1622,7 @@ GSR Component:
    Register : o_dac_a_9__I_0/modulation/increment_i24
    Register : o_dac_a_9__I_0/modulation/increment_i23
    Register : o_dac_a_9__I_0/modulation/increment_i22
+
    Register : o_dac_a_9__I_0/modulation/increment_i21
    Register : o_dac_a_9__I_0/modulation/increment_i20
    Register : o_dac_a_9__I_0/modulation/increment_i19
@@ -1618,9 +1642,54 @@ GSR Component:
    Register : o_dac_a_9__I_0/modulation/increment_i5
    Register : o_dac_a_9__I_0/modulation/increment_i4
    Register : o_dac_a_9__I_0/modulation/increment_i3
-
    Register : o_dac_a_9__I_0/modulation/increment_i2
    Register : o_dac_a_9__I_0/modulation/increment_i1
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i0
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_negation_i_i0
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/index_i_i0
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i1
+   Register :
+        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i0
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i11
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i10
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i9
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i8
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i7
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i6
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i5
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i4
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i3
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i2
+   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i1
+   Register :
+        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i14
+   Register :
+        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i13
+   Register :
+        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i12
+   Register :
+        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i11
+   Register :
+        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i10
+   Register :
+        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i9
+   Register :
+        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i8
+   Register :
+        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i7
+   Register :
+        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i6
+
+   Register :
+        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i5
+   Register :
+        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i4
+   Register :
+        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i3
+   Register :
+        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i2
+   Register :
+        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i1
    Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i32
    Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i31
    Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i30
@@ -1648,16 +1717,10 @@ GSR Component:
    Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i8
    Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i7
    Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i6
-   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i0
    Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i5
    Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i4
    Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i3
-   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_negation_i_i0
    Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i2
-   Register : o_dac_a_9__I_0/modulation/qtr_inst/index_i_i0
-   Register : o_dac_a_9__I_0/modulation/qtr_inst/o_val_pipeline_i_1__i1
-   Register :
-        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i0
    Register : o_dac_a_9__I_0/modulation/qtr_inst/index_i_i9
    Register : o_dac_a_9__I_0/modulation/qtr_inst/index_i_i8
    Register : o_dac_a_9__I_0/modulation/qtr_inst/index_i_i7
@@ -1668,79 +1731,39 @@ GSR Component:
    Register : o_dac_a_9__I_0/modulation/qtr_inst/index_i_i2
    Register : o_dac_a_9__I_0/modulation/qtr_inst/index_i_i1
    Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_negation_i_i1
-   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i11
-   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i10
-   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i9
-   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i8
-   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i7
-   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i6
-   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i5
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_599__i0
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_599__i31
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_599__i30
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_599__i29
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_599__i28
 
-   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i4
-   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i3
-   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i2
-   Register : o_dac_a_9__I_0/modulation/qtr_inst/phase_i_i0_i1
-   Register :
-        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i14
-   Register :
-        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i13
-   Register :
-        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i12
-   Register :
-        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i11
-   Register :
-        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i10
-   Register :
-        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i9
-   Register :
-        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i8
-   Register :
-        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i7
-   Register :
-        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i6
-   Register :
-        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i5
-   Register :
-        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i4
-   Register :
-        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i3
-   Register :
-        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i2
-   Register :
-        o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i1
-   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i0
-   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i31
-   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i30
-   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i29
-   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i28
-   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i27
-   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i26
-   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i25
-   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i24
-   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i23
-   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i22
-   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i21
-   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i20
-   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i19
-   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i18
-   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i17
-   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i16
-   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i15
-   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i14
-   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i13
-   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i12
-   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i11
-   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i10
-   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i9
-
-   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i8
-   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i7
-   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i6
-   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i5
-   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i4
-   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i3
-   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i2
-   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_547__i1
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_599__i27
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_599__i26
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_599__i25
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_599__i24
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_599__i23
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_599__i22
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_599__i21
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_599__i20
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_599__i19
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_599__i18
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_599__i17
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_599__i16
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_599__i15
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_599__i14
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_599__i13
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_599__i12
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_599__i11
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_599__i10
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_599__i9
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_599__i8
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_599__i7
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_599__i6
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_599__i5
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_599__i4
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_599__i3
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_599__i2
+   Register : o_dac_a_9__I_0/modulation/nco_inst/phase_register_599__i1
    Register : o_dac_a_9__I_0/carrier/increment_i0
    Register : o_dac_a_9__I_0/carrier/increment_i30
    Register : o_dac_a_9__I_0/carrier/increment_i29
@@ -1770,8 +1793,18 @@ GSR Component:
    Register : o_dac_a_9__I_0/carrier/increment_i5
    Register : o_dac_a_9__I_0/carrier/increment_i4
    Register : o_dac_a_9__I_0/carrier/increment_i3
+
    Register : o_dac_a_9__I_0/carrier/increment_i2
    Register : o_dac_a_9__I_0/carrier/increment_i1
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i1
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i1
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_negation_i_i0
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_negation_q_i0
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/index_i_i0
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/index_q_i0
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i0
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i1
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i0
    Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i14
         
    Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i13
@@ -1783,18 +1816,8 @@ GSR Component:
    Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i10
         
    Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i9
-   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i1
    Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i8
-   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i1
    Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i7
-   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_negation_i_i0
-   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_negation_q_i0
-
-   Register : o_dac_a_9__I_0/carrier/qtr_inst/index_i_i0
-   Register : o_dac_a_9__I_0/carrier/qtr_inst/index_q_i0
-   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i0
-   Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i1
-   Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i0
    Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i6
    Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i5
    Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i4
@@ -1818,17 +1841,6 @@ GSR Component:
    Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i4
    Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i3
    Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_i_1__i2
-   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i11
-   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i10
-   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i9
-   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i8
-   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i7
-   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i6
-   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i5
-   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i4
-   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i3
-   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i2
-   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i1
    Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i15
         
    Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i14
@@ -1838,6 +1850,7 @@ GSR Component:
    Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i12
         
    Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i11
+
         
    Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i10
         
@@ -1846,7 +1859,6 @@ GSR Component:
    Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i7
    Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i6
    Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i5
-
    Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i4
    Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i3
    Register : o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i2
@@ -1889,40 +1901,51 @@ GSR Component:
    Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i3
    Register : o_dac_a_9__I_0/carrier/qtr_inst/o_val_pipeline_q_1__i2
    Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i11
-   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i31
-   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i30
-   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i29
-   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i28
-   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i27
-   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i26
-   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i25
-   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i24
-   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i23
-   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i22
-   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i21
-   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i20
-   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i19
-   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i18
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i10
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i9
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i8
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i7
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i6
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i5
 
-   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i17
-   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i16
-   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i15
-   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i14
-   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i13
-   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i12
-   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i11
-   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i10
-   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i9
-   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i8
-   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i7
-   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i6
-   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i5
-   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i4
-   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i3
-   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i2
-   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i1
-   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_545__i0
-   SP8KC : genbus/genhex/mux_100
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i4
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i3
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i2
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i11
+   Register : o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i10
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_597__i0
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_597__i31
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_597__i30
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_597__i29
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_597__i28
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_597__i27
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_597__i26
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_597__i25
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_597__i24
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_597__i23
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_597__i22
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_597__i21
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_597__i20
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_597__i19
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_597__i18
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_597__i17
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_597__i16
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_597__i15
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_597__i14
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_597__i13
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_597__i12
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_597__i11
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_597__i10
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_597__i9
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_597__i8
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_597__i7
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_597__i6
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_597__i5
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_597__i4
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_597__i3
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_597__i2
+   Register : o_dac_a_9__I_0/carrier/nco_inst/phase_register_597__i1
+   SP8KC : genbus/genhex/mux_98
 
 
 
@@ -1933,25 +1956,6 @@ GSR Component:
    Total REAL Time: 2 secs  
    Peak Memory Usage: 88 MB
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

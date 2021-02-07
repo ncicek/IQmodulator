@@ -4,7 +4,7 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timestamp 2021 2 6 15 59 49)
+      (timestamp 2021 2 6 23 35 7)
       (program "SCUBA" (version "Diamond (64-bit) 3.11.3.469"))))
       (comment "C:\lscc\diamond\3.11_x64\ispfpga\bin\nt64\scuba.exe -w -n sys_clk -lang verilog -synth lse -arch xo3c00f -type pll -fin 12 -fclkop 72 -fclkop_tol 5.0 -trimp 0 -phasep 0 -trimp_r -phase_cntl STATIC -fb_mode 1 ")
   (library ORCLIB

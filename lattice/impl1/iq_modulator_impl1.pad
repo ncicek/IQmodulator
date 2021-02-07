@@ -6,44 +6,44 @@ Performance Grade:      5
 PACKAGE:          CABGA256
 Package Status:                     Final          Version 1.16
 
-Sat Feb 06 16:00:23 2021
+Sat Feb 06 23:55:27 2021
 
 Pinout by Port Name:
-+---------------+----------+--------------+-------+-----------+-----------+------------------------------------+
-| Port Name     | Pin/Bank | Buffer Type  | Site  | PG Enable | BC Enable | Properties                         |
-+---------------+----------+--------------+-------+-----------+-----------+------------------------------------+
-| dac_clk_n     | E10/0    | LVCMOS33_OUT | PT27B |           |           | DRIVE:8mA SLEW:SLOW                |
-| dac_clk_p     | D10/0    | LVCMOS33_OUT | PT27A |           |           | DRIVE:8mA SLEW:SLOW                |
-| i_clk_n       | A10/0    | LVCMOS33_OUT | PT25B |           |           | DRIVE:8mA SLEW:FAST                |
-| i_clk_p       | B9/0     | LVCMOS33_OUT | PT25A |           |           | DRIVE:8mA SLEW:FAST                |
-| i_ref_clk     | C8/0     | LVCMOS33_IN  | PT18A |           |           | CLAMP:ON HYSTERESIS:SMALL          |
-| i_resetb      | B3/0     | LVCMOS33_IN  | PT9C  |           |           | PULL:UP CLAMP:ON HYSTERESIS:SMALL  |
-| i_wbu_uart_rx | A11/0    | LVCMOS33_IN  | PT28A |           |           | PULL:UP CLAMP:ON HYSTERESIS:SMALL  |
-| o_dac_a[0]    | H15/1    | LVCMOS33_OUT | PR11B |           |           | DRIVE:8mA SLEW:SLOW                |
-| o_dac_a[1]    | J15/1    | LVCMOS33_OUT | PR16A |           |           | DRIVE:8mA SLEW:SLOW                |
-| o_dac_a[2]    | K15/1    | LVCMOS33_OUT | PR17B |           |           | DRIVE:8mA SLEW:SLOW                |
-| o_dac_a[3]    | K16/1    | LVCMOS33_OUT | PR16B |           |           | DRIVE:8mA SLEW:SLOW                |
-| o_dac_a[4]    | K14/1    | LVCMOS33_OUT | PR17A |           |           | DRIVE:8mA SLEW:SLOW                |
-| o_dac_a[5]    | L16/1    | LVCMOS33_OUT | PR18A |           |           | DRIVE:8mA SLEW:SLOW                |
-| o_dac_a[6]    | M16/1    | LVCMOS33_OUT | PR21B |           |           | DRIVE:8mA SLEW:SLOW                |
-| o_dac_a[7]    | N16/1    | LVCMOS33_OUT | PR24A |           |           | DRIVE:8mA SLEW:SLOW                |
-| o_dac_a[8]    | L14/1    | LVCMOS33_OUT | PR18B |           |           | DRIVE:8mA SLEW:SLOW                |
-| o_dac_a[9]    | N14/1    | LVCMOS33_OUT | PR24B |           |           | DRIVE:8mA SLEW:SLOW                |
-| o_dac_b[0]    | G14/1    | LVCMOS33_OUT | PR9B  |           |           | DRIVE:8mA SLEW:SLOW                |
-| o_dac_b[1]    | D14/1    | LVCMOS33_OUT | PR2A  |           |           | DRIVE:8mA SLEW:SLOW                |
-| o_dac_b[2]    | F14/1    | LVCMOS33_OUT | PR7A  |           |           | DRIVE:8mA SLEW:SLOW                |
-| o_dac_b[3]    | D16/1    | LVCMOS33_OUT | PR3A  |           |           | DRIVE:8mA SLEW:SLOW                |
-| o_dac_b[4]    | E14/1    | LVCMOS33_OUT | PR3B  |           |           | DRIVE:8mA SLEW:SLOW                |
-| o_dac_b[5]    | E16/1    | LVCMOS33_OUT | PR5A  |           |           | DRIVE:8mA SLEW:SLOW                |
-| o_dac_b[6]    | E15/1    | LVCMOS33_OUT | PR2B  |           |           | DRIVE:8mA SLEW:SLOW                |
-| o_dac_b[7]    | F16/1    | LVCMOS33_OUT | PR7B  |           |           | DRIVE:8mA SLEW:SLOW                |
-| o_dac_b[8]    | F15/1    | LVCMOS33_OUT | PR5B  |           |           | DRIVE:8mA SLEW:SLOW                |
-| o_dac_b[9]    | G15/1    | LVCMOS33_OUT | PR9A  |           |           | DRIVE:8mA SLEW:SLOW                |
-| o_dac_cw_b    | M14/1    | LVCMOS33_OUT | PR23A |           |           | DRIVE:8mA SLEW:SLOW                |
-| o_wbu_uart_tx | C11/0    | LVCMOS33_OUT | PT28B |           |           | DRIVE:8mA SLEW:SLOW                |
-| q_clk_n       | E9/0     | LVCMOS33_OUT | PT21B |           |           | DRIVE:8mA SLEW:FAST                |
-| q_clk_p       | D8/0     | LVCMOS33_OUT | PT21A |           |           | DRIVE:8mA SLEW:FAST                |
-+---------------+----------+--------------+-------+-----------+-----------+------------------------------------+
++---------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
+| Port Name     | Pin/Bank | Buffer Type  | Site  | PG Enable | BC Enable | Properties                           |
++---------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
+| dac_clk_n     | E10/0    | LVCMOS33_OUT | PT27B |           |           | DRIVE:8mA SLEW:SLOW                  |
+| dac_clk_p     | D10/0    | LVCMOS33_OUT | PT27A |           |           | DRIVE:8mA SLEW:SLOW                  |
+| i_clk_n       | A10/0    | LVCMOS33_OUT | PT25B |           |           | DRIVE:8mA SLEW:FAST                  |
+| i_clk_p       | B9/0     | LVCMOS33_OUT | PT25A |           |           | DRIVE:8mA SLEW:FAST                  |
+| i_ref_clk     | C8/0     | LVCMOS33_IN  | PT18A |           |           | CLAMP:ON HYSTERESIS:SMALL            |
+| i_sw0         | F8/0     | LVCMOS33_IN  | PT22A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| i_wbu_uart_rx | A11/0    | LVCMOS33_IN  | PT28A |           |           | PULL:UP CLAMP:ON HYSTERESIS:SMALL    |
+| o_dac_a[0]    | H15/1    | LVCMOS33_OUT | PR11B |           |           | DRIVE:8mA SLEW:SLOW                  |
+| o_dac_a[1]    | J15/1    | LVCMOS33_OUT | PR16A |           |           | DRIVE:8mA SLEW:SLOW                  |
+| o_dac_a[2]    | K15/1    | LVCMOS33_OUT | PR17B |           |           | DRIVE:8mA SLEW:SLOW                  |
+| o_dac_a[3]    | K16/1    | LVCMOS33_OUT | PR16B |           |           | DRIVE:8mA SLEW:SLOW                  |
+| o_dac_a[4]    | K14/1    | LVCMOS33_OUT | PR17A |           |           | DRIVE:8mA SLEW:SLOW                  |
+| o_dac_a[5]    | L16/1    | LVCMOS33_OUT | PR18A |           |           | DRIVE:8mA SLEW:SLOW                  |
+| o_dac_a[6]    | M16/1    | LVCMOS33_OUT | PR21B |           |           | DRIVE:8mA SLEW:SLOW                  |
+| o_dac_a[7]    | N16/1    | LVCMOS33_OUT | PR24A |           |           | DRIVE:8mA SLEW:SLOW                  |
+| o_dac_a[8]    | L14/1    | LVCMOS33_OUT | PR18B |           |           | DRIVE:8mA SLEW:SLOW                  |
+| o_dac_a[9]    | N14/1    | LVCMOS33_OUT | PR24B |           |           | DRIVE:8mA SLEW:SLOW                  |
+| o_dac_b[0]    | G14/1    | LVCMOS33_OUT | PR9B  |           |           | DRIVE:8mA SLEW:SLOW                  |
+| o_dac_b[1]    | D14/1    | LVCMOS33_OUT | PR2A  |           |           | DRIVE:8mA SLEW:SLOW                  |
+| o_dac_b[2]    | F14/1    | LVCMOS33_OUT | PR7A  |           |           | DRIVE:8mA SLEW:SLOW                  |
+| o_dac_b[3]    | D16/1    | LVCMOS33_OUT | PR3A  |           |           | DRIVE:8mA SLEW:SLOW                  |
+| o_dac_b[4]    | E14/1    | LVCMOS33_OUT | PR3B  |           |           | DRIVE:8mA SLEW:SLOW                  |
+| o_dac_b[5]    | E16/1    | LVCMOS33_OUT | PR5A  |           |           | DRIVE:8mA SLEW:SLOW                  |
+| o_dac_b[6]    | E15/1    | LVCMOS33_OUT | PR2B  |           |           | DRIVE:8mA SLEW:SLOW                  |
+| o_dac_b[7]    | F16/1    | LVCMOS33_OUT | PR7B  |           |           | DRIVE:8mA SLEW:SLOW                  |
+| o_dac_b[8]    | F15/1    | LVCMOS33_OUT | PR5B  |           |           | DRIVE:8mA SLEW:SLOW                  |
+| o_dac_b[9]    | G15/1    | LVCMOS33_OUT | PR9A  |           |           | DRIVE:8mA SLEW:SLOW                  |
+| o_dac_cw_b    | M14/1    | LVCMOS33_OUT | PR23A |           |           | DRIVE:8mA SLEW:SLOW                  |
+| o_wbu_uart_tx | C11/0    | LVCMOS33_OUT | PT28B |           |           | DRIVE:8mA SLEW:SLOW                  |
+| q_clk_n       | E9/0     | LVCMOS33_OUT | PT21B |           |           | DRIVE:8mA SLEW:FAST                  |
+| q_clk_p       | D8/0     | LVCMOS33_OUT | PT21A |           |           | DRIVE:8mA SLEW:FAST                  |
++---------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
 
 Vccio by Bank:
 +------+-------+
@@ -77,7 +77,7 @@ Pinout by Pin Number:
 | A14/0    |     unused, PULL:DOWN |            |              | PT34B |                |           |           |
 | A15/0    |     unused, PULL:DOWN |            |              | PT36B |                |           |           |
 | B1/5     |     unused, PULL:DOWN |            |              | PL2C  |                |           |           |
-| B3/0     | i_resetb              | LOCATED    | LVCMOS33_IN  | PT9C  |                |           |           |
+| B3/0     |     unused, PULL:DOWN |            |              | PT9C  |                |           |           |
 | B4/0     |     unused, PULL:DOWN |            |              | PT12B |                |           |           |
 | B5/0     |     unused, PULL:DOWN |            |              | PT9B  |                |           |           |
 | B6/0     |     unused, PULL:DOWN |            |              | PT11B |                |           |           |
@@ -134,7 +134,7 @@ Pinout by Pin Number:
 | F4/5     |     unused, PULL:DOWN |            |              | PL6C  |                |           |           |
 | F5/5     |     unused, PULL:DOWN |            |              | PL9C  |                |           |           |
 | F7/0     |     unused, PULL:DOWN |            |              | PT17A |                |           |           |
-| F8/0     |     unused, PULL:DOWN |            |              | PT22A |                |           |           |
+| F8/0     | i_sw0                 | LOCATED    | LVCMOS33_IN  | PT22A |                |           |           |
 | F9/0     |     unused, PULL:DOWN |            |              | PT26A |                |           |           |
 | F10/0    |     unused, PULL:DOWN |            |              | PT32A |                |           |           |
 | F12/1    |     unused, PULL:DOWN |            |              | PR7C  |                |           |           |
@@ -422,7 +422,7 @@ LOCATE  COMP  "dac_clk_p"  SITE  "D10";
 LOCATE  COMP  "i_clk_n"  SITE  "A10";
 LOCATE  COMP  "i_clk_p"  SITE  "B9";
 LOCATE  COMP  "i_ref_clk"  SITE  "C8";
-LOCATE  COMP  "i_resetb"  SITE  "B3";
+LOCATE  COMP  "i_sw0"  SITE  "F8";
 LOCATE  COMP  "i_wbu_uart_rx"  SITE  "A11";
 LOCATE  COMP  "o_dac_a[0]"  SITE  "H15";
 LOCATE  COMP  "o_dac_a[1]"  SITE  "J15";
@@ -463,5 +463,5 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-Sat Feb 06 16:00:23 2021
+Sat Feb 06 23:55:27 2021
 

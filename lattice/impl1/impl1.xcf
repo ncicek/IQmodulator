@@ -19,17 +19,16 @@
 				<BScanLen>1</BScanLen>
 				<BScanVal>0</BScanVal>
 			</Bypass>
-			<File>D:/Documents/Git_Local/fm_modulator/lattice/impl1/iq_modulator_impl1.jed</File>
-			<FileTime>02/06/21 15:45:33</FileTime>
-			<JedecChecksum>0x9B69</JedecChecksum>
-			<Operation>FLASH Erase,Program,Verify</Operation>
+			<File>D:/Documents/Git_Local/fm_modulator/lattice/impl1/iq_modulator_impl1.bit</File>
+			<FileTime>02/06/21 23:55:46</FileTime>
+			<Operation>SRAM Fast Program</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
 				<IOState>HighZ</IOState>
 				<PreloadLength>664</PreloadLength>
 				<IOVectorData>0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</IOVectorData>
 				<Usercode>0x00000000</Usercode>
-				<AccessMode>FLASH</AccessMode>
+				<AccessMode>SRAM</AccessMode>
 			</Option>
 		</Device>
 	</Chain>
@@ -45,6 +44,6 @@
 	<CableOptions>
 		<CableName>USB2</CableName>
 		<PortAdd>FTUSB-0</PortAdd>
-		<USBID>Lattice XO3LF Starter Kit B Location 0000 Serial B</USBID>
+		<USBID>Lattice XO3LF Starter Kit A Location 0000 Serial A</USBID>
 	</CableOptions>
 </ispXCF>

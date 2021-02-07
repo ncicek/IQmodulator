@@ -14,7 +14,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-Sat Feb 06 16:00:00 2021
+Sat Feb 06 23:55:05 2021
 
 
 Command Line:  synthesis -f iq_modulator_impl1_lattice.synproj -gui -msgset D:/Documents/Git_Local/fm_modulator/lattice/promote.xml 
@@ -111,8 +111,9 @@ Compile design.
 Compile Design Begin
 Analyzing Verilog file d:/documents/git_local/fm_modulator/rtl/dds.v. VERI-1482
 Analyzing Verilog file d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v. VERI-1482
-WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(29): identifier o_cw is used before its declaration. VERI-1875
+WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(29): identifier cw_mux_dac_a_mux_sel is used before its declaration. VERI-1875
 WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(29): identifier control_mode_dac_a is used before its declaration. VERI-1875
+WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(111): identifier cw is used before its declaration. VERI-1875
 Analyzing Verilog file d:/documents/git_local/fm_modulator/rtl/iq_gen.v. VERI-1482
 Analyzing Verilog file d:/documents/git_local/fm_modulator/rtl/nco.v. VERI-1482
 Analyzing Verilog file d:/documents/git_local/fm_modulator/rtl/quarter_wave_sine_lookup.v. VERI-1482
@@ -160,12 +161,10 @@ WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_sla
 INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/dds.v(3): compiling module dds. VERI-1018
 INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/nco.v(3): compiling module nco(OW=12). VERI-1018
 INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/quarter_wave_sine_lookup.v(4): compiling module quarter_wave_sine_lookup. VERI-1018
-WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/quarter_wave_sine_lookup.v(46): expression size 17 truncated to fit in target size 16. VERI-1209
-WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/quarter_wave_sine_lookup.v(47): expression size 17 truncated to fit in target size 16. VERI-1209
 WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/quarter_wave_sine_lookup.v(25): net quarter_wave_table does not have a driver. VDB-1002
 WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(96): expression size 32 truncated to fit in target size 17. VERI-1209
 WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(97): expression size 32 truncated to fit in target size 17. VERI-1209
-WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(114): net control_mode_dac_a[1] does not have a driver. VDB-1002
+WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(115): net control_mode_dac_a[1] does not have a driver. VDB-1002
 INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/clock_phase_shifter.v(4): compiling module clock_phase_shifter. VERI-1018
 INFO - synthesis: d:/documents/git_local/fm_modulator/lattice/dynamic_pll.v(8): compiling module dynamic_pll. VERI-1018
 INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1696): compiling module EHXPLLJ_renamed_due_excessive_length_1. VERI-1018
@@ -180,17 +179,88 @@ Loading device for application map from file 'xo3c6900.nph' in environment: C:/l
 Package Status:                     Final          Version 1.16.
 Top-level module name = top.
 WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/quarter_wave_sine_lookup.v(25): ram quarter_wave_table_original_ramnet has no write-port on it. VDB-1038
-WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(114): net control_mode_dac_a[1] does not have a driver. VDB-1002
+WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(115): net control_mode_dac_a[1] does not have a driver. VDB-1002
+WARNING - synthesis: I/O Port i_sw1 's net has no driver and is unused.
 ######## Missing driver on net \o_dac_a_9__I_0/control_mode_dac_a[1]. Patching with GND.
 ######## Missing driver on net \o_dac_a_9__I_0/control_mode_dac_a[0]. Patching with GND.
 WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/debug_bus/hbidle.v(76): Register \genbus/addidles/idle_stb_26 is stuck at Zero. VDB-5013
+INFO - synthesis: Extracted state machine for register '\o_dac_a_9__I_0/startup_timer' with one-hot encoding
+State machine has 16 reachable states with original encodings of:
+
+ 0000 
+
+ 0001 
+
+ 0010 
+
+ 0011 
+
+ 0100 
+
+ 0101 
+
+ 0110 
+
+ 0111 
+
+ 1000 
+
+ 1001 
+
+ 1010 
+
+ 1011 
+
+ 1100 
+
+ 1101 
+
+ 1110 
+
+ 1111 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 0000 -> 0000000000000001
+
+ 0001 -> 0000000000000010
+
+ 0010 -> 0000000000000100
+
+ 0011 -> 0000000000001000
+
+ 0100 -> 0000000000010000
+
+ 0101 -> 0000000000100000
+
+ 0110 -> 0000000001000000
+
+ 0111 -> 0000000010000000
+
+ 1000 -> 0000000100000000
+
+ 1001 -> 0000001000000000
+
+ 1010 -> 0000010000000000
+
+ 1011 -> 0000100000000000
+
+ 1100 -> 0001000000000000
+
+ 1101 -> 0010000000000000
+
+ 1110 -> 0100000000000000
+
+ 1111 -> 1000000000000000
 
 
 
+
+WARNING - synthesis: I/O Port i_sw1 's net has no driver and is unused.
 WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/debug_bus/hbints.v(78): Register \genbus/addints/pending_interrupt_56 is stuck at Zero. VDB-5013
 Duplicate register/latch removal. \o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i15 is a one-to-one match with \o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i15.
 Duplicate register/latch removal. \o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i15 is a one-to-one match with \o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i15.
-WARNING - synthesis: Initial value found on instance wb_ack_68 will be ignored.
+WARNING - synthesis: Initial value found on instance wb_ack_67 will be ignored.
 WARNING - synthesis: Initial value found on instance \rxtransport/baud_counter_i0 will be ignored.
 WARNING - synthesis: Initial value found on instance \rxtransport/chg_counter__i0 will be ignored.
 WARNING - synthesis: Initial value found on instance \txtransport/o_uart_tx_48 will be ignored.
@@ -226,15 +296,15 @@ WARNING - synthesis: Initial value found on instance \rxtransport/baud_counter_i
 WARNING - synthesis: Initial value found on instance \rxtransport/baud_counter_i2 will be ignored.
 WARNING - synthesis: Initial value found on instance \rxtransport/baud_counter_i1 will be ignored.
 Duplicate register/latch removal. \o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i1 is a one-to-one match with \o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i0.
-Duplicate register/latch removal. \o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i9 is a one-to-one match with \o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i10.
-Duplicate register/latch removal. \o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i8 is a one-to-one match with \o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i9.
-Duplicate register/latch removal. \o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i7 is a one-to-one match with \o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i8.
-Duplicate register/latch removal. \o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i6 is a one-to-one match with \o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i7.
-Duplicate register/latch removal. \o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i5 is a one-to-one match with \o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i6.
-Duplicate register/latch removal. \o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i4 is a one-to-one match with \o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i5.
-Duplicate register/latch removal. \o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i3 is a one-to-one match with \o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i4.
-Duplicate register/latch removal. \o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i2 is a one-to-one match with \o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i3.
-Duplicate register/latch removal. \o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i1 is a one-to-one match with \o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i2.
+Duplicate register/latch removal. \o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i10 is a one-to-one match with \o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i9.
+Duplicate register/latch removal. \o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i9 is a one-to-one match with \o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i8.
+Duplicate register/latch removal. \o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i8 is a one-to-one match with \o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i7.
+Duplicate register/latch removal. \o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i7 is a one-to-one match with \o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i6.
+Duplicate register/latch removal. \o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i6 is a one-to-one match with \o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i5.
+Duplicate register/latch removal. \o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i5 is a one-to-one match with \o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i4.
+Duplicate register/latch removal. \o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i4 is a one-to-one match with \o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i3.
+Duplicate register/latch removal. \o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i3 is a one-to-one match with \o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i2.
+Duplicate register/latch removal. \o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i2 is a one-to-one match with \o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i1.
 Applying 200.000000 MHz constraint to all clocks
 
 WARNING - synthesis: No user .sdc file.
@@ -243,23 +313,26 @@ Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/xo2c00a/data/xo2alib.ngl'.
 Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+WARNING - synthesis: logical net 'i_sw1' has no load.
+WARNING - synthesis: input pad net 'i_sw1' has no legal load.
+WARNING - synthesis: DRC complete with 2 warnings.
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file iq_modulator_impl1.ngd.
 
 ################### Begin Area Report (top)######################
-Number of register bits => 1156 of 7485 (15 % )
+Number of register bits => 1174 of 7485 (15 % )
 CCU2D => 190
 EFB => 1
 EHXPLLJ => 2
-FD1P3AX => 204
+FD1P3AX => 206
 FD1P3AY => 13
-FD1P3BX => 14
-FD1P3DX => 82
+FD1P3BX => 15
+FD1P3DX => 96
 FD1P3IX => 190
 FD1P3JX => 21
 FD1S3AX => 146
 FD1S3AY => 7
-FD1S3BX => 46
+FD1S3BX => 47
 FD1S3DX => 342
 FD1S3IX => 85
 FD1S3JX => 6
@@ -281,34 +354,34 @@ TSALL => 1
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 3
-  Net : sys_clk_inst/dac_clk_p_c, loads : 1159
+  Net : sys_clk_inst/dac_clk_p_c, loads : 1177
   Net : i_ref_clk_c, loads : 2
   Net : lo_gen/lo_pll_out, loads : 3
 Clock Enable Nets
-Number of Clock Enables: 35
+Number of Clock Enables: 39
 Top 10 highest fanout Clock Enables:
-  Net : genbus/unpackx/dac_clk_p_c_enable_236, loads : 37
-  Net : genbus/addidles/dac_clk_p_c_enable_403, loads : 34
-  Net : genbus/addints/dac_clk_p_c_enable_416, loads : 34
-  Net : dac_clk_p_c_enable_272, loads : 32
-  Net : o_dac_a_9__I_0/dac_clk_p_c_enable_103, loads : 32
-  Net : o_dac_a_9__I_0/dac_clk_p_c_enable_71, loads : 32
-  Net : o_dac_a_9__I_0/dac_clk_p_c_enable_114, loads : 32
-  Net : o_dac_a_9__I_0/dac_clk_p_c_enable_143, loads : 32
+  Net : genbus/unpackx/dac_clk_p_c_enable_261, loads : 37
+  Net : genbus/addidles/dac_clk_p_c_enable_429, loads : 34
+  Net : dac_clk_p_c_enable_297, loads : 32
+  Net : o_dac_a_9__I_0/dac_clk_p_c_enable_149, loads : 32
+  Net : o_dac_a_9__I_0/dac_clk_p_c_enable_105, loads : 32
+  Net : o_dac_a_9__I_0/dac_clk_p_c_enable_73, loads : 32
+  Net : o_dac_a_9__I_0/dac_clk_p_c_enable_116, loads : 32
   Net : wb_err, loads : 31
-  Net : rxtransport/dac_clk_p_c_enable_343, loads : 16
+  Net : rxtransport/dac_clk_p_c_enable_368, loads : 16
+  Net : txtransport/zero_baud_counter, loads : 16
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : n26683, loads : 488
-  Net : o_dac_a_9__I_0/carrier/qtr_inst/index_q_3, loads : 483
-  Net : o_dac_a_9__I_0/modulation/qtr_inst/index_i_3, loads : 480
-  Net : o_dac_a_9__I_0/carrier/qtr_inst/index_i_3, loads : 478
-  Net : o_dac_a_9__I_0/modulation/qtr_inst/index_i_2, loads : 367
-  Net : o_dac_a_9__I_0/carrier/qtr_inst/index_q_2, loads : 366
-  Net : o_dac_a_9__I_0/carrier/qtr_inst/index_i_2, loads : 362
-  Net : o_dac_a_9__I_0/carrier/qtr_inst/index_q_4, loads : 350
-  Net : o_dac_a_9__I_0/modulation/qtr_inst/index_i_4, loads : 346
-  Net : o_dac_a_9__I_0/carrier/qtr_inst/index_q_1, loads : 345
+  Net : i_sw0_c, loads : 508
+  Net : o_dac_a_9__I_0/modulation/qtr_inst/index_i_3, loads : 487
+  Net : o_dac_a_9__I_0/carrier/qtr_inst/index_i_3, loads : 487
+  Net : o_dac_a_9__I_0/carrier/qtr_inst/index_q_3, loads : 482
+  Net : o_dac_a_9__I_0/modulation/qtr_inst/index_i_2, loads : 368
+  Net : o_dac_a_9__I_0/carrier/qtr_inst/index_q_2, loads : 367
+  Net : o_dac_a_9__I_0/carrier/qtr_inst/index_i_2, loads : 364
+  Net : o_dac_a_9__I_0/modulation/qtr_inst/index_i_4, loads : 351
+  Net : o_dac_a_9__I_0/carrier/qtr_inst/index_q_1, loads : 348
+  Net : o_dac_a_9__I_0/modulation/qtr_inst/index_i_1, loads : 345
 ################### End Clock Report ##################
 
 <A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
@@ -329,10 +402,10 @@ clk0 [get_nets dac_clk_p_c]             |  200.000 MHz|   92.090 MHz|    19 *
 1 constraints not met.
 
 
-Peak Memory Usage: 174.531  MB
+Peak Memory Usage: 174.715  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 9.484  secs
+Elapsed CPU time for LSE flow : 9.656  secs
 --------------------------------------------------------------
 
 

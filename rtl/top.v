@@ -1,9 +1,12 @@
 `default_nettype none
 `timescale 1 ns / 100 ps
 
-module top(i_ref_clk, i_resetb,
+module top(i_ref_clk,
 		// UART/host to wishbone interface
 		i_wbu_uart_rx, o_wbu_uart_tx,
+
+		//pushbuttons
+		i_sw0, i_sw1,
 
         //signal outputs
         o_dac_a, o_dac_b,
@@ -20,16 +23,18 @@ parameter sine_lookup_width = 16,
 		lo_accumulator_width = 32,
 		output_dac_width = 10;
 	
-input wire i_ref_clk, i_resetb;
+input wire i_ref_clk;
 
 input wire i_wbu_uart_rx;
 output wire o_wbu_uart_tx;
+
+input wire i_sw0, i_sw1;
 
 output wire [(output_dac_width-1):0] o_dac_a, o_dac_b;
 output wire i_clk_p, i_clk_n, q_clk_p, q_clk_n, dac_clk_p, dac_clk_n, o_dac_cw_b;
 
 wire reset;
-assign reset = !i_resetb;
+assign reset = i_sw0;
 
 `ifdef	synthesis
 	PUR PUR_INST (.PUR (reset));

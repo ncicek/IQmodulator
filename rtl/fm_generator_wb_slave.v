@@ -38,7 +38,7 @@ reg [31:0] addr_space [0:3];
 always @(posedge i_clk or posedge i_reset) begin
 	if (i_reset) begin
 		addr_space[REG_CARRIER_CENTER_FREQUENCY] <= 32'h444444;
-		addr_space[REG_MODULATION_FREQUENCY] <= 32'h1bf;
+		addr_space[REG_MODULATION_FREQUENCY] <= 32'h11bf;
 		addr_space[REG_MODULATION_DEVIATION] <= 32'd0;
 	end else begin
 		if ((i_wb_stb)&&(i_wb_we)&&(!o_wb_stall)) begin
@@ -108,7 +108,6 @@ always @(posedge i_clk or posedge i_reset) begin
 end
 
 //Init control programming
-wire cw;
 assign o_cw_b = ~cw;
 wire control_pd, control_dacen, control_ide, control_ren_b;
 wire [3:0] control_g;

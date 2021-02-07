@@ -1,6 +1,6 @@
 NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
 NOTE All Rights Reserved *
-NOTE DATE CREATED: Sat Feb 06 16:00:55 2021 *
+NOTE DATE CREATED: Sat Feb 06 23:55:49 2021 *
 NOTE DESIGN NAME: top *
 NOTE DEVICE NAME: LCMXO3LF-6900C-5CABGA256 *
 NOTE PIN ASSIGNMENTS *
@@ -33,7 +33,7 @@ NOTE PINS i_clk_n : A10 : out *
 NOTE PINS q_clk_p : D8 : out *
 NOTE PINS q_clk_n : E9 : out *
 NOTE PINS i_ref_clk : C8 : in *
-NOTE PINS i_resetb : B3 : in *
 NOTE PINS i_wbu_uart_rx : A11 : in *
+NOTE PINS i_sw0 : F8 : in *
 NOTE CONFIGURATION MODE: NONE *
 NOTE COMPRESSION: on *

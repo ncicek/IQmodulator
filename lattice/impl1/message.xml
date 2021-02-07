@@ -2,9 +2,20 @@
 <BaliMessageLog>
     <Task name="Map">
         <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>i_sw1</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>i_sw1</Dynamic>
+        </Message>
+        <Message>
             <ID>51001051</ID>
             <Severity>Warning</Severity>
-            <Dynamic>genbus/genhex/mux_100</Dynamic>
+            <Dynamic>genbus/genhex/mux_98</Dynamic>
         </Message>
     </Task>
     <Task name="Lattice_Synthesis">
@@ -20,7 +31,7 @@
             <ID>35901875</ID>
             <Severity>Warning</Severity>
             <Dynamic>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(29): </Dynamic>
-            <Dynamic>o_cw</Dynamic>
+            <Dynamic>cw_mux_dac_a_mux_sel</Dynamic>
             <Navigation>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v</Navigation>
             <Navigation>29</Navigation>
         </Message>
@@ -31,6 +42,14 @@
             <Dynamic>control_mode_dac_a</Dynamic>
             <Navigation>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v</Navigation>
             <Navigation>29</Navigation>
+        </Message>
+        <Message>
+            <ID>35901875</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(111): </Dynamic>
+            <Dynamic>cw</Dynamic>
+            <Navigation>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v</Navigation>
+            <Navigation>111</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -219,24 +238,6 @@
             <Navigation>4</Navigation>
         </Message>
         <Message>
-            <ID>35901209</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/documents/git_local/fm_modulator/rtl/quarter_wave_sine_lookup.v(46): </Dynamic>
-            <Dynamic>17</Dynamic>
-            <Dynamic>16</Dynamic>
-            <Navigation>d:/documents/git_local/fm_modulator/rtl/quarter_wave_sine_lookup.v</Navigation>
-            <Navigation>46</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/documents/git_local/fm_modulator/rtl/quarter_wave_sine_lookup.v(47): </Dynamic>
-            <Dynamic>17</Dynamic>
-            <Dynamic>16</Dynamic>
-            <Navigation>d:/documents/git_local/fm_modulator/rtl/quarter_wave_sine_lookup.v</Navigation>
-            <Navigation>47</Navigation>
-        </Message>
-        <Message>
             <ID>35931002</ID>
             <Severity>Warning</Severity>
             <Dynamic>d:/documents/git_local/fm_modulator/rtl/quarter_wave_sine_lookup.v(25): </Dynamic>
@@ -265,10 +266,10 @@
         <Message>
             <ID>35931002</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(114): </Dynamic>
+            <Dynamic>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(115): </Dynamic>
             <Dynamic>control_mode_dac_a[1]</Dynamic>
             <Navigation>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v</Navigation>
-            <Navigation>114</Navigation>
+            <Navigation>115</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -329,10 +330,15 @@
         <Message>
             <ID>35931002</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(114): </Dynamic>
+            <Dynamic>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(115): </Dynamic>
             <Dynamic>control_mode_dac_a[1]</Dynamic>
             <Navigation>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v</Navigation>
-            <Navigation>114</Navigation>
+            <Navigation>115</Navigation>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>i_sw1</Dynamic>
         </Message>
         <Message>
             <ID>35935013</ID>
@@ -341,6 +347,17 @@
             <Dynamic>\genbus/addidles/idle_stb_26</Dynamic>
             <Navigation>d:/documents/git_local/fm_modulator/rtl/debug_bus/hbidle.v</Navigation>
             <Navigation>76</Navigation>
+        </Message>
+        <Message>
+            <ID>35001774</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\o_dac_a_9__I_0/startup_timer</Dynamic>
+            <Dynamic>one-hot</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>i_sw1</Dynamic>
         </Message>
         <Message>
             <ID>35935013</ID>
@@ -353,7 +370,7 @@
         <Message>
             <ID>35001779</ID>
             <Severity>Warning</Severity>
-            <Dynamic>wb_ack_68</Dynamic>
+            <Dynamic>wb_ack_67</Dynamic>
         </Message>
         <Message>
             <ID>35001779</ID>
@@ -529,6 +546,24 @@
             <ID>35001611</ID>
             <Severity>Warning</Severity>
         </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>i_sw1</Dynamic>
+            <Navigation>i_sw1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>i_sw1</Dynamic>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>2</Dynamic>
+        </Message>
     </Task>
     <Task name="PAR">
         <Message>
@@ -538,10 +573,10 @@
         <Message>
             <ID>61061008</ID>
             <Severity>Warning</Severity>
-            <Dynamic>o_dac_cw_b_c_c</Dynamic>
+            <Dynamic>i_sw0_c</Dynamic>
             <Dynamic>Secondary</Dynamic>
-            <Dynamic>i_resetb</Dynamic>
-            <Dynamic>B3</Dynamic>
+            <Dynamic>i_sw0</Dynamic>
+            <Dynamic>F8</Dynamic>
             <Dynamic>Secondary</Dynamic>
         </Message>
     </Task>

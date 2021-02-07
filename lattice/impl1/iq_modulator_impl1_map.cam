@@ -1,108 +1,107 @@
 [ START MERGED ]
-n26683 o_dac_cw_b_c_c
 n2 wb_stb
-n12635 wb_idata_1
-rxtransport/dac_clk_p_c_enable_343 rxtransport/zero_baud_counter
-i_clk_2f_N_2250 lo_pll_out
-o_dac_a_9__I_0/modulation/qtr_inst/n26784 o_dac_a_9__I_0/modulation/qtr_inst/index_i_2
-o_dac_a_9__I_0/carrier/qtr_inst/n26811 o_dac_a_9__I_0/carrier/qtr_inst/index_i_2
+n12753 wb_idata_1
+rxtransport/dac_clk_p_c_enable_368 rxtransport/zero_baud_counter
+i_clk_2f_N_2268 lo_pll_out
+o_dac_a_9__I_0/dac_clk_p_c_enable_488 i_sw0_c
+o_dac_a_9__I_0/dac_clk_p_c_enable_486 o_dac_a_9__I_0/cw_mux_dac_a_mux_sel_N_1885
 [ END MERGED ]
 [ START CLIPPED ]
 GND_net
 VCC_net
-n29209
-o_dac_a_9__I_0/carrier/nco_inst/phase_register_545_add_4_32/CO
-o_dac_a_9__I_0/carrier/nco_inst/phase_register_545_add_4_2/S0
-o_dac_a_9__I_0/carrier/nco_inst/phase_register_545_add_4_2/CI
-o_dac_a_9__I_0/carrier/qtr_inst/add_372_1/S1
-o_dac_a_9__I_0/carrier/qtr_inst/add_372_1/S0
-o_dac_a_9__I_0/carrier/qtr_inst/add_372_1/CI
-o_dac_a_9__I_0/carrier/qtr_inst/add_372_3/S1
-o_dac_a_9__I_0/carrier/qtr_inst/add_372_3/S0
-o_dac_a_9__I_0/carrier/qtr_inst/add_372_5/S1
-o_dac_a_9__I_0/carrier/qtr_inst/add_372_5/S0
-o_dac_a_9__I_0/carrier/qtr_inst/add_372_7/S0
-o_dac_a_9__I_0/carrier/qtr_inst/add_372_15/CO
-o_dac_a_9__I_0/carrier/qtr_inst/add_371_1/S1
-o_dac_a_9__I_0/carrier/qtr_inst/add_371_1/S0
-o_dac_a_9__I_0/carrier/qtr_inst/add_371_1/CI
-o_dac_a_9__I_0/carrier/qtr_inst/add_371_3/S1
-o_dac_a_9__I_0/carrier/qtr_inst/add_371_3/S0
-o_dac_a_9__I_0/carrier/qtr_inst/add_371_5/S1
-o_dac_a_9__I_0/carrier/qtr_inst/add_371_5/S0
-o_dac_a_9__I_0/carrier/qtr_inst/add_371_7/S0
-o_dac_a_9__I_0/carrier/qtr_inst/add_371_15/CO
-o_dac_a_9__I_0/modulation/nco_inst/phase_register_547_add_4_2/S0
-o_dac_a_9__I_0/modulation/nco_inst/phase_register_547_add_4_2/CI
-o_dac_a_9__I_0/modulation/nco_inst/phase_register_547_add_4_32/CO
+n29968
+o_dac_a_9__I_0/carrier/nco_inst/phase_register_597_add_4_2/S0
+o_dac_a_9__I_0/carrier/nco_inst/phase_register_597_add_4_2/CI
+o_dac_a_9__I_0/carrier/nco_inst/phase_register_597_add_4_32/CO
+o_dac_a_9__I_0/carrier/qtr_inst/add_417_1/S1
+o_dac_a_9__I_0/carrier/qtr_inst/add_417_1/S0
+o_dac_a_9__I_0/carrier/qtr_inst/add_417_1/CI
+o_dac_a_9__I_0/carrier/qtr_inst/add_417_3/S1
+o_dac_a_9__I_0/carrier/qtr_inst/add_417_3/S0
+o_dac_a_9__I_0/carrier/qtr_inst/add_417_5/S1
+o_dac_a_9__I_0/carrier/qtr_inst/add_417_5/S0
+o_dac_a_9__I_0/carrier/qtr_inst/add_417_7/S0
+o_dac_a_9__I_0/carrier/qtr_inst/add_417_15/CO
+o_dac_a_9__I_0/carrier/qtr_inst/add_418_1/S1
+o_dac_a_9__I_0/carrier/qtr_inst/add_418_1/S0
+o_dac_a_9__I_0/carrier/qtr_inst/add_418_1/CI
+o_dac_a_9__I_0/carrier/qtr_inst/add_418_3/S1
+o_dac_a_9__I_0/carrier/qtr_inst/add_418_3/S0
+o_dac_a_9__I_0/carrier/qtr_inst/add_418_5/S1
+o_dac_a_9__I_0/carrier/qtr_inst/add_418_5/S0
+o_dac_a_9__I_0/carrier/qtr_inst/add_418_7/S0
+o_dac_a_9__I_0/carrier/qtr_inst/add_418_15/CO
+o_dac_a_9__I_0/modulation/nco_inst/phase_register_599_add_4_2/S0
+o_dac_a_9__I_0/modulation/nco_inst/phase_register_599_add_4_2/CI
+o_dac_a_9__I_0/modulation/nco_inst/phase_register_599_add_4_32/CO
 o_dac_a_9__I_0/modulation/qtr_inst/unary_minus_10_add_3_1/S0
 o_dac_a_9__I_0/modulation/qtr_inst/unary_minus_10_add_3_1/CI
 o_dac_a_9__I_0/modulation/qtr_inst/unary_minus_10_add_3_17/S1
 o_dac_a_9__I_0/modulation/qtr_inst/unary_minus_10_add_3_17/CO
-o_dac_a_9__I_0/sub_391_add_2_1/S1
-o_dac_a_9__I_0/sub_391_add_2_1/S0
-o_dac_a_9__I_0/sub_391_add_2_1/CI
-o_dac_a_9__I_0/sub_108_add_2_1/S0
-o_dac_a_9__I_0/sub_108_add_2_1/CI
-o_dac_a_9__I_0/sub_108_add_2_13/CO
-o_dac_a_9__I_0/sub_391_add_2_17/CO
-o_dac_a_9__I_0/add_379_1/S0
-o_dac_a_9__I_0/add_379_1/CI
-o_dac_a_9__I_0/add_379_31/CO
-add_32_33/S1
-add_32_33/CO
-add_33_1/S0
-add_33_1/CI
+o_dac_a_9__I_0/sub_437_add_2_1/S1
+o_dac_a_9__I_0/sub_437_add_2_1/S0
+o_dac_a_9__I_0/sub_437_add_2_1/CI
+o_dac_a_9__I_0/sub_106_add_2_1/S0
+o_dac_a_9__I_0/sub_106_add_2_1/CI
+o_dac_a_9__I_0/sub_437_add_2_17/CO
+o_dac_a_9__I_0/add_425_1/S0
+o_dac_a_9__I_0/add_425_1/CI
+o_dac_a_9__I_0/sub_106_add_2_13/CO
+o_dac_a_9__I_0/add_425_31/CO
+add_31_33/S1
+add_31_33/CO
 add_32_1/S0
 add_32_1/CI
-add_33_31/CO
+add_31_1/S0
+add_31_1/CI
+add_32_31/CO
 txtransport/sub_36_add_2_1/S0
 txtransport/sub_36_add_2_1/CI
 txtransport/sub_36_add_2_25/S1
 txtransport/sub_36_add_2_25/CO
-genbus/wbexec/o_wb_addr_546_add_4_1/S1
-genbus/wbexec/o_wb_addr_546_add_4_1/S0
-genbus/wbexec/o_wb_addr_546_add_4_1/CI
-genbus/wbexec/o_wb_addr_546_add_4_31/CO
-rxtransport/sub_389_add_2_24/S1
-rxtransport/sub_389_add_2_24/S0
-rxtransport/sub_389_add_2_cout/S1
-rxtransport/sub_389_add_2_cout/CO
-rxtransport/add_8_25/S1
-rxtransport/add_8_25/CO
-rxtransport/sub_49_add_2_1/S0
-rxtransport/sub_49_add_2_1/CI
-rxtransport/sub_49_add_2_25/S1
-rxtransport/sub_49_add_2_25/CO
+rxtransport/sub_435_add_2_20/S1
+rxtransport/sub_435_add_2_20/S0
+rxtransport/sub_435_add_2_22/S1
+rxtransport/sub_435_add_2_22/S0
+rxtransport/sub_435_add_2_24/S1
+rxtransport/sub_435_add_2_24/S0
+rxtransport/sub_435_add_2_cout/S1
+rxtransport/sub_435_add_2_cout/CO
 rxtransport/add_8_1/S0
 rxtransport/add_8_1/CI
-rxtransport/sub_389_add_2_2/S1
-rxtransport/sub_389_add_2_2/S0
-rxtransport/sub_389_add_2_2/CI
-rxtransport/sub_389_add_2_4/S1
-rxtransport/sub_389_add_2_4/S0
-rxtransport/sub_389_add_2_6/S1
-rxtransport/sub_389_add_2_6/S0
-rxtransport/sub_389_add_2_8/S1
-rxtransport/sub_389_add_2_8/S0
-rxtransport/sub_389_add_2_10/S1
-rxtransport/sub_389_add_2_10/S0
-rxtransport/sub_389_add_2_12/S1
-rxtransport/sub_389_add_2_12/S0
-rxtransport/sub_389_add_2_14/S1
-rxtransport/sub_389_add_2_14/S0
-rxtransport/sub_389_add_2_16/S1
-rxtransport/sub_389_add_2_16/S0
-rxtransport/sub_389_add_2_18/S1
-rxtransport/sub_389_add_2_18/S0
-rxtransport/sub_389_add_2_20/S1
-rxtransport/sub_389_add_2_20/S0
-rxtransport/sub_389_add_2_22/S1
-rxtransport/sub_389_add_2_22/S0
+rxtransport/sub_49_add_2_1/S0
+rxtransport/sub_49_add_2_1/CI
+rxtransport/add_8_25/S1
+rxtransport/add_8_25/CO
+rxtransport/sub_49_add_2_25/S1
+rxtransport/sub_49_add_2_25/CO
+rxtransport/sub_435_add_2_2/S1
+rxtransport/sub_435_add_2_2/S0
+rxtransport/sub_435_add_2_2/CI
+rxtransport/sub_435_add_2_4/S1
+rxtransport/sub_435_add_2_4/S0
+rxtransport/sub_435_add_2_6/S1
+rxtransport/sub_435_add_2_6/S0
+rxtransport/sub_435_add_2_8/S1
+rxtransport/sub_435_add_2_8/S0
+rxtransport/sub_435_add_2_10/S1
+rxtransport/sub_435_add_2_10/S0
+rxtransport/sub_435_add_2_12/S1
+rxtransport/sub_435_add_2_12/S0
+rxtransport/sub_435_add_2_14/S1
+rxtransport/sub_435_add_2_14/S0
+rxtransport/sub_435_add_2_16/S1
+rxtransport/sub_435_add_2_16/S0
+rxtransport/sub_435_add_2_18/S1
+rxtransport/sub_435_add_2_18/S0
+genbus/wbexec/o_wb_addr_598_add_4_1/S1
+genbus/wbexec/o_wb_addr_598_add_4_1/S0
+genbus/wbexec/o_wb_addr_598_add_4_1/CI
+genbus/wbexec/o_wb_addr_598_add_4_31/CO
 [ END CLIPPED ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.11.3.469 -- WARNING: Map write only section -- Sat Feb 06 16:00:13 2021
+# map:  version Diamond (64-bit) 3.11.3.469 -- WARNING: Map write only section -- Sat Feb 06 23:55:17 2021
 
 SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE DUALBOOTGOLDEN=INTERNAL BACKGROUND_RECONFIG=OFF INBUF=ON ;
 LOCATE COMP "o_dac_a[7]" SITE "N16" ;
@@ -134,8 +133,8 @@ LOCATE COMP "i_clk_n" SITE "A10" ;
 LOCATE COMP "q_clk_p" SITE "D8" ;
 LOCATE COMP "q_clk_n" SITE "E9" ;
 LOCATE COMP "i_ref_clk" SITE "C8" ;
-LOCATE COMP "i_resetb" SITE "B3" ;
 LOCATE COMP "i_wbu_uart_rx" SITE "A11" ;
+LOCATE COMP "i_sw0" SITE "F8" ;
 FREQUENCY NET "dac_clk_p_c" 72.000000 MHz ;
 FREQUENCY NET "lo_pll_out" 420.000000 MHz ;
 FREQUENCY NET "i_ref_clk_c" 12.000000 MHz ;
