@@ -26,7 +26,7 @@ wire signed [(sine_lookup_width-1):0] o_sample_i, o_sample_q;
 wire [sine_lookup_width:0] o_sample_dc_offset_i, o_sample_dc_offset_q;
 assign o_sample_dc_offset_i = o_sample_i + 2**(sine_lookup_width);
 assign o_sample_dc_offset_q = o_sample_q + 2**(sine_lookup_width);
-assign o_dac_a = o_cw_delayed ? control_mode_dac_a : o_sample_dc_offset_i[sine_lookup_width:(sine_lookup_width-output_dac_width+1)];
+assign o_dac_a = cw_mux_dac_a_mux_sel ? control_mode_dac_a : o_sample_dc_offset_i[sine_lookup_width:(sine_lookup_width-output_dac_width+1)];
 assign o_dac_b = o_sample_dc_offset_q[sine_lookup_width:(sine_lookup_width-output_dac_width+1)];
 
 //Wishbone slave interface
@@ -108,8 +108,8 @@ always @(posedge i_clk or posedge i_reset) begin
 end
 
 //Init control programming
-wire o_cw;
-assign o_cw_b = ~o_cw;
+wire cw;
+assign o_cw_b = ~cw;
 wire control_pd, control_dacen, control_ide, control_ren_b;
 wire [3:0] control_g;
 
@@ -126,11 +126,24 @@ assign control_ide = 1'b0;
 assign control_ren_b = 1'b0;
 assign control_g = 4'b1000;
 
-assign o_cw = i_reset;
-
-reg o_cw_delayed;
+reg [3:0] startup_timer;
+reg cw, cw_mux_dac_a_mux_sel;
 always @(posedge i_clk or posedge i_reset) begin
-	o_cw_delayed <= o_cw;
+	if (i_reset) begin
+		startup_timer <= 4'b0;
+	end else begin
+		if (startup_timer == 4'd3) begin
+			cw <= 1'b1;
+			cw_mux_dac_a_mux_sel <= 1'b1;
+		end else if (startup_timer == 4'd10) begin
+			cw <= 1'b0;
+		end else if (startup_timer == 4'd15) begin
+			cw_mux_dac_a_mux_sel <= 1'b0;
+		end
+		if (startup_timer != 4'b1111) begin
+			startup_timer <= startup_timer + 1'b1;
+		end
+	end
 end
 
 
