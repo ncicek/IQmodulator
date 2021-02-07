@@ -9,8 +9,8 @@ I/O cells:      31
                             EHXPLLJ         2          100.0
                             FD1P3AX       206          100.0
                             FD1P3AY        13          100.0
-                            FD1P3BX        15          100.0
-                            FD1P3DX        96          100.0
+                            FD1P3BX        14          100.0
+                            FD1P3DX        97          100.0
                             FD1P3IX       190          100.0
                             FD1P3JX        21          100.0
                             FD1S3AX       146          100.0
@@ -227,8 +227,8 @@ Instance Path : o_dac_a_9__I_0
                                cell     count   Res Usage(%)
                               CCU2D        89           46.8
                             FD1P3AX        59           28.6
-                            FD1P3BX        15          100.0
-                            FD1P3DX        96          100.0
+                            FD1P3BX        14          100.0
+                            FD1P3DX        97          100.0
                             FD1S3AX        32           21.9
                             FD1S3BX        47          100.0
                             FD1S3DX       342          100.0

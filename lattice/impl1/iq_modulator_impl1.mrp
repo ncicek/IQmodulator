@@ -15,7 +15,7 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO3LF-6900CCABGA256
 Target Performance:   5
 Mapper:  xo3c00f,  version:  Diamond (64-bit) 3.11.3.469
-Mapped on:  02/06/21  23:55:15
+Mapped on:  02/07/21  01:50:58
 
 Design Summary
 --------------
@@ -66,7 +66,7 @@ Design Summary
 
 
 
-Design:  top                                           Date:  02/06/21  23:55:15
+Design:  top                                           Date:  02/07/21  01:50:58
 
 Design Summary (cont)
 ---------------------
@@ -132,7 +132,7 @@ Design Summary (cont)
 
 
 
-Design:  top                                           Date:  02/06/21  23:55:15
+Design:  top                                           Date:  02/07/21  01:50:58
 
 Design Summary (cont)
 ---------------------
@@ -198,7 +198,7 @@ IO (PIO) Attributes
 
 
 
-Design:  top                                           Date:  02/06/21  23:55:15
+Design:  top                                           Date:  02/07/21  01:50:58
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -264,7 +264,7 @@ IO (PIO) Attributes (cont)
 
 
 
-Design:  top                                           Date:  02/06/21  23:55:15
+Design:  top                                           Date:  02/07/21  01:50:58
 
 Removed logic
 -------------
@@ -330,7 +330,7 @@ Signal o_dac_a_9__I_0/modulation/nco_inst/phase_register_599_add_4_2/S0 undriven
 
 
 
-Design:  top                                           Date:  02/06/21  23:55:15
+Design:  top                                           Date:  02/07/21  01:50:58
 
 Removed logic (cont)
 --------------------
@@ -396,7 +396,7 @@ Signal rxtransport/sub_435_add_2_24/S1 undriven or does not drive anything -
 
 
 
-Design:  top                                           Date:  02/06/21  23:55:15
+Design:  top                                           Date:  02/07/21  01:50:58
 
 Removed logic (cont)
 --------------------
@@ -462,7 +462,7 @@ Signal rxtransport/sub_435_add_2_18/S0 undriven or does not drive anything -
 
 
 
-Design:  top                                           Date:  02/06/21  23:55:15
+Design:  top                                           Date:  02/07/21  01:50:58
 
 Removed logic (cont)
 --------------------
@@ -528,7 +528,7 @@ PLL 1:                                     Pin/Node Value
 
 
 
-Design:  top                                           Date:  02/06/21  23:55:15
+Design:  top                                           Date:  02/07/21  01:50:58
 
 PLL/DLL Summary (cont)
 ----------------------
@@ -594,7 +594,7 @@ PLL 2:                                     Pin/Node Value
 
 
 
-Design:  top                                           Date:  02/06/21  23:55:15
+Design:  top                                           Date:  02/07/21  01:50:58
 
 PLL/DLL Summary (cont)
 ----------------------
@@ -660,7 +660,7 @@ PLL/DLL Summary (cont)
 
 
 
-Design:  top                                           Date:  02/06/21  23:55:15
+Design:  top                                           Date:  02/07/21  01:50:58
 
 PLL/DLL Summary (cont)
 ----------------------
@@ -726,7 +726,7 @@ Embedded Functional Block Connection Summary
 
 
 
-Design:  top                                           Date:  02/06/21  23:55:15
+Design:  top                                           Date:  02/07/21  01:50:58
 
 ASIC Components
 ---------------
@@ -792,7 +792,7 @@ GSR Component:
 
 
 
-Design:  top                                           Date:  02/06/21  23:55:15
+Design:  top                                           Date:  02/07/21  01:50:58
 
 GSR Usage (cont)
 ----------------
@@ -858,7 +858,7 @@ GSR Usage (cont)
 
 
 
-Design:  top                                           Date:  02/06/21  23:55:15
+Design:  top                                           Date:  02/07/21  01:50:58
 
 GSR Usage (cont)
 ----------------
@@ -924,7 +924,7 @@ GSR Usage (cont)
 
 
 
-Design:  top                                           Date:  02/06/21  23:55:15
+Design:  top                                           Date:  02/07/21  01:50:58
 
 GSR Usage (cont)
 ----------------
@@ -990,7 +990,7 @@ GSR Usage (cont)
 
 
 
-Design:  top                                           Date:  02/06/21  23:55:15
+Design:  top                                           Date:  02/07/21  01:50:58
 
 GSR Usage (cont)
 ----------------
@@ -1056,7 +1056,7 @@ GSR Usage (cont)
 
 
 
-Design:  top                                           Date:  02/06/21  23:55:15
+Design:  top                                           Date:  02/07/21  01:50:58
 
 GSR Usage (cont)
 ----------------
@@ -1122,7 +1122,7 @@ GSR Usage (cont)
 
 
 
-Design:  top                                           Date:  02/06/21  23:55:15
+Design:  top                                           Date:  02/07/21  01:50:58
 
 GSR Usage (cont)
 ----------------
@@ -1188,7 +1188,7 @@ GSR Usage (cont)
 
 
 
-Design:  top                                           Date:  02/06/21  23:55:15
+Design:  top                                           Date:  02/07/21  01:50:58
 
 GSR Usage (cont)
 ----------------
@@ -1254,7 +1254,7 @@ GSR Usage (cont)
 
 
 
-Design:  top                                           Date:  02/06/21  23:55:15
+Design:  top                                           Date:  02/07/21  01:50:58
 
 GSR Usage (cont)
 ----------------
@@ -1320,7 +1320,7 @@ GSR Usage (cont)
 
 
 
-Design:  top                                           Date:  02/06/21  23:55:15
+Design:  top                                           Date:  02/07/21  01:50:58
 
 GSR Usage (cont)
 ----------------
@@ -1386,7 +1386,7 @@ GSR Usage (cont)
 
 
 
-Design:  top                                           Date:  02/06/21  23:55:15
+Design:  top                                           Date:  02/07/21  01:50:58
 
 GSR Usage (cont)
 ----------------
@@ -1452,7 +1452,7 @@ GSR Usage (cont)
 
 
 
-Design:  top                                           Date:  02/06/21  23:55:15
+Design:  top                                           Date:  02/07/21  01:50:58
 
 GSR Usage (cont)
 ----------------
@@ -1467,10 +1467,10 @@ GSR Usage (cont)
    Register : o_dac_a_9__I_0/addr_space_0[[29__183
    Register : o_dac_a_9__I_0/addr_space_0[[28__184
    Register : o_dac_a_9__I_0/addr_space_0[[27__185
-   Register : o_dac_a_9__I_0/addr_space_0[[26__186
-   Register : o_dac_a_9__I_0/addr_space_0[[25__187
-   Register : o_dac_a_9__I_0/addr_space_0[[24__188
-   Register : o_dac_a_9__I_0/addr_space_0[[23__189
+   Register : o_dac_a_9__I_0/addr_space_0[[25__188
+   Register : o_dac_a_9__I_0/addr_space_0[[24__189
+   Register : o_dac_a_9__I_0/addr_space_0[[23__190
+   Register : o_dac_a_9__I_0/addr_space_0[[22__191
    Register : o_dac_a_9__I_0/addr_space_0[[21__192
    Register : o_dac_a_9__I_0/addr_space_0[[20__193
    Register : o_dac_a_9__I_0/addr_space_0[[19__194
@@ -1518,7 +1518,7 @@ GSR Usage (cont)
 
 
 
-Design:  top                                           Date:  02/06/21  23:55:15
+Design:  top                                           Date:  02/07/21  01:50:58
 
 GSR Usage (cont)
 ----------------
@@ -1584,14 +1584,14 @@ GSR Usage (cont)
 
 
 
-Design:  top                                           Date:  02/06/21  23:55:15
+Design:  top                                           Date:  02/07/21  01:50:58
 
 GSR Usage (cont)
 ----------------
    Register : o_dac_a_9__I_0/carrier_center_increment_offset_ls__i0
    Register : o_dac_a_9__I_0/addr_space_3[[20__301
    Register : o_dac_a_9__I_0/addr_space_0[[31__181
-   Register : o_dac_a_9__I_0/addr_space_0[[22__191
+   Register : o_dac_a_9__I_0/addr_space_0[[26__187
    Register : o_dac_a_9__I_0/addr_space_3[[19__303
    Register : o_dac_a_9__I_0/addr_space_3[[18__305
    Register : o_dac_a_9__I_0/addr_space_3[[17__307
@@ -1650,7 +1650,7 @@ GSR Usage (cont)
 
 
 
-Design:  top                                           Date:  02/06/21  23:55:15
+Design:  top                                           Date:  02/07/21  01:50:58
 
 GSR Usage (cont)
 ----------------
@@ -1716,7 +1716,7 @@ GSR Usage (cont)
 
 
 
-Design:  top                                           Date:  02/06/21  23:55:15
+Design:  top                                           Date:  02/07/21  01:50:58
 
 GSR Usage (cont)
 ----------------
@@ -1782,7 +1782,7 @@ GSR Usage (cont)
 
 
 
-Design:  top                                           Date:  02/06/21  23:55:15
+Design:  top                                           Date:  02/07/21  01:50:58
 
 GSR Usage (cont)
 ----------------
@@ -1848,7 +1848,7 @@ GSR Usage (cont)
 
 
 
-Design:  top                                           Date:  02/06/21  23:55:15
+Design:  top                                           Date:  02/07/21  01:50:58
 
 GSR Usage (cont)
 ----------------
@@ -1914,7 +1914,7 @@ GSR Usage (cont)
 
 
 
-Design:  top                                           Date:  02/06/21  23:55:15
+Design:  top                                           Date:  02/07/21  01:50:58
 
 GSR Usage (cont)
 ----------------
@@ -1980,7 +1980,7 @@ GSR Usage (cont)
 
 
 
-Design:  top                                           Date:  02/06/21  23:55:15
+Design:  top                                           Date:  02/07/21  01:50:58
 
 GSR Usage (cont)
 ----------------
@@ -2046,7 +2046,7 @@ GSR Usage (cont)
 
 
 
-Design:  top                                           Date:  02/06/21  23:55:15
+Design:  top                                           Date:  02/07/21  01:50:58
 
 GSR Usage (cont)
 ----------------
@@ -2112,7 +2112,7 @@ GSR Usage (cont)
 
 
 
-Design:  top                                           Date:  02/06/21  23:55:15
+Design:  top                                           Date:  02/07/21  01:50:58
 
 GSR Usage (cont)
 ----------------
@@ -2178,7 +2178,7 @@ GSR Usage (cont)
 
 
 
-Design:  top                                           Date:  02/06/21  23:55:15
+Design:  top                                           Date:  02/07/21  01:50:58
 
 GSR Usage (cont)
 ----------------
@@ -2225,7 +2225,7 @@ Run Time and Memory Usage
 -------------------------
 
    Total CPU Time: 2 secs  
-   Total REAL Time: 2 secs  
+   Total REAL Time: 3 secs  
    Peak Memory Usage: 88 MB
         
 

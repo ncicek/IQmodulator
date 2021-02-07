@@ -14,11 +14,11 @@ SUB MODULES
 txuartlite(TIMING_BITS=24,CLOCKS_PER_BAUD=10000)	          1         1.8
                                sys_clk	          1         0.0
      rxuartlite(CLOCKS_PER_BAUD=10000)	          1         3.2
-                                 hbbus	          1        10.4
                               efb_inst	          1         0.0
                  fm_generator_wb_slave	          1        77.1
                            dynamic_pll	          1         0.0
                    clock_phase_shifter	          1         0.0
+                                 hbbus	          1        10.4
 ---------------------------------------------------
 Report for cell hbbus
    Instance path: top/genbus

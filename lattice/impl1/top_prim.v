@@ -1,5 +1,5 @@
 // Verilog netlist produced by program LSE :  version Diamond (64-bit) 3.11.3.469
-// Netlist written on Sat Feb 06 23:55:14 2021
+// Netlist written on Sun Feb 07 01:50:57 2021
 //
 // Verilog Description of module top
 //
@@ -5466,18 +5466,18 @@ module fm_generator_wb_slave (dac_clk_p_c, wb_odata, i_sw0_c, wb_fm_data,
     FD1P3DX \addr_space_0[[27__185  (.D(wb_odata[27]), .SP(dac_clk_p_c_enable_116), 
             .CK(dac_clk_p_c), .CD(i_sw0_c), .Q(\addr_space[0] [27])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
     defparam \addr_space_0[[27__185 .GSR = "DISABLED";
-    FD1P3DX \addr_space_0[[26__186  (.D(wb_odata[26]), .SP(dac_clk_p_c_enable_116), 
-            .CK(dac_clk_p_c), .CD(i_sw0_c), .Q(\addr_space[0] [26])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
-    defparam \addr_space_0[[26__186 .GSR = "DISABLED";
-    FD1P3DX \addr_space_0[[25__187  (.D(wb_odata[25]), .SP(dac_clk_p_c_enable_116), 
+    FD1P3DX \addr_space_0[[25__188  (.D(wb_odata[25]), .SP(dac_clk_p_c_enable_116), 
             .CK(dac_clk_p_c), .CD(i_sw0_c), .Q(\addr_space[0] [25])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
-    defparam \addr_space_0[[25__187 .GSR = "DISABLED";
-    FD1P3DX \addr_space_0[[24__188  (.D(wb_odata[24]), .SP(dac_clk_p_c_enable_116), 
+    defparam \addr_space_0[[25__188 .GSR = "DISABLED";
+    FD1P3DX \addr_space_0[[24__189  (.D(wb_odata[24]), .SP(dac_clk_p_c_enable_116), 
             .CK(dac_clk_p_c), .CD(i_sw0_c), .Q(\addr_space[0] [24])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
-    defparam \addr_space_0[[24__188 .GSR = "DISABLED";
-    FD1P3DX \addr_space_0[[23__189  (.D(wb_odata[23]), .SP(dac_clk_p_c_enable_116), 
+    defparam \addr_space_0[[24__189 .GSR = "DISABLED";
+    FD1P3DX \addr_space_0[[23__190  (.D(wb_odata[23]), .SP(dac_clk_p_c_enable_116), 
             .CK(dac_clk_p_c), .CD(i_sw0_c), .Q(\addr_space[0] [23])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
-    defparam \addr_space_0[[23__189 .GSR = "DISABLED";
+    defparam \addr_space_0[[23__190 .GSR = "DISABLED";
+    FD1P3BX \addr_space_0[[22__191  (.D(wb_odata[22]), .SP(dac_clk_p_c_enable_116), 
+            .CK(dac_clk_p_c), .PD(i_sw0_c), .Q(\addr_space[0] [22])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
+    defparam \addr_space_0[[22__191 .GSR = "DISABLED";
     FD1P3DX \addr_space_0[[21__192  (.D(wb_odata[21]), .SP(dac_clk_p_c_enable_116), 
             .CK(dac_clk_p_c), .CD(i_sw0_c), .Q(\addr_space[0] [21])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
     defparam \addr_space_0[[21__192 .GSR = "DISABLED";
@@ -5583,8 +5583,8 @@ module fm_generator_wb_slave (dac_clk_p_c, wb_odata, i_sw0_c, wb_fm_data,
     FD1P3DX \addr_space_1[[19__226  (.D(wb_odata[19]), .SP(dac_clk_p_c_enable_73), 
             .CK(dac_clk_p_c), .CD(i_sw0_c), .Q(\addr_space[1] [19])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
     defparam \addr_space_1[[19__226 .GSR = "DISABLED";
-    FD1P3DX \addr_space_1[[18__227  (.D(wb_odata[18]), .SP(dac_clk_p_c_enable_73), 
-            .CK(dac_clk_p_c), .CD(i_sw0_c), .Q(\addr_space[1] [18])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
+    FD1P3BX \addr_space_1[[18__227  (.D(wb_odata[18]), .SP(dac_clk_p_c_enable_73), 
+            .CK(dac_clk_p_c), .PD(i_sw0_c), .Q(\addr_space[1] [18])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
     defparam \addr_space_1[[18__227 .GSR = "DISABLED";
     FD1P3DX \addr_space_1[[17__228  (.D(wb_odata[17]), .SP(dac_clk_p_c_enable_73), 
             .CK(dac_clk_p_c), .CD(i_sw0_c), .Q(\addr_space[1] [17])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
@@ -5595,50 +5595,50 @@ module fm_generator_wb_slave (dac_clk_p_c, wb_odata, i_sw0_c, wb_fm_data,
     FD1P3DX \addr_space_1[[15__230  (.D(wb_odata[15]), .SP(dac_clk_p_c_enable_73), 
             .CK(dac_clk_p_c), .CD(i_sw0_c), .Q(\addr_space[1] [15])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
     defparam \addr_space_1[[15__230 .GSR = "DISABLED";
-    FD1P3DX \addr_space_1[[14__231  (.D(wb_odata[14]), .SP(dac_clk_p_c_enable_73), 
-            .CK(dac_clk_p_c), .CD(i_sw0_c), .Q(\addr_space[1] [14])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
+    FD1P3BX \addr_space_1[[14__231  (.D(wb_odata[14]), .SP(dac_clk_p_c_enable_73), 
+            .CK(dac_clk_p_c), .PD(i_sw0_c), .Q(\addr_space[1] [14])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
     defparam \addr_space_1[[14__231 .GSR = "DISABLED";
     FD1P3DX \addr_space_1[[13__232  (.D(wb_odata[13]), .SP(dac_clk_p_c_enable_73), 
             .CK(dac_clk_p_c), .CD(i_sw0_c), .Q(\addr_space[1] [13])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
     defparam \addr_space_1[[13__232 .GSR = "DISABLED";
-    FD1P3BX \addr_space_1[[12__233  (.D(wb_odata[12]), .SP(dac_clk_p_c_enable_73), 
-            .CK(dac_clk_p_c), .PD(i_sw0_c), .Q(\addr_space[1] [12])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
+    FD1P3DX \addr_space_1[[12__233  (.D(wb_odata[12]), .SP(dac_clk_p_c_enable_73), 
+            .CK(dac_clk_p_c), .CD(i_sw0_c), .Q(\addr_space[1] [12])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
     defparam \addr_space_1[[12__233 .GSR = "DISABLED";
     FD1P3DX \addr_space_1[[11__234  (.D(wb_odata[11]), .SP(dac_clk_p_c_enable_73), 
             .CK(dac_clk_p_c), .CD(i_sw0_c), .Q(\addr_space[1] [11])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
     defparam \addr_space_1[[11__234 .GSR = "DISABLED";
-    FD1P3DX \addr_space_1[[10__235  (.D(wb_odata[10]), .SP(dac_clk_p_c_enable_73), 
-            .CK(dac_clk_p_c), .CD(i_sw0_c), .Q(\addr_space[1] [10])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
+    FD1P3BX \addr_space_1[[10__235  (.D(wb_odata[10]), .SP(dac_clk_p_c_enable_73), 
+            .CK(dac_clk_p_c), .PD(i_sw0_c), .Q(\addr_space[1] [10])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
     defparam \addr_space_1[[10__235 .GSR = "DISABLED";
     FD1P3DX \addr_space_1[[9__236  (.D(wb_odata[9]), .SP(dac_clk_p_c_enable_73), 
             .CK(dac_clk_p_c), .CD(i_sw0_c), .Q(\addr_space[1] [9])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
     defparam \addr_space_1[[9__236 .GSR = "DISABLED";
-    FD1P3BX \addr_space_1[[8__237  (.D(wb_odata[8]), .SP(dac_clk_p_c_enable_73), 
-            .CK(dac_clk_p_c), .PD(i_sw0_c), .Q(\addr_space[1] [8])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
+    FD1P3DX \addr_space_1[[8__237  (.D(wb_odata[8]), .SP(dac_clk_p_c_enable_73), 
+            .CK(dac_clk_p_c), .CD(i_sw0_c), .Q(\addr_space[1] [8])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
     defparam \addr_space_1[[8__237 .GSR = "DISABLED";
-    FD1P3BX \addr_space_1[[7__238  (.D(wb_odata[7]), .SP(dac_clk_p_c_enable_73), 
-            .CK(dac_clk_p_c), .PD(i_sw0_c), .Q(\addr_space[1] [7])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
+    FD1P3DX \addr_space_1[[7__238  (.D(wb_odata[7]), .SP(dac_clk_p_c_enable_73), 
+            .CK(dac_clk_p_c), .CD(i_sw0_c), .Q(\addr_space[1] [7])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
     defparam \addr_space_1[[7__238 .GSR = "DISABLED";
-    FD1P3DX \addr_space_1[[6__239  (.D(wb_odata[6]), .SP(dac_clk_p_c_enable_73), 
-            .CK(dac_clk_p_c), .CD(i_sw0_c), .Q(\addr_space[1] [6])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
+    FD1P3BX \addr_space_1[[6__239  (.D(wb_odata[6]), .SP(dac_clk_p_c_enable_73), 
+            .CK(dac_clk_p_c), .PD(i_sw0_c), .Q(\addr_space[1] [6])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
     defparam \addr_space_1[[6__239 .GSR = "DISABLED";
-    FD1P3BX \addr_space_1[[5__240  (.D(wb_odata[5]), .SP(dac_clk_p_c_enable_73), 
-            .CK(dac_clk_p_c), .PD(i_sw0_c), .Q(\addr_space[1] [5])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
+    FD1P3DX \addr_space_1[[5__240  (.D(wb_odata[5]), .SP(dac_clk_p_c_enable_73), 
+            .CK(dac_clk_p_c), .CD(i_sw0_c), .Q(\addr_space[1] [5])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
     defparam \addr_space_1[[5__240 .GSR = "DISABLED";
-    FD1P3BX \addr_space_1[[4__241  (.D(wb_odata[4]), .SP(dac_clk_p_c_enable_73), 
-            .CK(dac_clk_p_c), .PD(i_sw0_c), .Q(\addr_space[1] [4])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
+    FD1P3DX \addr_space_1[[4__241  (.D(wb_odata[4]), .SP(dac_clk_p_c_enable_73), 
+            .CK(dac_clk_p_c), .CD(i_sw0_c), .Q(\addr_space[1] [4])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
     defparam \addr_space_1[[4__241 .GSR = "DISABLED";
-    FD1P3BX \addr_space_1[[3__242  (.D(wb_odata[3]), .SP(dac_clk_p_c_enable_73), 
-            .CK(dac_clk_p_c), .PD(i_sw0_c), .Q(\addr_space[1] [3])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
+    FD1P3DX \addr_space_1[[3__242  (.D(wb_odata[3]), .SP(dac_clk_p_c_enable_73), 
+            .CK(dac_clk_p_c), .CD(i_sw0_c), .Q(\addr_space[1] [3])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
     defparam \addr_space_1[[3__242 .GSR = "DISABLED";
     FD1P3BX \addr_space_1[[2__243  (.D(wb_odata[2]), .SP(dac_clk_p_c_enable_73), 
             .CK(dac_clk_p_c), .PD(i_sw0_c), .Q(\addr_space[1] [2])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
     defparam \addr_space_1[[2__243 .GSR = "DISABLED";
-    FD1P3BX \addr_space_1[[1__244  (.D(wb_odata[1]), .SP(dac_clk_p_c_enable_73), 
-            .CK(dac_clk_p_c), .PD(i_sw0_c), .Q(\addr_space[1] [1])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
+    FD1P3DX \addr_space_1[[1__244  (.D(wb_odata[1]), .SP(dac_clk_p_c_enable_73), 
+            .CK(dac_clk_p_c), .CD(i_sw0_c), .Q(\addr_space[1] [1])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
     defparam \addr_space_1[[1__244 .GSR = "DISABLED";
-    FD1P3BX \addr_space_1[[0__245  (.D(wb_odata[0]), .SP(dac_clk_p_c_enable_73), 
-            .CK(dac_clk_p_c), .PD(i_sw0_c), .Q(\addr_space[1] [0])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
+    FD1P3DX \addr_space_1[[0__245  (.D(wb_odata[0]), .SP(dac_clk_p_c_enable_73), 
+            .CK(dac_clk_p_c), .CD(i_sw0_c), .Q(\addr_space[1] [0])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
     defparam \addr_space_1[[0__245 .GSR = "DISABLED";
     FD1P3DX \addr_space_2[[31__246  (.D(wb_odata[31]), .SP(dac_clk_p_c_enable_105), 
             .CK(dac_clk_p_c), .CD(i_sw0_c), .Q(\addr_space[2] [31])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
@@ -5724,8 +5724,8 @@ module fm_generator_wb_slave (dac_clk_p_c, wb_odata, i_sw0_c, wb_fm_data,
     FD1P3DX \addr_space_2[[4__273  (.D(wb_odata[4]), .SP(dac_clk_p_c_enable_105), 
             .CK(dac_clk_p_c), .CD(i_sw0_c), .Q(\addr_space[2] [4])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
     defparam \addr_space_2[[4__273 .GSR = "DISABLED";
-    FD1P3DX \addr_space_2[[3__274  (.D(wb_odata[3]), .SP(dac_clk_p_c_enable_105), 
-            .CK(dac_clk_p_c), .CD(i_sw0_c), .Q(\addr_space[2] [3])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
+    FD1P3BX \addr_space_2[[3__274  (.D(wb_odata[3]), .SP(dac_clk_p_c_enable_105), 
+            .CK(dac_clk_p_c), .PD(i_sw0_c), .Q(\addr_space[2] [3])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
     defparam \addr_space_2[[3__274 .GSR = "DISABLED";
     FD1P3DX \addr_space_2[[2__275  (.D(wb_odata[2]), .SP(dac_clk_p_c_enable_105), 
             .CK(dac_clk_p_c), .CD(i_sw0_c), .Q(\addr_space[2] [2])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
@@ -5733,8 +5733,8 @@ module fm_generator_wb_slave (dac_clk_p_c, wb_odata, i_sw0_c, wb_fm_data,
     FD1P3DX \addr_space_2[[1__276  (.D(wb_odata[1]), .SP(dac_clk_p_c_enable_105), 
             .CK(dac_clk_p_c), .CD(i_sw0_c), .Q(\addr_space[2] [1])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
     defparam \addr_space_2[[1__276 .GSR = "DISABLED";
-    FD1P3DX \addr_space_2[[0__277  (.D(wb_odata[0]), .SP(dac_clk_p_c_enable_105), 
-            .CK(dac_clk_p_c), .CD(i_sw0_c), .Q(\addr_space[2] [0])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
+    FD1P3BX \addr_space_2[[0__277  (.D(wb_odata[0]), .SP(dac_clk_p_c_enable_105), 
+            .CK(dac_clk_p_c), .PD(i_sw0_c), .Q(\addr_space[2] [0])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
     defparam \addr_space_2[[0__277 .GSR = "DISABLED";
     FD1P3AX \addr_space_3[[24__293  (.D(wb_odata[24]), .SP(dac_clk_p_c_enable_149), 
             .CK(dac_clk_p_c), .Q(\addr_space[3] [24])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
@@ -5772,9 +5772,9 @@ module fm_generator_wb_slave (dac_clk_p_c, wb_odata, i_sw0_c, wb_fm_data,
     FD1P3DX \addr_space_0[[31__181  (.D(wb_odata[31]), .SP(dac_clk_p_c_enable_116), 
             .CK(dac_clk_p_c), .CD(i_sw0_c), .Q(\addr_space[0] [31])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
     defparam \addr_space_0[[31__181 .GSR = "DISABLED";
-    FD1P3BX \addr_space_0[[22__191  (.D(wb_odata[22]), .SP(dac_clk_p_c_enable_116), 
-            .CK(dac_clk_p_c), .PD(i_sw0_c), .Q(\addr_space[0] [22])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
-    defparam \addr_space_0[[22__191 .GSR = "DISABLED";
+    FD1P3BX \addr_space_0[[26__187  (.D(wb_odata[26]), .SP(dac_clk_p_c_enable_116), 
+            .CK(dac_clk_p_c), .PD(i_sw0_c), .Q(\addr_space[0] [26])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
+    defparam \addr_space_0[[26__187 .GSR = "DISABLED";
     FD1P3AX \addr_space_3[[19__303  (.D(wb_odata[19]), .SP(dac_clk_p_c_enable_149), 
             .CK(dac_clk_p_c), .Q(\addr_space[3] [19])) /* synthesis LSE_LINE_FILE_ID=8, LSE_LCOL=2, LSE_RCOL=2, LSE_LLINE=129, LSE_RLINE=141 */ ;   // d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(43[11] 47[5])
     defparam \addr_space_3[[19__303 .GSR = "DISABLED";

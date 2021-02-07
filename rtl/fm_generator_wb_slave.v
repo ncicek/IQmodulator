@@ -37,9 +37,9 @@ reg [31:0] addr_space [0:3];
 
 always @(posedge i_clk or posedge i_reset) begin
 	if (i_reset) begin
-		addr_space[REG_CARRIER_CENTER_FREQUENCY] <= 32'h444444;
-		addr_space[REG_MODULATION_FREQUENCY] <= 32'h11bf;
-		addr_space[REG_MODULATION_DEVIATION] <= 32'd0;
+		addr_space[REG_CARRIER_CENTER_FREQUENCY] <= 32'h4444444;
+		addr_space[REG_MODULATION_FREQUENCY] <= 32'h44444;
+		addr_space[REG_MODULATION_DEVIATION] <= 32'd9;
 	end else begin
 		if ((i_wb_stb)&&(i_wb_we)&&(!o_wb_stall)) begin
 			addr_space[i_wb_addr] <= i_wb_data;

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<DiamondModule name="sys_clk" module="sys_clk" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2021 02 06 23:35:08.570" version="5.8" type="Module" synthesis="lse" source_format="Verilog HDL">
+<DiamondModule name="sys_clk" module="sys_clk" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2021 02 07 01:41:35.605" version="5.8" type="Module" synthesis="lse" source_format="Verilog HDL">
   <Package>
-		<File name="sys_clk.lpc" type="lpc" modified="2021 02 06 23:35:07.220"/>
-		<File name="sys_clk.v" type="top_level_verilog" modified="2021 02 06 23:35:07.270"/>
-		<File name="sys_clk_tmpl.v" type="template_verilog" modified="2021 02 06 23:35:07.277"/>
+		<File name="sys_clk.lpc" type="lpc" modified="2021 02 07 01:41:33.599"/>
+		<File name="sys_clk.v" type="top_level_verilog" modified="2021 02 07 01:41:33.649"/>
+		<File name="sys_clk_tmpl.v" type="template_verilog" modified="2021 02 07 01:41:33.655"/>
   </Package>
 </DiamondModule>
