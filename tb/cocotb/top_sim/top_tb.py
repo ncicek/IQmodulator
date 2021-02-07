@@ -22,7 +22,7 @@ async def top_tb(dut):
 
     wave = np.empty(shape=100000)
     for i in range (100000):
-        wave[i] = dut.o_baseband.value.integer
+        wave[i] = dut.o_dac_b.value.integer
         await FallingEdge(dut.i_ref_clk)
 
     df = pd.DataFrame(data=wave)

@@ -1,3 +1,6 @@
+SIM = verilator
+COMPILE_ARGS = --trace
+
 TOPLEVEL_LANG ?= verilog
 
 PWD=$(shell pwd)
