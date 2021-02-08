@@ -14,9 +14,9 @@ async def top_tb(dut):
     cocotb.fork(clock.start())  # Start the clock
 
     await FallingEdge(dut.i_ref_clk)  # Synchronize with the clock
-    dut.i_resetb <= 0
+    dut.i_sw0 <= 1
     await Timer(10, "ns")
-    dut.i_resetb <= 1
+    dut.i_sw0 <= 0
 
     await Timer(10, "ns") #skip the undefined state
 
