@@ -17,6 +17,7 @@ class Device():
         return value
 
     def write(self, addr, data):
+        assert data <= 0xFFFFFFFF
         tx = "A"+format(addr<<2, 'x').lower()+'\n'
         self.ser.write(tx.encode())
         self.ser.readline()
@@ -24,22 +25,22 @@ class Device():
         self.ser.write(tx.encode())
         print("wrote ", hex(data), " to ", hex(addr))
 
-def set_modulation_amount(val):
-    assert val < 100
-    write(((0x82<<8)+2), val)
+    def set_modulation_amount(self, val):
+        #assert val < 100
+        self.write(((0x82<<8)+2), val)
 
-def set_modulation_frequency(hz):
-    count = 2**32*hz/refclk
-    assert count < 2**32
-    write(((0x82<<8)+1), int(round(count)))
+    def set_modulation_frequency(self, hz):
+        count = 2**32*hz/refclk
+        assert count < 2**32
+        self.write(((0x82<<8)+1), int(round(count)))
 
-def set_carrier_frequency(hz):
-    count = 2**32*hz/refclk
-    assert count < 2**32
-    write(((0x82<<8)+0), int(round(count)))
+    def set_carrier_frequency(self, hz):
+        count = 2**32*hz/refclk
+        assert count < 2**32
+        self.write(((0x82<<8)+0), int(round(count)))
 
-def set_lo_frequency(hz):
-    write(((0x83<<8)+0), int(round(count)))
+    def set_lo_frequency(self, hz):
+        self.write(((0x83<<8)+0), int(round(count)))
 
 class EFB_PLL():
     def __init__(self, dev, efb_wishbone_base_address, ref_clk):
@@ -64,8 +65,8 @@ class EFB_PLL():
         self.dev.write(self.base_address + 5, 1<<7) #MC1_USE_DESI
 
 
-ser = serial.Serial('COM8', 9600)  # open serial port
-refclk = 96e6
+ser = serial.Serial('COM8', 7200)  # open serial port
+refclk = 72e6
 
 dev = Device(ser)
 efb_pll = EFB_PLL(dev, 0x83<<8, refclk)
