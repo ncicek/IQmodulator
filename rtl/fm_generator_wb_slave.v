@@ -1,4 +1,4 @@
-`default_nettype none
+//`default_nettype none
 `timescale 1 ns/100 ps  // time-unit = 1 ns, precision = 10 ps
 
 module fm_generator_wb_slave (
@@ -64,10 +64,10 @@ reg [(accumulator_width-2):0] carrier_increment;
 
 wire signed [(accumulator_width-2):0] carrier_center_increment;
 wire signed [(accumulator_width-2):0] modulation_increment;
-wire signed [sine_lookup_width:0] modulation_deviation_amount;
+wire [13:0] modulation_deviation_amount;
 assign carrier_center_increment = addr_space[REG_CARRIER_CENTER_FREQUENCY][(accumulator_width-2):0];
 assign modulation_increment = addr_space[REG_MODULATION_FREQUENCY][(accumulator_width-2):0];
-assign modulation_deviation_amount = addr_space[REG_MODULATION_DEVIATION][sine_lookup_width:0];
+assign modulation_deviation_amount = addr_space[REG_MODULATION_DEVIATION][13:0];
 
 wire signed [(sine_lookup_width-1):0] modulation_output;
 
@@ -82,14 +82,36 @@ dds #( 	.sine_lookup_width(sine_lookup_width),
 	) modulation(.i_clk(i_clk), .i_reset(i_reset), .i_ce(1'b1), .i_update(1'b1), .i_increment(modulation_increment), .o_sample_i(modulation_output), .o_sample_q());
 
 
-reg signed [30:0] carrier_center_increment_offset;
+`ifdef synthesis
+	wire signed [29:0] carrier_center_increment_offset;
+	//mult32 modulation_multiplier (.Clock(i_clk), .ClkEn(1'b1), .Aclr(i_reset), .DataA(modulation_deviation_amount), .DataB(modulation_output), .Result(carrier_center_increment_offset));
+	/*pmi_mult #(	.pmi_dataa_width (14),
+				.pmi_datab_width (16),
+				.module_type("pmi_mult"),
+				.pmi_sign("on"),
+				.pmi_additional_pipeline(4),
+				.pmi_input_reg("off"),
+				.pmi_output_reg("off"),
+				.pmi_family("XO3LF"),
+				.pmi_implementation("LUT")
+				)
+				modulation_multiplier (.Clock(i_clk), .ClkEn(1'b1), .Aclr(i_reset), .DataA(modulation_deviation_amount), .DataB(modulation_output), .Result(carrier_center_increment_offset));
+	*/
+	mult mult_hdl (i_clk, modulation_deviation_amount, modulation_output, carrier_center_increment_offset);
+`else
+	reg signed [29:0] carrier_center_increment_offset;
+`endif
 
 always @(posedge i_clk or posedge i_reset) begin
 	if (i_reset) begin
-		carrier_center_increment_offset <= {(31){1'b0}};
+		`ifndef	synthesis
+			carrier_center_increment_offset <= {(30){1'b0}};
+		`endif
 		carrier_increment <= {(31){1'b0}};
 	end else begin
-		carrier_center_increment_offset <= modulation_deviation_amount * modulation_output;
+		`ifndef	synthesis
+			carrier_center_increment_offset <= modulation_deviation_amount * modulation_output;
+		`endif
 		carrier_increment <= carrier_center_increment + carrier_center_increment_offset;
 	end
 end
