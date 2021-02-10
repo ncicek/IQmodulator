@@ -20,13 +20,15 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>D:/Documents/Git_Local/fm_modulator/lattice/impl1/iq_modulator_impl1.bit</File>
-			<FileTime>02/06/21 23:55:46</FileTime>
+			<FileTime>02/09/21 21:36:18</FileTime>
+			<JedecChecksum>N/A</JedecChecksum>
 			<Operation>SRAM Fast Program</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
 				<IOState>HighZ</IOState>
 				<PreloadLength>664</PreloadLength>
 				<IOVectorData>0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</IOVectorData>
+				<SVFProcessor>SVF Processor</SVFProcessor>
 				<Usercode>0x00000000</Usercode>
 				<AccessMode>SRAM</AccessMode>
 			</Option>

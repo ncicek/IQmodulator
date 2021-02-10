@@ -4,9 +4,9 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timestamp 2021 1 13 21 41 13)
+      (timestamp 2021 2 7 15 46 34)
       (program "SCUBA" (version "Diamond (64-bit) 3.11.3.469"))))
-      (comment "C:\lscc\diamond\3.11_x64\ispfpga\bin\nt64\scuba.exe -w -n dynamic_pll -lang verilog -synth lse -arch xo3c00f -type pll -fin 12 -fclkop 400 -fclkop_tol 10.0 -trimp 0 -phasep 0 -trimp_r -phase_cntl STATIC -fb_mode 1 -lock -wb -fracn 2731 ")
+      (comment "C:\lscc\diamond\3.11_x64\ispfpga\bin\nt64\scuba.exe -w -n dynamic_pll -lang verilog -synth lse -arch xo3c00f -type pll -fin 12 -fclkop 200 -fclkop_tol 10.0 -trimp 0 -phasep 0 -trimp_r -phase_cntl STATIC -fb_mode 1 -lock -wb -fracn 2731 ")
   (library ORCLIB
     (edifLevel 0)
     (technology
@@ -229,7 +229,7 @@
             (property CLKOP_FPHASE
               (string "0"))
             (property CLKOP_CPHASE
-              (string "0"))
+              (string "2"))
             (property PLL_LOCK_MODE
               (string "0"))
             (property CLKOS_TRIM_DELAY
@@ -269,7 +269,7 @@
             (property CLKOS_ENABLE
               (string "DISABLED"))
             (property FREQUENCY_PIN_CLKOP
-              (string "420.000000"))
+              (string "192.000000"))
             (property OUTDIVIDER_MUXA2
               (string "DIVA"))
             (property PREDIVIDER_MUXA1
@@ -281,7 +281,7 @@
             (property FREQUENCY_PIN_CLKI
               (string "12.000000"))
             (property ICP_CURRENT
-              (string "6"))
+              (string "9"))
             (property LPF_RESISTOR
               (string "8"))
             (property CLKOS3_DIV
@@ -291,9 +291,9 @@
             (property CLKOS_DIV
               (string "1"))
             (property CLKOP_DIV
-              (string "1"))
+              (string "3"))
             (property CLKFB_DIV
-              (string "35"))
+              (string "16"))
             (property CLKI_DIV
               (string "1"))
             (property FEEDBK_PATH

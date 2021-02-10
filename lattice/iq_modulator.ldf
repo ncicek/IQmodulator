@@ -2,14 +2,14 @@
 <BaliProject version="3.2" title="iq_modulator" device="LCMXO3LF-6900C-5BG256C" default_implementation="impl1">
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Timing">
-        <Options VERILOG_DIRECTIVES="synthesis" def_top="hbconsole" top="top"/>
+        <Options VERILOG_DIRECTIVES="synthesis" def_top="hbconsole">
+            <Option name="include path" value="../rtl"/>
+            <Option name="top" value="top"/>
+        </Options>
         <Source name="../rtl/dds.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="../rtl/fm_generator_wb_slave.v" type="Verilog" type_short="Verilog">
-            <Options/>
-        </Source>
-        <Source name="../rtl/iq_gen.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="../rtl/nco.v" type="Verilog" type_short="Verilog">
@@ -73,6 +73,18 @@
             <Options/>
         </Source>
         <Source name="sys_clk.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="../rtl/bimpy.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../rtl/umpy_14x16.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../rtl/sgnmpy_14x16.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="impl1/impl1.xcf" type="Programming Project File" type_short="Programming">
             <Options/>
         </Source>
         <Source name="iq_modulator.lpf" type="Logic Preference" type_short="LPF">

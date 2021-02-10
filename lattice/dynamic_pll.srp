@@ -1,5 +1,5 @@
 SCUBA, Version Diamond (64-bit) 3.11.3.469
-Wed Jan 13 21:41:13 2021
+Sun Feb 07 15:46:34 2021
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -7,7 +7,7 @@ Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
 
-    Issued command   : C:\lscc\diamond\3.11_x64\ispfpga\bin\nt64\scuba.exe -w -n dynamic_pll -lang verilog -synth lse -arch xo3c00f -type pll -fin 12 -fclkop 400 -fclkop_tol 10.0 -trimp 0 -phasep 0 -trimp_r -phase_cntl STATIC -fb_mode 1 -lock -wb -fracn 2731 
+    Issued command   : C:\lscc\diamond\3.11_x64\ispfpga\bin\nt64\scuba.exe -w -n dynamic_pll -lang verilog -synth lse -arch xo3c00f -type pll -fin 12 -fclkop 200 -fclkop_tol 10.0 -trimp 0 -phasep 0 -trimp_r -phase_cntl STATIC -fb_mode 1 -lock -wb -fracn 2731 
     Circuit name     : dynamic_pll
     Module type      : pll
     Module Version   : 5.7

@@ -16,8 +16,8 @@ CoreRevision=5.8
 ModuleName=dynamic_pll
 SourceFormat=Verilog HDL
 ParameterFileVersion=1.0
-Date=01/13/2021
-Time=21:41:13
+Date=02/07/2021
+Time=15:46:34
 
 [Parameters]
 Verilog=1
@@ -30,10 +30,10 @@ IO=0
 mode=Frequency
 CLKI=12
 CLKI_DIV=1
-BW=1.146
-VCO=420.000
+BW=1.194
+VCO=576.000
 fb_mode=CLKOP
-CLKFB_DIV=35
+CLKFB_DIV=16
 FRACN_ENABLE=1
 FRACN_DIV=2731
 DynamicPhase=STATIC
@@ -49,10 +49,10 @@ LockStk=0
 WBProt=1
 OPBypass=0
 OPUseDiv=0
-CLKOP_DIV=1
-FREQ_PIN_CLKOP=400
+CLKOP_DIV=3
+FREQ_PIN_CLKOP=200
 OP_Tol=10.0
-CLKOP_AFREQ=420.000000
+CLKOP_AFREQ=192.000000
 CLKOP_PHASEADJ=0
 CLKOP_TRIM_POL=Rising
 CLKOP_TRIM_DELAY=0
@@ -84,4 +84,4 @@ CLKOS3_AFREQ=
 CLKOS3_PHASEADJ=0
 
 [Command]
-cmd_line= -w -n dynamic_pll -lang verilog -synth lse -arch xo3c00f -type pll -fin 12 -fclkop 400 -fclkop_tol 10.0 -trimp 0 -phasep 0 -trimp_r -phase_cntl STATIC -fb_mode 1 -lock -wb -fracn 2731
+cmd_line= -w -n dynamic_pll -lang verilog -synth lse -arch xo3c00f -type pll -fin 12 -fclkop 200 -fclkop_tol 10.0 -trimp 0 -phasep 0 -trimp_r -phase_cntl STATIC -fb_mode 1 -lock -wb -fracn 2731
