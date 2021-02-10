@@ -1,4 +1,4 @@
-`default_nettype none
+//`default_nettype none
 `timescale 1 ns / 100 ps
 
 module top(i_ref_clk,
@@ -135,8 +135,8 @@ fm_generator_wb_slave #(
                             .o_wb_ack(wb_fm_ack), 
                             .o_wb_stall(wb_fm_stall), 
                             .o_wb_data(wb_fm_data),
-                            .o_dac_a(o_dac_a),
-							.o_dac_b(o_dac_b),
+                            .o_dac_a_registered(o_dac_a),
+							.o_dac_b_registered(o_dac_b),
 							.o_cw_b(o_dac_cw_b)
 );
 
