@@ -3,138 +3,130 @@ Report for cell top
    Instance path: top
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	    2281.00        100.0
-                                  LUT4	    3366.00        100.0
-                                 IOBUF	         31        100.0
-                                PFUREG	       1174        100.0
-                                RIPPLE	        190        100.0
+                                  SLIC	    3010.00        100.0
+                                  LUT4	    3961.00        100.0
+                                 IOBUF	         29        100.0
+                                PFUREG	       2244        100.0
+                                RIPPLE	        612        100.0
                                    EBR	          1        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-txuartlite(TIMING_BITS=24,CLOCKS_PER_BAUD=10000)	          1         1.8
+txuartlite(TIMING_BITS=24,CLOCKS_PER_BAUD=10000)	          1         1.3
                                sys_clk	          1         0.0
-     rxuartlite(CLOCKS_PER_BAUD=10000)	          1         3.2
-                              efb_inst	          1         0.0
-                 fm_generator_wb_slave	          1        77.1
+     rxuartlite(CLOCKS_PER_BAUD=10000)	          1         2.3
+                 fm_generator_wb_slave	          1        83.8
                            dynamic_pll	          1         0.0
-                   clock_phase_shifter	          1         0.0
-                                 hbbus	          1        10.4
+                              efb_inst	          1         0.0
+                               control	          1         4.2
+                                 hbbus	          1         6.9
+---------------------------------------------------
+Report for cell rxuartlite(CLOCKS_PER_BAUD=10000)
+   Instance path: top/rxtransport
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      70.58         2.3
+                                  LUT4	      45.00         1.1
+                                PFUREG	         73         3.3
+                                RIPPLE	         39         6.4
+---------------------------------------------------
+Report for cell control
+   Instance path: top/control_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     127.58         4.2
+                                  LUT4	      92.00         2.3
+                                PFUREG	        193         8.6
 ---------------------------------------------------
 Report for cell hbbus
    Instance path: top/genbus
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     236.17        10.4
-                                  LUT4	     254.00         7.5
-                                PFUREG	        306        26.1
-                                RIPPLE	         16         8.4
+                                  SLIC	     208.92         6.9
+                                  LUT4	     243.00         6.1
+                                PFUREG	        306        13.6
+                                RIPPLE	         16         2.6
                                    EBR	          1        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                             hbnewline	          1         0.5
-                                hbpack	          1         1.7
-                                hbexec	          1         3.8
-                                hbidle	          1         0.9
-                                hbints	          1         0.8
-                              hbgenhex	          1         0.1
-                              hbdeword	          1         1.2
-                              hbdechex	          1         1.3
+                                hbints	          1         0.7
+                                hbpack	          1         1.2
+                             hbnewline	          1         0.3
+                                hbexec	          1         2.3
+                              hbgenhex	          1         0.0
+                                hbidle	          1         0.6
+                              hbdeword	          1         0.9
+                              hbdechex	          1         0.9
 ---------------------------------------------------
 Report for cell hbexec
    Instance path: top/genbus/wbexec
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      85.83         3.8
-                                  LUT4	      72.00         2.1
-                                PFUREG	        102         8.7
-                                RIPPLE	         16         8.4
+                                  SLIC	      69.67         2.3
+                                  LUT4	      80.00         2.0
+                                PFUREG	        102         4.5
+                                RIPPLE	         16         2.6
 ---------------------------------------------------
 Report for cell hbdeword
    Instance path: top/genbus/unpackx
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      26.50         1.2
-                                  LUT4	      46.00         1.4
-                                PFUREG	         42         3.6
+                                  SLIC	      26.08         0.9
+                                  LUT4	      47.00         1.2
+                                PFUREG	         42         1.9
 ---------------------------------------------------
 Report for cell hbpack
    Instance path: top/genbus/packxi
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      39.67         1.7
-                                  LUT4	      39.00         1.2
-                                PFUREG	         70         6.0
+                                  SLIC	      36.67         1.2
+                                  LUT4	      30.00         0.8
+                                PFUREG	         70         3.1
 ---------------------------------------------------
 Report for cell hbgenhex
    Instance path: top/genbus/genhex
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       2.17         0.1
-                                  LUT4	       5.00         0.1
-                                PFUREG	          1         0.1
+                                  SLIC	       1.00         0.0
+                                  LUT4	       2.00         0.1
+                                PFUREG	          1         0.0
                                    EBR	          1        100.0
 ---------------------------------------------------
 Report for cell hbdechex
    Instance path: top/genbus/dechxi
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      30.17         1.3
-                                  LUT4	      55.00         1.6
-                                PFUREG	          9         0.8
+                                  SLIC	      27.33         0.9
+                                  LUT4	      55.00         1.4
+                                PFUREG	          9         0.4
 ---------------------------------------------------
 Report for cell hbnewline
    Instance path: top/genbus/addnl
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      12.33         0.5
-                                  LUT4	      27.00         0.8
-                                PFUREG	         11         0.9
+                                  SLIC	       9.25         0.3
+                                  LUT4	      19.00         0.5
+                                PFUREG	         11         0.5
 ---------------------------------------------------
 Report for cell hbints
    Instance path: top/genbus/addints
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      18.83         0.8
-                                  LUT4	       3.00         0.1
-                                PFUREG	         36         3.1
+                                  SLIC	      19.83         0.7
+                                  LUT4	       5.00         0.1
+                                PFUREG	         36         1.6
 ---------------------------------------------------
 Report for cell hbidle
    Instance path: top/genbus/addidles
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      20.67         0.9
-                                  LUT4	       7.00         0.2
-                                PFUREG	         35         3.0
----------------------------------------------------
-Report for cell rxuartlite(CLOCKS_PER_BAUD=10000)
-   Instance path: top/rxtransport
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  SLIC	      72.83         3.2
-                                  LUT4	      42.00         1.2
-                                PFUREG	         73         6.2
-                                RIPPLE	         39        20.5
----------------------------------------------------
-Report for cell txuartlite(TIMING_BITS=24,CLOCKS_PER_BAUD=10000)
-   Instance path: top/txtransport
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  SLIC	      42.00         1.8
-                                  LUT4	      37.00         1.1
-                                PFUREG	         39         3.3
-                                RIPPLE	         13         6.8
+                                  SLIC	      19.08         0.6
+                                  LUT4	       5.00         0.1
+                                PFUREG	         35         1.6
 ---------------------------------------------------
 Report for cell efb_inst
-   Instance path: top/wb_lo_data_7__I_0
+   Instance path: top/efb_inst_0
                      Cell usage:
                                   cell	      count    Res Usage(%)
----------------------------------------------------
-Report for cell clock_phase_shifter
-   Instance path: top/clock_phase_shifter_inst
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  SLIC	       1.00         0.0
-                                PFUREG	          2         0.2
 ---------------------------------------------------
 Report for cell sys_clk
    Instance path: top/sys_clk_inst
@@ -145,78 +137,371 @@ Report for cell dynamic_pll
    Instance path: top/lo_gen
                      Cell usage:
                                   cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.0
+                                  LUT4	       1.00         0.0
 ---------------------------------------------------
 Report for cell fm_generator_wb_slave
-   Instance path: top/o_dac_a_9__I_0
+   Instance path: top/fm_generator_wb_instance
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	    1759.67        77.1
-                                  LUT4	    2856.00        84.8
-                                PFUREG	        592        50.4
-                                RIPPLE	         89        46.8
+                                  SLIC	    2521.75        83.8
+                                  LUT4	    3441.00        86.9
+                                PFUREG	       1599        71.3
+                                RIPPLE	        544        88.9
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                                   dds	          1        22.5
-                                dds_U2	          1        42.8
+                      sgnmpy_14x16_U24	          1        10.4
+                      sgnmpy_14x16_U25	          1        10.0
+                          sgnmpy_14x16	          1        10.0
+                                   dds	          1        16.2
+                               dds_U26	          1        31.2
+---------------------------------------------------
+Report for cell sgnmpy_14x16
+   Instance path: top/fm_generator_wb_instance/q_gain_multiplier
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     301.17        10.0
+                                  LUT4	     233.00         5.9
+                                PFUREG	        329        14.7
+                                RIPPLE	        156        25.5
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            umpy_14x16	          1         8.7
+---------------------------------------------------
+Report for cell umpy_14x16
+   Instance path: top/fm_generator_wb_instance/q_gain_multiplier/umpy
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     261.17         8.7
+                                  LUT4	     223.00         5.6
+                                PFUREG	        285        12.7
+                                RIPPLE	        124        20.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                       bimpy(BW=16)_U5	          1         0.8
+                       bimpy(BW=16)_U2	          1         0.8
+                       bimpy(BW=16)_U3	          1         0.8
+                       bimpy(BW=16)_U4	          1         0.8
+                       bimpy(BW=16)_U1	          1         0.8
+                          bimpy(BW=16)	          1         0.8
+                       bimpy(BW=16)_U0	          1         0.8
+---------------------------------------------------
+Report for cell bimpy(BW=16)
+   Instance path: top/fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_6_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      24.83         0.8
+                                  LUT4	      31.00         0.8
+                                PFUREG	         18         0.8
+                                RIPPLE	          9         1.5
+---------------------------------------------------
+Report for cell bimpy(BW=16)_U0
+   Instance path: top/fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_5_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      24.67         0.8
+                                  LUT4	      31.00         0.8
+                                PFUREG	         18         0.8
+                                RIPPLE	          9         1.5
+---------------------------------------------------
+Report for cell bimpy(BW=16)_U1
+   Instance path: top/fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_4_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      24.67         0.8
+                                  LUT4	      31.00         0.8
+                                PFUREG	         18         0.8
+                                RIPPLE	          9         1.5
+---------------------------------------------------
+Report for cell bimpy(BW=16)_U2
+   Instance path: top/fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_3_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      24.67         0.8
+                                  LUT4	      31.00         0.8
+                                PFUREG	         18         0.8
+                                RIPPLE	          9         1.5
+---------------------------------------------------
+Report for cell bimpy(BW=16)_U3
+   Instance path: top/fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_2_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      24.67         0.8
+                                  LUT4	      31.00         0.8
+                                PFUREG	         18         0.8
+                                RIPPLE	          9         1.5
+---------------------------------------------------
+Report for cell bimpy(BW=16)_U4
+   Instance path: top/fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_1_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      24.67         0.8
+                                  LUT4	      31.00         0.8
+                                PFUREG	         18         0.8
+                                RIPPLE	          9         1.5
+---------------------------------------------------
+Report for cell bimpy(BW=16)_U5
+   Instance path: top/fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_0_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      25.00         0.8
+                                  LUT4	      31.00         0.8
+                                PFUREG	         18         0.8
+                                RIPPLE	          9         1.5
+---------------------------------------------------
+Report for cell sgnmpy_14x16_U24
+   Instance path: top/fm_generator_wb_instance/modulation_amplitude_multiplier
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     311.67        10.4
+                                  LUT4	     254.00         6.4
+                                PFUREG	        350        15.6
+                                RIPPLE	        157        25.7
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                        umpy_14x16_U20	          1         8.7
+---------------------------------------------------
+Report for cell umpy_14x16_U20
+   Instance path: top/fm_generator_wb_instance/modulation_amplitude_multiplier/umpy
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     260.67         8.7
+                                  LUT4	     223.00         5.6
+                                PFUREG	        285        12.7
+                                RIPPLE	        124        20.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                       bimpy(BW=16)_U9	          1         0.8
+                       bimpy(BW=16)_U7	          1         0.8
+                       bimpy(BW=16)_U8	          1         0.8
+                       bimpy(BW=16)_U6	          1         0.8
+                      bimpy(BW=16)_U11	          1         0.8
+                      bimpy(BW=16)_U12	          1         0.8
+                      bimpy(BW=16)_U10	          1         0.8
+---------------------------------------------------
+Report for cell bimpy(BW=16)_U6
+   Instance path: top/fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_6_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      24.67         0.8
+                                  LUT4	      31.00         0.8
+                                PFUREG	         18         0.8
+                                RIPPLE	          9         1.5
+---------------------------------------------------
+Report for cell bimpy(BW=16)_U7
+   Instance path: top/fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_5_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      24.67         0.8
+                                  LUT4	      31.00         0.8
+                                PFUREG	         18         0.8
+                                RIPPLE	          9         1.5
+---------------------------------------------------
+Report for cell bimpy(BW=16)_U8
+   Instance path: top/fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_4_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      24.67         0.8
+                                  LUT4	      31.00         0.8
+                                PFUREG	         18         0.8
+                                RIPPLE	          9         1.5
+---------------------------------------------------
+Report for cell bimpy(BW=16)_U9
+   Instance path: top/fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_3_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      24.67         0.8
+                                  LUT4	      31.00         0.8
+                                PFUREG	         18         0.8
+                                RIPPLE	          9         1.5
+---------------------------------------------------
+Report for cell bimpy(BW=16)_U10
+   Instance path: top/fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_2_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      24.67         0.8
+                                  LUT4	      31.00         0.8
+                                PFUREG	         18         0.8
+                                RIPPLE	          9         1.5
+---------------------------------------------------
+Report for cell bimpy(BW=16)_U11
+   Instance path: top/fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_1_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      24.67         0.8
+                                  LUT4	      31.00         0.8
+                                PFUREG	         18         0.8
+                                RIPPLE	          9         1.5
+---------------------------------------------------
+Report for cell bimpy(BW=16)_U12
+   Instance path: top/fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_0_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      24.67         0.8
+                                  LUT4	      31.00         0.8
+                                PFUREG	         18         0.8
+                                RIPPLE	          9         1.5
 ---------------------------------------------------
 Report for cell dds
-   Instance path: top/o_dac_a_9__I_0/modulation
+   Instance path: top/fm_generator_wb_instance/modulation
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     513.00        22.5
-                                  LUT4	     858.00        25.5
-                                PFUREG	        134        11.4
-                                RIPPLE	         25        13.2
+                                  SLIC	     486.25        16.2
+                                  LUT4	     860.00        21.7
+                                PFUREG	        134         6.0
+                                RIPPLE	         25         4.1
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-              quarter_wave_sine_lookup	          1        21.0
-                            nco(OW=12)	          1         0.7
+              quarter_wave_sine_lookup	          1        15.1
+                            nco(OW=12)	          1         0.6
 ---------------------------------------------------
 Report for cell quarter_wave_sine_lookup
-   Instance path: top/o_dac_a_9__I_0/modulation/qtr_inst
+   Instance path: top/fm_generator_wb_instance/modulation/qtr_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     480.00        21.0
-                                  LUT4	     857.00        25.5
-                                PFUREG	         71         6.0
-                                RIPPLE	          9         4.7
+                                  SLIC	     453.25        15.1
+                                  LUT4	     859.00        21.7
+                                PFUREG	         71         3.2
+                                RIPPLE	          9         1.5
 ---------------------------------------------------
 Report for cell nco(OW=12)
-   Instance path: top/o_dac_a_9__I_0/modulation/nco_inst
+   Instance path: top/fm_generator_wb_instance/modulation/nco_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      17.00         0.7
+                                  SLIC	      17.00         0.6
                                   LUT4	       1.00         0.0
-                                PFUREG	         32         2.7
-                                RIPPLE	         16         8.4
+                                PFUREG	         32         1.4
+                                RIPPLE	         16         2.6
 ---------------------------------------------------
-Report for cell dds_U2
-   Instance path: top/o_dac_a_9__I_0/carrier
+Report for cell sgnmpy_14x16_U25
+   Instance path: top/fm_generator_wb_instance/i_gain_multiplier
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     975.50        42.8
-                                  LUT4	    1705.00        50.7
-                                PFUREG	        167        14.2
-                                RIPPLE	         32        16.8
+                                  SLIC	     300.67        10.0
+                                  LUT4	     233.00         5.9
+                                PFUREG	        329        14.7
+                                RIPPLE	        156        25.5
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-           quarter_wave_sine_lookup_U0	          1        41.3
-                         nco(OW=12)_U1	          1         0.7
+                        umpy_14x16_U21	          1         8.7
 ---------------------------------------------------
-Report for cell quarter_wave_sine_lookup_U0
-   Instance path: top/o_dac_a_9__I_0/carrier/qtr_inst
+Report for cell umpy_14x16_U21
+   Instance path: top/fm_generator_wb_instance/i_gain_multiplier/umpy
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     942.50        41.3
-                                  LUT4	    1704.00        50.6
-                                PFUREG	        104         8.9
-                                RIPPLE	         16         8.4
+                                  SLIC	     260.67         8.7
+                                  LUT4	     223.00         5.6
+                                PFUREG	        285        12.7
+                                RIPPLE	        124        20.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                      bimpy(BW=16)_U17	          1         0.8
+                      bimpy(BW=16)_U18	          1         0.8
+                      bimpy(BW=16)_U19	          1         0.8
+                      bimpy(BW=16)_U15	          1         0.8
+                      bimpy(BW=16)_U16	          1         0.8
+                      bimpy(BW=16)_U13	          1         0.8
+                      bimpy(BW=16)_U14	          1         0.8
 ---------------------------------------------------
-Report for cell nco(OW=12)_U1
-   Instance path: top/o_dac_a_9__I_0/carrier/nco_inst
+Report for cell bimpy(BW=16)_U13
+   Instance path: top/fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_6_0
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      17.00         0.7
+                                  SLIC	      24.67         0.8
+                                  LUT4	      31.00         0.8
+                                PFUREG	         18         0.8
+                                RIPPLE	          9         1.5
+---------------------------------------------------
+Report for cell bimpy(BW=16)_U14
+   Instance path: top/fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_5_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      24.67         0.8
+                                  LUT4	      31.00         0.8
+                                PFUREG	         18         0.8
+                                RIPPLE	          9         1.5
+---------------------------------------------------
+Report for cell bimpy(BW=16)_U15
+   Instance path: top/fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_4_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      24.67         0.8
+                                  LUT4	      31.00         0.8
+                                PFUREG	         18         0.8
+                                RIPPLE	          9         1.5
+---------------------------------------------------
+Report for cell bimpy(BW=16)_U16
+   Instance path: top/fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_3_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      24.67         0.8
+                                  LUT4	      31.00         0.8
+                                PFUREG	         18         0.8
+                                RIPPLE	          9         1.5
+---------------------------------------------------
+Report for cell bimpy(BW=16)_U17
+   Instance path: top/fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_2_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      24.67         0.8
+                                  LUT4	      31.00         0.8
+                                PFUREG	         18         0.8
+                                RIPPLE	          9         1.5
+---------------------------------------------------
+Report for cell bimpy(BW=16)_U18
+   Instance path: top/fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_1_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      24.67         0.8
+                                  LUT4	      31.00         0.8
+                                PFUREG	         18         0.8
+                                RIPPLE	          9         1.5
+---------------------------------------------------
+Report for cell bimpy(BW=16)_U19
+   Instance path: top/fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_0_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      24.67         0.8
+                                  LUT4	      31.00         0.8
+                                PFUREG	         18         0.8
+                                RIPPLE	          9         1.5
+---------------------------------------------------
+Report for cell dds_U26
+   Instance path: top/fm_generator_wb_instance/carrier
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     939.25        31.2
+                                  LUT4	    1727.00        43.6
+                                PFUREG	        195         8.7
+                                RIPPLE	         34         5.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+          quarter_wave_sine_lookup_U22	          1        30.1
+                        nco(OW=12)_U23	          1         0.6
+---------------------------------------------------
+Report for cell quarter_wave_sine_lookup_U22
+   Instance path: top/fm_generator_wb_instance/carrier/qtr_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     906.25        30.1
+                                  LUT4	    1726.00        43.6
+                                PFUREG	        132         5.9
+                                RIPPLE	         18         2.9
+---------------------------------------------------
+Report for cell nco(OW=12)_U23
+   Instance path: top/fm_generator_wb_instance/carrier/nco_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      17.00         0.6
                                   LUT4	       1.00         0.0
-                                PFUREG	         32         2.7
-                                RIPPLE	         16         8.4
+                                PFUREG	         32         1.4
+                                RIPPLE	         16         2.6
+---------------------------------------------------
+Report for cell txuartlite(TIMING_BITS=24,CLOCKS_PER_BAUD=10000)
+   Instance path: top/txtransport
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      38.58         1.3
+                                  LUT4	      48.00         1.2
+                                PFUREG	         39         1.7
+                                RIPPLE	         13         2.1

@@ -13,7 +13,7 @@ parameter sine_lookup_width = 16,
 			
 input wire i_clk, i_reset;
 input wire i_wb_cyc, i_wb_stb, i_wb_we;
-input wire [1:0] i_wb_addr;
+input wire [2:0] i_wb_addr;
 input wire [31:0] i_wb_data;
 output reg o_wb_ack;
 output wire o_wb_stall;
@@ -34,8 +34,8 @@ wire [9:0] control_mode_dac_a;
 
 wire [sine_lookup_width:0] o_sample_dc_offset_i, o_sample_dc_offset_q;
 
-assign o_sample_dc_offset_i = o_sample_i + 2**(sine_lookup_width);
-assign o_sample_dc_offset_q = o_sample_q + 2**(sine_lookup_width);
+assign o_sample_dc_offset_i = o_sample_i_attenuated + 2**(sine_lookup_width);
+assign o_sample_dc_offset_q = o_sample_q_attenuated + 2**(sine_lookup_width);
 assign o_dac_a = cw_mux_dac_a_mux_sel ? control_mode_dac_a : o_sample_dc_offset_i[sine_lookup_width:(sine_lookup_width-output_dac_width+1)];
 assign o_dac_b = o_sample_dc_offset_q[sine_lookup_width:(sine_lookup_width-output_dac_width+1)];
 
@@ -43,13 +43,17 @@ assign o_dac_b = o_sample_dc_offset_q[sine_lookup_width:(sine_lookup_width-outpu
 parameter REG_CARRIER_CENTER_FREQUENCY = 0;
 parameter REG_MODULATION_FREQUENCY = 1;
 parameter REG_MODULATION_DEVIATION = 2;
-reg [31:0] addr_space [0:3];
+parameter REG_I_SCALE = 3;
+parameter REG_Q_SCALE = 4;
+reg [31:0] addr_space [0:4];
 
 always @(posedge i_clk or posedge i_reset) begin
 	if (i_reset) begin
-		addr_space[REG_CARRIER_CENTER_FREQUENCY] <= 32'd59652324;
-		addr_space[REG_MODULATION_FREQUENCY] <= 32'd596523;
-		addr_space[REG_MODULATION_DEVIATION] <= 32'd1250;
+		addr_space[REG_CARRIER_CENTER_FREQUENCY] <= 32'd100000;
+		addr_space[REG_MODULATION_FREQUENCY] <= 32'd96523;
+		addr_space[REG_MODULATION_DEVIATION] <= 32'd0; //1250
+		addr_space[REG_I_SCALE] <= 32'd8000;
+		addr_space[REG_Q_SCALE] <= 32'd8000;
 	end else begin
 		if ((i_wb_stb)&&(i_wb_we)&&(!o_wb_stall)) begin
 			addr_space[i_wb_addr] <= i_wb_data;
@@ -92,8 +96,21 @@ dds #( 	.sine_lookup_width(sine_lookup_width),
 	) modulation(.i_clk(i_clk), .i_reset(i_reset), .i_ce(1'b1), .i_update(1'b1), .i_increment(modulation_increment), .o_sample_i(modulation_output), .o_sample_q());
 
 
+wire [13:0] i_scale, q_scale;
+assign i_scale = addr_space[REG_I_SCALE][13:0];
+assign q_scale = addr_space[REG_Q_SCALE][13:0];
+wire signed [(sine_lookup_width-1):0] o_sample_i_attenuated, o_sample_q_attenuated;
+wire signed [29:0] o_sample_i_scaled, o_sample_q_scaled;
+/* verilator lint_off WIDTH */
+assign o_sample_i_attenuated = o_sample_i_scaled>>>14;
+assign o_sample_q_attenuated = o_sample_q_scaled>>>14;
+/* verilator lint_on WIDTH */
+sgnmpy_14x16 i_gain_multiplier(i_clk, i_reset, 1'b1, i_scale, o_sample_i, 1'b0, o_sample_i_scaled);
+sgnmpy_14x16 q_gain_multiplier(i_clk, i_reset, 1'b1, q_scale, o_sample_q, 1'b0, o_sample_q_scaled);
+
+
 wire signed [29:0] carrier_center_increment_offset;
-sgnmpy_14x16 sgnmpy_14x16_inst(i_clk, i_reset, 1'b1, modulation_deviation_amount, modulation_output, 1'b0, carrier_center_increment_offset);
+sgnmpy_14x16 modulation_amplitude_multiplier(i_clk, i_reset, 1'b1, modulation_deviation_amount, modulation_output, 1'b0, carrier_center_increment_offset);
 
 always @(posedge i_clk or posedge i_reset) begin
 	if (i_reset) begin
@@ -142,3 +159,4 @@ end
 
 
 endmodule
+`default_nettype wire

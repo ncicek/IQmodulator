@@ -6,7 +6,7 @@ Performance Grade:      5
 PACKAGE:          CABGA256
 Package Status:                     Final          Version 1.16
 
-Sun Feb 07 01:51:11 2021
+Sun Apr 11 02:50:28 2021
 
 Pinout by Port Name:
 +---------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
@@ -14,8 +14,6 @@ Pinout by Port Name:
 +---------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
 | dac_clk_n     | E10/0    | LVCMOS33_OUT | PT27B |           |           | DRIVE:8mA SLEW:SLOW                  |
 | dac_clk_p     | D10/0    | LVCMOS33_OUT | PT27A |           |           | DRIVE:8mA SLEW:SLOW                  |
-| i_clk_n       | A10/0    | LVCMOS33_OUT | PT25B |           |           | DRIVE:8mA SLEW:FAST                  |
-| i_clk_p       | B9/0     | LVCMOS33_OUT | PT25A |           |           | DRIVE:8mA SLEW:FAST                  |
 | i_ref_clk     | C8/0     | LVCMOS33_IN  | PT18A |           |           | CLAMP:ON HYSTERESIS:SMALL            |
 | i_sw0         | F8/0     | LVCMOS33_IN  | PT22A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 | i_wbu_uart_rx | A11/0    | LVCMOS33_IN  | PT28A |           |           | PULL:UP CLAMP:ON HYSTERESIS:SMALL    |
@@ -40,9 +38,9 @@ Pinout by Port Name:
 | o_dac_b[8]    | F15/1    | LVCMOS33_OUT | PR5B  |           |           | DRIVE:8mA SLEW:SLOW                  |
 | o_dac_b[9]    | G15/1    | LVCMOS33_OUT | PR9A  |           |           | DRIVE:8mA SLEW:SLOW                  |
 | o_dac_cw_b    | M14/1    | LVCMOS33_OUT | PR23A |           |           | DRIVE:8mA SLEW:SLOW                  |
+| o_lo_i        | B9/0     | LVDS25_OUT   | PT25A |           |           | DIFFDRIVE:3.5                        |
+| o_lo_q        | D8/0     | LVDS25_OUT   | PT21A |           |           | DIFFDRIVE:3.5                        |
 | o_wbu_uart_tx | C11/0    | LVCMOS33_OUT | PT28B |           |           | DRIVE:8mA SLEW:SLOW                  |
-| q_clk_n       | E9/0     | LVCMOS33_OUT | PT21B |           |           | DRIVE:8mA SLEW:FAST                  |
-| q_clk_p       | D8/0     | LVCMOS33_OUT | PT21A |           |           | DRIVE:8mA SLEW:FAST                  |
 +---------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
 
 Vccio by Bank:
@@ -70,7 +68,7 @@ Pinout by Pin Number:
 | A7/0     | Reserved: sysCONFIG   |            |              | PT17C | TCK            |           |           |
 | A8/0     |     unused, PULL:DOWN |            |              | PT18B | PCLKC0_1       |           |           |
 | A9/0     |     unused, PULL:DOWN |            |              | PT22C | SCL/PCLKT0_0   |           |           |
-| A10/0    | i_clk_n               | LOCATED    | LVCMOS33_OUT | PT25B |                |           |           |
+| A10/0    | o_lo_i-               |            | LVDS25_OUT   | PT25B |                |           |           |
 | A11/0    | i_wbu_uart_rx         | LOCATED    | LVCMOS33_IN  | PT28A |                |           |           |
 | A12/0    |     unused, PULL:DOWN |            |              | PT33B |                |           |           |
 | A13/0    |     unused, PULL:DOWN |            |              | PT36C | INITN          |           |           |
@@ -83,7 +81,7 @@ Pinout by Pin Number:
 | B6/0     |     unused, PULL:DOWN |            |              | PT11B |                |           |           |
 | B7/0     |     unused, PULL:DOWN |            |              | PT15A |                |           |           |
 | B8/0     | Reserved: sysCONFIG   |            |              | PT17D | TMS            |           |           |
-| B9/0     | i_clk_p               | LOCATED    | LVCMOS33_OUT | PT25A |                |           |           |
+| B9/0     | o_lo_i+               | LOCATED    | LVDS25_OUT   | PT25A |                |           |           |
 | B10/0    |     unused, PULL:DOWN |            |              | PT27D | PROGRAMN       |           |           |
 | B11/0    |     unused, PULL:DOWN |            |              | PT33A |                |           |           |
 | B12/0    |     unused, PULL:DOWN |            |              | PT35B |                |           |           |
@@ -109,7 +107,7 @@ Pinout by Pin Number:
 | D3/5     |     unused, PULL:DOWN |            |              | PL3A  | L_GPLLT_FB     |           |           |
 | D6/0     |     unused, PULL:DOWN |            |              | PT14A |                |           |           |
 | D7/0     |     unused, PULL:DOWN |            |              | PT16B |                |           |           |
-| D8/0     | q_clk_p               | LOCATED    | LVCMOS33_OUT | PT21A |                |           |           |
+| D8/0     | o_lo_q+               | LOCATED    | LVDS25_OUT   | PT21A |                |           |           |
 | D9/0     |     unused, PULL:DOWN |            |              | PT22B |                |           |           |
 | D10/0    | dac_clk_p             | LOCATED    | LVCMOS33_OUT | PT27A |                |           |           |
 | D11/0    |     unused, PULL:DOWN |            |              | PT32B |                |           |           |
@@ -122,7 +120,7 @@ Pinout by Pin Number:
 | E6/0     |     unused, PULL:DOWN |            |              | PT16A |                |           |           |
 | E7/0     |     unused, PULL:DOWN |            |              | PT14B |                |           |           |
 | E8/0     |     unused, PULL:DOWN |            |              | PT17B |                |           |           |
-| E9/0     | q_clk_n               | LOCATED    | LVCMOS33_OUT | PT21B |                |           |           |
+| E9/0     | o_lo_q-               |            | LVDS25_OUT   | PT21B |                |           |           |
 | E10/0    | dac_clk_n             | LOCATED    | LVCMOS33_OUT | PT27B |                |           |           |
 | E11/0    |     unused, PULL:DOWN |            |              | PT26B |                |           |           |
 | E14/1    | o_dac_b[4]            | LOCATED    | LVCMOS33_OUT | PR3B  | R_GPLLC_IN/DQ0 |           |           |
@@ -419,8 +417,6 @@ to Help Users Lock Down ALL the Pins Easily (by Simply Copy & Paste):
 
 LOCATE  COMP  "dac_clk_n"  SITE  "E10";
 LOCATE  COMP  "dac_clk_p"  SITE  "D10";
-LOCATE  COMP  "i_clk_n"  SITE  "A10";
-LOCATE  COMP  "i_clk_p"  SITE  "B9";
 LOCATE  COMP  "i_ref_clk"  SITE  "C8";
 LOCATE  COMP  "i_sw0"  SITE  "F8";
 LOCATE  COMP  "i_wbu_uart_rx"  SITE  "A11";
@@ -445,9 +441,9 @@ LOCATE  COMP  "o_dac_b[7]"  SITE  "F16";
 LOCATE  COMP  "o_dac_b[8]"  SITE  "F15";
 LOCATE  COMP  "o_dac_b[9]"  SITE  "G15";
 LOCATE  COMP  "o_dac_cw_b"  SITE  "M14";
+LOCATE  COMP  "o_lo_i"  SITE  "B9";
+LOCATE  COMP  "o_lo_q"  SITE  "D8";
 LOCATE  COMP  "o_wbu_uart_tx"  SITE  "C11";
-LOCATE  COMP  "q_clk_n"  SITE  "E9";
-LOCATE  COMP  "q_clk_p"  SITE  "D8";
 
 #PLL
 LOCATE  COMP  "sys_clk_inst/PLLInst_0"  SITE  "LPLL" ;
@@ -457,11 +453,11 @@ LOCATE  COMP  "lo_gen/PLLInst_0"  SITE  "RPLL" ;
 
 
 
-PAR: Place And Route Diamond (64-bit) 3.11.3.469.
+PAR: Place And Route Diamond (64-bit) 3.12.0.240.2.
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Feb 07 01:51:11 2021
+Sun Apr 11 02:50:28 2021
 

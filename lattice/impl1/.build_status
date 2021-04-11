@@ -5,40 +5,41 @@
             <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
-            <Task name="Bitgen" build_result="2" update_result="0" update_time="1612680691"/>
-            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1612680694"/>
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1618123848"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1618123851"/>
             <Task name="Jedec4Xo3l" build_result="0" update_result="3" update_time="0"/>
             <Task name="Bitgen4Xo3l" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1612680661">
-            <Task name="Map" build_result="2" update_result="0" update_time="1612680661"/>
+        <Milestone name="Map" build_result="2" build_time="1618123815">
+            <Task name="Map" build_result="2" update_result="0" update_time="1618123815"/>
             <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1612680683">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1612680683"/>
-            <Task name="PARTrace" build_result="2" update_result="0" update_time="1612680684"/>
-            <Task name="IOTiming" build_result="2" update_result="0" update_time="1612680688"/>
+        <Milestone name="PAR" build_result="2" build_time="1618123843">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1618123843"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1618123845"/>
+            <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1612680658">
-            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1612680658"/>
-            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1612680694"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1618123811">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1618123811"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1618123851"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="2" update_result="0" update_time="1612680646"/>
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1618123795"/>
+            <Task name="BKM" build_result="0" update_result="3" update_time="0"/>
             <Task name="SSO" build_result="0" update_result="3" update_time="0"/>
             <Task name="PIODRC" build_result="0" update_result="3" update_time="0"/>
+            <Task name="DEC" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Report name=".vdbs/iq_modulator_impl1_map.vdb" last_build_time="1612680661" last_build_size="1032142"/>
-        <Report name="iq_modulator_impl1.bgn" last_build_time="1612680694" last_build_size="4518"/>
-        <Report name="iq_modulator_impl1.bit" last_build_time="1612680691" last_build_size="67772"/>
-        <Report name="iq_modulator_impl1.ior" last_build_time="1612680688" last_build_size="3435"/>
-        <Report name="iq_modulator_impl1.jed" last_build_time="1612680694" last_build_size="1465512"/>
-        <Report name="iq_modulator_impl1.lsedata" last_build_time="1612680648" last_build_size="1862409"/>
-        <Report name="iq_modulator_impl1.ncd" last_build_time="1612680683" last_build_size="4075304"/>
-        <Report name="iq_modulator_impl1.ngd" last_build_time="1612680658" last_build_size="3079646"/>
-        <Report name="iq_modulator_impl1.twr" last_build_time="1612680684" last_build_size="112410"/>
-        <Report name="iq_modulator_impl1_map.ncd" last_build_time="1612680661" last_build_size="2877925"/>
+        <Report name=".vdbs/iq_modulator_impl1_map.vdb" last_build_time="1618123815" last_build_size="1805390"/>
+        <Report name="iq_modulator_impl1.bgn" last_build_time="1618123851" last_build_size="4516"/>
+        <Report name="iq_modulator_impl1.bit" last_build_time="1618123848" last_build_size="83535"/>
+        <Report name="iq_modulator_impl1.jed" last_build_time="1618123851" last_build_size="1465530"/>
+        <Report name="iq_modulator_impl1.lsedata" last_build_time="1618123799" last_build_size="4783162"/>
+        <Report name="iq_modulator_impl1.ncd" last_build_time="1618123843" last_build_size="5802492"/>
+        <Report name="iq_modulator_impl1.ngd" last_build_time="1618123811" last_build_size="4381053"/>
+        <Report name="iq_modulator_impl1.twr" last_build_time="1618123844" last_build_size="104646"/>
+        <Report name="iq_modulator_impl1_map.ncd" last_build_time="1618123815" last_build_size="4145376"/>
     </Strategy>
 </BuildStatus>

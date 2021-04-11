@@ -1,93 +1,0 @@
-<HTML>
-<HEAD><TITLE>Lattice TCL Log</TITLE>
-<STYLE TYPE="text/css">
-<!--
- body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
--->
-</STYLE>
-</HEAD>
-<PRE><A name="pn210114004630"></A><B><U><big>pn210114004630</big></U></B>
-#Start recording tcl command: 1/13/2021 20:44:59
-#Project Location: D:/Documents/Git_Local/fm_modulator/lattice; Project name: iq_modulator
-prj_project new -name "iq_modulator" -impl "impl1" -dev LCMXO3LF-6900C-5BG256C -synthesis "lse"
-prj_src add "D:/Documents/Git_Local/fm_modulator/rtl/dds.v" "D:/Documents/Git_Local/fm_modulator/rtl/fm_generator_wb_slave.v" "D:/Documents/Git_Local/fm_modulator/rtl/iq_gen.v" "D:/Documents/Git_Local/fm_modulator/rtl/nco.v" "D:/Documents/Git_Local/fm_modulator/rtl/quarter_wave_sine_lookup.v" "D:/Documents/Git_Local/fm_modulator/rtl/top.v" "D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbaxil.v" "D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbbus.v" "D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbconsole.v" "D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbdechex.v" "D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbdeword.v" "D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbexec.v" "D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbexecaxi.v" "D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbgenhex.v" "D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbidle.v" "D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbints.v" "D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbnewline.v" "D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/hbpack.v" "D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/rxuartlite.v" "D:/Documents/Git_Local/fm_modulator/rtl/debug_bus/txuartlite.v"
-prj_project save
-prj_src add "D:/Documents/Git_Local/fm_modulator/rtl/clock_phase_shifter.v"
-prj_src add "D:/Documents/Git_Local/fm_modulator/lattice/efb_inst.ipx"
-prj_src add "D:/Documents/Git_Local/fm_modulator/lattice/dynamic_pll.ipx"
-prj_run Synthesis -impl impl1
-prj_run Synthesis -impl impl1 -task Lattice_Synthesis
-prj_run Synthesis -impl impl1 -task Lattice_Synthesis
-prj_run Synthesis -impl impl1 -task Lattice_Synthesis
-prj_run Synthesis -impl impl1 -task Lattice_Synthesis
-prj_run Map -impl impl1
-prj_run PAR -impl impl1
-prj_src add -exclude "D:/Documents/Git_Local/fm_modulator/lattice/timing_constraint.ldc"
-prj_src enable "D:/Documents/Git_Local/fm_modulator/lattice/timing_constraint.ldc"
-prj_src add "D:/Documents/Git_Local/fm_modulator/lattice/sys_clk.ipx"
-prj_run PAR -impl impl1
-prj_strgy set "Timing"
-prj_run PAR -impl impl1
-prj_run PAR -impl impl1
-prj_run PAR -impl impl1
-prj_run Synthesis -impl impl1 -task Lattice_Synthesis
-prj_src remove "D:/Documents/Git_Local/fm_modulator/lattice/timing_constraint.ldc"
-prj_run PAR -impl impl1
-prj_run Synthesis -impl impl1 -task Lattice_Synthesis
-#Stop recording: 1/14/2021 00:46:30
-
-
-
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-</PRE></FONT>
-</BODY>
-</HTML>

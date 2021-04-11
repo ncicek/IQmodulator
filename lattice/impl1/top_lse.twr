@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
 Lattice Synthesis Timing Report, Version  
-Sun Feb 07 01:50:57 2021
+Sun Apr 11 02:50:10 2021
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -18,252 +18,191 @@ Report level:    verbose report, limited to 3 items per constraint
 
 
 ================================================================================
-Constraint: create_clock -period 5.000000 -name clk1 [get_nets lo_pll_out]
-            2 items scored, 0 timing errors detected.
---------------------------------------------------------------------------------
-
-
-Passed:  The following path meets requirements by 2.047ns
-
- Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
-
-   Source:         FD1S3AX    CK             \clock_phase_shifter_inst/o_clk_q_10  (from lo_pll_out +)
-   Destination:    FD1S3AX    D              \clock_phase_shifter_inst/o_clk_q_10  (to lo_pll_out -)
-
-   Delay:                   2.807ns  (30.3% logic, 69.7% route), 2 logic levels.
-
- Constraint Details:
-
-      2.807ns data_path \clock_phase_shifter_inst/o_clk_q_10 to \clock_phase_shifter_inst/o_clk_q_10 meets
-      5.000ns delay constraint less
-      0.146ns L_S requirement (totaling 4.854ns) by 2.047ns
-
- Path Details: \clock_phase_shifter_inst/o_clk_q_10 to \clock_phase_shifter_inst/o_clk_q_10
-
-   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.403             CK to Q              \clock_phase_shifter_inst/o_clk_q_10 (from lo_pll_out)
-Route         2   e 1.002                                  q_clk_p_c
-LUT4        ---     0.448              A to Z              o_clk_q_I_0_1_lut
-Route         2   e 0.954                                  q_clk_n_c
-                  --------
-                    2.807  (30.3% logic, 69.7% route), 2 logic levels.
-
-
-Passed:  The following path meets requirements by 2.047ns
-
- Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
-
-   Source:         FD1S3AX    CK             \clock_phase_shifter_inst/o_clk_i_9  (from lo_pll_out +)
-   Destination:    FD1S3AX    D              \clock_phase_shifter_inst/o_clk_i_9  (to lo_pll_out +)
-
-   Delay:                   2.807ns  (30.3% logic, 69.7% route), 2 logic levels.
-
- Constraint Details:
-
-      2.807ns data_path \clock_phase_shifter_inst/o_clk_i_9 to \clock_phase_shifter_inst/o_clk_i_9 meets
-      5.000ns delay constraint less
-      0.146ns L_S requirement (totaling 4.854ns) by 2.047ns
-
- Path Details: \clock_phase_shifter_inst/o_clk_i_9 to \clock_phase_shifter_inst/o_clk_i_9
-
-   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.403             CK to Q              \clock_phase_shifter_inst/o_clk_i_9 (from lo_pll_out)
-Route         2   e 1.002                                  i_clk_p_c
-LUT4        ---     0.448              A to Z              o_clk_i_I_0_1_lut
-Route         2   e 0.954                                  i_clk_n_c
-                  --------
-                    2.807  (30.3% logic, 69.7% route), 2 logic levels.
-
-Report: 2.953 ns is the maximum delay for this constraint.
-
-
-
-================================================================================
 Constraint: create_clock -period 5.000000 -name clk0 [get_nets dac_clk_p_c]
-            2924 items scored, 2924 timing errors detected.
+            4096 items scored, 4096 timing errors detected.
 --------------------------------------------------------------------------------
 
 
-Error:  The following path violates requirements by 5.859ns
+Error:  The following path violates requirements by 5.822ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
    Source:         FD1S3IX    CK             \genbus/packxi/o_pck_stb_24  (from dac_clk_p_c +)
-   Destination:    FD1P3AX    D              \genbus/wbexec/o_wb_addr_598__i29  (to dac_clk_p_c +)
+   Destination:    FD1P3AX    D              \genbus/wbexec/o_wb_addr_858__i29  (to dac_clk_p_c +)
 
-   Delay:                  10.713ns  (45.8% logic, 54.2% route), 19 logic levels.
+   Delay:                  10.676ns  (45.9% logic, 54.1% route), 19 logic levels.
 
  Constraint Details:
 
-     10.713ns data_path \genbus/packxi/o_pck_stb_24 to \genbus/wbexec/o_wb_addr_598__i29 violates
+     10.676ns data_path \genbus/packxi/o_pck_stb_24 to \genbus/wbexec/o_wb_addr_858__i29 violates
       5.000ns delay constraint less
-      0.146ns L_S requirement (totaling 4.854ns) by 5.859ns
+      0.146ns L_S requirement (totaling 4.854ns) by 5.822ns
 
- Path Details: \genbus/packxi/o_pck_stb_24 to \genbus/wbexec/o_wb_addr_598__i29
+ Path Details: \genbus/packxi/o_pck_stb_24 to \genbus/wbexec/o_wb_addr_858__i29
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
 L_CO        ---     0.403             CK to Q              \genbus/packxi/o_pck_stb_24 (from dac_clk_p_c)
-Route         7   e 1.303                                  \genbus/packxi/iw_stb
-LUT4        ---     0.448              B to Z              \genbus/packxi/i1_2_lut_rep_758
-Route         2   e 0.954                                  \genbus/n27423
-LUT4        ---     0.448              B to Z              \genbus/wbexec/i1_4_lut
+Route         6   e 1.266                                  \genbus/iw_stb
+LUT4        ---     0.448              B to Z              \genbus/wbexec/i20555_2_lut_rep_797
+Route         2   e 0.954                                  \genbus/wbexec/n29457
+LUT4        ---     0.448              A to Z              \genbus/wbexec/i1_4_lut
 Route        29   e 1.698                                  \genbus/wbexec/n3
-LUT4        ---     0.448              B to Z              \genbus/wbexec/i15908_2_lut
-Route         1   e 0.788                                  \genbus/wbexec/n17753
-A1_TO_FCO   ---     0.752           A[2] to COUT           \genbus/wbexec/o_wb_addr_598_add_4_3
-Route         1   e 0.020                                  \genbus/wbexec/n17999
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_5
-Route         1   e 0.020                                  \genbus/wbexec/n18000
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_7
-Route         1   e 0.020                                  \genbus/wbexec/n18001
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_9
-Route         1   e 0.020                                  \genbus/wbexec/n18002
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_11
-Route         1   e 0.020                                  \genbus/wbexec/n18003
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_13
-Route         1   e 0.020                                  \genbus/wbexec/n18004
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_15
-Route         1   e 0.020                                  \genbus/wbexec/n18005
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_17
-Route         1   e 0.020                                  \genbus/wbexec/n18006
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_19
-Route         1   e 0.020                                  \genbus/wbexec/n18007
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_21
-Route         1   e 0.020                                  \genbus/wbexec/n18008
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_23
-Route         1   e 0.020                                  \genbus/wbexec/n18009
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_25
-Route         1   e 0.020                                  \genbus/wbexec/n18010
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_27
-Route         1   e 0.020                                  \genbus/wbexec/n18011
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_29
-Route         1   e 0.020                                  \genbus/wbexec/n18012
-FCI_TO_F    ---     0.544            CIN to S[2]           \genbus/wbexec/o_wb_addr_598_add_4_31
+LUT4        ---     0.448              B to Z              \genbus/wbexec/i17675_2_lut
+Route         1   e 0.788                                  \genbus/wbexec/n19241
+A1_TO_FCO   ---     0.752           A[2] to COUT           \genbus/wbexec/o_wb_addr_858_add_4_3
+Route         1   e 0.020                                  \genbus/wbexec/n19869
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_5
+Route         1   e 0.020                                  \genbus/wbexec/n19870
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_7
+Route         1   e 0.020                                  \genbus/wbexec/n19871
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_9
+Route         1   e 0.020                                  \genbus/wbexec/n19872
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_11
+Route         1   e 0.020                                  \genbus/wbexec/n19873
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_13
+Route         1   e 0.020                                  \genbus/wbexec/n19874
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_15
+Route         1   e 0.020                                  \genbus/wbexec/n19875
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_17
+Route         1   e 0.020                                  \genbus/wbexec/n19876
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_19
+Route         1   e 0.020                                  \genbus/wbexec/n19877
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_21
+Route         1   e 0.020                                  \genbus/wbexec/n19878
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_23
+Route         1   e 0.020                                  \genbus/wbexec/n19879
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_25
+Route         1   e 0.020                                  \genbus/wbexec/n19880
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_27
+Route         1   e 0.020                                  \genbus/wbexec/n19881
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_29
+Route         1   e 0.020                                  \genbus/wbexec/n19882
+FCI_TO_F    ---     0.544            CIN to S[2]           \genbus/wbexec/o_wb_addr_858_add_4_31
 Route         1   e 0.788                                  \genbus/wbexec/n126
                   --------
-                   10.713  (45.8% logic, 54.2% route), 19 logic levels.
+                   10.676  (45.9% logic, 54.1% route), 19 logic levels.
 
 
-Error:  The following path violates requirements by 5.859ns
+Error:  The following path violates requirements by 5.822ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
    Source:         FD1S3IX    CK             \genbus/packxi/o_pck_stb_24  (from dac_clk_p_c +)
-   Destination:    FD1P3AX    D              \genbus/wbexec/o_wb_addr_598__i28  (to dac_clk_p_c +)
+   Destination:    FD1P3AX    D              \genbus/wbexec/o_wb_addr_858__i28  (to dac_clk_p_c +)
 
-   Delay:                  10.713ns  (45.8% logic, 54.2% route), 19 logic levels.
+   Delay:                  10.676ns  (45.9% logic, 54.1% route), 19 logic levels.
 
  Constraint Details:
 
-     10.713ns data_path \genbus/packxi/o_pck_stb_24 to \genbus/wbexec/o_wb_addr_598__i28 violates
+     10.676ns data_path \genbus/packxi/o_pck_stb_24 to \genbus/wbexec/o_wb_addr_858__i28 violates
       5.000ns delay constraint less
-      0.146ns L_S requirement (totaling 4.854ns) by 5.859ns
+      0.146ns L_S requirement (totaling 4.854ns) by 5.822ns
 
- Path Details: \genbus/packxi/o_pck_stb_24 to \genbus/wbexec/o_wb_addr_598__i28
+ Path Details: \genbus/packxi/o_pck_stb_24 to \genbus/wbexec/o_wb_addr_858__i28
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
 L_CO        ---     0.403             CK to Q              \genbus/packxi/o_pck_stb_24 (from dac_clk_p_c)
-Route         7   e 1.303                                  \genbus/packxi/iw_stb
-LUT4        ---     0.448              B to Z              \genbus/packxi/i1_2_lut_rep_758
-Route         2   e 0.954                                  \genbus/n27423
-LUT4        ---     0.448              B to Z              \genbus/wbexec/i1_4_lut
+Route         6   e 1.266                                  \genbus/iw_stb
+LUT4        ---     0.448              B to Z              \genbus/wbexec/i20555_2_lut_rep_797
+Route         2   e 0.954                                  \genbus/wbexec/n29457
+LUT4        ---     0.448              A to Z              \genbus/wbexec/i1_4_lut
 Route        29   e 1.698                                  \genbus/wbexec/n3
-LUT4        ---     0.448              B to Z              \genbus/wbexec/i15908_2_lut
-Route         1   e 0.788                                  \genbus/wbexec/n17753
-A1_TO_FCO   ---     0.752           A[2] to COUT           \genbus/wbexec/o_wb_addr_598_add_4_3
-Route         1   e 0.020                                  \genbus/wbexec/n17999
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_5
-Route         1   e 0.020                                  \genbus/wbexec/n18000
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_7
-Route         1   e 0.020                                  \genbus/wbexec/n18001
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_9
-Route         1   e 0.020                                  \genbus/wbexec/n18002
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_11
-Route         1   e 0.020                                  \genbus/wbexec/n18003
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_13
-Route         1   e 0.020                                  \genbus/wbexec/n18004
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_15
-Route         1   e 0.020                                  \genbus/wbexec/n18005
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_17
-Route         1   e 0.020                                  \genbus/wbexec/n18006
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_19
-Route         1   e 0.020                                  \genbus/wbexec/n18007
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_21
-Route         1   e 0.020                                  \genbus/wbexec/n18008
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_23
-Route         1   e 0.020                                  \genbus/wbexec/n18009
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_25
-Route         1   e 0.020                                  \genbus/wbexec/n18010
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_27
-Route         1   e 0.020                                  \genbus/wbexec/n18011
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_29
-Route         1   e 0.020                                  \genbus/wbexec/n18012
-FCI_TO_F    ---     0.544            CIN to S[2]           \genbus/wbexec/o_wb_addr_598_add_4_31
+LUT4        ---     0.448              B to Z              \genbus/wbexec/i17675_2_lut
+Route         1   e 0.788                                  \genbus/wbexec/n19241
+A1_TO_FCO   ---     0.752           A[2] to COUT           \genbus/wbexec/o_wb_addr_858_add_4_3
+Route         1   e 0.020                                  \genbus/wbexec/n19869
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_5
+Route         1   e 0.020                                  \genbus/wbexec/n19870
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_7
+Route         1   e 0.020                                  \genbus/wbexec/n19871
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_9
+Route         1   e 0.020                                  \genbus/wbexec/n19872
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_11
+Route         1   e 0.020                                  \genbus/wbexec/n19873
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_13
+Route         1   e 0.020                                  \genbus/wbexec/n19874
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_15
+Route         1   e 0.020                                  \genbus/wbexec/n19875
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_17
+Route         1   e 0.020                                  \genbus/wbexec/n19876
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_19
+Route         1   e 0.020                                  \genbus/wbexec/n19877
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_21
+Route         1   e 0.020                                  \genbus/wbexec/n19878
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_23
+Route         1   e 0.020                                  \genbus/wbexec/n19879
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_25
+Route         1   e 0.020                                  \genbus/wbexec/n19880
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_27
+Route         1   e 0.020                                  \genbus/wbexec/n19881
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_29
+Route         1   e 0.020                                  \genbus/wbexec/n19882
+FCI_TO_F    ---     0.544            CIN to S[2]           \genbus/wbexec/o_wb_addr_858_add_4_31
 Route         1   e 0.788                                  \genbus/wbexec/n127
                   --------
-                   10.713  (45.8% logic, 54.2% route), 19 logic levels.
+                   10.676  (45.9% logic, 54.1% route), 19 logic levels.
 
 
-Error:  The following path violates requirements by 5.859ns
+Error:  The following path violates requirements by 5.822ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
    Source:         FD1P3IX    CK             \genbus/packxi/o_pck_word__i33  (from dac_clk_p_c +)
-   Destination:    FD1P3AX    D              \genbus/wbexec/o_wb_addr_598__i29  (to dac_clk_p_c +)
+   Destination:    FD1P3AX    D              \genbus/wbexec/o_wb_addr_858__i29  (to dac_clk_p_c +)
 
-   Delay:                  10.713ns  (45.8% logic, 54.2% route), 19 logic levels.
+   Delay:                  10.676ns  (45.9% logic, 54.1% route), 19 logic levels.
 
  Constraint Details:
 
-     10.713ns data_path \genbus/packxi/o_pck_word__i33 to \genbus/wbexec/o_wb_addr_598__i29 violates
+     10.676ns data_path \genbus/packxi/o_pck_word__i33 to \genbus/wbexec/o_wb_addr_858__i29 violates
       5.000ns delay constraint less
-      0.146ns L_S requirement (totaling 4.854ns) by 5.859ns
+      0.146ns L_S requirement (totaling 4.854ns) by 5.822ns
 
- Path Details: \genbus/packxi/o_pck_word__i33 to \genbus/wbexec/o_wb_addr_598__i29
+ Path Details: \genbus/packxi/o_pck_word__i33 to \genbus/wbexec/o_wb_addr_858__i29
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
 L_CO        ---     0.403             CK to Q              \genbus/packxi/o_pck_word__i33 (from dac_clk_p_c)
-Route         7   e 1.303                                  \genbus/packxi/iw_word[33]
-LUT4        ---     0.448              A to Z              \genbus/packxi/i1_2_lut_rep_758
-Route         2   e 0.954                                  \genbus/n27423
-LUT4        ---     0.448              B to Z              \genbus/wbexec/i1_4_lut
+Route         6   e 1.266                                  \genbus/iw_word[33]
+LUT4        ---     0.448              A to Z              \genbus/wbexec/i20555_2_lut_rep_797
+Route         2   e 0.954                                  \genbus/wbexec/n29457
+LUT4        ---     0.448              A to Z              \genbus/wbexec/i1_4_lut
 Route        29   e 1.698                                  \genbus/wbexec/n3
-LUT4        ---     0.448              B to Z              \genbus/wbexec/i15908_2_lut
-Route         1   e 0.788                                  \genbus/wbexec/n17753
-A1_TO_FCO   ---     0.752           A[2] to COUT           \genbus/wbexec/o_wb_addr_598_add_4_3
-Route         1   e 0.020                                  \genbus/wbexec/n17999
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_5
-Route         1   e 0.020                                  \genbus/wbexec/n18000
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_7
-Route         1   e 0.020                                  \genbus/wbexec/n18001
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_9
-Route         1   e 0.020                                  \genbus/wbexec/n18002
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_11
-Route         1   e 0.020                                  \genbus/wbexec/n18003
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_13
-Route         1   e 0.020                                  \genbus/wbexec/n18004
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_15
-Route         1   e 0.020                                  \genbus/wbexec/n18005
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_17
-Route         1   e 0.020                                  \genbus/wbexec/n18006
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_19
-Route         1   e 0.020                                  \genbus/wbexec/n18007
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_21
-Route         1   e 0.020                                  \genbus/wbexec/n18008
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_23
-Route         1   e 0.020                                  \genbus/wbexec/n18009
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_25
-Route         1   e 0.020                                  \genbus/wbexec/n18010
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_27
-Route         1   e 0.020                                  \genbus/wbexec/n18011
-FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_598_add_4_29
-Route         1   e 0.020                                  \genbus/wbexec/n18012
-FCI_TO_F    ---     0.544            CIN to S[2]           \genbus/wbexec/o_wb_addr_598_add_4_31
+LUT4        ---     0.448              B to Z              \genbus/wbexec/i17675_2_lut
+Route         1   e 0.788                                  \genbus/wbexec/n19241
+A1_TO_FCO   ---     0.752           A[2] to COUT           \genbus/wbexec/o_wb_addr_858_add_4_3
+Route         1   e 0.020                                  \genbus/wbexec/n19869
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_5
+Route         1   e 0.020                                  \genbus/wbexec/n19870
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_7
+Route         1   e 0.020                                  \genbus/wbexec/n19871
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_9
+Route         1   e 0.020                                  \genbus/wbexec/n19872
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_11
+Route         1   e 0.020                                  \genbus/wbexec/n19873
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_13
+Route         1   e 0.020                                  \genbus/wbexec/n19874
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_15
+Route         1   e 0.020                                  \genbus/wbexec/n19875
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_17
+Route         1   e 0.020                                  \genbus/wbexec/n19876
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_19
+Route         1   e 0.020                                  \genbus/wbexec/n19877
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_21
+Route         1   e 0.020                                  \genbus/wbexec/n19878
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_23
+Route         1   e 0.020                                  \genbus/wbexec/n19879
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_25
+Route         1   e 0.020                                  \genbus/wbexec/n19880
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_27
+Route         1   e 0.020                                  \genbus/wbexec/n19881
+FCI_TO_FCO  ---     0.143            CIN to COUT           \genbus/wbexec/o_wb_addr_858_add_4_29
+Route         1   e 0.020                                  \genbus/wbexec/n19882
+FCI_TO_F    ---     0.544            CIN to S[2]           \genbus/wbexec/o_wb_addr_858_add_4_31
 Route         1   e 0.788                                  \genbus/wbexec/n126
                   --------
-                   10.713  (45.8% logic, 54.2% route), 19 logic levels.
+                   10.676  (45.9% logic, 54.1% route), 19 logic levels.
 
-Warning: 10.859 ns is the maximum delay for this constraint.
+Warning: 10.822 ns is the maximum delay for this constraint.
 
 
 Timing Report Summary
@@ -273,10 +212,7 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk1 [get_nets lo_pll_out]              |     5.000 ns|     2.953 ns|     2  
-                                        |             |             |
-create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets dac_clk_p_c]             |     5.000 ns|    10.859 ns|    19 *
+clk0 [get_nets dac_clk_p_c]             |     5.000 ns|    10.822 ns|    19 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -286,71 +222,39 @@ clk0 [get_nets dac_clk_p_c]             |     5.000 ns|    10.859 ns|    19 *
 --------------------------------------------------------------------------------
 Critical Nets                           |   Loads|  Errors| % of total
 --------------------------------------------------------------------------------
-\o_dac_a_9__I_0/n14676                  |      31|    1552|     53.08%
+n38                                     |       6|    2177|     53.15%
                                         |        |        |
-\o_dac_a_9__I_0/n17918                  |       1|    1264|     43.23%
+n29081                                  |       6|    1920|     46.88%
                                         |        |        |
-\o_dac_a_9__I_0/n17919                  |       1|    1256|     42.95%
+\genbus/wbexec/n3                       |      29|    1256|     30.66%
                                         |        |        |
-\o_dac_a_9__I_0/n21008                  |       1|    1252|     42.82%
+\genbus/wbexec/n19876                   |       1|     904|     22.07%
                                         |        |        |
-\o_dac_a_9__I_0/n17917                  |       1|    1240|     42.41%
+\genbus/wbexec/n19875                   |       1|     898|     21.92%
                                         |        |        |
-\o_dac_a_9__I_0/n17920                  |       1|    1216|     41.59%
+\genbus/wbexec/n19877                   |       1|     874|     21.34%
                                         |        |        |
-\o_dac_a_9__I_0/n17916                  |       1|    1184|     40.49%
+\genbus/wbexec/n19874                   |       1|     860|     21.00%
                                         |        |        |
-\o_dac_a_9__I_0/n17921                  |       1|    1144|     39.12%
+\genbus/wbexec/n19878                   |       1|     808|     19.73%
                                         |        |        |
-\o_dac_a_9__I_0/n17915                  |       1|    1096|     37.48%
+\genbus/wbexec/n19873                   |       1|     786|     19.19%
                                         |        |        |
-\o_dac_a_9__I_0/n17922                  |       1|    1024|     35.02%
+\genbus/wbexec/n29457                   |       2|     784|     19.14%
                                         |        |        |
-\o_dac_a_9__I_0/n17914                  |       1|     944|     32.28%
+n22664                                  |       1|     749|     18.29%
                                         |        |        |
-\genbus/wbexec/n3                       |      29|     904|     30.92%
+n22662                                  |       1|     714|     17.43%
                                         |        |        |
-\o_dac_a_9__I_0/n17923                  |       1|     840|     28.73%
+\genbus/wbexec/n19879                   |       1|     706|     17.24%
                                         |        |        |
-\o_dac_a_9__I_0/n17913                  |       1|     736|     25.17%
+\genbus/wbexec/n19872                   |       1|     678|     16.55%
                                         |        |        |
-\genbus/n27423                          |       2|     676|     23.12%
+\genbus/wbexec/n19880                   |       1|     576|     14.06%
                                         |        |        |
-\genbus/wbexec/n18006                   |       1|     642|     21.96%
+\genbus/wbexec/n19871                   |       1|     542|     13.23%
                                         |        |        |
-\genbus/wbexec/n18005                   |       1|     638|     21.82%
-                                        |        |        |
-\genbus/wbexec/n18007                   |       1|     626|     21.41%
-                                        |        |        |
-\genbus/wbexec/n18004                   |       1|     610|     20.86%
-                                        |        |        |
-\o_dac_a_9__I_0/n17924                  |       1|     608|     20.79%
-                                        |        |        |
-\genbus/wbexec/n18008                   |       1|     586|     20.04%
-                                        |        |        |
-\o_dac_a_9__I_0/n20992                  |       1|     576|     19.70%
-                                        |        |        |
-\o_dac_a_9__I_0/n20996                  |       1|     576|     19.70%
-                                        |        |        |
-\genbus/wbexec/n18003                   |       1|     558|     19.08%
-                                        |        |        |
-\genbus/wbexec/n18009                   |       1|     522|     17.85%
-                                        |        |        |
-\genbus/wbexec/n18002                   |       1|     482|     16.48%
-                                        |        |        |
-\o_dac_a_9__I_0/n17912                  |       1|     480|     16.42%
-                                        |        |        |
-\genbus/wbexec/n18010                   |       1|     432|     14.77%
-                                        |        |        |
-\genbus/wbexec/n18001                   |       1|     378|     12.93%
-                                        |        |        |
-\genbus/packxi/iw_stb                   |       7|     338|     11.56%
-                                        |        |        |
-\genbus/packxi/iw_word[33]              |       7|     338|     11.56%
-                                        |        |        |
-\o_dac_a_9__I_0/n17925                  |       1|     328|     11.22%
-                                        |        |        |
-\genbus/wbexec/n18011                   |       1|     314|     10.74%
+\genbus/wbexec/n19881                   |       1|     416|     10.16%
                                         |        |        |
 --------------------------------------------------------------------------------
 
@@ -358,10 +262,10 @@ Critical Nets                           |   Loads|  Errors| % of total
 Timing summary:
 ---------------
 
-Timing errors: 2924  Score: 12783121
+Timing errors: 4096  Score: 15514825
 
-Constraints cover  41095 paths, 6058 nets, and 17243 connections (90.4% coverage)
+Constraints cover  70471 paths, 8846 nets, and 22069 connections (84.9% coverage)
 
 
-Peak memory: 182845440 bytes, TRCE: 0 bytes, DLYMAN: 0 bytes
+Peak memory: 196554752 bytes, TRCE: 0 bytes, DLYMAN: 0 bytes
 CPU_TIME_REPORT: 0 secs 

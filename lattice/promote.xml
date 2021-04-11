@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<userSetting name="D:/Documents/Git_Local/fm_modulator/lattice/promote.xml" version="Diamond (64-bit) 3.11.3.469" date="Thu Jan 14 00:46:30 2021" vendor="Lattice Semiconductor Corporation" >
+<userSetting name="D:/Documents/Git_Local/fm_modulator/lattice/promote.xml" version="Diamond (64-bit) 3.12.0.240.2" date="Sun Apr 11 13:26:53 2021" vendor="Lattice Semiconductor Corporation" >
+  <msg mid="35901380" type="Error" />
+  <msg mid="35901116" type="Warning" />
   <msg mid="35931002" type="Warning" />
+  <msg mid="35901010" type="Error" />
+  <msg mid="35901006" type="Error" />
+  <msg mid="35901012" type="Error" />
+  <msg mid="35901906" type="Error" />
+  <msg mid="35901466" type="Warning" />
+  <msg mid="35909000" type="Info" />
   <msg mid="35931038" type="Warning" />
+  <msg mid="35901158" type="Error" />
   <msg mid="35901209" type="Warning" />
+  <msg mid="35901221" type="Warning" />
+  <msg mid="35901875" type="Warning" />
+  <msg mid="35901310" type="Info" />
+  <msg mid="35901651" type="Error" />
 </userSetting>

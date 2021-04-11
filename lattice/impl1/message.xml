@@ -15,7 +15,7 @@
         <Message>
             <ID>51001051</ID>
             <Severity>Warning</Severity>
-            <Dynamic>genbus/genhex/mux_98</Dynamic>
+            <Dynamic>genbus/genhex/mux_60</Dynamic>
         </Message>
     </Task>
     <Task name="Lattice_Synthesis">
@@ -30,26 +30,18 @@
         <Message>
             <ID>35901875</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(29): </Dynamic>
-            <Dynamic>cw_mux_dac_a_mux_sel</Dynamic>
+            <Dynamic>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(37): </Dynamic>
+            <Dynamic>o_sample_i_attenuated</Dynamic>
             <Navigation>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v</Navigation>
-            <Navigation>29</Navigation>
+            <Navigation>37</Navigation>
         </Message>
         <Message>
             <ID>35901875</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(29): </Dynamic>
-            <Dynamic>control_mode_dac_a</Dynamic>
+            <Dynamic>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(38): </Dynamic>
+            <Dynamic>o_sample_q_attenuated</Dynamic>
             <Navigation>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v</Navigation>
-            <Navigation>29</Navigation>
-        </Message>
-        <Message>
-            <ID>35901875</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(111): </Dynamic>
-            <Dynamic>cw</Dynamic>
-            <Navigation>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v</Navigation>
-            <Navigation>111</Navigation>
+            <Navigation>38</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -62,17 +54,17 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1032): </Dynamic>
+            <Dynamic>C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1032): </Dynamic>
             <Dynamic>PUR</Dynamic>
-            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v</Navigation>
+            <Navigation>C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v</Navigation>
             <Navigation>1032</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(494): </Dynamic>
+            <Dynamic>C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(494): </Dynamic>
             <Dynamic>GSR</Dynamic>
-            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v</Navigation>
+            <Navigation>C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v</Navigation>
             <Navigation>494</Navigation>
         </Message>
         <Message>
@@ -86,17 +78,17 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1124): </Dynamic>
+            <Dynamic>C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1124): </Dynamic>
             <Dynamic>VLO</Dynamic>
-            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v</Navigation>
+            <Navigation>C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v</Navigation>
             <Navigation>1124</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1696): </Dynamic>
+            <Dynamic>C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1696): </Dynamic>
             <Dynamic>EHXPLLJ(CLKFB_DIV=6,CLKOP_DIV=7,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS_ENABLE=&quot;DISABLED&quot;,CLKOS2_ENABLE=&quot;DISABLED&quot;,CLKOS3_ENABLE=&quot;DISABLED&quot;,CLKOP_CPHASE=6,CLKOS_TRIM_POL=&quot;FALLING&quot;)</Dynamic>
-            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v</Navigation>
+            <Navigation>C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v</Navigation>
             <Navigation>1696</Navigation>
         </Message>
         <Message>
@@ -198,20 +190,20 @@
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(27): </Dynamic>
+            <Dynamic>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(37): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>17</Dynamic>
             <Navigation>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v</Navigation>
-            <Navigation>27</Navigation>
+            <Navigation>37</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(28): </Dynamic>
+            <Dynamic>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(38): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>17</Dynamic>
             <Navigation>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v</Navigation>
-            <Navigation>28</Navigation>
+            <Navigation>38</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -246,38 +238,28 @@
             <Navigation>25</Navigation>
         </Message>
         <Message>
-            <ID>35901209</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(96): </Dynamic>
-            <Dynamic>32</Dynamic>
-            <Dynamic>17</Dynamic>
-            <Navigation>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v</Navigation>
-            <Navigation>96</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(97): </Dynamic>
-            <Dynamic>32</Dynamic>
-            <Dynamic>17</Dynamic>
-            <Navigation>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v</Navigation>
-            <Navigation>97</Navigation>
-        </Message>
-        <Message>
-            <ID>35931002</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(115): </Dynamic>
-            <Dynamic>control_mode_dac_a[1]</Dynamic>
-            <Navigation>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v</Navigation>
-            <Navigation>115</Navigation>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/documents/git_local/fm_modulator/rtl/sgnmpy_14x16.v(37): </Dynamic>
+            <Dynamic>sgnmpy_14x16</Dynamic>
+            <Navigation>d:/documents/git_local/fm_modulator/rtl/sgnmpy_14x16.v</Navigation>
+            <Navigation>37</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/documents/git_local/fm_modulator/rtl/clock_phase_shifter.v(4): </Dynamic>
-            <Dynamic>clock_phase_shifter</Dynamic>
-            <Navigation>d:/documents/git_local/fm_modulator/rtl/clock_phase_shifter.v</Navigation>
-            <Navigation>4</Navigation>
+            <Dynamic>d:/documents/git_local/fm_modulator/rtl/umpy_14x16.v(39): </Dynamic>
+            <Dynamic>umpy_14x16</Dynamic>
+            <Navigation>d:/documents/git_local/fm_modulator/rtl/umpy_14x16.v</Navigation>
+            <Navigation>39</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/documents/git_local/fm_modulator/rtl/bimpy.v(40): </Dynamic>
+            <Dynamic>bimpy(BW=16)</Dynamic>
+            <Navigation>d:/documents/git_local/fm_modulator/rtl/bimpy.v</Navigation>
+            <Navigation>40</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -290,9 +272,9 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1696): </Dynamic>
-            <Dynamic>EHXPLLJ_renamed_due_excessive_length_1</Dynamic>
-            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v</Navigation>
+            <Dynamic>C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1696): </Dynamic>
+            <Dynamic>EHXPLLJ(CLKFB_DIV=4,CLKOP_DIV=11,CLKOS_DIV=11,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS2_ENABLE=&quot;DISABLED&quot;,CLKOS3_ENABLE=&quot;DISABLED&quot;,CLKOP_CPHASE=10,CLKOS_CPHASE=12,CLKOS_FPHASE=6,PLL_USE_WB=&quot;ENABLED&quot;)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v</Navigation>
             <Navigation>1696</Navigation>
         </Message>
         <Message>
@@ -306,18 +288,26 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1120): </Dynamic>
+            <Dynamic>C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1120): </Dynamic>
             <Dynamic>VHI</Dynamic>
-            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v</Navigation>
+            <Navigation>C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v</Navigation>
             <Navigation>1120</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1766): </Dynamic>
+            <Dynamic>C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1766): </Dynamic>
             <Dynamic>EFB(EFB_TC_PORTMODE=&quot;WB&quot;,DEV_DENSITY=&quot;6900L&quot;,SPI_MODE=&quot;MASTER&quot;,TC_TOP_SEL=&quot;OFF&quot;,TC_OVERFLOW=&quot;DISABLED&quot;)</Dynamic>
-            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v</Navigation>
+            <Navigation>C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v</Navigation>
             <Navigation>1766</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/documents/git_local/fm_modulator/rtl/control.v(4): </Dynamic>
+            <Dynamic>control</Dynamic>
+            <Navigation>d:/documents/git_local/fm_modulator/rtl/control.v</Navigation>
+            <Navigation>4</Navigation>
         </Message>
         <Message>
             <ID>35931038</ID>
@@ -326,14 +316,6 @@
             <Dynamic>quarter_wave_table_original_ramnet</Dynamic>
             <Navigation>d:/documents/git_local/fm_modulator/rtl/quarter_wave_sine_lookup.v</Navigation>
             <Navigation>25</Navigation>
-        </Message>
-        <Message>
-            <ID>35931002</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(115): </Dynamic>
-            <Dynamic>control_mode_dac_a[1]</Dynamic>
-            <Navigation>d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v</Navigation>
-            <Navigation>115</Navigation>
         </Message>
         <Message>
             <ID>35002005</ID>
@@ -349,10 +331,104 @@
             <Navigation>76</Navigation>
         </Message>
         <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/documents/git_local/fm_modulator/rtl/sgnmpy_14x16.v(71): </Dynamic>
+            <Dynamic>\fm_generator_wb_instance/i_gain_multiplier/u_aux_26</Dynamic>
+            <Navigation>d:/documents/git_local/fm_modulator/rtl/sgnmpy_14x16.v</Navigation>
+            <Navigation>71</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/documents/git_local/fm_modulator/rtl/umpy_14x16.v(97): </Dynamic>
+            <Dynamic>\fm_generator_wb_instance/i_gain_multiplier/umpy/A_0_43</Dynamic>
+            <Navigation>d:/documents/git_local/fm_modulator/rtl/umpy_14x16.v</Navigation>
+            <Navigation>97</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/documents/git_local/fm_modulator/rtl/umpy_14x16.v(133): </Dynamic>
+            <Dynamic>\fm_generator_wb_instance/i_gain_multiplier/umpy/A_1_48</Dynamic>
+            <Navigation>d:/documents/git_local/fm_modulator/rtl/umpy_14x16.v</Navigation>
+            <Navigation>133</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/documents/git_local/fm_modulator/rtl/umpy_14x16.v(161): </Dynamic>
+            <Dynamic>\fm_generator_wb_instance/i_gain_multiplier/umpy/A_2_51</Dynamic>
+            <Navigation>d:/documents/git_local/fm_modulator/rtl/umpy_14x16.v</Navigation>
+            <Navigation>161</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/documents/git_local/fm_modulator/rtl/umpy_14x16.v(188): </Dynamic>
+            <Dynamic>\fm_generator_wb_instance/i_gain_multiplier/umpy/A_3_53</Dynamic>
+            <Navigation>d:/documents/git_local/fm_modulator/rtl/umpy_14x16.v</Navigation>
+            <Navigation>188</Navigation>
+        </Message>
+        <Message>
             <ID>35001774</ID>
             <Severity>Info</Severity>
-            <Dynamic>\o_dac_a_9__I_0/startup_timer</Dynamic>
+            <Dynamic>\fm_generator_wb_instance/startup_timer</Dynamic>
             <Dynamic>one-hot</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>0</Dynamic>
+            <Dynamic>\fm_generator_wb_instance/i_gain_multiplier/umpy/S_1_03</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+            <Dynamic>\fm_generator_wb_instance/i_gain_multiplier/umpy/S_1_03</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>2</Dynamic>
+            <Dynamic>\fm_generator_wb_instance/i_gain_multiplier/umpy/S_1_03</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>0</Dynamic>
+            <Dynamic>\fm_generator_wb_instance/q_gain_multiplier/umpy/S_1_03</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+            <Dynamic>\fm_generator_wb_instance/q_gain_multiplier/umpy/S_1_03</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>2</Dynamic>
+            <Dynamic>\fm_generator_wb_instance/q_gain_multiplier/umpy/S_1_03</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>0</Dynamic>
+            <Dynamic>\fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/S_1_03</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+            <Dynamic>\fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/S_1_03</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>2</Dynamic>
+            <Dynamic>\fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/S_1_03</Dynamic>
         </Message>
         <Message>
             <ID>35002005</ID>
@@ -370,7 +446,7 @@
         <Message>
             <ID>35001779</ID>
             <Severity>Warning</Severity>
-            <Dynamic>wb_ack_67</Dynamic>
+            <Dynamic>wb_ack_36</Dynamic>
         </Message>
         <Message>
             <ID>35001779</ID>

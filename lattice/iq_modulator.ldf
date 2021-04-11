@@ -2,7 +2,7 @@
 <BaliProject version="3.2" title="iq_modulator" device="LCMXO3LF-6900C-5BG256C" default_implementation="impl1">
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Timing">
-        <Options VERILOG_DIRECTIVES="synthesis" def_top="hbconsole">
+        <Options VERILOG_DIRECTIVES="synthesis" def_top="clock_phase_shifter">
             <Option name="include path" value="../rtl"/>
             <Option name="top" value="top"/>
         </Options>
@@ -82,6 +82,9 @@
             <Options/>
         </Source>
         <Source name="../rtl/sgnmpy_14x16.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../rtl/control.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="impl1/impl1.xcf" type="Programming Project File" type_short="Programming">

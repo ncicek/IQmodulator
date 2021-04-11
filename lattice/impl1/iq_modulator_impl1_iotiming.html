@@ -1,133 +1,0 @@
-<HTML>
-<HEAD><TITLE>I/O Timing Report</TITLE>
-<STYLE TYPE="text/css">
-<!--
- body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
--->
-</STYLE>
-</HEAD>
-<PRE><A name="Top"></A><B><U><big>I/O Timing Report</big></U></B>
-Loading design for application iotiming from file iq_modulator_impl1.ncd.
-Design name: top
-NCD version: 3.3
-Vendor:      LATTICE
-Device:      LCMXO3LF-6900C
-Package:     CABGA256
-Performance: 6
-Package Status:                     Final          Version 1.16.
-Performance Hardware Data Status:   Preliminary    Version 37.5.
-Loading design for application iotiming from file iq_modulator_impl1.ncd.
-Design name: top
-NCD version: 3.3
-Vendor:      LATTICE
-Device:      LCMXO3LF-6900C
-Package:     CABGA256
-Performance: M
-Package Status:                     Final          Version 1.16.
-Performance Hardware Data Status:   Preliminary    Version 37.5.
-// Design: top
-// Package: CABGA256
-// ncd File: iq_modulator_impl1.ncd
-// Version: Diamond (64-bit) 3.11.3.469
-// Written on Sun Feb 07 01:51:28 2021
-// M: Minimum Performance Grade
-// iotiming iq_modulator_impl1.ncd iq_modulator_impl1.prf -gui -msgset D:/Documents/Git_Local/fm_modulator/lattice/promote.xml
-
-I/O Timing Report (All units are in ns)
-
-Worst Case Results across Performance Grades (M, 6, 5):
-
-// Input Setup and Hold Times
-
-Port          Clock     Edge  Setup Performance_Grade  Hold Performance_Grade
-----------------------------------------------------------------------
-i_sw0         i_ref_clk R     9.355      5      -0.562     M
-i_wbu_uart_rx i_ref_clk R     2.279      5      -0.515     M
-
-
-// Clock to Output Delay
-
-Port          Clock     Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
-------------------------------------------------------------------------
-i_clk_n       i_ref_clk R     6.492         5        2.048          M
-i_clk_p       i_ref_clk R     5.510         5        1.813          M
-o_dac_a[0]    i_ref_clk R     8.068         5        2.458          M
-o_dac_a[1]    i_ref_clk R     7.611         5        2.400          M
-o_dac_a[2]    i_ref_clk R     7.995         5        2.341          M
-o_dac_a[3]    i_ref_clk R     7.335         5        2.320          M
-o_dac_a[4]    i_ref_clk R     7.726         5        2.397          M
-o_dac_a[5]    i_ref_clk R     7.959         5        2.502          M
-o_dac_a[6]    i_ref_clk R     7.535         5        2.284          M
-o_dac_a[7]    i_ref_clk R     7.562         5        2.289          M
-o_dac_a[8]    i_ref_clk R     7.885         5        2.299          M
-o_dac_a[9]    i_ref_clk R     7.960         5        2.311          M
-o_dac_b[0]    i_ref_clk R     6.548         5        2.182          M
-o_dac_b[1]    i_ref_clk R     6.640         5        2.206          M
-o_dac_b[2]    i_ref_clk R     6.198         5        2.071          M
-o_dac_b[3]    i_ref_clk R     6.198         5        2.071          M
-o_dac_b[4]    i_ref_clk R     6.272         5        2.099          M
-o_dac_b[5]    i_ref_clk R     6.577         5        2.176          M
-o_dac_b[6]    i_ref_clk R     6.198         5        2.071          M
-o_dac_b[7]    i_ref_clk R     6.272         5        2.099          M
-o_dac_b[8]    i_ref_clk R     6.555         5        2.184          M
-o_dac_b[9]    i_ref_clk R     7.496         5        2.392          M
-o_dac_cw_b    i_ref_clk R     7.619         5        2.436          M
-o_wbu_uart_tx i_ref_clk R     7.260         5        2.426          M
-q_clk_n       i_ref_clk F     6.864         5        2.160          M
-q_clk_p       i_ref_clk F     5.488         5        1.812          M
-
-
-
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-</PRE></FONT>
-</BODY>
-</HTML>

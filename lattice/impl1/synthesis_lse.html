@@ -7,14 +7,14 @@
 </STYLE>
 </HEAD>
 <PRE><A name="Syn"></A><B><U><big>Synthesis and Ngdbuild  Report</big></U></B>
-synthesis:  version Diamond (64-bit) 3.11.3.469
+synthesis:  version Diamond (64-bit) 3.12.0.240.2
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Feb 07 01:50:48 2021
+Sun Apr 11 02:49:58 2021
 
 
 Command Line:  synthesis -f iq_modulator_impl1_lattice.synproj -gui -msgset D:/Documents/Git_Local/fm_modulator/lattice/promote.xml 
@@ -70,13 +70,13 @@ ROM style = auto
 RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
+-p D:/Documents/Git_Local/fm_modulator/rtl (searchpath added)
 -p D:/Documents/Git_Local/fm_modulator/lattice (searchpath added)
--p C:/lscc/diamond/3.11_x64/ispfpga/xo3c00f/data (searchpath added)
+-p C:/lscc/diamond/3.12/ispfpga/xo3c00f/data (searchpath added)
 -p D:/Documents/Git_Local/fm_modulator/lattice/impl1 (searchpath added)
 -p D:/Documents/Git_Local/fm_modulator/lattice (searchpath added)
 Verilog design file = D:/Documents/Git_Local/fm_modulator/rtl/dds.v
 Verilog design file = D:/Documents/Git_Local/fm_modulator/rtl/fm_generator_wb_slave.v
-Verilog design file = D:/Documents/Git_Local/fm_modulator/rtl/iq_gen.v
 Verilog design file = D:/Documents/Git_Local/fm_modulator/rtl/nco.v
 Verilog design file = D:/Documents/Git_Local/fm_modulator/rtl/quarter_wave_sine_lookup.v
 Verilog design file = D:/Documents/Git_Local/fm_modulator/rtl/top.v
@@ -98,6 +98,10 @@ Verilog design file = D:/Documents/Git_Local/fm_modulator/rtl/clock_phase_shifte
 Verilog design file = D:/Documents/Git_Local/fm_modulator/lattice/efb_inst.v
 Verilog design file = D:/Documents/Git_Local/fm_modulator/lattice/dynamic_pll.v
 Verilog design file = D:/Documents/Git_Local/fm_modulator/lattice/sys_clk.v
+Verilog design file = D:/Documents/Git_Local/fm_modulator/rtl/bimpy.v
+Verilog design file = D:/Documents/Git_Local/fm_modulator/rtl/umpy_14x16.v
+Verilog design file = D:/Documents/Git_Local/fm_modulator/rtl/sgnmpy_14x16.v
+Verilog design file = D:/Documents/Git_Local/fm_modulator/rtl/control.v
 NGD file = iq_modulator_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -106,15 +110,13 @@ Hardtimer checking is enabled (default). The -dt option is not used.
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
 Technology check ok...
 
-Analyzing Verilog file C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v. VERI-1482
+Analyzing Verilog file C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v. VERI-1482
 Compile design.
 Compile Design Begin
 Analyzing Verilog file d:/documents/git_local/fm_modulator/rtl/dds.v. VERI-1482
 Analyzing Verilog file d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v. VERI-1482
-WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(29): identifier cw_mux_dac_a_mux_sel is used before its declaration. VERI-1875
-WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(29): identifier control_mode_dac_a is used before its declaration. VERI-1875
-WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(111): identifier cw is used before its declaration. VERI-1875
-Analyzing Verilog file d:/documents/git_local/fm_modulator/rtl/iq_gen.v. VERI-1482
+WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(37): identifier o_sample_i_attenuated is used before its declaration. VERI-1875
+WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(38): identifier o_sample_q_attenuated is used before its declaration. VERI-1875
 Analyzing Verilog file d:/documents/git_local/fm_modulator/rtl/nco.v. VERI-1482
 Analyzing Verilog file d:/documents/git_local/fm_modulator/rtl/quarter_wave_sine_lookup.v. VERI-1482
 Analyzing Verilog file d:/documents/git_local/fm_modulator/rtl/top.v. VERI-1482
@@ -136,14 +138,18 @@ Analyzing Verilog file d:/documents/git_local/fm_modulator/rtl/clock_phase_shift
 Analyzing Verilog file d:/documents/git_local/fm_modulator/lattice/efb_inst.v. VERI-1482
 Analyzing Verilog file d:/documents/git_local/fm_modulator/lattice/dynamic_pll.v. VERI-1482
 Analyzing Verilog file d:/documents/git_local/fm_modulator/lattice/sys_clk.v. VERI-1482
-Analyzing Verilog file C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v. VERI-1482
+Analyzing Verilog file d:/documents/git_local/fm_modulator/rtl/bimpy.v. VERI-1482
+Analyzing Verilog file d:/documents/git_local/fm_modulator/rtl/umpy_14x16.v. VERI-1482
+Analyzing Verilog file d:/documents/git_local/fm_modulator/rtl/sgnmpy_14x16.v. VERI-1482
+Analyzing Verilog file d:/documents/git_local/fm_modulator/rtl/control.v. VERI-1482
+Analyzing Verilog file C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v. VERI-1482
 Top module name (Verilog): top
 INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/top.v(4): compiling module top. VERI-1018
-INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1032): compiling module PUR. VERI-1018
-INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(494): compiling module GSR. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1032): compiling module PUR. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(494): compiling module GSR. VERI-1018
 INFO - synthesis: d:/documents/git_local/fm_modulator/lattice/sys_clk.v(8): compiling module sys_clk. VERI-1018
-INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1124): compiling module VLO. VERI-1018
-INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1696): compiling module EHXPLLJ(CLKFB_DIV=6,CLKOP_DIV=7,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS_ENABLE="DISABLED",CLKOS2_ENABLE="DISABLED",CLKOS3_ENABLE="DISABLED",CLKOP_CPHASE=6,CLKOS_TRIM_POL="FALLING"). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1124): compiling module VLO. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1696): compiling module EHXPLLJ(CLKFB_DIV=6,CLKOP_DIV=7,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS_ENABLE="DISABLED",CLKOS2_ENABLE="DISABLED",CLKOS3_ENABLE="DISABLED",CLKOP_CPHASE=6,CLKOS_TRIM_POL="FALLING"). VERI-1018
 INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/debug_bus/rxuartlite.v(64): compiling module rxuartlite(CLOCKS_PER_BAUD=10000). VERI-1018
 INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/debug_bus/txuartlite.v(68): compiling module txuartlite(TIMING_BITS=24,CLOCKS_PER_BAUD=10000). VERI-1018
 INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/debug_bus/hbbus.v(44): compiling module hbbus. VERI-1018
@@ -156,69 +162,37 @@ INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/debug_bus/hbdeword.v(4
 INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/debug_bus/hbgenhex.v(64): compiling module hbgenhex. VERI-1018
 INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/debug_bus/hbnewline.v(43): compiling module hbnewline. VERI-1018
 INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(4): compiling module fm_generator_wb_slave. VERI-1018
-WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(27): expression size 32 truncated to fit in target size 17. VERI-1209
-WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(28): expression size 32 truncated to fit in target size 17. VERI-1209
+WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(37): expression size 32 truncated to fit in target size 17. VERI-1209
+WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(38): expression size 32 truncated to fit in target size 17. VERI-1209
 INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/dds.v(3): compiling module dds. VERI-1018
 INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/nco.v(3): compiling module nco(OW=12). VERI-1018
 INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/quarter_wave_sine_lookup.v(4): compiling module quarter_wave_sine_lookup. VERI-1018
 WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/quarter_wave_sine_lookup.v(25): net quarter_wave_table does not have a driver. VDB-1002
-WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(96): expression size 32 truncated to fit in target size 17. VERI-1209
-WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(97): expression size 32 truncated to fit in target size 17. VERI-1209
-WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(115): net control_mode_dac_a[1] does not have a driver. VDB-1002
-INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/clock_phase_shifter.v(4): compiling module clock_phase_shifter. VERI-1018
+INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/sgnmpy_14x16.v(37): compiling module sgnmpy_14x16. VERI-1018
+INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/umpy_14x16.v(39): compiling module umpy_14x16. VERI-1018
+INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/bimpy.v(40): compiling module bimpy(BW=16). VERI-1018
 INFO - synthesis: d:/documents/git_local/fm_modulator/lattice/dynamic_pll.v(8): compiling module dynamic_pll. VERI-1018
-INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1696): compiling module EHXPLLJ_renamed_due_excessive_length_1. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1696): compiling module EHXPLLJ(CLKFB_DIV=4,CLKOP_DIV=11,CLKOS_DIV=11,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS2_ENABLE="DISABLED",CLKOS3_ENABLE="DISABLED",CLKOP_CPHASE=10,CLKOS_CPHASE=12,CLKOS_FPHASE=6,PLL_USE_WB="ENABLED"). VERI-1018
 INFO - synthesis: d:/documents/git_local/fm_modulator/lattice/efb_inst.v(8): compiling module efb_inst. VERI-1018
-INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1120): compiling module VHI. VERI-1018
-INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1766): compiling module EFB(EFB_TC_PORTMODE="WB",DEV_DENSITY="6900L",SPI_MODE="MASTER",TC_TOP_SEL="OFF",TC_OVERFLOW="DISABLED"). VERI-1018
-Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
-Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
-Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
-Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/or5g00/data/orc5glib.ngl'...
-Loading device for application map from file 'xo3c6900.nph' in environment: C:/lscc/diamond/3.11_x64/ispfpga.
+INFO - synthesis: C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1120): compiling module VHI. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1766): compiling module EFB(EFB_TC_PORTMODE="WB",DEV_DENSITY="6900L",SPI_MODE="MASTER",TC_TOP_SEL="OFF",TC_OVERFLOW="DISABLED"). VERI-1018
+INFO - synthesis: d:/documents/git_local/fm_modulator/rtl/control.v(4): compiling module control. VERI-1018
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo3c6900.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
 Package Status:                     Final          Version 1.16.
 Top-level module name = top.
 WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/quarter_wave_sine_lookup.v(25): ram quarter_wave_table_original_ramnet has no write-port on it. VDB-1038
-WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/fm_generator_wb_slave.v(115): net control_mode_dac_a[1] does not have a driver. VDB-1002
 WARNING - synthesis: I/O Port i_sw1 's net has no driver and is unused.
-######## Missing driver on net \o_dac_a_9__I_0/control_mode_dac_a[1]. Patching with GND.
-######## Missing driver on net \o_dac_a_9__I_0/control_mode_dac_a[0]. Patching with GND.
 WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/debug_bus/hbidle.v(76): Register \genbus/addidles/idle_stb_26 is stuck at Zero. VDB-5013
-INFO - synthesis: Extracted state machine for register '\o_dac_a_9__I_0/startup_timer' with one-hot encoding
-State machine has 16 reachable states with original encodings of:
-
- 0000 
-
- 0001 
-
- 0010 
-
- 0011 
-
- 0100 
-
- 0101 
-
- 0110 
-
- 0111 
-
- 1000 
-
- 1001 
-
- 1010 
-
- 1011 
-
- 1100 
-
- 1101 
-
- 1110 
-
- 1111 
-
+WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/sgnmpy_14x16.v(71): Register \fm_generator_wb_instance/i_gain_multiplier/u_aux_26 is stuck at Zero. VDB-5013
+WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/umpy_14x16.v(97): Register \fm_generator_wb_instance/i_gain_multiplier/umpy/A_0_43 is stuck at Zero. VDB-5013
+WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/umpy_14x16.v(133): Register \fm_generator_wb_instance/i_gain_multiplier/umpy/A_1_48 is stuck at Zero. VDB-5013
+WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/umpy_14x16.v(161): Register \fm_generator_wb_instance/i_gain_multiplier/umpy/A_2_51 is stuck at Zero. VDB-5013
+WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/umpy_14x16.v(188): Register \fm_generator_wb_instance/i_gain_multiplier/umpy/A_3_53 is stuck at Zero. VDB-5013
+INFO - synthesis: Extracted state machine for register '\fm_generator_wb_instance/startup_timer' with one-hot encoding
 original encoding -> new encoding (one-hot encoding)
 
  0000 -> 0000000000000001
@@ -256,11 +230,20 @@ original encoding -> new encoding (one-hot encoding)
 
 
 
+WARNING - synthesis: Bit 0 of Register \fm_generator_wb_instance/i_gain_multiplier/umpy/S_1_03 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \fm_generator_wb_instance/i_gain_multiplier/umpy/S_1_03 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \fm_generator_wb_instance/i_gain_multiplier/umpy/S_1_03 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \fm_generator_wb_instance/q_gain_multiplier/umpy/S_1_03 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \fm_generator_wb_instance/q_gain_multiplier/umpy/S_1_03 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \fm_generator_wb_instance/q_gain_multiplier/umpy/S_1_03 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/S_1_03 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/S_1_03 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/S_1_03 is stuck at Zero
 WARNING - synthesis: I/O Port i_sw1 's net has no driver and is unused.
 WARNING - synthesis: d:/documents/git_local/fm_modulator/rtl/debug_bus/hbints.v(78): Register \genbus/addints/pending_interrupt_56 is stuck at Zero. VDB-5013
-Duplicate register/latch removal. \o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i15 is a one-to-one match with \o_dac_a_9__I_0/modulation/qtr_inst/quarter_wave_sample_register_i_i15.
-Duplicate register/latch removal. \o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_q_i15 is a one-to-one match with \o_dac_a_9__I_0/carrier/qtr_inst/quarter_wave_sample_register_i_i15.
-WARNING - synthesis: Initial value found on instance wb_ack_67 will be ignored.
+Duplicate register/latch removal. \fm_generator_wb_instance/modulation/qtr_inst/quarter_wave_sample_register_i_i15 is a one-to-one match with \fm_generator_wb_instance/carrier/qtr_inst/quarter_wave_sample_register_q_i15.
+Duplicate register/latch removal. \fm_generator_wb_instance/carrier/qtr_inst/quarter_wave_sample_register_i_i15 is a one-to-one match with \fm_generator_wb_instance/modulation/qtr_inst/quarter_wave_sample_register_i_i15.
+WARNING - synthesis: Initial value found on instance wb_ack_36 will be ignored.
 WARNING - synthesis: Initial value found on instance \rxtransport/baud_counter_i0 will be ignored.
 WARNING - synthesis: Initial value found on instance \rxtransport/chg_counter__i0 will be ignored.
 WARNING - synthesis: Initial value found on instance \txtransport/o_uart_tx_48 will be ignored.
@@ -295,24 +278,24 @@ WARNING - synthesis: Initial value found on instance \rxtransport/baud_counter_i
 WARNING - synthesis: Initial value found on instance \rxtransport/baud_counter_i3 will be ignored.
 WARNING - synthesis: Initial value found on instance \rxtransport/baud_counter_i2 will be ignored.
 WARNING - synthesis: Initial value found on instance \rxtransport/baud_counter_i1 will be ignored.
-Duplicate register/latch removal. \o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i1 is a one-to-one match with \o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i0.
-Duplicate register/latch removal. \o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i10 is a one-to-one match with \o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i9.
-Duplicate register/latch removal. \o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i9 is a one-to-one match with \o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i8.
-Duplicate register/latch removal. \o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i8 is a one-to-one match with \o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i7.
-Duplicate register/latch removal. \o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i7 is a one-to-one match with \o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i6.
-Duplicate register/latch removal. \o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i6 is a one-to-one match with \o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i5.
-Duplicate register/latch removal. \o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i5 is a one-to-one match with \o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i4.
-Duplicate register/latch removal. \o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i4 is a one-to-one match with \o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i3.
-Duplicate register/latch removal. \o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i3 is a one-to-one match with \o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i2.
-Duplicate register/latch removal. \o_dac_a_9__I_0/carrier/qtr_inst/phase_q__i2 is a one-to-one match with \o_dac_a_9__I_0/carrier/qtr_inst/phase_i_i0_i1.
+Duplicate register/latch removal. \fm_generator_wb_instance/carrier/qtr_inst/phase_i_i0_i0 is a one-to-one match with \fm_generator_wb_instance/carrier/qtr_inst/phase_q__i1.
+Duplicate register/latch removal. \fm_generator_wb_instance/carrier/qtr_inst/phase_i_i0_i9 is a one-to-one match with \fm_generator_wb_instance/carrier/qtr_inst/phase_q__i10.
+Duplicate register/latch removal. \fm_generator_wb_instance/carrier/qtr_inst/phase_i_i0_i8 is a one-to-one match with \fm_generator_wb_instance/carrier/qtr_inst/phase_q__i9.
+Duplicate register/latch removal. \fm_generator_wb_instance/carrier/qtr_inst/phase_i_i0_i7 is a one-to-one match with \fm_generator_wb_instance/carrier/qtr_inst/phase_q__i8.
+Duplicate register/latch removal. \fm_generator_wb_instance/carrier/qtr_inst/phase_i_i0_i6 is a one-to-one match with \fm_generator_wb_instance/carrier/qtr_inst/phase_q__i7.
+Duplicate register/latch removal. \fm_generator_wb_instance/carrier/qtr_inst/phase_i_i0_i5 is a one-to-one match with \fm_generator_wb_instance/carrier/qtr_inst/phase_q__i6.
+Duplicate register/latch removal. \fm_generator_wb_instance/carrier/qtr_inst/phase_i_i0_i4 is a one-to-one match with \fm_generator_wb_instance/carrier/qtr_inst/phase_q__i5.
+Duplicate register/latch removal. \fm_generator_wb_instance/carrier/qtr_inst/phase_i_i0_i3 is a one-to-one match with \fm_generator_wb_instance/carrier/qtr_inst/phase_q__i4.
+Duplicate register/latch removal. \fm_generator_wb_instance/carrier/qtr_inst/phase_i_i0_i2 is a one-to-one match with \fm_generator_wb_instance/carrier/qtr_inst/phase_q__i3.
+Duplicate register/latch removal. \fm_generator_wb_instance/carrier/qtr_inst/phase_i_i0_i1 is a one-to-one match with \fm_generator_wb_instance/carrier/qtr_inst/phase_q__i2.
 Applying 200.000000 MHz constraint to all clocks
 
 WARNING - synthesis: No user .sdc file.
 Results of NGD DRC are available in top_drc.log.
-Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
-Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
-Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
-Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/or5g00/data/orc5glib.ngl'...
 WARNING - synthesis: logical net 'i_sw1' has no load.
 WARNING - synthesis: input pad net 'i_sw1' has no legal load.
 WARNING - synthesis: DRC complete with 2 warnings.
@@ -320,29 +303,28 @@ All blocks are expanded and NGD expansion is successful.
 Writing NGD file iq_modulator_impl1.ngd.
 
 ################### Begin Area Report (top)######################
-Number of register bits => 1174 of 7485 (15 % )
-CCU2D => 190
+Number of register bits => 2244 of 7485 (29 % )
+CCU2D => 612
 EFB => 1
 EHXPLLJ => 2
-FD1P3AX => 206
+FD1P3AX => 238
 FD1P3AY => 13
-FD1P3BX => 14
-FD1P3DX => 97
+FD1P3BX => 29
+FD1P3DX => 178
 FD1P3IX => 190
 FD1P3JX => 21
-FD1S3AX => 146
+FD1S3AX => 154
 FD1S3AY => 7
 FD1S3BX => 47
-FD1S3DX => 342
-FD1S3IX => 85
-FD1S3JX => 6
+FD1S3DX => 289
+FD1S3IX => 1070
+FD1S3JX => 8
 GSR => 1
 IB => 3
-INV => 1
-L6MUX21 => 339
-LUT4 => 3324
-OB => 28
-PFUMX => 752
+L6MUX21 => 338
+LUT4 => 3924
+OB => 26
+PFUMX => 753
 PUR => 1
 SP8KC => 1
 ################### End Area Report ##################
@@ -354,34 +336,34 @@ TSALL => 1
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 3
-  Net : sys_clk_inst/dac_clk_p_c, loads : 1177
+  Net : sys_clk_inst/dac_clk_p_c, loads : 2249
   Net : i_ref_clk_c, loads : 2
-  Net : lo_gen/lo_pll_out, loads : 3
+  Net : lo_gen/lo_q, loads : 1
 Clock Enable Nets
-Number of Clock Enables: 39
+Number of Clock Enables: 41
 Top 10 highest fanout Clock Enables:
-  Net : genbus/unpackx/dac_clk_p_c_enable_261, loads : 37
-  Net : genbus/addidles/dac_clk_p_c_enable_429, loads : 34
-  Net : dac_clk_p_c_enable_297, loads : 32
-  Net : o_dac_a_9__I_0/dac_clk_p_c_enable_149, loads : 32
-  Net : o_dac_a_9__I_0/dac_clk_p_c_enable_105, loads : 32
-  Net : o_dac_a_9__I_0/dac_clk_p_c_enable_73, loads : 32
-  Net : o_dac_a_9__I_0/dac_clk_p_c_enable_116, loads : 32
-  Net : wb_err, loads : 31
-  Net : rxtransport/dac_clk_p_c_enable_368, loads : 16
-  Net : txtransport/zero_baud_counter, loads : 16
+  Net : genbus/unpackx/dac_clk_p_c_enable_647, loads : 37
+  Net : genbus/addidles/dac_clk_p_c_enable_646, loads : 34
+  Net : genbus/addints/dac_clk_p_c_enable_644, loads : 34
+  Net : genbus/wbexec/dac_clk_p_c_enable_60, loads : 33
+  Net : control_inst/dac_clk_p_c_enable_79, loads : 32
+  Net : genbus/wbexec/dac_clk_p_c_enable_631, loads : 30
+  Net : txtransport/zero_baud_counter, loads : 17
+  Net : rxtransport/dac_clk_p_c_enable_570, loads : 16
+  Net : fm_generator_wb_instance/dac_clk_p_c_enable_617, loads : 14
+  Net : genbus/addnl/dac_clk_p_c_enable_600, loads : 9
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : i_sw0_c, loads : 508
-  Net : o_dac_a_9__I_0/modulation/qtr_inst/index_i_3, loads : 487
-  Net : o_dac_a_9__I_0/carrier/qtr_inst/index_i_3, loads : 487
-  Net : o_dac_a_9__I_0/carrier/qtr_inst/index_q_3, loads : 482
-  Net : o_dac_a_9__I_0/modulation/qtr_inst/index_i_2, loads : 368
-  Net : o_dac_a_9__I_0/carrier/qtr_inst/index_q_2, loads : 367
-  Net : o_dac_a_9__I_0/carrier/qtr_inst/index_i_2, loads : 364
-  Net : o_dac_a_9__I_0/modulation/qtr_inst/index_i_4, loads : 351
-  Net : o_dac_a_9__I_0/carrier/qtr_inst/index_q_1, loads : 348
-  Net : o_dac_a_9__I_0/modulation/qtr_inst/index_i_1, loads : 345
+  Net : i_sw0_c, loads : 1560
+  Net : fm_generator_wb_instance/carrier/qtr_inst/index_i_3, loads : 486
+  Net : fm_generator_wb_instance/carrier/qtr_inst/index_q_3, loads : 484
+  Net : fm_generator_wb_instance/modulation/qtr_inst/index_i_3, loads : 482
+  Net : fm_generator_wb_instance/carrier/qtr_inst/index_q_2, loads : 367
+  Net : fm_generator_wb_instance/carrier/qtr_inst/index_i_2, loads : 365
+  Net : fm_generator_wb_instance/modulation/qtr_inst/index_i_2, loads : 362
+  Net : fm_generator_wb_instance/carrier/qtr_inst/index_q_4, loads : 347
+  Net : fm_generator_wb_instance/modulation/qtr_inst/index_i_1, loads : 345
+  Net : fm_generator_wb_instance/modulation/qtr_inst/index_i_4, loads : 344
 ################### End Clock Report ##################
 
 <A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
@@ -391,10 +373,7 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk1 [get_nets lo_pll_out]              |  200.000 MHz|  338.639 MHz|     2  
-                                        |             |             |
-create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets dac_clk_p_c]             |  200.000 MHz|   92.090 MHz|    19 *
+clk0 [get_nets dac_clk_p_c]             |  200.000 MHz|   92.404 MHz|    19 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -402,10 +381,10 @@ clk0 [get_nets dac_clk_p_c]             |  200.000 MHz|   92.090 MHz|    19 *
 1 constraints not met.
 
 
-Peak Memory Usage: 174.375  MB
+Peak Memory Usage: 187.449  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 9.734  secs
+Elapsed CPU time for LSE flow : 12.922  secs
 --------------------------------------------------------------
 
 

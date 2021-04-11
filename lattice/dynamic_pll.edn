@@ -4,9 +4,9 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timestamp 2021 2 7 15 46 34)
-      (program "SCUBA" (version "Diamond (64-bit) 3.11.3.469"))))
-      (comment "C:\lscc\diamond\3.11_x64\ispfpga\bin\nt64\scuba.exe -w -n dynamic_pll -lang verilog -synth lse -arch xo3c00f -type pll -fin 12 -fclkop 200 -fclkop_tol 10.0 -trimp 0 -phasep 0 -trimp_r -phase_cntl STATIC -fb_mode 1 -lock -wb -fracn 2731 ")
+      (timestamp 2021 4 11 2 49 54)
+      (program "SCUBA" (version "Diamond (64-bit) 3.12.0.240.2"))))
+      (comment "C:\lscc\diamond\3.12\ispfpga\bin\nt64\scuba.exe -w -n dynamic_pll -lang verilog -synth lse -arch xo3c00f -type pll -fin 12 -fclkop 48 -fclkop_tol 0.0 -fclkos 48 -fclkos_tol 0.0 -trimp 0 -phasep 0 -trimp_r -trims 0 -phases 90 -trims_r -phase_cntl STATIC -fb_mode 1 -lock -wb ")
   (library ORCLIB
     (edifLevel 0)
     (technology
@@ -170,6 +170,8 @@
             (direction INPUT))
           (port CLKOP
             (direction OUTPUT))
+          (port CLKOS
+            (direction OUTPUT))
           (port LOCK
             (direction OUTPUT))
           (port (rename PLLDATO0 "PLLDATO(0)")
@@ -223,27 +225,27 @@
             (property CLKOS2_CPHASE
               (string "0"))
             (property CLKOS_FPHASE
-              (string "0"))
+              (string "6"))
             (property CLKOS_CPHASE
-              (string "0"))
+              (string "12"))
             (property CLKOP_FPHASE
               (string "0"))
             (property CLKOP_CPHASE
-              (string "2"))
+              (string "10"))
             (property PLL_LOCK_MODE
               (string "0"))
             (property CLKOS_TRIM_DELAY
               (string "0"))
             (property CLKOS_TRIM_POL
-              (string "FALLING"))
+              (string "RISING"))
             (property CLKOP_TRIM_DELAY
               (string "0"))
             (property CLKOP_TRIM_POL
               (string "RISING"))
             (property FRACN_DIV
-              (string "2731"))
+              (string "0"))
             (property FRACN_ENABLE
-              (string "ENABLED"))
+              (string "DISABLED"))
             (property OUTDIVIDER_MUXD2
               (string "DIVD"))
             (property PREDIVIDER_MUXD1
@@ -260,6 +262,8 @@
               (string "DISABLED"))
             (property CLKOS2_ENABLE
               (string "DISABLED"))
+            (property FREQUENCY_PIN_CLKOS
+              (string "48.000000"))
             (property OUTDIVIDER_MUXB2
               (string "DIVB"))
             (property PREDIVIDER_MUXB1
@@ -267,9 +271,9 @@
             (property VCO_BYPASS_B0
               (string "DISABLED"))
             (property CLKOS_ENABLE
-              (string "DISABLED"))
+              (string "ENABLED"))
             (property FREQUENCY_PIN_CLKOP
-              (string "192.000000"))
+              (string "48.000000"))
             (property OUTDIVIDER_MUXA2
               (string "DIVA"))
             (property PREDIVIDER_MUXA1
@@ -281,7 +285,7 @@
             (property FREQUENCY_PIN_CLKI
               (string "12.000000"))
             (property ICP_CURRENT
-              (string "9"))
+              (string "8"))
             (property LPF_RESISTOR
               (string "8"))
             (property CLKOS3_DIV
@@ -289,11 +293,11 @@
             (property CLKOS2_DIV
               (string "1"))
             (property CLKOS_DIV
-              (string "1"))
+              (string "11"))
             (property CLKOP_DIV
-              (string "3"))
+              (string "11"))
             (property CLKFB_DIV
-              (string "16"))
+              (string "4"))
             (property CLKI_DIV
               (string "1"))
             (property FEEDBK_PATH
@@ -356,6 +360,10 @@
             (joined
               (portRef LOCK)
               (portRef LOCK (instanceRef PLLInst_0))))
+          (net CLKOS
+            (joined
+              (portRef CLKOS)
+              (portRef CLKOS (instanceRef PLLInst_0))))
           (net CLKOP
             (joined
               (portRef CLKOP)

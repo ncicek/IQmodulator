@@ -17,6 +17,7 @@ PLLADDR[2]  i
 PLLADDR[1]  i
 PLLADDR[0]  i
 CLKOP  o
+CLKOS  o
 LOCK  o
 PLLDATO[7]  o
 PLLDATO[6]  o

@@ -1,4 +1,4 @@
-//`default_nettype none
+`default_nettype none
 `timescale 1 ns / 100 ps
 
 module top(i_ref_clk,
@@ -12,8 +12,8 @@ module top(i_ref_clk,
         o_dac_a, o_dac_b,
 		dac_clk_p, dac_clk_n,
 		o_dac_cw_b,
-		i_clk_p, i_clk_n,
-		q_clk_p, q_clk_n
+		o_lo_i,
+		o_lo_q
 );
 
 parameter sine_lookup_width = 16,
@@ -31,7 +31,7 @@ output wire o_wbu_uart_tx;
 input wire i_sw0, i_sw1;
 
 output wire [(output_dac_width-1):0] o_dac_a, o_dac_b;
-output wire i_clk_p, i_clk_n, q_clk_p, q_clk_n, dac_clk_p, dac_clk_n, o_dac_cw_b;
+output wire o_lo_i, o_lo_q, dac_clk_p, dac_clk_n, o_dac_cw_b;
 
 wire reset;
 assign reset = i_sw0;
@@ -51,10 +51,7 @@ wire clk;
 
 
 //differential clock outputs
-assign i_clk_n = ~i_clk_p;
-assign q_clk_n = ~q_clk_p;
 assign dac_clk_n = ~dac_clk_p;
-
 assign dac_clk_p = clk;
 
 wire rx_stb;
@@ -108,17 +105,13 @@ hbbus genbus (.i_clk(clk),
 reg [29:0] bus_err_address;
 initial	bus_err_address = 0;
 
-wire wb_fm_sel, wb_fm_stall, wb_fm_ack;
-wire [31:0] wb_fm_data;
 
-wire wb_smpl_sel, wb_smpl_stall;
-reg [31:0] wb_smpl_data;
-reg wb_smpl_ack;
+
+
 
 //SLAVES:
-//assign o_local_oscilator_clk = clk;
-
-
+wire wb_fm_sel, wb_fm_stall, wb_fm_ack;
+wire [31:0] wb_fm_data;
 
 fm_generator_wb_slave #(
 	.sine_lookup_width(sine_lookup_width),
@@ -130,7 +123,7 @@ fm_generator_wb_slave #(
                             .i_wb_cyc(wb_cyc), 
                             .i_wb_stb(wb_stb && wb_fm_sel), 
                             .i_wb_we(wb_we), 
-                            .i_wb_addr(wb_addr[1:0]), 
+                            .i_wb_addr(wb_addr[2:0]), 
                             .i_wb_data(wb_odata),
                             .o_wb_ack(wb_fm_ack), 
                             .o_wb_stall(wb_fm_stall), 
@@ -163,12 +156,14 @@ wire wb_cyc_efb, wb_stb_efb;
 	assign #0.1 wb_stb_efb = wb_cyc;
 `endif
 
-wire lo_pll_out;
-clock_phase_shifter clock_phase_shifter_inst(
+wire lo_pll_out, lo_i, lo_q, lo_i_en, lo_q_en;
+/*clock_phase_shifter clock_phase_shifter_inst(
     .i_clk_2f(lo_pll_out),
-    .o_clk_i(i_clk_p),
-    .o_clk_q(q_clk_p)
-);
+    .o_clk_i(lo_i),
+    .o_clk_q(lo_q)
+);*/
+assign o_lo_i = lo_i & lo_i_en;
+assign o_lo_q = lo_q & lo_q_en;
 
 `ifdef	synthesis
 	dynamic_pll lo_gen(.CLKI(i_ref_clk), 
@@ -180,7 +175,8 @@ clock_phase_shifter clock_phase_shifter_inst(
 			.PLLADDR(pll_addr), 
 			.PLLDATO(pll_data_o), 
 			.PLLACK(pll_ack),
-			.CLKOP(lo_pll_out), 
+			.CLKOP(lo_i), 
+			.CLKOS(lo_q),
 			.LOCK(lo_lock)
 			);
 
@@ -203,91 +199,62 @@ clock_phase_shifter clock_phase_shifter_inst(
 
 
 
+wire wb_control_sel, wb_control_ack, wb_control_stall;
+wire [31:0] wb_control_data;
+control control_inst(	.i_clk(clk), 
+						.i_reset(reset), 
+						.i_wb_cyc(wb_cyc), 
+						.i_wb_stb(wb_stb && wb_control_sel), 
+						.i_wb_we(wb_we), 
+						.i_wb_addr(wb_addr[2:0]), 
+						.i_wb_data(wb_odata),
+						.o_wb_ack(wb_control_ack), 
+						.o_wb_stall(wb_control_stall), 
+						.o_wb_data(wb_control_data),
+						.o_lo_i_en(lo_i_en),
+						.o_lo_q_en(lo_q_en)
+);
 
 
 
-	// A "Simple" example device
-	reg	[31:0]	smpl_register, power_counter;
-	reg	smpl_interrupt;
-	initial	wb_smpl_ack = 1'b0;
-	always @(posedge clk)
-		wb_smpl_ack <= ((wb_stb)&&(wb_smpl_sel));
-	assign	wb_smpl_stall = 1'b0;
-	initial	smpl_interrupt = 1'b0;
-	always @(posedge clk)
-		if ((wb_stb)&&(wb_smpl_sel)&&(wb_we))
-		begin
-			case(wb_addr[3:0])
-			4'h1: smpl_register  <= wb_odata;
-			4'h4: smpl_interrupt <= wb_odata[0];
-			default: begin end
-			endcase
-		end
+//BUS plumbing
+// Nothing should be assigned to the null page
+assign	wb_control_sel = (wb_addr[29:8] == 22'h081);	// 0x00002040
+assign	wb_fm_sel = (wb_addr[29:8] == 22'h082);	// 0x00002080
+assign	wb_lo_sel = (wb_addr[29:8] == 22'h083);	// 0x000020C0
 
-	always @(posedge clk)
-		case(wb_addr[3:0])
-		4'h0:    wb_smpl_data <= 32'h20170622;
-		4'h1:    wb_smpl_data <= smpl_register;
-		4'h2:    wb_smpl_data <= { bus_err_address, 2'b00 };
-		4'h3:    wb_smpl_data <= power_counter;
-		4'h4:    wb_smpl_data <= { 31'h0, smpl_interrupt };
-		default: wb_smpl_data <= 32'h00;
-		endcase
+// This will be true if nothing is selected
+wire none_sel;
+assign none_sel = ((!wb_fm_sel) && (!wb_control_sel) && (!wb_lo_sel));
 
-	// Start our clocks since power up counter from zero
-	initial	power_counter = 0;
-	always @(posedge clk)
-		// Count up from zero until the top bit is set
-		if (!power_counter[31])
-			power_counter <= power_counter + 1'b1;
-		else // Once the top bit is set, keep it set forever
-			power_counter[30:0] <= power_counter[30:0] + 1'b1;
+// The wishbone error signal is true for one clock only, and then it
+// resets itself
+always @(posedge clk)
+	wb_err <= (wb_stb)&&(none_sel);
 
 
+always @(posedge clk)
+	if (wb_err)
+		bus_err_address <= wb_addr;
 
+assign wb_stall = ((wb_fm_sel)&&(wb_fm_stall))||((wb_control_sel)&&(wb_control_stall))||((wb_lo_sel)&&(wb_lo_stall));
 
+initial	wb_ack = 1'b0;
+always @(posedge clk)
+	wb_ack <= (wb_fm_ack) || (wb_control_ack) || (wb_lo_ack);
 
+always @(posedge clk)
+	if (wb_fm_ack)
+		wb_idata <= wb_fm_data;
+	else if (wb_control_ack)
+		wb_idata <= wb_control_data;
+	else if (wb_lo_ack)
+		wb_idata <= {24'b0, wb_lo_data};
+	else
+		wb_idata <= 32'bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx;
 
-
-
-
-	//BUS plumbing
-	// Nothing should be assigned to the null page
-	assign	wb_smpl_sel = (wb_addr[29:8] == 22'h081);	// 0x00002040
-	assign	wb_fm_sel = (wb_addr[29:8] == 22'h082);	// 0x00002080
-	assign	wb_lo_sel = (wb_addr[29:8] == 22'h083);	// 0x000020C0
-
-	// This will be true if nothing is selected
-	wire none_sel;
-	assign none_sel = ((!wb_fm_sel) && (!wb_smpl_sel) && (!wb_lo_sel));
-
-	// The wishbone error signal is true for one clock only, and then it
-	// resets itself
-	always @(posedge clk)
-		wb_err <= (wb_stb)&&(none_sel);
-
-
-	always @(posedge clk)
-		if (wb_err)
-			bus_err_address <= wb_addr;
-
-	assign wb_stall = ((wb_fm_sel)&&(wb_fm_stall))||((wb_smpl_sel)&&(wb_smpl_stall))||((wb_lo_sel)&&(wb_lo_stall));
-
-	initial	wb_ack = 1'b0;
-	always @(posedge clk)
-		wb_ack <= (wb_fm_ack) || (wb_smpl_ack) || (wb_lo_ack);
-
-	always @(posedge clk)
-		if (wb_fm_ack)
-			wb_idata <= wb_fm_data;
-		else if (wb_smpl_ack)
-			wb_idata <= wb_smpl_data;
-		else if (wb_lo_ack)
-			wb_idata <= {24'b0, wb_lo_data};
-		else
-			wb_idata <= 32'bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx;
-
-	assign bus_interrupt = 1'b0;
+assign bus_interrupt = 1'b0;
 
 
 endmodule
+`default_nettype wire

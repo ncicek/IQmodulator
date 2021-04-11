@@ -42,6 +42,26 @@ class Device():
     def set_lo_frequency(self, hz):
         self.write(((0x83<<8)+0), int(round(count)))
 
+    def set_i_gain(self, val):
+        self.write(((0x82<<8)+3), int(round(val)))
+
+    def set_q_gain(self, val):
+        self.write(((0x82<<8)+4), int(round(val)))
+
+    def set_lo_i(self, enable):
+        assert isinstance(enable, bool)
+        read = self.read((0x81<<8)+0)
+        read &= ~(1<<0)
+        read |= int(enable)<<0
+        self.write(((0x81<<8)+0), read)
+
+    def set_lo_q(self, enable):
+        assert isinstance(enable, bool)
+        read = self.read((0x81<<8)+0)
+        read &= ~(1<<1)
+        read |= int(enable)<<1
+        self.write(((0x81<<8)+0), read)
+
 class EFB_PLL():
     def __init__(self, dev, efb_wishbone_base_address, ref_clk):
         self.dev = dev
@@ -66,12 +86,13 @@ class EFB_PLL():
 
 
 ser = serial.Serial('COM8', 7200)  # open serial port
-refclk = 72e6
+refclk = 12e6
 
 dev = Device(ser)
+dev.set_lo_q(False)
 efb_pll = EFB_PLL(dev, 0x83<<8, refclk)
-efb_pll.set_fb_div(5.88)
+efb_pll.set_fb_div(2.00)
 
-#set_carrier_frequency(1e5)
-#set_modulation_frequency(1e1)
-#set_modulation_amount(0)
+dev.set_carrier_frequency(1e6)
+dev.set_modulation_frequency(1e3)
+dev.set_modulation_amount(0)

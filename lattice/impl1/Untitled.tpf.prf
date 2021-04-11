@@ -1,6 +1,8 @@
 FREQUENCY NET "dac_clk_p_c" 72.000000 MHz ;
-FREQUENCY NET "lo_pll_out" 420.000000 MHz ;
+FREQUENCY NET "lo_q" 48.000000 MHz ;
 FREQUENCY NET "i_ref_clk_c" 12.000000 MHz ;
+FREQUENCY NET "lo_gen/lo_i" 48.000000 MHz ;
+RVL_ALIAS "clk" "clk"; 
 BLOCK RESETPATHS ;
 BLOCK ASYNCPATHS ;
 DEFINE PORT GROUP "dac_bus" "o_dac_a[9]" 
@@ -23,5 +25,6 @@ DEFINE PORT GROUP "dac_bus" "o_dac_a[9]"
 "o_dac_b[2]" 
 "o_dac_b[1]" 
 "o_dac_b[0]" ;
-CLOCK_TO_OUT GROUP "dac_bus" 2.700000 ns MIN -0.500000 ns CLKNET "dac_clk_p_c" CLKOUT PORT "dac_clk_p" ;
+CLOCK_TO_OUT GROUP "dac_bus" 2.500000 ns MIN -0.300000 ns CLKNET "dac_clk_p_c" CLKOUT PORT "dac_clk_p" ;
+BLOCK JTAGPATHS ;
 COMMERCIAL ;

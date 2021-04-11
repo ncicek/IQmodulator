@@ -1,107 +1,307 @@
 [ START MERGED ]
+rxtransport/dac_clk_p_c_enable_570 rxtransport/zero_baud_counter
 n2 wb_stb
-n12753 wb_idata_1
-rxtransport/dac_clk_p_c_enable_368 rxtransport/zero_baud_counter
-i_clk_2f_N_2268 lo_pll_out
-o_dac_a_9__I_0/dac_clk_p_c_enable_488 i_sw0_c
-o_dac_a_9__I_0/dac_clk_p_c_enable_486 o_dac_a_9__I_0/cw_mux_dac_a_mux_sel_N_1885
+n14148 wb_idata_1
+fm_generator_wb_instance/dac_clk_p_c_enable_617 fm_generator_wb_instance/cw_mux_dac_a_mux_sel_N_1508
+fm_generator_wb_instance/dac_clk_p_c_enable_630 i_sw0_c
+fm_generator_wb_instance/q_gain_multiplier/n14230 fm_generator_wb_instance/q_gain_multiplier/u_l_0
+fm_generator_wb_instance/modulation_amplitude_multiplier/n14231 fm_generator_wb_instance/modulation_amplitude_multiplier/u_l_0
+fm_generator_wb_instance/i_gain_multiplier/n14224 fm_generator_wb_instance/i_gain_multiplier/u_l_0
 [ END MERGED ]
 [ START CLIPPED ]
 GND_net
 VCC_net
-n29968
-o_dac_a_9__I_0/carrier/nco_inst/phase_register_597_add_4_2/S0
-o_dac_a_9__I_0/carrier/nco_inst/phase_register_597_add_4_2/CI
-o_dac_a_9__I_0/carrier/nco_inst/phase_register_597_add_4_32/CO
-o_dac_a_9__I_0/carrier/qtr_inst/add_417_1/S1
-o_dac_a_9__I_0/carrier/qtr_inst/add_417_1/S0
-o_dac_a_9__I_0/carrier/qtr_inst/add_417_1/CI
-o_dac_a_9__I_0/carrier/qtr_inst/add_417_3/S1
-o_dac_a_9__I_0/carrier/qtr_inst/add_417_3/S0
-o_dac_a_9__I_0/carrier/qtr_inst/add_417_5/S1
-o_dac_a_9__I_0/carrier/qtr_inst/add_417_5/S0
-o_dac_a_9__I_0/carrier/qtr_inst/add_417_7/S0
-o_dac_a_9__I_0/carrier/qtr_inst/add_417_15/CO
-o_dac_a_9__I_0/carrier/qtr_inst/add_418_1/S1
-o_dac_a_9__I_0/carrier/qtr_inst/add_418_1/S0
-o_dac_a_9__I_0/carrier/qtr_inst/add_418_1/CI
-o_dac_a_9__I_0/carrier/qtr_inst/add_418_3/S1
-o_dac_a_9__I_0/carrier/qtr_inst/add_418_3/S0
-o_dac_a_9__I_0/carrier/qtr_inst/add_418_5/S1
-o_dac_a_9__I_0/carrier/qtr_inst/add_418_5/S0
-o_dac_a_9__I_0/carrier/qtr_inst/add_418_7/S0
-o_dac_a_9__I_0/carrier/qtr_inst/add_418_15/CO
-o_dac_a_9__I_0/modulation/nco_inst/phase_register_599_add_4_2/S0
-o_dac_a_9__I_0/modulation/nco_inst/phase_register_599_add_4_2/CI
-o_dac_a_9__I_0/modulation/nco_inst/phase_register_599_add_4_32/CO
-o_dac_a_9__I_0/modulation/qtr_inst/unary_minus_10_add_3_1/S0
-o_dac_a_9__I_0/modulation/qtr_inst/unary_minus_10_add_3_1/CI
-o_dac_a_9__I_0/modulation/qtr_inst/unary_minus_10_add_3_17/S1
-o_dac_a_9__I_0/modulation/qtr_inst/unary_minus_10_add_3_17/CO
-o_dac_a_9__I_0/sub_437_add_2_1/S1
-o_dac_a_9__I_0/sub_437_add_2_1/S0
-o_dac_a_9__I_0/sub_437_add_2_1/CI
-o_dac_a_9__I_0/sub_106_add_2_1/S0
-o_dac_a_9__I_0/sub_106_add_2_1/CI
-o_dac_a_9__I_0/sub_437_add_2_17/CO
-o_dac_a_9__I_0/add_425_1/S0
-o_dac_a_9__I_0/add_425_1/CI
-o_dac_a_9__I_0/sub_106_add_2_13/CO
-o_dac_a_9__I_0/add_425_31/CO
-add_31_33/S1
-add_31_33/CO
-add_32_1/S0
-add_32_1/CI
-add_31_1/S0
-add_31_1/CI
-add_32_31/CO
+n32066
 txtransport/sub_36_add_2_1/S0
 txtransport/sub_36_add_2_1/CI
 txtransport/sub_36_add_2_25/S1
 txtransport/sub_36_add_2_25/CO
-rxtransport/sub_435_add_2_20/S1
-rxtransport/sub_435_add_2_20/S0
-rxtransport/sub_435_add_2_22/S1
-rxtransport/sub_435_add_2_22/S0
-rxtransport/sub_435_add_2_24/S1
-rxtransport/sub_435_add_2_24/S0
-rxtransport/sub_435_add_2_cout/S1
-rxtransport/sub_435_add_2_cout/CO
-rxtransport/add_8_1/S0
-rxtransport/add_8_1/CI
-rxtransport/sub_49_add_2_1/S0
-rxtransport/sub_49_add_2_1/CI
+fm_generator_wb_instance/carrier/nco_inst/phase_register_856_add_4_2/S0
+fm_generator_wb_instance/carrier/nco_inst/phase_register_856_add_4_2/CI
+fm_generator_wb_instance/carrier/nco_inst/phase_register_856_add_4_32/CO
+fm_generator_wb_instance/carrier/qtr_inst/unary_minus_27_add_3_17/S1
+fm_generator_wb_instance/carrier/qtr_inst/unary_minus_27_add_3_17/CO
+fm_generator_wb_instance/carrier/qtr_inst/unary_minus_10_add_3_1/S0
+fm_generator_wb_instance/carrier/qtr_inst/unary_minus_10_add_3_1/CI
+fm_generator_wb_instance/carrier/qtr_inst/unary_minus_10_add_3_17/S1
+fm_generator_wb_instance/carrier/qtr_inst/unary_minus_10_add_3_17/CO
+fm_generator_wb_instance/carrier/qtr_inst/unary_minus_27_add_3_1/S0
+fm_generator_wb_instance/carrier/qtr_inst/unary_minus_27_add_3_1/CI
+fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_0_0/add_841_1/S0
+fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_0_0/add_841_1/CI
+fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_0_0/add_841_cout/S1
+fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_0_0/add_841_cout/CO
+fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_1_0/add_840_1/S0
+fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_1_0/add_840_1/CI
+fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_1_0/add_840_cout/S1
+fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_1_0/add_840_cout/CO
+fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_2_0/add_839_1/S0
+fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_2_0/add_839_1/CI
+fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_2_0/add_839_cout/S1
+fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_2_0/add_839_cout/CO
+fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_3_0/add_838_1/S0
+fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_3_0/add_838_1/CI
+fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_3_0/add_838_cout/S1
+fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_3_0/add_838_cout/CO
+fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_4_0/add_834_1/S0
+fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_4_0/add_834_1/CI
+fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_4_0/add_834_cout/S1
+fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_4_0/add_834_cout/CO
+fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_5_0/add_833_1/S0
+fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_5_0/add_833_1/CI
+fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_5_0/add_833_cout/S1
+fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_5_0/add_833_cout/CO
+fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_6_0/add_832_1/S0
+fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_6_0/add_832_1/CI
+fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_6_0/add_832_cout/S1
+fm_generator_wb_instance/i_gain_multiplier/umpy/initialmpy_6_0/add_832_cout/CO
+fm_generator_wb_instance/i_gain_multiplier/umpy/add_835_cout/S1
+fm_generator_wb_instance/i_gain_multiplier/umpy/add_835_cout/CO
+fm_generator_wb_instance/i_gain_multiplier/umpy/add_410_2/S0
+fm_generator_wb_instance/i_gain_multiplier/umpy/add_410_2/CI
+fm_generator_wb_instance/i_gain_multiplier/umpy/add_35_2/S0
+fm_generator_wb_instance/i_gain_multiplier/umpy/add_35_2/CI
+fm_generator_wb_instance/i_gain_multiplier/umpy/add_35_22/CO
+fm_generator_wb_instance/i_gain_multiplier/umpy/add_410_18/CO
+fm_generator_wb_instance/i_gain_multiplier/umpy/add_815_2/S0
+fm_generator_wb_instance/i_gain_multiplier/umpy/add_815_2/CI
+fm_generator_wb_instance/i_gain_multiplier/umpy/add_814_2/S0
+fm_generator_wb_instance/i_gain_multiplier/umpy/add_814_2/CI
+fm_generator_wb_instance/i_gain_multiplier/umpy/add_814_cout/S1
+fm_generator_wb_instance/i_gain_multiplier/umpy/add_814_cout/CO
+fm_generator_wb_instance/i_gain_multiplier/umpy/add_837_2/S0
+fm_generator_wb_instance/i_gain_multiplier/umpy/add_837_2/CI
+fm_generator_wb_instance/i_gain_multiplier/umpy/add_837_cout/S1
+fm_generator_wb_instance/i_gain_multiplier/umpy/add_837_cout/CO
+fm_generator_wb_instance/i_gain_multiplier/umpy/add_815_22/CO
+fm_generator_wb_instance/i_gain_multiplier/umpy/add_835_2/S0
+fm_generator_wb_instance/i_gain_multiplier/umpy/add_835_2/CI
+fm_generator_wb_instance/i_gain_multiplier/unary_minus_6_add_3_1/S0
+fm_generator_wb_instance/i_gain_multiplier/unary_minus_6_add_3_1/CI
+fm_generator_wb_instance/i_gain_multiplier/unary_minus_6_add_3_15/S1
+fm_generator_wb_instance/i_gain_multiplier/unary_minus_6_add_3_15/CO
+fm_generator_wb_instance/i_gain_multiplier/unary_minus_8_add_3_1/S0
+fm_generator_wb_instance/i_gain_multiplier/unary_minus_8_add_3_1/CI
+fm_generator_wb_instance/i_gain_multiplier/unary_minus_8_add_3_17/S1
+fm_generator_wb_instance/i_gain_multiplier/unary_minus_8_add_3_17/CO
+fm_generator_wb_instance/i_gain_multiplier/add_536_1/S1
+fm_generator_wb_instance/i_gain_multiplier/add_536_1/S0
+fm_generator_wb_instance/i_gain_multiplier/add_536_1/CI
+fm_generator_wb_instance/i_gain_multiplier/add_536_3/S1
+fm_generator_wb_instance/i_gain_multiplier/add_536_3/S0
+fm_generator_wb_instance/i_gain_multiplier/add_536_5/S1
+fm_generator_wb_instance/i_gain_multiplier/add_536_5/S0
+fm_generator_wb_instance/i_gain_multiplier/add_536_7/S1
+fm_generator_wb_instance/i_gain_multiplier/add_536_7/S0
+fm_generator_wb_instance/i_gain_multiplier/add_536_9/S1
+fm_generator_wb_instance/i_gain_multiplier/add_536_9/S0
+fm_generator_wb_instance/i_gain_multiplier/add_536_11/S1
+fm_generator_wb_instance/i_gain_multiplier/add_536_11/S0
+fm_generator_wb_instance/i_gain_multiplier/add_536_13/S1
+fm_generator_wb_instance/i_gain_multiplier/add_536_13/S0
+fm_generator_wb_instance/i_gain_multiplier/add_536_15/S1
+fm_generator_wb_instance/i_gain_multiplier/add_536_15/S0
+fm_generator_wb_instance/i_gain_multiplier/add_536_17/S1
+fm_generator_wb_instance/i_gain_multiplier/add_536_17/S0
+fm_generator_wb_instance/i_gain_multiplier/add_536_19/S1
+fm_generator_wb_instance/i_gain_multiplier/add_536_19/S0
+fm_generator_wb_instance/i_gain_multiplier/add_536_21/S0
+fm_generator_wb_instance/i_gain_multiplier/add_536_29/CO
+fm_generator_wb_instance/modulation/nco_inst/phase_register_857_add_4_32/CO
+fm_generator_wb_instance/modulation/nco_inst/phase_register_857_add_4_2/S0
+fm_generator_wb_instance/modulation/nco_inst/phase_register_857_add_4_2/CI
+fm_generator_wb_instance/modulation/qtr_inst/unary_minus_10_add_3_1/S0
+fm_generator_wb_instance/modulation/qtr_inst/unary_minus_10_add_3_1/CI
+fm_generator_wb_instance/modulation/qtr_inst/unary_minus_10_add_3_17/S1
+fm_generator_wb_instance/modulation/qtr_inst/unary_minus_10_add_3_17/CO
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_0_0/add_825_1/S0
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_0_0/add_825_1/CI
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_0_0/add_825_cout/S1
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_0_0/add_825_cout/CO
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_1_0/add_824_1/S0
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_1_0/add_824_1/CI
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_1_0/add_824_cout/S1
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_1_0/add_824_cout/CO
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_2_0/add_823_cout/S1
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_2_0/add_823_cout/CO
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_2_0/add_823_1/S0
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_2_0/add_823_1/CI
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_3_0/add_822_1/S0
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_3_0/add_822_1/CI
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_3_0/add_822_cout/S1
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_3_0/add_822_cout/CO
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_4_0/add_821_1/S0
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_4_0/add_821_1/CI
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_4_0/add_821_cout/S1
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_4_0/add_821_cout/CO
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_5_0/add_820_1/S0
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_5_0/add_820_1/CI
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_5_0/add_820_cout/S1
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_5_0/add_820_cout/CO
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_6_0/add_819_1/S0
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_6_0/add_819_1/CI
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_6_0/add_819_cout/S1
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/initialmpy_6_0/add_819_cout/CO
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/add_412_2/S0
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/add_412_2/CI
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/add_842_2/S0
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/add_842_2/CI
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/add_412_18/CO
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/add_842_cout/S1
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/add_842_cout/CO
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/add_843_2/S0
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/add_843_2/CI
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/add_843_22/CO
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/add_844_2/S0
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/add_844_2/CI
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/add_844_cout/S1
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/add_844_cout/CO
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/add_845_2/S0
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/add_845_2/CI
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/add_35_2/S0
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/add_35_2/CI
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/add_845_cout/S1
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/add_845_cout/CO
+fm_generator_wb_instance/modulation_amplitude_multiplier/umpy/add_35_22/CO
+fm_generator_wb_instance/modulation_amplitude_multiplier/unary_minus_6_add_3_1/S0
+fm_generator_wb_instance/modulation_amplitude_multiplier/unary_minus_6_add_3_1/CI
+fm_generator_wb_instance/modulation_amplitude_multiplier/unary_minus_6_add_3_15/S1
+fm_generator_wb_instance/modulation_amplitude_multiplier/unary_minus_6_add_3_15/CO
+fm_generator_wb_instance/modulation_amplitude_multiplier/unary_minus_8_add_3_1/S0
+fm_generator_wb_instance/modulation_amplitude_multiplier/unary_minus_8_add_3_1/CI
+fm_generator_wb_instance/modulation_amplitude_multiplier/unary_minus_8_add_3_17/S1
+fm_generator_wb_instance/modulation_amplitude_multiplier/unary_minus_8_add_3_17/CO
+fm_generator_wb_instance/modulation_amplitude_multiplier/unary_minus_20_add_3_1/S0
+fm_generator_wb_instance/modulation_amplitude_multiplier/unary_minus_20_add_3_1/CI
+fm_generator_wb_instance/modulation_amplitude_multiplier/unary_minus_20_add_3_31/S1
+fm_generator_wb_instance/modulation_amplitude_multiplier/unary_minus_20_add_3_31/CO
+fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_0_0/add_831_1/S0
+fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_0_0/add_831_1/CI
+fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_0_0/add_831_cout/S1
+fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_0_0/add_831_cout/CO
+fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_1_0/add_830_1/S0
+fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_1_0/add_830_1/CI
+fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_1_0/add_830_cout/S1
+fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_1_0/add_830_cout/CO
+fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_2_0/add_829_1/S0
+fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_2_0/add_829_1/CI
+fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_2_0/add_829_cout/S1
+fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_2_0/add_829_cout/CO
+fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_3_0/add_828_1/S0
+fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_3_0/add_828_1/CI
+fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_3_0/add_828_cout/S1
+fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_3_0/add_828_cout/CO
+fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_4_0/add_827_1/S0
+fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_4_0/add_827_1/CI
+fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_4_0/add_827_cout/S1
+fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_4_0/add_827_cout/CO
+fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_5_0/add_826_1/S0
+fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_5_0/add_826_1/CI
+fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_5_0/add_826_cout/S1
+fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_5_0/add_826_cout/CO
+fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_6_0/add_818_1/S0
+fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_6_0/add_818_1/CI
+fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_6_0/add_818_cout/S1
+fm_generator_wb_instance/q_gain_multiplier/umpy/initialmpy_6_0/add_818_cout/CO
+fm_generator_wb_instance/q_gain_multiplier/umpy/add_411_2/S0
+fm_generator_wb_instance/q_gain_multiplier/umpy/add_411_2/CI
+fm_generator_wb_instance/q_gain_multiplier/umpy/add_411_18/CO
+fm_generator_wb_instance/q_gain_multiplier/umpy/add_35_2/S0
+fm_generator_wb_instance/q_gain_multiplier/umpy/add_35_2/CI
+fm_generator_wb_instance/q_gain_multiplier/umpy/add_35_22/CO
+fm_generator_wb_instance/q_gain_multiplier/umpy/add_836_2/S0
+fm_generator_wb_instance/q_gain_multiplier/umpy/add_836_2/CI
+fm_generator_wb_instance/q_gain_multiplier/umpy/add_836_cout/S1
+fm_generator_wb_instance/q_gain_multiplier/umpy/add_836_cout/CO
+fm_generator_wb_instance/q_gain_multiplier/umpy/add_846_2/S0
+fm_generator_wb_instance/q_gain_multiplier/umpy/add_846_2/CI
+fm_generator_wb_instance/q_gain_multiplier/umpy/add_846_cout/S1
+fm_generator_wb_instance/q_gain_multiplier/umpy/add_846_cout/CO
+fm_generator_wb_instance/q_gain_multiplier/umpy/add_847_2/S0
+fm_generator_wb_instance/q_gain_multiplier/umpy/add_847_2/CI
+fm_generator_wb_instance/q_gain_multiplier/umpy/add_847_22/CO
+fm_generator_wb_instance/q_gain_multiplier/umpy/add_848_2/S0
+fm_generator_wb_instance/q_gain_multiplier/umpy/add_848_2/CI
+fm_generator_wb_instance/q_gain_multiplier/umpy/add_848_cout/S1
+fm_generator_wb_instance/q_gain_multiplier/umpy/add_848_cout/CO
+fm_generator_wb_instance/q_gain_multiplier/unary_minus_6_add_3_1/S0
+fm_generator_wb_instance/q_gain_multiplier/unary_minus_6_add_3_1/CI
+fm_generator_wb_instance/q_gain_multiplier/unary_minus_6_add_3_15/S1
+fm_generator_wb_instance/q_gain_multiplier/unary_minus_6_add_3_15/CO
+fm_generator_wb_instance/q_gain_multiplier/unary_minus_8_add_3_1/S0
+fm_generator_wb_instance/q_gain_multiplier/unary_minus_8_add_3_1/CI
+fm_generator_wb_instance/q_gain_multiplier/unary_minus_8_add_3_17/S1
+fm_generator_wb_instance/q_gain_multiplier/unary_minus_8_add_3_17/CO
+fm_generator_wb_instance/q_gain_multiplier/add_537_1/S1
+fm_generator_wb_instance/q_gain_multiplier/add_537_1/S0
+fm_generator_wb_instance/q_gain_multiplier/add_537_1/CI
+fm_generator_wb_instance/q_gain_multiplier/add_537_3/S1
+fm_generator_wb_instance/q_gain_multiplier/add_537_3/S0
+fm_generator_wb_instance/q_gain_multiplier/add_537_5/S1
+fm_generator_wb_instance/q_gain_multiplier/add_537_5/S0
+fm_generator_wb_instance/q_gain_multiplier/add_537_7/S1
+fm_generator_wb_instance/q_gain_multiplier/add_537_7/S0
+fm_generator_wb_instance/q_gain_multiplier/add_537_9/S1
+fm_generator_wb_instance/q_gain_multiplier/add_537_9/S0
+fm_generator_wb_instance/q_gain_multiplier/add_537_11/S1
+fm_generator_wb_instance/q_gain_multiplier/add_537_11/S0
+fm_generator_wb_instance/q_gain_multiplier/add_537_13/S1
+fm_generator_wb_instance/q_gain_multiplier/add_537_13/S0
+fm_generator_wb_instance/q_gain_multiplier/add_537_15/S1
+fm_generator_wb_instance/q_gain_multiplier/add_537_15/S0
+fm_generator_wb_instance/q_gain_multiplier/add_537_17/S1
+fm_generator_wb_instance/q_gain_multiplier/add_537_17/S0
+fm_generator_wb_instance/q_gain_multiplier/add_537_19/S1
+fm_generator_wb_instance/q_gain_multiplier/add_537_19/S0
+fm_generator_wb_instance/q_gain_multiplier/add_537_21/S0
+fm_generator_wb_instance/q_gain_multiplier/add_537_29/CO
+fm_generator_wb_instance/addr_space_0__30__I_0_32/S1
+fm_generator_wb_instance/addr_space_0__30__I_0_32/CO
+fm_generator_wb_instance/addr_space_0__30__I_0_2/S0
+fm_generator_wb_instance/addr_space_0__30__I_0_2/CI
+genbus/wbexec/o_wb_addr_858_add_4_1/S1
+genbus/wbexec/o_wb_addr_858_add_4_1/S0
+genbus/wbexec/o_wb_addr_858_add_4_1/CI
+genbus/wbexec/o_wb_addr_858_add_4_31/CO
 rxtransport/add_8_25/S1
 rxtransport/add_8_25/CO
+rxtransport/sub_49_add_2_1/S0
+rxtransport/sub_49_add_2_1/CI
+rxtransport/sub_542_add_2_2/S1
+rxtransport/sub_542_add_2_2/S0
+rxtransport/sub_542_add_2_2/CI
+rxtransport/sub_542_add_2_4/S1
+rxtransport/sub_542_add_2_4/S0
+rxtransport/sub_542_add_2_6/S1
+rxtransport/sub_542_add_2_6/S0
+rxtransport/sub_542_add_2_8/S1
+rxtransport/sub_542_add_2_8/S0
+rxtransport/sub_542_add_2_10/S1
+rxtransport/sub_542_add_2_10/S0
+rxtransport/sub_542_add_2_12/S1
+rxtransport/sub_542_add_2_12/S0
+rxtransport/sub_542_add_2_14/S1
+rxtransport/sub_542_add_2_14/S0
+rxtransport/sub_542_add_2_16/S1
+rxtransport/sub_542_add_2_16/S0
+rxtransport/sub_542_add_2_18/S1
+rxtransport/sub_542_add_2_18/S0
+rxtransport/sub_542_add_2_20/S1
+rxtransport/sub_542_add_2_20/S0
+rxtransport/sub_542_add_2_22/S1
+rxtransport/sub_542_add_2_22/S0
+rxtransport/sub_542_add_2_24/S1
+rxtransport/sub_542_add_2_24/S0
+rxtransport/sub_542_add_2_cout/S1
+rxtransport/sub_542_add_2_cout/CO
 rxtransport/sub_49_add_2_25/S1
 rxtransport/sub_49_add_2_25/CO
-rxtransport/sub_435_add_2_2/S1
-rxtransport/sub_435_add_2_2/S0
-rxtransport/sub_435_add_2_2/CI
-rxtransport/sub_435_add_2_4/S1
-rxtransport/sub_435_add_2_4/S0
-rxtransport/sub_435_add_2_6/S1
-rxtransport/sub_435_add_2_6/S0
-rxtransport/sub_435_add_2_8/S1
-rxtransport/sub_435_add_2_8/S0
-rxtransport/sub_435_add_2_10/S1
-rxtransport/sub_435_add_2_10/S0
-rxtransport/sub_435_add_2_12/S1
-rxtransport/sub_435_add_2_12/S0
-rxtransport/sub_435_add_2_14/S1
-rxtransport/sub_435_add_2_14/S0
-rxtransport/sub_435_add_2_16/S1
-rxtransport/sub_435_add_2_16/S0
-rxtransport/sub_435_add_2_18/S1
-rxtransport/sub_435_add_2_18/S0
-genbus/wbexec/o_wb_addr_598_add_4_1/S1
-genbus/wbexec/o_wb_addr_598_add_4_1/S0
-genbus/wbexec/o_wb_addr_598_add_4_1/CI
-genbus/wbexec/o_wb_addr_598_add_4_31/CO
+rxtransport/add_8_1/S0
+rxtransport/add_8_1/CI
 [ END CLIPPED ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.11.3.469 -- WARNING: Map write only section -- Sun Feb 07 01:51:00 2021
+# map:  version Diamond (64-bit) 3.12.0.240.2 -- WARNING: Map write only section -- Sun Apr 11 02:50:14 2021
 
 SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE DUALBOOTGOLDEN=INTERNAL BACKGROUND_RECONFIG=OFF INBUF=ON ;
 LOCATE COMP "o_dac_a[7]" SITE "N16" ;
@@ -128,15 +328,14 @@ LOCATE COMP "o_dac_b[0]" SITE "G14" ;
 LOCATE COMP "dac_clk_p" SITE "D10" ;
 LOCATE COMP "dac_clk_n" SITE "E10" ;
 LOCATE COMP "o_dac_cw_b" SITE "M14" ;
-LOCATE COMP "i_clk_p" SITE "B9" ;
-LOCATE COMP "i_clk_n" SITE "A10" ;
-LOCATE COMP "q_clk_p" SITE "D8" ;
-LOCATE COMP "q_clk_n" SITE "E9" ;
+LOCATE COMP "o_lo_i" SITE "B9" ;
+LOCATE COMP "o_lo_q" SITE "D8" ;
 LOCATE COMP "i_ref_clk" SITE "C8" ;
 LOCATE COMP "i_wbu_uart_rx" SITE "A11" ;
 LOCATE COMP "i_sw0" SITE "F8" ;
 FREQUENCY NET "dac_clk_p_c" 72.000000 MHz ;
-FREQUENCY NET "lo_pll_out" 420.000000 MHz ;
+FREQUENCY NET "lo_q" 48.000000 MHz ;
 FREQUENCY NET "i_ref_clk_c" 12.000000 MHz ;
+FREQUENCY NET "lo_gen/lo_i" 48.000000 MHz ;
 SCHEMATIC END ;
 [ END DESIGN PREFS ]

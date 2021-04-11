@@ -1,10 +1,10 @@
-BITGEN: Bitstream Generator Diamond (64-bit) 3.11.3.469
+BITGEN: Bitstream Generator Diamond (64-bit) 3.12.0.240.2
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Feb 07 01:51:31 2021
+Sun Apr 11 02:50:48 2021
 
 
 Command: bitgen -g RamCfg:Reset -path D:/Documents/Git_Local/fm_modulator/lattice -w -jedec -gui -msgset D:/Documents/Git_Local/fm_modulator/lattice/promote.xml iq_modulator_impl1.ncd iq_modulator_impl1.prf 
@@ -16,7 +16,7 @@ Vendor:      LATTICE
 Device:      LCMXO3LF-6900C
 Package:     CABGA256
 Performance: 5
-Loading device for application Bitgen from file 'xo3c6900.nph' in environment: C:/lscc/diamond/3.11_x64/ispfpga.
+Loading device for application Bitgen from file 'xo3c6900.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
 Package Status:                     Final          Version 1.16.
 Performance Hardware Data Status:   Preliminary    Version 37.5.
 
@@ -83,6 +83,6 @@ UFM Utilization: General Purpose Flash Memory.
 Available General Purpose Flash Memory: 2046 Pages (Page 0 to Page 2045).
 Initialized UFM Pages:                     0 Page.
  
-Total CPU Time: 2 secs 
+Total CPU Time: 3 secs 
 Total REAL Time: 3 secs 
-Peak Memory Usage: 305 MB
+Peak Memory Usage: 312 MB
