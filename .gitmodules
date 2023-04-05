@@ -1,3 +1,6 @@
 [submodule "verilog-ethernet"]
 	path = verilog-ethernet
 	url = git@github.com:alexforencich/verilog-ethernet.git
+[submodule "FPGA-RMII-SMII"]
+	path = FPGA-RMII-SMII
+	url = git@github.com:WangXuan95/FPGA-RMII-SMII.git
